@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="62mm" height="29mm" viewBox="0 0 62 29" xmlns="http://www.w3.org/2000/svg">
+  <!-- Label background -->
+  <rect width="62" height="29" fill="#ffffff" />
+  
+  <!-- Logo area - top left -->
+  <rect x="0" y="0" width="10" height="10" fill="#9ba03b" opacity="0.8" />
+  <text x="5" y="6" font-family="Arial" font-size="3" text-anchor="middle" fill="#ffffff">LOGO</text>
+  
+  <!-- Border and design elements -->
+  <rect x="0" y="0" width="62" height="29" fill="none" stroke="#9ba03b" stroke-width="0.5" />
+  
+  <!-- Rounded rectangle for product name -->
+  <rect x="12" y="3" width="45" height="4" rx="1" ry="1" fill="#f0f0f0" opacity="0.5" />
+  
+  <!-- Category indicator -->
+  <rect x="12" y="7" width="20" height="2.5" rx="1" ry="1" fill="#e0e0e0" opacity="0.5" />
+  
+  <!-- Price indicator -->
+  <rect x="12" y="9.5" width="15" height="2.5" rx="1" ry="1" fill="#e0e0e0" opacity="0.5" />
+  
+  <!-- Size indicator -->
+  <rect x="12" y="12" width="15" height="2.5" rx="1" ry="1" fill="#e0e0e0" opacity="0.5" />
+  
+  <!-- Storage instructions indicator -->
+  <rect x="12" y="14.5" width="30" height="2" rx="1" ry="1" fill="#e0e0e0" opacity="0.5" />
+  
+  <!-- Ingredients area -->
+  <rect x="2" y="16.5" width="58" height="6" rx="1" ry="1" fill="#f0f0f0" opacity="0.3" />
+  
+  <!-- Barcode area -->
+  <rect x="6" y="23" width="50" height="3.5" rx="0.5" ry="0.5" fill="#e0e0e0" opacity="0.5" />
+  
+  <!-- Website area -->
+  <rect x="34" y="26.5" width="26" height="1.5" rx="0.5" ry="0.5" fill="#f0f0f0" opacity="0.3" />
+  
+  <!-- Corner decorations -->
+  <circle cx="1" cy="1" r="0.5" fill="#9ba03b" />
+  <circle cx="61" cy="1" r="0.5" fill="#9ba03b" />
+  <circle cx="1" cy="28" r="0.5" fill="#9ba03b" />
+  <circle cx="61" cy="28" r="0.5" fill="#9ba03b" />
+</svg> 

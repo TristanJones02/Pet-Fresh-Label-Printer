@@ -1,0 +1,30 @@
+
+      <div class="label" style="width: <%= config.width %>mm; height: <%= config.height %>mm; position: relative; font-family: Arial, sans-serif;">
+        <!-- Logo -->
+        <div style="position: absolute; top: 2mm; left: 2mm; height: 8mm;">
+          <img src="<%= logoPath %>" height="100%" />
+        </div>
+        
+        <!-- Product Name -->
+        <div style="position: absolute; top: 3mm; left: 12mm; font-size: 3.5mm; font-weight: bold;">
+          <%= product.name %>
+        </div>
+        
+        <!-- Category -->
+        <div style="position: absolute; top: 7mm; left: 12mm; font-size: 2.5mm; color: <%= product.categoryColor %>;">
+          <%= product.category %>
+        </div>
+        
+        <!-- Barcode -->
+        <div style="position: absolute; bottom: 2mm; left: 2mm; width: 58mm; text-align: center;">
+          <!-- Simple barcode representation -->
+          <div style="background: repeating-linear-gradient(90deg, #000, #000 2px, #fff 2px, #fff 4px); height: 8mm; width: 80%; margin: 0 auto;"></div>
+          <div style="font-size: 2mm; margin-top: 1mm;"><%= product.barcode %></div>
+        </div>
+        
+        <!-- Website -->
+        <div style="position: absolute; top: 11mm; left: 12mm; font-size: 2mm;">
+          www.petfresh.com.au
+        </div>
+      </div>
+    

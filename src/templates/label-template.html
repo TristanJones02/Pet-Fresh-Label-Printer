@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Fresh Label</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .label-container {
+      position: relative;
+      overflow: hidden;
+      background-color: white;
+      font-family: Arial, sans-serif;
+      border-radius: 4px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    }
+    
+    .design-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+    
+    .design-overlay img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .label-content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    
+    .product-title {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Kulim Park', sans-serif;
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .product-title-line {
+      font-weight: 700;
+      line-height: 1.1;
+      max-width: 100%;
+      word-break: break-word;
+      white-space: normal;
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+    }
+    
+    .ingredients-section {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    
+    .ingredients-header {
+      font-size: 3.5mm;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 1mm;
+    }
+    
+    .ingredients-content {
+      font-size: 2.5mm;
+      line-height: 3mm;
+      text-align: center;
+      padding: 0 2mm;
+      overflow: hidden;
+    }
+    
+    .pet-food-only {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .pet-food-only-text {
+      font-size: 5mm;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    
+    .storage-instructions {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+    
+    .storage-content {
+      font-size: 2.5mm;
+      line-height: 3mm;
+    }
+    
+    .data-section {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .date-weight-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 25mm;
+    }
+    
+    .date-weight-content {
+      font-size: 2.5mm;
+      line-height: 3mm;
+    }
+    
+    .barcode-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 28mm;
+    }
+    
+    .barcode-svg {
+      width: 100%;
+    }
+    
+    .barcode-text {
+      font-size: 2.5mm;
+      text-align: center;
+    }
+    
+    .price-section {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .price-value {
+      font-size: 5.5mm;
+      font-weight: bold;
+      line-height: 1;
+    }
+    
+    .price-label {
+      font-size: 2.2mm;
+      background-color: black;
+      color: white;
+      padding: 0.5mm 1.5mm;
+      margin-top: 0.2mm;
+      text-transform: uppercase;
+    }
+    
+    .data-label {
+      background-color: black;
+      color: white;
+      padding: 0.5mm 1.5mm;
+      font-size: 2.2mm;
+      display: inline-block;
+      margin-bottom: 0.5mm;
+      text-transform: uppercase;
+    }
+    
+    .data-value {
+      margin-bottom: 1mm;
+      padding-left: 0.5mm;
+      font-size: 2.5mm;
+    }
+  </style>
+</head>
+<body>
+  <div class="label-container" style="width: ${labelWidth}mm; height: ${labelHeight}mm;">
+    <!-- Invisible design overlay for preview only - not part of the printed label -->
+    <div class="design-overlay">
+      <img src="${overlayImagePath}" alt="Label Design" />
+    </div>
+    
+    <!-- Content container with margins -->
+    <div class="label-content" style="width: ${labelWidth}mm; height: ${labelHeight}mm; padding: 0 ${horizontalMargin}mm;">
+      <!-- Product Name - Fixed height, auto font size, max 2 lines -->
+      <div class="product-title" style="top: ${titleY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${productTitleHeight}mm;">
+        ${productTitleHTML}
+      </div>
+      
+      <!-- Ingredients Section - Fixed height -->
+      <div class="ingredients-section" style="top: ${ingredientsY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${ingredientsHeight}mm;">
+        <div class="ingredients-header">INGREDIENTS</div>
+        <div class="ingredients-content" style="max-height: ${ingredientsHeight - 5}mm;">
+          <div>${ingredientsLine1}</div>
+          <div>${ingredientsLine2}</div>
+          <div>${ingredientsLine3}</div>
+        </div>
+      </div>
+      
+      <!-- Pet Food Only - Fixed height -->
+      <div class="pet-food-only" style="top: ${petFoodOnlyY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${petFoodOnlyHeight}mm;">
+        <div class="pet-food-only-text">PET FOOD ONLY</div>
+      </div>
+      
+      <!-- Storage Instructions - Fixed height -->
+      <div class="storage-instructions" style="top: ${storageInstructionsY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${storageInstructionsHeight}mm;">
+        <div class="storage-content">
+          <div>• 100% NATURAL</div>
+          <div>• NO ARTIFICIAL COLOURS</div>
+          <div>• MIXED AND PRODUCED IN AUSTRALIA</div>
+        </div>
+      </div>
+      
+      <!-- Data Section with Date, Weight, and Barcode - Fixed height -->
+      <div class="data-section" style="top: ${dataY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${dataHeight}mm;">
+        <!-- Left Column: Date and Weight -->
+        <div class="date-weight-column">
+          <div class="date-weight-content">
+            <div class="data-label">BEST BEFORE</div>
+            <div class="data-value" style="margin-bottom: 1mm;">${bestBeforeDate}</div>
+            
+            <!-- Insert weight/quantity HTML generated in renderer.js -->
+            ${weightQuantityHTML}
+          </div>
+        </div>
+        
+        <!-- Right Column: Barcode -->
+        <div class="barcode-column">
+          <svg class="barcode-svg" id="barcode" style="height: ${dataHeight - 4}mm;"></svg>
+          <div class="barcode-text">${barcode}</div>
+        </div>
+      </div>
+      
+      <!-- Price - Fixed height -->
+      <div class="price-section" style="top: ${priceY}mm; left: ${horizontalMargin}mm; width: ${contentWidth}mm; height: ${priceHeight}mm;">
+        <div class="price-value">$${formattedPrice}</div>
+        <div class="price-label">Total Price</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

@@ -1,0 +1,32 @@
+{
+  "name": "pet-fresh-label-printer",
+  "version": "0.2.5",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "NODE_ENV=development electron .",
+    "build": "electron-builder",
+    "label-editor": "electron src/tools/label-editor/editor.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "ejs": "^3.1.9",
+    "electron": "^36.1.0",
+    "electron-builder": "^26.0.12",
+    "jsbarcode": "^3.11.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "electron-reload": "^2.0.0-alpha.1",
+    "wait-on": "^8.0.3"
+  }
+}

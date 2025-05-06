@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Fresh Label Editor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kulim+Park:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    
+    .app-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .header {
+      background-color: #9ba03b;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    
+    .content {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .control-panel {
+      flex: 1;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .label-preview {
+      flex: 2;
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .label-container {
+      position: relative;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .section-ruler {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: red;
+      cursor: ns-resize;
+      z-index: 10;
+    }
+    
+    .section-ruler::before {
+      content: attr(data-label);
+      position: absolute;
+      right: calc(100% + 5px);
+      top: -10px;
+      background-color: red;
+      color: white;
+      padding: 2px 5px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    
+    .section-ruler::after {
+      content: attr(data-position) 'mm';
+      position: absolute;
+      left: calc(100% + 5px);
+      top: -10px;
+      background-color: #333;
+      color: white;
+      padding: 2px 5px;
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    
+    .overlay-controls {
+      display: flex;
+      margin-bottom: 20px;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    input[type="file"] {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    button, .btn {
+      padding: 8px 15px;
+      background-color: #9ba03b;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    
+    button:hover, .btn:hover {
+      background-color: #8a902f;
+    }
+    
+    .dimensions-controls {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .dimensions-controls input {
+      width: 70px;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    
+    .section-controls {
+      margin-top: 20px;
+    }
+    
+    .section-control {
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 3px;
+      transition: background-color 0.3s ease;
+      border-left: 4px solid transparent;
+      display: flex;
+      align-items: center;
+    }
+    
+    .section-control.locked {
+      background-color: rgba(255, 235, 238, 0.5);
+    }
+    
+    .section-control-inputs {
+      flex: 1;
+    }
+    
+    .section-control label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      text-shadow: 0 0 2px rgba(255, 255, 255, 0.8);
+    }
+    
+    .section-control input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    
+    .section-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+    }
+    
+    .section-overlay {
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    
+    .section-overlay:hover {
+      opacity: 1;
+    }
+    
+    .output-panel {
+      background-color: white;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .output-code {
+      background-color: #f5f5f5;
+      padding: 15px;
+      border-radius: 3px;
+      font-family: monospace;
+      overflow-x: auto;
+      white-space: pre;
+      font-size: 14px;
+    }
+    
+    .copy-button {
+      margin-top: 10px;
+    }
+    
+    .label-total {
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 3px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+    }
+    
+    .label-total.error {
+      background-color: rgba(255, 100, 100, 0.2);
+      border: 1px solid rgba(255, 0, 0, 0.3);
+    }
+    
+    .section-lock {
+      margin-left: 10px;
+      cursor: pointer;
+      padding: 0 5px;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    
+    .section-lock.locked {
+      background-color: #ffebee;
+      border-color: #ffcdd2;
+      color: #c62828;
+    }
+    
+    .design-overlay {
+      pointer-events: none; /* Prevent dragging of the overlay */
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <div class="header">
+      <h1>Pet Fresh Label Editor</h1>
+      <p>Configure label sections by dragging ruler lines</p>
+    </div>
+    
+    <div class="content">
+      <div class="control-panel">
+        <h2>Label Configuration</h2>
+        
+        <div class="overlay-controls">
+          <label for="overlay-upload">Select Overlay Image:</label>
+          <input type="file" id="overlay-upload" accept="image/*">
+        </div>
+        
+        <div class="dimensions-controls">
+          <div>
+            <label for="label-width">Width (mm):</label>
+            <input type="number" id="label-width" value="60" min="10" max="200">
+          </div>
+          <div>
+            <label for="label-height">Height (mm):</label>
+            <input type="number" id="label-height" value="162" min="10" max="400">
+          </div>
+          <div>
+            <label for="margin">Margin (mm):</label>
+            <input type="number" id="margin" value="5" min="0" max="50">
+          </div>
+        </div>
+        
+        <h3>Section Heights</h3>
+        <div class="section-controls">
+          <div class="section-control">
+            <label for="content-start">Content Start Y (mm):</label>
+            <input type="number" id="content-start" value="50" min="0" step="0.5">
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="title-height">Product Title Height (mm):</label>
+              <input type="number" id="title-height" value="19" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="title">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="ingredients-height">Ingredients Height (mm):</label>
+              <input type="number" id="ingredients-height" value="17" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="ingredients">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="pet-food-height">Pet Food Only Height (mm):</label>
+              <input type="number" id="pet-food-height" value="9" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="petFoodOnly">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="storage-height">Storage Instructions Height (mm):</label>
+              <input type="number" id="storage-height" value="11" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="storageInstructions">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="data-height">Data Height (mm):</label>
+              <input type="number" id="data-height" value="17" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="data">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <div class="section-control-inputs">
+              <label for="price-height">Price Height (mm):</label>
+              <input type="number" id="price-height" value="8" min="0" step="0.5">
+            </div>
+            <button class="section-lock" data-section="price">🔓</button>
+          </div>
+          
+          <div class="section-control">
+            <label for="gutter-height">Bottom Gutter Height (mm):</label>
+            <input type="number" id="gutter-height" value="28" min="0" step="0.5">
+          </div>
+          
+          <div class="label-total" id="label-total">
+            <span>Label Section Total: <span id="total-height">81</span>mm</span>
+            <span>Available Height: <span id="available-height">81</span>mm</span>
+          </div>
+        </div>
+        
+        <div class="section-legend">
+          <h4>Section Legend:</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 5px;">
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(255, 100, 100, 0.6);"></div>
+              <span>Title</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(100, 255, 100, 0.6);"></div>
+              <span>Ingredients</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(100, 100, 255, 0.6);"></div>
+              <span>Pet Food</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(255, 255, 100, 0.6);"></div>
+              <span>Storage</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(255, 100, 255, 0.6);"></div>
+              <span>Data</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(100, 255, 255, 0.6);"></div>
+              <span>Price</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-color" style="background-color: rgba(200, 200, 200, 0.6);"></div>
+              <span>Gutter</span>
+            </div>
+          </div>
+        </div>
+        
+        <button id="update-preview-btn">Update Preview</button>
+      </div>
+      
+      <div class="label-preview">
+        <h2>Label Preview</h2>
+        <p>Drag the red ruler lines to adjust section boundaries</p>
+        
+        <div id="label-container" class="label-container">
+          <!-- Label preview will be rendered here -->
+        </div>
+        
+        <div class="overlay-controls">
+          <button id="toggle-overlay-btn">Toggle Overlay</button>
+          <button id="zoom-in-btn">Zoom In</button>
+          <button id="zoom-out-btn">Zoom Out</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="output-panel">
+      <h2>Generated Configuration</h2>
+      <pre id="output-code" class="output-code">// Label dimensions will appear here</pre>
+      <button id="copy-btn" class="copy-button">Copy to Clipboard</button>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Default label dimensions
+      let labelWidth = 60;
+      let labelHeight = 162;
+      let horizontalMargin = 5;
+      let contentStartY = 50;
+      let gutterHeight = 28;
+      let contentHeight = labelHeight - gutterHeight;
+      
+      // Default section heights
+      let sectionHeights = {
+        title: 19,
+        ingredients: 17,
+        petFoodOnly: 9,
+        storageInstructions: 11,
+        data: 17,
+        price: 8
+      };
+      
+      // Track locked sections
+      let lockedSections = {
+        title: false,
+        ingredients: false,
+        petFoodOnly: false,
+        storageInstructions: false,
+        data: false,
+        price: false
+      };
+      
+      // Listen for dimensions from main process
+      if (window.require) {
+        const { ipcRenderer } = require('electron');
+        
+        ipcRenderer.on('label-dimensions', (event, dimensions) => {
+          console.log('Received dimensions from renderer.js:', dimensions);
+          
+          // Update dimensions if available
+          if (dimensions.labelWidth) labelWidth = dimensions.labelWidth;
+          if (dimensions.labelHeight) labelHeight = dimensions.labelHeight;
+          if (dimensions.horizontalMargin) horizontalMargin = dimensions.horizontalMargin;
+          if (dimensions.contentStartY) contentStartY = dimensions.contentStartY;
+          if (dimensions.gutterHeight) gutterHeight = dimensions.gutterHeight;
+          
+          // Update section heights if available
+          if (dimensions.productTitleHeight) sectionHeights.title = dimensions.productTitleHeight;
+          if (dimensions.ingredientsHeight) sectionHeights.ingredients = dimensions.ingredientsHeight;
+          if (dimensions.petFoodOnlyHeight) sectionHeights.petFoodOnly = dimensions.petFoodOnlyHeight;
+          if (dimensions.storageInstructionsHeight) sectionHeights.storageInstructions = dimensions.storageInstructionsHeight;
+          if (dimensions.dataHeight) sectionHeights.data = dimensions.dataHeight;
+          if (dimensions.priceHeight) sectionHeights.price = dimensions.priceHeight;
+          
+          // Recalculate content height
+          contentHeight = labelHeight - gutterHeight;
+          
+          // Update input fields
+          labelWidthInput.value = labelWidth;
+          labelHeightInput.value = labelHeight;
+          marginInput.value = horizontalMargin;
+          contentStartInput.value = contentStartY;
+          gutterHeightInput.value = gutterHeight;
+          
+          titleHeightInput.value = sectionHeights.title;
+          ingredientsHeightInput.value = sectionHeights.ingredients;
+          petFoodHeightInput.value = sectionHeights.petFoodOnly;
+          storageHeightInput.value = sectionHeights.storageInstructions;
+          dataHeightInput.value = sectionHeights.data;
+          priceHeightInput.value = sectionHeights.price;
+          
+          // Update the preview with new dimensions
+          updateLabelPreview();
+          updateOutputCode();
+          
+          // Show notification that dimensions were loaded
+          showNotification('Dimensions loaded from renderer.js');
+        });
+      }
+      
+      // Function to show a temporary notification
+      function showNotification(message) {
+        const notification = document.createElement('div');
+        notification.textContent = message;
+        notification.style.position = 'fixed';
+        notification.style.bottom = '20px';
+        notification.style.left = '50%';
+        notification.style.transform = 'translateX(-50%)';
+        notification.style.backgroundColor = '#9ba03b';
+        notification.style.color = 'white';
+        notification.style.padding = '10px 20px';
+        notification.style.borderRadius = '5px';
+        notification.style.zIndex = '9999';
+        notification.style.boxShadow = '0 2px 10px rgba(0,0,0,0.2)';
+        
+        document.body.appendChild(notification);
+        
+        // Remove after 3 seconds
+        setTimeout(() => {
+          notification.style.opacity = '0';
+          notification.style.transition = 'opacity 0.5s';
+          setTimeout(() => {
+            document.body.removeChild(notification);
+          }, 500);
+        }, 3000);
+      }
+      
+      // Elements
+      const labelContainer = document.getElementById('label-container');
+      const outputCode = document.getElementById('output-code');
+      const updatePreviewBtn = document.getElementById('update-preview-btn');
+      const toggleOverlayBtn = document.getElementById('toggle-overlay-btn');
+      const overlayUpload = document.getElementById('overlay-upload');
+      const copyBtn = document.getElementById('copy-btn');
+      const zoomInBtn = document.getElementById('zoom-in-btn');
+      const zoomOutBtn = document.getElementById('zoom-out-btn');
+      
+      // Input elements
+      const labelWidthInput = document.getElementById('label-width');
+      const labelHeightInput = document.getElementById('label-height');
+      const marginInput = document.getElementById('margin');
+      const contentStartInput = document.getElementById('content-start');
+      const titleHeightInput = document.getElementById('title-height');
+      const ingredientsHeightInput = document.getElementById('ingredients-height');
+      const petFoodHeightInput = document.getElementById('pet-food-height');
+      const storageHeightInput = document.getElementById('storage-height');
+      const dataHeightInput = document.getElementById('data-height');
+      const priceHeightInput = document.getElementById('price-height');
+      const gutterHeightInput = document.getElementById('gutter-height');
+      
+      // Current overlay image
+      let overlayImage = '../../../src/assets/overlay.png'; // Default overlay
+      let designVisible = true;
+      let currentZoom = 1;
+      
+      // Initialize preview and code when the document is fully loaded
+      updateLabelPreview();
+      updateOutputCode();
+      
+      // Helper function to round to nearest 0.5
+      function roundToHalf(value) {
+        return Math.round(value * 2) / 2;
+      }
+      
+      // Add event listeners to all height inputs to update preview when changed
+      titleHeightInput.addEventListener('input', function() {
+        sectionHeights.title = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.title; // Update input to show rounded value
+        redistributeAllSections(['title']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      ingredientsHeightInput.addEventListener('input', function() {
+        sectionHeights.ingredients = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.ingredients; // Update input to show rounded value
+        redistributeAllSections(['ingredients']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      petFoodHeightInput.addEventListener('input', function() {
+        sectionHeights.petFoodOnly = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.petFoodOnly; // Update input to show rounded value
+        redistributeAllSections(['petFoodOnly']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      storageHeightInput.addEventListener('input', function() {
+        sectionHeights.storageInstructions = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.storageInstructions; // Update input to show rounded value
+        redistributeAllSections(['storageInstructions']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      dataHeightInput.addEventListener('input', function() {
+        sectionHeights.data = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.data; // Update input to show rounded value
+        redistributeAllSections(['data']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      priceHeightInput.addEventListener('input', function() {
+        sectionHeights.price = roundToHalf(parseFloat(this.value) || 1);
+        this.value = sectionHeights.price; // Update input to show rounded value
+        redistributeAllSections(['price']);
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      // Handle mouse events for ruler handles
+      document.querySelectorAll('.ruler-handle').forEach(handle => {
+        handle.addEventListener('mouseup', function() {
+          updateLabelPreview();
+          updateOutputCode();
+        });
+        handle.addEventListener('touchend', function() {
+          updateLabelPreview();
+          updateOutputCode();
+        });
+      });
+      
+      // Helper function to validate total height
+      function validateTotalHeight() {
+        // The sum of all section heights plus the content start must equal the content height
+        const totalSectionHeight = Object.values(sectionHeights).reduce((sum, h) => sum + h, 0);
+        const availableHeight = labelHeight - gutterHeight - contentStartY;
+        
+        // Update the total height display
+        updateTotalHeightDisplay(totalSectionHeight, availableHeight);
+        
+        if (Math.abs(totalSectionHeight - availableHeight) > 0.01) {
+          console.log(`Height mismatch: total sections = ${totalSectionHeight}mm, available = ${availableHeight}mm`);
+          
+          // Find all unlocked sections
+          const unlocked = Object.keys(sectionHeights).filter(section => !lockedSections[section]);
+          
+          // If no unlocked sections, we can't adjust anything
+          if (unlocked.length === 0) {
+            console.log('All sections locked, cannot adjust heights');
+            return false;
+          }
+          
+          // Adjust unlocked section heights proportionally to match available height
+          const unlockTotalHeight = unlocked.reduce((sum, section) => sum + sectionHeights[section], 0);
+          const scaleFactor = (availableHeight - (totalSectionHeight - unlockTotalHeight)) / unlockTotalHeight;
+          
+          // Distribute the difference proportionally among unlocked sections
+          unlocked.forEach(section => {
+            // Scale and round to nearest 0.5
+            sectionHeights[section] = roundToHalf(Math.max(1, sectionHeights[section] * scaleFactor));
+          });
+          
+          // Update input fields with adjusted values for unlocked sections
+          unlocked.forEach(section => {
+            if (section === 'title') titleHeightInput.value = sectionHeights.title;
+            else if (section === 'ingredients') ingredientsHeightInput.value = sectionHeights.ingredients;
+            else if (section === 'petFoodOnly') petFoodHeightInput.value = sectionHeights.petFoodOnly;
+            else if (section === 'storageInstructions') storageHeightInput.value = sectionHeights.storageInstructions;
+            else if (section === 'data') dataHeightInput.value = sectionHeights.data;
+            else if (section === 'price') priceHeightInput.value = sectionHeights.price;
+          });
+          
+          // Check again after rounding (may need final adjustment)
+          const newTotalHeight = Object.values(sectionHeights).reduce((sum, h) => sum + h, 0);
+          const heightDiff = newTotalHeight - availableHeight;
+          
+          if (Math.abs(heightDiff) > 0.01 && unlocked.length > 0) {
+            // If still not exact, adjust the largest unlocked section
+            const largestUnlockedSection = unlocked.reduce((a, b) => 
+              sectionHeights[a] > sectionHeights[b] ? a : b);
+            
+            sectionHeights[largestUnlockedSection] = roundToHalf(
+              Math.max(1, sectionHeights[largestUnlockedSection] - heightDiff)
+            );
+            
+            // Update the corresponding input field
+            if (largestUnlockedSection === 'title') titleHeightInput.value = sectionHeights.title;
+            else if (largestUnlockedSection === 'ingredients') ingredientsHeightInput.value = sectionHeights.ingredients;
+            else if (largestUnlockedSection === 'petFoodOnly') petFoodHeightInput.value = sectionHeights.petFoodOnly;
+            else if (largestUnlockedSection === 'storageInstructions') storageHeightInput.value = sectionHeights.storageInstructions;
+            else if (largestUnlockedSection === 'data') dataHeightInput.value = sectionHeights.data;
+            else if (largestUnlockedSection === 'price') priceHeightInput.value = sectionHeights.price;
+          }
+          
+          // Update the total height display again
+          updateTotalHeightDisplay(
+            Object.values(sectionHeights).reduce((sum, h) => sum + h, 0), 
+            availableHeight
+          );
+          
+          return false;
+        }
+        
+        return true;
+      }
+      
+      // Helper function to update the total height display
+      function updateTotalHeightDisplay(totalHeight, availableHeight) {
+        const totalHeightElement = document.getElementById('total-height');
+        const availableHeightElement = document.getElementById('available-height');
+        const labelTotalElement = document.getElementById('label-total');
+        
+        totalHeightElement.textContent = totalHeight.toFixed(1);
+        availableHeightElement.textContent = availableHeight.toFixed(1);
+        
+        if (Math.abs(totalHeight - availableHeight) > 0.01) {
+          labelTotalElement.classList.add('error');
+        } else {
+          labelTotalElement.classList.remove('error');
+        }
+      }
+      
+      // Preview button updates both preview and output code
+      updatePreviewBtn.addEventListener('click', function() {
+        // Get values from inputs
+        labelWidth = roundToHalf(parseFloat(labelWidthInput.value));
+        labelHeight = roundToHalf(parseFloat(labelHeightInput.value));
+        horizontalMargin = roundToHalf(parseFloat(marginInput.value));
+        contentStartY = roundToHalf(parseFloat(contentStartInput.value));
+        gutterHeight = roundToHalf(parseFloat(gutterHeightInput.value));
+        contentHeight = labelHeight - gutterHeight;
+        
+        // Update input fields with rounded values
+        labelWidthInput.value = labelWidth;
+        labelHeightInput.value = labelHeight;
+        marginInput.value = horizontalMargin;
+        contentStartInput.value = contentStartY;
+        gutterHeightInput.value = gutterHeight;
+        
+        sectionHeights.title = roundToHalf(parseFloat(titleHeightInput.value));
+        sectionHeights.ingredients = roundToHalf(parseFloat(ingredientsHeightInput.value));
+        sectionHeights.petFoodOnly = roundToHalf(parseFloat(petFoodHeightInput.value));
+        sectionHeights.storageInstructions = roundToHalf(parseFloat(storageHeightInput.value));
+        sectionHeights.data = roundToHalf(parseFloat(dataHeightInput.value));
+        sectionHeights.price = roundToHalf(parseFloat(priceHeightInput.value));
+        
+        // Update input fields with rounded values
+        titleHeightInput.value = sectionHeights.title;
+        ingredientsHeightInput.value = sectionHeights.ingredients;
+        petFoodHeightInput.value = sectionHeights.petFoodOnly;
+        storageHeightInput.value = sectionHeights.storageInstructions;
+        dataHeightInput.value = sectionHeights.data;
+        priceHeightInput.value = sectionHeights.price;
+        
+        // Validate total height to ensure it matches the label height minus gutter
+        validateTotalHeight();
+        
+        // Update the preview and output
+        updateLabelPreview();
+        updateOutputCode();
+      });
+      
+      // Overlay file upload
+      overlayUpload.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+          overlayImage = URL.createObjectURL(file);
+          updateLabelPreview();
+        }
+      });
+      
+      // Toggle overlay visibility
+      toggleOverlayBtn.addEventListener('click', function() {
+        designVisible = !designVisible;
+        updateLabelPreview();
+        toggleOverlayBtn.textContent = designVisible ? 'Hide Overlay' : 'Show Overlay';
+      });
+      
+      // Zoom controls
+      zoomInBtn.addEventListener('click', function() {
+        currentZoom += 0.1;
+        applyZoom();
+      });
+      
+      zoomOutBtn.addEventListener('click', function() {
+        currentZoom = Math.max(0.5, currentZoom - 0.1);
+        applyZoom();
+      });
+      
+      // Copy output to clipboard
+      copyBtn.addEventListener('click', function() {
+        const textToCopy = outputCode.textContent;
+        navigator.clipboard.writeText(textToCopy).then(function() {
+          copyBtn.textContent = 'Copied!';
+          setTimeout(function() {
+            copyBtn.textContent = 'Copy to Clipboard';
+          }, 2000);
+        });
+      });
+      
+      // Make section rulers draggable
+      function makeDraggable(element, sectionName) {
+        let startY, startTop;
+        
+        element.addEventListener('mousedown', startDrag);
+        
+        function startDrag(e) {
+          e.preventDefault();
+          startY = e.clientY;
+          startTop = parseInt(element.style.top);
+          
+          document.addEventListener('mousemove', drag);
+          document.addEventListener('mouseup', stopDrag);
+        }
+        
+        function drag(e) {
+          const dy = e.clientY - startY;
+          const newTop = startTop + dy;
+          
+          // Convert pixels to mm
+          const labelElement = labelContainer.querySelector('.label');
+          const labelHeight = labelElement.offsetHeight;
+          const mmPerPixel = parseFloat(labelHeightInput.value) / labelHeight;
+          
+          element.style.top = newTop + 'px';
+          // Round to nearest 0.5mm before updating
+          const positionInMm = roundToHalf(newTop * mmPerPixel);
+          element.setAttribute('data-position', positionInMm);
+          
+          // Update the corresponding input
+          updateSectionFromRuler(sectionName, positionInMm);
+        }
+        
+        function stopDrag() {
+          document.removeEventListener('mousemove', drag);
+          document.removeEventListener('mouseup', stopDrag);
+          updateOutputCode();
+        }
+      }
+      
+      function updateSectionFromRuler(sectionName, positionInMm) {
+        // Find which section boundary was moved and update the corresponding height
+        let oldPositionInMm;
+        
+        // Round the position to nearest 0.5mm
+        positionInMm = roundToHalf(positionInMm);
+        
+        switch(sectionName) {
+          case 'contentStart':
+            oldPositionInMm = contentStartY;
+            contentStartY = positionInMm;
+            contentStartInput.value = positionInMm;
+            
+            // Adjust the total available height and redistribute
+            redistributeAllSections();
+            break;
+            
+          case 'title':
+            // Calculate new title height
+            oldPositionInMm = contentStartY + sectionHeights.title;
+            const newTitleHeight = positionInMm - contentStartY;
+            
+            // Update title height
+            sectionHeights.title = roundToHalf(Math.max(1, newTitleHeight));
+            titleHeightInput.value = sectionHeights.title;
+            
+            // Redistribute remaining sections
+            redistributeAllSections(['title']);
+            break;
+            
+          case 'ingredients':
+            // Calculate new ingredients height
+            oldPositionInMm = contentStartY + sectionHeights.title + sectionHeights.ingredients;
+            const newIngredientsHeight = positionInMm - (contentStartY + sectionHeights.title);
+            
+            // Update ingredients height
+            sectionHeights.ingredients = roundToHalf(Math.max(1, newIngredientsHeight));
+            ingredientsHeightInput.value = sectionHeights.ingredients;
+            
+            // Redistribute remaining sections
+            redistributeAllSections(['title', 'ingredients']);
+            break;
+            
+          case 'petFoodOnly':
+            // Calculate new pet food height
+            oldPositionInMm = contentStartY + sectionHeights.title + sectionHeights.ingredients + sectionHeights.petFoodOnly;
+            const newPetFoodHeight = positionInMm - (contentStartY + sectionHeights.title + sectionHeights.ingredients);
+            
+            // Update pet food height
+            sectionHeights.petFoodOnly = roundToHalf(Math.max(1, newPetFoodHeight));
+            petFoodHeightInput.value = sectionHeights.petFoodOnly;
+            
+            // Redistribute remaining sections
+            redistributeAllSections(['title', 'ingredients', 'petFoodOnly']);
+            break;
+            
+          case 'storageInstructions':
+            // Calculate new storage height
+            oldPositionInMm = contentStartY + sectionHeights.title + sectionHeights.ingredients + 
+              sectionHeights.petFoodOnly + sectionHeights.storageInstructions;
+            const newStorageHeight = positionInMm - (contentStartY + sectionHeights.title + 
+              sectionHeights.ingredients + sectionHeights.petFoodOnly);
+            
+            // Update storage height
+            sectionHeights.storageInstructions = roundToHalf(Math.max(1, newStorageHeight));
+            storageHeightInput.value = sectionHeights.storageInstructions;
+            
+            // Redistribute remaining sections
+            redistributeAllSections(['title', 'ingredients', 'petFoodOnly', 'storageInstructions']);
+            break;
+            
+          case 'data':
+            // Calculate new data height
+            oldPositionInMm = contentStartY + sectionHeights.title + sectionHeights.ingredients + 
+              sectionHeights.petFoodOnly + sectionHeights.storageInstructions + sectionHeights.data;
+            const newDataHeight = positionInMm - (contentStartY + sectionHeights.title + 
+              sectionHeights.ingredients + sectionHeights.petFoodOnly + sectionHeights.storageInstructions);
+            
+            // Update data height
+            sectionHeights.data = roundToHalf(Math.max(1, newDataHeight));
+            dataHeightInput.value = sectionHeights.data;
+            
+            // Redistribute remaining sections
+            redistributeAllSections(['title', 'ingredients', 'petFoodOnly', 'storageInstructions', 'data']);
+            break;
+            
+          case 'price':
+            // Calculate new price height
+            oldPositionInMm = contentStartY + sectionHeights.title + sectionHeights.ingredients + 
+              sectionHeights.petFoodOnly + sectionHeights.storageInstructions + 
+              sectionHeights.data + sectionHeights.price;
+            const newPriceHeight = positionInMm - (contentStartY + sectionHeights.title + 
+              sectionHeights.ingredients + sectionHeights.petFoodOnly + 
+              sectionHeights.storageInstructions + sectionHeights.data);
+            
+            // Update price height
+            sectionHeights.price = roundToHalf(Math.max(1, newPriceHeight));
+            priceHeightInput.value = sectionHeights.price;
+            
+            // Redistribute all sections since this is the last one
+            redistributeAllSections(['price']);
+            break;
+        }
+        
+        // Update preview after any ruler changes
+        updateLabelPreview();
+        updateOutputCode();
+      }
+      
+      // Helper function to redistribute section heights to maintain total available height
+      function redistributeAllSections(excludeSections = []) {
+        // Calculate available height between content start and bottom gutter
+        const availableHeight = labelHeight - gutterHeight - contentStartY;
+        
+        // Calculate the total of all section heights
+        const totalSectionHeight = Object.values(sectionHeights).reduce((sum, h) => sum + h, 0);
+        
+        // Update the total height display
+        updateTotalHeightDisplay(totalSectionHeight, availableHeight);
+        
+        // Determine if we need to adjust (if we're over or under the available height)
+        const heightDifference = totalSectionHeight - availableHeight;
+        
+        if (Math.abs(heightDifference) > 0.01) { // If difference is significant
+          // Create list of sections to adjust, excluding those that shouldn't be changed or are locked
+          const sectionsToAdjust = ['title', 'ingredients', 'petFoodOnly', 'storageInstructions', 'data', 'price']
+            .filter(section => !excludeSections.includes(section) && !lockedSections[section]);
+          
+          if (sectionsToAdjust.length === 0) return; // No sections to adjust
+          
+          let remainingDifference = heightDifference;
+          
+          // Start from the top section and distribute the difference
+          for (const section of sectionsToAdjust) {
+            if (Math.abs(remainingDifference) < 0.01) break; // Stop if we've balanced it
+            
+            // Get current height of this section
+            const currentHeight = sectionHeights[section];
+            
+            // Calculate how much to adjust this section (limit to maintain minimum 1mm height)
+            const maxReduction = currentHeight - 1; // Ensure we leave at least 1mm
+            // How much this section should adjust (proportional to its current height)
+            const proportionalShare = remainingDifference * (currentHeight / totalSectionHeight);
+            const adjustment = remainingDifference > 0 ? 
+                               Math.min(proportionalShare, maxReduction) : // Reduce when total is too large 
+                               Math.max(proportionalShare, -10);          // Increase when total is too small
+            
+            // Apply the adjustment
+            if (Math.abs(adjustment) > 0.01) {
+              sectionHeights[section] = roundToHalf(Math.max(1, currentHeight - adjustment));
+              remainingDifference -= adjustment;
+              
+              // Update input field
+              if (section === 'title') titleHeightInput.value = sectionHeights.title;
+              else if (section === 'ingredients') ingredientsHeightInput.value = sectionHeights.ingredients;
+              else if (section === 'petFoodOnly') petFoodHeightInput.value = sectionHeights.petFoodOnly;
+              else if (section === 'storageInstructions') storageHeightInput.value = sectionHeights.storageInstructions;
+              else if (section === 'data') dataHeightInput.value = sectionHeights.data;
+              else if (section === 'price') priceHeightInput.value = sectionHeights.price;
+            }
+          }
+        }
+      }
+      
+      function applyZoom() {
+        const labelElement = labelContainer.querySelector('.label');
+        if (labelElement) {
+          labelElement.style.transform = `scale(${currentZoom})`;
+          labelElement.style.transformOrigin = 'top center';
+          labelElement.style.marginBottom = (labelElement.offsetHeight * (currentZoom - 1)) + 'px';
+        }
+      }
+      
+      function updateLabelPreview() {
+        // Recalculate contentHeight before using it
+        contentHeight = labelHeight - gutterHeight;
+        
+        // Calculate section positions
+        const titleY = contentStartY;
+        const ingredientsY = titleY + sectionHeights.title;
+        const petFoodOnlyY = ingredientsY + sectionHeights.ingredients;
+        const storageInstructionsY = petFoodOnlyY + sectionHeights.petFoodOnly;
+        const dataY = storageInstructionsY + sectionHeights.storageInstructions;
+        const priceY = dataY + sectionHeights.data;
+        
+        // Create a label container with background color
+        const contentWidth = labelWidth - (horizontalMargin * 2);
+        
+        // Clear previous content
+        labelContainer.innerHTML = '';
+        
+        // Create the label element
+        const labelElement = document.createElement('div');
+        labelElement.className = 'label';
+        labelElement.style.width = labelWidth + 'mm';
+        labelElement.style.height = labelHeight + 'mm';
+        labelElement.style.backgroundColor = 'white';
+        labelElement.style.position = 'relative';
+        labelElement.style.overflow = 'hidden';
+        
+        // Add label to container first to ensure it's in the DOM
+        labelContainer.appendChild(labelElement);
+        
+        // Add overlay if visible - make it non-draggable
+        if (designVisible) {
+          const overlay = document.createElement('div');
+          overlay.className = 'design-overlay';
+          overlay.style.position = 'absolute';
+          overlay.style.top = '0';
+          overlay.style.left = '0';
+          overlay.style.width = '100%';
+          overlay.style.height = '100%';
+          overlay.style.zIndex = '1';
+          overlay.style.pointerEvents = 'none'; // Prevent dragging of the overlay
+          
+          const overlayImg = document.createElement('img');
+          overlayImg.src = overlayImage;
+          overlayImg.style.width = '100%';
+          overlayImg.style.height = '100%';
+          overlayImg.style.objectFit = 'cover';
+          overlayImg.style.pointerEvents = 'none'; // Also prevent dragging of the image itself
+          overlayImg.onerror = function() {
+            console.error('Error loading overlay image:', overlayImage);
+            this.style.display = 'none';
+          };
+          
+          overlay.appendChild(overlayImg);
+          labelElement.appendChild(overlay);
+        }
+        
+        // Add left and right margin guides
+        addMarginGuides(labelElement, horizontalMargin);
+        
+        // Add colored section overlays
+        const sectionColors = {
+          title: 'rgba(255, 100, 100, 0.2)',        // Light red
+          ingredients: 'rgba(100, 255, 100, 0.2)',   // Light green
+          petFoodOnly: 'rgba(100, 100, 255, 0.2)',   // Light blue
+          storageInstructions: 'rgba(255, 255, 100, 0.2)', // Light yellow
+          data: 'rgba(255, 100, 255, 0.2)',         // Light magenta
+          price: 'rgba(100, 255, 255, 0.2)',         // Light cyan
+          gutter: 'rgba(200, 200, 200, 0.2)'         // Light gray
+        };
+        
+        // Create and add section overlays
+        addSectionOverlay(labelElement, 'title-section', titleY, sectionHeights.title, sectionColors.title);
+        addSectionOverlay(labelElement, 'ingredients-section', ingredientsY, sectionHeights.ingredients, sectionColors.ingredients);
+        addSectionOverlay(labelElement, 'pet-food-section', petFoodOnlyY, sectionHeights.petFoodOnly, sectionColors.petFoodOnly);
+        addSectionOverlay(labelElement, 'storage-section', storageInstructionsY, sectionHeights.storageInstructions, sectionColors.storageInstructions);
+        addSectionOverlay(labelElement, 'data-section', dataY, sectionHeights.data, sectionColors.data);
+        addSectionOverlay(labelElement, 'price-section', priceY, sectionHeights.price, sectionColors.price);
+        // Only add gutter if we have a valid position
+        if (contentHeight > 0) {
+          addSectionOverlay(labelElement, 'gutter-section', contentHeight, gutterHeight, sectionColors.gutter);
+        }
+        
+        // Add section rulers
+        addSectionRuler(labelElement, 'Content Start', contentStartY, 'contentStart');
+        addSectionRuler(labelElement, 'Title End', titleY + sectionHeights.title, 'title');
+        addSectionRuler(labelElement, 'Ingredients End', ingredientsY + sectionHeights.ingredients, 'ingredients');
+        addSectionRuler(labelElement, 'Pet Food End', petFoodOnlyY + sectionHeights.petFoodOnly, 'petFoodOnly');
+        addSectionRuler(labelElement, 'Storage End', storageInstructionsY + sectionHeights.storageInstructions, 'storageInstructions');
+        addSectionRuler(labelElement, 'Data End', dataY + sectionHeights.data, 'data');
+        addSectionRuler(labelElement, 'Price End', priceY + sectionHeights.price, 'price');
+        
+        // Apply zoom
+        applyZoom();
+        
+        // Update the section control colors to match overlays
+        updateSectionControlsColors(sectionColors);
+      }
+      
+      function addMarginGuides(labelElement, marginSize) {
+        // Left margin guide
+        const leftMargin = document.createElement('div');
+        leftMargin.className = 'margin-guide left-margin';
+        leftMargin.style.position = 'absolute';
+        leftMargin.style.top = '0';
+        leftMargin.style.left = '0';
+        leftMargin.style.width = marginSize + 'mm';
+        leftMargin.style.height = '100%';
+        leftMargin.style.borderRight = '1px dashed rgba(0, 0, 0, 0.3)';
+        leftMargin.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        leftMargin.style.zIndex = '2';
+        leftMargin.style.pointerEvents = 'none';
+        
+        // Right margin guide
+        const rightMargin = document.createElement('div');
+        rightMargin.className = 'margin-guide right-margin';
+        rightMargin.style.position = 'absolute';
+        rightMargin.style.top = '0';
+        rightMargin.style.right = '0';
+        rightMargin.style.width = marginSize + 'mm';
+        rightMargin.style.height = '100%';
+        rightMargin.style.borderLeft = '1px dashed rgba(0, 0, 0, 0.3)';
+        rightMargin.style.backgroundColor = 'rgba(0, 0, 0, 0.05)';
+        rightMargin.style.zIndex = '2';
+        rightMargin.style.pointerEvents = 'none';
+        
+        // Add labels
+        const leftLabel = document.createElement('div');
+        leftLabel.textContent = marginSize + 'mm';
+        leftLabel.style.position = 'absolute';
+        leftLabel.style.top = '5mm';
+        leftLabel.style.left = '50%';
+        leftLabel.style.transform = 'translateX(-50%)';
+        leftLabel.style.fontSize = '2mm';
+        leftLabel.style.color = '#666';
+        leftLabel.style.whiteSpace = 'nowrap';
+        
+        const rightLabel = document.createElement('div');
+        rightLabel.textContent = marginSize + 'mm';
+        rightLabel.style.position = 'absolute';
+        rightLabel.style.top = '5mm';
+        rightLabel.style.left = '50%';
+        rightLabel.style.transform = 'translateX(-50%)';
+        rightLabel.style.fontSize = '2mm';
+        rightLabel.style.color = '#666';
+        rightLabel.style.whiteSpace = 'nowrap';
+        
+        leftMargin.appendChild(leftLabel);
+        rightMargin.appendChild(rightLabel);
+        
+        labelElement.appendChild(leftMargin);
+        labelElement.appendChild(rightMargin);
+      }
+      
+      function addSectionOverlay(labelElement, className, top, height, color) {
+        const overlay = document.createElement('div');
+        overlay.className = 'section-overlay ' + className;
+        overlay.style.position = 'absolute';
+        overlay.style.top = top + 'mm';
+        overlay.style.left = '0';
+        overlay.style.width = '100%';
+        overlay.style.height = height + 'mm';
+        overlay.style.backgroundColor = color;
+        overlay.style.zIndex = '3'; // Lower than ruler z-index (10)
+        overlay.style.pointerEvents = 'none'; // Allow click-through
+        
+        // Add label in the middle of the section
+        const label = document.createElement('div');
+        label.textContent = className.replace('-section', '');
+        label.style.position = 'absolute';
+        label.style.top = '50%';
+        label.style.left = '50%';
+        label.style.transform = 'translate(-50%, -50%)';
+        label.style.color = '#333';
+        label.style.fontWeight = 'bold';
+        label.style.fontSize = '3mm';
+        label.style.textTransform = 'uppercase';
+        label.style.whiteSpace = 'nowrap';
+        label.style.textShadow = '0 0 2px white';
+        
+        overlay.appendChild(label);
+        labelElement.appendChild(overlay);
+      }
+      
+      function updateSectionControlsColors(sectionColors) {
+        // Update section control backgrounds to match overlays
+        const controlMap = {
+          'title-height': sectionColors.title,
+          'ingredients-height': sectionColors.ingredients,
+          'pet-food-height': sectionColors.petFoodOnly,
+          'storage-height': sectionColors.storageInstructions,
+          'data-height': sectionColors.data,
+          'price-height': sectionColors.price,
+          'gutter-height': sectionColors.gutter
+        };
+        
+        // Apply colors to section controls
+        for (const [id, color] of Object.entries(controlMap)) {
+          const control = document.getElementById(id);
+          if (control) {
+            const parentDiv = control.closest('.section-control');
+            if (parentDiv) {
+              parentDiv.style.backgroundColor = color;
+              parentDiv.style.borderLeft = '4px solid ' + color.replace('0.2)', '0.8)');
+            }
+          }
+        }
+      }
+      
+      function addSectionRuler(labelElement, label, position, sectionName) {
+        const ruler = document.createElement('div');
+        ruler.className = 'section-ruler';
+        ruler.setAttribute('data-label', label);
+        ruler.setAttribute('data-position', position);
+        ruler.style.top = position + 'mm';
+        
+        labelElement.appendChild(ruler);
+        
+        // Make ruler draggable
+        makeDraggable(ruler, sectionName);
+      }
+      
+      function updateOutputCode() {
+        // Calculate section positions
+        const titleY = contentStartY;
+        const ingredientsY = titleY + sectionHeights.title;
+        const petFoodOnlyY = ingredientsY + sectionHeights.ingredients;
+        const storageInstructionsY = petFoodOnlyY + sectionHeights.petFoodOnly;
+        const dataY = storageInstructionsY + sectionHeights.storageInstructions;
+        const priceY = dataY + sectionHeights.data;
+        
+        // Generate JS code for label dimensions
+        const code = `// Label dimensions (in mm)
+const labelWidth = ${labelWidth}; // Width of the label in mm
+const labelHeight = ${labelHeight}; // Height of the label in mm (including the bottom area)
+const gutterHeight = ${gutterHeight}; // Height of the bottom gutter area
+const contentHeight = labelHeight - gutterHeight; // Height of the content area
+
+// Margins (in mm)
+const horizontalMargin = ${horizontalMargin}; // Left and right margins
+const contentWidth = labelWidth - (horizontalMargin * 2); // Width of content area with margins
+
+// Section heights (in mm)
+const productTitleHeight = ${sectionHeights.title}; // Product title section height
+const ingredientsHeight = ${sectionHeights.ingredients}; // Ingredients section height
+const petFoodOnlyHeight = ${sectionHeights.petFoodOnly}; // "Pet Food Only" section height
+const storageInstructionsHeight = ${sectionHeights.storageInstructions}; // Storage instructions section height
+const dataHeight = ${sectionHeights.data}; // Date and weight section height
+const priceHeight = ${sectionHeights.price}; // Price section height
+
+// Calculate section positions
+const contentStartY = ${contentStartY}; // Content starts at ${contentStartY}mm from top
+const titleY = contentStartY;
+const ingredientsY = titleY + productTitleHeight;
+const petFoodOnlyY = ingredientsY + ingredientsHeight;
+const storageInstructionsY = petFoodOnlyY + petFoodOnlyHeight;
+const dataY = storageInstructionsY + storageInstructionsHeight;
+const priceY = dataY + dataHeight;`;
+        
+        outputCode.textContent = code;
+      }
+      
+      // When the page loads, ensure all values are rounded to 0.5mm
+      document.addEventListener('DOMContentLoaded', function() {
+        // Round all default values
+        labelWidth = roundToHalf(labelWidth);
+        labelHeight = roundToHalf(labelHeight);
+        horizontalMargin = roundToHalf(horizontalMargin);
+        contentStartY = roundToHalf(contentStartY);
+        gutterHeight = roundToHalf(gutterHeight);
+        contentHeight = roundToHalf(contentHeight);
+        
+        // Round all section heights
+        Object.keys(sectionHeights).forEach(key => {
+          sectionHeights[key] = roundToHalf(sectionHeights[key]);
+        });
+        
+        // Update input fields with rounded values
+        labelWidthInput.value = labelWidth;
+        labelHeightInput.value = labelHeight;
+        marginInput.value = horizontalMargin;
+        contentStartInput.value = contentStartY;
+        gutterHeightInput.value = gutterHeight;
+        
+        titleHeightInput.value = sectionHeights.title;
+        ingredientsHeightInput.value = sectionHeights.ingredients;
+        petFoodHeightInput.value = sectionHeights.petFoodOnly;
+        storageHeightInput.value = sectionHeights.storageInstructions;
+        dataHeightInput.value = sectionHeights.data;
+        priceHeightInput.value = sectionHeights.price;
+        
+        // Validate total height
+        validateTotalHeight();
+        
+        // Initialize the preview and code output
+        updateLabelPreview();
+        updateOutputCode();
+        
+        // Set up section lock buttons
+        document.querySelectorAll('.section-lock').forEach(button => {
+          button.addEventListener('click', function() {
+            const section = this.getAttribute('data-section');
+            lockedSections[section] = !lockedSections[section];
+            
+            if (lockedSections[section]) {
+              this.textContent = '🔒';
+              this.classList.add('locked');
+              this.closest('.section-control').classList.add('locked');
+            } else {
+              this.textContent = '🔓';
+              this.classList.remove('locked');
+              this.closest('.section-control').classList.remove('locked');
+            }
+            
+            // Recalculate heights when lock status changes
+            validateTotalHeight();
+            updateLabelPreview();
+            updateOutputCode();
+          });
+        });
+      });
+      
+      // Add a button to copy the dimensions to renderer.js
+      document.addEventListener('DOMContentLoaded', function() {
+        // Add a button to export dimensions to renderer.js
+        const exportButton = document.createElement('button');
+        exportButton.id = 'export-dimensions-btn';
+        exportButton.textContent = 'Export to renderer.js';
+        exportButton.style.marginTop = '10px';
+        exportButton.style.backgroundColor = '#9ba03b';
+        exportButton.style.color = 'white';
+        
+        // Add to output panel
+        const outputPanel = document.querySelector('.output-panel');
+        outputPanel.appendChild(exportButton);
+        
+        // Add click handler
+        exportButton.addEventListener('click', function() {
+          if (window.require) {
+            const { ipcRenderer } = require('electron');
+            
+            // Collect all current dimensions
+            const dimensions = {
+              labelWidth,
+              labelHeight,
+              horizontalMargin,
+              contentStartY,
+              gutterHeight,
+              productTitleHeight: sectionHeights.title,
+              ingredientsHeight: sectionHeights.ingredients,
+              petFoodOnlyHeight: sectionHeights.petFoodOnly,
+              storageInstructionsHeight: sectionHeights.storageInstructions,
+              dataHeight: sectionHeights.data,
+              priceHeight: sectionHeights.price
+            };
+            
+            // Send to main process
+            ipcRenderer.send('export-dimensions', dimensions);
+            
+            // Listen for result
+            ipcRenderer.once('export-dimensions-result', (event, result) => {
+              if (result.success) {
+                showNotification('Dimensions exported to renderer.js successfully');
+              } else {
+                showNotification('Error exporting dimensions: ' + result.error);
+              }
+            });
+          } else {
+            showNotification('Electron not available');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html> 
