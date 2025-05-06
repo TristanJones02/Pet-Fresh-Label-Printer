@@ -25,7 +25,15 @@ contextBridge.exposeInMainWorld(
       return ipcRenderer.invoke('load-products-from-cache');
     },
     
-    // Add more IPC functions as needed
+    // Settings management
+    openSettings: () => {
+      return ipcRenderer.invoke('open-settings');
+    },
+    closeSettings: () => {
+      return ipcRenderer.invoke('close-settings');
+    },
+    
+    // App info
     getAppVersion: () => ipcRenderer.invoke('get-app-version'),
   }
 ); 

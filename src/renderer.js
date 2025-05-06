@@ -26,6 +26,18 @@ document.addEventListener('DOMContentLoaded', async () => {
   // Settings dialog state
   let isSettingsOpen = false;
   
+  // Function to open settings in a new window
+  function openSettingsWindow() {
+    // Use IPC to request opening settings window
+    window.api.openSettings()
+      .then(() => {
+        console.log('Settings window opened');
+      })
+      .catch(err => {
+        console.error('Error opening settings:', err);
+      });
+  }
+  
   try {
     const response = await fetch('../src/data/products.json');
     productData = await response.json();
@@ -234,21 +246,6 @@ document.addEventListener('DOMContentLoaded', async () => {
             </div>
           </div>
         </div>
-        
-        <!-- Settings Dialog (initially hidden) -->
-        ${isSettingsOpen ? `
-        <div id="settingsDialog" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); display: flex; justify-content: center; align-items: center; z-index: 1000;">
-          <div style="width: 80%; max-width: 800px; background-color: white; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); padding: 20px; position: relative;">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
-              <h2 style="margin: 0; font-size: 24px;">Settings</h2>
-              <button id="closeSettings" style="background: none; border: none; font-size: 24px; cursor: pointer; color: #666;">&times;</button>
-            </div>
-            <div style="padding: 20px 0;">
-              <p style="color: #666; text-align: center;">Settings panel content will go here.</p>
-            </div>
-          </div>
-        </div>
-        ` : ''}
       </div>
     `;
     
@@ -926,8 +923,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const settingsButton = document.getElementById('settingsButton');
     if (settingsButton) {
       settingsButton.addEventListener('click', function() {
-        isSettingsOpen = true;
-        renderUI();
+        openSettingsWindow();
       });
       
       // Add hover effect
