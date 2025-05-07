@@ -1,11 +1,11 @@
 {
   "name": "pet-fresh-label-printer",
   "version": "0.2.5",
-  "main": "main.js",
+  "main": "src/main.js",
   "scripts": {
-    "start": "electron .",
-    "dev": "NODE_ENV=development electron .",
-    "build": "electron-builder",
+    "start": "webpack && electron .",
+    "dev": "concurrently \"webpack --watch\" \"NODE_ENV=development electron .\"",
+    "build": "webpack --mode production && electron-builder",
     "label-editor": "electron src/tools/label-editor/editor.js"
   },
   "keywords": [],
@@ -21,12 +21,21 @@
     "electron": "^36.1.0",
     "electron-builder": "^26.0.12",
     "jsbarcode": "^3.11.6",
+    "puppeteer": "^21.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/preset-env": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^9.2.1",
     "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
     "electron-reload": "^2.0.0-alpha.1",
-    "wait-on": "^8.0.3"
+    "style-loader": "^4.0.0",
+    "wait-on": "^8.0.3",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
   }
 }

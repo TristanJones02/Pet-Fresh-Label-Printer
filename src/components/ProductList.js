@@ -1,5 +1,5 @@
-const React = require('react');
-const { 
+import React from 'react';
+import { 
   Box, 
   Paper,  
   Typography, 
@@ -7,9 +7,10 @@ const {
   Card,
   CardContent,
   Divider
-} = require('@mui/material');
+} from '@mui/material';
+import ScaleIcon from '@mui/icons-material/Scale';
 
-function ProductList({ products, selectedProduct, onProductSelect }) {
+function ProductList({ products, selectedProduct, onProductSelect, searchTerm, selectedCategory }) {
   // Group products by type
   const groupedProducts = products.reduce((acc, product) => {
     if (!acc[product.type]) {
@@ -26,6 +27,17 @@ function ProductList({ products, selectedProduct, onProductSelect }) {
     onProductSelect(product);
   };
   
+  // Determine the header text based on context
+  const getHeaderText = () => {
+    if (searchTerm) {
+      return `RESULTS: ${searchTerm}`;
+    } else if (selectedCategory) {
+      return selectedCategory.name;
+    } else {
+      return 'Products';
+    }
+  };
+  
   return (
     <Paper 
       elevation={3} 
@@ -38,7 +50,7 @@ function ProductList({ products, selectedProduct, onProductSelect }) {
     >
       <Box sx={{ p: 2, borderBottom: '1px solid #e0e0e0' }}>
         <Typography variant="h6">
-          Products
+          {getHeaderText()}
         </Typography>
       </Box>
       
@@ -82,43 +94,100 @@ function ProductList({ products, selectedProduct, onProductSelect }) {
               
               <Grid container spacing={2}>
                 {groupedProducts[type].map((product) => (
-                  <Grid item xs={6} sm={4} key={product.id}>
+                  <Grid 
+                    key={product.id}
+                    sx={{ 
+                      width: '33.33%',
+                      padding: 1
+                    }}
+                  >
                     <Card 
-                      elevation={1}
+                      elevation={2}
                       onClick={() => handleProductClick(product)}
                       sx={{ 
                         cursor: 'pointer',
+                        height: '100%',
+                        display: 'flex',
+                        flexDirection: 'column',
                         backgroundColor: selectedProduct && selectedProduct.id === product.id ? '#9ba03b' : 'white',
                         color: selectedProduct && selectedProduct.id === product.id ? 'white' : 'inherit',
                         transition: 'all 0.2s ease',
+                        border: selectedProduct && selectedProduct.id === product.id 
+                          ? '2px solid #7a7e2e' 
+                          : '1px solid #e0e0e0',
                         '&:hover': {
                           transform: 'translateY(-2px)',
                           boxShadow: 3,
+                          borderColor: selectedProduct && selectedProduct.id === product.id 
+                            ? '#7a7e2e' 
+                            : '#9ba03b',
                         },
+                        minHeight: '130px', // Increased for larger content
                       }}
                     >
-                      <CardContent>
+                      <CardContent sx={{ 
+                        p: 2, 
+                        flexGrow: 1,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        justifyContent: 'center',
+                        textAlign: 'center'
+                      }}>
                         <Typography 
-                          variant="subtitle1" 
+                          variant="h6" 
                           sx={{ 
                             fontWeight: 'bold', 
-                            mb: 1, 
-                            overflow: 'hidden', 
-                            textOverflow: 'ellipsis', 
-                            whiteSpace: 'nowrap' 
+                            mb: 1.5,
+                            fontSize: '1.3rem', // Increased from 1.1rem
+                            lineHeight: 1.2,
+                            overflow: 'hidden',
+                            display: '-webkit-box',
+                            WebkitLineClamp: 2,
+                            WebkitBoxOrient: 'vertical',
+                            textOverflow: 'ellipsis',
+                            height: '2.4em'
                           }}
                         >
                           {product.name}
                         </Typography>
-                        <Typography 
-                          variant="body2" 
+                        
+                        {/* Price and Weight on same line with icon for weight only */}
+                        <Box 
                           sx={{ 
-                            mb: 0.5,
-                            color: selectedProduct && selectedProduct.id === product.id ? 'rgba(255,255,255,0.8)' : 'text.secondary'
+                            display: 'flex', 
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            gap: 2,
+                            color: selectedProduct && selectedProduct.id === product.id ? 'rgba(255,255,255,0.9)' : 'text.secondary'
                           }}
                         >
-                          {product.weight} - {product.price}
-                        </Typography>
+                          <Typography 
+                            variant="body1" 
+                            sx={{ 
+                              fontWeight: 'medium',
+                            }}
+                          >
+                            {product.price}
+                          </Typography>
+                          
+                          <Box 
+                            sx={{ 
+                              display: 'flex', 
+                              alignItems: 'center',
+                              gap: 0.5
+                            }}
+                          >
+                            <ScaleIcon fontSize="small" />
+                            <Typography 
+                              variant="body1" 
+                              sx={{ 
+                                fontWeight: 'medium',
+                              }}
+                            >
+                              {product.weight}
+                            </Typography>
+                          </Box>
+                        </Box>
                       </CardContent>
                     </Card>
                   </Grid>
@@ -138,4 +207,4 @@ function ProductList({ products, selectedProduct, onProductSelect }) {
   );
 }
 
-module.exports = ProductList; 
+export default ProductList; 

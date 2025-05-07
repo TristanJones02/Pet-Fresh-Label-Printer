@@ -15,6 +15,12 @@
       height: 100vh;
       display: flex;
       flex-direction: column;
+      animation: fadeIn 0.2s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     
     .header {
@@ -25,6 +31,12 @@
       justify-content: space-between;
       align-items: center;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      animation: slideDown 0.2s ease-out;
+    }
+    
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
     }
     
     .header h1 {
@@ -41,17 +53,27 @@
       cursor: pointer;
       padding: 8px 16px;
       border-radius: 4px;
-      transition: background-color 0.2s;
+      transition: background-color 0.2s, transform 0.1s;
     }
     
     .close-button:hover {
       background-color: rgba(255,255,255,0.2);
     }
     
+    .close-button:active {
+      transform: scale(0.95);
+    }
+    
     .content {
       flex: 1;
       padding: 20px;
       overflow-y: auto;
+      animation: fadeInUp 0.3s ease-out;
+    }
+    
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     
     .settings-section {
@@ -60,6 +82,12 @@
       padding: 20px;
       margin-bottom: 20px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    
+    .settings-section:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
     }
     
     .settings-section h2 {
@@ -105,6 +133,21 @@
   <script>
     // Close button handler
     document.getElementById('closeButton').addEventListener('click', () => {
+      // Add exit animation
+      document.body.style.animation = 'fadeOut 0.15s ease-in forwards';
+      
+      // Create exit animation
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes fadeOut {
+          from { opacity: 1; transform: translateY(0); }
+          to { opacity: 0; transform: translateY(10px); }
+        }
+      `;
+      document.head.appendChild(style);
+      
+      // Tell the main process to start its fade-out animation IMMEDIATELY
+      // but the main process will handle the actual window closing
       window.api.closeSettings();
     });
   </script>

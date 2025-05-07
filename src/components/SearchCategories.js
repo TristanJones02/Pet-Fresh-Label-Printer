@@ -1,20 +1,21 @@
-const React = require('react');
-const { 
+import React from 'react';
+import { 
   Box, 
   Paper, 
   TextField, 
   List, 
   ListItem, 
   ListItemText, 
+  ListItemButton,
   Typography, 
   Divider,
   IconButton
-} = require('@mui/material');
-const {
-  Search: SearchIcon,
-  ExpandMore: ExpandMoreIcon,
-  ExpandLess: ExpandLessIcon
-} = require('@mui/icons-material');
+} from '@mui/material';
+import {
+  Search as SearchIcon,
+  ExpandMore as ExpandMoreIcon,
+  ExpandLess as ExpandLessIcon
+} from '@mui/icons-material';
 
 function SearchCategories({ categories, selectedCategory, searchTerm, onSearch, onCategorySelect }) {
   const handleSearchChange = (event) => {
@@ -30,6 +31,7 @@ function SearchCategories({ categories, selectedCategory, searchTerm, onSearch, 
     }
   };
   
+  
   return (
     <Paper 
       elevation={3} 
@@ -37,11 +39,12 @@ function SearchCategories({ categories, selectedCategory, searchTerm, onSearch, 
         height: '100%', 
         display: 'flex', 
         flexDirection: 'column',
-        overflow: 'hidden'
+        overflow: 'hidden',
+        overflowX: 'hidden',
       }}
     >
       {/* Search Section */}
-      <Box sx={{ p: 2, borderBottom: '1px solid #e0e0e0' }}>
+      <Box sx={{ p: 2, borderBottom: '1px solid #e0e0e0', overflowX: 'hidden' }}>
         <Typography variant="h6" gutterBottom>
           Search
         </Typography>
@@ -60,58 +63,82 @@ function SearchCategories({ categories, selectedCategory, searchTerm, onSearch, 
         />
       </Box>
       
-      {/* Categories Section */}
-      <Box sx={{ p: 2, borderBottom: '1px solid #e0e0e0' }}>
-        <Typography variant="h6" gutterBottom>
-          Categories
-        </Typography>
-      </Box>
-      
       {/* Category List */}
       <List 
+        className="category-list"
         sx={{ 
+          paddingTop:'0px',
           flexGrow: 1, 
-          overflow: 'auto', 
+          overflowY: 'auto',
+          overflowX: 'hidden',
+          // Hide vertical scrollbar for Webkit browsers
           '&::-webkit-scrollbar': {
-            width: '8px',
+            width: 0,
+            background: 'transparent',
           },
-          '&::-webkit-scrollbar-track': {
-            background: '#f1f1f1',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            background: '#888',
-            borderRadius: '4px',
-          },
-          '&::-webkit-scrollbar-thumb:hover': {
-            background: '#555',
-          },
+          // Hide vertical scrollbar for Firefox
+          scrollbarWidth: 'none',
+          // Hide vertical scrollbar for IE/Edge
+          msOverflowStyle: 'none',
         }}
       >
         {categories.map((category) => (
-          <ListItem 
+          <ListItemButton 
             key={category.id}
-            button
             onClick={() => handleCategoryClick(category)}
             selected={selectedCategory && selectedCategory.id === category.id}
             sx={{ 
-              borderLeft: `4px solid ${category.color}`,
-              backgroundColor: selectedCategory && selectedCategory.id === category.id ? `${category.color}20` : 'transparent',
+              position: 'relative',
+              backgroundColor: category.color, // Keep original color always
+              color: 'white',
+              padding: '15px',
+              textAlign: 'center',
+              fontWeight: 'bold',
+              fontSize: '18px',
+              marginBottom: '2px',
+              cursor: 'pointer',
+              clipPath: selectedCategory && selectedCategory.id === category.id 
+                ? 'polygon(0 0, calc(100% - 30px) 0, 100% 50%, calc(100% - 30px) 100%, 0 100%)'
+                : 'none',
               '&:hover': {
-                backgroundColor: `${category.color}10`,
+                backgroundColor: category.color, // Override default hover background
+                filter: 'brightness(1.1)', // Just add slight brightness on hover
               },
+              '&.Mui-selected': {
+                backgroundColor: category.color, // Keep the same background when selected
+              },
+              '&.Mui-selected:hover': {
+                backgroundColor: category.color, // Keep the same background when selected and hovered
+                filter: 'brightness(1.1)', // Just add slight brightness on hover
+              },
+              '&::after': selectedCategory && selectedCategory.id === category.id ? {
+                content: '""',
+                position: 'absolute',
+                right: 0,
+                top: 0,
+                width: 0,
+                height: 0,
+                borderTop: '25px solid white',
+                borderLeft: '15px solid transparent',
+                transform: 'translateY(0)'
+              } : {}
             }}
           >
-            <ListItemText primary={category.name} />
-            {selectedCategory && selectedCategory.id === category.id ? (
-              <ExpandMoreIcon />
-            ) : (
-              <ExpandLessIcon sx={{ opacity: 0.5 }} />
-            )}
-          </ListItem>
+            <ListItemText 
+              primary={category.name} 
+              sx={{ 
+                textAlign: 'center',
+                '& .MuiTypography-root': {
+                  fontWeight: 'bold',
+                  fontSize: '18px'
+                }
+              }}
+            />
+          </ListItemButton>
         ))}
       </List>
     </Paper>
   );
 }
 
-module.exports = SearchCategories; 
+export default SearchCategories; 

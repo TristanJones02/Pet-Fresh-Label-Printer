@@ -1,0 +1,50 @@
+{
+  "width": 60,
+  "height": 162,
+  "horizontalMargin": 5,
+  "verticalMargin": 5,
+  "contentStartY": 50,
+  "productTitleHeight": 20.5,
+  "ingredientsY": 70.5,
+  "ingredientsHeight": 15.5,
+  "petFoodOnlyY": 86,
+  "petFoodOnlyHeight": 6.5,
+  "storageInstructionsY": 92.5,
+  "storageInstructionsHeight": 12.5,
+  "dataY": 105,
+  "dataHeight": 19.5,
+  "priceY": 124.5,
+  "priceHeight": 3,
+  "gutterHeight": 34.5,
+  "dpi": 300,
+  "barcode": {
+    "width": 28,
+    "height": 15.5
+  },
+  "fonts": {
+    "productTitle": {
+      "size": 7,
+      "lineHeight": 1.15
+    },
+    "ingredients": {
+      "headerSize": 3.5,
+      "contentSize": 2.5,
+      "lineHeight": 3
+    },
+    "petFoodOnly": {
+      "size": 5
+    },
+    "storage": {
+      "size": 2.5,
+      "lineHeight": 3
+    },
+    "data": {
+      "labelSize": 2.2,
+      "valueSize": 2.5
+    },
+    "price": {
+      "valueSize": 5.5,
+      "labelSize": 2.2
+    }
+  }
+} 

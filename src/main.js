@@ -2,13 +2,10 @@ const { app, BrowserWindow, ipcMain } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const ejs = require('ejs');
+const os = require('os');
 
-// Define label dimensions in mm
-const LABEL_CONFIG = {
-  width: 62,  // mm
-  height: 29, // mm
-  dpi: 300,   // dots per inch
-};
+// Import label config from the common configuration file
+const LABEL_CONFIG = require('./label/config.json');
 
 // Keep a global reference of the window object
 let mainWindow;
@@ -167,6 +164,128 @@ ipcMain.handle('print-labels', async (event, { productData, quantity = 1, printe
   }
 });
 
+// HTML-to-PDF conversion for label printing
+ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = null }) => {
+  try {
+    const startTime = Date.now();
+    const timing = {
+      htmlLoad: 0,
+      pdfGeneration: 0,
+      fileSave: 0,
+      total: 0
+    };
+    
+    // Create a temporary directory for the HTML file
+    const tempDir = path.join(os.tmpdir(), 'pet-fresh-labels');
+    if (!fs.existsSync(tempDir)) {
+      fs.mkdirSync(tempDir, { recursive: true });
+    }
+    
+    // Create a temporary HTML file
+    const tempHtmlPath = path.join(tempDir, `label-${Date.now()}.html`);
+    fs.writeFileSync(tempHtmlPath, html, 'utf-8');
+    
+    // Record HTML load time start
+    const htmlLoadStart = Date.now();
+    
+    // Create an offscreen BrowserWindow to load the HTML
+    const offscreenWindow = new BrowserWindow({
+      width: LABEL_CONFIG.width * 4, // Scale up for better quality
+      height: LABEL_CONFIG.height * 4,
+      show: false,
+      webPreferences: {
+        offscreen: true,
+        enableRemoteModule: false,
+        nodeIntegration: false,
+        contextIsolation: true
+      }
+    });
+    
+    // Load the HTML file
+    await offscreenWindow.loadFile(tempHtmlPath);
+    timing.htmlLoad = Date.now() - htmlLoadStart;
+    
+    // Calculate PDF options
+    const pdfOptions = {
+      printBackground: true,
+      pageSize: {
+        width: LABEL_CONFIG.width * 1000, // microns
+        height: LABEL_CONFIG.height * 1000 // microns
+      },
+      margins: {
+        top: 0,
+        bottom: 0,
+        left: 0,
+        right: 0
+      },
+      preferCSSPageSize: true
+    };
+    
+    // Determine output path
+    let outputPath = savePath;
+    if (!outputPath) {
+      // Create filename with timestamp
+      const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
+      outputPath = path.join(tempDir, `label-${timestamp}.pdf`);
+    }
+    
+    // Generate PDF 
+    const pdfGenStart = Date.now();
+    const pdfData = await offscreenWindow.webContents.printToPDF(pdfOptions);
+    timing.pdfGeneration = Date.now() - pdfGenStart;
+    
+    // Save PDF to file
+    const fileSaveStart = Date.now();
+    fs.writeFileSync(outputPath, pdfData);
+    timing.fileSave = Date.now() - fileSaveStart;
+    
+    // Close the offscreen window
+    offscreenWindow.close();
+    
+    // If we need multiple copies, duplicate the PDF file
+    const pdfPaths = [outputPath];
+    
+    if (quantity > 1) {
+      for (let i = 1; i < quantity; i++) {
+        const copyPath = outputPath.replace('.pdf', `-${i+1}.pdf`);
+        fs.copyFileSync(outputPath, copyPath);
+        pdfPaths.push(copyPath);
+      }
+    }
+    
+    // Clean up temporary HTML file
+    try {
+      fs.unlinkSync(tempHtmlPath);
+    } catch (err) {
+      console.error('Error removing temp HTML file:', err);
+    }
+    
+    // Calculate total time
+    timing.total = Date.now() - startTime;
+    
+    // Log timing information and file path
+    console.log(`Generated PDF label in ${timing.total}ms`);
+    console.log(`- HTML load: ${timing.htmlLoad}ms`);
+    console.log(`- PDF generation: ${timing.pdfGeneration}ms`);
+    console.log(`- File save: ${timing.fileSave}ms`);
+    console.log(`PDF saved to: ${outputPath}`);
+    
+    return {
+      success: true,
+      pdfPath: outputPath,
+      pdfPaths,
+      timing,
+      message: `Generated ${quantity} label PDF(s)`
+    };
+  } catch (error) {
+    console.error('Error generating PDF label:', error);
+    return {
+      success: false,
+      error: error.message
+    };
+  }
+});
+
 // Get available printers
 ipcMain.handle('get-printers', async () => {
   try {
@@ -179,6 +298,18 @@ ipcMain.handle('get-printers', async () => {
     ];
   } catch (error) {
     console.error('Error getting printers:', error);
+    return {
+      error: error.message
+    };
+  }
+});
+
+// Get label configuration
+ipcMain.handle('get-label-config', async () => {
+  try {
+    return LABEL_CONFIG;
+  } catch (error) {
+    console.error('Error getting label config:', error);
     return {
       error: error.message
     };

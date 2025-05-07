@@ -2,47 +2,69 @@ const { app, BrowserWindow } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
-// Function to extract label dimensions from renderer.js
-function extractLabelDimensionsFromRenderer() {
+// Function to extract label dimensions from config.json
+function extractLabelDimensionsFromConfig() {
   try {
-    // Read the renderer.js file
-    const rendererPath = path.join(__dirname, '../../renderer.js');
-    const rendererContent = fs.readFileSync(rendererPath, 'utf8');
+    // Read the config.json file
+    const configPath = path.join(__dirname, '../../../src/label/config.json');
+    const configContent = fs.readFileSync(configPath, 'utf8');
     
-    // Extract label dimensions using regex
+    // Parse the JSON content
+    const config = JSON.parse(configContent);
+    
+    // Flatten nested properties for easier editing in the UI
     const dimensions = {
-      labelWidth: extractValue(rendererContent, 'const labelWidth = ([0-9.]+);'),
-      labelHeight: extractValue(rendererContent, 'const labelHeight = ([0-9.]+);'),
-      horizontalMargin: extractValue(rendererContent, 'const horizontalMargin = ([0-9.]+);'),
-      gutterHeight: extractValue(rendererContent, 'const gutterHeight = ([0-9.]+);'),
-      productTitleHeight: extractValue(rendererContent, 'const productTitleHeight = ([0-9.]+);'),
-      ingredientsHeight: extractValue(rendererContent, 'const ingredientsHeight = ([0-9.]+);'),
-      petFoodOnlyHeight: extractValue(rendererContent, 'const petFoodOnlyHeight = ([0-9.]+);'),
-      storageInstructionsHeight: extractValue(rendererContent, 'const storageInstructionsHeight = ([0-9.]+);'),
-      dataHeight: extractValue(rendererContent, 'const dataHeight = ([0-9.]+);'),
-      priceHeight: extractValue(rendererContent, 'const priceHeight = ([0-9.]+);'),
-      contentStartY: extractValue(rendererContent, 'const contentStartY = ([0-9.]+);')
+      labelWidth: config.width,
+      labelHeight: config.height,
+      horizontalMargin: config.horizontalMargin,
+      verticalMargin: config.verticalMargin,
+      contentStartY: config.contentStartY,
+      productTitleHeight: config.productTitleHeight,
+      ingredientsY: config.ingredientsY,
+      ingredientsHeight: config.ingredientsHeight,
+      petFoodOnlyY: config.petFoodOnlyY,
+      petFoodOnlyHeight: config.petFoodOnlyHeight,
+      storageInstructionsY: config.storageInstructionsY,
+      storageInstructionsHeight: config.storageInstructionsHeight,
+      dataY: config.dataY,
+      dataHeight: config.dataHeight,
+      priceY: config.priceY,
+      priceHeight: config.priceHeight,
+      barcodeWidth: config.barcode?.width || 28,
+      barcodeHeight: config.barcode?.height || 15.5
     };
     
     return dimensions;
   } catch (error) {
-    console.error('Error extracting dimensions:', error);
-    return null;
+    console.error('Error extracting dimensions from config.json:', error);
+    
+    // Return default dimensions if we can't read the file
+    return {
+      labelWidth: 60,
+      labelHeight: 162,
+      horizontalMargin: 5,
+      verticalMargin: 5,
+      contentStartY: 50,
+      productTitleHeight: 20.5,
+      ingredientsY: 70.5,
+      ingredientsHeight: 15.5,
+      petFoodOnlyY: 86,
+      petFoodOnlyHeight: 6.5,
+      storageInstructionsY: 92.5,
+      storageInstructionsHeight: 12.5,
+      dataY: 105,
+      dataHeight: 19.5,
+      priceY: 124.5,
+      priceHeight: 3,
+      barcodeWidth: 28,
+      barcodeHeight: 15.5
+    };
   }
-}
-
-// Helper function to extract numeric values from string using regex
-function extractValue(content, pattern) {
-  const match = content.match(new RegExp(pattern));
-  if (match && match[1]) {
-    return parseFloat(match[1]);
-  }
-  return null;
 }
 
 function createWindow() {
-  // Extract label dimensions from renderer.js
-  const dimensions = extractLabelDimensionsFromRenderer();
+  // Extract label dimensions from config
+  const dimensions = extractLabelDimensionsFromConfig();
   
   // Create the browser window
   const mainWindow = new BrowserWindow({
@@ -61,6 +83,10 @@ function createWindow() {
   mainWindow.webContents.on('did-finish-load', () => {
     if (dimensions) {
       mainWindow.webContents.send('label-dimensions', dimensions);
+    } else {
+      mainWindow.webContents.send('dimensions-error', {
+        message: 'Could not load dimensions from config'
+      });
     }
   });
 
@@ -76,31 +102,44 @@ app.whenReady().then(() => {
   const { ipcMain } = require('electron');
   
   ipcMain.on('export-dimensions', (event, dimensions) => {
-    console.log('Exporting dimensions to renderer.js:', dimensions);
+    console.log('Exporting dimensions to config.json:', dimensions);
     
     try {
-      // Read the renderer.js file
-      const rendererPath = path.join(__dirname, '../../renderer.js');
-      let rendererContent = fs.readFileSync(rendererPath, 'utf8');
+      // Convert the flat dimensions back to the nested structure
+      const updatedConfig = {
+        width: Number(dimensions.labelWidth),
+        height: Number(dimensions.labelHeight),
+        horizontalMargin: Number(dimensions.horizontalMargin),
+        verticalMargin: Number(dimensions.verticalMargin),
+        contentStartY: Number(dimensions.contentStartY),
+        productTitleHeight: Number(dimensions.productTitleHeight),
+        ingredientsY: Number(dimensions.ingredientsY),
+        ingredientsHeight: Number(dimensions.ingredientsHeight),
+        petFoodOnlyY: Number(dimensions.petFoodOnlyY),
+        petFoodOnlyHeight: Number(dimensions.petFoodOnlyHeight),
+        storageInstructionsY: Number(dimensions.storageInstructionsY),
+        storageInstructionsHeight: Number(dimensions.storageInstructionsHeight),
+        dataY: Number(dimensions.dataY),
+        dataHeight: Number(dimensions.dataHeight),
+        priceY: Number(dimensions.priceY),
+        priceHeight: Number(dimensions.priceHeight),
+        barcode: {
+          width: Number(dimensions.barcodeWidth),
+          height: Number(dimensions.barcodeHeight)
+        },
+        // Preserve the nested font settings from the original config
+        fonts: readOriginalFontSettings()
+      };
       
-      // Update each dimension in the file
-      rendererContent = updateDimension(rendererContent, 'labelWidth', dimensions.labelWidth);
-      rendererContent = updateDimension(rendererContent, 'labelHeight', dimensions.labelHeight);
-      rendererContent = updateDimension(rendererContent, 'horizontalMargin', dimensions.horizontalMargin);
-      rendererContent = updateDimension(rendererContent, 'gutterHeight', dimensions.gutterHeight);
-      rendererContent = updateDimension(rendererContent, 'contentStartY', dimensions.contentStartY);
-      rendererContent = updateDimension(rendererContent, 'productTitleHeight', dimensions.productTitleHeight);
-      rendererContent = updateDimension(rendererContent, 'ingredientsHeight', dimensions.ingredientsHeight);
-      rendererContent = updateDimension(rendererContent, 'petFoodOnlyHeight', dimensions.petFoodOnlyHeight);
-      rendererContent = updateDimension(rendererContent, 'storageInstructionsHeight', dimensions.storageInstructionsHeight);
-      rendererContent = updateDimension(rendererContent, 'dataHeight', dimensions.dataHeight);
-      rendererContent = updateDimension(rendererContent, 'priceHeight', dimensions.priceHeight);
+      // Read the config.json file
+      const configPath = path.join(__dirname, '../../../src/label/config.json');
       
-      // Write the updated content back to the file
-      fs.writeFileSync(rendererPath, rendererContent, 'utf8');
+      // Write the updated content back to the file with pretty formatting
+      fs.writeFileSync(configPath, JSON.stringify(updatedConfig, null, 2), 'utf8');
+      console.log('Successfully saved config to:', configPath);
       event.reply('export-dimensions-result', { success: true });
     } catch (error) {
-      console.error('Error updating renderer.js:', error);
+      console.error('Error updating config.json:', error);
       event.reply('export-dimensions-result', { success: false, error: error.message });
     }
   });
@@ -111,16 +150,46 @@ app.whenReady().then(() => {
   });
 });
 
-// Helper function to update a dimension in the file content
-function updateDimension(content, name, value) {
-  if (value === null || value === undefined) return content;
-  
-  // Round to 0.5 increment
-  value = Math.round(value * 2) / 2;
-  
-  // Replace the dimension value
-  const pattern = new RegExp(`(const ${name} = )([0-9.]+)(;)`);
-  return content.replace(pattern, `$1${value}$3`);
+// Helper function to read the original font settings to preserve them
+function readOriginalFontSettings() {
+  try {
+    const configPath = path.join(__dirname, '../../../src/label/config.json');
+    const configContent = fs.readFileSync(configPath, 'utf8');
+    const config = JSON.parse(configContent);
+    return config.fonts || defaultFontSettings();
+  } catch (error) {
+    return defaultFontSettings();
+  }
+}
+
+// Default font settings in case we can't read the original
+function defaultFontSettings() {
+  return {
+    productTitle: {
+      size: 7,
+      lineHeight: 1.15
+    },
+    ingredients: {
+      headerSize: 3.5,
+      contentSize: 2.5,
+      lineHeight: 3
+    },
+    petFoodOnly: {
+      size: 5
+    },
+    storage: {
+      size: 2.5,
+      lineHeight: 3
+    },
+    data: {
+      labelSize: 2.2,
+      valueSize: 2.5
+    },
+    price: {
+      valueSize: 5.5,
+      labelSize: 2.2
+    }
+  };
 }
 
 // Quit when all windows are closed, except on macOS

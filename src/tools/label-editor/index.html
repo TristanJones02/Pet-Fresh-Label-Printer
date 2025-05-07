@@ -413,7 +413,7 @@
     </div>
     
     <div class="output-panel">
-      <h2>Generated Configuration</h2>
+      <h2>Generated JSON Configuration</h2>
       <pre id="output-code" class="output-code">// Label dimensions will appear here</pre>
       <button id="copy-btn" class="copy-button">Copy to Clipboard</button>
     </div>
@@ -454,7 +454,7 @@
         const { ipcRenderer } = require('electron');
         
         ipcRenderer.on('label-dimensions', (event, dimensions) => {
-          console.log('Received dimensions from renderer.js:', dimensions);
+          console.log('Received dimensions from main.js:', dimensions);
           
           // Update dimensions if available
           if (dimensions.labelWidth) labelWidth = dimensions.labelWidth;
@@ -493,19 +493,25 @@
           updateOutputCode();
           
           // Show notification that dimensions were loaded
-          showNotification('Dimensions loaded from renderer.js');
+          showNotification('Dimensions loaded from main.js');
+        });
+        
+        // Handle dimension loading errors
+        ipcRenderer.on('dimensions-error', (event, error) => {
+          console.error('Error loading dimensions:', error);
+          showNotification('Error loading dimensions: ' + error.message, 'error');
         });
       }
       
       // Function to show a temporary notification
-      function showNotification(message) {
+      function showNotification(message, type = 'success') {
         const notification = document.createElement('div');
         notification.textContent = message;
         notification.style.position = 'fixed';
         notification.style.bottom = '20px';
         notification.style.left = '50%';
         notification.style.transform = 'translateX(-50%)';
-        notification.style.backgroundColor = '#9ba03b';
+        notification.style.backgroundColor = type === 'error' ? '#e74c3c' : '#9ba03b';
         notification.style.color = 'white';
         notification.style.padding = '10px 20px';
         notification.style.borderRadius = '5px';
@@ -1235,33 +1241,58 @@
         const dataY = storageInstructionsY + sectionHeights.storageInstructions;
         const priceY = dataY + sectionHeights.data;
         
-        // Generate JS code for label dimensions
-        const code = `// Label dimensions (in mm)
-const labelWidth = ${labelWidth}; // Width of the label in mm
-const labelHeight = ${labelHeight}; // Height of the label in mm (including the bottom area)
-const gutterHeight = ${gutterHeight}; // Height of the bottom gutter area
-const contentHeight = labelHeight - gutterHeight; // Height of the content area
-
-// Margins (in mm)
-const horizontalMargin = ${horizontalMargin}; // Left and right margins
-const contentWidth = labelWidth - (horizontalMargin * 2); // Width of content area with margins
-
-// Section heights (in mm)
-const productTitleHeight = ${sectionHeights.title}; // Product title section height
-const ingredientsHeight = ${sectionHeights.ingredients}; // Ingredients section height
-const petFoodOnlyHeight = ${sectionHeights.petFoodOnly}; // "Pet Food Only" section height
-const storageInstructionsHeight = ${sectionHeights.storageInstructions}; // Storage instructions section height
-const dataHeight = ${sectionHeights.data}; // Date and weight section height
-const priceHeight = ${sectionHeights.price}; // Price section height
-
-// Calculate section positions
-const contentStartY = ${contentStartY}; // Content starts at ${contentStartY}mm from top
-const titleY = contentStartY;
-const ingredientsY = titleY + productTitleHeight;
-const petFoodOnlyY = ingredientsY + ingredientsHeight;
-const storageInstructionsY = petFoodOnlyY + petFoodOnlyHeight;
-const dataY = storageInstructionsY + storageInstructionsHeight;
-const priceY = dataY + dataHeight;`;
+        // Create the JSON configuration object
+        const configObj = {
+          width: labelWidth,
+          height: labelHeight,
+          horizontalMargin: horizontalMargin,
+          verticalMargin: 5, // Default vertical margin
+          contentStartY: contentStartY,
+          productTitleHeight: sectionHeights.title,
+          ingredientsY: ingredientsY,
+          ingredientsHeight: sectionHeights.ingredients,
+          petFoodOnlyY: petFoodOnlyY,
+          petFoodOnlyHeight: sectionHeights.petFoodOnly,
+          storageInstructionsY: storageInstructionsY,
+          storageInstructionsHeight: sectionHeights.storageInstructions,
+          dataY: dataY,
+          dataHeight: sectionHeights.data,
+          priceY: priceY,
+          priceHeight: sectionHeights.price,
+          barcode: {
+            width: 28,
+            height: 15.5
+          },
+          fonts: {
+            productTitle: {
+              size: 7,
+              lineHeight: 1.15
+            },
+            ingredients: {
+              headerSize: 3.5,
+              contentSize: 2.5,
+              lineHeight: 3
+            },
+            petFoodOnly: {
+              size: 5
+            },
+            storage: {
+              size: 2.5,
+              lineHeight: 3
+            },
+            data: {
+              labelSize: 2.2,
+              valueSize: 2.5
+            },
+            price: {
+              valueSize: 5.5,
+              labelSize: 2.2
+            }
+          }
+        };
+        
+        // Generate formatted JSON
+        const code = JSON.stringify(configObj, null, 2);
         
         outputCode.textContent = code;
       }
@@ -1326,12 +1357,12 @@ const priceY = dataY + dataHeight;`;
         });
       });
       
-      // Add a button to copy the dimensions to renderer.js
+      // Add a button to copy the dimensions to main.js
       document.addEventListener('DOMContentLoaded', function() {
-        // Add a button to export dimensions to renderer.js
+        // Add a button to export dimensions to config.json
         const exportButton = document.createElement('button');
         exportButton.id = 'export-dimensions-btn';
-        exportButton.textContent = 'Export to renderer.js';
+        exportButton.textContent = 'Export to config.json';
         exportButton.style.marginTop = '10px';
         exportButton.style.backgroundColor = '#9ba03b';
         exportButton.style.color = 'white';
@@ -1353,11 +1384,18 @@ const priceY = dataY + dataHeight;`;
               contentStartY,
               gutterHeight,
               productTitleHeight: sectionHeights.title,
+              ingredientsY: contentStartY + sectionHeights.title,
               ingredientsHeight: sectionHeights.ingredients,
+              petFoodOnlyY: contentStartY + sectionHeights.title + sectionHeights.ingredients,
               petFoodOnlyHeight: sectionHeights.petFoodOnly,
+              storageInstructionsY: contentStartY + sectionHeights.title + sectionHeights.ingredients + sectionHeights.petFoodOnly,
               storageInstructionsHeight: sectionHeights.storageInstructions,
+              dataY: contentStartY + sectionHeights.title + sectionHeights.ingredients + sectionHeights.petFoodOnly + sectionHeights.storageInstructions,
               dataHeight: sectionHeights.data,
-              priceHeight: sectionHeights.price
+              priceY: contentStartY + sectionHeights.title + sectionHeights.ingredients + sectionHeights.petFoodOnly + sectionHeights.storageInstructions + sectionHeights.data,
+              priceHeight: sectionHeights.price,
+              barcodeWidth: 28,  // Default barcode width
+              barcodeHeight: 15.5 // Default barcode height
             };
             
             // Send to main process
@@ -1366,7 +1404,7 @@ const priceY = dataY + dataHeight;`;
             // Listen for result
             ipcRenderer.once('export-dimensions-result', (event, result) => {
               if (result.success) {
-                showNotification('Dimensions exported to renderer.js successfully');
+                showNotification('Dimensions exported to config.json successfully');
               } else {
                 showNotification('Error exporting dimensions: ' + result.error);
               }

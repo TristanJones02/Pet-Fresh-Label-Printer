@@ -1,6 +1,5 @@
-const React = require('react');
-const { useState } = React;
-const { 
+import React, { useState } from 'react';
+import { 
   AppBar, 
   Toolbar, 
   Typography, 
@@ -15,14 +14,14 @@ const {
   ListItem, 
   ListItemText,
   Badge
-} = require('@mui/material');
-const { 
-  Print: PrintIcon, 
-  Settings: SettingsIcon, 
-  Close: CloseIcon,
-  Cancel: CancelIcon,
-  Refresh: RefreshIcon
-} = require('@mui/icons-material');
+} from '@mui/material';
+import { 
+  Print as PrintIcon, 
+  Settings as SettingsIcon, 
+  Close as CloseIcon,
+  Cancel as CancelIcon,
+  Refresh as RefreshIcon
+} from '@mui/icons-material';
 
 function Header({ printerStatus, version }) {
   const [printerDialogOpen, setPrinterDialogOpen] = useState(false);
@@ -91,18 +90,18 @@ function Header({ printerStatus, version }) {
   };
   
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ backgroundColor: '#9ba03b' }}>
       <Toolbar>
         {/* Left Column - App Name */}
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
-          <Typography variant="h6">
+          <Typography variant="h6" sx={{ color: 'white' }}>
             Pet Fresh Label Printing
           </Typography>
         </Box>
         
         {/* Middle Column - Printer Status */}
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Typography variant="h6" sx={{ mr: 1 }}>
+          <Typography variant="h6" sx={{ mr: 1, color: 'white' }}>
             Printer Kitchen
           </Typography>
           <IconButton 
@@ -124,10 +123,10 @@ function Header({ printerStatus, version }) {
         
         {/* Right Column - Version & Settings */}
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
-          <Typography variant="body2" sx={{ mr: 1 }}>
+          <Typography variant="body2" sx={{ mr: 1, color: 'white' }}>
             v{version}
           </Typography>
-          <IconButton color="inherit" onClick={handleSettingsDialogOpen}>
+          <IconButton color="inherit" onClick={handleSettingsDialogOpen} sx={{ color: 'white' }}>
             <SettingsIcon />
           </IconButton>
         </Box>
@@ -209,4 +208,4 @@ function Header({ printerStatus, version }) {
   );
 }
 
-module.exports = Header; 
+export default Header; 
