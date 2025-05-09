@@ -1,17 +1,100 @@
-import React, { useState, useEffect } from 'react';
-import { 
-  Box, 
-  Container, 
-  Grid 
-} from '@mui/material';
+const React = require('react');
+const { useState, useEffect } = React;
+const { ThemeProvider, createTheme } = require('@mui/material/styles');
+const CssBaseline = require('@mui/material/CssBaseline').default;
+const { DialogProvider, useDialogs, DIALOG_TYPES } = require('./dialogs/DialogManager');
+const { mockAppData } = require('../mockData');
+const mui = require('@mui/material');
+const { Box, Grid, Container } = mui;
 
-// Import our components
-import Header from './Header';
-import SearchCategories from './SearchCategories';
-import ProductList from './ProductList';
-import LabelPreview from './LabelPreview';
+// Import components - get the default export directly
+let Header, SearchCategories, ProductList, LabelPreview;
 
-function App({ appData, ipcRenderer }) {
+try {
+  Header = require('./Header').default;
+  SearchCategories = require('./SearchCategories').default;
+  ProductList = require('./ProductList').default;
+  LabelPreview = require('./LabelPreview').default;
+} catch (err) {
+  console.error('Error loading components:', err);
+  
+  // Fallback to direct imports if default fails
+  Header = require('./Header');
+  SearchCategories = require('./SearchCategories');
+  ProductList = require('./ProductList');
+  LabelPreview = require('./LabelPreview');
+}
+
+// Create a theme instance
+const lightTheme = createTheme({
+  palette: {
+    primary: {
+      main: '#9ba03b', // Pet Fresh green
+      contrastText: '#ffffff', // Ensure text on primary color is white
+    },
+    secondary: {
+      main: '#19857b',
+      contrastText: '#ffffff',
+    },
+    background: {
+      default: '#f5f5f5',
+      paper: '#ffffff',
+    },
+    text: {
+      primary: '#333333',
+      secondary: '#666666',
+    }
+  },
+  typography: {
+    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    h6: {
+      fontWeight: 500,
+    },
+    button: {
+      fontWeight: 600,
+    }
+  },
+  components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#9ba03b', // Ensure AppBar background is consistent
+          color: '#ffffff', // Ensure text is white
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          borderRadius: 8,
+          textTransform: 'none',
+        },
+        containedPrimary: {
+          '&:hover': {
+            backgroundColor: '#878c30', // Darker green on hover
+          },
+        },
+      },
+    },
+    MuiDialog: {
+      styleOverrides: {
+        paper: {
+          borderRadius: 12,
+        },
+      },
+    },
+    MuiGrid: {
+      styleOverrides: {
+        container: {
+          flexGrow: 1,
+        },
+      },
+    },
+  },
+});
+
+// Main App content component - this is the main app display
+function MainContent({ appData }) {
   const [categories, setCategories] = useState(appData?.categories || []);
   const [products, setProducts] = useState(appData?.products || []);
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -42,14 +125,12 @@ function App({ appData, ipcRenderer }) {
   const handleSearch = (term) => {
     setSearchTerm(term);
     setSelectedCategory(null);
-    // Clear selected product when searching
-    setSelectedProduct(null);
+    setSelectedProduct(null); // Clear selected product
   };
 
   // Handle category selection
   const handleCategorySelect = (category) => {
-    // Clear the selected product when category changes
-    setSelectedProduct(null);
+    setSelectedProduct(null); // Clear the selected product
     setQuantity(1); // Reset quantity
     
     setSelectedCategory(category);
@@ -81,115 +162,179 @@ function App({ appData, ipcRenderer }) {
       timestamp: new Date().toISOString()
     };
     
-    // Send print request to main process
-    if (ipcRenderer) {
-      ipcRenderer.send('print-label', labelData);
-      
-      // Listen for response from main process
-      ipcRenderer.once('print-response', (event, response) => {
-        if (response.success) {
-          // Set printer status back to 'ready' after a delay to simulate printing
-          setTimeout(() => {
-            setPrinterStatus('ready');
-          }, 3000);
-        } else {
-          setPrinterStatus('error');
-        }
-      });
-    } else {
-      console.log('Print label:', labelData);
-      // Simulate print response
-      setTimeout(() => {
-        setPrinterStatus('ready');
-      }, 3000);
-    }
+    // Simulate print response (we'll use window.api in the future)
+    console.log('Print label:', labelData);
+    setTimeout(() => {
+      setPrinterStatus('ready');
+    }, 3000);
   };
 
-  return (
-    <Box sx={{ flexGrow: 1, height: '100vh', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-      <Header 
-        printerStatus={printerStatus} 
-        version={appData?.version || '0.2.5'} 
-      />
-      
-      <Box sx={{ 
+  // Create header component
+  const headerComponent = React.createElement(
+    Header,
+    {
+      printerStatus: printerStatus,
+      version: appData?.version || '0.2.5'
+    }
+  );
+  
+  // Create the grid layout
+  const gridLayout = React.createElement(
+    Grid,
+    {
+      container: true,
+      spacing: 3,
+      sx: { 
+        height: '100%',
+        flexWrap: 'nowrap'
+      }
+    },
+    // Left Column - Search & Categories
+    React.createElement(
+      Grid,
+      {
+        item: true,
+        sx: { 
+          height: '100%', 
+          width: '25%',
+          flexBasis: '25%',
+          flexGrow: 0,
+          flexShrink: 0,
+          px: 1
+        }
+      },
+      React.createElement(
+        SearchCategories,
+        {
+          categories: categories,
+          selectedCategory: selectedCategory,
+          searchTerm: searchTerm,
+          onSearch: handleSearch,
+          onCategorySelect: handleCategorySelect
+        }
+      )
+    ),
+    // Middle Column - Products
+    React.createElement(
+      Grid,
+      {
+        item: true,
+        sx: { 
+          height: '100%', 
+          width: '50%',
+          flexBasis: '50%',
+          flexGrow: 0,
+          flexShrink: 0,
+          px: 1
+        }
+      },
+      React.createElement(
+        ProductList,
+        {
+          products: filteredProducts,
+          selectedProduct: selectedProduct,
+          onProductSelect: handleProductSelect,
+          searchTerm: searchTerm,
+          selectedCategory: selectedCategory
+        }
+      )
+    ),
+    // Right Column - Label Preview
+    React.createElement(
+      Grid,
+      {
+        item: true,
+        sx: { 
+          height: '100%', 
+          width: '25%',
+          flexBasis: '25%',
+          flexGrow: 0,
+          flexShrink: 0,
+          px: 1,
+          pr: 2
+        }
+      },
+      React.createElement(
+        LabelPreview,
+        {
+          product: selectedProduct,
+          quantity: quantity,
+          onQuantityChange: handleQuantityChange,
+          onPrintLabel: handlePrintLabel
+        }
+      )
+    )
+  );
+
+  // Create content box
+  const contentBox = React.createElement(
+    Box,
+    {
+      sx: { 
         flexGrow: 1, 
         overflow: 'hidden', 
         display: 'flex',
         p: 3,
-        pr: 4 // Add extra padding on the right side
-      }}>
-        <Grid 
-          container 
-          spacing={3}
-          sx={{ 
-            height: '100%',
-            flexWrap: 'nowrap'
-          }}
-        >
-          {/* Left Column - Search & Categories (25% width) */}
-          <Grid 
-            sx={{ 
-              height: '100%', 
-              width: '25%',
-              flexBasis: '25%',
-              flexGrow: 0,
-              flexShrink: 0,
-              px: 1
-            }}
-          >
-            <SearchCategories 
-              categories={categories}
-              selectedCategory={selectedCategory}
-              searchTerm={searchTerm}
-              onSearch={handleSearch}
-              onCategorySelect={handleCategorySelect}
-            />
-          </Grid>
-          
-          {/* Middle Column - Products (50% width) */}
-          <Grid 
-            sx={{ 
-              height: '100%', 
-              width: '50%',
-              flexBasis: '50%',
-              flexGrow: 0,
-              flexShrink: 0,
-              px: 1
-            }}
-          >
-            <ProductList 
-              products={filteredProducts}
-              selectedProduct={selectedProduct}
-              onProductSelect={handleProductSelect}
-              searchTerm={searchTerm}
-              selectedCategory={selectedCategory}
-            />
-          </Grid>
-          
-          {/* Right Column - Label Preview (25% width) */}
-          <Grid 
-            sx={{ 
-              height: '100%', 
-              width: '25%',
-              flexBasis: '25%',
-              flexGrow: 0,
-              flexShrink: 0,
-              px: 1,
-              pr: 2 // Add extra padding on the right
-            }}
-          >
-            <LabelPreview 
-              product={selectedProduct}
-              quantity={quantity}
-              onQuantityChange={handleQuantityChange}
-              onPrintLabel={handlePrintLabel}
-            />
-          </Grid>
-        </Grid>
-      </Box>
-    </Box>
+        pr: 4
+      }
+    },
+    gridLayout
+  );
+
+  // Main container
+  return React.createElement(
+    Box, 
+    { 
+      sx: { 
+        flexGrow: 1, 
+        height: '100vh', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        overflow: 'hidden' 
+      } 
+    },
+    headerComponent,
+    contentBox
   );
 }
 
-export default App; 
+// App wrapper that uses dialogs
+function AppWrapper() {
+  const { openDialog } = useDialogs();
+  
+  // You can add listeners for Electron IPC messages here
+  useEffect(() => {
+    // Listen for dialog open/close requests from the main process
+    const handleShowDialog = (event, { dialogType, props }) => {
+      openDialog(dialogType, props);
+    };
+    
+    // Add event listeners
+    window.api?.onShowDialog?.(handleShowDialog);
+    
+    // Clean up
+    return () => {
+      window.api?.offShowDialog?.(handleShowDialog);
+    };
+  }, [openDialog]);
+  
+  return React.createElement(MainContent, { appData: mockAppData });
+}
+
+// Root App component
+const App = () => {
+  return React.createElement(
+    ThemeProvider,
+    { theme: lightTheme },
+    React.createElement(CssBaseline),
+    React.createElement(
+      DialogProvider,
+      null,
+      React.createElement(AppWrapper)
+    )
+  );
+};
+
+// Use both CommonJS and ESM exports for maximum compatibility
+module.exports = App;
+module.exports.default = App; 

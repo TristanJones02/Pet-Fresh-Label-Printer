@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Image Generator</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+    
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 30px;
+    }
+    
+    header {
+      grid-column: 1 / -1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    h1 {
+      color: #9ba03b;
+      font-size: 24px;
+    }
+    
+    .sidebar {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      border: 1px solid #eee;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .workspace {
+      position: relative;
+      height: 600px;
+      background-color: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+    }
+    
+    .canvas-container {
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      width: 600px;
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    canvas {
+      display: block;
+      max-width: 100%;
+      max-height: 100%;
+    }
+    
+    .controls {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    
+    .section-title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+      display: flex;
+      align-items: center;
+    }
+    
+    .section-title::after {
+      content: '';
+      display: block;
+      flex: 1;
+      height: 1px;
+      background-color: #ddd;
+      margin-left: 10px;
+    }
+    
+    label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    
+    select, input[type="number"], input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    button {
+      background-color: #9ba03b;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+    
+    button:hover {
+      background-color: #878c30;
+    }
+    
+    button:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+    
+    .button-group {
+      display: flex;
+      gap: 10px;
+    }
+    
+    .button-secondary {
+      background-color: #6c757d;
+    }
+    
+    .button-secondary:hover {
+      background-color: #5a6268;
+    }
+    
+    .button-large {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+    
+    .preview-section {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .image-container {
+      width: 100%;
+      margin-bottom: 15px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 5px;
+      min-height: 100px;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      max-height: 200px;
+      object-fit: contain;
+    }
+    
+    .status-text {
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+    
+    .label-position-controls {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    
+    .range-control {
+      margin-bottom: 15px;
+    }
+    
+    .range-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+    
+    .range-value {
+      font-weight: bold;
+    }
+    
+    .error {
+      color: #dc3545;
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #f8d7da;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    .success {
+      color: #28a745;
+      margin-top: 10px;
+      padding: 8px;
+      background-color: #d4edda;
+      border-radius: 4px;
+      text-align: center;
+    }
+    
+    .product-item {
+      padding: 10px;
+      margin-bottom: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    
+    .product-item:hover {
+      background-color: #f5f5f5;
+    }
+    
+    .product-item.active {
+      background-color: #e8f4f8;
+      border-color: #9ba03b;
+    }
+    
+    .product-search {
+      margin-bottom: 15px;
+    }
+    
+    .product-list {
+      max-height: 250px;
+      overflow-y: auto;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .note {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pet Fresh Product Image Generator</h1>
+      <div class="button-group">
+        <button id="downloadBtn" disabled>Download Image</button>
+      </div>
+    </header>
+    
+    <aside class="sidebar">
+      <div class="section">
+        <h2 class="section-title">Base Image</h2>
+        <button id="selectBaseImageBtn">Select Base Image</button>
+        <div class="image-container">
+          <img id="baseImagePreview" style="display: none;">
+          <span id="baseImageText" class="status-text">No image selected</span>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2 class="section-title">Label Overlay</h2>
+        <button id="selectOverlayBtn">Select Label Overlay</button>
+        <div class="image-container">
+          <img id="overlayImagePreview" style="display: none;">
+          <span id="overlayImageText" class="status-text">No overlay selected</span>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h2 class="section-title">Product</h2>
+        <div class="product-search">
+          <input type="text" id="productSearch" placeholder="Search products...">
+        </div>
+        <div class="product-list" id="productList">
+          <div class="status-text" id="productListEmpty">Loading products...</div>
+        </div>
+      </div>
+    </aside>
+    
+    <main class="main-content">
+      <div class="workspace">
+        <div class="canvas-container">
+          <canvas id="mainCanvas" width="600" height="600"></canvas>
+        </div>
+      </div>
+      
+      <div class="controls">
+        <div class="section" style="width: 100%;">
+          <h2 class="section-title">Label Position</h2>
+          <div class="label-position-controls">
+            <div class="range-control">
+              <div class="range-label">
+                <span>X Position</span>
+                <span class="range-value" id="xPositionValue">50%</span>
+              </div>
+              <input type="range" id="xPosition" min="0" max="100" value="50">
+            </div>
+            
+            <div class="range-control">
+              <div class="range-label">
+                <span>Y Position</span>
+                <span class="range-value" id="yPositionValue">50%</span>
+              </div>
+              <input type="range" id="yPosition" min="0" max="100" value="50">
+            </div>
+            
+            <div class="range-control">
+              <div class="range-label">
+                <span>Label Width</span>
+                <span class="range-value" id="labelWidthValue">30%</span>
+              </div>
+              <input type="range" id="labelWidth" min="10" max="90" value="30">
+            </div>
+            
+            <div class="range-control">
+              <div class="range-label">
+                <span>Label Rotation</span>
+                <span class="range-value" id="labelRotationValue">0°</span>
+              </div>
+              <input type="range" id="labelRotation" min="-180" max="180" value="0">
+            </div>
+          </div>
+          <button id="generateBtn" class="button-large" disabled>Generate Image</button>
+          <p class="note">Tip: Position the label on the product packaging, then click Generate</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+    const path = require('path');
+    
+    // DOM elements
+    const baseImageBtn = document.getElementById('selectBaseImageBtn');
+    const overlayBtn = document.getElementById('selectOverlayBtn');
+    const baseImagePreview = document.getElementById('baseImagePreview');
+    const baseImageText = document.getElementById('baseImageText');
+    const overlayImagePreview = document.getElementById('overlayImagePreview');
+    const overlayImageText = document.getElementById('overlayImageText');
+    const productSearch = document.getElementById('productSearch');
+    const productList = document.getElementById('productList');
+    const productListEmpty = document.getElementById('productListEmpty');
+    const mainCanvas = document.getElementById('mainCanvas');
+    const ctx = mainCanvas.getContext('2d');
+    const xPosition = document.getElementById('xPosition');
+    const yPosition = document.getElementById('yPosition');
+    const labelWidth = document.getElementById('labelWidth');
+    const labelRotation = document.getElementById('labelRotation');
+    const xPositionValue = document.getElementById('xPositionValue');
+    const yPositionValue = document.getElementById('yPositionValue');
+    const labelWidthValue = document.getElementById('labelWidthValue');
+    const labelRotationValue = document.getElementById('labelRotationValue');
+    const generateBtn = document.getElementById('generateBtn');
+    const downloadBtn = document.getElementById('downloadBtn');
+    
+    // State variables
+    let baseImage = null;
+    let overlayImage = null;
+    let selectedProduct = null;
+    let products = [];
+    let labelConfig = null;
+    let generatedImage = null;
+    
+    // Canvas drawing parameters
+    const canvasWidth = 600;
+    const canvasHeight = 600;
+    mainCanvas.width = canvasWidth;
+    mainCanvas.height = canvasHeight;
+    
+    // Initialize canvas
+    ctx.fillStyle = '#f0f0f0';
+    ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+    ctx.font = '16px Arial';
+    ctx.fillStyle = '#666';
+    ctx.textAlign = 'center';
+    ctx.fillText('Select base image, overlay, and product to begin', canvasWidth / 2, canvasHeight / 2);
+    
+    // Helper function to safely get product name
+    function getProductName(product) {
+      return product.name || product.productname || 'Unnamed Product';
+    }
+    
+    // Helper function to get product price
+    function getProductPrice(product) {
+      if (product.price) return product.price;
+      if (product.productprice) {
+        const priceInDollars = (product.productprice / 100).toFixed(2);
+        return `$${priceInDollars}`;
+      }
+      return '';
+    }
+    
+    // Event listeners
+    baseImageBtn.addEventListener('click', selectBaseImage);
+    overlayBtn.addEventListener('click', selectOverlayImage);
+    productSearch.addEventListener('input', filterProducts);
+    xPosition.addEventListener('input', updatePositionValue);
+    yPosition.addEventListener('input', updatePositionValue);
+    labelWidth.addEventListener('input', updatePositionValue);
+    labelRotation.addEventListener('input', updatePositionValue);
+    generateBtn.addEventListener('click', generateImage);
+    downloadBtn.addEventListener('click', downloadImage);
+    
+    // Get label config from main process
+    ipcRenderer.invoke('get-label-config').then(config => {
+      labelConfig = config;
+      console.log('Label config loaded:', config);
+    }).catch(err => {
+      console.error('Error getting label config:', err);
+    });
+    
+    // Get product data from main process
+    ipcRenderer.on('product-data', (event, data) => {
+      console.log('Received product data:', data);
+      products = data || [];
+      renderProductList();
+    });
+    
+    // Handle product data loading errors
+    ipcRenderer.on('product-data-error', (event, error) => {
+      console.error('Error loading product data:', error);
+      productListEmpty.innerHTML = `
+        <div class="error" style="padding: 10px; color: #721c24; background-color: #f8d7da; border-radius: 4px; margin-top: 10px;">
+          <strong>Error loading products:</strong><br>
+          ${error.message || 'Unknown error'}
+        </div>
+        <div style="margin-top: 10px;">Using sample products instead</div>
+      `;
+    });
+    
+    function selectBaseImage() {
+      ipcRenderer.invoke('select-base-image').then(result => {
+        if (result) {
+          baseImage = result;
+          baseImagePreview.src = result.base64;
+          baseImagePreview.style.display = 'block';
+          baseImageText.textContent = result.filename;
+          
+          checkEnableControls();
+          renderPreview();
+        }
+      }).catch(err => {
+        console.error('Error selecting base image:', err);
+      });
+    }
+    
+    function selectOverlayImage() {
+      ipcRenderer.invoke('select-overlay-image').then(result => {
+        if (result) {
+          overlayImage = result;
+          overlayImagePreview.src = result.base64;
+          overlayImagePreview.style.display = 'block';
+          overlayImageText.textContent = result.filename;
+          
+          checkEnableControls();
+          renderPreview();
+        }
+      }).catch(err => {
+        console.error('Error selecting overlay image:', err);
+      });
+    }
+    
+    function renderProductList() {
+      if (!products || products.length === 0) {
+        productListEmpty.innerHTML = `
+          <div style="padding: 10px;">
+            No products found.<br>
+            <small>Check the console for errors.</small>
+          </div>
+        `;
+        return;
+      }
+      
+      productListEmpty.style.display = 'none';
+      
+      const searchTerm = productSearch.value.toLowerCase();
+      const filteredProducts = searchTerm 
+        ? products.filter(p => {
+            const name = getProductName(p).toLowerCase();
+            return name.includes(searchTerm);
+          })
+        : products;
+      
+      if (filteredProducts.length === 0) {
+        productList.innerHTML = '<div class="status-text">No products match your search</div>';
+        return;
+      }
+      
+      productList.innerHTML = filteredProducts.map(product => {
+        const name = getProductName(product);
+        const price = getProductPrice(product);
+        return `
+          <div class="product-item ${selectedProduct && selectedProduct.id === product.id ? 'active' : ''}" 
+               data-id="${product.id}">
+            <div>${name}</div>
+            ${price ? `<div style="font-size: 12px; color: #666;">${price}</div>` : ''}
+          </div>
+        `;
+      }).join('');
+      
+      // Add event listeners to product items
+      document.querySelectorAll('.product-item').forEach(item => {
+        item.addEventListener('click', () => {
+          const productId = item.dataset.id;
+          selectedProduct = products.find(p => p.id == productId);
+          
+          // Update active state
+          document.querySelectorAll('.product-item').forEach(el => {
+            el.classList.remove('active');
+          });
+          item.classList.add('active');
+          
+          checkEnableControls();
+          renderPreview();
+        });
+      });
+    }
+    
+    function filterProducts() {
+      renderProductList();
+    }
+    
+    function updatePositionValue() {
+      xPositionValue.textContent = `${xPosition.value}%`;
+      yPositionValue.textContent = `${yPosition.value}%`;
+      labelWidthValue.textContent = `${labelWidth.value}%`;
+      labelRotationValue.textContent = `${labelRotation.value}°`;
+      
+      renderPreview();
+    }
+    
+    function checkEnableControls() {
+      const canGenerate = baseImage && overlayImage && selectedProduct;
+      generateBtn.disabled = !canGenerate;
+      
+      const canDownload = generatedImage !== null;
+      downloadBtn.disabled = !canDownload;
+    }
+    
+    function renderPreview() {
+      // Clear canvas
+      ctx.fillStyle = '#f0f0f0';
+      ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+      
+      if (!baseImage) {
+        ctx.font = '16px Arial';
+        ctx.fillStyle = '#666';
+        ctx.textAlign = 'center';
+        ctx.fillText('Select base image to begin', canvasWidth / 2, canvasHeight / 2);
+        return;
+      }
+      
+      // Create base image object
+      const img = new Image();
+      img.onload = () => {
+        // Calculate aspect ratio to fit within canvas
+        const scale = Math.min(
+          canvasWidth / img.width,
+          canvasHeight / img.height
+        );
+        
+        const scaledWidth = img.width * scale;
+        const scaledHeight = img.height * scale;
+        
+        // Center the image on canvas
+        const x = (canvasWidth - scaledWidth) / 2;
+        const y = (canvasHeight - scaledHeight) / 2;
+        
+        // Draw the base image
+        ctx.drawImage(img, x, y, scaledWidth, scaledHeight);
+        
+        // If overlay and product are selected, show positioning preview
+        if (overlayImage && selectedProduct && labelConfig) {
+          // Calculate label position based on slider values
+          const labelX = x + (scaledWidth * parseInt(xPosition.value) / 100);
+          const labelY = y + (scaledHeight * parseInt(yPosition.value) / 100);
+          
+          // Calculate label dimensions based on config and slider
+          const labelW = scaledWidth * (parseInt(labelWidth.value) / 100);
+          
+          // Use proper aspect ratio from the label config
+          const aspectRatio = labelConfig.height / labelConfig.width;
+          const labelH = labelW * aspectRatio;
+          
+          const rotation = parseInt(labelRotation.value);
+          
+          // Save context before rotation
+          ctx.save();
+          
+          // Translate to label position, rotate, then translate back
+          ctx.translate(labelX, labelY);
+          ctx.rotate(rotation * Math.PI / 180);
+          
+          // Draw a placeholder rectangle for the label that matches the real label dimensions
+          ctx.fillStyle = 'rgba(155, 160, 59, 0.3)';
+          ctx.fillRect(-labelW/2, -labelH/2, labelW, labelH);
+          
+          // Add border for better visibility
+          ctx.strokeStyle = 'rgba(155, 160, 59, 0.8)';
+          ctx.lineWidth = 2;
+          ctx.strokeRect(-labelW/2, -labelH/2, labelW, labelH);
+          
+          // Draw product name on placeholder
+          ctx.font = `bold 14px Arial`;
+          ctx.fillStyle = '#000';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          
+          // Only show abbreviated product name in preview to avoid overflow
+          const name = getProductName(selectedProduct);
+          const displayName = name.length > 20 ? name.substring(0, 18) + '...' : name;
+          ctx.fillText(displayName, 0, 0);
+          
+          // Draw guide lines to help with positioning
+          ctx.strokeStyle = 'rgba(155, 160, 59, 0.5)';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.moveTo(-labelW, 0);
+          ctx.lineTo(labelW, 0);
+          ctx.moveTo(0, -labelH);
+          ctx.lineTo(0, labelH);
+          ctx.stroke();
+          
+          // Restore context after drawing
+          ctx.restore();
+        }
+      };
+      img.src = baseImage.base64;
+    }
+    
+    // Function to generate a barcode SVG for a product - improved for better visual match
+    function generateBarcodeImage(product) {
+      // Check if product has a barcode
+      const barcode = product.barcode || '0000000000000';
+      
+      // Create a more realistic barcode representation as SVG
+      const barcodeWidth = 180;
+      const barcodeHeight = 80;
+      const marginX = 15;
+      const marginY = 10;
+      const barWidth = 2;
+      const spacing = 1;
+      const usableWidth = barcodeWidth - (2 * marginX);
+      const maxBarHeight = barcodeHeight - (2 * marginY) - 15; // Leave room for text
+      
+      // Generate EAN-13 style barcode layout
+      const bars = [];
+      let currentX = marginX;
+      
+      // Start guard bars
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      currentX += barWidth + spacing;
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      currentX += barWidth + spacing;
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      currentX += barWidth + spacing * 2;
+      
+      // Main data bars with varying heights
+      for (let i = 0; i < barcode.length; i++) {
+        const digit = parseInt(barcode[i]) || 0;
+        
+        // For each digit, generate 4 bars with varying heights
+        for (let j = 0; j < 4; j++) {
+          const height = maxBarHeight - (j % 3) * (5 + digit % 4);
+          bars.push({ x: currentX, width: barWidth, height: height });
+          currentX += barWidth + spacing;
+        }
+        
+        // Add a small gap between groups of digits
+        if (i === 6) {
+          // Center guard bars
+          bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+          currentX += barWidth + spacing;
+          bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+          currentX += barWidth + spacing;
+          bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+          currentX += barWidth + spacing * 2;
+        } else if (i % 3 === 2 && i < barcode.length - 1) {
+          currentX += spacing * 2;
+        }
+      }
+      
+      // End guard bars
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      currentX += barWidth + spacing;
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      currentX += barWidth + spacing;
+      bars.push({ x: currentX, width: barWidth, height: maxBarHeight });
+      
+      return `
+        <svg xmlns="http://www.w3.org/2000/svg" width="${barcodeWidth}" height="${barcodeHeight}" viewBox="0 0 ${barcodeWidth} ${barcodeHeight}">
+          <rect width="100%" height="100%" fill="white" />
+          ${bars.map(bar => `<rect x="${bar.x}" y="${marginY}" width="${bar.width}" height="${bar.height}" fill="black" />`).join('')}
+          <text x="${barcodeWidth/2}" y="${barcodeHeight - 5}" text-anchor="middle" font-family="Arial" font-size="10" fill="black">${barcode}</text>
+        </svg>
+      `;
+    }
+    
+    // Function to create a temporary HTML for a barcode image
+    function createBarcodeImage(product) {
+      return new Promise((resolve, reject) => {
+        const svgString = generateBarcodeImage(product);
+        const img = new Image();
+        img.onload = () => resolve(img);
+        img.onerror = reject;
+        img.src = `data:image/svg+xml;base64,${btoa(svgString)}`;
+      });
+    }
+    
+    async function generateImage() {
+      if (!baseImage || !overlayImage || !selectedProduct || !labelConfig) {
+        alert('Please select all required elements');
+        return;
+      }
+      
+      try {
+        // Create off-screen canvas for the label
+        const labelCanvas = document.createElement('canvas');
+        const labelCtx = labelCanvas.getContext('2d');
+        
+        // Convert mm to pixels using the proper DPI (300 DPI) to match React app
+        const dpi = labelConfig.dpi || 300; // Default to 300 DPI if not specified
+        const mmToPx = dpi / 25.4; // Convert mm to pixels at specified DPI
+        const labelWidthPx = Math.ceil(labelConfig.width * mmToPx);
+        const labelHeightPx = Math.ceil(labelConfig.height * mmToPx);
+        
+        labelCanvas.width = labelWidthPx;
+        labelCanvas.height = labelHeightPx;
+        
+        // Clear canvas with white background
+        labelCtx.fillStyle = '#ffffff';
+        labelCtx.fillRect(0, 0, labelWidthPx, labelHeightPx);
+        
+        // Draw the label overlay on the canvas
+        const overlayImg = new Image();
+        
+        await new Promise((resolve, reject) => {
+          overlayImg.onload = resolve;
+          overlayImg.onerror = reject;
+          overlayImg.src = overlayImage.base64;
+        });
+        
+        // Draw overlay with correct sizing (white background for the label)
+        labelCtx.drawImage(overlayImg, 0, 0, labelWidthPx, labelHeightPx);
+        
+        // Create SVG Pet Fresh logo
+        const petFreshLogo = `
+          <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="55" fill="white" stroke="black" stroke-width="1"/>
+            <text x="60" y="40" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold">PET FRESH</text>
+            <circle cx="60" cy="60" r="25" fill="none" stroke="black" stroke-width="1"/>
+            <path d="M60 45 C 40 50, 40 70, 60 75" fill="none" stroke="black" stroke-width="1"/>
+            <path d="M60 45 C 80 50, 80 70, 60 75" fill="none" stroke="black" stroke-width="1"/>
+            <circle cx="50" cy="55" r="3" fill="black"/>
+            <circle cx="70" cy="55" r="3" fill="black"/>
+            <path d="M50 65 C 55 70, 65 70, 70 65" fill="none" stroke="black" stroke-width="1"/>
+            <text x="60" y="95" text-anchor="middle" font-family="Arial" font-size="8" font-weight="bold" font-style="italic">PREMIUM PET FOOD</text>
+          </svg>
+        `;
+        
+        // Create logo image
+        const logoImg = new Image();
+        await new Promise((resolve, reject) => {
+          logoImg.onload = resolve;
+          logoImg.onerror = reject;
+          logoImg.src = `data:image/svg+xml;base64,${btoa(petFreshLogo)}`;
+        });
+        
+        // Set up constants for positioning
+        const nameX = labelWidthPx / 2;
+        const horizontalMargin = labelConfig.horizontalMargin || 5;
+        const contentWidth = labelConfig.width - (2 * horizontalMargin);
+        
+        // Draw logo at the top
+        const logoWidth = 80 * mmToPx;
+        const logoHeight = 80 * mmToPx;
+        const logoX = nameX - logoWidth / 2;
+        const logoY = 10 * mmToPx;
+        labelCtx.drawImage(logoImg, logoX, logoY, logoWidth, logoHeight);
+        
+        // Vertical label layout for Pet Fresh design (matches label shown in the image)
+        // The label is a long vertical rectangle with the logo at the top
+        
+        // Calculate expiration date
+        const today = new Date();
+        let expiryDate;
+        
+        if (selectedProduct.expirationDuration && selectedProduct.expirationType) {
+          expiryDate = new Date(today);
+          switch (selectedProduct.expirationType) {
+            case 'days':
+              expiryDate.setDate(expiryDate.getDate() + selectedProduct.expirationDuration);
+              break;
+            case 'weeks':
+              expiryDate.setDate(expiryDate.getDate() + (selectedProduct.expirationDuration * 7));
+              break;
+            case 'months':
+              expiryDate.setMonth(expiryDate.getMonth() + selectedProduct.expirationDuration);
+              break;
+            case 'years':
+              expiryDate.setFullYear(expiryDate.getFullYear() + selectedProduct.expirationDuration);
+              break;
+            default:
+              expiryDate.setDate(expiryDate.getDate() + 30); // Default to 30 days
+          }
+        } else if (selectedProduct.expiryDays) {
+          expiryDate = new Date(today);
+          expiryDate.setDate(expiryDate.getDate() + selectedProduct.expiryDays);
+        } else {
+          expiryDate = new Date(today);
+          expiryDate.setDate(expiryDate.getDate() + 30); // Default to 30 days
+        }
+        
+        // Format expiry date
+        const formattedExpiryDate = expiryDate.toLocaleDateString('en-AU', {
+          day: '2-digit',
+          month: 'short',
+          year: '2-digit'
+        });
+        
+        // Draw product name in uppercase - Bold large text
+        const productName = getProductName(selectedProduct);
+        const productNameY = logoY + logoHeight + (15 * mmToPx);
+        labelCtx.font = `bold ${labelConfig.fonts.productTitle.size * 1.2 * mmToPx}px Arial`;
+        labelCtx.fillStyle = '#000';
+        labelCtx.textAlign = 'center'; 
+        labelCtx.textBaseline = 'middle';
+        
+        // Draw product name (using "PREMIUM DOG FOOD" to match image)
+        labelCtx.fillText("PREMIUM DOG FOOD", nameX, productNameY);
+
+        // Product description text line - mimicking chicken, rice, etc. (ingredients from the image)
+        const descriptionY = productNameY + (20 * mmToPx);
+        labelCtx.font = `${labelConfig.fonts.ingredients.contentSize * 0.8 * mmToPx}px Arial`;
+        labelCtx.fillStyle = '#444';
+        labelCtx.fillText('CHICKEN, RICE, VEGE, VITA, MINERALS', nameX, descriptionY);
+        
+        // PET FOOD ONLY text
+        const petFoodY = descriptionY + (30 * mmToPx);
+        labelCtx.font = `bold ${labelConfig.fonts.petFoodOnly.size * mmToPx}px Arial`;
+        labelCtx.fillStyle = '#000';
+        labelCtx.fillText('PET FOOD ONLY', nameX, petFoodY);
+        
+        // Storage instructions - three bullet points (matching the image)
+        const storageY = petFoodY + (15 * mmToPx);
+        const storageLines = [
+          '100% NATURAL',
+          'NO ARTIFICIAL COLOURS',
+          'MIXED AND PRODUCED IN AUSTRALIA'
+        ];
+        
+        labelCtx.textAlign = 'left';
+        labelCtx.font = `${labelConfig.fonts.storage.size * 0.8 * mmToPx}px Arial`;
+        
+        const storageX = horizontalMargin * mmToPx + 10;
+        const bulletPointIndent = 10;
+        
+        let currentY = storageY;
+        storageLines.forEach(line => {
+          // Draw bullet point and text
+          labelCtx.fillText('•', storageX, currentY);
+          labelCtx.fillText(line, storageX + bulletPointIndent, currentY);
+          currentY += labelConfig.fonts.storage.lineHeight * mmToPx * 0.8;
+        });
+        
+        // Date and Weight section - matches the label format in the image
+        const dateWeightY = storageY + (30 * mmToPx);
+        const leftColX = horizontalMargin * mmToPx + 15;
+        currentY = dateWeightY;
+        
+        // Date - using the formatted date correctly
+        labelCtx.font = `bold ${labelConfig.fonts.data.labelSize * 0.8 * mmToPx}px Arial`;
+        labelCtx.fillText('BEST BEFORE: ' + formattedExpiryDate, leftColX, currentY);
+        currentY += 15 * mmToPx;
+        
+        // Weight
+        labelCtx.fillText('WEIGHT:', leftColX, currentY);
+        labelCtx.fillText(selectedProduct.weight || '500g', leftColX + (55 * mmToPx), currentY);
+        
+        // Barcode - centered below the data (matching image position)
+        const barcodeY = currentY + (25 * mmToPx);
+        const barcodeWidth = 120 * mmToPx;
+        const barcodeHeight = 40 * mmToPx;
+        
+        // Create barcode image
+        const barcodeImg = await createBarcodeImage(selectedProduct);
+        
+        // Position barcode centered
+        labelCtx.drawImage(barcodeImg, 
+                          nameX - barcodeWidth/2, 
+                          barcodeY - barcodeHeight/2, 
+                          barcodeWidth, 
+                          barcodeHeight);
+        
+        // Price - large and bold (matching image)
+        const priceY = barcodeY + barcodeHeight/2 + (20 * mmToPx);
+        
+        // Price Value 
+        labelCtx.textAlign = 'center';
+        labelCtx.font = `bold ${labelConfig.fonts.price.valueSize * 1.5 * mmToPx}px Arial`;
+        labelCtx.fillStyle = 'black';
+        const price = getProductPrice(selectedProduct) || '$49.99';
+        labelCtx.fillText(price, nameX, priceY);
+        
+        // Made with Love with a small heart
+        // Draw a small illustration that mimics a brand logo ("Made with Love")
+        const brandLogoY = priceY + (30 * mmToPx);
+        labelCtx.font = `bold ${labelConfig.fonts.data.labelSize * mmToPx}px Arial`;
+        labelCtx.fillText('Made with', nameX - 20, brandLogoY);
+        
+        // Draw heart symbol
+        labelCtx.fillStyle = 'red';
+        labelCtx.font = `bold ${labelConfig.fonts.data.labelSize * 1.2 * mmToPx}px Arial`;
+        labelCtx.fillText('♥', nameX + 20, brandLogoY);
+        
+        // Text after heart
+        labelCtx.fillStyle = 'black';
+        labelCtx.font = `bold ${labelConfig.fonts.data.labelSize * mmToPx}px Arial`;
+        labelCtx.fillText('Love', nameX + 40, brandLogoY);
+        
+        // Website at the very bottom
+        const websiteY = brandLogoY + (15 * mmToPx);
+        labelCtx.font = `${labelConfig.fonts.data.labelSize * mmToPx}px Arial`;
+        labelCtx.textAlign = 'center';
+        labelCtx.fillText('www.petfresh.com.au', nameX, websiteY);
+        
+        // Create composite image with base and label
+        const compositeCanvas = document.createElement('canvas');
+        const compositeCtx = compositeCanvas.getContext('2d');
+        
+        // Use higher resolution for output canvas while maintaining aspect ratio
+        const outputWidth = 1800;
+        const outputHeight = 1800;
+        compositeCanvas.width = outputWidth;
+        compositeCanvas.height = outputHeight;
+        
+        // Set high quality rendering
+        compositeCtx.imageSmoothingEnabled = true;
+        compositeCtx.imageSmoothingQuality = 'high';
+        
+        // Create base image object
+        const baseImg = new Image();
+        
+        await new Promise((resolve, reject) => {
+          baseImg.onload = resolve;
+          baseImg.onerror = reject;
+          baseImg.src = baseImage.base64;
+        });
+        
+        // Calculate aspect ratio to fit within canvas while preserving image ratio
+        const baseAspectRatio = baseImg.width / baseImg.height;
+        let scaledWidth, scaledHeight, x, y;
+        
+        if (baseAspectRatio > 1) {
+          // Landscape image
+          scaledWidth = Math.min(outputWidth, baseImg.width);
+          scaledHeight = scaledWidth / baseAspectRatio;
+        } else {
+          // Portrait or square image
+          scaledHeight = Math.min(outputHeight, baseImg.height);
+          scaledWidth = scaledHeight * baseAspectRatio;
+        }
+        
+        // Center the image on canvas
+        x = (outputWidth - scaledWidth) / 2;
+        y = (outputHeight - scaledHeight) / 2;
+        
+        // Fill background
+        compositeCtx.fillStyle = '#f0f0f0';
+        compositeCtx.fillRect(0, 0, outputWidth, outputHeight);
+        
+        // Draw the base image - use crisp rendering
+        compositeCtx.drawImage(baseImg, x, y, scaledWidth, scaledHeight);
+        
+        // Calculate label position based on slider values but scaled for higher resolution
+        const labelX = x + (scaledWidth * parseInt(xPosition.value) / 100);
+        const labelY = y + (scaledHeight * parseInt(yPosition.value) / 100);
+        
+        // Size label appropriately based on base image size and width slider
+        const labelW = scaledWidth * (parseInt(labelWidth.value) / 100);
+        const labelH = labelW * (labelHeightPx / labelWidthPx); // Maintain aspect ratio
+        const rotation = parseInt(labelRotation.value);
+        
+        // Save context before rotation
+        compositeCtx.save();
+        
+        // Translate to label position, rotate, then translate back
+        compositeCtx.translate(labelX, labelY);
+        compositeCtx.rotate(rotation * Math.PI / 180);
+        
+        // Draw the label with anti-aliasing for better quality
+        compositeCtx.drawImage(labelCanvas, -labelW/2, -labelH/2, labelW, labelH);
+        
+        // Restore context after drawing
+        compositeCtx.restore();
+        
+        // Update the main canvas with the composite image (scaled down version for preview)
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        ctx.drawImage(compositeCanvas, 0, 0, canvasWidth, canvasHeight);
+        
+        // Store the generated image at full resolution
+        generatedImage = compositeCanvas.toDataURL('image/png');
+        
+        // Enable download button
+        downloadBtn.disabled = false;
+      } catch (error) {
+        console.error('Error generating image:', error);
+        alert(`Error generating image: ${error.message}`);
+      }
+    }
+    
+    function downloadImage() {
+      if (!generatedImage) {
+        alert('Please generate an image first');
+        return;
+      }
+      
+      ipcRenderer.invoke('save-generated-image', generatedImage).then(result => {
+        if (result.success) {
+          const notification = document.createElement('div');
+          notification.className = 'success';
+          notification.textContent = `Image saved to: ${result.path}`;
+          document.querySelector('.controls').appendChild(notification);
+          
+          setTimeout(() => {
+            notification.remove();
+          }, 5000);
+        }
+      }).catch(err => {
+        console.error('Error saving image:', err);
+        alert('Error saving image: ' + err.message);
+      });
+    }
+    
+    // Initialize with position values
+    updatePositionValue();
+  </script>
+</body>
+</html> 

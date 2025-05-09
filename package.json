@@ -6,7 +6,8 @@
     "start": "webpack && electron .",
     "dev": "concurrently \"webpack --watch\" \"NODE_ENV=development electron .\"",
     "build": "webpack --mode production && electron-builder",
-    "label-editor": "electron src/tools/label-editor/editor.js"
+    "label-editor": "electron src/tools/label-editor/editor.js",
+    "image-generator": "electron src/tools/product-image-generator/generator.js"
   },
   "keywords": [],
   "author": "",
@@ -27,9 +28,12 @@
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
-    "@babel/preset-env": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
     "babel-loader": "^9.2.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1",
     "concurrently": "^9.1.2",
     "css-loader": "^7.1.2",
     "electron-reload": "^2.0.0-alpha.1",

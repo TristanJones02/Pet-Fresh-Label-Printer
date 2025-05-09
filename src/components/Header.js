@@ -22,10 +22,11 @@ import {
   Cancel as CancelIcon,
   Refresh as RefreshIcon
 } from '@mui/icons-material';
+import { useDialogs, DIALOG_TYPES } from './dialogs/DialogManager';
 
 function Header({ printerStatus, version }) {
   const [printerDialogOpen, setPrinterDialogOpen] = useState(false);
-  const [settingsDialogOpen, setSettingsDialogOpen] = useState(false);
+  const { openDialog } = useDialogs();
   
   // Mock print jobs for the printer dialog
   const [printJobs, setPrintJobs] = useState([
@@ -60,14 +61,9 @@ function Header({ printerStatus, version }) {
     setPrinterDialogOpen(false);
   };
   
-  // Handle opening the settings dialog
+  // Handle opening the settings dialog using DialogManager
   const handleSettingsDialogOpen = () => {
-    setSettingsDialogOpen(true);
-  };
-  
-  // Handle closing the settings dialog
-  const handleSettingsDialogClose = () => {
-    setSettingsDialogOpen(false);
+    openDialog(DIALOG_TYPES.SETTINGS);
   };
   
   // Handle cancel print job
@@ -174,32 +170,6 @@ function Header({ printerStatus, version }) {
             Reset Print Spooler
           </Button>
           <Button onClick={handlePrinterDialogClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
-      
-      {/* Settings Dialog */}
-      <Dialog
-        open={settingsDialogOpen}
-        onClose={handleSettingsDialogClose}
-        aria-labelledby="settings-dialog-title"
-      >
-        <DialogTitle id="settings-dialog-title">
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Typography variant="h6">Settings</Typography>
-            <IconButton edge="end" color="inherit" onClick={handleSettingsDialogClose} aria-label="close">
-              <CloseIcon />
-            </IconButton>
-          </Box>
-        </DialogTitle>
-        <DialogContent>
-          <Typography variant="body1">
-            Settings will be implemented in a future version.
-          </Typography>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleSettingsDialogClose} color="primary">
             Close
           </Button>
         </DialogActions>

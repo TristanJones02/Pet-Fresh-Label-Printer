@@ -1,12 +1,25 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './components/App.jsx';
+const React = require('react');
+const { createRoot } = require('react-dom/client');
+const App = require('./components/App');
 
 // Initialize the React application
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('app');
-  const root = createRoot(container);
-  root.render(<App />);
+  try {
+    console.log('Initializing application...');
+    const container = document.getElementById('app');
+    
+    if (!container) {
+      console.error('Could not find app container element');
+      return;
+    }
+    
+    // Create root and render app
+    const root = createRoot(container);
+    root.render(React.createElement(App));
+    console.log('Application rendered successfully');
+  } catch (err) {
+    console.error('Error initializing application:', err);
+  }
 });
 
 // Add IPC listeners for dialog management if needed

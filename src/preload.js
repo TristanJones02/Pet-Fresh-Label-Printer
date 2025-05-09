@@ -30,6 +30,14 @@ contextBridge.exposeInMainWorld(
       return ipcRenderer.invoke('load-products-from-cache');
     },
     
+    // Settings management
+    saveSettings: (settings) => {
+      return ipcRenderer.invoke('save-settings', settings);
+    },
+    loadSettings: () => {
+      return ipcRenderer.invoke('load-settings');
+    },
+    
     // Dialogs management
     openDialog: (dialogType, props) => {
       return ipcRenderer.invoke('open-dialog', { dialogType, props });
@@ -59,6 +67,9 @@ contextBridge.exposeInMainWorld(
     
     // App info
     getAppVersion: () => ipcRenderer.invoke('get-app-version'),
+    
+    // System information
+    getSystemInfo: () => ipcRenderer.invoke('get-system-info'),
     
     // Get label configuration
     getLabelConfig: () => ipcRenderer.invoke('get-label-config')

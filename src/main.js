@@ -55,42 +55,6 @@ app.on('window-all-closed', function () {
 const templatesDir = path.join(__dirname, 'templates');
 if (!fs.existsSync(templatesDir)) {
   fs.mkdirSync(templatesDir, { recursive: true });
-  
-  // Create a basic label template if it doesn't exist
-  const basicTemplate = path.join(templatesDir, 'basic.ejs');
-  if (!fs.existsSync(basicTemplate)) {
-    const templateContent = `
-      <div class="label" style="width: <%= config.width %>mm; height: <%= config.height %>mm; position: relative; font-family: Arial, sans-serif;">
-        <!-- Logo -->
-        <div style="position: absolute; top: 2mm; left: 2mm; height: 8mm;">
-          <img src="<%= logoPath %>" height="100%" />
-        </div>
-        
-        <!-- Product Name -->
-        <div style="position: absolute; top: 3mm; left: 12mm; font-size: 3.5mm; font-weight: bold;">
-          <%= product.name %>
-        </div>
-        
-        <!-- Category -->
-        <div style="position: absolute; top: 7mm; left: 12mm; font-size: 2.5mm; color: <%= product.categoryColor %>;">
-          <%= product.category %>
-        </div>
-        
-        <!-- Barcode -->
-        <div style="position: absolute; bottom: 2mm; left: 2mm; width: 58mm; text-align: center;">
-          <!-- Simple barcode representation -->
-          <div style="background: repeating-linear-gradient(90deg, #000, #000 2px, #fff 2px, #fff 4px); height: 8mm; width: 80%; margin: 0 auto;"></div>
-          <div style="font-size: 2mm; margin-top: 1mm;"><%= product.barcode %></div>
-        </div>
-        
-        <!-- Website -->
-        <div style="position: absolute; top: 11mm; left: 12mm; font-size: 2mm;">
-          www.petfresh.com.au
-        </div>
-      </div>
-    `;
-    fs.writeFileSync(basicTemplate, templateContent);
-  }
 }
 
 // Generate label preview for a product
@@ -111,6 +75,14 @@ async function generateLabelPreview(productData) {
     
     // Render the template
     const templatePath = path.join(__dirname, 'templates/basic.ejs');
+    
+    // Check if template exists
+    if (!fs.existsSync(templatePath)) {
+      return {
+        error: "No template found. Please create a template file."
+      };
+    }
+    
     const renderedHtml = await renderTemplate(templatePath, templateData);
     
     return {
@@ -164,12 +136,128 @@ ipcMain.handle('print-labels', async (event, { productData, quantity = 1, printe
   }
 });
 
+// Add an IPC handler for system info
+ipcMain.handle('get-system-info', async () => {
+  try {
+    // Get all local IP addresses
+    const networkInterfaces = os.networkInterfaces();
+    let privateIpAddresses = [];
+    let primaryPrivateIp = 'Not connected';
+    
+    // Find all non-internal IPv4 addresses
+    Object.keys(networkInterfaces).forEach((interfaceName) => {
+      const interfaces = networkInterfaces[interfaceName];
+      for (let i = 0; i < interfaces.length; i++) {
+        const iface = interfaces[i];
+        // Only include IPv4 addresses
+        if (iface.family === 'IPv4') {
+          // Check if this is a private IP
+          const isPrivate = 
+            /^10\./.test(iface.address) || 
+            /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(iface.address) || 
+            /^192\.168\./.test(iface.address) ||
+            /^127\./.test(iface.address) ||
+            /^169\.254\./.test(iface.address); // Link-local addresses
+            
+          privateIpAddresses.push({
+            name: interfaceName,
+            address: iface.address,
+            internal: iface.internal,
+            isPrivate: isPrivate
+          });
+          
+          // Use non-internal addresses as primary when available
+          // Prioritize actual private addresses
+          if (!iface.internal && isPrivate && primaryPrivateIp === 'Not connected') {
+            // Skip localhost
+            if (!iface.address.startsWith('127.')) {
+              primaryPrivateIp = iface.address;
+            }
+          }
+        }
+      }
+    });
+    
+    // Try to get public IP from external API
+    let publicIp = 'Fetching...';
+    try {
+      const https = require('https');
+      publicIp = await new Promise((resolve, reject) => {
+        // Try multiple services in case one is down
+        const services = [
+          'https://api.ipify.org',
+          'https://api.my-ip.io/ip',
+          'https://ipinfo.io/ip',
+          'https://icanhazip.com'
+        ];
+        
+        let serviceIndex = 0;
+        const tryNextService = () => {
+          if (serviceIndex >= services.length) {
+            resolve('Could not determine');
+            return;
+          }
+          
+          const service = services[serviceIndex];
+          https.get(service, (res) => {
+            let data = '';
+            res.on('data', (chunk) => {
+              data += chunk;
+            });
+            res.on('end', () => {
+              if (res.statusCode === 200) {
+                const ip = data.trim();
+                // Basic validation that it looks like an IP
+                if (/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/.test(ip)) {
+                  resolve(ip);
+                } else {
+                  serviceIndex++;
+                  tryNextService();
+                }
+              } else {
+                serviceIndex++;
+                tryNextService();
+              }
+            });
+          }).on('error', (err) => {
+            console.error(`Error fetching public IP from ${service}:`, err);
+            serviceIndex++;
+            tryNextService();
+          });
+        };
+        
+        tryNextService();
+      });
+    } catch (err) {
+      console.error('Error fetching public IP:', err);
+      publicIp = 'Could not determine';
+    }
+    
+    return {
+      publicIpAddress: publicIp,
+      privateIpAddress: primaryPrivateIp,
+      allIpAddresses: privateIpAddresses,
+      hostname: os.hostname(),
+      platform: os.platform(),
+      osVersion: os.release(),
+      cpuCount: os.cpus().length,
+      totalMemory: Math.round(os.totalmem() / (1024 * 1024 * 1024)) + ' GB'
+    };
+  } catch (error) {
+    console.error('Error getting system info:', error);
+    return {
+      error: error.message
+    };
+  }
+});
+
 // HTML-to-PDF conversion for label printing
 ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = null }) => {
   try {
     const startTime = Date.now();
     const timing = {
       htmlLoad: 0,
+      imageGeneration: 0,
       pdfGeneration: 0,
       fileSave: 0,
       total: 0
@@ -188,6 +276,22 @@ ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = nul
     // Record HTML load time start
     const htmlLoadStart = Date.now();
     
+    // Load current settings to check for development image mode
+    let settings = {};
+    try {
+      const settingsFile = path.join(app.getPath('userData'), 'settings.json');
+      if (fs.existsSync(settingsFile)) {
+        const settingsData = fs.readFileSync(settingsFile, 'utf8');
+        settings = JSON.parse(settingsData);
+      }
+    } catch (err) {
+      console.error('Error loading settings for print job:', err);
+    }
+    const useDevImageMode = settings?.application?.devImageGeneration || false;
+    const devImagePath = settings?.application?.devImagePath || path.join(app.getPath('pictures'), 'PetFresh-Labels');
+    const includeContentOnly = settings?.application?.includeContentOnly || true;
+    const includeGraphics = settings?.application?.includeGraphics || false;
+    
     // Create an offscreen BrowserWindow to load the HTML
     const offscreenWindow = new BrowserWindow({
       width: LABEL_CONFIG.width * 4, // Scale up for better quality
@@ -205,80 +309,176 @@ ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = nul
     await offscreenWindow.loadFile(tempHtmlPath);
     timing.htmlLoad = Date.now() - htmlLoadStart;
     
-    // Calculate PDF options
-    const pdfOptions = {
-      printBackground: true,
-      pageSize: {
-        width: LABEL_CONFIG.width * 1000, // microns
-        height: LABEL_CONFIG.height * 1000 // microns
-      },
-      margins: {
-        top: 0,
-        bottom: 0,
-        left: 0,
-        right: 0
-      },
-      preferCSSPageSize: true
-    };
-    
-    // Determine output path
-    let outputPath = savePath;
-    if (!outputPath) {
-      // Create filename with timestamp
-      const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
-      outputPath = path.join(tempDir, `label-${timestamp}.pdf`);
-    }
-    
-    // Generate PDF 
-    const pdfGenStart = Date.now();
-    const pdfData = await offscreenWindow.webContents.printToPDF(pdfOptions);
-    timing.pdfGeneration = Date.now() - pdfGenStart;
-    
-    // Save PDF to file
-    const fileSaveStart = Date.now();
-    fs.writeFileSync(outputPath, pdfData);
-    timing.fileSave = Date.now() - fileSaveStart;
-    
-    // Close the offscreen window
-    offscreenWindow.close();
-    
-    // If we need multiple copies, duplicate the PDF file
-    const pdfPaths = [outputPath];
-    
-    if (quantity > 1) {
-      for (let i = 1; i < quantity; i++) {
-        const copyPath = outputPath.replace('.pdf', `-${i+1}.pdf`);
-        fs.copyFileSync(outputPath, copyPath);
-        pdfPaths.push(copyPath);
+    // If dev image mode is enabled, generate PNG instead of PDF
+    if (useDevImageMode) {
+      // Ensure the output directory exists
+      if (!fs.existsSync(devImagePath)) {
+        fs.mkdirSync(devImagePath, { recursive: true });
       }
+      
+      // Generate PNG
+      const imageGenStart = Date.now();
+      
+      // If we're only including content, we need to execute some JS in the page
+      // to hide the non-content elements before capture
+      if (includeContentOnly) {
+        // Execute script in the page to hide non-content elements and adjust view
+        await offscreenWindow.webContents.executeJavaScript(`
+          // Hide page margins, background, etc.
+          document.body.style.margin = '0';
+          document.body.style.padding = '0';
+          document.body.style.background = 'transparent';
+          
+          // Find the main content container (adjust selector based on your HTML structure)
+          const contentContainer = document.querySelector('.label-content');
+          if (contentContainer) {
+            // Make sure content is visible
+            contentContainer.style.display = 'block';
+            contentContainer.style.visibility = 'visible';
+            
+            // Hide any non-content elements
+            Array.from(document.body.children).forEach(el => {
+              if (el !== contentContainer && !contentContainer.contains(el)) {
+                el.style.display = 'none';
+              }
+            });
+          }
+          
+          // If we need to include/exclude graphics overlay
+          const graphicsOverlay = document.querySelector('.graphics-overlay');
+          if (graphicsOverlay) {
+            graphicsOverlay.style.display = ${includeGraphics ? "'block'" : "'none'"};
+          }
+          
+          true; // Return something to confirm execution
+        `);
+      }
+      
+      const image = await offscreenWindow.webContents.capturePage();
+      timing.imageGeneration = Date.now() - imageGenStart;
+      
+      // Save image to file
+      const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
+      const outputPath = savePath || path.join(devImagePath, `label-${timestamp}.png`);
+      
+      const fileSaveStart = Date.now();
+      fs.writeFileSync(outputPath, image.toPNG());
+      timing.fileSave = Date.now() - fileSaveStart;
+      
+      // Generate additional copies if needed
+      const imagePaths = [outputPath];
+      if (quantity > 1) {
+        for (let i = 1; i < quantity; i++) {
+          const copyPath = outputPath.replace('.png', `-${i+1}.png`);
+          fs.copyFileSync(outputPath, copyPath);
+          imagePaths.push(copyPath);
+        }
+      }
+      
+      // Close the offscreen window
+      offscreenWindow.close();
+      
+      // Clean up temporary HTML file
+      try {
+        fs.unlinkSync(tempHtmlPath);
+      } catch (err) {
+        console.error('Error removing temp HTML file:', err);
+      }
+      
+      // Calculate total time
+      timing.total = Date.now() - startTime;
+      
+      // Log timing information and file path
+      console.log(`Generated PNG label in ${timing.total}ms`);
+      console.log(`- HTML load: ${timing.htmlLoad}ms`);
+      console.log(`- Image generation: ${timing.imageGeneration}ms`);
+      console.log(`- File save: ${timing.fileSave}ms`);
+      console.log(`PNG saved to: ${outputPath}`);
+      
+      return {
+        success: true,
+        imagePath: outputPath,
+        imagePaths,
+        timing,
+        message: `Generated ${quantity} label PNG(s)`
+      };
+    } else {
+      // Default PDF generation path
+      // Calculate PDF options
+      const pdfOptions = {
+        printBackground: true,
+        pageSize: {
+          width: LABEL_CONFIG.width * 1000, // microns
+          height: LABEL_CONFIG.height * 1000 // microns
+        },
+        margins: {
+          top: 0,
+          bottom: 0,
+          left: 0,
+          right: 0
+        },
+        preferCSSPageSize: true
+      };
+      
+      // Determine output path
+      let outputPath = savePath;
+      if (!outputPath) {
+        // Create filename with timestamp
+        const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
+        outputPath = path.join(tempDir, `label-${timestamp}.pdf`);
+      }
+      
+      // Generate PDF 
+      const pdfGenStart = Date.now();
+      const pdfData = await offscreenWindow.webContents.printToPDF(pdfOptions);
+      timing.pdfGeneration = Date.now() - pdfGenStart;
+      
+      // Save PDF to file
+      const fileSaveStart = Date.now();
+      fs.writeFileSync(outputPath, pdfData);
+      timing.fileSave = Date.now() - fileSaveStart;
+      
+      // Close the offscreen window
+      offscreenWindow.close();
+      
+      // If we need multiple copies, duplicate the PDF file
+      const pdfPaths = [outputPath];
+      
+      if (quantity > 1) {
+        for (let i = 1; i < quantity; i++) {
+          const copyPath = outputPath.replace('.pdf', `-${i+1}.pdf`);
+          fs.copyFileSync(outputPath, copyPath);
+          pdfPaths.push(copyPath);
+        }
+      }
+      
+      // Clean up temporary HTML file
+      try {
+        fs.unlinkSync(tempHtmlPath);
+      } catch (err) {
+        console.error('Error removing temp HTML file:', err);
+      }
+      
+      // Calculate total time
+      timing.total = Date.now() - startTime;
+      
+      // Log timing information and file path
+      console.log(`Generated PDF label in ${timing.total}ms`);
+      console.log(`- HTML load: ${timing.htmlLoad}ms`);
+      console.log(`- PDF generation: ${timing.pdfGeneration}ms`);
+      console.log(`- File save: ${timing.fileSave}ms`);
+      console.log(`PDF saved to: ${outputPath}`);
+      
+      return {
+        success: true,
+        pdfPath: outputPath,
+        pdfPaths,
+        timing,
+        message: `Generated ${quantity} label PDF(s)`
+      };
     }
-    
-    // Clean up temporary HTML file
-    try {
-      fs.unlinkSync(tempHtmlPath);
-    } catch (err) {
-      console.error('Error removing temp HTML file:', err);
-    }
-    
-    // Calculate total time
-    timing.total = Date.now() - startTime;
-    
-    // Log timing information and file path
-    console.log(`Generated PDF label in ${timing.total}ms`);
-    console.log(`- HTML load: ${timing.htmlLoad}ms`);
-    console.log(`- PDF generation: ${timing.pdfGeneration}ms`);
-    console.log(`- File save: ${timing.fileSave}ms`);
-    console.log(`PDF saved to: ${outputPath}`);
-    
-    return {
-      success: true,
-      pdfPath: outputPath,
-      pdfPaths,
-      timing,
-      message: `Generated ${quantity} label PDF(s)`
-    };
   } catch (error) {
-    console.error('Error generating PDF label:', error);
+    console.error('Error generating label:', error);
     return {
       success: false,
       error: error.message
@@ -324,6 +524,46 @@ ipcMain.handle('save-products-to-cache', async (event, products) => {
     return { success: true };
   } catch (error) {
     console.error('Error saving products to cache:', error);
+    return { error: error.message };
+  }
+});
+
+// Settings management
+ipcMain.handle('save-settings', async (event, settings) => {
+  try {
+    const settingsFile = path.join(app.getPath('userData'), 'settings.json');
+    fs.writeFileSync(settingsFile, JSON.stringify(settings, null, 2));
+    return { success: true };
+  } catch (error) {
+    console.error('Error saving settings:', error);
+    return { error: error.message };
+  }
+});
+
+ipcMain.handle('load-settings', async () => {
+  try {
+    const settingsFile = path.join(app.getPath('userData'), 'settings.json');
+    if (fs.existsSync(settingsFile)) {
+      const settingsData = fs.readFileSync(settingsFile, 'utf8');
+      return JSON.parse(settingsData);
+    } else {
+      // Return default settings if file doesn't exist yet
+      return {
+        printer: {
+          defaultPrinter: 'KITCHEN',
+          showConfirmation: false
+        },
+        application: {
+          darkMode: false,
+          devImageGeneration: false,
+          devImagePath: path.join(app.getPath('pictures'), 'PetFresh-Labels'),
+          includeContentOnly: true,
+          includeGraphics: false
+        }
+      };
+    }
+  } catch (error) {
+    console.error('Error loading settings:', error);
     return { error: error.message };
   }
 });
