@@ -21,6 +21,9 @@ contextBridge.exposeInMainWorld(
     getPrinters: () => {
       return ipcRenderer.invoke('get-printers');
     },
+    refreshPrinters: () => {
+      return ipcRenderer.invoke('refresh-printers');
+    },
     
     // Utility functions
     saveProductsToCache: (products) => {

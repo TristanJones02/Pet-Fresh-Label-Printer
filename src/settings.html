@@ -105,6 +105,113 @@
       padding: 40px 0;
       font-size: 16px;
     }
+
+    /* New styles for printer selection */
+    .printer-list {
+      margin-top: 15px;
+    }
+
+    .printer-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      background-color: #f9f9f9;
+      transition: background-color 0.2s;
+    }
+
+    .printer-item:hover {
+      background-color: #f0f0f0;
+    }
+
+    .printer-item.selected {
+      background-color: #e0f0e0;
+      border-left: 3px solid #69ad69;
+    }
+
+    .printer-item input[type="radio"] {
+      margin-right: 12px;
+    }
+
+    .printer-name {
+      font-size: 16px;
+      flex: 1;
+    }
+
+    .default-badge {
+      font-size: 12px;
+      background-color: #69ad69;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-left: 10px;
+    }
+
+    .refresh-button {
+      background-color: #9ba03b;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s, transform 0.1s;
+    }
+
+    .refresh-button:hover {
+      background-color: #a9ae4f;
+    }
+
+    .refresh-button:active {
+      transform: scale(0.97);
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 15px;
+    }
+
+    .refresh-icon {
+      margin-right: 6px;
+      display: inline-block;
+    }
+
+    .no-printers {
+      color: #cc5555;
+      text-align: center;
+      padding: 20px;
+      font-size: 15px;
+      background-color: #fff4f4;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-spinner {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(155, 160, 59, 0.2);
+      border-radius: 50%;
+      border-top-color: #9ba03b;
+      animation: spin 1s linear infinite;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
   </style>
 </head>
 <body>
@@ -116,7 +223,20 @@
   <div class="content">
     <div class="settings-section">
       <h2>Printer Settings</h2>
-      <div class="placeholder">Printer settings will be available here.</div>
+      <div id="printerSettings">
+        <p>Select the printer you want to use for label printing:</p>
+        <div id="printerListContainer" class="printer-list">
+          <div class="loading">
+            <div class="loading-spinner"></div>
+            Loading printers...
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="refreshPrintersButton" class="refresh-button">
+            <span class="refresh-icon">⟳</span> Refresh Printers
+          </button>
+        </div>
+      </div>
     </div>
     
     <div class="settings-section">
@@ -149,6 +269,110 @@
       // Tell the main process to start its fade-out animation IMMEDIATELY
       // but the main process will handle the actual window closing
       window.api.closeSettings();
+    });
+
+    // Function to load and display printers
+    async function loadPrinters() {
+      const printerListContainer = document.getElementById('printerListContainer');
+      
+      // Show loading
+      printerListContainer.innerHTML = `
+        <div class="loading">
+          <div class="loading-spinner"></div>
+          Loading printers...
+        </div>
+      `;
+      
+      try {
+        // Get printers from the main process
+        const printers = await window.api.getPrinters();
+        
+        if (printers.length === 0) {
+          printerListContainer.innerHTML = `
+            <div class="no-printers">
+              No printers found. Please ensure your printers are properly connected and set up.
+            </div>
+          `;
+          return;
+        }
+        
+        // Clear the container
+        printerListContainer.innerHTML = '';
+        
+        // Get the currently selected printer from settings (if any)
+        // For now, we'll default to the first printer if no printer is selected
+        const selectedPrinter = localStorage.getItem('selectedPrinter') || '';
+        
+        // Create printer list
+        printers.forEach(printer => {
+          const isSelected = selectedPrinter === printer.name || 
+                          (selectedPrinter === '' && printer.isDefault);
+          
+          const printerItem = document.createElement('div');
+          printerItem.className = `printer-item ${isSelected ? 'selected' : ''}`;
+          printerItem.innerHTML = `
+            <input type="radio" name="printer" value="${printer.name}" 
+                   id="printer-${printer.name}" ${isSelected ? 'checked' : ''}>
+            <label for="printer-${printer.name}" class="printer-name">
+              ${printer.name}
+              ${printer.isDefault ? '<span class="default-badge">Default</span>' : ''}
+            </label>
+          `;
+          
+          // Add click handler to select this printer
+          printerItem.addEventListener('click', () => {
+            // Remove selected class from all printer items
+            document.querySelectorAll('.printer-item').forEach(item => {
+              item.classList.remove('selected');
+            });
+            
+            // Add selected class to this printer item
+            printerItem.classList.add('selected');
+            
+            // Check the radio button
+            const radio = printerItem.querySelector('input[type="radio"]');
+            radio.checked = true;
+            
+            // Save the selected printer
+            localStorage.setItem('selectedPrinter', printer.name);
+          });
+          
+          printerListContainer.appendChild(printerItem);
+        });
+      } catch (error) {
+        console.error('Error loading printers:', error);
+        printerListContainer.innerHTML = `
+          <div class="no-printers">
+            Error loading printers. Please try refreshing the list.
+          </div>
+        `;
+      }
+    }
+    
+    // Load printers when the page loads
+    document.addEventListener('DOMContentLoaded', loadPrinters);
+    
+    // Refresh printers button handler
+    document.getElementById('refreshPrintersButton').addEventListener('click', async () => {
+      const button = document.getElementById('refreshPrintersButton');
+      
+      // Disable the button and show loading state
+      button.disabled = true;
+      button.innerHTML = '<span class="loading-spinner"></span> Refreshing...';
+      
+      try {
+        // Refresh printers
+        await window.api.refreshPrinters();
+        
+        // Reload the printer list
+        await loadPrinters();
+      } catch (error) {
+        console.error('Error refreshing printers:', error);
+      } finally {
+        // Reset button state
+        button.disabled = false;
+        button.innerHTML = '<span class="refresh-icon">⟳</span> Refresh Printers';
+      }
     });
   </script>
 </body>

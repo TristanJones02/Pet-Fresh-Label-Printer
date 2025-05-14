@@ -2,14 +2,126 @@ const { ipcMain, BrowserWindow, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
+const { exec } = require('child_process');
 
 // Track if we're currently printing
 let isPrinting = false;
+let availablePrinters = [];
+
+/**
+ * Get printers on Windows using PowerShell
+ * @returns {Promise<Array>} Array of printer objects
+ */
+async function getWindowsPrinters() {
+  return new Promise((resolve, reject) => {
+    exec('powershell.exe -command "Get-Printer | Select-Object Name, Default | ConvertTo-Json"', (error, stdout) => {
+      if (error) {
+        console.error('Error getting Windows printers:', error);
+        // Return empty array in case of error
+        resolve([]);
+        return;
+      }
+      
+      try {
+        // Parse the JSON output
+        const printers = JSON.parse(stdout.trim());
+        // Convert to our standard format
+        const formattedPrinters = Array.isArray(printers) ? printers.map(printer => ({
+          name: printer.Name,
+          isDefault: printer.Default
+        })) : [{ name: printers.Name, isDefault: printers.Default }];
+        
+        resolve(formattedPrinters);
+      } catch (parseError) {
+        console.error('Error parsing Windows printer list:', parseError);
+        resolve([]);
+      }
+    });
+  });
+}
+
+/**
+ * Get printers on macOS using lpstat
+ * @returns {Promise<Array>} Array of printer objects
+ */
+async function getMacPrinters() {
+  return new Promise((resolve, reject) => {
+    // Get all printers
+    exec('lpstat -p', (error, stdout) => {
+      if (error) {
+        console.error('Error getting macOS printers:', error);
+        resolve([]);
+        return;
+      }
+      
+      // Get default printer
+      exec('lpstat -d', (defaultError, defaultStdout) => {
+        try {
+          const printerLines = stdout.trim().split('\n');
+          const printers = [];
+          
+          // Parse default printer name
+          let defaultPrinter = '';
+          if (!defaultError && defaultStdout) {
+            const defaultMatch = defaultStdout.match(/system default destination: (.+)/);
+            if (defaultMatch && defaultMatch[1]) {
+              defaultPrinter = defaultMatch[1];
+            }
+          }
+          
+          // Parse printer list
+          for (const line of printerLines) {
+            // Format: "printer PrinterName is idle. enabled since..."
+            const match = line.match(/printer (.+?) /);
+            if (match && match[1]) {
+              const printerName = match[1];
+              printers.push({
+                name: printerName,
+                isDefault: printerName === defaultPrinter
+              });
+            }
+          }
+          
+          resolve(printers);
+        } catch (parseError) {
+          console.error('Error parsing macOS printer list:', parseError);
+          resolve([]);
+        }
+      });
+    });
+  });
+}
+
+/**
+ * Get all available printers based on platform
+ * @returns {Promise<Array>} Array of printer objects
+ */
+async function getPrinters() {
+  try {
+    const platform = process.platform;
+    
+    if (platform === 'win32') {
+      return await getWindowsPrinters();
+    } else if (platform === 'darwin') {
+      return await getMacPrinters();
+    } else {
+      // Unsupported platform, return empty array
+      console.log('Unsupported platform for printer detection:', platform);
+      return [];
+    }
+  } catch (error) {
+    console.error('Error getting printers:', error);
+    return [];
+  }
+}
 
 /**
  * Initialize printing functionality and IPC handlers
  */
 function initPrinting() {
+  // Load printers initially
+  refreshPrinterList();
+  
   // Set up IPC handlers for print requests
   ipcMain.handle('print-label', async (event, options) => {
     try {
@@ -124,15 +236,36 @@ function initPrinting() {
     }
   });
   
-  // Debug IPC handlers
+  // Refresh the printer list
+  async function refreshPrinterList() {
+    try {
+      availablePrinters = await getPrinters();
+      console.log('Available printers:', availablePrinters);
+    } catch (error) {
+      console.error('Error refreshing printer list:', error);
+    }
+  }
+  
+  // IPC handler to get list of printers
   ipcMain.handle('get-printers', async () => {
     try {
-      // In a future version, this would return the list of available printers
-      // For now, we'll return a mock printer
-      return [{ name: 'PDF Printer', isDefault: true }];
+      // Refresh the printer list before returning it
+      await refreshPrinterList();
+      return availablePrinters;
     } catch (error) {
       console.error('Error getting printers:', error);
       return [];
+    }
+  });
+  
+  // IPC handler to refresh the printer list
+  ipcMain.handle('refresh-printers', async () => {
+    try {
+      await refreshPrinterList();
+      return availablePrinters;
+    } catch (error) {
+      console.error('Error refreshing printers:', error);
+      return { success: false, error: error.message };
     }
   });
 }
