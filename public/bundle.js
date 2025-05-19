@@ -2845,6 +2845,98 @@ var _default = exports["default"] = (0, _createSvgIcon.default)([/*#__PURE__*/(0
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/Add.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Add.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
+}), 'Add');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/BugReport.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@mui/icons-material/BugReport.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5s-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20zm-6 8h-4v-2h4zm0-4h-4v-2h4z"
+}), 'BugReport');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/Build.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Build.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "m22.7 19-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4"
+}), 'Build');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/Cable.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Cable.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M20 5V4c0-.55-.45-1-1-1h-2c-.55 0-1 .45-1 1v1h-1v4c0 .55.45 1 1 1h1v7c0 1.1-.9 2-2 2s-2-.9-2-2V7c0-2.21-1.79-4-4-4S5 4.79 5 7v7H4c-.55 0-1 .45-1 1v4h1v1c0 .55.45 1 1 1h2c.55 0 1-.45 1-1v-1h1v-4c0-.55-.45-1-1-1H7V7c0-1.1.9-2 2-2s2 .9 2 2v10c0 2.21 1.79 4 4 4s4-1.79 4-4v-7h1c.55 0 1-.45 1-1V5z"
+}), 'Cable');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Close.js":
 /*!***************************************************!*\
   !*** ./node_modules/@mui/icons-material/Close.js ***!
@@ -2937,6 +3029,29 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/LocalPrintshop.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/LocalPrintshop.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3m-3 11H8v-5h8zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-1-9H6v4h12z"
+}), 'LocalPrintshop');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Print.js":
 /*!***************************************************!*\
   !*** ./node_modules/@mui/icons-material/Print.js ***!
@@ -2957,6 +3072,29 @@ var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/r
 var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
   d: "M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3m-3 11H8v-5h8zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-1-9H6v4h12z"
 }), 'Print');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/Queue.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Queue.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M4 6H2v14c0 1.1.9 2 2 2h14v-2H4zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2m-1 9h-4v4h-2v-4H9V9h4V5h2v4h4z"
+}), 'Queue');
 
 /***/ }),
 
@@ -3003,6 +3141,29 @@ var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/r
 var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
   d: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6"
 }), 'Settings');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/Tune.js":
+/*!**************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Tune.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M3 17v2h6v-2zM3 5v2h10V5zm10 16v-2h8v-2h-8v-2h-2v6zM7 9v2H3v2h4v2h2V9zm14 4v-2H11v2zm-6-4h2V7h4V5h-4V3h-2z"
+}), 'Tune');
 
 /***/ }),
 
@@ -142345,6 +142506,10 @@ module.exports = {
 
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _excluded = ["children", "value", "index"];
+function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
+function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
@@ -142390,7 +142555,16 @@ var _require = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/mat
   FormControlLabel = _require.FormControlLabel,
   Checkbox = _require.Checkbox,
   InputAdornment = _require.InputAdornment,
-  Paper = _require.Paper;
+  Paper = _require.Paper,
+  Alert = _require.Alert,
+  Link = _require.Link,
+  CircularProgress = _require.CircularProgress,
+  Card = _require.Card,
+  CardContent = _require.CardContent,
+  CardActions = _require.CardActions,
+  Grid = _require.Grid,
+  Tooltip = _require.Tooltip,
+  Snackbar = _require.Snackbar;
 var CloseIcon = (__webpack_require__(/*! @mui/icons-material/Close */ "./node_modules/@mui/icons-material/Close.js")["default"]);
 var PrintIcon = (__webpack_require__(/*! @mui/icons-material/Print */ "./node_modules/@mui/icons-material/Print.js")["default"]);
 var SettingsIcon = (__webpack_require__(/*! @mui/icons-material/Settings */ "./node_modules/@mui/icons-material/Settings.js")["default"]);
@@ -142399,6 +142573,13 @@ var FolderIcon = (__webpack_require__(/*! @mui/icons-material/Folder */ "./node_
 var InfoIcon = (__webpack_require__(/*! @mui/icons-material/Info */ "./node_modules/@mui/icons-material/Info.js")["default"]);
 var RouterIcon = (__webpack_require__(/*! @mui/icons-material/Router */ "./node_modules/@mui/icons-material/Router.js")["default"]);
 var AccessTimeIcon = (__webpack_require__(/*! @mui/icons-material/AccessTime */ "./node_modules/@mui/icons-material/AccessTime.js")["default"]);
+var PrinterIcon = (__webpack_require__(/*! @mui/icons-material/LocalPrintshop */ "./node_modules/@mui/icons-material/LocalPrintshop.js")["default"]);
+var BuildIcon = (__webpack_require__(/*! @mui/icons-material/Build */ "./node_modules/@mui/icons-material/Build.js")["default"]);
+var QueueIcon = (__webpack_require__(/*! @mui/icons-material/Queue */ "./node_modules/@mui/icons-material/Queue.js")["default"]);
+var AddIcon = (__webpack_require__(/*! @mui/icons-material/Add */ "./node_modules/@mui/icons-material/Add.js")["default"]);
+var TuneIcon = (__webpack_require__(/*! @mui/icons-material/Tune */ "./node_modules/@mui/icons-material/Tune.js")["default"]);
+var TestIcon = (__webpack_require__(/*! @mui/icons-material/BugReport */ "./node_modules/@mui/icons-material/BugReport.js")["default"]);
+var ConnectIcon = (__webpack_require__(/*! @mui/icons-material/Cable */ "./node_modules/@mui/icons-material/Cable.js")["default"]);
 
 // TabPanel component to handle tab content
 function TabPanel(props) {
@@ -142423,42 +142604,57 @@ function SettingsDialog(_ref) {
     _useState2 = _slicedToArray(_useState, 2),
     tabValue = _useState2[0],
     setTabValue = _useState2[1];
-  var _useState3 = useState([{
-      name: 'KITCHEN',
-      isDefault: true
-    }, {
-      name: 'OFFICE',
-      isDefault: false
-    }, {
-      name: 'PACKAGING',
-      isDefault: false
-    }]),
+  var _useState3 = useState([]),
     _useState4 = _slicedToArray(_useState3, 2),
     printers = _useState4[0],
     setPrinters = _useState4[1];
-  var _useState5 = useState('KITCHEN'),
+  var _useState5 = useState([]),
     _useState6 = _slicedToArray(_useState5, 2),
-    selectedPrinter = _useState6[0],
-    setSelectedPrinter = _useState6[1];
-  var _useState7 = useState(new Date()),
+    systemPrinters = _useState6[0],
+    setSystemPrinters = _useState6[1];
+  var _useState7 = useState(''),
     _useState8 = _slicedToArray(_useState7, 2),
-    currentTime = _useState8[0],
-    setCurrentTime = _useState8[1];
-  var _useState9 = useState('Fetching...'),
+    selectedPrinter = _useState8[0],
+    setSelectedPrinter = _useState8[1];
+  var _useState9 = useState(new Date()),
     _useState0 = _slicedToArray(_useState9, 2),
-    publicIpAddress = _useState0[0],
-    setPublicIpAddress = _useState0[1];
+    currentTime = _useState0[0],
+    setCurrentTime = _useState0[1];
   var _useState1 = useState('Fetching...'),
     _useState10 = _slicedToArray(_useState1, 2),
-    privateIpAddress = _useState10[0],
-    setPrivateIpAddress = _useState10[1];
-  var _useState11 = useState([]),
+    publicIpAddress = _useState10[0],
+    setPublicIpAddress = _useState10[1];
+  var _useState11 = useState('Fetching...'),
     _useState12 = _slicedToArray(_useState11, 2),
-    allIpAddresses = _useState12[0],
-    setAllIpAddresses = _useState12[1];
-  var _useState13 = useState({
+    privateIpAddress = _useState12[0],
+    setPrivateIpAddress = _useState12[1];
+  var _useState13 = useState([]),
+    _useState14 = _slicedToArray(_useState13, 2),
+    allIpAddresses = _useState14[0],
+    setAllIpAddresses = _useState14[1];
+  var _useState15 = useState(false),
+    _useState16 = _slicedToArray(_useState15, 2),
+    hasZebraPrinter = _useState16[0],
+    setHasZebraPrinter = _useState16[1];
+  var _useState17 = useState(true),
+    _useState18 = _slicedToArray(_useState17, 2),
+    loadingPrinters = _useState18[0],
+    setLoadingPrinters = _useState18[1];
+  var _useState19 = useState(false),
+    _useState20 = _slicedToArray(_useState19, 2),
+    isPrinting = _useState20[0],
+    setIsPrinting = _useState20[1];
+  var _useState21 = useState(null),
+    _useState22 = _slicedToArray(_useState21, 2),
+    printMessage = _useState22[0],
+    setPrintMessage = _useState22[1];
+  var _useState23 = useState(false),
+    _useState24 = _slicedToArray(_useState23, 2),
+    showPrintMessage = _useState24[0],
+    setShowPrintMessage = _useState24[1];
+  var _useState25 = useState({
       printer: {
-        defaultPrinter: 'KITCHEN',
+        defaultPrinter: '',
         showConfirmation: false
       },
       application: {
@@ -142468,17 +142664,240 @@ function SettingsDialog(_ref) {
         includeGraphics: false
       }
     }),
-    _useState14 = _slicedToArray(_useState13, 2),
-    settings = _useState14[0],
-    setSettings = _useState14[1];
+    _useState26 = _slicedToArray(_useState25, 2),
+    settings = _useState26[0],
+    setSettings = _useState26[1];
+  var _useState27 = useState(false),
+    _useState28 = _slicedToArray(_useState27, 2),
+    isZebraPrinterSelected = _useState28[0],
+    setIsZebraPrinterSelected = _useState28[1];
 
   // Load settings when dialog opens
   useEffect(function () {
     if (open) {
-      loadSettings();
+      loadSettingsAndInitialPrinter();
       getSystemInfo();
+
+      // Reset toast message when dialog opens
+      setShowPrintMessage(false);
+      setPrintMessage(null);
     }
   }, [open]);
+
+  // Add auto-dismiss for toast messages
+  useEffect(function () {
+    if (showPrintMessage) {
+      // Auto-hide the toast after 5 seconds
+      var timer = setTimeout(function () {
+        setShowPrintMessage(false);
+      }, 5000);
+
+      // Cleanup timer on unmount
+      return function () {
+        return clearTimeout(timer);
+      };
+    }
+  }, [showPrintMessage]);
+
+  // Load settings and create initial printer option for previously selected printer
+  var loadSettingsAndInitialPrinter = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var loadedSettings, initialPrinter;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            setLoadingPrinters(true);
+            _context.next = 4;
+            return window.api.loadSettings();
+          case 4:
+            loadedSettings = _context.sent;
+            if (loadedSettings && !loadedSettings.error) {
+              setSettings(loadedSettings);
+
+              // If there's a previously selected printer, create an initial option for it
+              if (loadedSettings.printer.defaultPrinter) {
+                initialPrinter = loadedSettings.printer.defaultPrinter;
+                setSelectedPrinter(initialPrinter);
+
+                // Create an initial printer list with just the selected printer
+                // This allows the UI to show the previously selected printer immediately
+                setSystemPrinters([{
+                  name: initialPrinter,
+                  isDefault: true,
+                  isLoading: true
+                }]);
+              }
+            }
+
+            // Load the full printer list in the background
+            loadSystemPrinters();
+            _context.next = 13;
+            break;
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](0);
+            console.error('Error loading settings:', _context.t0);
+            // Still try to load printers even if settings fail
+            loadSystemPrinters();
+          case 13:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[0, 9]]);
+    }));
+    return function loadSettingsAndInitialPrinter() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  // Load installed system printers
+  var loadSystemPrinters = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+      var printerList, hasZebra, updatedPrinterList, defaultPrinter;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            _context2.next = 3;
+            return window.api.getPrinters();
+          case 3:
+            printerList = _context2.sent;
+            console.log('System printers:', printerList);
+
+            // Check if any Zebra printers are installed
+            hasZebra = printerList.some(function (printer) {
+              return printer.name.toLowerCase().includes('zebra') || printer.name.toLowerCase().includes('zdesigner');
+            });
+            setHasZebraPrinter(hasZebra);
+
+            // If we have a selected printer that's not in the list, add it
+            updatedPrinterList = _toConsumableArray(printerList);
+            if (selectedPrinter && !printerList.find(function (p) {
+              return p.name === selectedPrinter;
+            })) {
+              updatedPrinterList.push({
+                name: selectedPrinter,
+                isDefault: false,
+                temporary: true // Mark as temporary so we know it wasn't found on the system
+              });
+            }
+
+            // Update the printer list
+            setSystemPrinters(updatedPrinterList);
+
+            // If no printer is selected yet, select the default one
+            if (!selectedPrinter) {
+              defaultPrinter = printerList.find(function (p) {
+                return p.isDefault;
+              });
+              setSelectedPrinter(defaultPrinter ? defaultPrinter.name : printerList.length > 0 ? printerList[0].name : '');
+            }
+
+            // Check if selected printer is a Zebra printer
+            checkIfZebraPrinter(selectedPrinter);
+            setLoadingPrinters(false);
+            _context2.next = 20;
+            break;
+          case 15:
+            _context2.prev = 15;
+            _context2.t0 = _context2["catch"](0);
+            console.error('Error loading system printers:', _context2.t0);
+            setLoadingPrinters(false);
+
+            // If we have a selected printer but no printers loaded, create a temporary one
+            if (selectedPrinter && systemPrinters.length === 0) {
+              setSystemPrinters([{
+                name: selectedPrinter,
+                isDefault: true,
+                temporary: true
+              }]);
+            }
+          case 20:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[0, 15]]);
+    }));
+    return function loadSystemPrinters() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+
+  // Check if the selected printer is a Zebra printer
+  var checkIfZebraPrinter = function checkIfZebraPrinter(printerName) {
+    if (!printerName) {
+      setIsZebraPrinterSelected(false);
+      return;
+    }
+    var isZebra = printerName.toLowerCase().includes('zebra') || printerName.toLowerCase().includes('zdesigner');
+    setIsZebraPrinterSelected(isZebra);
+  };
+
+  // Handle printer selection change
+  var handlePrinterChange = function handlePrinterChange(event) {
+    var newPrinter = event.target.value;
+    setSelectedPrinter(newPrinter);
+    checkIfZebraPrinter(newPrinter);
+  };
+
+  // Run Zebra printer tool command
+  var runPrinterCommand = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(command) {
+      var finalCommand, result;
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) switch (_context3.prev = _context3.next) {
+          case 0:
+            _context3.prev = 0;
+            // Show a message that the printer tool is launching
+            setPrintMessage({
+              text: 'Launching printer tool, please wait...',
+              type: 'info'
+            });
+            setShowPrintMessage(true);
+
+            // Replace the printer name in the command
+            finalCommand = command.replace(/ZDesigner ZT230-200dpi ZPL/g, selectedPrinter); // Use the appropriate API method to run the command
+            _context3.next = 6;
+            return window.api.runCommand(finalCommand);
+          case 6:
+            result = _context3.sent;
+            if (result.success) {
+              // Show success message but keep dialog open
+              setPrintMessage({
+                text: 'Tool launched successfully!',
+                type: 'success'
+              });
+              setShowPrintMessage(true);
+            } else {
+              // Show error
+              setPrintMessage({
+                text: "Error: ".concat(result.error || 'Failed to launch printer tool'),
+                type: 'error'
+              });
+              setShowPrintMessage(true);
+            }
+            _context3.next = 15;
+            break;
+          case 10:
+            _context3.prev = 10;
+            _context3.t0 = _context3["catch"](0);
+            console.error('Error running printer command:', _context3.t0);
+            setPrintMessage({
+              text: "Error: ".concat(_context3.t0.message || 'Unknown error running printer command'),
+              type: 'error'
+            });
+            setShowPrintMessage(true);
+          case 15:
+          case "end":
+            return _context3.stop();
+        }
+      }, _callee3, null, [[0, 10]]);
+    }));
+    return function runPrinterCommand(_x) {
+      return _ref4.apply(this, arguments);
+    };
+  }();
 
   // Update clock every second
   useEffect(function () {
@@ -142491,69 +142910,38 @@ function SettingsDialog(_ref) {
       };
     }
   }, [open]);
-  var loadSettings = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var loadedSettings;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
-          case 0:
-            _context.prev = 0;
-            _context.next = 3;
-            return window.api.loadSettings();
-          case 3:
-            loadedSettings = _context.sent;
-            if (loadedSettings && !loadedSettings.error) {
-              setSettings(loadedSettings);
-              setSelectedPrinter(loadedSettings.printer.defaultPrinter);
-            }
-            _context.next = 10;
-            break;
-          case 7:
-            _context.prev = 7;
-            _context.t0 = _context["catch"](0);
-            console.error('Error loading settings:', _context.t0);
-          case 10:
-          case "end":
-            return _context.stop();
-        }
-      }, _callee, null, [[0, 7]]);
-    }));
-    return function loadSettings() {
-      return _ref2.apply(this, arguments);
-    };
-  }();
   var getSystemInfo = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var _ref5 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
       var systemInfo;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) switch (_context2.prev = _context2.next) {
+      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+        while (1) switch (_context4.prev = _context4.next) {
           case 0:
-            _context2.prev = 0;
-            _context2.next = 3;
+            _context4.prev = 0;
+            _context4.next = 3;
             return window.api.getSystemInfo();
           case 3:
-            systemInfo = _context2.sent;
+            systemInfo = _context4.sent;
             if (systemInfo && !systemInfo.error) {
               setPublicIpAddress(systemInfo.publicIpAddress || 'Not available');
               setPrivateIpAddress(systemInfo.privateIpAddress || 'Not available');
               setAllIpAddresses(systemInfo.allIpAddresses || []);
             }
-            _context2.next = 12;
+            _context4.next = 12;
             break;
           case 7:
-            _context2.prev = 7;
-            _context2.t0 = _context2["catch"](0);
-            console.error('Error loading system info:', _context2.t0);
+            _context4.prev = 7;
+            _context4.t0 = _context4["catch"](0);
+            console.error('Error loading system info:', _context4.t0);
             setPublicIpAddress('Error fetching');
             setPrivateIpAddress('Error fetching');
           case 12:
           case "end":
-            return _context2.stop();
+            return _context4.stop();
         }
-      }, _callee2, null, [[0, 7]]);
+      }, _callee4, null, [[0, 7]]);
     }));
     return function getSystemInfo() {
-      return _ref3.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     };
   }();
   var handleTabChange = function handleTabChange(event, newValue) {
@@ -142563,10 +142951,10 @@ function SettingsDialog(_ref) {
     onClose();
   };
   var handleSave = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+    var _ref6 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
       var updatedSettings;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) switch (_context3.prev = _context3.next) {
+      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+        while (1) switch (_context5.prev = _context5.next) {
           case 0:
             // Update settings object
             updatedSettings = _objectSpread(_objectSpread({}, settings), {}, {
@@ -142574,25 +142962,25 @@ function SettingsDialog(_ref) {
                 defaultPrinter: selectedPrinter
               })
             });
-            _context3.prev = 1;
-            _context3.next = 4;
+            _context5.prev = 1;
+            _context5.next = 4;
             return window.api.saveSettings(updatedSettings);
           case 4:
             onClose();
-            _context3.next = 10;
+            _context5.next = 10;
             break;
           case 7:
-            _context3.prev = 7;
-            _context3.t0 = _context3["catch"](1);
-            console.error('Error saving settings:', _context3.t0);
+            _context5.prev = 7;
+            _context5.t0 = _context5["catch"](1);
+            console.error('Error saving settings:', _context5.t0);
           case 10:
           case "end":
-            return _context3.stop();
+            return _context5.stop();
         }
-      }, _callee3, null, [[1, 7]]);
+      }, _callee5, null, [[1, 7]]);
     }));
     return function handleSave() {
-      return _ref4.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     };
   }();
   var handleDevImageGenerationChange = function handleDevImageGenerationChange(event) {
@@ -142629,6 +143017,86 @@ function SettingsDialog(_ref) {
         showConfirmation: event.target.checked
       })
     }));
+  };
+  var handleRefreshPrinters = /*#__PURE__*/function () {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
+      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+        while (1) switch (_context6.prev = _context6.next) {
+          case 0:
+            setLoadingPrinters(true);
+            _context6.next = 3;
+            return loadSystemPrinters();
+          case 3:
+          case "end":
+            return _context6.stop();
+        }
+      }, _callee6);
+    }));
+    return function handleRefreshPrinters() {
+      return _ref7.apply(this, arguments);
+    };
+  }();
+
+  // Function to print a test label
+  var printTestLabel = /*#__PURE__*/function () {
+    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+      var testLabel, result;
+      return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+        while (1) switch (_context7.prev = _context7.next) {
+          case 0:
+            _context7.prev = 0;
+            setIsPrinting(true);
+
+            // Create a simple test label HTML
+            testLabel = "\n        <html>\n        <head>\n          <style>\n            body {\n              margin: 0;\n              padding: 0;\n              font-family: Arial, sans-serif;\n              width: 60mm;  /* Label width */\n              height: 162mm; /* Label height */\n            }\n            .label-content {\n              display: flex;\n              flex-direction: column;\n              justify-content: center;\n              align-items: center;\n              height: 100%;\n              padding: 10mm;\n              box-sizing: border-box;\n            }\n            .title {\n              font-size: 5mm;\n              font-weight: bold;\n              margin-bottom: 5mm;\n              text-align: center;\n            }\n            .info {\n              font-size: 3mm;\n              margin-bottom: 3mm;\n              text-align: center;\n            }\n            .barcode {\n              width: 40mm;\n              height: 15mm;\n              background: repeating-linear-gradient(90deg, #000, #000 0.5mm, #fff 0.5mm, #fff 1mm);\n              margin: 5mm 0;\n            }\n            .printer-name {\n              font-size: 3.5mm;\n              font-weight: bold;\n            }\n            .timestamp {\n              font-size: 2.5mm;\n              color: #666;\n              margin-top: 3mm;\n            }\n          </style>\n        </head>\n        <body>\n          <div class=\"label-content\">\n            <div class=\"title\">Printer Test Label</div>\n            <div class=\"info\">This is a test print to verify printer functionality</div>\n            <div class=\"barcode\"></div>\n            <div class=\"printer-name\">".concat(selectedPrinter, "</div>\n            <div class=\"timestamp\">Printed: ").concat(new Date().toLocaleString(), "</div>\n          </div>\n        </body>\n        </html>\n      "); // Print the test label
+            _context7.next = 5;
+            return window.api.printLabel(testLabel, 1);
+          case 5:
+            result = _context7.sent;
+            // Show success/error message
+            if (result.success) {
+              setPrintMessage({
+                text: 'Test label printed successfully!',
+                type: 'success'
+              });
+            } else {
+              setPrintMessage({
+                text: "Error printing test label: ".concat(result.error),
+                type: 'error'
+              });
+            }
+            setShowPrintMessage(true);
+            _context7.next = 15;
+            break;
+          case 10:
+            _context7.prev = 10;
+            _context7.t0 = _context7["catch"](0);
+            console.error('Error printing test label:', _context7.t0);
+            setPrintMessage({
+              text: "Error: ".concat(_context7.t0.message || 'Unknown error'),
+              type: 'error'
+            });
+            setShowPrintMessage(true);
+          case 15:
+            _context7.prev = 15;
+            setIsPrinting(false);
+            return _context7.finish(15);
+          case 18:
+          case "end":
+            return _context7.stop();
+        }
+      }, _callee7, null, [[0, 10, 15, 18]]);
+    }));
+    return function printTestLabel() {
+      return _ref8.apply(this, arguments);
+    };
+  }();
+
+  // Handle closing the print message
+  var handleClosePrintMessage = function handleClosePrintMessage() {
+    setShowPrintMessage(false);
+    // Also reset the message content
+    setPrintMessage(null);
   };
 
   // Create dialog title component
@@ -142693,13 +143161,61 @@ function SettingsDialog(_ref) {
   var printerSettingsTab = React.createElement(TabPanel, {
     value: tabValue,
     index: 0
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, 'Available Printers'), React.createElement(Box, {
+  },
+  // Zebra Printer Alert
+  !hasZebraPrinter && React.createElement(Alert, {
+    severity: "warning",
     sx: {
       mb: 3
     }
+  }, React.createElement(React.Fragment, {}, "A Zebra Label Printer was not found on your system. Please ", React.createElement(Link, {
+    href: "https://www.zebra.com/us/en/support-downloads/printers/desktop/zd420-series.html",
+    target: "_blank",
+    underline: "hover"
+  }, "click here"), " to download the driver - You will need to select your printer model click Downloads and Driver")), React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, 'Available Printers'),
+  // Button row with Refresh and Test Print
+  React.createElement(Box, {
+    sx: {
+      mb: 2,
+      display: 'flex',
+      justifyContent: 'flex-end',
+      gap: 1
+    }
+  },
+  // Test Print Button
+  selectedPrinter && React.createElement(Tooltip, {
+    title: "Print a test label to verify printer functionality"
+  }, React.createElement(Button, {
+    variant: 'outlined',
+    onClick: printTestLabel,
+    size: 'small',
+    startIcon: React.createElement(TestIcon),
+    disabled: loadingPrinters || isPrinting || !selectedPrinter,
+    color: "secondary"
+  }, isPrinting ? 'Printing...' : 'Test Print')),
+  // Refresh Button
+  React.createElement(Button, {
+    variant: 'outlined',
+    onClick: handleRefreshPrinters,
+    size: 'small',
+    startIcon: React.createElement(PrintIcon),
+    disabled: loadingPrinters
+  }, loadingPrinters ? 'Refreshing...' : 'Refresh Printers')),
+  // Printer selection with loading state
+  React.createElement(Box, {
+    sx: {
+      mb: 3
+    }
+  }, systemPrinters.length === 0 && !loadingPrinters ? React.createElement(Typography, {
+    variant: 'body2',
+    sx: {
+      mb: 2
+    }
+  }, 'No printers found on your system') : React.createElement(Box, {
+    position: 'relative'
   }, React.createElement(FormControl, {
     fullWidth: true,
     variant: 'outlined',
@@ -142710,18 +143226,260 @@ function SettingsDialog(_ref) {
     labelId: 'printer-select-label',
     id: 'printer-select',
     value: selectedPrinter,
-    onChange: function onChange(e) {
-      return setSelectedPrinter(e.target.value);
-    },
-    label: 'Default Printer'
-  }, printers.map(function (printer) {
+    onChange: handlePrinterChange,
+    label: 'Default Printer',
+    disabled: loadingPrinters
+  }, systemPrinters.map(function (printer) {
     return React.createElement(MenuItem, {
       key: printer.name,
-      value: printer.name
-    }, "".concat(printer.name, " ").concat(printer.isDefault ? ' (Default)' : ''));
-  })))), React.createElement(Typography, {
+      value: printer.name,
+      disabled: printer.isLoading
+    }, "".concat(printer.name, " ").concat(printer.isDefault ? ' (System Default)' : '', " ").concat(printer.temporary ? ' (Not Found)' : '', " ").concat(printer.isLoading ? ' (Loading...)' : ''));
+  }))), loadingPrinters && React.createElement(CircularProgress, {
+    size: 20,
+    sx: {
+      position: 'absolute',
+      top: '50%',
+      right: 30,
+      marginTop: '-10px'
+    }
+  }))),
+  // Zebra Printer Tools Section (only visible when a Zebra printer is selected)
+  isZebraPrinterSelected && React.createElement(React.Fragment, {}, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true,
+    mt: 4
+  }, 'Zebra Printer Tools'), React.createElement(Divider, {
+    sx: {
+      mb: 3
+    }
+  }),
+  // Card layout with full width and buttons aligned to the right
+  React.createElement(Box, {
+    sx: {
+      mb: 3
+    }
+  },
+  // Install another Zebra Printer
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
     variant: 'h6',
     gutterBottom: true
+  }, React.createElement(AddIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Install Another Zebra Printer"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Run the Zebra Printer Installation Wizard to set up an additional printer.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    startIcon: React.createElement(AddIcon),
+    onClick: function onClick() {
+      return runPrinterCommand("$ver='ZD'+((Get-Item \"C:\\WINDOWS\\system32\\spool\\DRIVERS\\x64\\3\\ZDesignerdrv.dll\").VersionInfo.FileVersion -replace '\\.','-'); $folder=(Get-ChildItem -Path 'C:\\' -Directory | Where-Object { $_.Name -eq $ver } | Select-Object -ExpandProperty FullName); if ($folder -and (Test-Path \"$folder\\PrnInst.exe\")) { \"$folder\\PrnInst.exe\" } else { \"PrnInst.exe not found in $folder\" }");
+    }
+  }, "Run Installer"))),
+  // Label Printing Setup
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, React.createElement(PrintIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Printer Label Settings"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Configure label size, media type, printing preferences and more.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    onClick: function onClick() {
+      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /e /n \"".concat(selectedPrinter, "\""));
+    }
+  }, "Open Settings"))),
+  // Printer Advanced Settings
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, React.createElement(TuneIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Printer Advanced Settings"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Access advanced printer configuration options and parameters.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    onClick: function onClick() {
+      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /p /n \"".concat(selectedPrinter, "\""));
+    }
+  }, "Advanced Settings"))),
+  // Windows Printer Settings
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, React.createElement(SettingsIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Windows Printer Properties"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Manage Windows printer properties, sharing options and security settings.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    onClick: function onClick() {
+      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /p /n \"".concat(selectedPrinter, "\""));
+    }
+  }, "Open Properties"))),
+  // Print Queue
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, React.createElement(QueueIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Printer Queue"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "View and manage current print jobs in the queue.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    onClick: function onClick() {
+      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /o /n \"".concat(selectedPrinter, "\""));
+    }
+  }, "Open Queue"))),
+  // Direct Connect Utility (for advanced troubleshooting)
+  React.createElement(Card, {
+    variant: 'outlined',
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      p: 2
+    }
+  }, React.createElement(Box, {
+    sx: {
+      flexGrow: 1
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true
+  }, React.createElement(ConnectIcon, {
+    sx: {
+      mr: 1,
+      verticalAlign: 'text-bottom'
+    }
+  }), "Zebra Direct Connect"), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Launch Zebra Setup Utilities for direct connection and advanced configuration.")), React.createElement(Button, {
+    variant: 'contained',
+    size: 'small',
+    onClick: function onClick() {
+      return runPrinterCommand("C:\\Program Files\\Zebra Technologies\\Zebra Setup Utilities\\ZebraSetupUtilities.exe");
+    }
+  }, "Launch Tool"))))), React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true,
+    mt: isZebraPrinterSelected ? 4 : 0
   }, 'Printer Options'), React.createElement(FormGroup, {}, React.createElement(FormControlLabel, {
     control: React.createElement(Checkbox, {
       checked: settings.printer.showConfirmation,
@@ -142907,46 +143665,60 @@ function SettingsDialog(_ref) {
     label: 'Include graphics overlay in generated images'
   }))));
 
-  // Create dialog actions
-  var dialogActions = React.createElement(DialogActions, {
-    sx: {
-      p: 2,
-      justifyContent: 'space-between'
-    }
-  }, React.createElement(Button, {
-    onClick: handleClose,
-    variant: 'text',
-    color: 'inherit'
-  }, 'Cancel'), React.createElement(Button, {
-    onClick: handleSave,
-    variant: 'contained',
-    color: 'primary',
-    sx: {
-      px: 3
-    }
-  }, 'Save Changes'));
-
-  // Return the complete dialog
+  // Main dialog content
   return React.createElement(Dialog, {
     open: open,
     onClose: handleClose,
-    fullWidth: true,
     maxWidth: 'md',
-    TransitionProps: {
-      timeout: 250
-    },
-    PaperProps: {
-      sx: {
-        borderRadius: 2,
-        boxShadow: '0 8px 32px rgba(0,0,0,0.2)'
-      }
-    }
-  }, dialogTitle, tabsComponent, React.createElement(DialogContent, {
+    fullWidth: true,
+    'aria-labelledby': 'settings-dialog-title',
+    'aria-describedby': 'settings-dialog-description'
+  }, dialogTitle, React.createElement(DialogContent, {
     dividers: true,
     sx: {
-      p: 3
+      p: 0
     }
-  }, printerSettingsTab, systemInfoTab, applicationSettingsTab), dialogActions);
+  }, React.createElement(Box, {
+    sx: {
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  }, tabsComponent, React.createElement(Box, {
+    sx: {
+      px: 3,
+      py: 2,
+      flexGrow: 1,
+      overflowY: 'auto'
+    }
+  }, printerSettingsTab, systemInfoTab, applicationSettingsTab))), React.createElement(DialogActions, {
+    sx: {
+      px: 3,
+      py: 2
+    }
+  }, React.createElement(Button, {
+    onClick: handleClose
+  }, 'Cancel'), React.createElement(Button, {
+    onClick: handleSave,
+    variant: 'contained',
+    color: 'primary'
+  }, 'Save')),
+  // Print message notification
+  React.createElement(Snackbar, {
+    open: showPrintMessage,
+    autoHideDuration: 6000,
+    onClose: handleClosePrintMessage,
+    anchorOrigin: {
+      vertical: 'bottom',
+      horizontal: 'center'
+    }
+  }, React.createElement(Alert, {
+    onClose: handleClosePrintMessage,
+    severity: (printMessage === null || printMessage === void 0 ? void 0 : printMessage.type) || 'info',
+    sx: {
+      width: '100%'
+    }
+  }, printMessage === null || printMessage === void 0 ? void 0 : printMessage.text)));
 }
 module.exports = SettingsDialog;
 

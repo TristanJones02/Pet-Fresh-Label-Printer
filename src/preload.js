@@ -25,6 +25,11 @@ contextBridge.exposeInMainWorld(
       return ipcRenderer.invoke('refresh-printers');
     },
     
+    // Run command (for Zebra printer tools)
+    runCommand: (command) => {
+      return ipcRenderer.invoke('run-command', command);
+    },
+    
     // Utility functions
     saveProductsToCache: (products) => {
       return ipcRenderer.invoke('save-products-to-cache', products);
@@ -54,14 +59,6 @@ contextBridge.exposeInMainWorld(
     offShowDialog: null, // This will be set in renderer
     onHideDialog: null, // This will be set in renderer
     offHideDialog: null, // This will be set in renderer
-    
-    // Settings management (legacy - will be replaced by dialog system)
-    openSettings: () => {
-      return ipcRenderer.invoke('open-settings');
-    },
-    closeSettings: () => {
-      return ipcRenderer.invoke('close-settings');
-    },
     
     // Label Editor
     openLabelEditor: () => {

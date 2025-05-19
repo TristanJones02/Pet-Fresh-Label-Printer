@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const ejs = require('ejs');
 const os = require('os');
+const { initPrinting } = require('../electron/printing');
 
 // Import label config from the common configuration file
 const LABEL_CONFIG = require('./label/config.json');
@@ -40,6 +41,9 @@ function createWindow() {
 // This method will be called when Electron has finished initialization
 app.whenReady().then(() => {
   createWindow();
+  
+  // Initialize printing module
+  initPrinting();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
@@ -251,258 +255,10 @@ ipcMain.handle('get-system-info', async () => {
   }
 });
 
-// HTML-to-PDF conversion for label printing
-ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = null }) => {
-  try {
-    const startTime = Date.now();
-    const timing = {
-      htmlLoad: 0,
-      imageGeneration: 0,
-      pdfGeneration: 0,
-      fileSave: 0,
-      total: 0
-    };
-    
-    // Create a temporary directory for the HTML file
-    const tempDir = path.join(os.tmpdir(), 'pet-fresh-labels');
-    if (!fs.existsSync(tempDir)) {
-      fs.mkdirSync(tempDir, { recursive: true });
-    }
-    
-    // Create a temporary HTML file
-    const tempHtmlPath = path.join(tempDir, `label-${Date.now()}.html`);
-    fs.writeFileSync(tempHtmlPath, html, 'utf-8');
-    
-    // Record HTML load time start
-    const htmlLoadStart = Date.now();
-    
-    // Load current settings to check for development image mode
-    let settings = {};
-    try {
-      const settingsFile = path.join(app.getPath('userData'), 'settings.json');
-      if (fs.existsSync(settingsFile)) {
-        const settingsData = fs.readFileSync(settingsFile, 'utf8');
-        settings = JSON.parse(settingsData);
-      }
-    } catch (err) {
-      console.error('Error loading settings for print job:', err);
-    }
-    const useDevImageMode = settings?.application?.devImageGeneration || false;
-    const devImagePath = settings?.application?.devImagePath || path.join(app.getPath('pictures'), 'PetFresh-Labels');
-    const includeContentOnly = settings?.application?.includeContentOnly || true;
-    const includeGraphics = settings?.application?.includeGraphics || false;
-    
-    // Create an offscreen BrowserWindow to load the HTML
-    const offscreenWindow = new BrowserWindow({
-      width: LABEL_CONFIG.width * 4, // Scale up for better quality
-      height: LABEL_CONFIG.height * 4,
-      show: false,
-      webPreferences: {
-        offscreen: true,
-        enableRemoteModule: false,
-        nodeIntegration: false,
-        contextIsolation: true
-      }
-    });
-    
-    // Load the HTML file
-    await offscreenWindow.loadFile(tempHtmlPath);
-    timing.htmlLoad = Date.now() - htmlLoadStart;
-    
-    // If dev image mode is enabled, generate PNG instead of PDF
-    if (useDevImageMode) {
-      // Ensure the output directory exists
-      if (!fs.existsSync(devImagePath)) {
-        fs.mkdirSync(devImagePath, { recursive: true });
-      }
-      
-      // Generate PNG
-      const imageGenStart = Date.now();
-      
-      // If we're only including content, we need to execute some JS in the page
-      // to hide the non-content elements before capture
-      if (includeContentOnly) {
-        // Execute script in the page to hide non-content elements and adjust view
-        await offscreenWindow.webContents.executeJavaScript(`
-          // Hide page margins, background, etc.
-          document.body.style.margin = '0';
-          document.body.style.padding = '0';
-          document.body.style.background = 'transparent';
-          
-          // Find the main content container (adjust selector based on your HTML structure)
-          const contentContainer = document.querySelector('.label-content');
-          if (contentContainer) {
-            // Make sure content is visible
-            contentContainer.style.display = 'block';
-            contentContainer.style.visibility = 'visible';
-            
-            // Hide any non-content elements
-            Array.from(document.body.children).forEach(el => {
-              if (el !== contentContainer && !contentContainer.contains(el)) {
-                el.style.display = 'none';
-              }
-            });
-          }
-          
-          // If we need to include/exclude graphics overlay
-          const graphicsOverlay = document.querySelector('.graphics-overlay');
-          if (graphicsOverlay) {
-            graphicsOverlay.style.display = ${includeGraphics ? "'block'" : "'none'"};
-          }
-          
-          true; // Return something to confirm execution
-        `);
-      }
-      
-      const image = await offscreenWindow.webContents.capturePage();
-      timing.imageGeneration = Date.now() - imageGenStart;
-      
-      // Save image to file
-      const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
-      const outputPath = savePath || path.join(devImagePath, `label-${timestamp}.png`);
-      
-      const fileSaveStart = Date.now();
-      fs.writeFileSync(outputPath, image.toPNG());
-      timing.fileSave = Date.now() - fileSaveStart;
-      
-      // Generate additional copies if needed
-      const imagePaths = [outputPath];
-      if (quantity > 1) {
-        for (let i = 1; i < quantity; i++) {
-          const copyPath = outputPath.replace('.png', `-${i+1}.png`);
-          fs.copyFileSync(outputPath, copyPath);
-          imagePaths.push(copyPath);
-        }
-      }
-      
-      // Close the offscreen window
-      offscreenWindow.close();
-      
-      // Clean up temporary HTML file
-      try {
-        fs.unlinkSync(tempHtmlPath);
-      } catch (err) {
-        console.error('Error removing temp HTML file:', err);
-      }
-      
-      // Calculate total time
-      timing.total = Date.now() - startTime;
-      
-      // Log timing information and file path
-      console.log(`Generated PNG label in ${timing.total}ms`);
-      console.log(`- HTML load: ${timing.htmlLoad}ms`);
-      console.log(`- Image generation: ${timing.imageGeneration}ms`);
-      console.log(`- File save: ${timing.fileSave}ms`);
-      console.log(`PNG saved to: ${outputPath}`);
-      
-      return {
-        success: true,
-        imagePath: outputPath,
-        imagePaths,
-        timing,
-        message: `Generated ${quantity} label PNG(s)`
-      };
-    } else {
-      // Default PDF generation path
-      // Calculate PDF options
-      const pdfOptions = {
-        printBackground: true,
-        pageSize: {
-          width: LABEL_CONFIG.width * 1000, // microns
-          height: LABEL_CONFIG.height * 1000 // microns
-        },
-        margins: {
-          top: 0,
-          bottom: 0,
-          left: 0,
-          right: 0
-        },
-        preferCSSPageSize: true
-      };
-      
-      // Determine output path
-      let outputPath = savePath;
-      if (!outputPath) {
-        // Create filename with timestamp
-        const timestamp = new Date().toISOString().replace(/:/g, '-').replace(/\..+/g, '');
-        outputPath = path.join(tempDir, `label-${timestamp}.pdf`);
-      }
-      
-      // Generate PDF 
-      const pdfGenStart = Date.now();
-      const pdfData = await offscreenWindow.webContents.printToPDF(pdfOptions);
-      timing.pdfGeneration = Date.now() - pdfGenStart;
-      
-      // Save PDF to file
-      const fileSaveStart = Date.now();
-      fs.writeFileSync(outputPath, pdfData);
-      timing.fileSave = Date.now() - fileSaveStart;
-      
-      // Close the offscreen window
-      offscreenWindow.close();
-      
-      // If we need multiple copies, duplicate the PDF file
-      const pdfPaths = [outputPath];
-      
-      if (quantity > 1) {
-        for (let i = 1; i < quantity; i++) {
-          const copyPath = outputPath.replace('.pdf', `-${i+1}.pdf`);
-          fs.copyFileSync(outputPath, copyPath);
-          pdfPaths.push(copyPath);
-        }
-      }
-      
-      // Clean up temporary HTML file
-      try {
-        fs.unlinkSync(tempHtmlPath);
-      } catch (err) {
-        console.error('Error removing temp HTML file:', err);
-      }
-      
-      // Calculate total time
-      timing.total = Date.now() - startTime;
-      
-      // Log timing information and file path
-      console.log(`Generated PDF label in ${timing.total}ms`);
-      console.log(`- HTML load: ${timing.htmlLoad}ms`);
-      console.log(`- PDF generation: ${timing.pdfGeneration}ms`);
-      console.log(`- File save: ${timing.fileSave}ms`);
-      console.log(`PDF saved to: ${outputPath}`);
-      
-      return {
-        success: true,
-        pdfPath: outputPath,
-        pdfPaths,
-        timing,
-        message: `Generated ${quantity} label PDF(s)`
-      };
-    }
-  } catch (error) {
-    console.error('Error generating label:', error);
-    return {
-      success: false,
-      error: error.message
-    };
-  }
-});
-
-// Get available printers
-ipcMain.handle('get-printers', async () => {
-  try {
-    // In a real application, we would use a printer library to get printers
-    // For this demo, we'll return mock data
-    return [
-      { name: 'KITCHEN', isDefault: true },
-      { name: 'OFFICE', isDefault: false },
-      { name: 'PACKAGING', isDefault: false }
-    ];
-  } catch (error) {
-    console.error('Error getting printers:', error);
-    return {
-      error: error.message
-    };
-  }
-});
+// HTML-to-PDF conversion for label printing is now handled in electron/printing.js
+// ipcMain.handle('print-label', async (event, { html, quantity = 1, savePath = null }) => {
+//   ... removed code ...
+// });
 
 // Get label configuration
 ipcMain.handle('get-label-config', async () => {
@@ -528,6 +284,123 @@ ipcMain.handle('save-products-to-cache', async (event, products) => {
   }
 });
 
+// Command runner for printer tools
+ipcMain.handle('run-command', async (event, command) => {
+  try {
+    console.log('Running command:', command);
+    
+    // Import child_process methods
+    const { exec } = require('child_process');
+    
+    // Handle different types of commands
+    if (command.startsWith('rundll32') && command.includes('printui.dll')) {
+      // For printer dialog commands, use the exact PowerShell command format that works
+      
+      // Extract the printer name and command type
+      let printerName = '';
+      let cmdType = '';
+      
+      if (command.includes('/n "')) {
+        const match = command.match(/\/n "([^"]+)"/);
+        printerName = match ? match[1] : '';
+      }
+      
+      let windowTitle = '';
+      if (command.includes('/p ')) {
+        windowTitle = `${printerName} Properties`;
+      } else if (command.includes('/e ')) {
+        windowTitle = "Printing Preferences";
+      } else if (command.includes('/o ')) {
+        windowTitle = printerName;
+      }
+      
+      // Use the exact PowerShell command format that works
+      const psCommand = `Start-Process "rundll32.exe" '${command.split(' ').slice(1).join(' ')}'; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
+      
+      return new Promise((resolve, reject) => {
+        exec(`powershell.exe -Command "${psCommand.replace(/"/g, '\\"')}"`, (error, stdout, stderr) => {
+          if (error) {
+            console.error('Error running printer dialog command:', error);
+            return reject({ success: false, error: error.message });
+          }
+          
+          console.log('Command output:', stdout);
+          resolve({ success: true });
+        });
+      });
+    }
+    else if (command.includes('ZebraSetupUtilities.exe')) {
+      // For Zebra setup utilities - use a similar approach with SetForegroundWindow
+      const exePath = 'C:\\Program Files\\Zebra Technologies\\Zebra Setup Utilities\\ZebraSetupUtilities.exe';
+      const windowTitle = 'Zebra Setup Utilities';
+      
+      const psCommand = `Start-Process "${exePath}"; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
+      
+      return new Promise((resolve, reject) => {
+        exec(`powershell.exe -Command "${psCommand.replace(/"/g, '\\"')}"`, (error) => {
+          if (error) {
+            console.error('Error running Zebra utilities:', error);
+            return reject({ success: false, error: error.message });
+          }
+          
+          resolve({ success: true });
+        });
+      });
+    }
+    else if (command.includes('PrnInst.exe')) {
+      // For Zebra printer installer, find the path first then launch it with the same pattern
+      return new Promise((resolve, reject) => {
+        // Use powershell to run the command (gets the installer path)
+        const psCmd = `powershell.exe -Command "${command}"`;
+        exec(psCmd, (error, stdout, stderr) => {
+          if (error) {
+            console.error('Error running printer installer:', error);
+            return reject({ success: false, error: error.message });
+          }
+          
+          // If stdout contains a path to PrnInst.exe, run it using the pattern
+          const path = stdout.trim();
+          if (path && path.includes('PrnInst.exe')) {
+            const windowTitle = 'Printer Installation Wizard';
+            const launchCmd = `Start-Process "${path}"; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
+            
+            exec(`powershell.exe -Command "${launchCmd.replace(/"/g, '\\"')}"`, (launchError) => {
+              if (launchError) {
+                console.error('Error launching printer installer:', launchError);
+                return reject({ success: false, error: launchError.message });
+              }
+              
+              resolve({ success: true });
+            });
+          } else {
+            console.error('PrnInst.exe not found:', path);
+            reject({ success: false, error: 'PrnInst.exe not found' });
+          }
+        });
+      });
+    }
+    else {
+      // For any other command
+      return new Promise((resolve, reject) => {
+        exec(command, (error, stdout, stderr) => {
+          if (error) {
+            console.error('Error running command:', error);
+            return reject({ success: false, error: error.message });
+          }
+          
+          resolve({ success: true, output: stdout });
+        });
+      });
+    }
+  } catch (error) {
+    console.error('Error running command:', error);
+    return {
+      success: false,
+      error: error.message || 'Unknown error'
+    };
+  }
+});
+
 // Settings management
 ipcMain.handle('save-settings', async (event, settings) => {
   try {
@@ -550,7 +423,7 @@ ipcMain.handle('load-settings', async () => {
       // Return default settings if file doesn't exist yet
       return {
         printer: {
-          defaultPrinter: 'KITCHEN',
+          defaultPrinter: '',
           showConfirmation: false
         },
         application: {

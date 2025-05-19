@@ -5,7 +5,6 @@ const { initPrinting } = require('./electron/printing');
 
 // Keep a global reference of the window object to avoid garbage collection
 let mainWindow;
-let settingsWindow = null;
 
 // Define label dimensions in mm
 const LABEL_CONFIG = {
@@ -101,66 +100,6 @@ function createWindow() {
   });
 }
 
-// Function to create settings window
-function createSettingsWindow() {
-  // Only create a new settings window if one doesn't already exist
-  if (settingsWindow) {
-    settingsWindow.focus();
-    return;
-  }
-
-  // Create settings window
-  settingsWindow = new BrowserWindow({
-    width: 1000,
-    height: 700,
-    parent: mainWindow,
-    modal: true,
-    show: false,
-    backgroundColor: '#f5f5f5', // Match background color to prevent black flash
-    frame: true,
-    webPreferences: {
-      nodeIntegration: false,
-      contextIsolation: true,
-      enableRemoteModule: false,
-      preload: path.join(__dirname, 'src/preload.js')
-    }
-  });
-
-  // Load settings HTML file
-  settingsWindow.loadURL(url.format({
-    pathname: path.join(__dirname, 'src/settings.html'),
-    protocol: 'file:',
-    slashes: true
-  }));
-
-  // Show window when ready with gentle fade in
-  settingsWindow.once('ready-to-show', () => {
-    settingsWindow.setOpacity(0);
-    settingsWindow.show();
-    
-    // Gentle fade in animation
-    let opacity = 0;
-    const fadeIn = setInterval(() => {
-      if (opacity >= 1) {
-        clearInterval(fadeIn);
-      } else {
-        opacity += 0.1;
-        settingsWindow.setOpacity(opacity);
-      }
-    }, 10);
-  });
-
-  // Handle window close
-  settingsWindow.on('closed', () => {
-    settingsWindow = null;
-  });
-
-  // Open DevTools in development mode
-  if (process.env.NODE_ENV === 'development') {
-    settingsWindow.webContents.openDevTools();
-  }
-}
-
 // Initialize app
 function initApp() {
   createWindow();
@@ -185,29 +124,6 @@ app.on('activate', function () {
   if (mainWindow === null) {
     createWindow();
   }
-});
-
-// Handle settings window (legacy)
-ipcMain.handle('open-settings', async () => {
-  createSettingsWindow();
-  return true;
-});
-
-ipcMain.handle('close-settings', async () => {
-  if (settingsWindow) {
-    // Gentle fade out animation before closing
-    let opacity = 1;
-    const fadeOut = setInterval(() => {
-      if (opacity <= 0) {
-        clearInterval(fadeOut);
-        settingsWindow.close();
-      } else {
-        opacity -= 0.15; // Faster fade-out (was 0.1)
-        settingsWindow.setOpacity(opacity);
-      }
-    }, 8); // Shorter interval (was 10ms)
-  }
-  return true;
 });
 
 // Dialog system handlers

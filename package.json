@@ -4,7 +4,7 @@
   "main": "src/main.js",
   "scripts": {
     "start": "webpack && electron .",
-    "dev": "concurrently \"webpack --watch\" \"NODE_ENV=development electron .\"",
+    "dev": "concurrently \"webpack --watch\" \"set NODE_ENV=development && electron .\"",
     "build": "webpack --mode production && electron-builder",
     "label-editor": "electron src/tools/label-editor/editor.js",
     "image-generator": "electron src/tools/product-image-generator/generator.js"
