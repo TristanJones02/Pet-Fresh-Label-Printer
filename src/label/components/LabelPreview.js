@@ -582,27 +582,37 @@ function LabelPreview({ product, quantity, onQuantityChange, onPrintLabel }) {
     if (!product || !previewRef.current || !containerRef.current) return;
 
     const calculateOptimalScale = () => {
-      try {
-        const containerRect = containerRef.current.getBoundingClientRect();
-        const labelRect = previewRef.current.getBoundingClientRect();
-        
-        // Calculate the scale needed to fit the label properly with some padding
-        const scaleWidth = (containerRect.width - 40) / labelRect.width;
-        const scaleHeight = (containerRect.height - 40) / labelRect.height;
-        
-        // Use the smaller scale to ensure the entire label fits
-        const optimalScale = Math.min(scaleWidth, scaleHeight, 1); // Cap at 1 to avoid too large labels
-        
-        // Update the initial scale factor
-        setInitialScaleFactor(optimalScale);
-        
-        // Reset view with the new scale
-        setScale(optimalScale);
-        setTranslateX(0);
-        setTranslateY(0);
-      } catch (error) {
-        console.error('Error calculating optimal scale:', error);
+      if (!containerRef.current || !previewRef.current) return 1;
+      
+      const container = containerRef.current.getBoundingClientRect();
+      const labelElement = previewRef.current.querySelector('.label-container');
+      
+      if (!labelElement) {
+        console.log('Label element not found, using fallback scale');
+        return 1; // Fallback if label element isn't found
       }
+      
+      const label = labelElement.getBoundingClientRect();
+      
+      // Calculate ratios
+      const containerRatio = container.width / container.height;
+      const labelRatio = label.width / label.height;
+      
+      // Calculate scale based on limiting dimension
+      let newScale;
+      if (labelRatio > containerRatio) {
+        // Width limited
+        newScale = (container.width * 0.8) / label.width;
+      } else {
+        // Height limited
+        newScale = (container.height * 0.8) / label.height;
+      }
+      
+      // Keep scale within reasonable bounds
+      newScale = Math.min(Math.max(newScale, 0.5), 3);
+      
+      console.log('Calculated optimal scale:', newScale);
+      return newScale;
     };
 
     // Calculate optimal scale after layout
@@ -632,118 +642,63 @@ function LabelPreview({ product, quantity, onQuantityChange, onPrintLabel }) {
       // Start timing on the renderer side
       const clientStartTime = performance.now();
       
-      // Get the label container element
-      const labelContainer = document.querySelector('.label-container');
-      if (!labelContainer) {
-        console.error('Label container not found');
-        setIsPrinting(false);
-        return;
-      }
-      
-      // Clone the DOM node to avoid modifying the displayed label
-      const clonedLabel = labelContainer.cloneNode(true);
-      
-      // Remove the overlay image element completely
-      const overlayElement = clonedLabel.querySelector('div[style*="position: absolute"] img[src*="overlay"]');
-      if (overlayElement && overlayElement.parentElement) {
-        overlayElement.parentElement.remove();
-      } else {
-        // Alternative approach to hide all overlay elements
-        const possibleOverlays = clonedLabel.querySelectorAll('div[style*="position: absolute"][style*="top: 0"]');
-        possibleOverlays.forEach(el => {
-          if (el.querySelector('img')) {
-            el.style.display = 'none';
-          }
-        });
-      }
-      
-      // Convert SVG barcode to an image for better print compatibility
-      const svgElement = clonedLabel.querySelector('svg');
-      if (svgElement) {
-        const svgData = new XMLSerializer().serializeToString(svgElement);
-        const img = document.createElement('img');
-        img.src = `data:image/svg+xml;base64,${btoa(svgData)}`;
-        img.style.width = '100%';
-        img.style.height = '100%';
-        svgElement.parentNode.replaceChild(img, svgElement);
-      }
-      
-      // Get the computed dimensions of the label and config
-      const config = labelConfig || {};
-      const width = config.width || 60;
-      const height = config.height || 162;
-      
-      // Create a properly formatted HTML document with necessary styles
-      const labelHTML = `
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Pet Fresh Label</title>
-            <style>
-              @page {
-                margin: 0;
-                size: ${width}mm ${height}mm;
-              }
-              html, body {
-                margin: 0;
-                padding: 0;
-                width: ${width}mm;
-                height: ${height}mm;
-                overflow: hidden;
-                font-family: Arial, sans-serif;
-              }
-              body {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: white;
-              }
-              * {
-                box-sizing: border-box;
-              }
-              .pdf-container {
-                width: ${width}mm;
-                height: ${height}mm;
-                position: relative;
-                overflow: hidden;
-                background-color: white;
-              }
-              /* Make sure overlay doesn't display in print */
-              [style*="pointer-events: none"] img,
-              img[alt="Label Design"],
-              div[style*="position: absolute"][style*="z-index: 1"] {
-                display: none !important;
-              }
-              /* Preserve all original styles */
-              ${Array.from(document.styleSheets)
-                .filter(sheet => !sheet.href || sheet.href.startsWith(window.location.origin))
-                .map(sheet => {
-                  try {
-                    return Array.from(sheet.cssRules)
-                      .map(rule => rule.cssText)
-                      .join('\n');
-                  } catch (e) {
-                    return '';
-                  }
-                })
-                .join('\n')
-              }
-            </style>
-          </head>
-          <body>
-            <div class="pdf-container">
-              ${clonedLabel.outerHTML}
-            </div>
-          </body>
-        </html>
-      `;
-      
       console.log('Sending label to print service...');
       
-      // Send to main process for printing via IPC
-      const result = await window.api.printLabel(labelHTML, quantity);
+      // Load printing settings
+      let settings = null;
+      try {
+        settings = await window.api.loadSettings();
+      } catch (err) {
+        console.warn('Could not load printing settings, using defaults:', err);
+      }
+      
+      // Create product info object for the print job
+      const productInfo = {
+        name: product.name || product.title || 'Unknown Product',
+        sku: product.sku || product.id || '',
+        category: product.category || '',
+        details: `${product.weight || ''} ${product.unit || ''}`
+      };
+      
+      // Check printer settings and start printing
+      const printerName = settings?.printer?.defaultPrinter;
+      
+      let result;
+      
+      // Use unified template system for regular printing
+      console.log('Using unified template system for printing');
+      
+      try {
+        // First, generate the HTML using the unified template system
+        const templateResult = await window.api.printLabelWithTemplate(
+          product,
+          quantity,
+          labelConfig,
+          settings?.printer
+        );
+        
+        if (templateResult.success) {
+          // Now use the generated HTML with the existing print service
+          result = await window.api.printLabel(
+            templateResult.html,
+            quantity,
+            null, // savePath
+            templateResult.productInfo,
+            settings?.printer
+          );
+        } else {
+          result = {
+            success: false,
+            error: `Template generation failed: ${templateResult.error || 'Unknown error'}`
+          };
+        }
+      } catch (templateError) {
+        console.error('Error with unified template system:', templateError);
+        result = {
+          success: false,
+          error: `Template system error: ${templateError.message}`
+        };
+      }
       
       // Reset printing state
       setIsPrinting(false);
@@ -763,7 +718,7 @@ function LabelPreview({ product, quantity, onQuantityChange, onPrintLabel }) {
         console.log(`- Total process: ${Math.round(totalClientTime)}ms`);
         
         // For testing - open the PDF in the default viewer
-        if (result.pdfPath) {
+        if (result.pdfPath && result.method === 'direct') {
           // In a production environment, you might want to hide this or make it optional
           const { shell } = window.require ? window.require('electron') : { shell: null };
           if (shell) {
@@ -864,7 +819,9 @@ function LabelPreview({ product, quantity, onQuantityChange, onPrintLabel }) {
                 transition: isDragging ? 'none' : 'transform 0.3s ease-out',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                width: 'fit-content',
+                margin: '0 auto'
               }}
             >
               <LabelTemplate 
@@ -872,6 +829,7 @@ function LabelPreview({ product, quantity, onQuantityChange, onPrintLabel }) {
                 showOverlay={showOverlay} 
                 labelConfig={labelConfig}
                 onBarcodeGenerated={handleBarcodeGenerated}
+                showDebug={false}
               />
             </div>
           )

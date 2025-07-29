@@ -13,8 +13,33 @@ contextBridge.exposeInMainWorld(
     },
     
     // New print-label function for HTML-to-PDF conversion
-    printLabel: (html, quantity = 1, savePath = null) => {
-      return ipcRenderer.invoke('print-label', { html, quantity, savePath });
+    printLabel: (html, quantity = 1, savePath = null, productInfo = null, settings = null) => {
+      return ipcRenderer.invoke('print-label', { 
+        html, 
+        quantity, 
+        savePath,
+        productName: productInfo?.name,
+        sku: productInfo?.sku,
+        settings
+      });
+    },
+    
+    // Print label using unified template system
+    printLabelWithTemplate: (product, quantity = 1, labelConfig = null, printerSettings = null) => {
+      return ipcRenderer.invoke('print-label-with-template', {
+        product,
+        quantity,
+        labelConfig,
+        printerSettings
+      });
+    },
+    
+    // Print jobs management
+    getPrintJobs: () => {
+      return ipcRenderer.invoke('get-print-jobs');
+    },
+    resetPrintSpooler: () => {
+      return ipcRenderer.invoke('reset-print-spooler');
     },
     
     // Printer management
@@ -23,11 +48,6 @@ contextBridge.exposeInMainWorld(
     },
     refreshPrinters: () => {
       return ipcRenderer.invoke('refresh-printers');
-    },
-    
-    // Run command (for Zebra printer tools)
-    runCommand: (command) => {
-      return ipcRenderer.invoke('run-command', command);
     },
     
     // Utility functions
@@ -44,6 +64,20 @@ contextBridge.exposeInMainWorld(
     },
     loadSettings: () => {
       return ipcRenderer.invoke('load-settings');
+    },
+    
+    // App configuration
+    saveAppConfig: (config) => {
+      return ipcRenderer.invoke('save-app-config', config);
+    },
+    loadAppConfig: () => {
+      return ipcRenderer.invoke('load-app-config');
+    },
+    restartApp: () => {
+      return ipcRenderer.invoke('restart-app');
+    },
+    resetAppConfig: () => {
+      return ipcRenderer.invoke('reset-app-config');
     },
     
     // Dialogs management

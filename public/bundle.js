@@ -2937,6 +2937,52 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/Cancel.js":
+/*!****************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Cancel.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12z"
+}), 'Cancel');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/CheckCircle.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@mui/icons-material/CheckCircle.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"
+}), 'CheckCircle');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Close.js":
 /*!***************************************************!*\
   !*** ./node_modules/@mui/icons-material/Close.js ***!
@@ -2960,6 +3006,29 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/Error.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Error.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"
+}), 'Error');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Folder.js":
 /*!****************************************************!*\
   !*** ./node_modules/@mui/icons-material/Folder.js ***!
@@ -2980,6 +3049,29 @@ var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/r
 var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
   d: "M10 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2h-8z"
 }), 'Folder');
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/HourglassEmpty.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/HourglassEmpty.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M6 2v6h.01L6 8.01 10 12l-4 4 .01.01H6V22h12v-5.99h-.01L18 16l-4-4 4-3.99-.01-.01H18V2zm10 14.5V20H8v-3.5l4-4zm-4-5-4-4V4h8v3.5z"
+}), 'HourglassEmpty');
 
 /***/ }),
 
@@ -3098,6 +3190,29 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/Refresh.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@mui/icons-material/Refresh.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"
+}), 'Refresh');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Router.js":
 /*!****************************************************!*\
   !*** ./node_modules/@mui/icons-material/Router.js ***!
@@ -3213,29 +3328,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/esm/Cancel.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Cancel.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12z"
-}), 'Cancel'));
-
-/***/ }),
-
 /***/ "./node_modules/@mui/icons-material/esm/Close.js":
 /*!*******************************************************!*\
   !*** ./node_modules/@mui/icons-material/esm/Close.js ***!
@@ -3302,29 +3394,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
   d: "M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3m-3 11H8v-5h8zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-1-9H6v4h12z"
 }), 'Print'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/Refresh.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Refresh.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4z"
-}), 'Refresh'));
 
 /***/ }),
 
@@ -59917,434 +59986,6 @@ const dialogClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MOD
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/esm/DialogActions/DialogActions.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogActions/DialogActions.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _dialogActionsClasses_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dialogActionsClasses.js */ "./node_modules/@mui/material/esm/DialogActions/dialogActionsClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    disableSpacing
-  } = ownerState;
-  const slots = {
-    root: ['root', !disableSpacing && 'spacing']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__["default"])(slots, _dialogActionsClasses_js__WEBPACK_IMPORTED_MODULE_4__.getDialogActionsUtilityClass, classes);
-};
-const DialogActionsRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])('div', {
-  name: 'MuiDialogActions',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, !ownerState.disableSpacing && styles.spacing];
-  }
-})({
-  display: 'flex',
-  alignItems: 'center',
-  padding: 8,
-  justifyContent: 'flex-end',
-  flex: '0 0 auto',
-  variants: [{
-    props: ({
-      ownerState
-    }) => !ownerState.disableSpacing,
-    style: {
-      '& > :not(style) ~ :not(style)': {
-        marginLeft: 8
-      }
-    }
-  }]
-});
-const DialogActions = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function DialogActions(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_6__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiDialogActions'
-  });
-  const {
-    className,
-    disableSpacing = false,
-    ...other
-  } = props;
-  const ownerState = {
-    ...props,
-    disableSpacing
-  };
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(DialogActionsRoot, {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref,
-    ...other
-  });
-});
- true ? DialogActions.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_7__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_7__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_7__.string,
-  /**
-   * If `true`, the actions do not have additional margin.
-   * @default false
-   */
-  disableSpacing: prop_types__WEBPACK_IMPORTED_MODULE_7__.bool,
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_7__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_7__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_7__.func, prop_types__WEBPACK_IMPORTED_MODULE_7__.object, prop_types__WEBPACK_IMPORTED_MODULE_7__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_7__.func, prop_types__WEBPACK_IMPORTED_MODULE_7__.object])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DialogActions);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/DialogActions/dialogActionsClasses.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogActions/dialogActionsClasses.js ***!
-  \******************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getDialogActionsUtilityClass: () => (/* binding */ getDialogActionsUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getDialogActionsUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiDialogActions', slot);
-}
-const dialogActionsClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiDialogActions', ['root', 'spacing']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogActionsClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/DialogContent/DialogContent.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogContent/DialogContent.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _dialogContentClasses_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dialogContentClasses.js */ "./node_modules/@mui/material/esm/DialogContent/dialogContentClasses.js");
-/* harmony import */ var _DialogTitle_dialogTitleClasses_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../DialogTitle/dialogTitleClasses.js */ "./node_modules/@mui/material/esm/DialogTitle/dialogTitleClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    dividers
-  } = ownerState;
-  const slots = {
-    root: ['root', dividers && 'dividers']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__["default"])(slots, _dialogContentClasses_js__WEBPACK_IMPORTED_MODULE_4__.getDialogContentUtilityClass, classes);
-};
-const DialogContentRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])('div', {
-  name: 'MuiDialogContent',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, ownerState.dividers && styles.dividers];
-  }
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_6__["default"])(({
-  theme
-}) => ({
-  flex: '1 1 auto',
-  // Add iOS momentum scrolling for iOS < 13.0
-  WebkitOverflowScrolling: 'touch',
-  overflowY: 'auto',
-  padding: '20px 24px',
-  variants: [{
-    props: ({
-      ownerState
-    }) => ownerState.dividers,
-    style: {
-      padding: '16px 24px',
-      borderTop: `1px solid ${(theme.vars || theme).palette.divider}`,
-      borderBottom: `1px solid ${(theme.vars || theme).palette.divider}`
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.dividers,
-    style: {
-      [`.${_DialogTitle_dialogTitleClasses_js__WEBPACK_IMPORTED_MODULE_7__["default"].root} + &`]: {
-        paddingTop: 0
-      }
-    }
-  }]
-})));
-const DialogContent = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function DialogContent(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_8__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiDialogContent'
-  });
-  const {
-    className,
-    dividers = false,
-    ...other
-  } = props;
-  const ownerState = {
-    ...props,
-    dividers
-  };
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(DialogContentRoot, {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref,
-    ...other
-  });
-});
- true ? DialogContent.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_9__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_9__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_9__.string,
-  /**
-   * Display the top and bottom dividers.
-   * @default false
-   */
-  dividers: prop_types__WEBPACK_IMPORTED_MODULE_9__.bool,
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.func, prop_types__WEBPACK_IMPORTED_MODULE_9__.object, prop_types__WEBPACK_IMPORTED_MODULE_9__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_9__.func, prop_types__WEBPACK_IMPORTED_MODULE_9__.object])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DialogContent);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/DialogContent/dialogContentClasses.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogContent/dialogContentClasses.js ***!
-  \******************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getDialogContentUtilityClass: () => (/* binding */ getDialogContentUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getDialogContentUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiDialogContent', slot);
-}
-const dialogContentClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiDialogContent', ['root', 'dividers']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogContentClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/DialogTitle/DialogTitle.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogTitle/DialogTitle.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _Typography_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Typography/index.js */ "./node_modules/@mui/material/esm/Typography/Typography.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _dialogTitleClasses_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dialogTitleClasses.js */ "./node_modules/@mui/material/esm/DialogTitle/dialogTitleClasses.js");
-/* harmony import */ var _Dialog_DialogContext_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Dialog/DialogContext.js */ "./node_modules/@mui/material/esm/Dialog/DialogContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    classes
-  } = ownerState;
-  const slots = {
-    root: ['root']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__["default"])(slots, _dialogTitleClasses_js__WEBPACK_IMPORTED_MODULE_4__.getDialogTitleUtilityClass, classes);
-};
-const DialogTitleRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])(_Typography_index_js__WEBPACK_IMPORTED_MODULE_6__["default"], {
-  name: 'MuiDialogTitle',
-  slot: 'Root',
-  overridesResolver: (props, styles) => styles.root
-})({
-  padding: '16px 24px',
-  flex: '0 0 auto'
-});
-const DialogTitle = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function DialogTitle(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_7__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiDialogTitle'
-  });
-  const {
-    className,
-    id: idProp,
-    ...other
-  } = props;
-  const ownerState = props;
-  const classes = useUtilityClasses(ownerState);
-  const {
-    titleId = idProp
-  } = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_Dialog_DialogContext_js__WEBPACK_IMPORTED_MODULE_8__["default"]);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(DialogTitleRoot, {
-    component: "h2",
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref,
-    variant: "h6",
-    id: idProp ?? titleId,
-    ...other
-  });
-});
- true ? DialogTitle.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_9__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_9__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_9__.string,
-  /**
-   * @ignore
-   */
-  id: prop_types__WEBPACK_IMPORTED_MODULE_9__.string,
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.func, prop_types__WEBPACK_IMPORTED_MODULE_9__.object, prop_types__WEBPACK_IMPORTED_MODULE_9__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_9__.func, prop_types__WEBPACK_IMPORTED_MODULE_9__.object])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DialogTitle);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/DialogTitle/dialogTitleClasses.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/DialogTitle/dialogTitleClasses.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getDialogTitleUtilityClass: () => (/* binding */ getDialogTitleUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getDialogTitleUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiDialogTitle', slot);
-}
-const dialogTitleClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiDialogTitle', ['root']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogTitleClasses);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/esm/Fade/Fade.js":
 /*!*****************************************************!*\
   !*** ./node_modules/@mui/material/esm/Fade/Fade.js ***!
@@ -64739,451 +64380,6 @@ const listClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/esm/ListItem/ListItem.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ListItem/ListItem.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   ListItemRoot: () => (/* binding */ ListItemRoot),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   overridesResolver: () => (/* binding */ overridesResolver)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_utils_elementTypeAcceptingRef__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/utils/elementTypeAcceptingRef */ "./node_modules/@mui/utils/esm/elementTypeAcceptingRef/elementTypeAcceptingRef.js");
-/* harmony import */ var _mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/utils/chainPropTypes */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
-/* harmony import */ var _utils_isHostComponent_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/isHostComponent.js */ "./node_modules/@mui/material/esm/utils/isHostComponent.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _utils_isMuiElement_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/isMuiElement.js */ "./node_modules/@mui/material/esm/utils/isMuiElement.js");
-/* harmony import */ var _utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils/useForkRef.js */ "./node_modules/@mui/material/esm/utils/useForkRef.js");
-/* harmony import */ var _List_ListContext_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../List/ListContext.js */ "./node_modules/@mui/material/esm/List/ListContext.js");
-/* harmony import */ var _listItemClasses_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./listItemClasses.js */ "./node_modules/@mui/material/esm/ListItem/listItemClasses.js");
-/* harmony import */ var _ListItemButton_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../ListItemButton/index.js */ "./node_modules/@mui/material/esm/ListItemButton/listItemButtonClasses.js");
-/* harmony import */ var _ListItemSecondaryAction_index_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../ListItemSecondaryAction/index.js */ "./node_modules/@mui/material/esm/ListItemSecondaryAction/ListItemSecondaryAction.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const overridesResolver = (props, styles) => {
-  const {
-    ownerState
-  } = props;
-  return [styles.root, ownerState.dense && styles.dense, ownerState.alignItems === 'flex-start' && styles.alignItemsFlexStart, ownerState.divider && styles.divider, !ownerState.disableGutters && styles.gutters, !ownerState.disablePadding && styles.padding, ownerState.hasSecondaryAction && styles.secondaryAction];
-};
-const useUtilityClasses = ownerState => {
-  const {
-    alignItems,
-    classes,
-    dense,
-    disableGutters,
-    disablePadding,
-    divider,
-    hasSecondaryAction
-  } = ownerState;
-  const slots = {
-    root: ['root', dense && 'dense', !disableGutters && 'gutters', !disablePadding && 'padding', divider && 'divider', alignItems === 'flex-start' && 'alignItemsFlexStart', hasSecondaryAction && 'secondaryAction'],
-    container: ['container']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__["default"])(slots, _listItemClasses_js__WEBPACK_IMPORTED_MODULE_4__.getListItemUtilityClass, classes);
-};
-const ListItemRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])('div', {
-  name: 'MuiListItem',
-  slot: 'Root',
-  overridesResolver
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_6__["default"])(({
-  theme
-}) => ({
-  display: 'flex',
-  justifyContent: 'flex-start',
-  alignItems: 'center',
-  position: 'relative',
-  textDecoration: 'none',
-  width: '100%',
-  boxSizing: 'border-box',
-  textAlign: 'left',
-  variants: [{
-    props: ({
-      ownerState
-    }) => !ownerState.disablePadding,
-    style: {
-      paddingTop: 8,
-      paddingBottom: 8
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.disablePadding && ownerState.dense,
-    style: {
-      paddingTop: 4,
-      paddingBottom: 4
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.disablePadding && !ownerState.disableGutters,
-    style: {
-      paddingLeft: 16,
-      paddingRight: 16
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.disablePadding && !!ownerState.secondaryAction,
-    style: {
-      // Add some space to avoid collision as `ListItemSecondaryAction`
-      // is absolutely positioned.
-      paddingRight: 48
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !!ownerState.secondaryAction,
-    style: {
-      [`& > .${_ListItemButton_index_js__WEBPACK_IMPORTED_MODULE_7__["default"].root}`]: {
-        paddingRight: 48
-      }
-    }
-  }, {
-    props: {
-      alignItems: 'flex-start'
-    },
-    style: {
-      alignItems: 'flex-start'
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.divider,
-    style: {
-      borderBottom: `1px solid ${(theme.vars || theme).palette.divider}`,
-      backgroundClip: 'padding-box'
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.button,
-    style: {
-      transition: theme.transitions.create('background-color', {
-        duration: theme.transitions.duration.shortest
-      }),
-      '&:hover': {
-        textDecoration: 'none',
-        backgroundColor: (theme.vars || theme).palette.action.hover,
-        // Reset on touch devices, it doesn't add specificity
-        '@media (hover: none)': {
-          backgroundColor: 'transparent'
-        }
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.hasSecondaryAction,
-    style: {
-      // Add some space to avoid collision as `ListItemSecondaryAction`
-      // is absolutely positioned.
-      paddingRight: 48
-    }
-  }]
-})));
-const ListItemContainer = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])('li', {
-  name: 'MuiListItem',
-  slot: 'Container',
-  overridesResolver: (props, styles) => styles.container
-})({
-  position: 'relative'
-});
-
-/**
- * Uses an additional container component if `ListItemSecondaryAction` is the last child.
- */
-const ListItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function ListItem(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_8__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiListItem'
-  });
-  const {
-    alignItems = 'center',
-    children: childrenProp,
-    className,
-    component: componentProp,
-    components = {},
-    componentsProps = {},
-    ContainerComponent = 'li',
-    ContainerProps: {
-      className: ContainerClassName,
-      ...ContainerProps
-    } = {},
-    dense = false,
-    disableGutters = false,
-    disablePadding = false,
-    divider = false,
-    secondaryAction,
-    slotProps = {},
-    slots = {},
-    ...other
-  } = props;
-  const context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_List_ListContext_js__WEBPACK_IMPORTED_MODULE_9__["default"]);
-  const childContext = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => ({
-    dense: dense || context.dense || false,
-    alignItems,
-    disableGutters
-  }), [alignItems, context.dense, dense, disableGutters]);
-  const listItemRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-  const children = react__WEBPACK_IMPORTED_MODULE_0__.Children.toArray(childrenProp);
-
-  // v4 implementation, deprecated in v6, will be removed in a future major release
-  const hasSecondaryAction = children.length && (0,_utils_isMuiElement_js__WEBPACK_IMPORTED_MODULE_10__["default"])(children[children.length - 1], ['ListItemSecondaryAction']);
-  const ownerState = {
-    ...props,
-    alignItems,
-    dense: childContext.dense,
-    disableGutters,
-    disablePadding,
-    divider,
-    hasSecondaryAction
-  };
-  const classes = useUtilityClasses(ownerState);
-  const handleRef = (0,_utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_11__["default"])(listItemRef, ref);
-  const Root = slots.root || components.Root || ListItemRoot;
-  const rootProps = slotProps.root || componentsProps.root || {};
-  const componentProps = {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, rootProps.className, className),
-    ...other
-  };
-  let Component = componentProp || 'li';
-
-  // v4 implementation, deprecated in v6, will be removed in a future major release
-  if (hasSecondaryAction) {
-    // Use div by default.
-    Component = !componentProps.component && !componentProp ? 'div' : Component;
-
-    // Avoid nesting of li > li.
-    if (ContainerComponent === 'li') {
-      if (Component === 'li') {
-        Component = 'div';
-      } else if (componentProps.component === 'li') {
-        componentProps.component = 'div';
-      }
-    }
-    return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_List_ListContext_js__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
-      value: childContext,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(ListItemContainer, {
-        as: ContainerComponent,
-        className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.container, ContainerClassName),
-        ref: handleRef,
-        ownerState: ownerState,
-        ...ContainerProps,
-        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(Root, {
-          ...rootProps,
-          ...(!(0,_utils_isHostComponent_js__WEBPACK_IMPORTED_MODULE_12__["default"])(Root) && {
-            as: Component,
-            ownerState: {
-              ...ownerState,
-              ...rootProps.ownerState
-            }
-          }),
-          ...componentProps,
-          children: children
-        }), children.pop()]
-      })
-    });
-  }
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_List_ListContext_js__WEBPACK_IMPORTED_MODULE_9__["default"].Provider, {
-    value: childContext,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(Root, {
-      ...rootProps,
-      as: Component,
-      ref: handleRef,
-      ...(!(0,_utils_isHostComponent_js__WEBPACK_IMPORTED_MODULE_12__["default"])(Root) && {
-        ownerState: {
-          ...ownerState,
-          ...rootProps.ownerState
-        }
-      }),
-      ...componentProps,
-      children: [children, secondaryAction && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ListItemSecondaryAction_index_js__WEBPACK_IMPORTED_MODULE_13__["default"], {
-        children: secondaryAction
-      })]
-    })
-  });
-});
- true ? ListItem.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * Defines the `align-items` style property.
-   * @default 'center'
-   */
-  alignItems: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOf(['center', 'flex-start']),
-  /**
-   * The content of the component if a `ListItemSecondaryAction` is used it must
-   * be the last child.
-   */
-  children: (0,_mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_15__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_14__.node, props => {
-    const children = react__WEBPACK_IMPORTED_MODULE_0__.Children.toArray(props.children);
-
-    // React.Children.toArray(props.children).findLastIndex(isListItemSecondaryAction)
-    let secondaryActionIndex = -1;
-    for (let i = children.length - 1; i >= 0; i -= 1) {
-      const child = children[i];
-      if ((0,_utils_isMuiElement_js__WEBPACK_IMPORTED_MODULE_10__["default"])(child, ['ListItemSecondaryAction'])) {
-        secondaryActionIndex = i;
-        break;
-      }
-    }
-
-    //  is ListItemSecondaryAction the last child of ListItem
-    if (secondaryActionIndex !== -1 && secondaryActionIndex !== children.length - 1) {
-      return new Error('MUI: You used an element after ListItemSecondaryAction. ' + 'For ListItem to detect that it has a secondary action ' + 'you must pass it as the last child to ListItem.');
-    }
-    return null;
-  }),
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_14__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_14__.string,
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_14__.elementType,
-  /**
-   * The components used for each slot inside.
-   *
-   * @deprecated Use the `slots` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   * @default {}
-   */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_14__.shape({
-    Root: prop_types__WEBPACK_IMPORTED_MODULE_14__.elementType
-  }),
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * @deprecated Use the `slotProps` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   * @default {}
-   */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_14__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_14__.object
-  }),
-  /**
-   * The container component used when a `ListItemSecondaryAction` is the last child.
-   * @default 'li'
-   * @deprecated Use the `component` or `slots.root` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  ContainerComponent: _mui_utils_elementTypeAcceptingRef__WEBPACK_IMPORTED_MODULE_16__["default"],
-  /**
-   * Props applied to the container component if used.
-   * @default {}
-   * @deprecated Use the `slotProps.root` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  ContainerProps: prop_types__WEBPACK_IMPORTED_MODULE_14__.object,
-  /**
-   * If `true`, compact vertical padding designed for keyboard and mouse input is used.
-   * The prop defaults to the value inherited from the parent List component.
-   * @default false
-   */
-  dense: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, the left and right padding is removed.
-   * @default false
-   */
-  disableGutters: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, all padding is removed.
-   * @default false
-   */
-  disablePadding: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, a 1px light border is added to the bottom of the list item.
-   * @default false
-   */
-  divider: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * The element to display at the end of ListItem.
-   */
-  secondaryAction: prop_types__WEBPACK_IMPORTED_MODULE_14__.node,
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_14__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_14__.object
-  }),
-  /**
-   * The components used for each slot inside.
-   *
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_14__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_14__.elementType
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.func, prop_types__WEBPACK_IMPORTED_MODULE_14__.object, prop_types__WEBPACK_IMPORTED_MODULE_14__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_14__.func, prop_types__WEBPACK_IMPORTED_MODULE_14__.object])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItem);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/ListItem/listItemClasses.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ListItem/listItemClasses.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemUtilityClass: () => (/* binding */ getListItemUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItem', slot);
-}
-const listItemClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItem', ['root', 'container', 'dense', 'alignItemsFlexStart', 'divider', 'gutters', 'padding', 'secondaryAction']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemClasses);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/esm/ListItemButton/ListItemButton.js":
 /*!*************************************************************************!*\
   !*** ./node_modules/@mui/material/esm/ListItemButton/ListItemButton.js ***!
@@ -65499,149 +64695,6 @@ function getListItemButtonUtilityClass(slot) {
 }
 const listItemButtonClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItemButton', ['root', 'focusVisible', 'dense', 'alignItemsFlexStart', 'disabled', 'divider', 'gutters', 'selected']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemButtonClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/ListItemSecondaryAction/ListItemSecondaryAction.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ListItemSecondaryAction/ListItemSecondaryAction.js ***!
-  \*******************************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _List_ListContext_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../List/ListContext.js */ "./node_modules/@mui/material/esm/List/ListContext.js");
-/* harmony import */ var _listItemSecondaryActionClasses_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./listItemSecondaryActionClasses.js */ "./node_modules/@mui/material/esm/ListItemSecondaryAction/listItemSecondaryActionClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-const useUtilityClasses = ownerState => {
-  const {
-    disableGutters,
-    classes
-  } = ownerState;
-  const slots = {
-    root: ['root', disableGutters && 'disableGutters']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_3__["default"])(slots, _listItemSecondaryActionClasses_js__WEBPACK_IMPORTED_MODULE_4__.getListItemSecondaryActionClassesUtilityClass, classes);
-};
-const ListItemSecondaryActionRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_5__["default"])('div', {
-  name: 'MuiListItemSecondaryAction',
-  slot: 'Root',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.root, ownerState.disableGutters && styles.disableGutters];
-  }
-})({
-  position: 'absolute',
-  right: 16,
-  top: '50%',
-  transform: 'translateY(-50%)',
-  variants: [{
-    props: ({
-      ownerState
-    }) => ownerState.disableGutters,
-    style: {
-      right: 0
-    }
-  }]
-});
-
-/**
- * Must be used as the last child of ListItem to function properly.
- *
- * @deprecated Use the `secondaryAction` prop in the `ListItem` component instead. This component will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
- */
-const ListItemSecondaryAction = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function ListItemSecondaryAction(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_6__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiListItemSecondaryAction'
-  });
-  const {
-    className,
-    ...other
-  } = props;
-  const context = react__WEBPACK_IMPORTED_MODULE_0__.useContext(_List_ListContext_js__WEBPACK_IMPORTED_MODULE_7__["default"]);
-  const ownerState = {
-    ...props,
-    disableGutters: context.disableGutters
-  };
-  const classes = useUtilityClasses(ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ListItemSecondaryActionRoot, {
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ownerState: ownerState,
-    ref: ref,
-    ...other
-  });
-});
- true ? ListItemSecondaryAction.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component, normally an `IconButton` or selection control.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_8__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_8__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_8__.string,
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_8__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_8__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_8__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_8__.func, prop_types__WEBPACK_IMPORTED_MODULE_8__.object, prop_types__WEBPACK_IMPORTED_MODULE_8__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_8__.func, prop_types__WEBPACK_IMPORTED_MODULE_8__.object])
-} : 0;
-ListItemSecondaryAction.muiName = 'ListItemSecondaryAction';
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ListItemSecondaryAction);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/ListItemSecondaryAction/listItemSecondaryActionClasses.js":
-/*!**************************************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ListItemSecondaryAction/listItemSecondaryActionClasses.js ***!
-  \**************************************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getListItemSecondaryActionClassesUtilityClass: () => (/* binding */ getListItemSecondaryActionClassesUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getListItemSecondaryActionClassesUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiListItemSecondaryAction', slot);
-}
-const listItemSecondaryActionClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiListItemSecondaryAction', ['root', 'disableGutters']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (listItemSecondaryActionClasses);
 
 /***/ }),
 
@@ -69333,6 +68386,661 @@ const popoverClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MO
 
 /***/ }),
 
+/***/ "./node_modules/@mui/material/esm/Popper/BasePopper.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Popper/BasePopper.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useForkRef/useForkRef.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useEnhancedEffect/useEnhancedEffect.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/ownerDocument/ownerDocument.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/refType/refType.js");
+/* harmony import */ var _popperjs_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/popper.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
+/* harmony import */ var _mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/utils/useSlotProps */ "./node_modules/@mui/utils/esm/useSlotProps/useSlotProps.js");
+/* harmony import */ var _Portal_index_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Portal/index.js */ "./node_modules/@mui/material/esm/Portal/Portal.js");
+/* harmony import */ var _popperClasses_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./popperClasses.js */ "./node_modules/@mui/material/esm/Popper/popperClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+'use client';
+
+
+
+
+
+
+
+
+
+
+function flipPlacement(placement, direction) {
+  if (direction === 'ltr') {
+    return placement;
+  }
+  switch (placement) {
+    case 'bottom-end':
+      return 'bottom-start';
+    case 'bottom-start':
+      return 'bottom-end';
+    case 'top-end':
+      return 'top-start';
+    case 'top-start':
+      return 'top-end';
+    default:
+      return placement;
+  }
+}
+function resolveAnchorEl(anchorEl) {
+  return typeof anchorEl === 'function' ? anchorEl() : anchorEl;
+}
+function isHTMLElement(element) {
+  return element.nodeType !== undefined;
+}
+function isVirtualElement(element) {
+  return !isHTMLElement(element);
+}
+const useUtilityClasses = ownerState => {
+  const {
+    classes
+  } = ownerState;
+  const slots = {
+    root: ['root']
+  };
+  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_2__["default"])(slots, _popperClasses_js__WEBPACK_IMPORTED_MODULE_3__.getPopperUtilityClass, classes);
+};
+const defaultPopperOptions = {};
+const PopperTooltip = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function PopperTooltip(props, forwardedRef) {
+  const {
+    anchorEl,
+    children,
+    direction,
+    disablePortal,
+    modifiers,
+    open,
+    placement: initialPlacement,
+    popperOptions,
+    popperRef: popperRefProp,
+    slotProps = {},
+    slots = {},
+    TransitionProps,
+    // @ts-ignore internal logic
+    ownerState: ownerStateProp,
+    // prevent from spreading to DOM, it can come from the parent component e.g. Select.
+    ...other
+  } = props;
+  const tooltipRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const ownRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(tooltipRef, forwardedRef);
+  const popperRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const handlePopperRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(popperRef, popperRefProp);
+  const handlePopperRefRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(handlePopperRef);
+  (0,_mui_utils__WEBPACK_IMPORTED_MODULE_5__["default"])(() => {
+    handlePopperRefRef.current = handlePopperRef;
+  }, [handlePopperRef]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useImperativeHandle(popperRefProp, () => popperRef.current, []);
+  const rtlPlacement = flipPlacement(initialPlacement, direction);
+  /**
+   * placement initialized from prop but can change during lifetime if modifiers.flip.
+   * modifiers.flip is essentially a flip for controlled/uncontrolled behavior
+   */
+  const [placement, setPlacement] = react__WEBPACK_IMPORTED_MODULE_0__.useState(rtlPlacement);
+  const [resolvedAnchorElement, setResolvedAnchorElement] = react__WEBPACK_IMPORTED_MODULE_0__.useState(resolveAnchorEl(anchorEl));
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (popperRef.current) {
+      popperRef.current.forceUpdate();
+    }
+  });
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (anchorEl) {
+      setResolvedAnchorElement(resolveAnchorEl(anchorEl));
+    }
+  }, [anchorEl]);
+  (0,_mui_utils__WEBPACK_IMPORTED_MODULE_5__["default"])(() => {
+    if (!resolvedAnchorElement || !open) {
+      return undefined;
+    }
+    const handlePopperUpdate = data => {
+      setPlacement(data.placement);
+    };
+    if (true) {
+      if (resolvedAnchorElement && isHTMLElement(resolvedAnchorElement) && resolvedAnchorElement.nodeType === 1) {
+        const box = resolvedAnchorElement.getBoundingClientRect();
+        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
+          console.warn(['MUI: The `anchorEl` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
+        }
+      }
+    }
+    let popperModifiers = [{
+      name: 'preventOverflow',
+      options: {
+        altBoundary: disablePortal
+      }
+    }, {
+      name: 'flip',
+      options: {
+        altBoundary: disablePortal
+      }
+    }, {
+      name: 'onUpdate',
+      enabled: true,
+      phase: 'afterWrite',
+      fn: ({
+        state
+      }) => {
+        handlePopperUpdate(state);
+      }
+    }];
+    if (modifiers != null) {
+      popperModifiers = popperModifiers.concat(modifiers);
+    }
+    if (popperOptions && popperOptions.modifiers != null) {
+      popperModifiers = popperModifiers.concat(popperOptions.modifiers);
+    }
+    const popper = (0,_popperjs_core__WEBPACK_IMPORTED_MODULE_6__.createPopper)(resolvedAnchorElement, tooltipRef.current, {
+      placement: rtlPlacement,
+      ...popperOptions,
+      modifiers: popperModifiers
+    });
+    handlePopperRefRef.current(popper);
+    return () => {
+      popper.destroy();
+      handlePopperRefRef.current(null);
+    };
+  }, [resolvedAnchorElement, disablePortal, modifiers, open, popperOptions, rtlPlacement]);
+  const childProps = {
+    placement: placement
+  };
+  if (TransitionProps !== null) {
+    childProps.TransitionProps = TransitionProps;
+  }
+  const classes = useUtilityClasses(props);
+  const Root = slots.root ?? 'div';
+  const rootProps = (0,_mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_7__["default"])({
+    elementType: Root,
+    externalSlotProps: slotProps.root,
+    externalForwardedProps: other,
+    additionalProps: {
+      role: 'tooltip',
+      ref: ownRef
+    },
+    ownerState: props,
+    className: classes.root
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Root, {
+    ...rootProps,
+    children: typeof children === 'function' ? children(childProps) : children
+  });
+});
+
+/**
+ * @ignore - internal component.
+ */
+const Popper = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Popper(props, forwardedRef) {
+  const {
+    anchorEl,
+    children,
+    container: containerProp,
+    direction = 'ltr',
+    disablePortal = false,
+    keepMounted = false,
+    modifiers,
+    open,
+    placement = 'bottom',
+    popperOptions = defaultPopperOptions,
+    popperRef,
+    style,
+    transition = false,
+    slotProps = {},
+    slots = {},
+    ...other
+  } = props;
+  const [exited, setExited] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
+  const handleEnter = () => {
+    setExited(false);
+  };
+  const handleExited = () => {
+    setExited(true);
+  };
+  if (!keepMounted && !open && (!transition || exited)) {
+    return null;
+  }
+
+  // If the container prop is provided, use that
+  // If the anchorEl prop is provided, use its parent body element as the container
+  // If neither are provided let the Modal take care of choosing the container
+  let container;
+  if (containerProp) {
+    container = containerProp;
+  } else if (anchorEl) {
+    const resolvedAnchorEl = resolveAnchorEl(anchorEl);
+    container = resolvedAnchorEl && isHTMLElement(resolvedAnchorEl) ? (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(resolvedAnchorEl).body : (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(null).body;
+  }
+  const display = !open && keepMounted && (!transition || exited) ? 'none' : undefined;
+  const transitionProps = transition ? {
+    in: open,
+    onEnter: handleEnter,
+    onExited: handleExited
+  } : undefined;
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Portal_index_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    disablePortal: disablePortal,
+    container: container,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PopperTooltip, {
+      anchorEl: anchorEl,
+      direction: direction,
+      disablePortal: disablePortal,
+      modifiers: modifiers,
+      ref: forwardedRef,
+      open: transition ? !exited : open,
+      placement: placement,
+      popperOptions: popperOptions,
+      popperRef: popperRef,
+      slotProps: slotProps,
+      slots: slots,
+      ...other,
+      style: {
+        // Prevents scroll issue, waiting for Popper.js to add this style once initiated.
+        position: 'fixed',
+        // Fix Popper.js display issue
+        top: 0,
+        left: 0,
+        display,
+        ...style
+      },
+      TransitionProps: transitionProps,
+      children: children
+    })
+  });
+});
+ true ? Popper.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │ To update them, edit the TypeScript types and run `pnpm proptypes`. │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * An HTML element, [virtualElement](https://popper.js.org/docs/v2/virtual-elements/),
+   * or a function that returns either.
+   * It's used to set the position of the popper.
+   * The return value will passed as the reference object of the Popper instance.
+   */
+  anchorEl: (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"], prop_types__WEBPACK_IMPORTED_MODULE_11__.object, prop_types__WEBPACK_IMPORTED_MODULE_11__.func]), props => {
+    if (props.open) {
+      const resolvedAnchorEl = resolveAnchorEl(props.anchorEl);
+      if (resolvedAnchorEl && isHTMLElement(resolvedAnchorEl) && resolvedAnchorEl.nodeType === 1) {
+        const box = resolvedAnchorEl.getBoundingClientRect();
+        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
+          return new Error(['MUI: The `anchorEl` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
+        }
+      } else if (!resolvedAnchorEl || typeof resolvedAnchorEl.getBoundingClientRect !== 'function' || isVirtualElement(resolvedAnchorEl) && resolvedAnchorEl.contextElement != null && resolvedAnchorEl.contextElement.nodeType !== 1) {
+        return new Error(['MUI: The `anchorEl` prop provided to the component is invalid.', 'It should be an HTML element instance or a virtualElement ', '(https://popper.js.org/docs/v2/virtual-elements/).'].join('\n'));
+      }
+    }
+    return null;
+  }),
+  /**
+   * Popper render function or node.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11__.node, prop_types__WEBPACK_IMPORTED_MODULE_11__.func]),
+  /**
+   * An HTML element or function that returns one.
+   * The `container` will have the portal children appended to it.
+   *
+   * You can also provide a callback, which is called in a React layout effect.
+   * This lets you set the container from a ref, and also makes server-side rendering possible.
+   *
+   * By default, it uses the body of the top-level document object,
+   * so it's simply `document.body` most of the time.
+   */
+  container: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"], prop_types__WEBPACK_IMPORTED_MODULE_11__.func]),
+  /**
+   * Direction of the text.
+   * @default 'ltr'
+   */
+  direction: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['ltr', 'rtl']),
+  /**
+   * The `children` will be under the DOM hierarchy of the parent component.
+   * @default false
+   */
+  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
+  /**
+   * Always keep the children in the DOM.
+   * This prop can be useful in SEO situation or
+   * when you want to maximize the responsiveness of the Popper.
+   * @default false
+   */
+  keepMounted: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
+  /**
+   * Popper.js is based on a "plugin-like" architecture,
+   * most of its features are fully encapsulated "modifiers".
+   *
+   * A modifier is a function that is called each time Popper.js needs to
+   * compute the position of the popper.
+   * For this reason, modifiers should be very performant to avoid bottlenecks.
+   * To learn how to create a modifier, [read the modifiers documentation](https://popper.js.org/docs/v2/modifiers/).
+   */
+  modifiers: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
+    data: prop_types__WEBPACK_IMPORTED_MODULE_11__.object,
+    effect: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
+    enabled: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
+    fn: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
+    name: prop_types__WEBPACK_IMPORTED_MODULE_11__.any,
+    options: prop_types__WEBPACK_IMPORTED_MODULE_11__.object,
+    phase: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['afterMain', 'afterRead', 'afterWrite', 'beforeMain', 'beforeRead', 'beforeWrite', 'main', 'read', 'write']),
+    requires: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.string),
+    requiresIfExists: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.string)
+  })),
+  /**
+   * If `true`, the component is shown.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool.isRequired,
+  /**
+   * Popper placement.
+   * @default 'bottom'
+   */
+  placement: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
+  /**
+   * Options provided to the [`Popper.js`](https://popper.js.org/docs/v2/constructors/#options) instance.
+   * @default {}
+   */
+  popperOptions: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
+    modifiers: prop_types__WEBPACK_IMPORTED_MODULE_11__.array,
+    onFirstUpdate: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
+    placement: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
+    strategy: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['absolute', 'fixed'])
+  }),
+  /**
+   * A ref that points to the used popper instance.
+   */
+  popperRef: _mui_utils__WEBPACK_IMPORTED_MODULE_13__["default"],
+  /**
+   * The props used for each slot inside the Popper.
+   * @default {}
+   */
+  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
+    root: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11__.func, prop_types__WEBPACK_IMPORTED_MODULE_11__.object])
+  }),
+  /**
+   * The components used for each slot inside the Popper.
+   * Either a string to use a HTML element or a component.
+   * @default {}
+   */
+  slots: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
+    root: prop_types__WEBPACK_IMPORTED_MODULE_11__.elementType
+  }),
+  /**
+   * Help supporting a react-transition-group/Transition component.
+   * @default false
+   */
+  transition: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popper);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/esm/Popper/Popper.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Popper/Popper.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/system/RtlProvider */ "./node_modules/@mui/system/esm/RtlProvider/index.js");
+/* harmony import */ var _mui_utils_refType__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils/refType */ "./node_modules/@mui/utils/esm/refType/refType.js");
+/* harmony import */ var _mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/utils/HTMLElementType */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _BasePopper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BasePopper.js */ "./node_modules/@mui/material/esm/Popper/BasePopper.js");
+/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
+/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+'use client';
+
+
+
+
+
+
+
+
+
+
+const PopperRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_BasePopper_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  name: 'MuiPopper',
+  slot: 'Root',
+  overridesResolver: (props, styles) => styles.root
+})({});
+
+/**
+ *
+ * Demos:
+ *
+ * - [Autocomplete](https://mui.com/material-ui/react-autocomplete/)
+ * - [Menu](https://mui.com/material-ui/react-menu/)
+ * - [Popper](https://mui.com/material-ui/react-popper/)
+ *
+ * API:
+ *
+ * - [Popper API](https://mui.com/material-ui/api/popper/)
+ */
+const Popper = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Popper(inProps, ref) {
+  const isRtl = (0,_mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_4__.useRtl)();
+  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_5__.useDefaultProps)({
+    props: inProps,
+    name: 'MuiPopper'
+  });
+  const {
+    anchorEl,
+    component,
+    components,
+    componentsProps,
+    container,
+    disablePortal,
+    keepMounted,
+    modifiers,
+    open,
+    placement,
+    popperOptions,
+    popperRef,
+    transition,
+    slots,
+    slotProps,
+    ...other
+  } = props;
+  const RootComponent = slots?.root ?? components?.Root;
+  const otherProps = {
+    anchorEl,
+    container,
+    disablePortal,
+    keepMounted,
+    modifiers,
+    open,
+    placement,
+    popperOptions,
+    popperRef,
+    transition,
+    ...other
+  };
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PopperRoot, {
+    as: component,
+    direction: isRtl ? 'rtl' : 'ltr',
+    slots: {
+      root: RootComponent
+    },
+    slotProps: slotProps ?? componentsProps,
+    ...otherProps,
+    ref: ref
+  });
+});
+ true ? Popper.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │ To update them, edit the TypeScript types and run `pnpm proptypes`. │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * An HTML element, [virtualElement](https://popper.js.org/docs/v2/virtual-elements/),
+   * or a function that returns either.
+   * It's used to set the position of the popper.
+   * The return value will passed as the reference object of the Popper instance.
+   */
+  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__["default"], prop_types__WEBPACK_IMPORTED_MODULE_6__.object, prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
+  /**
+   * Popper render function or node.
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.node, prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
+  /**
+   * The component used for the root node.
+   * Either a string to use a HTML element or a component.
+   */
+  component: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType,
+  /**
+   * The components used for each slot inside the Popper.
+   * Either a string to use a HTML element or a component.
+   *
+   * @deprecated use the `slots` prop instead. This prop will be removed in a future major release. [How to migrate](/material-ui/migration/migrating-from-deprecated-apis/).
+   * @default {}
+   */
+  components: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    Root: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType
+  }),
+  /**
+   * The props used for each slot inside the Popper.
+   *
+   * @deprecated use the `slotProps` prop instead. This prop will be removed in a future major release. [How to migrate](/material-ui/migration/migrating-from-deprecated-apis/).
+   * @default {}
+   */
+  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object])
+  }),
+  /**
+   * An HTML element or function that returns one.
+   * The `container` will have the portal children appended to it.
+   *
+   * You can also provide a callback, which is called in a React layout effect.
+   * This lets you set the container from a ref, and also makes server-side rendering possible.
+   *
+   * By default, it uses the body of the top-level document object,
+   * so it's simply `document.body` most of the time.
+   */
+  container: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__["default"], prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
+  /**
+   * The `children` will be under the DOM hierarchy of the parent component.
+   * @default false
+   */
+  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
+  /**
+   * Always keep the children in the DOM.
+   * This prop can be useful in SEO situation or
+   * when you want to maximize the responsiveness of the Popper.
+   * @default false
+   */
+  keepMounted: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
+  /**
+   * Popper.js is based on a "plugin-like" architecture,
+   * most of its features are fully encapsulated "modifiers".
+   *
+   * A modifier is a function that is called each time Popper.js needs to
+   * compute the position of the popper.
+   * For this reason, modifiers should be very performant to avoid bottlenecks.
+   * To learn how to create a modifier, [read the modifiers documentation](https://popper.js.org/docs/v2/modifiers/).
+   */
+  modifiers: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    data: prop_types__WEBPACK_IMPORTED_MODULE_6__.object,
+    effect: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
+    enabled: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
+    fn: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
+    name: prop_types__WEBPACK_IMPORTED_MODULE_6__.any,
+    options: prop_types__WEBPACK_IMPORTED_MODULE_6__.object,
+    phase: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['afterMain', 'afterRead', 'afterWrite', 'beforeMain', 'beforeRead', 'beforeWrite', 'main', 'read', 'write']),
+    requires: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.string),
+    requiresIfExists: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.string)
+  })),
+  /**
+   * If `true`, the component is shown.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool.isRequired,
+  /**
+   * Popper placement.
+   * @default 'bottom'
+   */
+  placement: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
+  /**
+   * Options provided to the [`Popper.js`](https://popper.js.org/docs/v2/constructors/#options) instance.
+   * @default {}
+   */
+  popperOptions: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    modifiers: prop_types__WEBPACK_IMPORTED_MODULE_6__.array,
+    onFirstUpdate: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
+    placement: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
+    strategy: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['absolute', 'fixed'])
+  }),
+  /**
+   * A ref that points to the used popper instance.
+   */
+  popperRef: _mui_utils_refType__WEBPACK_IMPORTED_MODULE_8__["default"],
+  /**
+   * The props used for each slot inside the Popper.
+   * @default {}
+   */
+  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object])
+  }),
+  /**
+   * The components used for each slot inside the Popper.
+   * Either a string to use a HTML element or a component.
+   * @default {}
+   */
+  slots: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
+    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType
+  }),
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object, prop_types__WEBPACK_IMPORTED_MODULE_6__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object]),
+  /**
+   * Help supporting a react-transition-group/Transition component.
+   * @default false
+   */
+  transition: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popper);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/esm/Popper/popperClasses.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Popper/popperClasses.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   getPopperUtilityClass: () => (/* binding */ getPopperUtilityClass)
+/* harmony export */ });
+/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
+/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
+
+
+function getPopperUtilityClass(slot) {
+  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiPopper', slot);
+}
+const popperClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiPopper', ['root']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popperClasses);
+
+/***/ }),
+
 /***/ "./node_modules/@mui/material/esm/Portal/Portal.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@mui/material/esm/Portal/Portal.js ***!
@@ -71738,6 +71446,967 @@ function getToolbarUtilityClass(slot) {
 }
 const toolbarClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiToolbar', ['root', 'gutters', 'regular', 'dense']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toolbarClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/esm/Tooltip/Tooltip.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Tooltip/Tooltip.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   testReset: () => (/* binding */ testReset)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
+/* harmony import */ var _mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils/useTimeout */ "./node_modules/@mui/utils/esm/useTimeout/useTimeout.js");
+/* harmony import */ var _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @mui/utils/elementAcceptingRef */ "./node_modules/@mui/utils/esm/elementAcceptingRef/elementAcceptingRef.js");
+/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
+/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/esm/colorManipulator/colorManipulator.js");
+/* harmony import */ var _mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/system/RtlProvider */ "./node_modules/@mui/system/esm/RtlProvider/index.js");
+/* harmony import */ var _mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/utils/isFocusVisible */ "./node_modules/@mui/utils/esm/isFocusVisible/isFocusVisible.js");
+/* harmony import */ var _mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @mui/utils/getReactElementRef */ "./node_modules/@mui/utils/esm/getReactElementRef/getReactElementRef.js");
+/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
+/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/useTheme.js");
+/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
+/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
+/* harmony import */ var _utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/capitalize.js */ "./node_modules/@mui/material/esm/utils/capitalize.js");
+/* harmony import */ var _Grow_index_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../Grow/index.js */ "./node_modules/@mui/material/esm/Grow/Grow.js");
+/* harmony import */ var _Popper_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Popper/index.js */ "./node_modules/@mui/material/esm/Popper/Popper.js");
+/* harmony import */ var _utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../utils/useEventCallback.js */ "./node_modules/@mui/material/esm/utils/useEventCallback.js");
+/* harmony import */ var _utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../utils/useForkRef.js */ "./node_modules/@mui/material/esm/utils/useForkRef.js");
+/* harmony import */ var _utils_useId_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/useId.js */ "./node_modules/@mui/material/esm/utils/useId.js");
+/* harmony import */ var _utils_useControlled_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/useControlled.js */ "./node_modules/@mui/material/esm/utils/useControlled.js");
+/* harmony import */ var _utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../utils/useSlot.js */ "./node_modules/@mui/material/esm/utils/useSlot.js");
+/* harmony import */ var _tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tooltipClasses.js */ "./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+'use client';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function round(value) {
+  return Math.round(value * 1e5) / 1e5;
+}
+const useUtilityClasses = ownerState => {
+  const {
+    classes,
+    disableInteractive,
+    arrow,
+    touch,
+    placement
+  } = ownerState;
+  const slots = {
+    popper: ['popper', !disableInteractive && 'popperInteractive', arrow && 'popperArrow'],
+    tooltip: ['tooltip', arrow && 'tooltipArrow', touch && 'touch', `tooltipPlacement${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__["default"])(placement.split('-')[0])}`],
+    arrow: ['arrow']
+  };
+  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_4__["default"])(slots, _tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__.getTooltipUtilityClass, classes);
+};
+const TooltipPopper = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])(_Popper_index_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  name: 'MuiTooltip',
+  slot: 'Popper',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.popper, !ownerState.disableInteractive && styles.popperInteractive, ownerState.arrow && styles.popperArrow, !ownerState.open && styles.popperClose];
+  }
+})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
+  theme
+}) => ({
+  zIndex: (theme.vars || theme).zIndex.tooltip,
+  pointerEvents: 'none',
+  variants: [{
+    props: ({
+      ownerState
+    }) => !ownerState.disableInteractive,
+    style: {
+      pointerEvents: 'auto'
+    }
+  }, {
+    props: ({
+      open
+    }) => !open,
+    style: {
+      pointerEvents: 'none'
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.arrow,
+    style: {
+      [`&[data-popper-placement*="bottom"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        top: 0,
+        marginTop: '-0.71em',
+        '&::before': {
+          transformOrigin: '0 100%'
+        }
+      },
+      [`&[data-popper-placement*="top"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        bottom: 0,
+        marginBottom: '-0.71em',
+        '&::before': {
+          transformOrigin: '100% 0'
+        }
+      },
+      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        height: '1em',
+        width: '0.71em',
+        '&::before': {
+          transformOrigin: '100% 100%'
+        }
+      },
+      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        height: '1em',
+        width: '0.71em',
+        '&::before': {
+          transformOrigin: '0 0'
+        }
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.arrow && !ownerState.isRtl,
+    style: {
+      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        left: 0,
+        marginLeft: '-0.71em'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.arrow && !!ownerState.isRtl,
+    style: {
+      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        right: 0,
+        marginRight: '-0.71em'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.arrow && !ownerState.isRtl,
+    style: {
+      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        right: 0,
+        marginRight: '-0.71em'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.arrow && !!ownerState.isRtl,
+    style: {
+      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
+        left: 0,
+        marginLeft: '-0.71em'
+      }
+    }
+  }]
+})));
+const TooltipTooltip = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])('div', {
+  name: 'MuiTooltip',
+  slot: 'Tooltip',
+  overridesResolver: (props, styles) => {
+    const {
+      ownerState
+    } = props;
+    return [styles.tooltip, ownerState.touch && styles.touch, ownerState.arrow && styles.tooltipArrow, styles[`tooltipPlacement${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__["default"])(ownerState.placement.split('-')[0])}`]];
+  }
+})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
+  theme
+}) => ({
+  backgroundColor: theme.vars ? theme.vars.palette.Tooltip.bg : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.grey[700], 0.92),
+  borderRadius: (theme.vars || theme).shape.borderRadius,
+  color: (theme.vars || theme).palette.common.white,
+  fontFamily: theme.typography.fontFamily,
+  padding: '4px 8px',
+  fontSize: theme.typography.pxToRem(11),
+  maxWidth: 300,
+  margin: 2,
+  wordWrap: 'break-word',
+  fontWeight: theme.typography.fontWeightMedium,
+  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
+    transformOrigin: 'right center'
+  },
+  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
+    transformOrigin: 'left center'
+  },
+  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="top"] &`]: {
+    transformOrigin: 'center bottom',
+    marginBottom: '14px'
+  },
+  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="bottom"] &`]: {
+    transformOrigin: 'center top',
+    marginTop: '14px'
+  },
+  variants: [{
+    props: ({
+      ownerState
+    }) => ownerState.arrow,
+    style: {
+      position: 'relative',
+      margin: 0
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.touch,
+    style: {
+      padding: '8px 16px',
+      fontSize: theme.typography.pxToRem(14),
+      lineHeight: `${round(16 / 14)}em`,
+      fontWeight: theme.typography.fontWeightRegular
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => !ownerState.isRtl,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
+        marginRight: '14px'
+      },
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
+        marginLeft: '14px'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => !ownerState.isRtl && ownerState.touch,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
+        marginRight: '24px'
+      },
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
+        marginLeft: '24px'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => !!ownerState.isRtl,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
+        marginLeft: '14px'
+      },
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
+        marginRight: '14px'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => !!ownerState.isRtl && ownerState.touch,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
+        marginLeft: '24px'
+      },
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
+        marginRight: '24px'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.touch,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="top"] &`]: {
+        marginBottom: '24px'
+      }
+    }
+  }, {
+    props: ({
+      ownerState
+    }) => ownerState.touch,
+    style: {
+      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="bottom"] &`]: {
+        marginTop: '24px'
+      }
+    }
+  }]
+})));
+const TooltipArrow = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])('span', {
+  name: 'MuiTooltip',
+  slot: 'Arrow',
+  overridesResolver: (props, styles) => styles.arrow
+})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
+  theme
+}) => ({
+  overflow: 'hidden',
+  position: 'absolute',
+  width: '1em',
+  height: '0.71em' /* = width / sqrt(2) = (length of the hypotenuse) */,
+  boxSizing: 'border-box',
+  color: theme.vars ? theme.vars.palette.Tooltip.bg : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.grey[700], 0.9),
+  '&::before': {
+    content: '""',
+    margin: 'auto',
+    display: 'block',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'currentColor',
+    transform: 'rotate(45deg)'
+  }
+})));
+let hystersisOpen = false;
+const hystersisTimer = new _mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__.Timeout();
+let cursorPosition = {
+  x: 0,
+  y: 0
+};
+function testReset() {
+  hystersisOpen = false;
+  hystersisTimer.clear();
+}
+function composeEventHandler(handler, eventHandler) {
+  return (event, ...params) => {
+    if (eventHandler) {
+      eventHandler(event, ...params);
+    }
+    handler(event, ...params);
+  };
+}
+
+// TODO v6: Remove PopperComponent, PopperProps, TransitionComponent and TransitionProps.
+const Tooltip = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Tooltip(inProps, ref) {
+  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__.useDefaultProps)({
+    props: inProps,
+    name: 'MuiTooltip'
+  });
+  const {
+    arrow = false,
+    children: childrenProp,
+    classes: classesProp,
+    components = {},
+    componentsProps = {},
+    describeChild = false,
+    disableFocusListener = false,
+    disableHoverListener = false,
+    disableInteractive: disableInteractiveProp = false,
+    disableTouchListener = false,
+    enterDelay = 100,
+    enterNextDelay = 0,
+    enterTouchDelay = 700,
+    followCursor = false,
+    id: idProp,
+    leaveDelay = 0,
+    leaveTouchDelay = 1500,
+    onClose,
+    onOpen,
+    open: openProp,
+    placement = 'bottom',
+    PopperComponent: PopperComponentProp,
+    PopperProps = {},
+    slotProps = {},
+    slots = {},
+    title,
+    TransitionComponent: TransitionComponentProp,
+    TransitionProps,
+    ...other
+  } = props;
+
+  // to prevent runtime errors, developers will need to provide a child as a React element anyway.
+  const children = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(childrenProp) ? childrenProp : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+    children: childrenProp
+  });
+  const theme = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__["default"])();
+  const isRtl = (0,_mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_13__.useRtl)();
+  const [childNode, setChildNode] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
+  const [arrowRef, setArrowRef] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
+  const ignoreNonTouchEvents = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
+  const disableInteractive = disableInteractiveProp || followCursor;
+  const closeTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  const enterTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  const leaveTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  const touchTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
+  const [openState, setOpenState] = (0,_utils_useControlled_js__WEBPACK_IMPORTED_MODULE_14__["default"])({
+    controlled: openProp,
+    default: false,
+    name: 'Tooltip',
+    state: 'open'
+  });
+  let open = openState;
+  if (true) {
+    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
+    const {
+      current: isControlled
+    } = react__WEBPACK_IMPORTED_MODULE_0__.useRef(openProp !== undefined);
+
+    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+      if (childNode && childNode.disabled && !isControlled && title !== '' && childNode.tagName.toLowerCase() === 'button') {
+        console.warn(['MUI: You are providing a disabled `button` child to the Tooltip component.', 'A disabled element does not fire events.', "Tooltip needs to listen to the child element's events to display the title.", '', 'Add a simple wrapper element, such as a `span`.'].join('\n'));
+      }
+    }, [title, childNode, isControlled]);
+  }
+  const id = (0,_utils_useId_js__WEBPACK_IMPORTED_MODULE_15__["default"])(idProp);
+  const prevUserSelect = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  const stopTouchInteraction = (0,_utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__["default"])(() => {
+    if (prevUserSelect.current !== undefined) {
+      document.body.style.WebkitUserSelect = prevUserSelect.current;
+      prevUserSelect.current = undefined;
+    }
+    touchTimer.clear();
+  });
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => stopTouchInteraction, [stopTouchInteraction]);
+  const handleOpen = event => {
+    hystersisTimer.clear();
+    hystersisOpen = true;
+
+    // The mouseover event will trigger for every nested element in the tooltip.
+    // We can skip rerendering when the tooltip is already open.
+    // We are using the mouseover event instead of the mouseenter event to fix a hide/show issue.
+    setOpenState(true);
+    if (onOpen && !open) {
+      onOpen(event);
+    }
+  };
+  const handleClose = (0,_utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__["default"])(
+  /**
+   * @param {React.SyntheticEvent | Event} event
+   */
+  event => {
+    hystersisTimer.start(800 + leaveDelay, () => {
+      hystersisOpen = false;
+    });
+    setOpenState(false);
+    if (onClose && open) {
+      onClose(event);
+    }
+    closeTimer.start(theme.transitions.duration.shortest, () => {
+      ignoreNonTouchEvents.current = false;
+    });
+  });
+  const handleMouseOver = event => {
+    if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
+      return;
+    }
+
+    // Remove the title ahead of time.
+    // We don't want to wait for the next render commit.
+    // We would risk displaying two tooltips at the same time (native + this one).
+    if (childNode) {
+      childNode.removeAttribute('title');
+    }
+    enterTimer.clear();
+    leaveTimer.clear();
+    if (enterDelay || hystersisOpen && enterNextDelay) {
+      enterTimer.start(hystersisOpen ? enterNextDelay : enterDelay, () => {
+        handleOpen(event);
+      });
+    } else {
+      handleOpen(event);
+    }
+  };
+  const handleMouseLeave = event => {
+    enterTimer.clear();
+    leaveTimer.start(leaveDelay, () => {
+      handleClose(event);
+    });
+  };
+  const [, setChildIsFocusVisible] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
+  const handleBlur = event => {
+    if (!(0,_mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__["default"])(event.target)) {
+      setChildIsFocusVisible(false);
+      handleMouseLeave(event);
+    }
+  };
+  const handleFocus = event => {
+    // Workaround for https://github.com/facebook/react/issues/7769
+    // The autoFocus of React might trigger the event before the componentDidMount.
+    // We need to account for this eventuality.
+    if (!childNode) {
+      setChildNode(event.currentTarget);
+    }
+    if ((0,_mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__["default"])(event.target)) {
+      setChildIsFocusVisible(true);
+      handleMouseOver(event);
+    }
+  };
+  const detectTouchStart = event => {
+    ignoreNonTouchEvents.current = true;
+    const childrenProps = children.props;
+    if (childrenProps.onTouchStart) {
+      childrenProps.onTouchStart(event);
+    }
+  };
+  const handleTouchStart = event => {
+    detectTouchStart(event);
+    leaveTimer.clear();
+    closeTimer.clear();
+    stopTouchInteraction();
+    prevUserSelect.current = document.body.style.WebkitUserSelect;
+    // Prevent iOS text selection on long-tap.
+    document.body.style.WebkitUserSelect = 'none';
+    touchTimer.start(enterTouchDelay, () => {
+      document.body.style.WebkitUserSelect = prevUserSelect.current;
+      handleMouseOver(event);
+    });
+  };
+  const handleTouchEnd = event => {
+    if (children.props.onTouchEnd) {
+      children.props.onTouchEnd(event);
+    }
+    stopTouchInteraction();
+    leaveTimer.start(leaveTouchDelay, () => {
+      handleClose(event);
+    });
+  };
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (!open) {
+      return undefined;
+    }
+
+    /**
+     * @param {KeyboardEvent} nativeEvent
+     */
+    function handleKeyDown(nativeEvent) {
+      if (nativeEvent.key === 'Escape') {
+        handleClose(nativeEvent);
+      }
+    }
+    document.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [handleClose, open]);
+  const handleRef = (0,_utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_18__["default"])((0,_mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_19__["default"])(children), setChildNode, ref);
+
+  // There is no point in displaying an empty tooltip.
+  // So we exclude all falsy values, except 0, which is valid.
+  if (!title && title !== 0) {
+    open = false;
+  }
+  const popperRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
+  const handleMouseMove = event => {
+    const childrenProps = children.props;
+    if (childrenProps.onMouseMove) {
+      childrenProps.onMouseMove(event);
+    }
+    cursorPosition = {
+      x: event.clientX,
+      y: event.clientY
+    };
+    if (popperRef.current) {
+      popperRef.current.update();
+    }
+  };
+  const nameOrDescProps = {};
+  const titleIsString = typeof title === 'string';
+  if (describeChild) {
+    nameOrDescProps.title = !open && titleIsString && !disableHoverListener ? title : null;
+    nameOrDescProps['aria-describedby'] = open ? id : null;
+  } else {
+    nameOrDescProps['aria-label'] = titleIsString ? title : null;
+    nameOrDescProps['aria-labelledby'] = open && !titleIsString ? id : null;
+  }
+  const childrenProps = {
+    ...nameOrDescProps,
+    ...other,
+    ...children.props,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(other.className, children.props.className),
+    onTouchStart: detectTouchStart,
+    ref: handleRef,
+    ...(followCursor ? {
+      onMouseMove: handleMouseMove
+    } : {})
+  };
+  if (true) {
+    childrenProps['data-mui-internal-clone-element'] = true;
+
+    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
+    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
+    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+      if (childNode && !childNode.getAttribute('data-mui-internal-clone-element')) {
+        console.error(['MUI: The `children` component of the Tooltip is not forwarding its props correctly.', 'Please make sure that props are spread on the same element that the ref is applied to.'].join('\n'));
+      }
+    }, [childNode]);
+  }
+  const interactiveWrapperListeners = {};
+  if (!disableTouchListener) {
+    childrenProps.onTouchStart = handleTouchStart;
+    childrenProps.onTouchEnd = handleTouchEnd;
+  }
+  if (!disableHoverListener) {
+    childrenProps.onMouseOver = composeEventHandler(handleMouseOver, childrenProps.onMouseOver);
+    childrenProps.onMouseLeave = composeEventHandler(handleMouseLeave, childrenProps.onMouseLeave);
+    if (!disableInteractive) {
+      interactiveWrapperListeners.onMouseOver = handleMouseOver;
+      interactiveWrapperListeners.onMouseLeave = handleMouseLeave;
+    }
+  }
+  if (!disableFocusListener) {
+    childrenProps.onFocus = composeEventHandler(handleFocus, childrenProps.onFocus);
+    childrenProps.onBlur = composeEventHandler(handleBlur, childrenProps.onBlur);
+    if (!disableInteractive) {
+      interactiveWrapperListeners.onFocus = handleFocus;
+      interactiveWrapperListeners.onBlur = handleBlur;
+    }
+  }
+  if (true) {
+    if (children.props.title) {
+      console.error(['MUI: You have provided a `title` prop to the child of <Tooltip />.', `Remove this title prop \`${children.props.title}\` or the Tooltip component.`].join('\n'));
+    }
+  }
+  const ownerState = {
+    ...props,
+    isRtl,
+    arrow,
+    disableInteractive,
+    placement,
+    PopperComponentProp,
+    touch: ignoreNonTouchEvents.current
+  };
+  const resolvedPopperProps = typeof slotProps.popper === 'function' ? slotProps.popper(ownerState) : slotProps.popper;
+  const popperOptions = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+    let tooltipModifiers = [{
+      name: 'arrow',
+      enabled: Boolean(arrowRef),
+      options: {
+        element: arrowRef,
+        padding: 4
+      }
+    }];
+    if (PopperProps.popperOptions?.modifiers) {
+      tooltipModifiers = tooltipModifiers.concat(PopperProps.popperOptions.modifiers);
+    }
+    if (resolvedPopperProps?.popperOptions?.modifiers) {
+      tooltipModifiers = tooltipModifiers.concat(resolvedPopperProps.popperOptions.modifiers);
+    }
+    return {
+      ...PopperProps.popperOptions,
+      ...resolvedPopperProps?.popperOptions,
+      modifiers: tooltipModifiers
+    };
+  }, [arrowRef, PopperProps.popperOptions, resolvedPopperProps?.popperOptions]);
+  const classes = useUtilityClasses(ownerState);
+  const resolvedTransitionProps = typeof slotProps.transition === 'function' ? slotProps.transition(ownerState) : slotProps.transition;
+  const externalForwardedProps = {
+    slots: {
+      popper: components.Popper,
+      transition: components.Transition ?? TransitionComponentProp,
+      tooltip: components.Tooltip,
+      arrow: components.Arrow,
+      ...slots
+    },
+    slotProps: {
+      arrow: slotProps.arrow ?? componentsProps.arrow,
+      popper: {
+        ...PopperProps,
+        ...(resolvedPopperProps ?? componentsProps.popper)
+      },
+      // resolvedPopperProps can be spread because it's already an object
+      tooltip: slotProps.tooltip ?? componentsProps.tooltip,
+      transition: {
+        ...TransitionProps,
+        ...(resolvedTransitionProps ?? componentsProps.transition)
+      }
+    }
+  };
+  const [PopperSlot, popperSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('popper', {
+    elementType: TooltipPopper,
+    externalForwardedProps,
+    ownerState,
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.popper, PopperProps?.className)
+  });
+  const [TransitionSlot, transitionSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('transition', {
+    elementType: _Grow_index_js__WEBPACK_IMPORTED_MODULE_21__["default"],
+    externalForwardedProps,
+    ownerState
+  });
+  const [TooltipSlot, tooltipSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('tooltip', {
+    elementType: TooltipTooltip,
+    className: classes.tooltip,
+    externalForwardedProps,
+    ownerState
+  });
+  const [ArrowSlot, arrowSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('arrow', {
+    elementType: TooltipArrow,
+    className: classes.arrow,
+    externalForwardedProps,
+    ownerState,
+    ref: setArrowRef
+  });
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    children: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, childrenProps), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(PopperSlot, {
+      as: PopperComponentProp ?? _Popper_index_js__WEBPACK_IMPORTED_MODULE_7__["default"],
+      placement: placement,
+      anchorEl: followCursor ? {
+        getBoundingClientRect: () => ({
+          top: cursorPosition.y,
+          left: cursorPosition.x,
+          right: cursorPosition.x,
+          bottom: cursorPosition.y,
+          width: 0,
+          height: 0
+        })
+      } : childNode,
+      popperRef: popperRef,
+      open: childNode ? open : false,
+      id: id,
+      transition: true,
+      ...interactiveWrapperListeners,
+      ...popperSlotProps,
+      popperOptions: popperOptions,
+      children: ({
+        TransitionProps: TransitionPropsInner
+      }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(TransitionSlot, {
+        timeout: theme.transitions.duration.shorter,
+        ...TransitionPropsInner,
+        ...transitionSlotProps,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(TooltipSlot, {
+          ...tooltipSlotProps,
+          children: [title, arrow ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ArrowSlot, {
+            ...arrowSlotProps
+          }) : null]
+        })
+      })
+    })]
+  });
+});
+ true ? Tooltip.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * If `true`, adds an arrow to the tooltip.
+   * @default false
+   */
+  arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Tooltip reference element.
+   */
+  children: _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_23__["default"].isRequired,
+  /**
+   * Override or extend the styles applied to the component.
+   */
+  classes: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
+  /**
+   * @ignore
+   */
+  className: prop_types__WEBPACK_IMPORTED_MODULE_22__.string,
+  /**
+   * The components used for each slot inside.
+   *
+   * @deprecated use the `slots` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   *
+   * @default {}
+   */
+  components: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
+    Arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    Popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    Tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    Transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType
+  }),
+  /**
+   * The extra props for the slot components.
+   * You can override the existing props or add new ones.
+   *
+   * @deprecated use the `slotProps` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   *
+   * @default {}
+   */
+  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
+    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
+    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
+    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
+    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.object
+  }),
+  /**
+   * Set to `true` if the `title` acts as an accessible description.
+   * By default the `title` acts as an accessible label for the child.
+   * @default false
+   */
+  describeChild: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Do not respond to focus-visible events.
+   * @default false
+   */
+  disableFocusListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Do not respond to hover events.
+   * @default false
+   */
+  disableHoverListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Makes a tooltip not interactive, i.e. it will close when the user
+   * hovers over the tooltip before the `leaveDelay` is expired.
+   * @default false
+   */
+  disableInteractive: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Do not respond to long press touch events.
+   * @default false
+   */
+  disableTouchListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * The number of milliseconds to wait before showing the tooltip.
+   * This prop won't impact the enter touch delay (`enterTouchDelay`).
+   * @default 100
+   */
+  enterDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
+  /**
+   * The number of milliseconds to wait before showing the tooltip when one was already recently opened.
+   * @default 0
+   */
+  enterNextDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
+  /**
+   * The number of milliseconds a user must touch the element before showing the tooltip.
+   * @default 700
+   */
+  enterTouchDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
+  /**
+   * If `true`, the tooltip follow the cursor over the wrapped element.
+   * @default false
+   */
+  followCursor: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * This prop is used to help implement the accessibility logic.
+   * If you don't provide this prop. It falls back to a randomly generated id.
+   */
+  id: prop_types__WEBPACK_IMPORTED_MODULE_22__.string,
+  /**
+   * The number of milliseconds to wait before hiding the tooltip.
+   * This prop won't impact the leave touch delay (`leaveTouchDelay`).
+   * @default 0
+   */
+  leaveDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
+  /**
+   * The number of milliseconds after the user stops touching an element before hiding the tooltip.
+   * @default 1500
+   */
+  leaveTouchDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
+  /**
+   * Callback fired when the component requests to be closed.
+   *
+   * @param {React.SyntheticEvent} event The event source of the callback.
+   */
+  onClose: prop_types__WEBPACK_IMPORTED_MODULE_22__.func,
+  /**
+   * Callback fired when the component requests to be open.
+   *
+   * @param {React.SyntheticEvent} event The event source of the callback.
+   */
+  onOpen: prop_types__WEBPACK_IMPORTED_MODULE_22__.func,
+  /**
+   * If `true`, the component is shown.
+   */
+  open: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
+  /**
+   * Tooltip placement.
+   * @default 'bottom'
+   */
+  placement: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
+  /**
+   * The component used for the popper.
+   * @deprecated use the `slots.popper` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   */
+  PopperComponent: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+  /**
+   * Props applied to the [`Popper`](https://mui.com/material-ui/api/popper/) element.
+   * @deprecated use the `slotProps.popper` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   * @default {}
+   */
+  PopperProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
+  /**
+   * The props used for each slot inside.
+   * @default {}
+   */
+  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
+    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
+    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
+    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
+    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object])
+  }),
+  /**
+   * The components used for each slot inside.
+   * @default {}
+   */
+  slots: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
+    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType
+  }),
+  /**
+   * The system prop that allows defining system overrides as well as additional CSS styles.
+   */
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object, prop_types__WEBPACK_IMPORTED_MODULE_22__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
+  /**
+   * Tooltip title. Zero-length titles string, undefined, null and false are never displayed.
+   */
+  title: prop_types__WEBPACK_IMPORTED_MODULE_22__.node,
+  /**
+   * The component used for the transition.
+   * [Follow this guide](https://mui.com/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
+   * @deprecated use the `slots.transition` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   */
+  TransitionComponent: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
+  /**
+   * Props applied to the transition element.
+   * By default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.
+   * @deprecated use the `slotProps.transition` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
+   * @default {}
+   */
+  TransitionProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.object
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tooltip);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   getTooltipUtilityClass: () => (/* binding */ getTooltipUtilityClass)
+/* harmony export */ });
+/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
+/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
+
+
+function getTooltipUtilityClass(slot) {
+  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiTooltip', slot);
+}
+const tooltipClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTooltip', ['popper', 'popperInteractive', 'popperArrow', 'popperClose', 'tooltip', 'tooltipArrow', 'touch', 'tooltipPlacementLeft', 'tooltipPlacementRight', 'tooltipPlacementTop', 'tooltipPlacementBottom', 'arrow']);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tooltipClasses);
 
 /***/ }),
 
@@ -141416,6 +142085,10 @@ function combine (array, callback) {
   \*******************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -141530,38 +142203,78 @@ var lightTheme = createTheme({
 // Main App content component - this is the main app display
 function MainContent(_ref) {
   var appData = _ref.appData;
-  var _useState = useState((appData === null || appData === void 0 ? void 0 : appData.categories) || []),
+  var _useState = useState(''),
     _useState2 = _slicedToArray(_useState, 2),
-    categories = _useState2[0],
-    setCategories = _useState2[1];
-  var _useState3 = useState((appData === null || appData === void 0 ? void 0 : appData.products) || []),
+    searchTerm = _useState2[0],
+    setSearchTerm = _useState2[1];
+  var _useState3 = useState(null),
     _useState4 = _slicedToArray(_useState3, 2),
-    products = _useState4[0],
-    setProducts = _useState4[1];
-  var _useState5 = useState(products),
+    selectedCategory = _useState4[0],
+    setSelectedCategory = _useState4[1];
+  var _useState5 = useState(null),
     _useState6 = _slicedToArray(_useState5, 2),
-    filteredProducts = _useState6[0],
-    setFilteredProducts = _useState6[1];
-  var _useState7 = useState(null),
+    selectedProduct = _useState6[0],
+    setSelectedProduct = _useState6[1];
+  var _useState7 = useState(1),
     _useState8 = _slicedToArray(_useState7, 2),
-    selectedProduct = _useState8[0],
-    setSelectedProduct = _useState8[1];
+    quantity = _useState8[0],
+    setQuantity = _useState8[1];
   var _useState9 = useState((appData === null || appData === void 0 ? void 0 : appData.printerStatus) || 'ready'),
     _useState0 = _slicedToArray(_useState9, 2),
     printerStatus = _useState0[0],
     setPrinterStatus = _useState0[1];
-  var _useState1 = useState(''),
-    _useState10 = _slicedToArray(_useState1, 2),
-    searchTerm = _useState10[0],
-    setSearchTerm = _useState10[1];
-  var _useState11 = useState(1),
-    _useState12 = _slicedToArray(_useState11, 2),
-    quantity = _useState12[0],
-    setQuantity = _useState12[1];
-  var _useState13 = useState(null),
+  var _useState1 = useState((appData === null || appData === void 0 ? void 0 : appData.categories) || []),
+    _useState10 = _slicedToArray(_useState1, 1),
+    categories = _useState10[0];
+  var _useState11 = useState((appData === null || appData === void 0 ? void 0 : appData.products) || []),
+    _useState12 = _slicedToArray(_useState11, 1),
+    products = _useState12[0];
+  var _useState13 = useState(''),
     _useState14 = _slicedToArray(_useState13, 2),
-    selectedCategory = _useState14[0],
-    setSelectedCategory = _useState14[1];
+    appVersion = _useState14[0],
+    setAppVersion = _useState14[1];
+  var _useState15 = useState(products),
+    _useState16 = _slicedToArray(_useState15, 2),
+    filteredProducts = _useState16[0],
+    setFilteredProducts = _useState16[1];
+
+  // Fetch app version on component mount
+  useEffect(function () {
+    var getAppVersion = /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var _window$api;
+        var version;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              if (!((_window$api = window.api) !== null && _window$api !== void 0 && _window$api.getAppVersion)) {
+                _context.next = 11;
+                break;
+              }
+              _context.prev = 1;
+              _context.next = 4;
+              return window.api.getAppVersion();
+            case 4:
+              version = _context.sent;
+              setAppVersion(version);
+              _context.next = 11;
+              break;
+            case 8:
+              _context.prev = 8;
+              _context.t0 = _context["catch"](1);
+              console.error('Error fetching app version:', _context.t0);
+            case 11:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, null, [[1, 8]]);
+      }));
+      return function getAppVersion() {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+    getAppVersion();
+  }, []);
 
   // Filter products based on search term or selected category
   useEffect(function () {
@@ -141629,7 +142342,7 @@ function MainContent(_ref) {
   // Create header component
   var headerComponent = React.createElement(Header, {
     printerStatus: printerStatus,
-    version: (appData === null || appData === void 0 ? void 0 : appData.version) || '0.2.5'
+    version: appVersion
   });
 
   // Create the grid layout
@@ -141726,21 +142439,21 @@ function AppWrapper() {
 
   // You can add listeners for Electron IPC messages here
   useEffect(function () {
-    var _window$api, _window$api$onShowDia;
+    var _window$api2, _window$api2$onShowDi;
     // Listen for dialog open/close requests from the main process
-    var handleShowDialog = function handleShowDialog(event, _ref2) {
-      var dialogType = _ref2.dialogType,
-        props = _ref2.props;
+    var handleShowDialog = function handleShowDialog(event, _ref3) {
+      var dialogType = _ref3.dialogType,
+        props = _ref3.props;
       openDialog(dialogType, props);
     };
 
     // Add event listeners
-    (_window$api = window.api) === null || _window$api === void 0 || (_window$api$onShowDia = _window$api.onShowDialog) === null || _window$api$onShowDia === void 0 || _window$api$onShowDia.call(_window$api, handleShowDialog);
+    (_window$api2 = window.api) === null || _window$api2 === void 0 || (_window$api2$onShowDi = _window$api2.onShowDialog) === null || _window$api2$onShowDi === void 0 || _window$api2$onShowDi.call(_window$api2, handleShowDialog);
 
     // Clean up
     return function () {
-      var _window$api2, _window$api2$offShowD;
-      (_window$api2 = window.api) === null || _window$api2 === void 0 || (_window$api2$offShowD = _window$api2.offShowDialog) === null || _window$api2$offShowD === void 0 || _window$api2$offShowD.call(_window$api2, handleShowDialog);
+      var _window$api3, _window$api3$offShowD;
+      (_window$api3 = window.api) === null || _window$api3 === void 0 || (_window$api3$offShowD = _window$api3.offShowDialog) === null || _window$api3$offShowD === void 0 || _window$api3$offShowD.call(_window$api3, handleShowDialog);
     };
   }, [openDialog]);
   return React.createElement(MainContent, {
@@ -141778,28 +142491,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Toolbar/Toolbar.js");
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Box/Box.js");
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Typography/Typography.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/IconButton/IconButton.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Dialog/Dialog.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/DialogTitle/DialogTitle.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/DialogContent/DialogContent.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/List/List.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/ListItem/ListItem.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/ListItemText/ListItemText.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/DialogActions/DialogActions.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Button/Button.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Print.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Settings.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Close.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Cancel.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Refresh.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Tooltip/Tooltip.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/IconButton/IconButton.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Print.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Settings.js");
 /* harmony import */ var _dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dialogs/DialogManager */ "./src/components/dialogs/DialogManager.js");
 /* harmony import */ var _dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__);
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
 function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
@@ -141813,89 +142514,132 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 function Header(_ref) {
   var printerStatus = _ref.printerStatus,
     version = _ref.version;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    printerDialogOpen = _useState2[0],
-    setPrinterDialogOpen = _useState2[1];
   var _useDialogs = (0,_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.useDialogs)(),
     openDialog = _useDialogs.openDialog;
-
-  // Mock print jobs for the printer dialog
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)([{
-      id: 1,
-      product: 'Premium Dog Food',
-      status: 'pending',
-      time: '2023-04-10T14:30:00Z'
-    }, {
-      id: 2,
-      product: 'Organic Cat Food',
-      status: 'printing',
-      time: '2023-04-10T14:31:00Z'
-    }, {
-      id: 3,
-      product: 'Bird Seed Mix',
-      status: 'completed',
-      time: '2023-04-10T14:28:00Z'
-    }]),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(new Date()),
+    _useState2 = _slicedToArray(_useState, 2),
+    currentTime = _useState2[0],
+    setCurrentTime = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
     _useState4 = _slicedToArray(_useState3, 2),
-    printJobs = _useState4[0],
-    setPrintJobs = _useState4[1];
+    selectedPrinter = _useState4[0],
+    setSelectedPrinter = _useState4[1];
+
+  // Load selected printer from settings when component mounts
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var loadPrinterFromSettings = /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var settings;
+        return _regeneratorRuntime().wrap(function _callee$(_context) {
+          while (1) switch (_context.prev = _context.next) {
+            case 0:
+              _context.prev = 0;
+              _context.next = 3;
+              return window.api.loadSettings();
+            case 3:
+              settings = _context.sent;
+              if (settings && settings.printer && settings.printer.defaultPrinter) {
+                setSelectedPrinter(settings.printer.defaultPrinter);
+              } else {
+                setSelectedPrinter('None Selected');
+              }
+              _context.next = 11;
+              break;
+            case 7:
+              _context.prev = 7;
+              _context.t0 = _context["catch"](0);
+              console.error('Error loading printer settings:', _context.t0);
+              setSelectedPrinter('None Selected');
+            case 11:
+            case "end":
+              return _context.stop();
+          }
+        }, _callee, null, [[0, 7]]);
+      }));
+      return function loadPrinterFromSettings() {
+        return _ref2.apply(this, arguments);
+      };
+    }();
+    loadPrinterFromSettings();
+  }, []);
+
+  // Update clock every second
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    var timer = setInterval(function () {
+      setCurrentTime(new Date());
+    }, 1000);
+    return function () {
+      return clearInterval(timer);
+    };
+  }, []);
 
   // Get printer status color
   var getPrinterStatusColor = function getPrinterStatusColor() {
     switch (printerStatus) {
       case 'ready':
         return '#4CAF50';
-      // Green
+      // Green - Printer ready
       case 'printing':
         return '#4CAF50';
-      // Green (will be animated with CSS)
-      case 'error':
-        return '#F44336';
-      // Red
-      case 'systemError':
+      // Green - Will be flashing (animation handled by CSS)
+      case 'generalError':
         return '#FFC107';
-      // Yellow
+      // Yellow - General non-critical error
+      case 'criticalError':
+        return '#FFC107';
+      // Yellow - Critical error (will be flashing)
+      case 'offline':
+        return '#F44336';
+      // Red - Printer offline
       default:
-        return '#9E9E9E';
-      // Grey
+        return '#9ba03b';
+      // Primary app color when status unknown
     }
   };
 
-  // Handle opening the printer dialog
-  var handlePrinterDialogOpen = function handlePrinterDialogOpen() {
-    setPrinterDialogOpen(true);
+  // Get printer status text for tooltip
+  var getPrinterStatusText = function getPrinterStatusText() {
+    switch (printerStatus) {
+      case 'ready':
+        return 'Printer Ready';
+      case 'printing':
+        return 'Printing in Progress';
+      case 'generalError':
+        return 'General Printer Error';
+      case 'criticalError':
+        return 'Critical Printer Error';
+      case 'offline':
+        return 'Printer Offline';
+      default:
+        return 'Printer Status Unknown';
+    }
   };
 
-  // Handle closing the printer dialog
-  var handlePrinterDialogClose = function handlePrinterDialogClose() {
-    setPrinterDialogOpen(false);
+  // Format printer name to remove ZDesigner prefix
+  var formatPrinterName = function formatPrinterName(name) {
+    if (!name) return 'No printer selected';
+
+    // Remove ZDesigner prefix and clean up the name
+    return name.replace(/ZDesigner\s*/i, '').replace(/\s*-\s*\d+dpi\s*/i, '') // Also remove dpi information
+    .trim();
   };
 
-  // Handle opening the settings dialog using DialogManager
-  var handleSettingsDialogOpen = function handleSettingsDialogOpen() {
-    openDialog(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.DIALOG_TYPES.SETTINGS);
-  };
-
-  // Handle cancel print job
-  var handleCancelJob = function handleCancelJob(jobId) {
-    setPrintJobs(function (prevJobs) {
-      return prevJobs.map(function (job) {
-        return job.id === jobId ? _objectSpread(_objectSpread({}, job), {}, {
-          status: 'cancelled'
-        }) : job;
-      });
+  // Format time to show only hours and minutes
+  var formatTime = function formatTime(date) {
+    return date.toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit'
     });
   };
 
-  // Handle reset printer spooler
-  var handleResetSpooler = function handleResetSpooler() {
-    console.log('Resetting printer spooler...');
-    // In a real app, this would communicate with the main process to reset the print spooler
-    setPrintJobs([]);
-    setTimeout(function () {
-      setPrinterDialogOpen(false);
-    }, 500);
+  // Handle opening the printer queue dialog
+  var handlePrinterDialogOpen = function handlePrinterDialogOpen() {
+    openDialog(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.DIALOG_TYPES.PRINT_QUEUE);
+  };
+
+  // Handle opening the settings dialog
+  var handleSettingsDialogOpen = function handleSettingsDialogOpen() {
+    openDialog(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.DIALOG_TYPES.SETTINGS);
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
     position: "static",
@@ -141915,23 +142659,33 @@ function Header(_ref) {
     }
   }, "Pet Fresh Label Printing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
-      flex: 1,
+      flex: 2,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    variant: "h6",
+    variant: "body1",
     sx: {
-      mr: 1,
-      color: 'white'
+      color: 'white',
+      mx: 1
     }
-  }, "Printer Kitchen"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    color: "inherit",
+  }, "Printer: ", formatPrinterName(selectedPrinter), " | ", formatTime(currentTime)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    title: getPrinterStatusText(),
+    arrow: true,
+    placement: "bottom"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
     onClick: handlePrinterDialogOpen,
     sx: {
+      bgcolor: 'white',
       color: getPrinterStatusColor(),
-      animation: printerStatus === 'printing' ? 'pulse 1.5s infinite' : 'none',
+      width: 32,
+      height: 32,
+      '&:hover': {
+        bgcolor: '#f5f5f5'
+      },
+      ml: 1,
+      animation: printerStatus === 'printing' || printerStatus === 'criticalError' ? 'pulse 1.5s infinite' : 'none',
       '@keyframes pulse': {
         '0%': {
           opacity: 1
@@ -141944,7 +142698,9 @@ function Header(_ref) {
         }
       }
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_7__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    fontSize: "small"
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       flex: 1,
       display: 'flex',
@@ -141957,52 +142713,13 @@ function Header(_ref) {
       mr: 1,
       color: 'white'
     }
-  }, "v", version), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "v", version), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
     color: "inherit",
     onClick: handleSettingsDialogOpen,
     sx: {
       color: 'white'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_8__["default"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    fullScreen: true,
-    open: printerDialogOpen,
-    onClose: handlePrinterDialogClose
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    variant: "h6"
-  }, "Printer Queue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    edge: "end",
-    color: "inherit",
-    onClick: handlePrinterDialogClose,
-    "aria-label": "close"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_11__["default"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_12__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_13__["default"], null, printJobs.length > 0 ? printJobs.map(function (job) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_14__["default"], {
-      key: job.id
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_15__["default"], {
-      primary: job.product,
-      secondary: "Status: ".concat(job.status, " - Time: ").concat(new Date(job.time).toLocaleTimeString())
-    }), job.status !== 'completed' && job.status !== 'cancelled' && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
-      edge: "end",
-      "aria-label": "cancel",
-      onClick: function onClick() {
-        return handleCancelJob(job.id);
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_16__["default"], null)));
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_14__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    primary: "No print jobs in queue"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_17__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_18__["default"], {
-    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_19__["default"], null),
-    onClick: handleResetSpooler,
-    color: "secondary"
-  }, "Reset Print Spooler"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_18__["default"], {
-    onClick: handlePrinterDialogClose,
-    color: "primary"
-  }, "Close"))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_9__["default"], null)))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -142403,6 +143120,7 @@ var createContext = React.createContext,
   useContext = React.useContext,
   useState = React.useState;
 var SettingsDialog = __webpack_require__(/*! ./SettingsDialog */ "./src/components/dialogs/SettingsDialog.js");
+var PrintQueueDialog = __webpack_require__(/*! ./PrintQueueDialog */ "./src/components/dialogs/PrintQueueDialog.js");
 
 // Create a context for dialog management
 var DialogContext = createContext(null);
@@ -142414,7 +143132,8 @@ var DIALOG_TYPES = {
   SETTINGS: 'settings',
   PRINTER_SELECT: 'printer-select',
   LABEL_PREVIEW: 'label-preview',
-  CONFIRMATION: 'confirmation'
+  CONFIRMATION: 'confirmation',
+  PRINT_QUEUE: 'print-queue'
 };
 
 /**
@@ -142474,7 +143193,14 @@ function DialogProvider(_ref) {
     onClose: function onClose() {
       return closeDialog(DIALOG_TYPES.SETTINGS);
     }
-  }, dialogProps[DIALOG_TYPES.SETTINGS] || {}))
+  }, dialogProps[DIALOG_TYPES.SETTINGS] || {})),
+  // Print Queue Dialog
+  React.createElement(PrintQueueDialog, _objectSpread({
+    open: isDialogOpen(DIALOG_TYPES.PRINT_QUEUE),
+    onClose: function onClose() {
+      return closeDialog(DIALOG_TYPES.PRINT_QUEUE);
+    }
+  }, dialogProps[DIALOG_TYPES.PRINT_QUEUE] || {}))
 
   // You can add more dialogs here as needed
   );
@@ -142495,6 +143221,428 @@ module.exports = {
   useDialogs: useDialogs,
   DIALOG_TYPES: DIALOG_TYPES
 };
+
+/***/ }),
+
+/***/ "./src/components/dialogs/PrintQueueDialog.js":
+/*!****************************************************!*\
+  !*** ./src/components/dialogs/PrintQueueDialog.js ***!
+  \****************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var useState = React.useState,
+  useEffect = React.useEffect;
+var _require = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js"),
+  Dialog = _require.Dialog,
+  DialogTitle = _require.DialogTitle,
+  DialogContent = _require.DialogContent,
+  DialogActions = _require.DialogActions,
+  Button = _require.Button,
+  IconButton = _require.IconButton,
+  Typography = _require.Typography,
+  Box = _require.Box,
+  Table = _require.Table,
+  TableBody = _require.TableBody,
+  TableCell = _require.TableCell,
+  TableContainer = _require.TableContainer,
+  TableHead = _require.TableHead,
+  TableRow = _require.TableRow,
+  Paper = _require.Paper,
+  CircularProgress = _require.CircularProgress,
+  Chip = _require.Chip,
+  Tooltip = _require.Tooltip;
+var CloseIcon = (__webpack_require__(/*! @mui/icons-material/Close */ "./node_modules/@mui/icons-material/Close.js")["default"]);
+var PrintIcon = (__webpack_require__(/*! @mui/icons-material/Print */ "./node_modules/@mui/icons-material/Print.js")["default"]);
+var RefreshIcon = (__webpack_require__(/*! @mui/icons-material/Refresh */ "./node_modules/@mui/icons-material/Refresh.js")["default"]);
+var ErrorIcon = (__webpack_require__(/*! @mui/icons-material/Error */ "./node_modules/@mui/icons-material/Error.js")["default"]);
+var CheckCircleIcon = (__webpack_require__(/*! @mui/icons-material/CheckCircle */ "./node_modules/@mui/icons-material/CheckCircle.js")["default"]);
+var HourglassEmptyIcon = (__webpack_require__(/*! @mui/icons-material/HourglassEmpty */ "./node_modules/@mui/icons-material/HourglassEmpty.js")["default"]);
+var CancelIcon = (__webpack_require__(/*! @mui/icons-material/Cancel */ "./node_modules/@mui/icons-material/Cancel.js")["default"]);
+function PrintQueueDialog(_ref) {
+  var open = _ref.open,
+    onClose = _ref.onClose;
+  var _useState = useState([]),
+    _useState2 = _slicedToArray(_useState, 2),
+    printJobs = _useState2[0],
+    setPrintJobs = _useState2[1];
+  var _useState3 = useState(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    loading = _useState4[0],
+    setLoading = _useState4[1];
+  var _useState5 = useState(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    error = _useState6[0],
+    setError = _useState6[1];
+
+  // Load print jobs when dialog opens
+  useEffect(function () {
+    if (open) {
+      fetchPrintJobs();
+    }
+  }, [open]);
+
+  // Fetch print jobs from main process
+  var fetchPrintJobs = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var jobs;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            setLoading(true);
+            setError(null);
+            _context.next = 5;
+            return window.api.getPrintJobs();
+          case 5:
+            jobs = _context.sent;
+            setPrintJobs(jobs || []);
+            _context.next = 13;
+            break;
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](0);
+            console.error("Error fetching print jobs:", _context.t0);
+            setError("Failed to load print jobs. Please try again.");
+          case 13:
+            _context.prev = 13;
+            setLoading(false);
+            return _context.finish(13);
+          case 16:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[0, 9, 13, 16]]);
+    }));
+    return function fetchPrintJobs() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+
+  // Format date for display
+  var formatDate = function formatDate(dateString) {
+    if (!dateString) return "Unknown";
+    var date = new Date(dateString);
+    return date.toLocaleString();
+  };
+
+  // Get status chip based on job status
+  var getStatusChip = function getStatusChip(status) {
+    var color = "default";
+    var icon = null;
+    var label = status || "Unknown";
+    switch (status === null || status === void 0 ? void 0 : status.toLowerCase()) {
+      case "pending":
+        color = "warning";
+        icon = /*#__PURE__*/React.createElement(HourglassEmptyIcon, {
+          fontSize: "small"
+        });
+        label = "Pending";
+        break;
+      case "printing":
+        color = "primary";
+        icon = /*#__PURE__*/React.createElement(PrintIcon, {
+          fontSize: "small"
+        });
+        label = "Printing";
+        break;
+      case "completed":
+        color = "success";
+        icon = /*#__PURE__*/React.createElement(CheckCircleIcon, {
+          fontSize: "small"
+        });
+        label = "Completed";
+        break;
+      case "error":
+        color = "error";
+        icon = /*#__PURE__*/React.createElement(ErrorIcon, {
+          fontSize: "small"
+        });
+        label = "Error";
+        break;
+      case "cancelled":
+        color = "default";
+        icon = /*#__PURE__*/React.createElement(CancelIcon, {
+          fontSize: "small"
+        });
+        label = "Cancelled";
+        break;
+      default:
+        color = "default";
+        label = status || "Unknown";
+    }
+    return /*#__PURE__*/React.createElement(Chip, {
+      icon: icon,
+      label: label,
+      size: "small",
+      color: color,
+      variant: "outlined"
+    });
+  };
+
+  // Handle close
+  var handleClose = function handleClose() {
+    onClose();
+  };
+
+  // Handle refresh
+  var handleRefresh = function handleRefresh() {
+    fetchPrintJobs();
+  };
+
+  // Handle reset print spooler
+  var handleResetSpooler = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            setLoading(true);
+            _context2.next = 4;
+            return window.api.resetPrintSpooler();
+          case 4:
+            // Refresh the print jobs list after reset
+            fetchPrintJobs();
+            _context2.next = 12;
+            break;
+          case 7:
+            _context2.prev = 7;
+            _context2.t0 = _context2["catch"](0);
+            console.error("Error resetting print spooler:", _context2.t0);
+            setError("Failed to reset print spooler. Please try again.");
+            setLoading(false);
+          case 12:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[0, 7]]);
+    }));
+    return function handleResetSpooler() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+
+  // Create dialog title component
+  var dialogTitle = React.createElement(DialogTitle, {
+    sx: {
+      borderBottom: '1px solid',
+      borderColor: 'divider',
+      bgcolor: '#9ba03b',
+      color: 'white',
+      px: 3,
+      py: 2
+    }
+  }, React.createElement(Box, {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between'
+  }, React.createElement(Box, {
+    display: 'flex',
+    alignItems: 'center'
+  }, React.createElement(PrintIcon, {
+    sx: {
+      mr: 1.5
+    }
+  }), React.createElement(Typography, {
+    variant: 'h6',
+    fontWeight: 'bold'
+  }, 'Print Queue')), React.createElement(IconButton, {
+    onClick: handleClose,
+    size: 'medium',
+    sx: {
+      color: 'white'
+    }
+  }, React.createElement(CloseIcon))));
+
+  // Main dialog content
+  return React.createElement(Dialog, {
+    open: open,
+    onClose: handleClose,
+    maxWidth: 'md',
+    fullWidth: true,
+    'aria-labelledby': 'print-queue-dialog-title',
+    'aria-describedby': 'print-queue-dialog-description'
+  }, dialogTitle, React.createElement(DialogContent, {
+    dividers: true,
+    sx: {
+      p: 3,
+      height: '500px',
+      // Fixed height for scrollability
+      display: 'flex',
+      flexDirection: 'column'
+    }
+  },
+  // Error message if any
+  error && React.createElement(Box, {
+    sx: {
+      mb: 2
+    }
+  }, React.createElement(Paper, {
+    variant: 'outlined',
+    sx: {
+      p: 2,
+      bgcolor: '#FFEBEE',
+      borderColor: '#FFCDD2',
+      color: '#B71C1C'
+    }
+  }, React.createElement(Typography, {
+    variant: 'body2'
+  }, error))),
+  // Print Jobs Table
+  React.createElement(TableContainer, {
+    component: Paper,
+    variant: 'outlined',
+    sx: {
+      flexGrow: 1,
+      overflowY: 'auto',
+      mb: 2
+    }
+  }, React.createElement(Table, {
+    stickyHeader: true,
+    size: 'small'
+  },
+  // Table Header
+  React.createElement(TableHead, {}, React.createElement(TableRow, {}, React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold'
+    }
+  }, 'Date/Time'), React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold'
+    }
+  }, 'Product Name'), React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold'
+    }
+  }, 'SKU'), React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold',
+      width: '80px'
+    }
+  }, 'Qty'), React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold'
+    }
+  }, 'Status'), React.createElement(TableCell, {
+    sx: {
+      fontWeight: 'bold'
+    }
+  }, 'Job ID'))),
+  // Table Body
+  React.createElement(TableBody, {}, loading ?
+  // Loading state
+  React.createElement(TableRow, {}, React.createElement(TableCell, {
+    colSpan: 6,
+    align: 'center',
+    sx: {
+      py: 4
+    }
+  }, React.createElement(Box, {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
+  }, React.createElement(CircularProgress, {
+    size: 40,
+    sx: {
+      mb: 2
+    }
+  }), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, 'Loading print jobs...')))) : printJobs.length === 0 ?
+  // Empty state
+  React.createElement(TableRow, {}, React.createElement(TableCell, {
+    colSpan: 6,
+    align: 'center',
+    sx: {
+      py: 4
+    }
+  }, React.createElement(Box, {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'column'
+  }, React.createElement(Typography, {
+    variant: 'body1'
+  }, 'No print jobs found'), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary',
+    mt: 1
+  }, 'Print jobs will appear here when you send labels to print')))) :
+  // Print jobs list
+  printJobs.map(function (job) {
+    return React.createElement(TableRow, {
+      key: job.id,
+      sx: {
+        '&:last-child td, &:last-child th': {
+          border: 0
+        },
+        bgcolor: job.status === 'error' ? '#FFEBEE' : 'inherit'
+      }
+    }, React.createElement(TableCell, {}, formatDate(job.timestamp)), React.createElement(TableCell, {}, React.createElement(Tooltip, {
+      title: job.productDetails || ''
+    }, React.createElement('span', {}, job.productName || 'Unknown'))), React.createElement(TableCell, {}, job.sku || 'N/A'), React.createElement(TableCell, {
+      align: 'center'
+    }, job.quantity || 1), React.createElement(TableCell, {}, getStatusChip(job.status)), React.createElement(TableCell, {}, React.createElement(Tooltip, {
+      title: job.logs ? job.logs.join('\n') : 'No logs available',
+      placement: 'left'
+    }, React.createElement('span', {}, job.id))));
+  })))),
+  // System Status
+  React.createElement(Paper, {
+    variant: 'outlined',
+    sx: {
+      p: 2
+    }
+  }, React.createElement(Box, {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center'
+  }, React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Last updated: ", formatDate(new Date().toISOString())), React.createElement(Box, {
+    display: 'flex',
+    gap: 1
+  }, React.createElement(Tooltip, {
+    title: 'View in Event Viewer'
+  }, React.createElement(Button, {
+    variant: 'outlined',
+    size: 'small',
+    onClick: function onClick() {
+      return window.api.runCommand('eventvwr.exe');
+    }
+  }, "View Event Logs")))))), React.createElement(DialogActions, {
+    sx: {
+      px: 3,
+      py: 2
+    }
+  }, React.createElement(Button, {
+    startIcon: React.createElement(RefreshIcon),
+    onClick: handleRefresh,
+    disabled: loading
+  }, "Refresh"), React.createElement(Button, {
+    color: 'error',
+    onClick: handleResetSpooler,
+    disabled: loading
+  }, "Reset Print Spooler"), React.createElement(Button, {
+    variant: 'contained',
+    color: 'primary',
+    onClick: handleClose
+  }, "Close")));
+}
+module.exports = PrintQueueDialog;
 
 /***/ }),
 
@@ -142655,7 +143803,8 @@ function SettingsDialog(_ref) {
   var _useState25 = useState({
       printer: {
         defaultPrinter: '',
-        showConfirmation: false
+        showConfirmation: false,
+        disableAutomaticPrinting: false
       },
       application: {
         devImageGeneration: false,
@@ -142671,6 +143820,14 @@ function SettingsDialog(_ref) {
     _useState28 = _slicedToArray(_useState27, 2),
     isZebraPrinterSelected = _useState28[0],
     setIsZebraPrinterSelected = _useState28[1];
+  var _useState29 = useState(0),
+    _useState30 = _slicedToArray(_useState29, 2),
+    printerAdjustmentLeft = _useState30[0],
+    setPrinterAdjustmentLeft = _useState30[1];
+  var _useState31 = useState(0),
+    _useState32 = _slicedToArray(_useState31, 2),
+    printerAdjustmentTop = _useState32[0],
+    setPrinterAdjustmentTop = _useState32[1];
 
   // Load settings when dialog opens
   useEffect(function () {
@@ -142702,7 +143859,7 @@ function SettingsDialog(_ref) {
   // Load settings and create initial printer option for previously selected printer
   var loadSettingsAndInitialPrinter = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var loadedSettings, initialPrinter;
+      var loadedSettings, labelConfig, initialPrinter;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
@@ -142712,6 +143869,10 @@ function SettingsDialog(_ref) {
             return window.api.loadSettings();
           case 4:
             loadedSettings = _context.sent;
+            _context.next = 7;
+            return window.api.loadLabelConfig();
+          case 7:
+            labelConfig = _context.sent;
             if (loadedSettings && !loadedSettings.error) {
               setSettings(loadedSettings);
 
@@ -142730,21 +143891,27 @@ function SettingsDialog(_ref) {
               }
             }
 
+            // Load printer adjustment values from label config
+            if (labelConfig && !labelConfig.error) {
+              setPrinterAdjustmentLeft(labelConfig.printerAdjustmentLeft || 0);
+              setPrinterAdjustmentTop(labelConfig.printerAdjustmentTop || 0);
+            }
+
             // Load the full printer list in the background
             loadSystemPrinters();
-            _context.next = 13;
+            _context.next = 17;
             break;
-          case 9:
-            _context.prev = 9;
+          case 13:
+            _context.prev = 13;
             _context.t0 = _context["catch"](0);
             console.error('Error loading settings:', _context.t0);
             // Still try to load printers even if settings fail
             loadSystemPrinters();
-          case 13:
+          case 17:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 9]]);
+      }, _callee, null, [[0, 13]]);
     }));
     return function loadSettingsAndInitialPrinter() {
       return _ref2.apply(this, arguments);
@@ -142857,7 +144024,7 @@ function SettingsDialog(_ref) {
             setShowPrintMessage(true);
 
             // Replace the printer name in the command
-            finalCommand = command.replace(/ZDesigner ZT230-200dpi ZPL/g, selectedPrinter); // Use the appropriate API method to run the command
+            finalCommand = command.replace(/ZDesigner ZT230-200dpi/g, selectedPrinter); // Use the appropriate API method to run the command
             _context3.next = 6;
             return window.api.runCommand(finalCommand);
           case 6:
@@ -142910,6 +144077,12 @@ function SettingsDialog(_ref) {
       };
     }
   }, [open]);
+
+  // Force re-render when selected printer changes
+  useEffect(function () {
+    console.log("Selected printer updated:", selectedPrinter);
+    // This useEffect is just to ensure the UI updates when selectedPrinter changes
+  }, [selectedPrinter]);
   var getSystemInfo = /*#__PURE__*/function () {
     var _ref5 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
       var systemInfo;
@@ -142952,7 +144125,7 @@ function SettingsDialog(_ref) {
   };
   var handleSave = /*#__PURE__*/function () {
     var _ref6 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-      var updatedSettings;
+      var updatedSettings, currentConfig, updatedConfig;
       return _regeneratorRuntime().wrap(function _callee5$(_context5) {
         while (1) switch (_context5.prev = _context5.next) {
           case 0:
@@ -142966,18 +144139,33 @@ function SettingsDialog(_ref) {
             _context5.next = 4;
             return window.api.saveSettings(updatedSettings);
           case 4:
+            _context5.next = 6;
+            return window.api.loadLabelConfig();
+          case 6:
+            currentConfig = _context5.sent;
+            if (!(currentConfig && !currentConfig.error)) {
+              _context5.next = 11;
+              break;
+            }
+            updatedConfig = _objectSpread(_objectSpread({}, currentConfig), {}, {
+              printerAdjustmentLeft: printerAdjustmentLeft,
+              printerAdjustmentTop: printerAdjustmentTop
+            });
+            _context5.next = 11;
+            return window.api.saveLabelConfig(updatedConfig);
+          case 11:
             onClose();
-            _context5.next = 10;
+            _context5.next = 17;
             break;
-          case 7:
-            _context5.prev = 7;
+          case 14:
+            _context5.prev = 14;
             _context5.t0 = _context5["catch"](1);
             console.error('Error saving settings:', _context5.t0);
-          case 10:
+          case 17:
           case "end":
             return _context5.stop();
         }
-      }, _callee5, null, [[1, 7]]);
+      }, _callee5, null, [[1, 14]]);
     }));
     return function handleSave() {
       return _ref6.apply(this, arguments);
@@ -143018,6 +144206,21 @@ function SettingsDialog(_ref) {
       })
     }));
   };
+  var handleDisableAutoPrintingChange = function handleDisableAutoPrintingChange(event) {
+    setSettings(_objectSpread(_objectSpread({}, settings), {}, {
+      printer: _objectSpread(_objectSpread({}, settings.printer), {}, {
+        disableAutomaticPrinting: event.target.checked
+      })
+    }));
+  };
+  var handlePrinterAdjustmentLeftChange = function handlePrinterAdjustmentLeftChange(event) {
+    var value = parseFloat(event.target.value) || 0;
+    setPrinterAdjustmentLeft(value);
+  };
+  var handlePrinterAdjustmentTopChange = function handlePrinterAdjustmentTopChange(event) {
+    var value = parseFloat(event.target.value) || 0;
+    setPrinterAdjustmentTop(value);
+  };
   var handleRefreshPrinters = /*#__PURE__*/function () {
     var _ref7 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
       return _regeneratorRuntime().wrap(function _callee6$(_context6) {
@@ -143050,7 +144253,10 @@ function SettingsDialog(_ref) {
             // Create a simple test label HTML
             testLabel = "\n        <html>\n        <head>\n          <style>\n            body {\n              margin: 0;\n              padding: 0;\n              font-family: Arial, sans-serif;\n              width: 60mm;  /* Label width */\n              height: 162mm; /* Label height */\n            }\n            .label-content {\n              display: flex;\n              flex-direction: column;\n              justify-content: center;\n              align-items: center;\n              height: 100%;\n              padding: 10mm;\n              box-sizing: border-box;\n            }\n            .title {\n              font-size: 5mm;\n              font-weight: bold;\n              margin-bottom: 5mm;\n              text-align: center;\n            }\n            .info {\n              font-size: 3mm;\n              margin-bottom: 3mm;\n              text-align: center;\n            }\n            .barcode {\n              width: 40mm;\n              height: 15mm;\n              background: repeating-linear-gradient(90deg, #000, #000 0.5mm, #fff 0.5mm, #fff 1mm);\n              margin: 5mm 0;\n            }\n            .printer-name {\n              font-size: 3.5mm;\n              font-weight: bold;\n            }\n            .timestamp {\n              font-size: 2.5mm;\n              color: #666;\n              margin-top: 3mm;\n            }\n          </style>\n        </head>\n        <body>\n          <div class=\"label-content\">\n            <div class=\"title\">Printer Test Label</div>\n            <div class=\"info\">This is a test print to verify printer functionality</div>\n            <div class=\"barcode\"></div>\n            <div class=\"printer-name\">".concat(selectedPrinter, "</div>\n            <div class=\"timestamp\">Printed: ").concat(new Date().toLocaleString(), "</div>\n          </div>\n        </body>\n        </html>\n      "); // Print the test label
             _context7.next = 5;
-            return window.api.printLabel(testLabel, 1);
+            return window.api.printLabel(testLabel, 1, null, {
+              productName: 'Test Print',
+              productId: 'TEST001'
+            });
           case 5:
             result = _context7.sent;
             // Show success/error message
@@ -143113,16 +144319,43 @@ function SettingsDialog(_ref) {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between'
+  }, React.createElement(Box, {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 1
   }, React.createElement(Typography, {
     variant: 'h6',
     fontWeight: 'bold'
-  }, 'Settings'), React.createElement(IconButton, {
+  }, 'Settings'), React.createElement(Typography, {
+    variant: 'body2',
+    sx: {
+      ml: 2,
+      opacity: 0.9
+    }
+  }, "Printer: ".concat(selectedPrinter || 'None Selected', " | Time: ").concat(currentTime.toLocaleString()))), React.createElement(Box, {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 1
+  }, React.createElement(IconButton, {
+    size: 'small',
+    sx: {
+      bgcolor: 'white',
+      color: '#9ba03b',
+      '&:hover': {
+        bgcolor: '#f5f5f5'
+      },
+      width: 32,
+      height: 32
+    }
+  }, React.createElement(PrintIcon, {
+    fontSize: 'small'
+  })), React.createElement(IconButton, {
     onClick: handleClose,
     size: 'medium',
     sx: {
       color: 'white'
     }
-  }, React.createElement(CloseIcon))));
+  }, React.createElement(CloseIcon)))));
 
   // Create tabs
   var tabsComponent = React.createElement(Box, {
@@ -143243,249 +144476,63 @@ function SettingsDialog(_ref) {
       right: 30,
       marginTop: '-10px'
     }
-  }))),
-  // Zebra Printer Tools Section (only visible when a Zebra printer is selected)
-  isZebraPrinterSelected && React.createElement(React.Fragment, {}, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true,
-    mt: 4
-  }, 'Zebra Printer Tools'), React.createElement(Divider, {
-    sx: {
-      mb: 3
-    }
-  }),
-  // Card layout with full width and buttons aligned to the right
-  React.createElement(Box, {
-    sx: {
-      mb: 3
-    }
-  },
-  // Install another Zebra Printer
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
+  }))), React.createElement(Typography, {
     variant: 'h6',
     gutterBottom: true
-  }, React.createElement(AddIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Install Another Zebra Printer"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "Run the Zebra Printer Installation Wizard to set up an additional printer.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    startIcon: React.createElement(AddIcon),
-    onClick: function onClick() {
-      return runPrinterCommand("$ver='ZD'+((Get-Item \"C:\\WINDOWS\\system32\\spool\\DRIVERS\\x64\\3\\ZDesignerdrv.dll\").VersionInfo.FileVersion -replace '\\.','-'); $folder=(Get-ChildItem -Path 'C:\\' -Directory | Where-Object { $_.Name -eq $ver } | Select-Object -ExpandProperty FullName); if ($folder -and (Test-Path \"$folder\\PrnInst.exe\")) { \"$folder\\PrnInst.exe\" } else { \"PrnInst.exe not found in $folder\" }");
-    }
-  }, "Run Installer"))),
-  // Label Printing Setup
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, React.createElement(PrintIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Printer Label Settings"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "Configure label size, media type, printing preferences and more.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    onClick: function onClick() {
-      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /e /n \"".concat(selectedPrinter, "\""));
-    }
-  }, "Open Settings"))),
-  // Printer Advanced Settings
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, React.createElement(TuneIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Printer Advanced Settings"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "Access advanced printer configuration options and parameters.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    onClick: function onClick() {
-      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /p /n \"".concat(selectedPrinter, "\""));
-    }
-  }, "Advanced Settings"))),
-  // Windows Printer Settings
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, React.createElement(SettingsIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Windows Printer Properties"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "Manage Windows printer properties, sharing options and security settings.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    onClick: function onClick() {
-      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /p /n \"".concat(selectedPrinter, "\""));
-    }
-  }, "Open Properties"))),
-  // Print Queue
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, React.createElement(QueueIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Printer Queue"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "View and manage current print jobs in the queue.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    onClick: function onClick() {
-      return runPrinterCommand("rundll32.exe printui.dll,PrintUIEntry /o /n \"".concat(selectedPrinter, "\""));
-    }
-  }, "Open Queue"))),
-  // Direct Connect Utility (for advanced troubleshooting)
-  React.createElement(Card, {
-    variant: 'outlined',
-    sx: {
-      mb: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      flexDirection: 'row',
-      alignItems: 'center',
-      justifyContent: 'space-between',
-      p: 2
-    }
-  }, React.createElement(Box, {
-    sx: {
-      flexGrow: 1
-    }
-  }, React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true
-  }, React.createElement(ConnectIcon, {
-    sx: {
-      mr: 1,
-      verticalAlign: 'text-bottom'
-    }
-  }), "Zebra Direct Connect"), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary'
-  }, "Launch Zebra Setup Utilities for direct connection and advanced configuration.")), React.createElement(Button, {
-    variant: 'contained',
-    size: 'small',
-    onClick: function onClick() {
-      return runPrinterCommand("C:\\Program Files\\Zebra Technologies\\Zebra Setup Utilities\\ZebraSetupUtilities.exe");
-    }
-  }, "Launch Tool"))))), React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true,
-    mt: isZebraPrinterSelected ? 4 : 0
   }, 'Printer Options'), React.createElement(FormGroup, {}, React.createElement(FormControlLabel, {
     control: React.createElement(Checkbox, {
       checked: settings.printer.showConfirmation,
       onChange: handlePrintConfirmationChange
     }),
     label: 'Show print confirmation dialog'
+  })), React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true,
+    sx: {
+      mt: 3
+    }
+  }, 'Printer Adjustments'), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary',
+    sx: {
+      mb: 2
+    }
+  }, 'Fine-tune print positioning to account for printer-specific variations. These adjustments only apply to printed output, not the preview.'), React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      gap: 2,
+      mb: 2
+    }
+  }, React.createElement(TextField, {
+    label: 'Left Adjustment (mm)',
+    type: 'number',
+    size: 'small',
+    value: printerAdjustmentLeft,
+    onChange: handlePrinterAdjustmentLeftChange,
+    inputProps: {
+      step: 0.5,
+      min: -10,
+      max: 10
+    },
+    helperText: 'Positive values move content right',
+    sx: {
+      flex: 1
+    }
+  }), React.createElement(TextField, {
+    label: 'Top Adjustment (mm)',
+    type: 'number',
+    size: 'small',
+    value: printerAdjustmentTop,
+    onChange: handlePrinterAdjustmentTopChange,
+    inputProps: {
+      step: 0.5,
+      min: -10,
+      max: 10
+    },
+    helperText: 'Positive values move content down',
+    sx: {
+      flex: 1
+    }
   })));
 
   // Create System Info Tab
@@ -143604,9 +144651,41 @@ function SettingsDialog(_ref) {
   var applicationSettingsTab = React.createElement(TabPanel, {
     value: tabValue,
     index: 2
-  }, React.createElement(Typography, {
+  },
+  // Printing Options section
+  React.createElement(Typography, {
     variant: 'h6',
     gutterBottom: true
+  }, 'Printing Options'), React.createElement(Paper, {
+    variant: 'outlined',
+    sx: {
+      p: 2,
+      mb: 3
+    }
+  },
+  // Disable Automatic Printing option
+  React.createElement(FormControlLabel, {
+    control: React.createElement(Switch, {
+      checked: settings.printer.disableAutomaticPrinting,
+      onChange: handleDisableAutoPrintingChange
+    }),
+    label: React.createElement(Typography, {
+      variant: 'subtitle1',
+      fontWeight: 'medium'
+    }, 'Disable Automatic Printing')
+  }), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary',
+    sx: {
+      mt: 1,
+      mb: 2
+    }
+  }, 'When enabled, a system print dialog will appear instead of sending labels directly to the selected printer. Canceling this dialog will be logged.')),
+  // Development Image Generation
+  React.createElement(Typography, {
+    variant: 'h6',
+    gutterBottom: true,
+    mt: 3
   }, 'Development Image Generation'), React.createElement(Paper, {
     variant: 'outlined',
     sx: {
@@ -144374,27 +145453,33 @@ function LabelPreview(_ref2) {
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
     if (!product || !previewRef.current || !containerRef.current) return;
     var calculateOptimalScale = function calculateOptimalScale() {
-      try {
-        var containerRect = containerRef.current.getBoundingClientRect();
-        var labelRect = previewRef.current.getBoundingClientRect();
-
-        // Calculate the scale needed to fit the label properly with some padding
-        var scaleWidth = (containerRect.width - 40) / labelRect.width;
-        var scaleHeight = (containerRect.height - 40) / labelRect.height;
-
-        // Use the smaller scale to ensure the entire label fits
-        var optimalScale = Math.min(scaleWidth, scaleHeight, 1); // Cap at 1 to avoid too large labels
-
-        // Update the initial scale factor
-        setInitialScaleFactor(optimalScale);
-
-        // Reset view with the new scale
-        setScale(optimalScale);
-        setTranslateX(0);
-        setTranslateY(0);
-      } catch (error) {
-        console.error('Error calculating optimal scale:', error);
+      if (!containerRef.current || !previewRef.current) return 1;
+      var container = containerRef.current.getBoundingClientRect();
+      var labelElement = previewRef.current.querySelector('.label-container');
+      if (!labelElement) {
+        console.log('Label element not found, using fallback scale');
+        return 1; // Fallback if label element isn't found
       }
+      var label = labelElement.getBoundingClientRect();
+
+      // Calculate ratios
+      var containerRatio = container.width / container.height;
+      var labelRatio = label.width / label.height;
+
+      // Calculate scale based on limiting dimension
+      var newScale;
+      if (labelRatio > containerRatio) {
+        // Width limited
+        newScale = container.width * 0.8 / label.width;
+      } else {
+        // Height limited
+        newScale = container.height * 0.8 / label.height;
+      }
+
+      // Keep scale within reasonable bounds
+      newScale = Math.min(Math.max(newScale, 0.5), 3);
+      console.log('Calculated optimal scale:', newScale);
+      return newScale;
     };
 
     // Calculate optimal scale after layout
@@ -144414,7 +145499,7 @@ function LabelPreview(_ref2) {
   // Add this function to convert the label to HTML and trigger printing
   var handlePrintLabel = /*#__PURE__*/function () {
     var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-      var clientStartTime, labelContainer, clonedLabel, overlayElement, possibleOverlays, svgElement, svgData, img, config, width, height, labelHTML, result, totalClientTime, _result$timing, _result$timing2, _result$timing3, _result$timing4, _result$timing5, _ref5, shell;
+      var _settings, clientStartTime, settings, productInfo, printerName, result, _settings2, templateResult, _settings3, totalClientTime, _result$timing, _result$timing2, _result$timing3, _result$timing4, _result$timing5, _ref5, shell;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
@@ -144429,64 +145514,67 @@ function LabelPreview(_ref2) {
             setIsPrinting(true);
 
             // Start timing on the renderer side
-            clientStartTime = performance.now(); // Get the label container element
-            labelContainer = document.querySelector('.label-container');
-            if (labelContainer) {
-              _context2.next = 10;
-              break;
-            }
-            console.error('Label container not found');
-            setIsPrinting(false);
-            return _context2.abrupt("return");
-          case 10:
-            // Clone the DOM node to avoid modifying the displayed label
-            clonedLabel = labelContainer.cloneNode(true); // Remove the overlay image element completely
-            overlayElement = clonedLabel.querySelector('div[style*="position: absolute"] img[src*="overlay"]');
-            if (overlayElement && overlayElement.parentElement) {
-              overlayElement.parentElement.remove();
-            } else {
-              // Alternative approach to hide all overlay elements
-              possibleOverlays = clonedLabel.querySelectorAll('div[style*="position: absolute"][style*="top: 0"]');
-              possibleOverlays.forEach(function (el) {
-                if (el.querySelector('img')) {
-                  el.style.display = 'none';
-                }
-              });
-            }
-
-            // Convert SVG barcode to an image for better print compatibility
-            svgElement = clonedLabel.querySelector('svg');
-            if (svgElement) {
-              svgData = new XMLSerializer().serializeToString(svgElement);
-              img = document.createElement('img');
-              img.src = "data:image/svg+xml;base64,".concat(btoa(svgData));
-              img.style.width = '100%';
-              img.style.height = '100%';
-              svgElement.parentNode.replaceChild(img, svgElement);
-            }
-
-            // Get the computed dimensions of the label and config
-            config = labelConfig || {};
-            width = config.width || 60;
-            height = config.height || 162; // Create a properly formatted HTML document with necessary styles
-            labelHTML = "\n        <!DOCTYPE html>\n        <html>\n          <head>\n            <meta charset=\"utf-8\">\n            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n            <title>Pet Fresh Label</title>\n            <style>\n              @page {\n                margin: 0;\n                size: ".concat(width, "mm ").concat(height, "mm;\n              }\n              html, body {\n                margin: 0;\n                padding: 0;\n                width: ").concat(width, "mm;\n                height: ").concat(height, "mm;\n                overflow: hidden;\n                font-family: Arial, sans-serif;\n              }\n              body {\n                display: flex;\n                justify-content: center;\n                align-items: center;\n                background-color: white;\n              }\n              * {\n                box-sizing: border-box;\n              }\n              .pdf-container {\n                width: ").concat(width, "mm;\n                height: ").concat(height, "mm;\n                position: relative;\n                overflow: hidden;\n                background-color: white;\n              }\n              /* Make sure overlay doesn't display in print */\n              [style*=\"pointer-events: none\"] img,\n              img[alt=\"Label Design\"],\n              div[style*=\"position: absolute\"][style*=\"z-index: 1\"] {\n                display: none !important;\n              }\n              /* Preserve all original styles */\n              ").concat(Array.from(document.styleSheets).filter(function (sheet) {
-              return !sheet.href || sheet.href.startsWith(window.location.origin);
-            }).map(function (sheet) {
-              try {
-                return Array.from(sheet.cssRules).map(function (rule) {
-                  return rule.cssText;
-                }).join('\n');
-              } catch (e) {
-                return '';
-              }
-            }).join('\n'), "\n            </style>\n          </head>\n          <body>\n            <div class=\"pdf-container\">\n              ").concat(clonedLabel.outerHTML, "\n            </div>\n          </body>\n        </html>\n      ");
+            clientStartTime = performance.now();
             console.log('Sending label to print service...');
 
-            // Send to main process for printing via IPC
+            // Load printing settings
+            settings = null;
+            _context2.prev = 7;
+            _context2.next = 10;
+            return window.api.loadSettings();
+          case 10:
+            settings = _context2.sent;
+            _context2.next = 16;
+            break;
+          case 13:
+            _context2.prev = 13;
+            _context2.t0 = _context2["catch"](7);
+            console.warn('Could not load printing settings, using defaults:', _context2.t0);
+          case 16:
+            // Create product info object for the print job
+            productInfo = {
+              name: product.name || product.title || 'Unknown Product',
+              sku: product.sku || product.id || '',
+              category: product.category || '',
+              details: "".concat(product.weight || '', " ").concat(product.unit || '')
+            }; // Check printer settings and start printing
+            printerName = (_settings = settings) === null || _settings === void 0 || (_settings = _settings.printer) === null || _settings === void 0 ? void 0 : _settings.defaultPrinter;
+            // Use unified template system for regular printing
+            console.log('Using unified template system for printing');
+            _context2.prev = 19;
             _context2.next = 22;
-            return window.api.printLabel(labelHTML, quantity);
+            return window.api.printLabelWithTemplate(product, quantity, labelConfig, (_settings2 = settings) === null || _settings2 === void 0 ? void 0 : _settings2.printer);
           case 22:
+            templateResult = _context2.sent;
+            if (!templateResult.success) {
+              _context2.next = 29;
+              break;
+            }
+            _context2.next = 26;
+            return window.api.printLabel(templateResult.html, quantity, null,
+            // savePath
+            templateResult.productInfo, (_settings3 = settings) === null || _settings3 === void 0 ? void 0 : _settings3.printer);
+          case 26:
             result = _context2.sent;
+            _context2.next = 30;
+            break;
+          case 29:
+            result = {
+              success: false,
+              error: "Template generation failed: ".concat(templateResult.error || 'Unknown error')
+            };
+          case 30:
+            _context2.next = 36;
+            break;
+          case 32:
+            _context2.prev = 32;
+            _context2.t1 = _context2["catch"](19);
+            console.error('Error with unified template system:', _context2.t1);
+            result = {
+              success: false,
+              error: "Template system error: ".concat(_context2.t1.message)
+            };
+          case 36:
             // Reset printing state
             setIsPrinting(false);
 
@@ -144504,7 +145592,7 @@ function LabelPreview(_ref2) {
               console.log("- Total process: ".concat(Math.round(totalClientTime), "ms"));
 
               // For testing - open the PDF in the default viewer
-              if (result.pdfPath) {
+              if (result.pdfPath && result.method === 'direct') {
                 // In a production environment, you might want to hide this or make it optional
                 _ref5 = window.require ? window.require('electron') : {
                   shell: null
@@ -144516,18 +145604,18 @@ function LabelPreview(_ref2) {
             } else {
               console.error('Error printing label:', result.error);
             }
-            _context2.next = 32;
+            _context2.next = 45;
             break;
-          case 28:
-            _context2.prev = 28;
-            _context2.t0 = _context2["catch"](2);
-            console.error('Error in handlePrintLabel:', _context2.t0);
+          case 41:
+            _context2.prev = 41;
+            _context2.t2 = _context2["catch"](2);
+            console.error('Error in handlePrintLabel:', _context2.t2);
             setIsPrinting(false);
-          case 32:
+          case 45:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, null, [[2, 28]]);
+      }, _callee2, null, [[2, 41], [7, 13], [19, 32]]);
     }));
     return function handlePrintLabel() {
       return _ref4.apply(this, arguments);
@@ -144616,13 +145704,16 @@ function LabelPreview(_ref2) {
       transition: isDragging ? 'none' : 'transform 0.3s ease-out',
       display: 'flex',
       justifyContent: 'center',
-      alignItems: 'center'
+      alignItems: 'center',
+      width: 'fit-content',
+      margin: '0 auto'
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LabelTemplate__WEBPACK_IMPORTED_MODULE_1__["default"], {
     product: product,
     showOverlay: showOverlay,
     labelConfig: labelConfig,
-    onBarcodeGenerated: handleBarcodeGenerated
+    onBarcodeGenerated: handleBarcodeGenerated,
+    showDebug: false
   })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
     sx: {
       width: '100%',
@@ -144757,13 +145848,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config.json */ "./src/label/config.json");
-/* harmony import */ var _utils_labelUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/labelUtils */ "./src/label/utils/labelUtils.js");
+/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template */ "./src/label/template.js");
+/* harmony import */ var _utils_barcodeGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/barcodeGenerator */ "./src/label/utils/barcodeGenerator.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
 
-// The overlay image path in the public folder
-var OVERLAY_IMAGE_PATH = './assets/overlay.png';
 
 /**
  * Calculate expiry date based on duration and type
@@ -144794,47 +145890,81 @@ var calculateExpiryDate = function calculateExpiryDate(duration, type) {
   return expiryDate;
 };
 
-// Label Generator - ultra-optimized for instant rendering
+// Label Generator - using the shared template system
 function LabelTemplate(_ref) {
   var product = _ref.product,
     showOverlay = _ref.showOverlay,
     _ref$config = _ref.config,
     config = _ref$config === void 0 ? null : _ref$config,
-    onBarcodeGenerated = _ref.onBarcodeGenerated;
+    onBarcodeGenerated = _ref.onBarcodeGenerated,
+    _ref$showDebug = _ref.showDebug,
+    showDebug = _ref$showDebug === void 0 ? false : _ref$showDebug;
   // Create a local ref that we control completely
-  var localBarcodeRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var barcodeRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
 
-  // Pre-initialize SVG for faster rendering - runs before painting to screen
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
-    if (localBarcodeRef.current) {
-      // Initialize SVG attributes once
-      localBarcodeRef.current.setAttribute('xmlns', "http://www.w3.org/2000/svg");
-      localBarcodeRef.current.setAttribute('xmlnsXlink', "http://www.w3.org/1999/xlink");
-      localBarcodeRef.current.setAttribute('preserveAspectRatio', "xMidYMid meet");
-      localBarcodeRef.current.setAttribute('viewBox', "0 0 100 35");
-    }
-  }, []);
+  // State to force re-render when barcode is generated
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    barcodeGenerated = _useState2[0],
+    setBarcodeGenerated = _useState2[1];
+
+  // State to store the barcode SVG content
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    _useState4 = _slicedToArray(_useState3, 2),
+    barcodeSvgContent = _useState4[0],
+    setBarcodeSvgContent = _useState4[1];
 
   // Generate barcode as soon as component mounts or product changes
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (product && localBarcodeRef.current) {
-      // Generate barcode immediately with no delay
-      var success = (0,_utils_labelUtils__WEBPACK_IMPORTED_MODULE_2__.generateBarcode)(product, localBarcodeRef);
+    if (product) {
+      console.log('Generating barcode for product:', product.name);
 
-      // Notify parent about barcode generation status
-      if (onBarcodeGenerated) {
-        onBarcodeGenerated(success);
-      }
+      // Reset barcode generated state
+      setBarcodeGenerated(false);
+      setBarcodeSvgContent('');
+
+      // Add a timeout to ensure the element is fully rendered
+      setTimeout(function () {
+        console.log('Attempting barcode generation after timeout...');
+
+        // Generate barcode SVG content directly
+        var barcode = product.barcode || product.sku || '0000000000000';
+        console.log('Using barcode:', barcode);
+        try {
+          // Import the barcode generator function
+          Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../utils/barcodeGenerator */ "./src/label/utils/barcodeGenerator.js")).then(function (_ref2) {
+            var generateBarcodeSvg = _ref2.generateBarcodeSvg;
+            var svgContent = generateBarcodeSvg(barcode);
+            console.log('Generated SVG content length:', svgContent.length);
+
+            // Store the SVG content in state instead of manipulating DOM
+            setBarcodeSvgContent(svgContent);
+            setBarcodeGenerated(true);
+            console.log('Barcode generation success: true');
+
+            // Notify parent about barcode generation status
+            if (onBarcodeGenerated) {
+              onBarcodeGenerated(true);
+            }
+          })["catch"](function (error) {
+            console.error('Error importing barcode generator:', error);
+            if (onBarcodeGenerated) {
+              onBarcodeGenerated(false);
+            }
+          });
+        } catch (error) {
+          console.error('Error generating barcode:', error);
+          if (onBarcodeGenerated) {
+            onBarcodeGenerated(false);
+          }
+        }
+      }, 100);
     }
   }, [product, onBarcodeGenerated]);
   if (!product) return null;
 
   // Use provided config or fall back to centralized config
   var cfg = config || _config_json__WEBPACK_IMPORTED_MODULE_1__;
-
-  // Get margin and calculate content width
-  var horizontalMargin = cfg.horizontalMargin || 5;
-  var contentWidth = cfg.width ? cfg.width - horizontalMargin * 2 : 50;
 
   // Pre-calculate values for faster rendering
   var expiryDate;
@@ -144863,277 +145993,22 @@ function LabelTemplate(_ref) {
     year: '2-digit'
   });
 
-  // Format ingredients - using direct access for speed
-  var ingredientsLine1 = product.ingredientsLine1 || (product.ingredients ? product.ingredients.split('\n')[0] : 'Ingredient Line 1');
-  var ingredientsLine2 = product.ingredientsLine2 || (product.ingredients ? product.ingredients.split('\n')[1] : 'Ingredient Line 2');
-  var ingredientsLine3 = product.ingredientsLine3 || (product.ingredients ? product.ingredients.split('\n')[2] : 'Ingredient Line 3');
+  // Options for the template generator
+  var options = {
+    formattedPrice: formattedPrice,
+    formattedExpiryDate: formattedExpiryDate
+  };
 
-  // Format storage instructions - split by new lines
-  var storageInstructionsLines = product.storageInstructions ? product.storageInstructions.split('\n') : ['Store in a cool, dry place.', 'Keep sealed after opening.'];
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    className: "label-container",
-    style: {
-      position: 'relative',
-      width: "".concat(cfg.width, "mm"),
-      height: "".concat(cfg.height, "mm"),
-      backgroundColor: 'white',
-      fontFamily: 'Arial, sans-serif',
-      borderRadius: '8px',
-      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
-      overflow: 'hidden',
-      margin: '0 auto',
-      border: '1px solid #e0e0e0',
-      boxSizing: 'border-box' // Ensure padding doesn't affect overall dimensions
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.contentStartY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.productTitleHeight, "mm"),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      textTransform: 'uppercase',
-      fontWeight: 'bold',
-      fontSize: "".concat(cfg.fonts.productTitle.size, "mm"),
-      lineHeight: cfg.fonts.productTitle.lineHeight,
-      zIndex: 2,
-      userSelect: 'none'
-    }
-  }, product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.ingredientsY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.ingredientsHeight, "mm"),
-      zIndex: 2,
-      userSelect: 'none',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(cfg.fonts.data.labelSize, "mm"),
-      display: 'inline-block',
-      marginBottom: '0.5mm',
-      textTransform: 'uppercase'
-    }
-  }, "INGREDIENTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.ingredients.contentSize * 0.9, "mm"),
-      lineHeight: "".concat(cfg.fonts.ingredients.lineHeight * 0.9, "mm"),
-      textAlign: 'center',
-      padding: '0.5mm 0',
-      textTransform: 'uppercase',
-      width: '100%'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, ingredientsLine1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, ingredientsLine2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, ingredientsLine3))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.petFoodOnlyY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.petFoodOnlyHeight, "mm"),
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      zIndex: 2,
-      userSelect: 'none'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.petFoodOnly.size, "mm"),
-      fontWeight: 'bold',
-      textTransform: 'uppercase'
-    }
-  }, "PET FOOD ONLY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.storageInstructionsY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.storageInstructionsHeight, "mm"),
-      zIndex: 2,
-      userSelect: 'none'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.storage.size, "mm"),
-      lineHeight: "".concat(cfg.fonts.storage.lineHeight, "mm")
-    }
-  }, storageInstructionsLines.map(function (line, index) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-      key: index
-    }, "\u2022 ", line);
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.dataY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.dataHeight, "mm"),
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 2,
-      userSelect: 'none'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      width: '25mm'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.data.valueSize, "mm"),
-      lineHeight: "".concat(cfg.fonts.storage.lineHeight, "mm")
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(cfg.fonts.data.labelSize, "mm"),
-      display: 'inline-block',
-      marginBottom: '0.5mm',
-      textTransform: 'uppercase'
-    }
-  }, "BEST BEFORE"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      marginBottom: '1mm',
-      paddingLeft: '0.5mm',
-      fontSize: "".concat(cfg.fonts.data.valueSize, "mm")
-    }
-  }, formattedExpiryDate), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(cfg.fonts.data.labelSize, "mm"),
-      display: 'inline-block',
-      marginBottom: '0.5mm',
-      textTransform: 'uppercase'
-    }
-  }, "WEIGHT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      marginBottom: '0',
-      paddingLeft: '0.5mm',
-      fontSize: "".concat(cfg.fonts.data.valueSize, "mm")
-    }
-  }, product.weight || '500g'))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: "".concat(cfg.barcode.width, "mm"),
-      height: '100%',
-      position: 'relative',
-      margin: '0 0 0 auto',
-      padding: '0',
-      maxWidth: "".concat(contentWidth - 27, "mm")
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      width: '100%',
-      height: "".concat(cfg.barcode.height, "mm"),
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      position: 'relative',
-      backgroundColor: '#ffffff'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("svg", {
-    id: "barcode-preview",
-    ref: localBarcodeRef,
-    style: {
-      width: '100%',
-      height: '100%',
-      maxHeight: "".concat(cfg.barcode.height, "mm"),
-      overflow: 'hidden',
-      display: 'block',
-      margin: '0 auto'
-    },
-    xmlns: "http://www.w3.org/2000/svg",
-    xmlnsXlink: "http://www.w3.org/1999/xlink",
-    preserveAspectRatio: "xMidYMid meet",
-    viewBox: "0 0 100 35"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: "".concat(cfg.priceY, "mm"),
-      left: "".concat(horizontalMargin, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(cfg.priceHeight, "mm"),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      zIndex: 2,
-      userSelect: 'none'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.price.valueSize, "mm"),
-      fontWeight: 'bold',
-      lineHeight: '1'
-    }
-  }, formattedPrice), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      fontSize: "".concat(cfg.fonts.price.labelSize, "mm"),
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      marginTop: '0.2mm',
-      textTransform: 'uppercase'
-    }
-  }, "PRICE")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    style: {
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      zIndex: 1,
-      display: showOverlay ? 'block' : 'none',
-      pointerEvents: 'none'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
-    src: OVERLAY_IMAGE_PATH,
-    alt: "Label Design",
-    style: {
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-      pointerEvents: 'none',
-      userSelect: 'none',
-      WebkitUserDrag: 'none',
-      MozUserSelect: 'none',
-      msUserSelect: 'none'
-    },
-    draggable: "false",
-    onLoad: function onLoad() {
-      return console.log('Overlay image loaded successfully');
-    },
-    onError: function onError(e) {
-      console.error('Error loading overlay image:', e);
-      // Try fallback paths
-      e.target.src = './assets/overlay.png';
-    }
-  })));
+  // Use our shared template system to generate the React label
+  var LabelComponent = (0,_template__WEBPACK_IMPORTED_MODULE_2__.generateReactLabel)(product, cfg, options);
+
+  // Render the label with our barcode SVG content
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LabelComponent, {
+    barcodeRef: barcodeRef,
+    showOverlay: showOverlay,
+    barcodeSvgContent: barcodeSvgContent,
+    showDebug: showDebug
+  });
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LabelTemplate);
 
@@ -145146,7 +146021,914 @@ function LabelTemplate(_ref) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"width":60,"height":162,"horizontalMargin":5,"verticalMargin":5,"contentStartY":50,"productTitleHeight":20.5,"ingredientsY":70.5,"ingredientsHeight":15.5,"petFoodOnlyY":86,"petFoodOnlyHeight":6.5,"storageInstructionsY":92.5,"storageInstructionsHeight":12.5,"dataY":105,"dataHeight":19.5,"priceY":124.5,"priceHeight":3,"gutterHeight":34.5,"dpi":300,"barcode":{"width":28,"height":15.5},"fonts":{"productTitle":{"size":7,"lineHeight":1.15},"ingredients":{"headerSize":3.5,"contentSize":2.5,"lineHeight":3},"petFoodOnly":{"size":5},"storage":{"size":2.5,"lineHeight":3},"data":{"labelSize":2.2,"valueSize":2.5},"price":{"valueSize":5.5,"labelSize":2.2}}}');
+module.exports = /*#__PURE__*/JSON.parse('{"width":60,"height":168,"marginTop":3,"marginBottom":3,"marginLeft":3,"marginRight":3,"paddingTop":2,"paddingBottom":2,"paddingLeft":2,"paddingRight":2,"printerAdjustmentLeft":-3,"printerAdjustmentTop":-6,"contentStartY":49,"productTitleHeight":18,"ingredientsY":69,"ingredientsHeight":20,"petFoodOnlyY":91,"petFoodOnlyHeight":6,"storageInstructionsY":99,"storageInstructionsHeight":12,"dataY":113,"dataHeight":25,"priceY":127,"priceHeight":12,"gutterHeight":34.5,"dpi":300,"barcode":{"width":30,"height":18},"fonts":{"productTitle":{"size":6,"lineHeight":1.1},"ingredients":{"headerSize":3,"contentSize":2.2,"lineHeight":2.8},"petFoodOnly":{"size":4.5},"storage":{"size":2.2,"lineHeight":2.5},"data":{"labelSize":2,"valueSize":2.2,"lineHeight":2.5},"price":{"valueSize":5,"labelSize":2}}}');
+
+/***/ }),
+
+/***/ "./src/label/template.js":
+/*!*******************************!*\
+  !*** ./src/label/template.js ***!
+  \*******************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   generateLabelDefinition: () => (/* binding */ generateLabelDefinition),
+/* harmony export */   generateReactLabel: () => (/* binding */ generateReactLabel)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_barcodeGenerator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/barcodeGenerator.js */ "./src/label/utils/barcodeGenerator.js");
+/* module decorator */ module = __webpack_require__.hmd(module);
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+/**
+ * @fileoverview Shared label template definition 
+ * This file provides a single source of truth for label structure
+ * It can be consumed by React (frontend) renderers
+ */
+
+// Import React for JSX support
+
+
+// Import barcode generator for server-side rendering
+
+
+/**
+ * Generate a unified label definition that can be used by React templates
+ * @param {Object} product - Product data
+ * @param {Object} config - Label configuration
+ * @param {Object} options - Additional options (formattedPrice, formattedExpiryDate, isPrintMode)
+ * @returns {Object} - Label definition with all styling and content
+ */
+function generateLabelDefinition(product, config) {
+  var _config$fonts, _config$fonts2, _config$fonts3, _config$fonts4, _config$fonts5, _config$fonts6, _config$fonts7, _config$fonts8, _config$fonts9, _config$fonts0, _config$fonts1, _config$fonts10, _config$fonts11, _config$fonts12, _config$fonts13, _config$fonts14, _config$fonts15, _config$fonts16, _config$barcode, _config$barcode2, _config$fonts17, _config$fonts18;
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var formattedPrice = options.formattedPrice,
+    formattedExpiryDate = options.formattedExpiryDate,
+    _options$isPrintMode = options.isPrintMode,
+    isPrintMode = _options$isPrintMode === void 0 ? false : _options$isPrintMode;
+
+  // Base dimensions and positioning from config
+  var width = config.width || 60;
+  var height = config.height || 162;
+
+  // New comprehensive margin and padding system
+  var marginTop = config.marginTop || 3;
+  var marginBottom = config.marginBottom || 3;
+  var marginLeft = config.marginLeft || 3;
+  var marginRight = config.marginRight || 3;
+  var paddingTop = config.paddingTop || 2;
+  var paddingBottom = config.paddingBottom || 2;
+  var paddingLeft = config.paddingLeft || 2;
+  var paddingRight = config.paddingRight || 2;
+
+  // Printer adjustment parameters (only applied in print mode)
+  var printerAdjustmentLeft = isPrintMode ? config.printerAdjustmentLeft || 0 : 0;
+  var printerAdjustmentTop = isPrintMode ? config.printerAdjustmentTop || 0 : 0;
+
+  // Calculate content area dimensions
+  var contentWidth = width - marginLeft - marginRight;
+  var contentHeight = height - marginTop - marginBottom;
+  var innerContentWidth = contentWidth - paddingLeft - paddingRight;
+  var innerContentHeight = contentHeight - paddingTop - paddingBottom;
+
+  // Calculate final positioning with printer adjustments
+  var finalLeftPosition = marginLeft + paddingLeft;
+  var finalTopOffset = 0; // Don't adjust individual elements, use container transform instead
+
+  // Debug logging for print mode
+  if (isPrintMode) {
+    console.log('🔧 Main Template Debug - Container Transform Approach:', {
+      marginLeft: marginLeft,
+      paddingLeft: paddingLeft,
+      finalLeftPosition: finalLeftPosition,
+      containerTransform: "translate(".concat(printerAdjustmentLeft, "mm, ").concat(printerAdjustmentTop, "mm)"),
+      printerAdjustmentLeft: printerAdjustmentLeft,
+      printerAdjustmentTop: printerAdjustmentTop
+    });
+  }
+  return {
+    // Container styles
+    containerStyle: _objectSpread({
+      width: "".concat(width, "mm"),
+      height: "".concat(height, "mm"),
+      position: 'relative',
+      fontFamily: 'Arial, sans-serif',
+      backgroundColor: 'white',
+      overflow: 'hidden'
+    }, isPrintMode && {
+      transform: "translate(".concat(printerAdjustmentLeft, "mm, ").concat(printerAdjustmentTop, "mm)"),
+      transformOrigin: 'top left'
+    }),
+    // Margins and padding values for reference
+    margins: {
+      marginTop: marginTop,
+      marginBottom: marginBottom,
+      marginLeft: marginLeft,
+      marginRight: marginRight
+    },
+    padding: {
+      paddingTop: paddingTop,
+      paddingBottom: paddingBottom,
+      paddingLeft: paddingLeft,
+      paddingRight: paddingRight
+    },
+    contentDimensions: {
+      contentWidth: contentWidth,
+      contentHeight: contentHeight,
+      innerContentWidth: innerContentWidth,
+      innerContentHeight: innerContentHeight
+    },
+    // Overlay/underlay styles (behind everything)
+    overlayStyle: {
+      position: 'absolute',
+      top: '0',
+      left: '0',
+      width: '100%',
+      height: '100%',
+      backgroundImage: 'url(assets/overlay.png)',
+      backgroundSize: '100% 100%',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      zIndex: 0,
+      pointerEvents: 'none'
+    },
+    // Product name - positioned according to config
+    productName: product.name || 'Product Name',
+    productNameStyle: {
+      position: 'absolute',
+      top: "".concat(config.contentStartY || 45, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.productTitleHeight || 20.5, "mm"),
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      textTransform: 'uppercase',
+      fontWeight: 'bold',
+      fontSize: "".concat(((_config$fonts = config.fonts) === null || _config$fonts === void 0 || (_config$fonts = _config$fonts.productTitle) === null || _config$fonts === void 0 ? void 0 : _config$fonts.size) || 7.5, "mm"),
+      lineHeight: "".concat(((_config$fonts2 = config.fonts) === null || _config$fonts2 === void 0 || (_config$fonts2 = _config$fonts2.productTitle) === null || _config$fonts2 === void 0 ? void 0 : _config$fonts2.lineHeight) || 1.15),
+      zIndex: 1
+    },
+    // Ingredients section
+    ingredientsHeader: 'INGREDIENTS',
+    ingredientsLine1: product.ingredientsLine1 || '',
+    ingredientsLine2: product.ingredientsLine2 || '',
+    ingredientsLine3: product.ingredientsLine3 || '',
+    ingredientsSectionStyle: {
+      position: 'absolute',
+      top: "".concat(config.ingredientsY || 70.5, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.ingredientsHeight || 22, "mm"),
+      zIndex: 1
+    },
+    ingredientsHeaderStyle: {
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '0.5mm 1.5mm',
+      fontSize: "".concat(((_config$fonts3 = config.fonts) === null || _config$fonts3 === void 0 || (_config$fonts3 = _config$fonts3.ingredients) === null || _config$fonts3 === void 0 ? void 0 : _config$fonts3.headerSize) || 3.8, "mm"),
+      fontWeight: 'bold',
+      letterSpacing: '0.3mm',
+      whiteSpace: 'nowrap',
+      display: 'inline-block',
+      marginBottom: '1.5mm',
+      textTransform: 'uppercase',
+      textAlign: 'center',
+      border: 'none',
+      outline: 'none',
+      boxShadow: 'none'
+    },
+    ingredientsContentStyle: {
+      fontSize: "".concat(((_config$fonts4 = config.fonts) === null || _config$fonts4 === void 0 || (_config$fonts4 = _config$fonts4.ingredients) === null || _config$fonts4 === void 0 ? void 0 : _config$fonts4.contentSize) || 2.7, "mm"),
+      lineHeight: "".concat(((_config$fonts5 = config.fonts) === null || _config$fonts5 === void 0 || (_config$fonts5 = _config$fonts5.ingredients) === null || _config$fonts5 === void 0 ? void 0 : _config$fonts5.lineHeight) || 3.2, "mm"),
+      textAlign: 'center',
+      padding: '0 2mm'
+    },
+    ingredientsLineStyle: {
+      fontSize: "".concat(((_config$fonts6 = config.fonts) === null || _config$fonts6 === void 0 || (_config$fonts6 = _config$fonts6.ingredients) === null || _config$fonts6 === void 0 ? void 0 : _config$fonts6.contentSize) || 2.7, "mm"),
+      lineHeight: "".concat(((_config$fonts7 = config.fonts) === null || _config$fonts7 === void 0 || (_config$fonts7 = _config$fonts7.ingredients) === null || _config$fonts7 === void 0 ? void 0 : _config$fonts7.lineHeight) || 3.2, "mm"),
+      textAlign: 'center',
+      marginBottom: '0.5mm',
+      minHeight: '3.2mm'
+    },
+    // Pet food only
+    petFoodOnly: 'PET FOOD ONLY',
+    petFoodOnlyStyle: {
+      position: 'absolute',
+      top: "".concat(config.petFoodOnlyY || 86, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.petFoodOnlyHeight || 6.5, "mm"),
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      fontSize: "".concat(((_config$fonts8 = config.fonts) === null || _config$fonts8 === void 0 || (_config$fonts8 = _config$fonts8.petFoodOnly) === null || _config$fonts8 === void 0 ? void 0 : _config$fonts8.size) || 5, "mm"),
+      fontWeight: 'bold',
+      textTransform: 'uppercase',
+      zIndex: 1
+    },
+    // Storage instructions
+    storageInstructions: ['• 100% NATURAL', '• NO ARTIFICIAL COLOURS', '• MIXED AND PRODUCED IN AUSTRALIA'],
+    storageSectionStyle: {
+      position: 'absolute',
+      top: "".concat(config.storageInstructionsY || 92.5, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.storageInstructionsHeight || 12.5, "mm"),
+      fontSize: "".concat(((_config$fonts9 = config.fonts) === null || _config$fonts9 === void 0 || (_config$fonts9 = _config$fonts9.storage) === null || _config$fonts9 === void 0 ? void 0 : _config$fonts9.size) || 2.5, "mm"),
+      lineHeight: "".concat(((_config$fonts0 = config.fonts) === null || _config$fonts0 === void 0 || (_config$fonts0 = _config$fonts0.storage) === null || _config$fonts0 === void 0 ? void 0 : _config$fonts0.lineHeight) || 3, "mm"),
+      zIndex: 1
+    },
+    storageItemStyle: {
+      textAlign: 'center',
+      marginBottom: '0.5mm'
+    },
+    // Data section (best before, weight, barcode) - positioned according to config
+    dataSectionStyle: {
+      position: 'absolute',
+      top: "".concat(config.dataY || 105, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.dataHeight || 19.5, "mm"),
+      display: 'flex',
+      justifyContent: 'space-between',
+      zIndex: 1
+    },
+    // Best before
+    bestBeforeDate: formattedExpiryDate || '01 Jan 25',
+    bestBeforeStyle: {
+      fontSize: "".concat(((_config$fonts1 = config.fonts) === null || _config$fonts1 === void 0 || (_config$fonts1 = _config$fonts1.data) === null || _config$fonts1 === void 0 ? void 0 : _config$fonts1.valueSize) || 2.5, "mm"),
+      lineHeight: "".concat(((_config$fonts10 = config.fonts) === null || _config$fonts10 === void 0 || (_config$fonts10 = _config$fonts10.data) === null || _config$fonts10 === void 0 ? void 0 : _config$fonts10.lineHeight) || 3, "mm"),
+      marginBottom: '5mm'
+    },
+    bestBeforeLabelStyle: {
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '0.5mm 1.5mm',
+      fontSize: "".concat(((_config$fonts11 = config.fonts) === null || _config$fonts11 === void 0 || (_config$fonts11 = _config$fonts11.data) === null || _config$fonts11 === void 0 ? void 0 : _config$fonts11.labelSize) || 2.2, "mm"),
+      fontWeight: 'bold',
+      letterSpacing: '0.3mm',
+      whiteSpace: 'nowrap',
+      display: 'inline-block',
+      marginBottom: '0.5mm',
+      textTransform: 'uppercase',
+      border: 'none',
+      outline: 'none',
+      boxShadow: 'none'
+    },
+    bestBeforeDateStyle: {
+      marginBottom: '1mm',
+      paddingLeft: '0.5mm',
+      fontSize: "".concat(((_config$fonts12 = config.fonts) === null || _config$fonts12 === void 0 || (_config$fonts12 = _config$fonts12.data) === null || _config$fonts12 === void 0 ? void 0 : _config$fonts12.valueSize) || 2.5, "mm")
+    },
+    // Weight
+    weight: product.weight || '1kg',
+    weightStyle: {
+      fontSize: "".concat(((_config$fonts13 = config.fonts) === null || _config$fonts13 === void 0 || (_config$fonts13 = _config$fonts13.data) === null || _config$fonts13 === void 0 ? void 0 : _config$fonts13.valueSize) || 2.5, "mm"),
+      lineHeight: "".concat(((_config$fonts14 = config.fonts) === null || _config$fonts14 === void 0 || (_config$fonts14 = _config$fonts14.data) === null || _config$fonts14 === void 0 ? void 0 : _config$fonts14.lineHeight) || 3, "mm")
+    },
+    weightLabelStyle: {
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '0.5mm 1.5mm',
+      fontSize: "".concat(((_config$fonts15 = config.fonts) === null || _config$fonts15 === void 0 || (_config$fonts15 = _config$fonts15.data) === null || _config$fonts15 === void 0 ? void 0 : _config$fonts15.labelSize) || 2.2, "mm"),
+      fontWeight: 'bold',
+      letterSpacing: '0.3mm',
+      whiteSpace: 'nowrap',
+      display: 'inline-block',
+      marginBottom: '0.5mm',
+      textTransform: 'uppercase',
+      border: 'none',
+      outline: 'none',
+      boxShadow: 'none'
+    },
+    weightValueStyle: {
+      marginBottom: '0',
+      paddingLeft: '0.5mm',
+      fontSize: "".concat(((_config$fonts16 = config.fonts) === null || _config$fonts16 === void 0 || (_config$fonts16 = _config$fonts16.data) === null || _config$fonts16 === void 0 ? void 0 : _config$fonts16.valueSize) || 2.5, "mm")
+    },
+    // Barcode section
+    barcodeSectionStyle: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      width: "".concat(((_config$barcode = config.barcode) === null || _config$barcode === void 0 ? void 0 : _config$barcode.width) || 35, "mm"),
+      position: 'relative',
+      padding: '1mm',
+      margin: '0',
+      marginLeft: 'auto',
+      backgroundColor: 'white',
+      minHeight: "".concat(((_config$barcode2 = config.barcode) === null || _config$barcode2 === void 0 ? void 0 : _config$barcode2.height) || 25, "mm"),
+      overflow: 'visible'
+    },
+    barcodeStyle: {
+      width: '100%',
+      height: 'auto',
+      display: 'block',
+      backgroundColor: 'white',
+      minHeight: '15mm',
+      maxHeight: '25mm'
+    },
+    // Price section - positioned according to config
+    price: formattedPrice || '$0.00',
+    priceSectionStyle: {
+      position: 'absolute',
+      top: "".concat(config.priceY || 124.5, "mm"),
+      left: "".concat(finalLeftPosition, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(config.priceHeight || 3, "mm"),
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      textAlign: 'center',
+      zIndex: 1
+    },
+    priceValueStyle: {
+      fontSize: "".concat(((_config$fonts17 = config.fonts) === null || _config$fonts17 === void 0 || (_config$fonts17 = _config$fonts17.price) === null || _config$fonts17 === void 0 ? void 0 : _config$fonts17.valueSize) || 5.5, "mm"),
+      fontWeight: 'bold',
+      lineHeight: '1'
+    },
+    priceLabelStyle: {
+      fontSize: "".concat(((_config$fonts18 = config.fonts) === null || _config$fonts18 === void 0 || (_config$fonts18 = _config$fonts18.price) === null || _config$fonts18 === void 0 ? void 0 : _config$fonts18.labelSize) || 2.2, "mm"),
+      backgroundColor: 'black',
+      color: 'white',
+      padding: '0.5mm 1.5mm',
+      fontWeight: 'bold',
+      letterSpacing: '0.3mm',
+      whiteSpace: 'nowrap',
+      marginTop: '0.2mm',
+      textTransform: 'uppercase',
+      border: 'none',
+      outline: 'none',
+      boxShadow: 'none'
+    },
+    // Debug visualization styles (optional)
+    debugLabelBorderStyle: {
+      position: 'absolute',
+      top: '0mm',
+      left: '0mm',
+      width: "".concat(width, "mm"),
+      height: "".concat(height, "mm"),
+      border: '2px solid red',
+      backgroundColor: 'transparent',
+      zIndex: 8,
+      pointerEvents: 'none'
+    },
+    debugMarginStyle: {
+      position: 'absolute',
+      top: "".concat(marginTop, "mm"),
+      left: "".concat(marginLeft, "mm"),
+      width: "".concat(contentWidth, "mm"),
+      height: "".concat(contentHeight, "mm"),
+      border: '1px dashed blue',
+      backgroundColor: 'rgba(0, 0, 255, 0.05)',
+      zIndex: 10,
+      pointerEvents: 'none'
+    },
+    debugPaddingStyle: {
+      position: 'absolute',
+      top: "".concat(marginTop + paddingTop, "mm"),
+      left: "".concat(marginLeft + paddingLeft, "mm"),
+      width: "".concat(innerContentWidth, "mm"),
+      height: "".concat(innerContentHeight, "mm"),
+      border: '1px dashed green',
+      backgroundColor: 'rgba(0, 255, 0, 0.05)',
+      zIndex: 11,
+      pointerEvents: 'none'
+    }
+  };
+}
+
+/**
+ * Generate React JSX label component from label definition
+ * @param {Object} product - Product data
+ * @param {Object} config - Label configuration
+ * @param {Object} options - Additional options (formattedPrice, formattedExpiryDate)
+ * @returns {Function} - React component function
+ */
+function generateReactLabel(product, config) {
+  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var labelDef = generateLabelDefinition(product, config, options);
+  return function ReactLabel(_ref) {
+    var barcodeRef = _ref.barcodeRef,
+      showOverlay = _ref.showOverlay,
+      barcodeSvgContent = _ref.barcodeSvgContent,
+      _ref$showDebug = _ref.showDebug,
+      showDebug = _ref$showDebug === void 0 ? false : _ref$showDebug;
+    // Update options to include showDebug for logging
+    var debugOptions = _objectSpread(_objectSpread({}, options), {}, {
+      showDebug: showDebug
+    });
+    var debugLabelDef = showDebug ? generateLabelDefinition(product, config, debugOptions) : labelDef;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      className: 'label-container',
+      style: debugLabelDef.containerStyle
+    }, [
+    // Overlay/underlay first (behind everything)
+    showOverlay && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'overlay',
+      className: 'overlay',
+      style: debugLabelDef.overlayStyle
+    }),
+    // Debug label border visualization (optional) - shows actual label dimensions
+    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'debug-label-border',
+      className: 'debug-label-border',
+      style: debugLabelDef.debugLabelBorderStyle
+    }),
+    // Debug margin visualization (optional)
+    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'debug-margin',
+      className: 'debug-margin',
+      style: debugLabelDef.debugMarginStyle
+    }),
+    // Debug padding visualization (optional)
+    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'debug-padding',
+      className: 'debug-padding',
+      style: debugLabelDef.debugPaddingStyle
+    }),
+    // Debug info text overlay (optional)
+    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'debug-info',
+      className: 'debug-info',
+      style: {
+        position: 'absolute',
+        top: '1mm',
+        left: '1mm',
+        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+        color: 'white',
+        padding: '2mm',
+        fontSize: '1.5mm',
+        fontFamily: 'monospace',
+        zIndex: 20,
+        pointerEvents: 'none',
+        borderRadius: '1mm'
+      }
+    }, ["Label: ".concat(debugLabelDef.containerStyle.width, " \xD7 ").concat(debugLabelDef.containerStyle.height), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Margins: T".concat(debugLabelDef.margins.marginTop, " R").concat(debugLabelDef.margins.marginRight, " B").concat(debugLabelDef.margins.marginBottom, " L").concat(debugLabelDef.margins.marginLeft), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Padding: T".concat(debugLabelDef.padding.paddingTop, " R").concat(debugLabelDef.padding.paddingRight, " B").concat(debugLabelDef.padding.paddingBottom, " L").concat(debugLabelDef.padding.paddingLeft), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content: ".concat(debugLabelDef.contentDimensions.contentWidth, "mm \xD7 ").concat(debugLabelDef.contentDimensions.contentHeight, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Inner: ".concat(debugLabelDef.contentDimensions.innerContentWidth, "mm \xD7 ").concat(debugLabelDef.contentDimensions.innerContentHeight, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content Left: ".concat(debugLabelDef.margins.marginLeft + debugLabelDef.padding.paddingLeft, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content Top: ".concat(debugLabelDef.margins.marginTop + debugLabelDef.padding.paddingTop, "mm")]),
+    /*#__PURE__*/
+    // Product name
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'product-name',
+      className: 'product-name',
+      style: debugLabelDef.productNameStyle
+    }, debugLabelDef.productName),
+    /*#__PURE__*/
+    // Ingredients section
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients',
+      className: 'ingredients-section',
+      style: debugLabelDef.ingredientsSectionStyle
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients-header-container',
+      className: 'ingredients-header-container',
+      style: {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: '1.5mm'
+      }
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
+      key: 'ingredients-header',
+      className: 'ingredients-header',
+      style: debugLabelDef.ingredientsHeaderStyle
+    }, debugLabelDef.ingredientsHeader)]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients-content',
+      className: 'ingredients-content',
+      style: debugLabelDef.ingredientsContentStyle
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients-line-1',
+      className: 'ingredients-line',
+      style: debugLabelDef.ingredientsLineStyle
+    }, debugLabelDef.ingredientsLine1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients-line-2',
+      className: 'ingredients-line',
+      style: debugLabelDef.ingredientsLineStyle
+    }, debugLabelDef.ingredientsLine2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'ingredients-line-3',
+      className: 'ingredients-line',
+      style: debugLabelDef.ingredientsLineStyle
+    }, debugLabelDef.ingredientsLine3)])]),
+    /*#__PURE__*/
+    // Pet food only section
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'pet-food-only',
+      className: 'pet-food-only',
+      style: debugLabelDef.petFoodOnlyStyle
+    }, debugLabelDef.petFoodOnly),
+    /*#__PURE__*/
+    // Storage instructions
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'storage',
+      className: 'storage-section',
+      style: debugLabelDef.storageSectionStyle
+    }, debugLabelDef.storageInstructions.map(function (instruction, index) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+        key: "storage-".concat(index),
+        className: 'storage-item',
+        style: debugLabelDef.storageItemStyle
+      }, instruction);
+    })),
+    /*#__PURE__*/
+    // Data section (best before, weight, barcode)
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'data-section',
+      className: 'data-section',
+      style: debugLabelDef.dataSectionStyle
+    }, [
+    /*#__PURE__*/
+    // Best before and Weight in left column
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'data-left',
+      className: 'data-left',
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-start',
+        width: '32mm'
+      }
+    }, [
+    /*#__PURE__*/
+    // Best before
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'best-before',
+      className: 'best-before',
+      style: debugLabelDef.bestBeforeStyle
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
+      key: 'best-before-label',
+      className: 'best-before-label',
+      style: debugLabelDef.bestBeforeLabelStyle
+    }, 'BEST BEFORE'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'best-before-date',
+      className: 'best-before-date',
+      style: debugLabelDef.bestBeforeDateStyle
+    }, debugLabelDef.bestBeforeDate)]),
+    /*#__PURE__*/
+    // Weight
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'weight',
+      className: 'weight',
+      style: debugLabelDef.weightStyle
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
+      key: 'weight-label',
+      className: 'weight-label',
+      style: debugLabelDef.weightLabelStyle
+    }, 'WEIGHT'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'weight-value',
+      className: 'weight-value',
+      style: debugLabelDef.weightValueStyle
+    }, product.weight || '1kg')])]),
+    /*#__PURE__*/
+    // Barcode in right column
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'barcode',
+      className: 'barcode-section',
+      style: debugLabelDef.barcodeSectionStyle
+    }, [
+    // Render SVG content directly if available, otherwise show placeholder
+    barcodeSvgContent ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'barcode-svg',
+      className: 'barcode',
+      style: debugLabelDef.barcodeStyle,
+      dangerouslySetInnerHTML: {
+        __html: barcodeSvgContent
+      }
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'barcode-placeholder',
+      className: 'barcode-placeholder',
+      style: _objectSpread(_objectSpread({}, debugLabelDef.barcodeStyle), {}, {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        color: '#666',
+        fontSize: '12px'
+      })
+    }, 'Generating barcode...')])]),
+    /*#__PURE__*/
+    // Price section (at bottom)
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'price-section',
+      className: 'price-section',
+      style: debugLabelDef.priceSectionStyle
+    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'price-value',
+      className: 'price-value',
+      style: debugLabelDef.priceValueStyle
+    }, debugLabelDef.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
+      key: 'price-label',
+      className: 'price-label',
+      style: debugLabelDef.priceLabelStyle
+    }, 'PRICE')])]);
+  };
+}
+
+// Export functions for use in different environments
+// For CommonJS environments
+if ( true && module.exports) {
+  module.exports = {
+    generateLabelDefinition: generateLabelDefinition,
+    generateReactLabel: generateReactLabel
+  };
+}
+
+// For ES modules
+
+
+/***/ }),
+
+/***/ "./src/label/utils/barcodeGenerator.js":
+/*!*********************************************!*\
+  !*** ./src/label/utils/barcodeGenerator.js ***!
+  \*********************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   formatBarcode: () => (/* binding */ formatBarcode),
+/* harmony export */   generateBarcodeSvg: () => (/* binding */ generateBarcodeSvg),
+/* harmony export */   generateRandomBarcode: () => (/* binding */ generateRandomBarcode),
+/* harmony export */   renderBarcodeToSvgRef: () => (/* binding */ renderBarcodeToSvgRef)
+/* harmony export */ });
+/* module decorator */ module = __webpack_require__.hmd(module);
+/**
+ * @fileoverview Barcode generation utility
+ * Provides functions to generate barcodes directly in-browser and on-device
+ * without external web API dependencies
+ */
+
+// Cache for generated barcodes to improve performance
+var barcodeCache = new Map();
+
+/**
+ * Format a string as a valid EAN-13 barcode
+ * @param {string} barcode - Raw barcode string to format
+ * @returns {string} - Formatted 13-digit barcode with check digit
+ */
+function formatBarcode(barcode) {
+  // Remove non-digit characters
+  var digits = String(barcode).replace(/\D/g, '');
+
+  // Pad to 12 digits for EAN-13
+  if (digits.length < 12) {
+    digits = digits.padStart(12, '0');
+  }
+
+  // Take first 12 digits if longer
+  if (digits.length > 12) {
+    digits = digits.substring(0, 12);
+  }
+
+  // Calculate check digit (13th digit) for EAN-13
+  var sum = 0;
+  for (var i = 0; i < 12; i++) {
+    sum += parseInt(digits[i]) * (i % 2 === 0 ? 1 : 3);
+  }
+  var checkDigit = (10 - sum % 10) % 10;
+
+  // Return the full 13-digit barcode
+  return digits + checkDigit;
+}
+
+/**
+ * Generate SVG barcode for EAN-13
+ * @param {string} barcode - The barcode number to generate
+ * @returns {string} - SVG content as string
+ */
+function generateBarcodeSvg(barcode) {
+  var formattedBarcode = formatBarcode(barcode);
+
+  // Create a unique cache key
+  var cacheKey = "svg-".concat(formattedBarcode);
+
+  // Check cache first
+  if (barcodeCache.has(cacheKey)) {
+    return barcodeCache.get(cacheKey);
+  }
+
+  // EAN-13 patterns
+  var leftHandPatterns = ['0001101', '0011001', '0010011', '0111101', '0100011', '0110001', '0101111', '0111011', '0110111', '0001011'];
+  var rightHandPatterns = ['1110010', '1100110', '1101100', '1000010', '1011100', '1001110', '1010000', '1000100', '1001000', '1110100'];
+
+  // First digit determines the pattern for left group
+  var firstDigit = parseInt(formattedBarcode[0]);
+  var leftGroupPatterns = ['LLLLLL', 'LLGLGG', 'LLGGLG', 'LLGGGL', 'LGLLGG', 'LGGLLG', 'LGGGLL', 'LGLGLG', 'LGLGGL', 'LGGLGL'];
+
+  // Barcode dimensions - make them larger for better visibility
+  var barWidth = 2; // Increased from 1 to 2 for better visibility
+  var barHeight = 80; // Increased from 50 to 80 for better height
+  var quietZone = 10;
+  var textHeight = 15;
+  var svg = '';
+  var x = quietZone;
+
+  // Start guard pattern (101)
+  var startGuard = '101';
+  for (var i = 0; i < startGuard.length; i++) {
+    if (startGuard[i] === '1') {
+      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
+    }
+    x += barWidth;
+  }
+
+  // Left data patterns (6 digits)
+  var leftPattern = leftGroupPatterns[firstDigit];
+  for (var _i = 0; _i < 6; _i++) {
+    var digit = parseInt(formattedBarcode[_i + 1]);
+    var pattern = void 0;
+    if (leftPattern[_i] === 'L') {
+      pattern = leftHandPatterns[digit];
+    } else {
+      // G pattern (inverted L pattern)
+      pattern = leftHandPatterns[digit].split('').map(function (c) {
+        return c === '0' ? '1' : '0';
+      }).join('');
+    }
+    for (var j = 0; j < pattern.length; j++) {
+      if (pattern[j] === '1') {
+        svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
+      }
+      x += barWidth;
+    }
+  }
+
+  // Center guard pattern (01010)
+  var centerGuard = '01010';
+  for (var _i2 = 0; _i2 < centerGuard.length; _i2++) {
+    if (centerGuard[_i2] === '1') {
+      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
+    }
+    x += barWidth;
+  }
+
+  // Right data patterns (6 digits)
+  for (var _i3 = 6; _i3 < 12; _i3++) {
+    var _digit = parseInt(formattedBarcode[_i3 + 1]);
+    var _pattern = rightHandPatterns[_digit];
+    for (var _j = 0; _j < _pattern.length; _j++) {
+      if (_pattern[_j] === '1') {
+        svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
+      }
+      x += barWidth;
+    }
+  }
+
+  // End guard pattern (101)
+  var endGuard = '101';
+  for (var _i4 = 0; _i4 < endGuard.length; _i4++) {
+    if (endGuard[_i4] === '1') {
+      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
+    }
+    x += barWidth;
+  }
+
+  // Calculate total width for viewBox
+  var totalWidth = x + quietZone;
+  var totalHeight = barHeight + textHeight;
+
+  // Add text below the barcode with increased spacing
+  var textY = barHeight + 18;
+  var textSvg = "\n    <text x=\"".concat(totalWidth / 2, "\" y=\"").concat(textY, "\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" fill=\"black\">").concat(formattedBarcode, "</text>\n  ");
+
+  // Complete SVG document with increased bar width for better visibility
+  var fullSvg = "\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 ".concat(totalWidth, " ").concat(totalHeight, "\" width=\"100%\" height=\"100%\" style=\"display: block; background: white;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n      ").concat(svg, "\n      ").concat(textSvg, "\n    </svg>\n  ");
+
+  // Cache the result
+  barcodeCache.set(cacheKey, fullSvg);
+  return fullSvg;
+}
+
+/**
+ * Generate a random barcode number for new products
+ * @returns {string} - A valid EAN-13 barcode
+ */
+function generateRandomBarcode() {
+  // Use a timestamp and random numbers to generate a unique barcode
+  var timestamp = Date.now().toString();
+  var random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+  var barcode = '4' + timestamp.slice(-7) + random;
+
+  // Format it to ensure it's valid
+  return formatBarcode(barcode);
+}
+
+/**
+ * Render a barcode into an SVG element
+ * @param {Object} product - The product with barcode data
+ * @param {Object} svgRef - React ref to the SVG element to populate
+ * @returns {boolean} - Success indicator
+ */
+function renderBarcodeToSvgRef(product, svgRef) {
+  try {
+    console.log('renderBarcodeToSvgRef called with:', {
+      product: product === null || product === void 0 ? void 0 : product.name,
+      hasRef: !!svgRef.current
+    });
+    if (!svgRef.current) {
+      console.log('No SVG ref available');
+      return false;
+    }
+
+    // Get or generate barcode
+    var barcode = product.barcode || generateRandomBarcode();
+    console.log('Using barcode:', barcode);
+
+    // Create a unique ID for caching based on product
+    var productId = product.id || product._id || JSON.stringify(product);
+    var cacheKey = "svg-ref-".concat(productId);
+
+    // Check cache first
+    if (barcodeCache.has(cacheKey)) {
+      console.log('Using cached barcode');
+      var cachedSvg = barcodeCache.get(cacheKey);
+
+      // Parse the cached SVG and copy attributes and content
+      var _parser = new DOMParser();
+      var _svgDoc = _parser.parseFromString(cachedSvg, 'image/svg+xml');
+      var _newSvgElement = _svgDoc.querySelector('svg');
+      if (_newSvgElement) {
+        // Copy all attributes from the generated SVG to our target SVG
+        Array.from(_newSvgElement.attributes).forEach(function (attr) {
+          if (attr.name !== 'class' && attr.name !== 'style') {
+            svgRef.current.setAttribute(attr.name, attr.value);
+          }
+        });
+
+        // Copy the inner content
+        svgRef.current.innerHTML = _newSvgElement.innerHTML;
+      }
+      return true;
+    }
+
+    // Generate SVG content
+    console.log('Generating new barcode SVG');
+    var svgContent = generateBarcodeSvg(barcode);
+    console.log('Generated SVG content length:', svgContent.length);
+
+    // Parse the SVG
+    var parser = new DOMParser();
+    var svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
+    var newSvgElement = svgDoc.querySelector('svg');
+    if (!newSvgElement) {
+      console.error('Failed to parse SVG content');
+      console.log('SVG content was:', svgContent);
+      return false;
+    }
+    console.log('Parsed SVG element:', newSvgElement);
+    console.log('SVG viewBox:', newSvgElement.getAttribute('viewBox'));
+    console.log('SVG innerHTML length:', newSvgElement.innerHTML.length);
+
+    // Copy all attributes from the generated SVG to our target SVG
+    Array.from(newSvgElement.attributes).forEach(function (attr) {
+      if (attr.name !== 'class' && attr.name !== 'style') {
+        console.log("Setting attribute ".concat(attr.name, " = ").concat(attr.value));
+        svgRef.current.setAttribute(attr.name, attr.value);
+      }
+    });
+
+    // Copy the inner content
+    svgRef.current.innerHTML = newSvgElement.innerHTML;
+    console.log('Barcode rendered successfully');
+    console.log('Final SVG viewBox:', svgRef.current.getAttribute('viewBox'));
+    console.log('Final SVG innerHTML length:', svgRef.current.innerHTML.length);
+
+    // Force a repaint to ensure visibility
+    svgRef.current.style.display = 'none';
+    svgRef.current.offsetHeight; // Trigger reflow
+    svgRef.current.style.display = 'block';
+
+    // Store in cache for future use
+    barcodeCache.set(cacheKey, svgContent);
+    return true;
+  } catch (error) {
+    console.error('Error rendering barcode:', error);
+    return false;
+  }
+}
+
+// Export functions using ES6 syntax
+
+
+// Also provide CommonJS exports for Node.js compatibility (main.js)
+if ( true && module.exports) {
+  module.exports = {
+    formatBarcode: formatBarcode,
+    generateBarcodeSvg: generateBarcodeSvg,
+    generateRandomBarcode: generateRandomBarcode,
+    renderBarcodeToSvgRef: renderBarcodeToSvgRef
+  };
+}
 
 /***/ }),
 
@@ -145166,15 +146948,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jsbarcode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jsbarcode */ "./node_modules/jsbarcode/bin/JsBarcode.js");
 /* harmony import */ var jsbarcode__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jsbarcode__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config.json */ "./src/label/config.json");
+/* harmony import */ var _barcodeGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./barcodeGenerator */ "./src/label/utils/barcodeGenerator.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
 
 
 
@@ -145245,158 +147024,54 @@ var isValidEAN13 = function isValidEAN13(barcode) {
 };
 
 /**
- * Validate and format a barcode to ensure it's a valid EAN13
- * @param {String} barcode - The raw barcode string
- * @returns {String} - Properly formatted EAN13 barcode
- */
-var formatBarcode = function formatBarcode(barcode) {
-  if (!barcode) return '0000000000000';
-
-  // Remove non-digit characters and ensure it's 13 digits
-  var digits = barcode.replace(/[^\d]/g, '');
-
-  // Pad or trim to exactly 13 digits
-  if (digits.length < 13) {
-    // If we have 12 digits, calculate the check digit
-    if (digits.length === 12) {
-      var checkDigit = calculateEAN13CheckDigit(digits);
-      digits += checkDigit;
-    } else {
-      digits = digits.padStart(13, '0');
-    }
-  } else if (digits.length > 13) {
-    digits = digits.substring(0, 13);
-  }
-
-  // If the barcode is not valid, fix the check digit
-  if (!isValidEAN13(digits)) {
-    var firstTwelve = digits.substring(0, 12);
-    var _checkDigit = calculateEAN13CheckDigit(firstTwelve);
-    digits = firstTwelve + _checkDigit;
-    console.log("Fixed invalid barcode ".concat(barcode, " to ").concat(digits));
-  }
-  return digits;
-};
-
-/**
  * Ultra-fast barcode generation for a given product on a target SVG element
  * @param {Object} product - The product data
  * @param {Object} svgRef - React ref for the SVG element
  * @returns {Boolean} - Success or failure
  */
 var generateBarcode = function generateBarcode(product, svgRef) {
-  // Fast path - basic validation
-  if (!product || !svgRef || !svgRef.current) {
-    return false;
-  }
-
-  // Get product ID and barcode - prefer product.id for cache key if available
-  var productId = product.id || 'default';
-  var barcode = product.barcode || '';
-
-  // Diagnostic: Log this specific problematic barcode
-  if (barcode === '3800043510857') {
-    console.log('Processing problematic barcode:', barcode);
-    console.log('Is valid EAN13:', isValidEAN13(barcode));
-
-    // Test with specific EAN13 validation from JsBarcode (if available)
-    try {
-      if (jsbarcode__WEBPACK_IMPORTED_MODULE_0___default().getModule('EAN13')) {
-        var validationResult = jsbarcode__WEBPACK_IMPORTED_MODULE_0___default().getModule('EAN13').valid(barcode);
-        console.log('JsBarcode internal validation result:', validationResult);
-      }
-    } catch (e) {
-      console.log('Could not access JsBarcode validation');
-    }
-  }
-  try {
-    // Initialize SVG with namespace if needed
-    var svgElement = svgRef.current;
-    if (!svgElement.getAttribute('xmlns')) {
-      svgElement.setAttribute('xmlns', "http://www.w3.org/2000/svg");
-    }
-
-    // Always use innerHTML instead of DOM manipulation for maximum speed
-    // Check cache first for instant rendering
-    if (barcodeCache.has(productId)) {
-      svgElement.innerHTML = barcodeCache.get(productId);
-      return true;
-    }
-
-    // Format barcode to be a valid EAN13
-    var formattedBarcode = formatBarcode(barcode);
-
-    // Show placeholder immediately while we generate the real barcode
-    svgElement.innerHTML = DEFAULT_BARCODE_SVG;
-
-    // Use immediate generation for all barcodes
-    try {
-      // Generate barcode synchronously - modified to force valid option to true
-      var options = _objectSpread(_objectSpread({}, BARCODE_OPTIONS), {}, {
-        valid: function valid() {
-          return true;
-        }
-      });
-      jsbarcode__WEBPACK_IMPORTED_MODULE_0___default()(svgElement, formattedBarcode, options);
-
-      // If we got here, the barcode generation worked
-      // Store in cache for future use
-      barcodeCache.set(productId, svgElement.innerHTML);
-      return true;
-    } catch (error) {
-      // If JsBarcode fails, create a cleaner fallback that still looks good
-      console.warn("Barcode generation failed for ".concat(formattedBarcode, ":"), error);
-
-      // Create nice-looking fallback with the product name
-      var fallbackSvg = "\n        <rect width=\"100%\" height=\"100%\" fill=\"white\"></rect>\n        <text x=\"50%\" y=\"35%\" text-anchor=\"middle\" dominant-baseline=\"middle\" \n              font-family=\"monospace\" font-size=\"12\" font-weight=\"bold\">".concat(formattedBarcode, "</text>\n        <text x=\"50%\" y=\"55%\" text-anchor=\"middle\" dominant-baseline=\"middle\"\n              font-family=\"Arial\" font-size=\"8\" fill=\"#555\">").concat(product.name || 'Product', "</text>\n        <text x=\"50%\" y=\"70%\" text-anchor=\"middle\" dominant-baseline=\"middle\"\n              font-family=\"Arial\" font-size=\"7\" fill=\"#777\">Barcode Display</text>\n      ");
-      svgElement.innerHTML = fallbackSvg;
-      barcodeCache.set(productId, fallbackSvg);
-      return true;
-    }
-  } catch (error) {
-    // Last resort fallback - should never get here but just in case
-    if (svgRef.current) {
-      svgRef.current.innerHTML = "\n        <rect width=\"100%\" height=\"100%\" fill=\"white\"></rect>\n        <text x=\"50%\" y=\"50%\" text-anchor=\"middle\" dominant-baseline=\"middle\" \n              font-family=\"monospace\" font-size=\"10\">".concat(barcode, "</text>\n      ");
-    }
-    return true;
-  }
+  // Use our new barcode renderer
+  return (0,_barcodeGenerator__WEBPACK_IMPORTED_MODULE_2__.renderBarcodeToSvgRef)(product, svgRef);
 };
 
 /**
- * Get label configuration from the system or use the default config
- * @returns {Promise<Object>} - Label configuration
+ * Get the label configuration, either from local config or API
+ * @returns {Promise<Object>} - The label configuration object
  */
 var getLabelConfig = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var _window$api, config;
+    var apiConfig;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.prev = 0;
-          if (!((_window$api = window.api) !== null && _window$api !== void 0 && _window$api.getLabelConfig)) {
+          if (!(window && window.api && window.api.getLabelConfig)) {
             _context.next = 7;
             break;
           }
           _context.next = 4;
           return window.api.getLabelConfig();
         case 4:
-          config = _context.sent;
-          if (!config) {
+          apiConfig = _context.sent;
+          if (!apiConfig) {
             _context.next = 7;
             break;
           }
-          return _context.abrupt("return", config);
+          return _context.abrupt("return", apiConfig);
         case 7:
-          return _context.abrupt("return", _config_json__WEBPACK_IMPORTED_MODULE_1__);
-        case 10:
-          _context.prev = 10;
+          _context.next = 12;
+          break;
+        case 9:
+          _context.prev = 9;
           _context.t0 = _context["catch"](0);
+          console.log('Could not load config from API, using local config');
+        case 12:
           return _context.abrupt("return", _config_json__WEBPACK_IMPORTED_MODULE_1__);
         case 13:
         case "end":
           return _context.stop();
       }
-    }, _callee, null, [[0, 10]]);
+    }, _callee, null, [[0, 9]]);
   }));
   return function getLabelConfig() {
     return _ref.apply(this, arguments);
@@ -145619,7 +147294,6 @@ var mockProducts = [{
 var mockAppData = {
   categories: mockCategories,
   products: mockProducts,
-  version: '0.2.5',
   printerStatus: 'ready' // 'ready', 'printing', 'error', 'systemError'
 };
 
@@ -145706,6 +147380,21 @@ var mockAppData = {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/harmony module decorator */
+/******/ 	(() => {
+/******/ 		__webpack_require__.hmd = (module) => {
+/******/ 			module = Object.create(module);
+/******/ 			if (!module.children) module.children = [];
+/******/ 			Object.defineProperty(module, 'exports', {
+/******/ 				enumerable: true,
+/******/ 				set: () => {
+/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
+/******/ 				}
+/******/ 			});
+/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -8,6 +8,12 @@ if (!fs.existsSync(distDir)) {
   fs.mkdirSync(distDir, { recursive: true });
 }
 
+// Ensure assets directory exists
+const assetsDir = path.join(__dirname, 'public', 'assets');
+if (!fs.existsSync(assetsDir)) {
+  fs.mkdirSync(assetsDir, { recursive: true });
+}
+
 // Build the app bundle
 console.log('Building app bundle...');
 const appBundle = browserify({
@@ -28,6 +34,18 @@ appBundle.bundle().pipe(bundleStream);
 bundleStream.on('finish', () => {
   console.log('Bundle created successfully!');
   console.log('Output: ' + path.join(distDir, 'bundle.js'));
+  
+  // Generate default placeholder icon if not exists
+  const iconPath = path.join(assetsDir, 'icon.ico');
+  if (!fs.existsSync(iconPath)) {
+    console.log('Creating placeholder icon...');
+    // Here we could use a library to generate an icon, but for simplicity
+    // we'll just copy a placeholder or create a simple file
+    fs.writeFileSync(iconPath, Buffer.from('Placeholder for icon file'));
+    console.log('Placeholder icon created at:', iconPath);
+  }
+  
+  console.log('Build process completed. Run "npm run build" to create the installer');
 });
 
 bundleStream.on('error', (err) => {

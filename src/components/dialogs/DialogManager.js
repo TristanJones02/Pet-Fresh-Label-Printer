@@ -1,6 +1,7 @@
 const React = require('react');
 const { createContext, useContext, useState } = React;
 const SettingsDialog = require('./SettingsDialog');
+const PrintQueueDialog = require('./PrintQueueDialog');
 
 // Create a context for dialog management
 const DialogContext = createContext(null);
@@ -13,6 +14,7 @@ const DIALOG_TYPES = {
   PRINTER_SELECT: 'printer-select',
   LABEL_PREVIEW: 'label-preview',
   CONFIRMATION: 'confirmation',
+  PRINT_QUEUE: 'print-queue',
 };
 
 /**
@@ -70,6 +72,16 @@ function DialogProvider({ children }) {
         open: isDialogOpen(DIALOG_TYPES.SETTINGS),
         onClose: () => closeDialog(DIALOG_TYPES.SETTINGS),
         ...(dialogProps[DIALOG_TYPES.SETTINGS] || {})
+      }
+    ),
+    
+    // Print Queue Dialog
+    React.createElement(
+      PrintQueueDialog,
+      { 
+        open: isDialogOpen(DIALOG_TYPES.PRINT_QUEUE),
+        onClose: () => closeDialog(DIALOG_TYPES.PRINT_QUEUE),
+        ...(dialogProps[DIALOG_TYPES.PRINT_QUEUE] || {})
       }
     )
     

@@ -1,30 +1,65 @@
 {
   "name": "pet-fresh-label-printer",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": "src/main.js",
   "scripts": {
     "start": "webpack && electron .",
     "dev": "concurrently \"webpack --watch\" \"set NODE_ENV=development && electron .\"",
     "build": "webpack --mode production && electron-builder",
+    "build-installer": "webpack --mode production && npx electron-builder --config electron-builder.json",
+    "simple-build": "webpack --mode production && npx electron-builder --config electron-builder.json --dir",
     "label-editor": "electron src/tools/label-editor/editor.js",
     "image-generator": "electron src/tools/product-image-generator/generator.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Pet Fresh Label Printer is a powerful tool for creating and printing labels for pet products. It allows you to easily customize labels, generate product images, and build installers for the application.",
+  "build": {
+    "appId": "com.petfresh.labelprinter",
+    "productName": "Pet Fresh Label Printer",
+    "directories": {
+      "output": "dist"
+    },
+    "forceCodeSigning": false,
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "electron/**/*",
+      "!src/tools/**/*",
+      "*.js",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts,pdb}"
+    ],
+    "win": {
+      "icon": "public/assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pet Fresh Label Printer"
+    }
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
-    "ejs": "^3.1.9",
-    "electron": "^36.1.0",
-    "electron-builder": "^26.0.12",
     "jsbarcode": "^3.11.6",
+    "jsdom": "^26.1.0",
     "puppeteer": "^21.11.0",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
@@ -34,9 +69,13 @@
     "babel-loader": "^9.2.1",
     "babelify": "^10.0.0",
     "browserify": "^17.0.1",
+    "canvas": "^3.1.0",
     "concurrently": "^9.1.2",
     "css-loader": "^7.1.2",
+    "electron": "latest",
+    "electron-builder": "latest",
     "electron-reload": "^2.0.0-alpha.1",
+    "png-to-ico": "^2.1.8",
     "style-loader": "^4.0.0",
     "wait-on": "^8.0.3",
     "webpack": "^5.99.8",

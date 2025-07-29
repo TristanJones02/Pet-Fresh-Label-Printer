@@ -178,6 +178,5 @@ export const mockProducts = [
 export const mockAppData = {
   categories: mockCategories,
   products: mockProducts,
-  version: '0.2.5',
   printerStatus: 'ready', // 'ready', 'printing', 'error', 'systemError'
 }; 

@@ -1,0 +1,75 @@
+; Custom NSIS installer script
+
+!include "MUI2.nsh"
+!include "nsDialogs.nsh"
+!include "LogicLib.nsh"
+!include "FileFunc.nsh"
+!include "x64.nsh"
+
+!include "installer.nsh"
+
+; Define product details
+; PRODUCT_NAME is already defined by electron-builder
+!define PRODUCT_EXECUTABLE "Pet Fresh Label Printer.exe"
+
+; Set compression options
+SetCompressor /SOLID lzma
+
+; Set icon for the installer
+!define MUI_ICON "${PROJECT_DIR}\public\assets\icon.ico"
+!define MUI_UNICON "${PROJECT_DIR}\public\assets\icon.ico"
+
+; Modern UI settings
+!insertmacro MUI_PAGE_WELCOME
+!insertmacro customWelcomePage
+!insertmacro MUI_PAGE_DIRECTORY
+!insertmacro MUI_PAGE_INSTFILES
+!insertmacro customFinishPage
+!insertmacro MUI_PAGE_FINISH
+
+; Language settings
+!insertmacro MUI_LANGUAGE "English"
+
+; Remember settings
+!define MUI_DIRECTORYPAGE_VERIFYONLEAVE
+
+; Installer attributes
+OutFile "${OUTFILE}"
+InstallDir "$PROGRAMFILES64\${PRODUCT_NAME}"
+InstallDirRegKey HKLM "Software\${PRODUCT_NAME}" "InstallLocation"
+RequestExecutionLevel admin
+
+; Main install section
+Section "MainSection" SEC01
+  SetOutPath "$INSTDIR"
+  SetShellVarContext all
+  
+  ; Copy all files from the packaged app directory
+  File /r "${PROJECT_DIR}\dist\win-unpacked\*.*"
+  
+  ; Registry information for uninstall
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}" \
+                 "DisplayName" "${PRODUCT_NAME}"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}" \
+                 "UninstallString" "$INSTDIR\uninstall.exe"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}" \
+                 "DisplayIcon" "$INSTDIR\${PRODUCT_EXECUTABLE}"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}" \
+                 "Publisher" "Pet Fresh"
+  
+  ; Create uninstaller
+  WriteUninstaller "$INSTDIR\uninstall.exe"
+SectionEnd
+
+; Uninstaller section
+Section "Uninstall"
+  SetShellVarContext all
+  
+  ; Remove registry keys
+  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${PRODUCT_NAME}"
+  DeleteRegKey HKLM "Software\${PRODUCT_NAME}"
+  DeleteRegValue HKCU "Software\Microsoft\Windows\CurrentVersion\Run" "${PRODUCT_NAME}"
+  
+  ; Remove files and directories
+  RMDir /r "$INSTDIR"
+SectionEnd 

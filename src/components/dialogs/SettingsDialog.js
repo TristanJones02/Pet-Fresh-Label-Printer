@@ -60,7 +60,8 @@ function SettingsDialog({ open, onClose }) {
   const [settings, setSettings] = useState({
     printer: {
       defaultPrinter: '',
-      showConfirmation: false
+      showConfirmation: false,
+      disableAutomaticPrinting: false
     },
     application: {
       devImageGeneration: false,
@@ -70,6 +71,8 @@ function SettingsDialog({ open, onClose }) {
     }
   });
   const [isZebraPrinterSelected, setIsZebraPrinterSelected] = useState(false);
+  const [printerAdjustmentLeft, setPrinterAdjustmentLeft] = useState(0);
+  const [printerAdjustmentTop, setPrinterAdjustmentTop] = useState(0);
 
   // Load settings when dialog opens
   useEffect(() => {
@@ -102,6 +105,9 @@ function SettingsDialog({ open, onClose }) {
       setLoadingPrinters(true);
       const loadedSettings = await window.api.loadSettings();
       
+      // Load label config to get printer adjustment values
+      const labelConfig = await window.api.loadLabelConfig();
+      
       if (loadedSettings && !loadedSettings.error) {
         setSettings(loadedSettings);
         
@@ -116,6 +122,12 @@ function SettingsDialog({ open, onClose }) {
             { name: initialPrinter, isDefault: true, isLoading: true }
           ]);
         }
+      }
+      
+      // Load printer adjustment values from label config
+      if (labelConfig && !labelConfig.error) {
+        setPrinterAdjustmentLeft(labelConfig.printerAdjustmentLeft || 0);
+        setPrinterAdjustmentTop(labelConfig.printerAdjustmentTop || 0);
       }
       
       // Load the full printer list in the background
@@ -206,7 +218,7 @@ function SettingsDialog({ open, onClose }) {
       setShowPrintMessage(true);
       
       // Replace the printer name in the command
-      const finalCommand = command.replace(/ZDesigner ZT230-200dpi ZPL/g, selectedPrinter);
+      const finalCommand = command.replace(/ZDesigner ZT230-200dpi/g, selectedPrinter);
       
       // Use the appropriate API method to run the command
       const result = await window.api.runCommand(finalCommand);
@@ -247,6 +259,12 @@ function SettingsDialog({ open, onClose }) {
     }
   }, [open]);
 
+  // Force re-render when selected printer changes
+  useEffect(() => {
+    console.log("Selected printer updated:", selectedPrinter);
+    // This useEffect is just to ensure the UI updates when selectedPrinter changes
+  }, [selectedPrinter]);
+
   const getSystemInfo = async () => {
     try {
       const systemInfo = await window.api.getSystemInfo();
@@ -282,6 +300,18 @@ function SettingsDialog({ open, onClose }) {
     
     try {
       await window.api.saveSettings(updatedSettings);
+      
+      // Save printer adjustment values to label config
+      const currentConfig = await window.api.loadLabelConfig();
+      if (currentConfig && !currentConfig.error) {
+        const updatedConfig = {
+          ...currentConfig,
+          printerAdjustmentLeft: printerAdjustmentLeft,
+          printerAdjustmentTop: printerAdjustmentTop
+        };
+        await window.api.saveLabelConfig(updatedConfig);
+      }
+      
       onClose();
     } catch (error) {
       console.error('Error saving settings:', error);
@@ -336,6 +366,26 @@ function SettingsDialog({ open, onClose }) {
         showConfirmation: event.target.checked
       }
     });
+  };
+
+  const handleDisableAutoPrintingChange = (event) => {
+    setSettings({
+      ...settings,
+      printer: {
+        ...settings.printer,
+        disableAutomaticPrinting: event.target.checked
+      }
+    });
+  };
+
+  const handlePrinterAdjustmentLeftChange = (event) => {
+    const value = parseFloat(event.target.value) || 0;
+    setPrinterAdjustmentLeft(value);
+  };
+
+  const handlePrinterAdjustmentTopChange = (event) => {
+    const value = parseFloat(event.target.value) || 0;
+    setPrinterAdjustmentTop(value);
   };
 
   const handleRefreshPrinters = async () => {
@@ -410,7 +460,7 @@ function SettingsDialog({ open, onClose }) {
       `;
       
       // Print the test label
-      const result = await window.api.printLabel(testLabel, 1);
+      const result = await window.api.printLabel(testLabel, 1, null, { productName: 'Test Print', productId: 'TEST001' });
       
       // Show success/error message
       if (result.success) {
@@ -461,11 +511,36 @@ function SettingsDialog({ open, onClose }) {
     React.createElement(
       Box,
       { display: 'flex', alignItems: 'center', justifyContent: 'space-between' },
+      React.createElement(
+        Box,
+        { display: 'flex', alignItems: 'center', gap: 1 },
       React.createElement(Typography, { variant: 'h6', fontWeight: 'bold' }, 'Settings'),
+        React.createElement(Typography, { variant: 'body2', sx: { ml: 2, opacity: 0.9 } }, 
+          `Printer: ${selectedPrinter || 'None Selected'} | Time: ${currentTime.toLocaleString()}`
+        )
+      ),
+      React.createElement(
+        Box,
+        { display: 'flex', alignItems: 'center', gap: 1 },
+        React.createElement(
+          IconButton,
+          { 
+            size: 'small',
+            sx: { 
+              bgcolor: 'white', 
+              color: '#9ba03b',
+              '&:hover': { bgcolor: '#f5f5f5' },
+              width: 32,
+              height: 32
+            }
+          },
+          React.createElement(PrintIcon, { fontSize: 'small' })
+        ),
       React.createElement(
         IconButton,
         { onClick: handleClose, size: 'medium', sx: { color: 'white' } },
         React.createElement(CloseIcon)
+        )
       )
     )
   );
@@ -571,23 +646,23 @@ function SettingsDialog({ open, onClose }) {
         : React.createElement(
           Box,
           { position: 'relative' },
-          React.createElement(
-            FormControl,
-            { fullWidth: true, variant: 'outlined', size: 'small' },
-            React.createElement(InputLabel, { id: 'printer-select-label' }, 'Default Printer'),
-            React.createElement(
-              Select,
-              {
-                labelId: 'printer-select-label',
-                id: 'printer-select',
-                value: selectedPrinter,
+      React.createElement(
+        FormControl,
+        { fullWidth: true, variant: 'outlined', size: 'small' },
+        React.createElement(InputLabel, { id: 'printer-select-label' }, 'Default Printer'),
+        React.createElement(
+          Select,
+          {
+            labelId: 'printer-select-label',
+            id: 'printer-select',
+            value: selectedPrinter,
                 onChange: handlePrinterChange,
                 label: 'Default Printer',
                 disabled: loadingPrinters
-              },
+          },
               systemPrinters.map(printer => 
-                React.createElement(
-                  MenuItem,
+            React.createElement(
+              MenuItem,
                   { 
                     key: printer.name, 
                     value: printer.name,
@@ -613,250 +688,7 @@ function SettingsDialog({ open, onClose }) {
         )
     ),
     
-    // Zebra Printer Tools Section (only visible when a Zebra printer is selected)
-    isZebraPrinterSelected && React.createElement(
-      React.Fragment,
-      {},
-      React.createElement(Typography, { variant: 'h6', gutterBottom: true, mt: 4 }, 'Zebra Printer Tools'),
-      React.createElement(Divider, { sx: { mb: 3 } }),
-      
-      // Card layout with full width and buttons aligned to the right
-      React.createElement(
-        Box,
-        { sx: { mb: 3 } },
-        
-        // Install another Zebra Printer
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(AddIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Install Another Zebra Printer"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "Run the Zebra Printer Installation Wizard to set up an additional printer."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                startIcon: React.createElement(AddIcon),
-                onClick: () => runPrinterCommand("$ver='ZD'+((Get-Item \"C:\\WINDOWS\\system32\\spool\\DRIVERS\\x64\\3\\ZDesignerdrv.dll\").VersionInfo.FileVersion -replace '\\.','-'); $folder=(Get-ChildItem -Path 'C:\\' -Directory | Where-Object { $_.Name -eq $ver } | Select-Object -ExpandProperty FullName); if ($folder -and (Test-Path \"$folder\\PrnInst.exe\")) { \"$folder\\PrnInst.exe\" } else { \"PrnInst.exe not found in $folder\" }") 
-              },
-              "Run Installer"
-            )
-          )
-        ),
-        
-        // Label Printing Setup
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(PrintIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Printer Label Settings"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "Configure label size, media type, printing preferences and more."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                onClick: () => runPrinterCommand(`rundll32.exe printui.dll,PrintUIEntry /e /n "${selectedPrinter}"`)
-              },
-              "Open Settings"
-            )
-          )
-        ),
-        
-        // Printer Advanced Settings
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(TuneIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Printer Advanced Settings"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "Access advanced printer configuration options and parameters."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                onClick: () => runPrinterCommand(`rundll32.exe printui.dll,PrintUIEntry /p /n "${selectedPrinter}"`)
-              },
-              "Advanced Settings"
-            )
-          )
-        ),
-        
-        // Windows Printer Settings
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(SettingsIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Windows Printer Properties"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "Manage Windows printer properties, sharing options and security settings."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                onClick: () => runPrinterCommand(`rundll32.exe printui.dll,PrintUIEntry /p /n "${selectedPrinter}"`)
-              },
-              "Open Properties"
-            )
-          )
-        ),
-        
-        // Print Queue
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(QueueIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Printer Queue"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "View and manage current print jobs in the queue."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                onClick: () => runPrinterCommand(`rundll32.exe printui.dll,PrintUIEntry /o /n "${selectedPrinter}"`)
-              },
-              "Open Queue"
-            )
-          )
-        ),
-        
-        // Direct Connect Utility (for advanced troubleshooting)
-        React.createElement(
-          Card,
-          { variant: 'outlined', sx: { mb: 2 } },
-          React.createElement(
-            Box,
-            { 
-              sx: { 
-                display: 'flex', 
-                flexDirection: 'row',
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                p: 2
-              } 
-            },
-            React.createElement(
-              Box,
-              { sx: { flexGrow: 1 } },
-              React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 
-                React.createElement(ConnectIcon, { sx: { mr: 1, verticalAlign: 'text-bottom' } }),
-                "Zebra Direct Connect"
-              ),
-              React.createElement(Typography, { variant: 'body2', color: 'text.secondary' }, 
-                "Launch Zebra Setup Utilities for direct connection and advanced configuration."
-              )
-            ),
-            React.createElement(
-              Button,
-              { 
-                variant: 'contained', 
-                size: 'small',
-                onClick: () => runPrinterCommand("C:\\Program Files\\Zebra Technologies\\Zebra Setup Utilities\\ZebraSetupUtilities.exe")
-              },
-              "Launch Tool"
-            )
-          )
-        )
-      )
-    ),
-    
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true, mt: isZebraPrinterSelected ? 4 : 0 }, 'Printer Options'),
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Printer Options'),
     React.createElement(
       FormGroup,
       {},
@@ -871,6 +703,48 @@ function SettingsDialog({ open, onClose }) {
             }
           ), 
           label: 'Show print confirmation dialog' 
+        }
+      )
+    ),
+    
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true, sx: { mt: 3 } }, 'Printer Adjustments'),
+    React.createElement(Typography, { variant: 'body2', color: 'text.secondary', sx: { mb: 2 } }, 'Fine-tune print positioning to account for printer-specific variations. These adjustments only apply to printed output, not the preview.'),
+    
+    React.createElement(
+      Box,
+      { sx: { display: 'flex', gap: 2, mb: 2 } },
+      React.createElement(
+        TextField,
+        {
+          label: 'Left Adjustment (mm)',
+          type: 'number',
+          size: 'small',
+          value: printerAdjustmentLeft,
+          onChange: handlePrinterAdjustmentLeftChange,
+          inputProps: { 
+            step: 0.5,
+            min: -10,
+            max: 10
+          },
+          helperText: 'Positive values move content right',
+          sx: { flex: 1 }
+        }
+      ),
+      React.createElement(
+        TextField,
+        {
+          label: 'Top Adjustment (mm)',
+          type: 'number',
+          size: 'small',
+          value: printerAdjustmentTop,
+          onChange: handlePrinterAdjustmentTopChange,
+          inputProps: { 
+            step: 0.5,
+            min: -10,
+            max: 10
+          },
+          helperText: 'Positive values move content down',
+          sx: { flex: 1 }
         }
       )
     )
@@ -1040,7 +914,42 @@ function SettingsDialog({ open, onClose }) {
   const applicationSettingsTab = React.createElement(
     TabPanel,
     { value: tabValue, index: 2 },
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Development Image Generation'),
+    
+    // Printing Options section
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Printing Options'),
+    React.createElement(
+      Paper,
+      { 
+        variant: 'outlined',
+        sx: { p: 2, mb: 3 }
+      },
+      // Disable Automatic Printing option
+      React.createElement(
+        FormControlLabel,
+        { 
+          control: React.createElement(
+            Switch,
+            {
+              checked: settings.printer.disableAutomaticPrinting,
+              onChange: handleDisableAutoPrintingChange
+            }
+          ), 
+          label: React.createElement(
+            Typography,
+            { variant: 'subtitle1', fontWeight: 'medium' },
+            'Disable Automatic Printing'
+          )
+        }
+      ),
+      React.createElement(
+        Typography,
+        { variant: 'body2', color: 'text.secondary', sx: { mt: 1, mb: 2 } },
+        'When enabled, a system print dialog will appear instead of sending labels directly to the selected printer. Canceling this dialog will be logged.'
+      )
+    ),
+    
+    // Development Image Generation
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true, mt: 3 }, 'Development Image Generation'),
     React.createElement(
       Paper,
       { 
@@ -1148,9 +1057,9 @@ function SettingsDialog({ open, onClose }) {
         React.createElement(
           Box,
           { sx: { px: 3, py: 2, flexGrow: 1, overflowY: 'auto' } },
-          printerSettingsTab,
-          systemInfoTab,
-          applicationSettingsTab
+      printerSettingsTab,
+      systemInfoTab,
+      applicationSettingsTab
         )
       )
     ),

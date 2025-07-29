@@ -1,0 +1,42 @@
+{
+  "appId": "com.petfresh.labelprinter",
+  "productName": "Pet Fresh Label Printer",
+  "directories": {
+    "output": "dist"
+  },
+  "asar": true,
+  "files": [
+    "src/**/*",
+    "public/**/*",
+    "electron/**/*",
+    "!src/tools/**/*",
+    "*.js",
+    "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts,pdb}"
+  ],
+  "win": {
+    "icon": "public/assets/icon.ico",
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      }
+    ],
+    "artifactName": "${productName}-Setup-${version}.${ext}",
+    "signAndEditExecutable": false,
+    "verifyUpdateCodeSignature": false
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Pet Fresh Label Printer",
+    "artifactName": "${productName}-Setup-${version}.${ext}",
+    "include": "installer/installer.nsh",
+    "script": "installer/installer.nsis",
+    "warningsAsErrors": false
+  },
+  "publish": null,
+  "electronVersion": "36.1.0"
+} 

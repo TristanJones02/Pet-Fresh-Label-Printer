@@ -95,15 +95,32 @@ const lightTheme = createTheme({
 
 // Main App content component - this is the main app display
 function MainContent({ appData }) {
-  const [categories, setCategories] = useState(appData?.categories || []);
-  const [products, setProducts] = useState(appData?.products || []);
-  const [filteredProducts, setFilteredProducts] = useState(products);
-  const [selectedProduct, setSelectedProduct] = useState(null);
-  const [printerStatus, setPrinterStatus] = useState(appData?.printerStatus || 'ready');
   const [searchTerm, setSearchTerm] = useState('');
-  const [quantity, setQuantity] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState(null);
-  
+  const [selectedProduct, setSelectedProduct] = useState(null);
+  const [quantity, setQuantity] = useState(1);
+  const [printerStatus, setPrinterStatus] = useState(appData?.printerStatus || 'ready');
+  const [categories] = useState(appData?.categories || []);
+  const [products] = useState(appData?.products || []);
+  const [appVersion, setAppVersion] = useState('');
+  const [filteredProducts, setFilteredProducts] = useState(products);
+
+  // Fetch app version on component mount
+  useEffect(() => {
+    const getAppVersion = async () => {
+      if (window.api?.getAppVersion) {
+        try {
+          const version = await window.api.getAppVersion();
+          setAppVersion(version);
+        } catch (error) {
+          console.error('Error fetching app version:', error);
+        }
+      }
+    };
+    
+    getAppVersion();
+  }, []);
+
   // Filter products based on search term or selected category
   useEffect(() => {
     let filtered = products;
@@ -174,7 +191,7 @@ function MainContent({ appData }) {
     Header,
     {
       printerStatus: printerStatus,
-      version: appData?.version || '0.2.5'
+      version: appVersion
     }
   );
   

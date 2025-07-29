@@ -3,21 +3,20 @@
  * Contains methods for generating print-ready label HTML and handling print jobs
  */
 
-// Default label configuration
-const DEFAULT_LABEL_CONFIG = {
-  width: 60, // width in mm
-  height: 162, // height in mm
-  horizontalMargin: 5, // horizontal margin in mm
-  verticalMargin: 5, // vertical margin in mm
-};
+// Import barcode utilities
+import { generateBarcodeSvg, formatBarcode } from './utils/barcodeGenerator';
+import labelConfig from './config.json';
+
+// Use the centralized config instead of hardcoded values
+const DEFAULT_LABEL_CONFIG = labelConfig;
 
 /**
- * Generate a print-ready HTML template for a label
+ * Generate a print-ready HTML template for a label using the React-based system
  * @param {Object} product - The product data
  * @param {Object} options - Additional options for label generation
  * @returns {Object} - Object containing HTML content and metadata
  */
-export const generatePrintableLabel = (product, options = {}) => {
+export const generatePrintableLabel = async (product, options = {}) => {
   if (!product) {
     throw new Error('Product data is required');
   }
@@ -29,9 +28,42 @@ export const generatePrintableLabel = (product, options = {}) => {
   } = options;
   
   // Calculate expiry date
+  let expiryDate;
+  
+  // Handle both new API format and legacy format
+  if (product.expirationDuration && product.expirationType) {
+    // New format: Calculate based on duration and type
+    const today = new Date();
+    expiryDate = new Date(today);
+    
+    switch (product.expirationType) {
+      case 'days':
+        expiryDate.setDate(today.getDate() + product.expirationDuration);
+        break;
+      case 'weeks':
+        expiryDate.setDate(today.getDate() + (product.expirationDuration * 7));
+        break;
+      case 'months':
+        expiryDate.setMonth(today.getMonth() + product.expirationDuration);
+        break;
+      case 'years':
+        expiryDate.setFullYear(today.getFullYear() + product.expirationDuration);
+        break;
+      default:
+        // Default to days if type is unknown
+        expiryDate.setDate(today.getDate() + product.expirationDuration);
+    }
+  } else if (product.expiryDays) {
+    // Legacy format: Calculate based on expiryDays
+    const today = new Date();
+    expiryDate = new Date(today);
+    expiryDate.setDate(today.getDate() + product.expiryDays);
+  } else {
+    // Default: 30 days if no expiry information provided
   const today = new Date();
-  const expiryDate = new Date(today);
-  expiryDate.setDate(today.getDate() + (product.expiryDays || 30));
+    expiryDate = new Date(today);
+    expiryDate.setDate(today.getDate() + 30);
+  }
   
   // Format the expiry date
   const formattedExpiryDate = expiryDate.toLocaleDateString('en-AU', {
@@ -43,287 +75,42 @@ export const generatePrintableLabel = (product, options = {}) => {
   // Format the price
   const formattedPrice = product.price || '$0.00';
   
-  // Generate HTML content for printing
-  const html = `
-    <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Pet Fresh Label</title>
-      <style>
-        @page {
-          size: ${labelConfig.width}mm ${labelConfig.height}mm;
-          margin: 0;
-        }
-        body {
-          margin: 0;
-          padding: 0;
-          font-family: Arial, sans-serif;
-          width: ${labelConfig.width}mm;
-          height: ${labelConfig.height}mm;
-        }
-        .label-container {
-          position: relative;
-          width: 100%;
-          height: 100%;
-          background-color: white;
-        }
-        /* Add more styling as needed based on LabelTemplate.js */
-      </style>
-    </head>
-    <body>
-      <div class="label-container">
-        <!-- Product Name -->
-        <div style="
-          position: absolute;
-          top: 50mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 20.5mm;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          text-transform: uppercase;
-          font-weight: bold;
-          font-size: 7mm;
-          line-height: 1.15;
-        ">
-          ${product.name}
-        </div>
-        
-        <!-- Ingredients Section -->
-        <div style="
-          position: absolute;
-          top: 70.5mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 15.5mm;
-        ">
-          <div style="
-            font-size: 3.5mm;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 1mm;
-            text-align: center;
-          ">
-            INGREDIENTS
-          </div>
-          <div style="
-            font-size: 2.5mm;
-            line-height: 3mm;
-            text-align: center;
-            padding: 0 2mm;
-          ">
-            ${product.ingredients || 'Mixed Animal Proteins'}
-          </div>
-        </div>
-        
-        <!-- Pet Food Only -->
-        <div style="
-          position: absolute;
-          top: 86mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 6.5mm;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        ">
-          <div style="
-            font-size: 5mm;
-            font-weight: bold;
-            text-transform: uppercase;
-          ">
-            PET FOOD ONLY
-          </div>
-        </div>
-        
-        <!-- Storage Instructions -->
-        <div style="
-          position: absolute;
-          top: 92.5mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 12.5mm;
-        ">
-          <div style="
-            font-size: 2.5mm;
-            line-height: 3mm;
-          ">
-            <div>• 100% NATURAL</div>
-            <div>• NO ARTIFICIAL COLOURS</div>
-            <div>• MIXED AND PRODUCED IN AUSTRALIA</div>
-          </div>
-        </div>
-        
-        <!-- Data Section -->
-        <div style="
-          position: absolute;
-          top: 105mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 19.5mm;
-          display: flex;
-          justify-content: space-between;
-        ">
-          <!-- Date and Weight -->
-          <div style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 25mm;
-          ">
-            <div style="
-              font-size: 2.5mm;
-              line-height: 3mm;
-            ">
-              <div style="
-                background-color: black;
-                color: white;
-                padding: 0.5mm 1.5mm;
-                font-size: 2.2mm;
-                display: inline-block;
-                margin-bottom: 0.5mm;
-                text-transform: uppercase;
-              ">
-                BEST BEFORE
-              </div>
-              <div style="
-                margin-bottom: 1mm;
-                padding-left: 0.5mm;
-                font-size: 2.5mm;
-              ">
-                ${formattedExpiryDate}
-              </div>
-              
-              <div style="
-                background-color: black;
-                color: white;
-                padding: 0.5mm 1.5mm;
-                font-size: 2.2mm;
-                display: inline-block;
-                margin-bottom: 0.5mm;
-                text-transform: uppercase;
-              ">
-                WEIGHT
-              </div>
-              <div style="
-                margin-bottom: 0;
-                padding-left: 0.5mm;
-                font-size: 2.5mm;
-              ">
-                ${product.weight || '500g'}
-              </div>
-            </div>
-          </div>
-          
-          <!-- Barcode -->
-          <div style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 28mm;
-            position: relative;
-            padding: 3mm 0;
-            margin: 0 auto;
-          ">
-            ${showBarcode ? `
-              <img 
-                src="data:image/svg+xml;base64,${Buffer.from(generateBarcodeAsSVG(product.barcode || '0000000000000')).toString('base64')}"
-                style="width: 100%; height: 15.5mm;"
-              />
-            ` : ''}
-          </div>
-        </div>
-        
-        <!-- Price -->
-        <div style="
-          position: absolute;
-          top: 124.5mm;
-          left: ${labelConfig.horizontalMargin}mm;
-          width: calc(100% - ${labelConfig.horizontalMargin * 2}mm);
-          height: 3mm;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-        ">
-          <div style="
-            font-size: 5.5mm;
-            font-weight: bold;
-            line-height: 1;
-          ">
-            ${formattedPrice}
-          </div>
-          <div style="
-            font-size: 2.2mm;
-            background-color: black;
-            color: white;
-            padding: 0.5mm 1.5mm;
-            margin-top: 0.2mm;
-            text-transform: uppercase;
-          ">
-            PRICE
-          </div>
-        </div>
-      </div>
+  // Use the React-based template system via the main process
+  if (window.api?.printLabelWithTemplate) {
+    try {
+      const result = await window.api.printLabelWithTemplate(
+        product,
+        1, // quantity (not used for HTML generation)
+        labelConfig,
+        null // printer settings
+      );
       
-      <!-- Include JsBarcode for browser-based rendering if needed -->
-      <script src="https://unpkg.com/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-      <script>
-        function renderBarcode() {
-          if (typeof JsBarcode !== 'undefined') {
-            JsBarcode("#barcode", "${product.barcode || '0000000000000'}", {
-              format: "EAN13",
-              width: 2,
-              height: 30,
-              displayValue: true,
-              fontSize: 7,
-              margin: 0,
-              background: "#ffffff",
-              lineColor: "#000000",
-              flat: true
-            });
-          }
-        }
-        
-        document.addEventListener('DOMContentLoaded', renderBarcode);
-      </script>
-    </body>
-    </html>
-  `;
-  
+      if (result.success) {
   return {
-    html,
-    product,
-    dimensions: {
-      width: labelConfig.width,
-      height: labelConfig.height
-    },
+          html: result.html,
+          productInfo: result.productInfo,
     timestamp: new Date().toISOString()
   };
+      } else {
+        throw new Error(result.error || 'Failed to generate label HTML');
+      }
+    } catch (error) {
+      console.error('Error using React-based template system:', error);
+      throw error;
+    }
+  } else {
+    throw new Error('React-based template system not available');
+  }
 };
 
 /**
- * Generate a barcode as SVG (placeholder - normally would use JsBarcode)
+ * Generate a barcode as SVG with higher quality rendering
  * @param {string} barcode - Barcode to generate
  * @returns {string} - SVG string representation of barcode
  */
 const generateBarcodeAsSVG = (barcode) => {
-  // This is a placeholder - in a real implementation, 
-  // you would use JsBarcode server-side or another barcode generation library
-  // For simplicity, we're returning a text representation as SVG
-  return `
-    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="35">
-      <rect width="100%" height="100%" fill="white" />
-      <text x="10" y="20" font-family="monospace">${barcode}</text>
-    </svg>
-  `;
+  // Use our new unified barcode generator
+  return generateBarcodeSvg(barcode);
 };
 
 /**
@@ -336,7 +123,7 @@ const generateBarcodeAsSVG = (barcode) => {
 export const printLabel = async (product, quantity = 1, options = {}) => {
   try {
     // Generate the label
-    const labelData = generatePrintableLabel(product, options);
+    const labelData = await generatePrintableLabel(product, options);
     
     // If running in Electron, use the electron API
     if (window.api?.printLabels) {

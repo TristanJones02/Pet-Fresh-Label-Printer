@@ -735,7 +735,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="${barcodeWidth}" height="${barcodeHeight}" viewBox="0 0 ${barcodeWidth} ${barcodeHeight}">
           <rect width="100%" height="100%" fill="white" />
           ${bars.map(bar => `<rect x="${bar.x}" y="${marginY}" width="${bar.width}" height="${bar.height}" fill="black" />`).join('')}
-          <text x="${barcodeWidth/2}" y="${barcodeHeight - 5}" text-anchor="middle" font-family="Arial" font-size="10" fill="black">${barcode}</text>
+          <text x="${barcodeWidth/2}" y="${barcodeHeight - 3}" text-anchor="middle" font-family="Arial" font-size="16" fill="black">${barcode}</text>
         </svg>
       `;
     }
@@ -918,6 +918,7 @@
         currentY += 15 * mmToPx;
         
         // Weight
+        labelCtx.font = `bold ${labelConfig.fonts.data.labelSize * 0.8 * mmToPx}px Arial`;
         labelCtx.fillText('WEIGHT:', leftColX, currentY);
         labelCtx.fillText(selectedProduct.weight || '500g', leftColX + (55 * mmToPx), currentY);
         

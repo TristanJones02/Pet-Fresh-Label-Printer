@@ -1,40 +1,164 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, globalShortcut } = require('electron');
 const path = require('path');
 const fs = require('fs');
-const ejs = require('ejs');
 const os = require('os');
 const { initPrinting } = require('../electron/printing');
+const configManager = require('../electron/config-manager');
 
 // Import label config from the common configuration file
 const LABEL_CONFIG = require('./label/config.json');
 
-// Keep a global reference of the window object
-let mainWindow;
+// Get the package.json for version info
+const packageJson = require('../package.json');
 
+// Import the new barcode generator
+const { generateRandomBarcode } = require('./label/utils/barcodeGenerator');
+
+// Keep a global reference of the window objects
+let mainWindow;
+let configWindow;
+
+// Initialize global app exit flag (used in kiosk mode)
+global.allowAppExit = false;
+
+/**
+ * Create the main application window based on configuration
+ */
 function createWindow() {
-  // Create the browser window
-  mainWindow = new BrowserWindow({
+  // Ensure configuration file exists
+  configManager.createDefaultConfigIfNeeded();
+  
+  // Check if app is configured
+  if (!configManager.isAppConfigured()) {
+    console.log('App not configured. Launching configuration window...');
+    createConfigWindow();
+    return;
+  }
+  
+  // Load configuration
+  const config = configManager.loadConfig();
+  
+  // Configure window options based on usage type
+  const windowOptions = {
     width: 1280,
     height: 800,
+    icon: path.join(__dirname, '../public/assets/icon.ico'),
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: true,
       preload: path.join(__dirname, 'preload.js')
     }
-  });
+  };
+  
+  // Apply kiosk mode settings if configured
+  if (config.usageType === 'kiosk') {
+    windowOptions.fullscreen = true;
+    windowOptions.kiosk = true;
+    windowOptions.autoHideMenuBar = true;
+  }
+  
+  // Create the browser window
+  mainWindow = new BrowserWindow(windowOptions);
 
   // Load the index.html file
   const indexPath = path.join(__dirname, '../public/index.html');
   mainWindow.loadFile(indexPath);
   
-  // Open the DevTools in development
-  if (process.env.NODE_ENV === 'development') {
+  // Open DevTools in development mode or if debugging is enabled
+  if (process.env.NODE_ENV === 'development' || configManager.isDebuggingEnabled()) {
     mainWindow.webContents.openDevTools();
+  } else {
+    // Disable DevTools if not in debugging mode
+    mainWindow.webContents.on('devtools-opened', () => {
+      mainWindow.webContents.closeDevTools();
+    });
+  }
+
+  // Prevent F11 from exiting kiosk mode if enabled
+  if (config.usageType === 'kiosk') {
+    mainWindow.webContents.on('before-input-event', (event, input) => {
+      if (input.key === 'F11' && input.type === 'keyDown') {
+        // Prevent default action (exiting kiosk mode)
+        event.preventDefault();
+      }
+    });
+    
+    // Register a special key combination to exit the application
+    // (Ctrl+Alt+Shift+X) - difficult to press accidentally
+    globalShortcut.register('CommandOrControl+Alt+Shift+X', () => {
+      global.allowAppExit = true;
+      app.quit();
+    });
+    
+    // Also prevent Alt+F4 from closing the app in kiosk mode
+    mainWindow.on('close', (e) => {
+      // Only prevent closing if explicit exit hasn't been requested
+      if (!global.allowAppExit) {
+        e.preventDefault();
+      }
+    });
   }
 
   // Emitted when the window is closed
   mainWindow.on('closed', function () {
     mainWindow = null;
+  });
+}
+
+/**
+ * Create the configuration window
+ */
+function createConfigWindow() {
+  // Create the browser window for configuration
+  configWindow = new BrowserWindow({
+    width: 1024,
+    height: 768,
+    fullscreen: true, // Start in fullscreen
+    icon: path.join(__dirname, '../public/assets/icon.ico'),
+    webPreferences: {
+      nodeIntegration: false,
+      contextIsolation: true,
+      enableRemoteModule: false,
+      preload: path.join(__dirname, 'preload.js')
+    }
+  });
+
+  // Log preload path to verify it exists
+  const preloadPath = path.join(__dirname, 'preload.js');
+  console.log('Loading preload script from:', preloadPath);
+  console.log('Preload exists:', fs.existsSync(preloadPath));
+
+  // Load the config HTML file
+  const configPath = path.join(__dirname, '../public/app-config.html');
+  console.log('Loading config HTML from:', configPath);
+  console.log('Config HTML exists:', fs.existsSync(configPath));
+  
+  configWindow.loadFile(configPath);
+
+  // Don't show menu bar in config window
+  configWindow.setMenuBarVisibility(false);
+  
+  // Handle F11 key for toggling fullscreen
+  configWindow.webContents.on('before-input-event', (event, input) => {
+    if (input.key === 'F11' && input.type === 'keyDown') {
+      configWindow.setFullScreen(!configWindow.isFullScreen());
+      event.preventDefault();
+    }
+  });
+  
+  // Log when the window is ready
+  configWindow.webContents.on('did-finish-load', () => {
+    console.log('Configuration window loaded');
+  });
+
+  // Emitted when the window is closed
+  configWindow.on('closed', function () {
+    configWindow = null;
+    
+    // If main window isn't created and app is still not configured, quit the app
+    if (!mainWindow && !configManager.isAppConfigured()) {
+      app.quit();
+    }
   });
 }
 
@@ -55,85 +179,87 @@ app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit();
 });
 
+// Clean up when the app is about to quit
+app.on('will-quit', () => {
+  // Unregister all shortcuts
+  globalShortcut.unregisterAll();
+});
+
+// Save app configuration
+ipcMain.handle('save-app-config', async (event, config) => {
+  try {
+    const result = configManager.saveConfig(config);
+    return { success: result };
+  } catch (error) {
+    console.error('Error saving app configuration:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+// Load app configuration
+ipcMain.handle('load-app-config', async () => {
+  try {
+    return configManager.loadConfig();
+  } catch (error) {
+    console.error('Error loading app configuration:', error);
+    return {
+      error: error.message
+    };
+  }
+});
+
+// Restart the app
+ipcMain.handle('restart-app', async () => {
+  app.relaunch();
+  app.exit();
+});
+
+// Reset configuration and restart app
+ipcMain.handle('reset-app-config', async () => {
+  try {
+    // Set allowAppExit to true for kiosk mode
+    global.allowAppExit = true;
+    
+    // Reset by removing usageType (will trigger setup on next launch)
+    const config = configManager.loadConfig();
+    config.usageType = null;
+    
+    // Save the modified config
+    const result = configManager.saveConfig(config);
+    
+    if (result) {
+      // Restart the app to show the config screen
+      app.relaunch();
+      app.exit();
+      return { success: true };
+    } else {
+      return { success: false, error: 'Failed to save configuration' };
+    }
+  } catch (error) {
+    console.error('Error resetting app configuration:', error);
+    return { success: false, error: error.message };
+  }
+});
+
 // Initialize the templates directory
 const templatesDir = path.join(__dirname, 'templates');
 if (!fs.existsSync(templatesDir)) {
   fs.mkdirSync(templatesDir, { recursive: true });
 }
 
-// Generate label preview for a product
-async function generateLabelPreview(productData) {
-  try {
-    // Generate a barcode for the product if it doesn't have one
-    const barcode = productData.barcode || generateBarcode(productData);
-    
-    // Prepare data for template
-    const templateData = {
-      product: {
-        ...productData,
-        barcode
-      },
-      config: LABEL_CONFIG,
-      logoPath: path.join(__dirname, 'assets/logo.svg')
-    };
-    
-    // Render the template
-    const templatePath = path.join(__dirname, 'templates/basic.ejs');
-    
-    // Check if template exists
-    if (!fs.existsSync(templatePath)) {
-      return {
-        error: "No template found. Please create a template file."
-      };
-    }
-    
-    const renderedHtml = await renderTemplate(templatePath, templateData);
-    
-    return {
-      html: renderedHtml,
-      barcode
-    };
-  } catch (error) {
-    console.error('Error generating label preview:', error);
-    return {
-      error: error.message
-    };
-  }
-}
-
 // IPC Event Handlers
-// Generate label preview for a product
-ipcMain.handle('generate-label-preview', async (event, productData) => {
-  return generateLabelPreview(productData);
-});
-
 // Print labels
 ipcMain.handle('print-labels', async (event, { productData, quantity = 1, printerName }) => {
   try {
-    // Generate label preview first
-    const { html } = await generateLabelPreview(productData);
-    
-    // Create print options
-    const printOptions = {
-      silent: false,
-      printBackground: true,
-      deviceName: printerName,
-      copies: quantity,
-      pageSize: {
-        width: LABEL_CONFIG.width * 1000, // microns
-        height: LABEL_CONFIG.height * 1000 // microns
-      }
-    };
-    
-    // In a real implementation, we would use a printer library
-    // For demo purposes, we'll just simulate success
+    // This is now handled by the React-based print-label-with-template system
+    console.log('Legacy print-labels handler called - redirecting to React-based system');
     
     return {
       success: true,
-      message: `Printed ${quantity} labels to ${printerName || 'default printer'}`
+      message: `Use print-label-with-template for React-based printing`
     };
   } catch (error) {
-    console.error('Error printing labels:', error);
+    console.error('Error in legacy print-labels handler:', error);
     return {
       error: error.message
     };
@@ -272,6 +398,210 @@ ipcMain.handle('get-label-config', async () => {
   }
 });
 
+// Print label using unified template system
+ipcMain.handle('print-label-with-template', async (event, { product, quantity = 1, labelConfig = null, printerSettings = null }) => {
+  try {
+    // Set up DOM environment for React server-side rendering
+    const { JSDOM } = require('jsdom');
+    const ReactDOMServer = require('react-dom/server');
+    const React = require('react');
+    
+    // Create a DOM environment for React
+    const dom = new JSDOM('<!DOCTYPE html><html><body></body></html>', {
+      url: 'http://localhost',
+      pretendToBeVisual: true,
+      resources: 'usable'
+    });
+    
+    // Set up global environment for React
+    global.window = dom.window;
+    global.document = dom.window.document;
+    global.navigator = dom.window.navigator;
+    global.HTMLElement = dom.window.HTMLElement;
+    global.React = React;
+    
+    // Import the React template generator
+    const { generateReactLabel, generateBarcodeSvg } = require('./label/template-node.js');
+    
+    // Load current config file to get latest printer adjustments
+    let config;
+    if (labelConfig) {
+      config = labelConfig;
+    } else {
+      try {
+        // Load the current config file to get latest printer adjustments
+        const configPath = path.join(__dirname, 'label/config.json');
+        const configData = fs.readFileSync(configPath, 'utf8');
+        config = JSON.parse(configData);
+      } catch (error) {
+        console.warn('Could not load current config, using default:', error);
+        config = LABEL_CONFIG;
+      }
+    }
+    
+    // Debug: Log printer adjustment values
+    console.log('🖨️ Print Config - Printer Adjustments:', {
+      printerAdjustmentLeft: config.printerAdjustmentLeft,
+      printerAdjustmentTop: config.printerAdjustmentTop,
+      isPrintMode: true
+    });
+    
+    // Calculate expiry date
+    let expiryDate;
+    
+    // Handle both new API format and legacy format
+    if (product.expirationDuration && product.expirationType) {
+      // New format: Calculate based on duration and type
+      const today = new Date();
+      expiryDate = new Date(today);
+      
+      switch (product.expirationType) {
+        case 'days':
+          expiryDate.setDate(today.getDate() + product.expirationDuration);
+          break;
+        case 'weeks':
+          expiryDate.setDate(today.getDate() + (product.expirationDuration * 7));
+          break;
+        case 'months':
+          expiryDate.setMonth(today.getMonth() + product.expirationDuration);
+          break;
+        case 'years':
+          expiryDate.setFullYear(today.getFullYear() + product.expirationDuration);
+          break;
+        default:
+          // Default to days if type is unknown
+          expiryDate.setDate(today.getDate() + product.expirationDuration);
+      }
+    } else if (product.expiryDays) {
+      // Legacy format: Calculate based on expiryDays
+      const today = new Date();
+      expiryDate = new Date(today);
+      expiryDate.setDate(today.getDate() + product.expiryDays);
+    } else {
+      // Default: 30 days if no expiry information provided
+      const today = new Date();
+      expiryDate = new Date(today);
+      expiryDate.setDate(today.getDate() + 30);
+    }
+    
+    // Format the expiry date
+    const formattedExpiryDate = expiryDate.toLocaleDateString('en-AU', {
+      day: '2-digit',
+      month: 'short',
+      year: '2-digit'
+    });
+    
+    // Format the price
+    const formattedPrice = product.price || '$0.00';
+    
+    // Options for the template generator
+    const templateOptions = {
+      formattedPrice,
+      formattedExpiryDate,
+      isPrintMode: true
+    };
+    
+    // Generate barcode SVG content
+    const barcode = product.barcode || product.sku || '0000000000000';
+    const barcodeSvgContent = generateBarcodeSvg(barcode);
+    
+    // Generate the React component
+    const LabelComponent = generateReactLabel(product, config, templateOptions);
+    
+    // Render the React component to static HTML
+    const labelHTML = ReactDOMServer.renderToStaticMarkup(
+      React.createElement(LabelComponent, { 
+        showOverlay: false,
+        barcodeSvgContent: barcodeSvgContent
+      })
+    );
+    
+    // Create complete HTML document with print-optimized styles
+    const html = `
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="utf-8">
+          <title>Label</title>
+          <style>
+            @page {
+              size: ${config.width}mm ${config.height}mm;
+              margin: 0;
+            }
+            body {
+              margin: 0;
+              padding: 0;
+              font-family: Arial, sans-serif;
+              width: ${config.width}mm;
+              height: ${config.height}mm;
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+              color-adjust: exact !important;
+            }
+            * {
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+              color-adjust: exact !important;
+            }
+            .label-container {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              background-color: white;
+            }
+            
+            /* Force all background images to print */
+            [style*="background-image"] {
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+              color-adjust: exact !important;
+            }
+          </style>
+        </head>
+        <body>${labelHTML}</body>
+      </html>
+    `;
+    
+    // Create product info for the print job
+    const productInfo = {
+      name: product.name || product.title || 'Unknown Product',
+      sku: product.sku || product.id || '',
+      category: product.category || '',
+      details: `${product.weight || ''} ${product.unit || ''}`
+    };
+    
+    // Clean up global environment
+    delete global.window;
+    delete global.document;
+    delete global.navigator;
+    delete global.HTMLElement;
+    delete global.React;
+    
+    // Return the generated HTML and product info so the frontend can call printLabel
+    return {
+      success: true,
+      html,
+      productInfo,
+      message: 'React template generated successfully'
+    };
+    
+  } catch (error) {
+    console.error('Error in print-label-with-template (React):', error);
+    
+    // Clean up global environment in case of error
+    delete global.window;
+    delete global.document;
+    delete global.navigator;
+    delete global.HTMLElement;
+    delete global.React;
+    
+    return {
+      success: false,
+      error: error.message || 'Unknown error'
+    };
+  }
+});
+
 // Product cache management
 ipcMain.handle('save-products-to-cache', async (event, products) => {
   try {
@@ -281,123 +611,6 @@ ipcMain.handle('save-products-to-cache', async (event, products) => {
   } catch (error) {
     console.error('Error saving products to cache:', error);
     return { error: error.message };
-  }
-});
-
-// Command runner for printer tools
-ipcMain.handle('run-command', async (event, command) => {
-  try {
-    console.log('Running command:', command);
-    
-    // Import child_process methods
-    const { exec } = require('child_process');
-    
-    // Handle different types of commands
-    if (command.startsWith('rundll32') && command.includes('printui.dll')) {
-      // For printer dialog commands, use the exact PowerShell command format that works
-      
-      // Extract the printer name and command type
-      let printerName = '';
-      let cmdType = '';
-      
-      if (command.includes('/n "')) {
-        const match = command.match(/\/n "([^"]+)"/);
-        printerName = match ? match[1] : '';
-      }
-      
-      let windowTitle = '';
-      if (command.includes('/p ')) {
-        windowTitle = `${printerName} Properties`;
-      } else if (command.includes('/e ')) {
-        windowTitle = "Printing Preferences";
-      } else if (command.includes('/o ')) {
-        windowTitle = printerName;
-      }
-      
-      // Use the exact PowerShell command format that works
-      const psCommand = `Start-Process "rundll32.exe" '${command.split(' ').slice(1).join(' ')}'; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
-      
-      return new Promise((resolve, reject) => {
-        exec(`powershell.exe -Command "${psCommand.replace(/"/g, '\\"')}"`, (error, stdout, stderr) => {
-          if (error) {
-            console.error('Error running printer dialog command:', error);
-            return reject({ success: false, error: error.message });
-          }
-          
-          console.log('Command output:', stdout);
-          resolve({ success: true });
-        });
-      });
-    }
-    else if (command.includes('ZebraSetupUtilities.exe')) {
-      // For Zebra setup utilities - use a similar approach with SetForegroundWindow
-      const exePath = 'C:\\Program Files\\Zebra Technologies\\Zebra Setup Utilities\\ZebraSetupUtilities.exe';
-      const windowTitle = 'Zebra Setup Utilities';
-      
-      const psCommand = `Start-Process "${exePath}"; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
-      
-      return new Promise((resolve, reject) => {
-        exec(`powershell.exe -Command "${psCommand.replace(/"/g, '\\"')}"`, (error) => {
-          if (error) {
-            console.error('Error running Zebra utilities:', error);
-            return reject({ success: false, error: error.message });
-          }
-          
-          resolve({ success: true });
-        });
-      });
-    }
-    else if (command.includes('PrnInst.exe')) {
-      // For Zebra printer installer, find the path first then launch it with the same pattern
-      return new Promise((resolve, reject) => {
-        // Use powershell to run the command (gets the installer path)
-        const psCmd = `powershell.exe -Command "${command}"`;
-        exec(psCmd, (error, stdout, stderr) => {
-          if (error) {
-            console.error('Error running printer installer:', error);
-            return reject({ success: false, error: error.message });
-          }
-          
-          // If stdout contains a path to PrnInst.exe, run it using the pattern
-          const path = stdout.trim();
-          if (path && path.includes('PrnInst.exe')) {
-            const windowTitle = 'Printer Installation Wizard';
-            const launchCmd = `Start-Process "${path}"; Start-Sleep -Seconds 1; Add-Type '[DllImport("user32.dll")] public static extern bool SetForegroundWindow(IntPtr hWnd); [DllImport("user32.dll")] public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);' -Name WinAPI -Namespace User32; $h=[User32.WinAPI]::FindWindow($null,"${windowTitle}"); if ($h -ne [IntPtr]::Zero) {[User32.WinAPI]::SetForegroundWindow($h) | Out-Null}`;
-            
-            exec(`powershell.exe -Command "${launchCmd.replace(/"/g, '\\"')}"`, (launchError) => {
-              if (launchError) {
-                console.error('Error launching printer installer:', launchError);
-                return reject({ success: false, error: launchError.message });
-              }
-              
-              resolve({ success: true });
-            });
-          } else {
-            console.error('PrnInst.exe not found:', path);
-            reject({ success: false, error: 'PrnInst.exe not found' });
-          }
-        });
-      });
-    }
-    else {
-      // For any other command
-      return new Promise((resolve, reject) => {
-        exec(command, (error, stdout, stderr) => {
-          if (error) {
-            console.error('Error running command:', error);
-            return reject({ success: false, error: error.message });
-          }
-          
-          resolve({ success: true, output: stdout });
-        });
-      });
-    }
-  } catch (error) {
-    console.error('Error running command:', error);
-    return {
-      success: false,
-      error: error.message || 'Unknown error'
-    };
   }
 });
 
@@ -457,32 +670,41 @@ ipcMain.handle('load-products-from-cache', async () => {
   }
 });
 
-// Generate a random barcode for a product
+// Generate a barcode for a product
 function generateBarcode(productData) {
-  // Use the product info to create a deterministic barcode
-  // In a real system, this would connect to your inventory system
-  const prefix = '299'; // Example prefix for pet products
-  const categoryCode = productData.category.substring(0, 2).toUpperCase();
-  
-  // Generate a random 7-character code
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
-  let productCode = '';
-  for (let i = 0; i < 7; i++) {
-    productCode += chars.charAt(Math.floor(Math.random() * chars.length));
-  }
-  
-  return `${prefix}${categoryCode}${productCode}`;
+  // Use our new on-device barcode generator instead of the old implementation
+  return generateRandomBarcode();
 }
 
-// Render an EJS template
-async function renderTemplate(templatePath, data) {
-  return new Promise((resolve, reject) => {
-    ejs.renderFile(templatePath, data, {}, (err, result) => {
-      if (err) {
-        reject(err);
-      } else {
-        resolve(result);
-      }
-    });
-  });
-} 
+// Add IPC handler to get app version
+ipcMain.handle('get-app-version', async () => {
+  return packageJson.version;
+});
+
+// Add IPC handler to load label config
+ipcMain.handle('load-label-config', async () => {
+  try {
+    const configPath = path.join(__dirname, 'label/config.json');
+    if (fs.existsSync(configPath)) {
+      const configData = fs.readFileSync(configPath, 'utf8');
+      return JSON.parse(configData);
+    } else {
+      return { error: 'Config file not found' };
+    }
+  } catch (error) {
+    console.error('Error loading label config:', error);
+    return { error: error.message };
+  }
+});
+
+// Add IPC handler to save label config
+ipcMain.handle('save-label-config', async (event, config) => {
+  try {
+    const configPath = path.join(__dirname, 'label/config.json');
+    fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
+    return { success: true };
+  } catch (error) {
+    console.error('Error saving label config:', error);
+    return { error: error.message };
+  }
+}); 

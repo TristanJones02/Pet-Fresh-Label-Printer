@@ -1,88 +1,110 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   AppBar, 
   Toolbar, 
   Typography, 
   Box, 
-  IconButton, 
-  Dialog, 
-  DialogTitle, 
-  DialogContent, 
-  DialogActions, 
-  Button, 
-  List, 
-  ListItem, 
-  ListItemText,
-  Badge
+  IconButton,
+  Tooltip
 } from '@mui/material';
 import { 
   Print as PrintIcon, 
-  Settings as SettingsIcon, 
-  Close as CloseIcon,
-  Cancel as CancelIcon,
-  Refresh as RefreshIcon
+  Settings as SettingsIcon
 } from '@mui/icons-material';
 import { useDialogs, DIALOG_TYPES } from './dialogs/DialogManager';
 
 function Header({ printerStatus, version }) {
-  const [printerDialogOpen, setPrinterDialogOpen] = useState(false);
   const { openDialog } = useDialogs();
+  const [currentTime, setCurrentTime] = useState(new Date());
+  const [selectedPrinter, setSelectedPrinter] = useState('');
   
-  // Mock print jobs for the printer dialog
-  const [printJobs, setPrintJobs] = useState([
-    { id: 1, product: 'Premium Dog Food', status: 'pending', time: '2023-04-10T14:30:00Z' },
-    { id: 2, product: 'Organic Cat Food', status: 'printing', time: '2023-04-10T14:31:00Z' },
-    { id: 3, product: 'Bird Seed Mix', status: 'completed', time: '2023-04-10T14:28:00Z' },
-  ]);
+  // Load selected printer from settings when component mounts
+  useEffect(() => {
+    const loadPrinterFromSettings = async () => {
+      try {
+        const settings = await window.api.loadSettings();
+        if (settings && settings.printer && settings.printer.defaultPrinter) {
+          setSelectedPrinter(settings.printer.defaultPrinter);
+        } else {
+          setSelectedPrinter('None Selected');
+        }
+      } catch (error) {
+        console.error('Error loading printer settings:', error);
+        setSelectedPrinter('None Selected');
+      }
+    };
+    
+    loadPrinterFromSettings();
+  }, []);
+  
+  // Update clock every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    
+    return () => clearInterval(timer);
+  }, []);
   
   // Get printer status color
   const getPrinterStatusColor = () => {
     switch (printerStatus) {
       case 'ready':
-        return '#4CAF50'; // Green
+        return '#4CAF50'; // Green - Printer ready
       case 'printing':
-        return '#4CAF50'; // Green (will be animated with CSS)
-      case 'error':
-        return '#F44336'; // Red
-      case 'systemError':
-        return '#FFC107'; // Yellow
+        return '#4CAF50'; // Green - Will be flashing (animation handled by CSS)
+      case 'generalError':
+        return '#FFC107'; // Yellow - General non-critical error
+      case 'criticalError':
+        return '#FFC107'; // Yellow - Critical error (will be flashing)
+      case 'offline':
+        return '#F44336'; // Red - Printer offline
       default:
-        return '#9E9E9E'; // Grey
+        return '#9ba03b'; // Primary app color when status unknown
     }
   };
   
-  // Handle opening the printer dialog
+  // Get printer status text for tooltip
+  const getPrinterStatusText = () => {
+    switch (printerStatus) {
+      case 'ready':
+        return 'Printer Ready';
+      case 'printing':
+        return 'Printing in Progress';
+      case 'generalError':
+        return 'General Printer Error';
+      case 'criticalError':
+        return 'Critical Printer Error';
+      case 'offline':
+        return 'Printer Offline';
+      default:
+        return 'Printer Status Unknown';
+    }
+  };
+  
+  // Format printer name to remove ZDesigner prefix
+  const formatPrinterName = (name) => {
+    if (!name) return 'No printer selected';
+    
+    // Remove ZDesigner prefix and clean up the name
+    return name.replace(/ZDesigner\s*/i, '')
+               .replace(/\s*-\s*\d+dpi\s*/i, '') // Also remove dpi information
+               .trim();
+  };
+  
+  // Format time to show only hours and minutes
+  const formatTime = (date) => {
+    return date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+  };
+  
+  // Handle opening the printer queue dialog
   const handlePrinterDialogOpen = () => {
-    setPrinterDialogOpen(true);
+    openDialog(DIALOG_TYPES.PRINT_QUEUE);
   };
   
-  // Handle closing the printer dialog
-  const handlePrinterDialogClose = () => {
-    setPrinterDialogOpen(false);
-  };
-  
-  // Handle opening the settings dialog using DialogManager
+  // Handle opening the settings dialog
   const handleSettingsDialogOpen = () => {
     openDialog(DIALOG_TYPES.SETTINGS);
-  };
-  
-  // Handle cancel print job
-  const handleCancelJob = (jobId) => {
-    setPrintJobs(prevJobs => 
-      prevJobs.map(job => 
-        job.id === jobId ? { ...job, status: 'cancelled' } : job
-      )
-    );
-  };
-  
-  // Handle reset printer spooler
-  const handleResetSpooler = () => {
-    console.log('Resetting printer spooler...');
-    // In a real app, this would communicate with the main process to reset the print spooler
-    setPrintJobs([]);
-    setTimeout(() => {
-      setPrinterDialogOpen(false);
-    }, 500);
   };
   
   return (
@@ -95,26 +117,34 @@ function Header({ printerStatus, version }) {
           </Typography>
         </Box>
         
-        {/* Middle Column - Printer Status */}
-        <Box sx={{ flex: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Typography variant="h6" sx={{ mr: 1, color: 'white' }}>
-            Printer Kitchen
+        {/* Middle Column - Printer Status and Time */}
+        <Box sx={{ flex: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <Typography variant="body1" sx={{ color: 'white', mx: 1 }}>
+            Printer: {formatPrinterName(selectedPrinter)} | {formatTime(currentTime)}
           </Typography>
-          <IconButton 
-            color="inherit" 
-            onClick={handlePrinterDialogOpen}
-            sx={{
-              color: getPrinterStatusColor(),
-              animation: printerStatus === 'printing' ? 'pulse 1.5s infinite' : 'none',
-              '@keyframes pulse': {
-                '0%': { opacity: 1 },
-                '50%': { opacity: 0.5 },
-                '100%': { opacity: 1 }
-              }
-            }}
-          >
-            <PrintIcon />
-          </IconButton>
+          <Tooltip title={getPrinterStatusText()} arrow placement="bottom">
+            <IconButton 
+              onClick={handlePrinterDialogOpen}
+              sx={{
+                bgcolor: 'white',
+                color: getPrinterStatusColor(),
+                width: 32,
+                height: 32,
+                '&:hover': { bgcolor: '#f5f5f5' },
+                ml: 1,
+                animation: printerStatus === 'printing' || printerStatus === 'criticalError' 
+                  ? 'pulse 1.5s infinite' 
+                  : 'none',
+                '@keyframes pulse': {
+                  '0%': { opacity: 1 },
+                  '50%': { opacity: 0.5 },
+                  '100%': { opacity: 1 }
+                }
+              }}
+            >
+              <PrintIcon fontSize="small" />
+            </IconButton>
+          </Tooltip>
         </Box>
         
         {/* Right Column - Version & Settings */}
@@ -127,53 +157,6 @@ function Header({ printerStatus, version }) {
           </IconButton>
         </Box>
       </Toolbar>
-      
-      {/* Printer Dialog */}
-      <Dialog
-        fullScreen
-        open={printerDialogOpen}
-        onClose={handlePrinterDialogClose}
-      >
-        <DialogTitle>
-          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Typography variant="h6">Printer Queue</Typography>
-            <IconButton edge="end" color="inherit" onClick={handlePrinterDialogClose} aria-label="close">
-              <CloseIcon />
-            </IconButton>
-          </Box>
-        </DialogTitle>
-        <DialogContent>
-          <List>
-            {printJobs.length > 0 ? (
-              printJobs.map((job) => (
-                <ListItem key={job.id}>
-                  <ListItemText 
-                    primary={job.product} 
-                    secondary={`Status: ${job.status} - Time: ${new Date(job.time).toLocaleTimeString()}`} 
-                  />
-                  {job.status !== 'completed' && job.status !== 'cancelled' && (
-                    <IconButton edge="end" aria-label="cancel" onClick={() => handleCancelJob(job.id)}>
-                      <CancelIcon />
-                    </IconButton>
-                  )}
-                </ListItem>
-              ))
-            ) : (
-              <ListItem>
-                <ListItemText primary="No print jobs in queue" />
-              </ListItem>
-            )}
-          </List>
-        </DialogContent>
-        <DialogActions>
-          <Button startIcon={<RefreshIcon />} onClick={handleResetSpooler} color="secondary">
-            Reset Print Spooler
-          </Button>
-          <Button onClick={handlePrinterDialogClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
     </AppBar>
   );
 }
