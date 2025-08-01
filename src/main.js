@@ -5,14 +5,8 @@ const os = require('os');
 const { initPrinting } = require('../electron/printing');
 const configManager = require('../electron/config-manager');
 
-// Import label config from the common configuration file
-const LABEL_CONFIG = require('./label/config.json');
-
 // Get the package.json for version info
 const packageJson = require('../package.json');
-
-// Import the new barcode generator
-const { generateRandomBarcode } = require('./label/utils/barcodeGenerator');
 
 // Keep a global reference of the window objects
 let mainWindow;

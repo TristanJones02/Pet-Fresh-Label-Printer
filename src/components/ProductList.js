@@ -34,7 +34,7 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
     } else if (selectedCategory) {
       return selectedCategory.name;
     } else {
-      return 'Products';
+      return 'All Products';
     }
   };
   
@@ -148,7 +148,7 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                             height: '2.4em'
                           }}
                         >
-                          {product.name}
+                          {product.productname}
                         </Typography>
                         
                         {/* Price and Weight on same line with icon for weight only */}
@@ -167,7 +167,7 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                               fontWeight: 'medium',
                             }}
                           >
-                            {product.price}
+                            ${(product.productprice / 100).toFixed(2)}
                           </Typography>
                           
                           <Box 
@@ -184,7 +184,7 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                                 fontWeight: 'medium',
                               }}
                             >
-                              {product.weight}
+                              {product.productSize}{product.productUnit}
                             </Typography>
                           </Box>
                         </Box>

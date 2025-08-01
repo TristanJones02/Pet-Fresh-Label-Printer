@@ -281,6 +281,126 @@ function initPrinting() {
   // Load printers initially
   refreshPrinterList();
   
+  // Import ZPL system
+  const zplSystem = require('../src/zpl');
+  
+  // ZPL Label System Handlers
+  safeHandle('generate-zpl-label', async (event, { product, options }) => {
+    try {
+      const labelData = await zplSystem.generateLabelData(product, options);
+      return {
+        success: true,
+        labelData
+      };
+    } catch (error) {
+      console.error('Error generating ZPL label:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+  
+  safeHandle('generate-zpl-preview', async (event, { product, options }) => {
+    try {
+      const zplContent = await zplSystem.generateZplForProduct(product, options);
+      const previewDataUrl = await zplSystem.generateZplPreviewDataUrl(zplContent, options.preview);
+      return {
+        success: true,
+        preview: previewDataUrl,
+        zpl: zplContent
+      };
+    } catch (error) {
+      console.error('Error generating ZPL preview:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+  
+  safeHandle('print-zpl-label', async (event, { product, options }) => {
+    try {
+      const result = await zplSystem.printProductLabel(product, options);
+      return result;
+    } catch (error) {
+      console.error('Error printing ZPL label:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+  
+  safeHandle('test-zpl-printer', async (event, options) => {
+    try {
+      const result = await zplSystem.testPrinterCommunication(options);
+      return result;
+    } catch (error) {
+      console.error('Error testing ZPL printer:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+
+  safeHandle('cancel-print-job', async (event, options = {}) => {
+    try {
+      const networkPrinter = require('../src/zpl/networkPrinter');
+      const result = await networkPrinter.sendStopCommand(options);
+      return result;
+    } catch (error) {
+      console.error('Error cancelling print job:', error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+
+  safeHandle('send-printer-command', async (event, commandType) => {
+    try {
+      const fs = require('fs').promises;
+      const path = require('path');
+      const networkPrinter = require('../src/zpl/networkPrinter');
+      
+      // Load the appropriate ZPL command file
+      const commandPath = path.join(__dirname, '../src/zpl/printer_commands', `${commandType}.zpl`);
+      const commandContent = await fs.readFile(commandPath, 'utf8');
+      
+      // Send the command to the network printer
+      const result = await networkPrinter.printToNetworkPrinter(commandContent);
+      return result;
+    } catch (error) {
+      console.error(`Error sending ${commandType} command:`, error);
+      return {
+        success: false,
+        error: error.message
+      };
+    }
+  });
+
+  safeHandle('check-network-share', async (event, networkPath) => {
+    try {
+      const fs = require('fs').promises;
+      
+      // Try to access the network share
+      try {
+        await fs.access(networkPath);
+        return { exists: true };
+      } catch (accessError) {
+        return { exists: false };
+      }
+    } catch (error) {
+      console.error('Error checking network share:', error);
+      return {
+        exists: false,
+        error: error.message
+      };
+    }
+  });
+  
   // Set up IPC handlers for print requests
   safeHandle('print-label', async (event, options) => {
     try {

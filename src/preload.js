@@ -34,6 +34,29 @@ contextBridge.exposeInMainWorld(
       });
     },
     
+    // ZPL Label System
+    generateZplLabel: (product, options = {}) => {
+      return ipcRenderer.invoke('generate-zpl-label', { product, options });
+    },
+    generateZplPreview: (product, options = {}) => {
+      return ipcRenderer.invoke('generate-zpl-preview', { product, options });
+    },
+    printZplLabel: (product, options = {}) => {
+      return ipcRenderer.invoke('print-zpl-label', { product, options });
+    },
+    testZplPrinter: (options = {}) => {
+      return ipcRenderer.invoke('test-zpl-printer', options);
+    },
+    cancelPrintJob: (options = {}) => {
+      return ipcRenderer.invoke('cancel-print-job', options);
+    },
+    sendPrinterCommand: (commandType) => {
+      return ipcRenderer.invoke('send-printer-command', commandType);
+    },
+    checkNetworkShare: (networkPath) => {
+      return ipcRenderer.invoke('check-network-share', networkPath);
+    },
+    
     // Print jobs management
     getPrintJobs: () => {
       return ipcRenderer.invoke('get-print-jobs');

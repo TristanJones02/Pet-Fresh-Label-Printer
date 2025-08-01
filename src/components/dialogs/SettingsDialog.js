@@ -24,6 +24,10 @@ const AddIcon = require('@mui/icons-material/Add').default;
 const TuneIcon = require('@mui/icons-material/Tune').default;
 const TestIcon = require('@mui/icons-material/BugReport').default;
 const ConnectIcon = require('@mui/icons-material/Cable').default;
+const RestartAltIcon = require('@mui/icons-material/RestartAlt').default;
+const TuningIcon = require('@mui/icons-material/Tune').default;
+const CheckCircleIcon = require('@mui/icons-material/CheckCircle').default;
+const ErrorIcon = require('@mui/icons-material/Error').default;
 
 // TabPanel component to handle tab content
 function TabPanel(props) {
@@ -45,24 +49,13 @@ function TabPanel(props) {
 
 function SettingsDialog({ open, onClose }) {
   const [tabValue, setTabValue] = useState(0);
-  const [printers, setPrinters] = useState([]);
-  const [systemPrinters, setSystemPrinters] = useState([]);
-  const [selectedPrinter, setSelectedPrinter] = useState('');
   const [currentTime, setCurrentTime] = useState(new Date());
   const [publicIpAddress, setPublicIpAddress] = useState('Fetching...');
   const [privateIpAddress, setPrivateIpAddress] = useState('Fetching...');
   const [allIpAddresses, setAllIpAddresses] = useState([]);
-  const [hasZebraPrinter, setHasZebraPrinter] = useState(false);
-  const [loadingPrinters, setLoadingPrinters] = useState(true);
-  const [isPrinting, setIsPrinting] = useState(false);
   const [printMessage, setPrintMessage] = useState(null);
   const [showPrintMessage, setShowPrintMessage] = useState(false);
   const [settings, setSettings] = useState({
-    printer: {
-      defaultPrinter: '',
-      showConfirmation: false,
-      disableAutomaticPrinting: false
-    },
     application: {
       devImageGeneration: false,
       devImagePath: '',
@@ -70,15 +63,15 @@ function SettingsDialog({ open, onClose }) {
       includeGraphics: false
     }
   });
-  const [isZebraPrinterSelected, setIsZebraPrinterSelected] = useState(false);
-  const [printerAdjustmentLeft, setPrinterAdjustmentLeft] = useState(0);
-  const [printerAdjustmentTop, setPrinterAdjustmentTop] = useState(0);
+  const [networkPrinterStatus, setNetworkPrinterStatus] = useState('checking');
+  const [printerServiceStatus, setPrinterServiceStatus] = useState('checking');
 
   // Load settings when dialog opens
   useEffect(() => {
     if (open) {
-      loadSettingsAndInitialPrinter();
+      loadSettings();
       getSystemInfo();
+      checkNetworkPrinter();
       
       // Reset toast message when dialog opens
       setShowPrintMessage(false);
@@ -99,149 +92,80 @@ function SettingsDialog({ open, onClose }) {
     }
   }, [showPrintMessage]);
 
-  // Load settings and create initial printer option for previously selected printer
-  const loadSettingsAndInitialPrinter = async () => {
+  // Load settings 
+  const loadSettings = async () => {
     try {
-      setLoadingPrinters(true);
       const loadedSettings = await window.api.loadSettings();
-      
-      // Load label config to get printer adjustment values
-      const labelConfig = await window.api.loadLabelConfig();
       
       if (loadedSettings && !loadedSettings.error) {
         setSettings(loadedSettings);
-        
-        // If there's a previously selected printer, create an initial option for it
-        if (loadedSettings.printer.defaultPrinter) {
-          const initialPrinter = loadedSettings.printer.defaultPrinter;
-          setSelectedPrinter(initialPrinter);
-          
-          // Create an initial printer list with just the selected printer
-          // This allows the UI to show the previously selected printer immediately
-          setSystemPrinters([
-            { name: initialPrinter, isDefault: true, isLoading: true }
-          ]);
-        }
       }
-      
-      // Load printer adjustment values from label config
-      if (labelConfig && !labelConfig.error) {
-        setPrinterAdjustmentLeft(labelConfig.printerAdjustmentLeft || 0);
-        setPrinterAdjustmentTop(labelConfig.printerAdjustmentTop || 0);
-      }
-      
-      // Load the full printer list in the background
-      loadSystemPrinters();
     } catch (error) {
       console.error('Error loading settings:', error);
-      // Still try to load printers even if settings fail
-      loadSystemPrinters();
     }
   };
 
-  // Load installed system printers
-  const loadSystemPrinters = async () => {
+  // Check network printer status
+  const checkNetworkPrinter = async () => {
     try {
-      const printerList = await window.api.getPrinters();
-      console.log('System printers:', printerList);
+      setNetworkPrinterStatus('checking');
+      setPrinterServiceStatus('checking');
       
-      // Check if any Zebra printers are installed
-      const hasZebra = printerList.some(printer => 
-        printer.name.toLowerCase().includes('zebra') || 
-        printer.name.toLowerCase().includes('zdesigner')
-      );
-      setHasZebraPrinter(hasZebra);
+      // Get hostname for network path
+      const { getSystemHostname } = require('../../utils/systemConfig');
+      const hostname = getSystemHostname();
+      const networkPath = `\\\\${hostname}\\zebra_print`;
       
-      // If we have a selected printer that's not in the list, add it
-      let updatedPrinterList = [...printerList];
-      if (selectedPrinter && !printerList.find(p => p.name === selectedPrinter)) {
-        updatedPrinterList.push({
-          name: selectedPrinter,
-          isDefault: false,
-          temporary: true // Mark as temporary so we know it wasn't found on the system
-        });
-      }
+      // Check if network printer share exists
+      const shareCheck = await window.api.checkNetworkShare(networkPath);
+      setNetworkPrinterStatus(shareCheck.exists ? 'available' : 'unavailable');
       
-      // Update the printer list
-      setSystemPrinters(updatedPrinterList);
+      // Check printer service status by testing connection
+      const serviceCheck = await window.api.testZplPrinter({ timeout: 5000 });
+      setPrinterServiceStatus(serviceCheck.success ? 'active' : 'inactive');
       
-      // If no printer is selected yet, select the default one
-      if (!selectedPrinter) {
-        const defaultPrinter = printerList.find(p => p.isDefault);
-        setSelectedPrinter(defaultPrinter ? defaultPrinter.name : (printerList.length > 0 ? printerList[0].name : ''));
-      }
-      
-      // Check if selected printer is a Zebra printer
-      checkIfZebraPrinter(selectedPrinter);
-      
-      setLoadingPrinters(false);
     } catch (error) {
-      console.error('Error loading system printers:', error);
-      setLoadingPrinters(false);
-      
-      // If we have a selected printer but no printers loaded, create a temporary one
-      if (selectedPrinter && systemPrinters.length === 0) {
-        setSystemPrinters([
-          { name: selectedPrinter, isDefault: true, temporary: true }
-        ]);
-      }
+      console.error('Error checking network printer:', error);
+      setNetworkPrinterStatus('error');
+      setPrinterServiceStatus('error');
     }
   };
 
-  // Check if the selected printer is a Zebra printer
-  const checkIfZebraPrinter = (printerName) => {
-    if (!printerName) {
-      setIsZebraPrinterSelected(false);
-      return;
-    }
-    
-    const isZebra = printerName.toLowerCase().includes('zebra') || 
-                   printerName.toLowerCase().includes('zdesigner');
-    setIsZebraPrinterSelected(isZebra);
-  };
-
-  // Handle printer selection change
-  const handlePrinterChange = (event) => {
-    const newPrinter = event.target.value;
-    setSelectedPrinter(newPrinter);
-    checkIfZebraPrinter(newPrinter);
-  };
   
-  // Run Zebra printer tool command
-  const runPrinterCommand = async (command) => {
+  // Send printer command (recalibrate or restart)
+  const sendPrinterCommand = async (commandType) => {
     try {
-      // Show a message that the printer tool is launching
       setPrintMessage({
-        text: 'Launching printer tool, please wait...',
+        text: `Sending ${commandType} command to printer...`,
         type: 'info'
       });
       setShowPrintMessage(true);
       
-      // Replace the printer name in the command
-      const finalCommand = command.replace(/ZDesigner ZT230-200dpi/g, selectedPrinter);
-      
-      // Use the appropriate API method to run the command
-      const result = await window.api.runCommand(finalCommand);
+      // Use the network printer system to send commands
+      const result = await window.api.sendPrinterCommand(commandType);
       
       if (result.success) {
-        // Show success message but keep dialog open
         setPrintMessage({
-          text: 'Tool launched successfully!',
+          text: `${commandType} command sent successfully!`,
           type: 'success'
         });
         setShowPrintMessage(true);
+        
+        // Refresh printer status after command
+        setTimeout(() => {
+          checkNetworkPrinter();
+        }, 2000);
       } else {
-        // Show error
         setPrintMessage({
-          text: `Error: ${result.error || 'Failed to launch printer tool'}`,
+          text: `Error sending ${commandType} command: ${result.error || 'Unknown error'}`,
           type: 'error'
         });
         setShowPrintMessage(true);
       }
     } catch (error) {
-      console.error('Error running printer command:', error);
+      console.error(`Error sending ${commandType} command:`, error);
       setPrintMessage({
-        text: `Error: ${error.message || 'Unknown error running printer command'}`,
+        text: `Error: ${error.message || `Unknown error sending ${commandType} command`}`,
         type: 'error'
       });
       setShowPrintMessage(true);
@@ -259,11 +183,6 @@ function SettingsDialog({ open, onClose }) {
     }
   }, [open]);
 
-  // Force re-render when selected printer changes
-  useEffect(() => {
-    console.log("Selected printer updated:", selectedPrinter);
-    // This useEffect is just to ensure the UI updates when selectedPrinter changes
-  }, [selectedPrinter]);
 
   const getSystemInfo = async () => {
     try {
@@ -289,29 +208,8 @@ function SettingsDialog({ open, onClose }) {
   };
 
   const handleSave = async () => {
-    // Update settings object
-    const updatedSettings = {
-      ...settings,
-      printer: {
-        ...settings.printer,
-        defaultPrinter: selectedPrinter
-      }
-    };
-    
     try {
-      await window.api.saveSettings(updatedSettings);
-      
-      // Save printer adjustment values to label config
-      const currentConfig = await window.api.loadLabelConfig();
-      if (currentConfig && !currentConfig.error) {
-        const updatedConfig = {
-          ...currentConfig,
-          printerAdjustmentLeft: printerAdjustmentLeft,
-          printerAdjustmentTop: printerAdjustmentTop
-        };
-        await window.api.saveLabelConfig(updatedConfig);
-      }
-      
+      await window.api.saveSettings(settings);
       onClose();
     } catch (error) {
       console.error('Error saving settings:', error);
@@ -358,40 +256,6 @@ function SettingsDialog({ open, onClose }) {
     });
   };
 
-  const handlePrintConfirmationChange = (event) => {
-    setSettings({
-      ...settings,
-      printer: {
-        ...settings.printer,
-        showConfirmation: event.target.checked
-      }
-    });
-  };
-
-  const handleDisableAutoPrintingChange = (event) => {
-    setSettings({
-      ...settings,
-      printer: {
-        ...settings.printer,
-        disableAutomaticPrinting: event.target.checked
-      }
-    });
-  };
-
-  const handlePrinterAdjustmentLeftChange = (event) => {
-    const value = parseFloat(event.target.value) || 0;
-    setPrinterAdjustmentLeft(value);
-  };
-
-  const handlePrinterAdjustmentTopChange = (event) => {
-    const value = parseFloat(event.target.value) || 0;
-    setPrinterAdjustmentTop(value);
-  };
-
-  const handleRefreshPrinters = async () => {
-    setLoadingPrinters(true);
-    await loadSystemPrinters();
-  };
 
   // Function to print a test label
   const printTestLabel = async () => {
@@ -516,7 +380,7 @@ function SettingsDialog({ open, onClose }) {
         { display: 'flex', alignItems: 'center', gap: 1 },
       React.createElement(Typography, { variant: 'h6', fontWeight: 'bold' }, 'Settings'),
         React.createElement(Typography, { variant: 'body2', sx: { ml: 2, opacity: 0.9 } }, 
-          `Printer: ${selectedPrinter || 'None Selected'} | Time: ${currentTime.toLocaleString()}`
+          `Time: ${currentTime.toLocaleString()}`
         )
       ),
       React.createElement(
@@ -571,181 +435,111 @@ function SettingsDialog({ open, onClose }) {
     )
   );
 
+  // Helper function to get status icon and color
+  const getStatusIcon = (status) => {
+    switch(status) {
+      case 'available':
+      case 'active':
+        return React.createElement(CheckCircleIcon, { sx: { color: 'success.main' } });
+      case 'unavailable':
+      case 'inactive':
+        return React.createElement(ErrorIcon, { sx: { color: 'error.main' } });
+      case 'checking':
+        return React.createElement(CircularProgress, { size: 20 });
+      default:
+        return React.createElement(ErrorIcon, { sx: { color: 'warning.main' } });
+    }
+  };
+
   // Create Printer Settings Tab
   const printerSettingsTab = React.createElement(
     TabPanel,
     { value: tabValue, index: 0 },
     
-    // Zebra Printer Alert
-    !hasZebraPrinter && React.createElement(
-      Alert,
-      { 
-        severity: "warning",
-        sx: { mb: 3 }
-      },
-      React.createElement(
-        React.Fragment,
-        {},
-        "A Zebra Label Printer was not found on your system. Please ",
-        React.createElement(
-          Link,
-          { 
-            href: "https://www.zebra.com/us/en/support-downloads/printers/desktop/zd420-series.html",
-            target: "_blank",
-            underline: "hover"
-          },
-          "click here"
-        ),
-        " to download the driver - You will need to select your printer model click Downloads and Driver"
-      )
-    ),
-    
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Available Printers'),
-    
-    // Button row with Refresh and Test Print
+    // Network Printer Status Section
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Network Printer Status'),
     React.createElement(
-      Box,
-      { sx: { mb: 2, display: 'flex', justifyContent: 'flex-end', gap: 1 } },
-      // Test Print Button
-      selectedPrinter && React.createElement(
-        Tooltip,
-        { title: "Print a test label to verify printer functionality" },
+      Paper,
+      { variant: 'outlined', sx: { p: 2, mb: 3 } },
+      
+      // Network Share Status
+      React.createElement(
+        ListItem,
+        { sx: { px: 0 } },
+        React.createElement(ListItemIcon, {}, getStatusIcon(networkPrinterStatus)),
         React.createElement(
-          Button,
-          { 
-            variant: 'outlined',
-            onClick: printTestLabel,
-            size: 'small',
-            startIcon: React.createElement(TestIcon),
-            disabled: loadingPrinters || isPrinting || !selectedPrinter,
-            color: "secondary"
-          },
-          isPrinting ? 'Printing...' : 'Test Print'
+          ListItemText,
+          {
+            primary: 'Network Printer Share',
+            secondary: networkPrinterStatus === 'available' ? 'zebra_print share is accessible' :
+                      networkPrinterStatus === 'unavailable' ? 'zebra_print share not found' :
+                      networkPrinterStatus === 'checking' ? 'Checking network share...' :
+                      'Error checking network share',
+            primaryTypographyProps: { fontWeight: 'bold' }
+          }
         )
       ),
-      // Refresh Button
+      
+      // Printer Service Status
       React.createElement(
-        Button,
-        { 
-          variant: 'outlined',
-          onClick: handleRefreshPrinters,
-          size: 'small',
-          startIcon: React.createElement(PrintIcon),
-          disabled: loadingPrinters
-        },
-        loadingPrinters ? 'Refreshing...' : 'Refresh Printers'
+        ListItem,
+        { sx: { px: 0 } },
+        React.createElement(ListItemIcon, {}, getStatusIcon(printerServiceStatus)),
+        React.createElement(
+          ListItemText,
+          {
+            primary: 'Printer Service Status',
+            secondary: printerServiceStatus === 'active' ? 'Printer is responding to commands' :
+                      printerServiceStatus === 'inactive' ? 'Printer not responding' :
+                      printerServiceStatus === 'checking' ? 'Testing printer connection...' :
+                      'Error testing printer connection'
+          }
+        )
       )
     ),
     
-    // Printer selection with loading state
+    // Printer Commands Section
+    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Printer Commands'),
     React.createElement(
-      Box,
-      { sx: { mb: 3 } },
-      systemPrinters.length === 0 && !loadingPrinters
-        ? React.createElement(Typography, { variant: 'body2', sx: { mb: 2 } }, 'No printers found on your system')
-        : React.createElement(
-          Box,
-          { position: 'relative' },
+      Paper,
+      { variant: 'outlined', sx: { p: 2 } },
       React.createElement(
-        FormControl,
-        { fullWidth: true, variant: 'outlined', size: 'small' },
-        React.createElement(InputLabel, { id: 'printer-select-label' }, 'Default Printer'),
+        Grid,
+        { container: true, spacing: 2 },
+        
+        // Recalibrate Button
         React.createElement(
-          Select,
-          {
-            labelId: 'printer-select-label',
-            id: 'printer-select',
-            value: selectedPrinter,
-                onChange: handlePrinterChange,
-                label: 'Default Printer',
-                disabled: loadingPrinters
-          },
-              systemPrinters.map(printer => 
-            React.createElement(
-              MenuItem,
-                  { 
-                    key: printer.name, 
-                    value: printer.name,
-                    disabled: printer.isLoading
-                  },
-                  `${printer.name} ${printer.isDefault ? ' (System Default)' : ''} ${printer.temporary ? ' (Not Found)' : ''} ${printer.isLoading ? ' (Loading...)' : ''}`
-                )
-              )
-            )
-          ),
-          loadingPrinters && React.createElement(
-            CircularProgress,
+          Grid,
+          { item: true, xs: 6 },
+          React.createElement(
+            Button,
             {
-              size: 20,
-              sx: {
-                position: 'absolute',
-                top: '50%',
-                right: 30,
-                marginTop: '-10px'
-              }
-            }
+              variant: 'outlined',
+              fullWidth: true,
+              startIcon: React.createElement(TuningIcon),
+              onClick: () => sendPrinterCommand('recalibrate'),
+              sx: { py: 1.5 }
+            },
+            'Recalibrate Printer'
+          )
+        ),
+        
+        // Restart Button
+        React.createElement(
+          Grid,
+          { item: true, xs: 6 },
+          React.createElement(
+            Button,
+            {
+              variant: 'outlined',
+              fullWidth: true,
+              startIcon: React.createElement(RestartAltIcon),
+              onClick: () => sendPrinterCommand('restart'),
+              sx: { py: 1.5 }
+            },
+            'Restart Printer'
           )
         )
-    ),
-    
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Printer Options'),
-    React.createElement(
-      FormGroup,
-      {},
-      React.createElement(
-        FormControlLabel,
-        { 
-          control: React.createElement(
-            Checkbox, 
-            { 
-              checked: settings.printer.showConfirmation,
-              onChange: handlePrintConfirmationChange 
-            }
-          ), 
-          label: 'Show print confirmation dialog' 
-        }
-      )
-    ),
-    
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true, sx: { mt: 3 } }, 'Printer Adjustments'),
-    React.createElement(Typography, { variant: 'body2', color: 'text.secondary', sx: { mb: 2 } }, 'Fine-tune print positioning to account for printer-specific variations. These adjustments only apply to printed output, not the preview.'),
-    
-    React.createElement(
-      Box,
-      { sx: { display: 'flex', gap: 2, mb: 2 } },
-      React.createElement(
-        TextField,
-        {
-          label: 'Left Adjustment (mm)',
-          type: 'number',
-          size: 'small',
-          value: printerAdjustmentLeft,
-          onChange: handlePrinterAdjustmentLeftChange,
-          inputProps: { 
-            step: 0.5,
-            min: -10,
-            max: 10
-          },
-          helperText: 'Positive values move content right',
-          sx: { flex: 1 }
-        }
-      ),
-      React.createElement(
-        TextField,
-        {
-          label: 'Top Adjustment (mm)',
-          type: 'number',
-          size: 'small',
-          value: printerAdjustmentTop,
-          onChange: handlePrinterAdjustmentTopChange,
-          inputProps: { 
-            step: 0.5,
-            min: -10,
-            max: 10
-          },
-          helperText: 'Positive values move content down',
-          sx: { flex: 1 }
-        }
       )
     )
   );
@@ -915,123 +709,20 @@ function SettingsDialog({ open, onClose }) {
     TabPanel,
     { value: tabValue, index: 2 },
     
-    // Printing Options section
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true }, 'Printing Options'),
     React.createElement(
-      Paper,
+      Box,
       { 
-        variant: 'outlined',
-        sx: { p: 2, mb: 3 }
-      },
-      // Disable Automatic Printing option
-      React.createElement(
-        FormControlLabel,
-        { 
-          control: React.createElement(
-            Switch,
-            {
-              checked: settings.printer.disableAutomaticPrinting,
-              onChange: handleDisableAutoPrintingChange
-            }
-          ), 
-          label: React.createElement(
-            Typography,
-            { variant: 'subtitle1', fontWeight: 'medium' },
-            'Disable Automatic Printing'
-          )
+        sx: { 
+          display: 'flex', 
+          flexDirection: 'column', 
+          justifyContent: 'center', 
+          alignItems: 'center',
+          height: '300px',
+          color: 'text.secondary'
         }
-      ),
-      React.createElement(
-        Typography,
-        { variant: 'body2', color: 'text.secondary', sx: { mt: 1, mb: 2 } },
-        'When enabled, a system print dialog will appear instead of sending labels directly to the selected printer. Canceling this dialog will be logged.'
-      )
-    ),
-    
-    // Development Image Generation
-    React.createElement(Typography, { variant: 'h6', gutterBottom: true, mt: 3 }, 'Development Image Generation'),
-    React.createElement(
-      Paper,
-      { 
-        variant: 'outlined',
-        sx: { p: 2, mb: 3 }
       },
-      React.createElement(
-        FormControlLabel,
-        { 
-          control: React.createElement(
-            Switch,
-            {
-              checked: settings.application.devImageGeneration,
-              onChange: handleDevImageGenerationChange
-            }
-          ), 
-          label: React.createElement(
-            Typography,
-            { variant: 'subtitle1', fontWeight: 'medium' },
-            'Enable Development Image Generation'
-          )
-        }
-      ),
-      React.createElement(
-        Typography,
-        { variant: 'body2', color: 'text.secondary', sx: { mt: 1, mb: 2 } },
-        'When enabled, high-quality PNG images will be generated instead of PDFs for development purposes.'
-      ),
-      settings.application.devImageGeneration && React.createElement(
-        React.Fragment,
-        {},
-        React.createElement(
-          TextField,
-          {
-            fullWidth: true,
-            label: 'Image Output Directory',
-            variant: 'outlined',
-            size: 'small',
-            value: settings.application.devImagePath,
-            onChange: handleDevImagePathChange,
-            InputProps: {
-              startAdornment: React.createElement(
-                InputAdornment,
-                { position: 'start' },
-                React.createElement(FolderIcon, { fontSize: 'small' })
-              ),
-            },
-            helperText: 'Location where PNG images will be saved',
-            sx: { mb: 2 }
-          }
-        ),
-        
-        // Content-only option
-        React.createElement(
-          FormControlLabel,
-          { 
-            control: React.createElement(
-              Checkbox, 
-              { 
-                checked: settings.application.includeContentOnly,
-                onChange: handleContentOnlyChange 
-              }
-            ), 
-            label: 'Include label content only (no borders/margins)'
-          }
-        ),
-        
-        // Include graphics option
-        React.createElement(
-          FormControlLabel,
-          { 
-            control: React.createElement(
-              Checkbox, 
-              { 
-                checked: settings.application.includeGraphics,
-                onChange: handleIncludeGraphicsChange 
-              }
-            ), 
-            label: 'Include graphics overlay in generated images'
-          }
-        )
-      )
+      React.createElement(Typography, { variant: 'h6', sx: { mb: 2 } }, 'Application Settings'),
+      React.createElement(Typography, { variant: 'body1' }, 'Placeholder for application configuration')
     )
   );
 

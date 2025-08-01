@@ -3213,6 +3213,29 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
+/***/ "./node_modules/@mui/icons-material/RestartAlt.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/icons-material/RestartAlt.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+"use client";
+
+var _interopRequireDefault = (__webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js")["default"]);
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@mui/icons-material/utils/createSvgIcon.js"));
+var _jsxRuntime = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+  d: "M12 5V2L8 6l4 4V7c3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93 0-4.42-3.58-8-8-8m-6 8c0-1.65.67-3.15 1.76-4.24L6.34 7.34C4.9 8.79 4 10.79 4 13c0 4.08 3.05 7.44 7 7.93v-2.02c-2.83-.48-5-2.94-5-5.91"
+}), 'RestartAlt');
+
+/***/ }),
+
 /***/ "./node_modules/@mui/icons-material/Router.js":
 /*!****************************************************!*\
   !*** ./node_modules/@mui/icons-material/Router.js ***!
@@ -3282,124 +3305,9 @@ var _default = exports["default"] = (0, _createSvgIcon.default)(/*#__PURE__*/(0,
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/esm/Add.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Add.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z"
-}), 'Add'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/Backspace.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Backspace.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12z"
-}), 'Backspace'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/Close.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Close.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
-}), 'Close'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/DesignServices.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/DesignServices.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "m16.24 11.51 1.57-1.57-3.75-3.75-1.57 1.57-4.14-4.13c-.78-.78-2.05-.78-2.83 0l-1.9 1.9c-.78.78-.78 2.05 0 2.83l4.13 4.13L3 17.25V21h3.75l4.76-4.76 4.13 4.13c.95.95 2.23.6 2.83 0l1.9-1.9c.78-.78.78-2.05 0-2.83zm-7.06-.44L5.04 6.94l1.89-1.9L8.2 6.31 7.02 7.5l1.41 1.41 1.19-1.19 1.45 1.45zm7.88 7.89-4.13-4.13 1.9-1.9 1.45 1.45-1.19 1.19 1.41 1.41 1.19-1.19 1.27 1.27zm3.65-11.92c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.47-.47-1.12-.29-1.41 0l-1.83 1.83 3.75 3.75z"
-}), 'DesignServices'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/Print.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Print.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M19 8H5c-1.66 0-3 1.34-3 3v6h4v4h12v-4h4v-6c0-1.66-1.34-3-3-3m-3 11H8v-5h8zm3-7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1m-1-9H6v4h12z"
-}), 'Print'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/Remove.js":
+/***/ "./node_modules/@mui/icons-material/esm/Cancel.js":
 /*!********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/Remove.js ***!
+  !*** ./node_modules/@mui/icons-material/esm/Cancel.js ***!
   \********************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
@@ -3415,15 +3323,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M19 13H5v-2h14z"
-}), 'Remove'));
+  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2m5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12z"
+}), 'Cancel'));
 
 /***/ }),
 
-/***/ "./node_modules/@mui/icons-material/esm/RestartAlt.js":
-/*!************************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/RestartAlt.js ***!
-  \************************************************************/
+/***/ "./node_modules/@mui/icons-material/esm/CheckCircle.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/@mui/icons-material/esm/CheckCircle.js ***!
+  \*************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -3438,8 +3346,31 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M12 5V2L8 6l4 4V7c3.31 0 6 2.69 6 6 0 2.97-2.17 5.43-5 5.91v2.02c3.95-.49 7-3.85 7-7.93 0-4.42-3.58-8-8-8m-6 8c0-1.65.67-3.15 1.76-4.24L6.34 7.34C4.9 8.79 4 10.79 4 13c0 4.08 3.05 7.44 7 7.93v-2.02c-2.83-.48-5-2.94-5-5.91"
-}), 'RestartAlt'));
+  d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8z"
+}), 'CheckCircle'));
+
+/***/ }),
+
+/***/ "./node_modules/@mui/icons-material/esm/Error.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@mui/icons-material/esm/Error.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+"use client";
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
+  d: "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m1 15h-2v-2h2zm0-4h-2V7h2z"
+}), 'Error'));
 
 /***/ }),
 
@@ -3509,54 +3440,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
   d: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6"
 }), 'Settings'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/ZoomIn.js":
-/*!********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/ZoomIn.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])([/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14"
-}, "0"), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M12 10h-2v2H9v-2H7V9h2V7h1v2h2z"
-}, "1")], 'ZoomIn'));
-
-/***/ }),
-
-/***/ "./node_modules/@mui/icons-material/esm/ZoomOut.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@mui/icons-material/esm/ZoomOut.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/createSvgIcon.js */ "./node_modules/@mui/material/esm/utils/createSvgIcon.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-"use client";
-
-
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_utils_createSvgIcon_js__WEBPACK_IMPORTED_MODULE_1__["default"])(/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("path", {
-  d: "M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14M7 9h5v1H7z"
-}), 'ZoomOut'));
 
 /***/ }),
 
@@ -58257,425 +58140,6 @@ const touchRippleClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTE
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/esm/ButtonGroup/ButtonGroup.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ButtonGroup/ButtonGroup.js ***!
-  \*******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/esm/colorManipulator/colorManipulator.js");
-/* harmony import */ var _mui_utils_getValidReactChildren__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils/getValidReactChildren */ "./node_modules/@mui/utils/esm/getValidReactChildren/getValidReactChildren.js");
-/* harmony import */ var _utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../utils/capitalize.js */ "./node_modules/@mui/material/esm/utils/capitalize.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
-/* harmony import */ var _utils_createSimplePaletteValueFilter_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/createSimplePaletteValueFilter.js */ "./node_modules/@mui/material/esm/utils/createSimplePaletteValueFilter.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./buttonGroupClasses.js */ "./node_modules/@mui/material/esm/ButtonGroup/buttonGroupClasses.js");
-/* harmony import */ var _ButtonGroupContext_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./ButtonGroupContext.js */ "./node_modules/@mui/material/esm/ButtonGroup/ButtonGroupContext.js");
-/* harmony import */ var _ButtonGroupButtonContext_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./ButtonGroupButtonContext.js */ "./node_modules/@mui/material/esm/ButtonGroup/ButtonGroupButtonContext.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const overridesResolver = (props, styles) => {
-  const {
-    ownerState
-  } = props;
-  return [{
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: styles.grouped
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: styles[`grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.orientation)}`]
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: styles[`grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.variant)}`]
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: styles[`grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.variant)}${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.orientation)}`]
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: styles[`grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.variant)}${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(ownerState.color)}`]
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton}`]: styles.firstButton
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].lastButton}`]: styles.lastButton
-  }, {
-    [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: styles.middleButton
-  }, styles.root, styles[ownerState.variant], ownerState.disableElevation === true && styles.disableElevation, ownerState.fullWidth && styles.fullWidth, ownerState.orientation === 'vertical' && styles.vertical];
-};
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    color,
-    disabled,
-    disableElevation,
-    fullWidth,
-    orientation,
-    variant
-  } = ownerState;
-  const slots = {
-    root: ['root', variant, orientation, fullWidth && 'fullWidth', disableElevation && 'disableElevation', `color${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(color)}`],
-    grouped: ['grouped', `grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(orientation)}`, `grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(variant)}`, `grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(variant)}${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(orientation)}`, `grouped${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(variant)}${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_4__["default"])(color)}`, disabled && 'disabled'],
-    firstButton: ['firstButton'],
-    lastButton: ['lastButton'],
-    middleButton: ['middleButton']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__.getButtonGroupUtilityClass, classes);
-};
-const ButtonGroupRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])('div', {
-  name: 'MuiButtonGroup',
-  slot: 'Root',
-  overridesResolver
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_7__["default"])(({
-  theme
-}) => ({
-  display: 'inline-flex',
-  borderRadius: (theme.vars || theme).shape.borderRadius,
-  variants: [{
-    props: {
-      variant: 'contained'
-    },
-    style: {
-      boxShadow: (theme.vars || theme).shadows[2]
-    }
-  }, {
-    props: {
-      disableElevation: true
-    },
-    style: {
-      boxShadow: 'none'
-    }
-  }, {
-    props: {
-      fullWidth: true
-    },
-    style: {
-      width: '100%'
-    }
-  }, {
-    props: {
-      orientation: 'vertical'
-    },
-    style: {
-      flexDirection: 'column',
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].lastButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderTopRightRadius: 0,
-        borderTopLeftRadius: 0
-      },
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderBottomRightRadius: 0,
-        borderBottomLeftRadius: 0
-      }
-    }
-  }, {
-    props: {
-      orientation: 'horizontal'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderTopRightRadius: 0,
-        borderBottomRightRadius: 0
-      },
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].lastButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderTopLeftRadius: 0,
-        borderBottomLeftRadius: 0
-      }
-    }
-  }, {
-    props: {
-      variant: 'text',
-      orientation: 'horizontal'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderRight: theme.vars ? `1px solid rgba(${theme.vars.palette.common.onBackgroundChannel} / 0.23)` : `1px solid ${theme.palette.mode === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'}`,
-        [`&.${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].disabled}`]: {
-          borderRight: `1px solid ${(theme.vars || theme).palette.action.disabled}`
-        }
-      }
-    }
-  }, {
-    props: {
-      variant: 'text',
-      orientation: 'vertical'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderBottom: theme.vars ? `1px solid rgba(${theme.vars.palette.common.onBackgroundChannel} / 0.23)` : `1px solid ${theme.palette.mode === 'light' ? 'rgba(0, 0, 0, 0.23)' : 'rgba(255, 255, 255, 0.23)'}`,
-        [`&.${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].disabled}`]: {
-          borderBottom: `1px solid ${(theme.vars || theme).palette.action.disabled}`
-        }
-      }
-    }
-  }, ...Object.entries(theme.palette).filter((0,_utils_createSimplePaletteValueFilter_js__WEBPACK_IMPORTED_MODULE_8__["default"])()).flatMap(([color]) => [{
-    props: {
-      variant: 'text',
-      color
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderColor: theme.vars ? `rgba(${theme.vars.palette[color].mainChannel} / 0.5)` : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette[color].main, 0.5)
-      }
-    }
-  }]), {
-    props: {
-      variant: 'outlined',
-      orientation: 'horizontal'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderRightColor: 'transparent',
-        '&:hover': {
-          borderRightColor: 'currentColor'
-        }
-      },
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].lastButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        marginLeft: -1
-      }
-    }
-  }, {
-    props: {
-      variant: 'outlined',
-      orientation: 'vertical'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderBottomColor: 'transparent',
-        '&:hover': {
-          borderBottomColor: 'currentColor'
-        }
-      },
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].lastButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        marginTop: -1
-      }
-    }
-  }, {
-    props: {
-      variant: 'contained',
-      orientation: 'horizontal'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderRight: `1px solid ${(theme.vars || theme).palette.grey[400]}`,
-        [`&.${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].disabled}`]: {
-          borderRight: `1px solid ${(theme.vars || theme).palette.action.disabled}`
-        }
-      }
-    }
-  }, {
-    props: {
-      variant: 'contained',
-      orientation: 'vertical'
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderBottom: `1px solid ${(theme.vars || theme).palette.grey[400]}`,
-        [`&.${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].disabled}`]: {
-          borderBottom: `1px solid ${(theme.vars || theme).palette.action.disabled}`
-        }
-      }
-    }
-  }, ...Object.entries(theme.palette).filter((0,_utils_createSimplePaletteValueFilter_js__WEBPACK_IMPORTED_MODULE_8__["default"])(['dark'])).map(([color]) => ({
-    props: {
-      variant: 'contained',
-      color
-    },
-    style: {
-      [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].firstButton},& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].middleButton}`]: {
-        borderColor: (theme.vars || theme).palette[color].dark
-      }
-    }
-  }))],
-  [`& .${_buttonGroupClasses_js__WEBPACK_IMPORTED_MODULE_3__["default"].grouped}`]: {
-    minWidth: 40,
-    boxShadow: 'none',
-    props: {
-      variant: 'contained'
-    },
-    style: {
-      '&:hover': {
-        boxShadow: 'none'
-      }
-    }
-  }
-})));
-const ButtonGroup = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function ButtonGroup(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_10__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiButtonGroup'
-  });
-  const {
-    children,
-    className,
-    color = 'primary',
-    component = 'div',
-    disabled = false,
-    disableElevation = false,
-    disableFocusRipple = false,
-    disableRipple = false,
-    fullWidth = false,
-    orientation = 'horizontal',
-    size = 'medium',
-    variant = 'outlined',
-    ...other
-  } = props;
-  const ownerState = {
-    ...props,
-    color,
-    component,
-    disabled,
-    disableElevation,
-    disableFocusRipple,
-    disableRipple,
-    fullWidth,
-    orientation,
-    size,
-    variant
-  };
-  const classes = useUtilityClasses(ownerState);
-  const context = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => ({
-    className: classes.grouped,
-    color,
-    disabled,
-    disableElevation,
-    disableFocusRipple,
-    disableRipple,
-    fullWidth,
-    size,
-    variant
-  }), [color, disabled, disableElevation, disableFocusRipple, disableRipple, fullWidth, size, variant, classes.grouped]);
-  const validChildren = (0,_mui_utils_getValidReactChildren__WEBPACK_IMPORTED_MODULE_11__["default"])(children);
-  const childrenCount = validChildren.length;
-  const getButtonPositionClassName = index => {
-    const isFirstButton = index === 0;
-    const isLastButton = index === childrenCount - 1;
-    if (isFirstButton && isLastButton) {
-      return '';
-    }
-    if (isFirstButton) {
-      return classes.firstButton;
-    }
-    if (isLastButton) {
-      return classes.lastButton;
-    }
-    return classes.middleButton;
-  };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ButtonGroupRoot, {
-    as: component,
-    role: "group",
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ref: ref,
-    ownerState: ownerState,
-    ...other,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ButtonGroupContext_js__WEBPACK_IMPORTED_MODULE_12__["default"].Provider, {
-      value: context,
-      children: validChildren.map((child, index) => {
-        return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_ButtonGroupButtonContext_js__WEBPACK_IMPORTED_MODULE_13__["default"].Provider, {
-          value: getButtonPositionClassName(index),
-          children: child
-        }, index);
-      })
-    })
-  });
-});
- true ? ButtonGroup.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The content of the component.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_14__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_14__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_14__.string,
-  /**
-   * The color of the component.
-   * It supports both default and custom theme colors, which can be added as shown in the
-   * [palette customization guide](https://mui.com/material-ui/customization/palette/#custom-colors).
-   * @default 'primary'
-   */
-  color: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOf(['inherit', 'primary', 'secondary', 'error', 'info', 'success', 'warning']), prop_types__WEBPACK_IMPORTED_MODULE_14__.string]),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_14__.elementType,
-  /**
-   * If `true`, the component is disabled.
-   * @default false
-   */
-  disabled: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, no elevation is used.
-   * @default false
-   */
-  disableElevation: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, the button keyboard focus ripple is disabled.
-   * @default false
-   */
-  disableFocusRipple: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, the button ripple effect is disabled.
-   * @default false
-   */
-  disableRipple: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * If `true`, the buttons will take up the full width of its container.
-   * @default false
-   */
-  fullWidth: prop_types__WEBPACK_IMPORTED_MODULE_14__.bool,
-  /**
-   * The component orientation (layout flow direction).
-   * @default 'horizontal'
-   */
-  orientation: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOf(['horizontal', 'vertical']),
-  /**
-   * The size of the component.
-   * `small` is equivalent to the dense button styling.
-   * @default 'medium'
-   */
-  size: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOf(['small', 'medium', 'large']), prop_types__WEBPACK_IMPORTED_MODULE_14__.string]),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.func, prop_types__WEBPACK_IMPORTED_MODULE_14__.object, prop_types__WEBPACK_IMPORTED_MODULE_14__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_14__.func, prop_types__WEBPACK_IMPORTED_MODULE_14__.object]),
-  /**
-   * The variant to use.
-   * @default 'outlined'
-   */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_14__.oneOf(['contained', 'outlined', 'text']), prop_types__WEBPACK_IMPORTED_MODULE_14__.string])
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonGroup);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/esm/ButtonGroup/ButtonGroupButtonContext.js":
 /*!********************************************************************************!*\
   !*** ./node_modules/@mui/material/esm/ButtonGroup/ButtonGroupButtonContext.js ***!
@@ -58725,30 +58189,6 @@ if (true) {
   ButtonGroupContext.displayName = 'ButtonGroupContext';
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ButtonGroupContext);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/ButtonGroup/buttonGroupClasses.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/ButtonGroup/buttonGroupClasses.js ***!
-  \**************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getButtonGroupUtilityClass: () => (/* binding */ getButtonGroupUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getButtonGroupUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiButtonGroup', slot);
-}
-const buttonGroupClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiButtonGroup', ['root', 'contained', 'outlined', 'text', 'disableElevation', 'disabled', 'firstButton', 'fullWidth', 'horizontal', 'vertical', 'colorPrimary', 'colorSecondary', 'grouped', 'groupedHorizontal', 'groupedVertical', 'groupedText', 'groupedTextHorizontal', 'groupedTextVertical', 'groupedTextPrimary', 'groupedTextSecondary', 'groupedOutlined', 'groupedOutlinedHorizontal', 'groupedOutlinedVertical', 'groupedOutlinedPrimary', 'groupedOutlinedSecondary', 'groupedContained', 'groupedContainedHorizontal', 'groupedContainedVertical', 'groupedContainedPrimary', 'groupedContainedSecondary', 'lastButton', 'middleButton']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (buttonGroupClasses);
 
 /***/ }),
 
@@ -59391,598 +58831,6 @@ function DefaultPropsProvider(props) {
 function useDefaultProps(params) {
   return (0,_mui_system_DefaultPropsProvider__WEBPACK_IMPORTED_MODULE_2__.useDefaultProps)(params);
 }
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Dialog/Dialog.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Dialog/Dialog.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_utils_useId__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/utils/useId */ "./node_modules/@mui/utils/esm/useId/useId.js");
-/* harmony import */ var _utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/capitalize.js */ "./node_modules/@mui/material/esm/utils/capitalize.js");
-/* harmony import */ var _Modal_index_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../Modal/index.js */ "./node_modules/@mui/material/esm/Modal/Modal.js");
-/* harmony import */ var _Fade_index_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Fade/index.js */ "./node_modules/@mui/material/esm/Fade/Fade.js");
-/* harmony import */ var _Paper_index_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Paper/index.js */ "./node_modules/@mui/material/esm/Paper/Paper.js");
-/* harmony import */ var _dialogClasses_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./dialogClasses.js */ "./node_modules/@mui/material/esm/Dialog/dialogClasses.js");
-/* harmony import */ var _DialogContext_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./DialogContext.js */ "./node_modules/@mui/material/esm/Dialog/DialogContext.js");
-/* harmony import */ var _Backdrop_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../Backdrop/index.js */ "./node_modules/@mui/material/esm/Backdrop/Backdrop.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/useTheme.js");
-/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/useSlot.js */ "./node_modules/@mui/material/esm/utils/useSlot.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const DialogBackdrop = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Backdrop_index_js__WEBPACK_IMPORTED_MODULE_4__["default"], {
-  name: 'MuiDialog',
-  slot: 'Backdrop',
-  overrides: (props, styles) => styles.backdrop
-})({
-  // Improve scrollable dialog support.
-  zIndex: -1
-});
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    scroll,
-    maxWidth,
-    fullWidth,
-    fullScreen
-  } = ownerState;
-  const slots = {
-    root: ['root'],
-    container: ['container', `scroll${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(scroll)}`],
-    paper: ['paper', `paperScroll${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(scroll)}`, `paperWidth${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(String(maxWidth))}`, fullWidth && 'paperFullWidth', fullScreen && 'paperFullScreen']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _dialogClasses_js__WEBPACK_IMPORTED_MODULE_7__.getDialogUtilityClass, classes);
-};
-const DialogRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Modal_index_js__WEBPACK_IMPORTED_MODULE_8__["default"], {
-  name: 'MuiDialog',
-  slot: 'Root',
-  overridesResolver: (props, styles) => styles.root
-})({
-  '@media print': {
-    // Use !important to override the Modal inline-style.
-    position: 'absolute !important'
-  }
-});
-const DialogContainer = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])('div', {
-  name: 'MuiDialog',
-  slot: 'Container',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.container, styles[`scroll${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.scroll)}`]];
-  }
-})({
-  height: '100%',
-  '@media print': {
-    height: 'auto'
-  },
-  // We disable the focus ring for mouse, touch and keyboard users.
-  outline: 0,
-  variants: [{
-    props: {
-      scroll: 'paper'
-    },
-    style: {
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, {
-    props: {
-      scroll: 'body'
-    },
-    style: {
-      overflowY: 'auto',
-      overflowX: 'hidden',
-      textAlign: 'center',
-      '&::after': {
-        content: '""',
-        display: 'inline-block',
-        verticalAlign: 'middle',
-        height: '100%',
-        width: '0'
-      }
-    }
-  }]
-});
-const DialogPaper = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Paper_index_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
-  name: 'MuiDialog',
-  slot: 'Paper',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.paper, styles[`scrollPaper${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(ownerState.scroll)}`], styles[`paperWidth${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_5__["default"])(String(ownerState.maxWidth))}`], ownerState.fullWidth && styles.paperFullWidth, ownerState.fullScreen && styles.paperFullScreen];
-  }
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_10__["default"])(({
-  theme
-}) => ({
-  margin: 32,
-  position: 'relative',
-  overflowY: 'auto',
-  '@media print': {
-    overflowY: 'visible',
-    boxShadow: 'none'
-  },
-  variants: [{
-    props: {
-      scroll: 'paper'
-    },
-    style: {
-      display: 'flex',
-      flexDirection: 'column',
-      maxHeight: 'calc(100% - 64px)'
-    }
-  }, {
-    props: {
-      scroll: 'body'
-    },
-    style: {
-      display: 'inline-block',
-      verticalAlign: 'middle',
-      textAlign: 'initial'
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.maxWidth,
-    style: {
-      maxWidth: 'calc(100% - 64px)'
-    }
-  }, {
-    props: {
-      maxWidth: 'xs'
-    },
-    style: {
-      maxWidth: theme.breakpoints.unit === 'px' ? Math.max(theme.breakpoints.values.xs, 444) : `max(${theme.breakpoints.values.xs}${theme.breakpoints.unit}, 444px)`,
-      [`&.${_dialogClasses_js__WEBPACK_IMPORTED_MODULE_7__["default"].paperScrollBody}`]: {
-        [theme.breakpoints.down(Math.max(theme.breakpoints.values.xs, 444) + 32 * 2)]: {
-          maxWidth: 'calc(100% - 64px)'
-        }
-      }
-    }
-  }, ...Object.keys(theme.breakpoints.values).filter(maxWidth => maxWidth !== 'xs').map(maxWidth => ({
-    props: {
-      maxWidth
-    },
-    style: {
-      maxWidth: `${theme.breakpoints.values[maxWidth]}${theme.breakpoints.unit}`,
-      [`&.${_dialogClasses_js__WEBPACK_IMPORTED_MODULE_7__["default"].paperScrollBody}`]: {
-        [theme.breakpoints.down(theme.breakpoints.values[maxWidth] + 32 * 2)]: {
-          maxWidth: 'calc(100% - 64px)'
-        }
-      }
-    }
-  })), {
-    props: ({
-      ownerState
-    }) => ownerState.fullWidth,
-    style: {
-      width: 'calc(100% - 64px)'
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.fullScreen,
-    style: {
-      margin: 0,
-      width: '100%',
-      maxWidth: '100%',
-      height: '100%',
-      maxHeight: 'none',
-      borderRadius: 0,
-      [`&.${_dialogClasses_js__WEBPACK_IMPORTED_MODULE_7__["default"].paperScrollBody}`]: {
-        margin: 0,
-        maxWidth: '100%'
-      }
-    }
-  }]
-})));
-
-/**
- * Dialogs are overlaid modal paper based components with a backdrop.
- */
-const Dialog = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Dialog(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiDialog'
-  });
-  const theme = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__["default"])();
-  const defaultTransitionDuration = {
-    enter: theme.transitions.duration.enteringScreen,
-    exit: theme.transitions.duration.leavingScreen
-  };
-  const {
-    'aria-describedby': ariaDescribedby,
-    'aria-labelledby': ariaLabelledbyProp,
-    'aria-modal': ariaModal = true,
-    BackdropComponent,
-    BackdropProps,
-    children,
-    className,
-    disableEscapeKeyDown = false,
-    fullScreen = false,
-    fullWidth = false,
-    maxWidth = 'sm',
-    onClick,
-    onClose,
-    open,
-    PaperComponent = _Paper_index_js__WEBPACK_IMPORTED_MODULE_9__["default"],
-    PaperProps = {},
-    scroll = 'paper',
-    slots = {},
-    slotProps = {},
-    TransitionComponent = _Fade_index_js__WEBPACK_IMPORTED_MODULE_13__["default"],
-    transitionDuration = defaultTransitionDuration,
-    TransitionProps,
-    ...other
-  } = props;
-  const ownerState = {
-    ...props,
-    disableEscapeKeyDown,
-    fullScreen,
-    fullWidth,
-    maxWidth,
-    scroll
-  };
-  const classes = useUtilityClasses(ownerState);
-  const backdropClick = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  const handleMouseDown = event => {
-    // We don't want to close the dialog when clicking the dialog content.
-    // Make sure the event starts and ends on the same DOM element.
-    backdropClick.current = event.target === event.currentTarget;
-  };
-  const handleBackdropClick = event => {
-    if (onClick) {
-      onClick(event);
-    }
-
-    // Ignore the events not coming from the "backdrop".
-    if (!backdropClick.current) {
-      return;
-    }
-    backdropClick.current = null;
-    if (onClose) {
-      onClose(event, 'backdropClick');
-    }
-  };
-  const ariaLabelledby = (0,_mui_utils_useId__WEBPACK_IMPORTED_MODULE_14__["default"])(ariaLabelledbyProp);
-  const dialogContextValue = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    return {
-      titleId: ariaLabelledby
-    };
-  }, [ariaLabelledby]);
-  const backwardCompatibleSlots = {
-    transition: TransitionComponent,
-    ...slots
-  };
-  const backwardCompatibleSlotProps = {
-    transition: TransitionProps,
-    paper: PaperProps,
-    backdrop: BackdropProps,
-    ...slotProps
-  };
-  const externalForwardedProps = {
-    slots: backwardCompatibleSlots,
-    slotProps: backwardCompatibleSlotProps
-  };
-  const [RootSlot, rootSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__["default"])('root', {
-    elementType: DialogRoot,
-    shouldForwardComponentProp: true,
-    externalForwardedProps,
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className),
-    ref
-  });
-  const [BackdropSlot, backdropSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__["default"])('backdrop', {
-    elementType: DialogBackdrop,
-    shouldForwardComponentProp: true,
-    externalForwardedProps,
-    ownerState
-  });
-  const [PaperSlot, paperSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__["default"])('paper', {
-    elementType: DialogPaper,
-    shouldForwardComponentProp: true,
-    externalForwardedProps,
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.paper, PaperProps.className)
-  });
-  const [ContainerSlot, containerSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__["default"])('container', {
-    elementType: DialogContainer,
-    externalForwardedProps,
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.container)
-  });
-  const [TransitionSlot, transitionSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_15__["default"])('transition', {
-    elementType: _Fade_index_js__WEBPACK_IMPORTED_MODULE_13__["default"],
-    externalForwardedProps,
-    ownerState,
-    additionalProps: {
-      appear: true,
-      in: open,
-      timeout: transitionDuration,
-      role: 'presentation'
-    }
-  });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(RootSlot, {
-    closeAfterTransition: true,
-    slots: {
-      backdrop: BackdropSlot
-    },
-    slotProps: {
-      backdrop: {
-        transitionDuration,
-        as: BackdropComponent,
-        ...backdropSlotProps
-      }
-    },
-    disableEscapeKeyDown: disableEscapeKeyDown,
-    onClose: onClose,
-    open: open,
-    onClick: handleBackdropClick,
-    ...rootSlotProps,
-    ...other,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(TransitionSlot, {
-      ...transitionSlotProps,
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ContainerSlot, {
-        onMouseDown: handleMouseDown,
-        ...containerSlotProps,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(PaperSlot, {
-          as: PaperComponent,
-          elevation: 24,
-          role: "dialog",
-          "aria-describedby": ariaDescribedby,
-          "aria-labelledby": ariaLabelledby,
-          "aria-modal": ariaModal,
-          ...paperSlotProps,
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_DialogContext_js__WEBPACK_IMPORTED_MODULE_16__["default"].Provider, {
-            value: dialogContextValue,
-            children: children
-          })
-        })
-      })
-    })
-  });
-});
- true ? Dialog.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * The id(s) of the element(s) that describe the dialog.
-   */
-  'aria-describedby': prop_types__WEBPACK_IMPORTED_MODULE_17__.string,
-  /**
-   * The id(s) of the element(s) that label the dialog.
-   */
-  'aria-labelledby': prop_types__WEBPACK_IMPORTED_MODULE_17__.string,
-  /**
-   * Informs assistive technologies that the element is modal.
-   * It's added on the element with role="dialog".
-   * @default true
-   */
-  'aria-modal': prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOf(['false', 'true']), prop_types__WEBPACK_IMPORTED_MODULE_17__.bool]),
-  /**
-   * A backdrop component. This prop enables custom backdrop rendering.
-   * @deprecated Use `slots.backdrop` instead. While this prop currently works, it will be removed in the next major version.
-   * Use the `slots.backdrop` prop to make your application ready for the next version of Material UI.
-   * @default styled(Backdrop, {
-   *   name: 'MuiModal',
-   *   slot: 'Backdrop',
-   *   overridesResolver: (props, styles) => {
-   *     return styles.backdrop;
-   *   },
-   * })({
-   *   zIndex: -1,
-   * })
-   */
-  BackdropComponent: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-  /**
-   * @ignore
-   */
-  BackdropProps: prop_types__WEBPACK_IMPORTED_MODULE_17__.object,
-  /**
-   * Dialog children, usually the included sub-components.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_17__.node,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_17__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_17__.string,
-  /**
-   * If `true`, hitting escape will not fire the `onClose` callback.
-   * @default false
-   */
-  disableEscapeKeyDown: prop_types__WEBPACK_IMPORTED_MODULE_17__.bool,
-  /**
-   * If `true`, the dialog is full-screen.
-   * @default false
-   */
-  fullScreen: prop_types__WEBPACK_IMPORTED_MODULE_17__.bool,
-  /**
-   * If `true`, the dialog stretches to `maxWidth`.
-   *
-   * Notice that the dialog width grow is limited by the default margin.
-   * @default false
-   */
-  fullWidth: prop_types__WEBPACK_IMPORTED_MODULE_17__.bool,
-  /**
-   * Determine the max-width of the dialog.
-   * The dialog width grows with the size of the screen.
-   * Set to `false` to disable `maxWidth`.
-   * @default 'sm'
-   */
-  maxWidth: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOf(['xs', 'sm', 'md', 'lg', 'xl', false]), prop_types__WEBPACK_IMPORTED_MODULE_17__.string]),
-  /**
-   * @ignore
-   */
-  onClick: prop_types__WEBPACK_IMPORTED_MODULE_17__.func,
-  /**
-   * Callback fired when the component requests to be closed.
-   *
-   * @param {object} event The event source of the callback.
-   * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
-   */
-  onClose: prop_types__WEBPACK_IMPORTED_MODULE_17__.func,
-  /**
-   * If `true`, the component is shown.
-   */
-  open: prop_types__WEBPACK_IMPORTED_MODULE_17__.bool.isRequired,
-  /**
-   * The component used to render the body of the dialog.
-   * @default Paper
-   */
-  PaperComponent: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-  /**
-   * Props applied to the [`Paper`](https://mui.com/material-ui/api/paper/) element.
-   * @default {}
-   * @deprecated Use `slotProps.paper` instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  PaperProps: prop_types__WEBPACK_IMPORTED_MODULE_17__.object,
-  /**
-   * Determine the container for scrolling the dialog.
-   * @default 'paper'
-   */
-  scroll: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOf(['body', 'paper']),
-  /**
-   * The props used for each slot inside.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_17__.shape({
-    backdrop: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object]),
-    container: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object]),
-    paper: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object]),
-    root: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object]),
-    transition: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object])
-  }),
-  /**
-   * The components used for each slot inside.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_17__.shape({
-    backdrop: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-    container: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-    paper: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-    root: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-    transition: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object, prop_types__WEBPACK_IMPORTED_MODULE_17__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_17__.func, prop_types__WEBPACK_IMPORTED_MODULE_17__.object]),
-  /**
-   * The component used for the transition.
-   * [Follow this guide](https://mui.com/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
-   * @default Fade
-   * @deprecated Use `slots.transition` instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  TransitionComponent: prop_types__WEBPACK_IMPORTED_MODULE_17__.elementType,
-  /**
-   * The duration for the transition, in milliseconds.
-   * You may specify a single timeout for all transitions, or individually with an object.
-   * @default {
-   *   enter: theme.transitions.duration.enteringScreen,
-   *   exit: theme.transitions.duration.leavingScreen,
-   * }
-   */
-  transitionDuration: prop_types__WEBPACK_IMPORTED_MODULE_17__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17__.number, prop_types__WEBPACK_IMPORTED_MODULE_17__.shape({
-    appear: prop_types__WEBPACK_IMPORTED_MODULE_17__.number,
-    enter: prop_types__WEBPACK_IMPORTED_MODULE_17__.number,
-    exit: prop_types__WEBPACK_IMPORTED_MODULE_17__.number
-  })]),
-  /**
-   * Props applied to the transition element.
-   * By default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.
-   * @deprecated Use `slotProps.transition` instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  TransitionProps: prop_types__WEBPACK_IMPORTED_MODULE_17__.object
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Dialog);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Dialog/DialogContext.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Dialog/DialogContext.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-'use client';
-
-
-const DialogContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext({});
-if (true) {
-  DialogContext.displayName = 'DialogContext';
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (DialogContext);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Dialog/dialogClasses.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Dialog/dialogClasses.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getDialogUtilityClass: () => (/* binding */ getDialogUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getDialogUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiDialog', slot);
-}
-const dialogClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiDialog', ['root', 'scrollPaper', 'scrollBody', 'container', 'paper', 'paperScrollPaper', 'paperScrollBody', 'paperWidthFalse', 'paperWidthXs', 'paperWidthSm', 'paperWidthMd', 'paperWidthLg', 'paperWidthXl', 'paperFullWidth', 'paperFullScreen']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (dialogClasses);
 
 /***/ }),
 
@@ -68386,661 +67234,6 @@ const popoverClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MO
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/esm/Popper/BasePopper.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Popper/BasePopper.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useForkRef/useForkRef.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useEnhancedEffect/useEnhancedEffect.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/ownerDocument/ownerDocument.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/refType/refType.js");
-/* harmony import */ var _popperjs_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @popperjs/core */ "./node_modules/@popperjs/core/lib/popper.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/utils/useSlotProps */ "./node_modules/@mui/utils/esm/useSlotProps/useSlotProps.js");
-/* harmony import */ var _Portal_index_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../Portal/index.js */ "./node_modules/@mui/material/esm/Portal/Portal.js");
-/* harmony import */ var _popperClasses_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./popperClasses.js */ "./node_modules/@mui/material/esm/Popper/popperClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-function flipPlacement(placement, direction) {
-  if (direction === 'ltr') {
-    return placement;
-  }
-  switch (placement) {
-    case 'bottom-end':
-      return 'bottom-start';
-    case 'bottom-start':
-      return 'bottom-end';
-    case 'top-end':
-      return 'top-start';
-    case 'top-start':
-      return 'top-end';
-    default:
-      return placement;
-  }
-}
-function resolveAnchorEl(anchorEl) {
-  return typeof anchorEl === 'function' ? anchorEl() : anchorEl;
-}
-function isHTMLElement(element) {
-  return element.nodeType !== undefined;
-}
-function isVirtualElement(element) {
-  return !isHTMLElement(element);
-}
-const useUtilityClasses = ownerState => {
-  const {
-    classes
-  } = ownerState;
-  const slots = {
-    root: ['root']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_2__["default"])(slots, _popperClasses_js__WEBPACK_IMPORTED_MODULE_3__.getPopperUtilityClass, classes);
-};
-const defaultPopperOptions = {};
-const PopperTooltip = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function PopperTooltip(props, forwardedRef) {
-  const {
-    anchorEl,
-    children,
-    direction,
-    disablePortal,
-    modifiers,
-    open,
-    placement: initialPlacement,
-    popperOptions,
-    popperRef: popperRefProp,
-    slotProps = {},
-    slots = {},
-    TransitionProps,
-    // @ts-ignore internal logic
-    ownerState: ownerStateProp,
-    // prevent from spreading to DOM, it can come from the parent component e.g. Select.
-    ...other
-  } = props;
-  const tooltipRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-  const ownRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(tooltipRef, forwardedRef);
-  const popperRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
-  const handlePopperRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(popperRef, popperRefProp);
-  const handlePopperRefRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(handlePopperRef);
-  (0,_mui_utils__WEBPACK_IMPORTED_MODULE_5__["default"])(() => {
-    handlePopperRefRef.current = handlePopperRef;
-  }, [handlePopperRef]);
-  react__WEBPACK_IMPORTED_MODULE_0__.useImperativeHandle(popperRefProp, () => popperRef.current, []);
-  const rtlPlacement = flipPlacement(initialPlacement, direction);
-  /**
-   * placement initialized from prop but can change during lifetime if modifiers.flip.
-   * modifiers.flip is essentially a flip for controlled/uncontrolled behavior
-   */
-  const [placement, setPlacement] = react__WEBPACK_IMPORTED_MODULE_0__.useState(rtlPlacement);
-  const [resolvedAnchorElement, setResolvedAnchorElement] = react__WEBPACK_IMPORTED_MODULE_0__.useState(resolveAnchorEl(anchorEl));
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (popperRef.current) {
-      popperRef.current.forceUpdate();
-    }
-  });
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (anchorEl) {
-      setResolvedAnchorElement(resolveAnchorEl(anchorEl));
-    }
-  }, [anchorEl]);
-  (0,_mui_utils__WEBPACK_IMPORTED_MODULE_5__["default"])(() => {
-    if (!resolvedAnchorElement || !open) {
-      return undefined;
-    }
-    const handlePopperUpdate = data => {
-      setPlacement(data.placement);
-    };
-    if (true) {
-      if (resolvedAnchorElement && isHTMLElement(resolvedAnchorElement) && resolvedAnchorElement.nodeType === 1) {
-        const box = resolvedAnchorElement.getBoundingClientRect();
-        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
-          console.warn(['MUI: The `anchorEl` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
-        }
-      }
-    }
-    let popperModifiers = [{
-      name: 'preventOverflow',
-      options: {
-        altBoundary: disablePortal
-      }
-    }, {
-      name: 'flip',
-      options: {
-        altBoundary: disablePortal
-      }
-    }, {
-      name: 'onUpdate',
-      enabled: true,
-      phase: 'afterWrite',
-      fn: ({
-        state
-      }) => {
-        handlePopperUpdate(state);
-      }
-    }];
-    if (modifiers != null) {
-      popperModifiers = popperModifiers.concat(modifiers);
-    }
-    if (popperOptions && popperOptions.modifiers != null) {
-      popperModifiers = popperModifiers.concat(popperOptions.modifiers);
-    }
-    const popper = (0,_popperjs_core__WEBPACK_IMPORTED_MODULE_6__.createPopper)(resolvedAnchorElement, tooltipRef.current, {
-      placement: rtlPlacement,
-      ...popperOptions,
-      modifiers: popperModifiers
-    });
-    handlePopperRefRef.current(popper);
-    return () => {
-      popper.destroy();
-      handlePopperRefRef.current(null);
-    };
-  }, [resolvedAnchorElement, disablePortal, modifiers, open, popperOptions, rtlPlacement]);
-  const childProps = {
-    placement: placement
-  };
-  if (TransitionProps !== null) {
-    childProps.TransitionProps = TransitionProps;
-  }
-  const classes = useUtilityClasses(props);
-  const Root = slots.root ?? 'div';
-  const rootProps = (0,_mui_utils_useSlotProps__WEBPACK_IMPORTED_MODULE_7__["default"])({
-    elementType: Root,
-    externalSlotProps: slotProps.root,
-    externalForwardedProps: other,
-    additionalProps: {
-      role: 'tooltip',
-      ref: ownRef
-    },
-    ownerState: props,
-    className: classes.root
-  });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(Root, {
-    ...rootProps,
-    children: typeof children === 'function' ? children(childProps) : children
-  });
-});
-
-/**
- * @ignore - internal component.
- */
-const Popper = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Popper(props, forwardedRef) {
-  const {
-    anchorEl,
-    children,
-    container: containerProp,
-    direction = 'ltr',
-    disablePortal = false,
-    keepMounted = false,
-    modifiers,
-    open,
-    placement = 'bottom',
-    popperOptions = defaultPopperOptions,
-    popperRef,
-    style,
-    transition = false,
-    slotProps = {},
-    slots = {},
-    ...other
-  } = props;
-  const [exited, setExited] = react__WEBPACK_IMPORTED_MODULE_0__.useState(true);
-  const handleEnter = () => {
-    setExited(false);
-  };
-  const handleExited = () => {
-    setExited(true);
-  };
-  if (!keepMounted && !open && (!transition || exited)) {
-    return null;
-  }
-
-  // If the container prop is provided, use that
-  // If the anchorEl prop is provided, use its parent body element as the container
-  // If neither are provided let the Modal take care of choosing the container
-  let container;
-  if (containerProp) {
-    container = containerProp;
-  } else if (anchorEl) {
-    const resolvedAnchorEl = resolveAnchorEl(anchorEl);
-    container = resolvedAnchorEl && isHTMLElement(resolvedAnchorEl) ? (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(resolvedAnchorEl).body : (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(null).body;
-  }
-  const display = !open && keepMounted && (!transition || exited) ? 'none' : undefined;
-  const transitionProps = transition ? {
-    in: open,
-    onEnter: handleEnter,
-    onExited: handleExited
-  } : undefined;
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_Portal_index_js__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    disablePortal: disablePortal,
-    container: container,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PopperTooltip, {
-      anchorEl: anchorEl,
-      direction: direction,
-      disablePortal: disablePortal,
-      modifiers: modifiers,
-      ref: forwardedRef,
-      open: transition ? !exited : open,
-      placement: placement,
-      popperOptions: popperOptions,
-      popperRef: popperRef,
-      slotProps: slotProps,
-      slots: slots,
-      ...other,
-      style: {
-        // Prevents scroll issue, waiting for Popper.js to add this style once initiated.
-        position: 'fixed',
-        // Fix Popper.js display issue
-        top: 0,
-        left: 0,
-        display,
-        ...style
-      },
-      TransitionProps: transitionProps,
-      children: children
-    })
-  });
-});
- true ? Popper.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │ To update them, edit the TypeScript types and run `pnpm proptypes`. │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * An HTML element, [virtualElement](https://popper.js.org/docs/v2/virtual-elements/),
-   * or a function that returns either.
-   * It's used to set the position of the popper.
-   * The return value will passed as the reference object of the Popper instance.
-   */
-  anchorEl: (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"], prop_types__WEBPACK_IMPORTED_MODULE_11__.object, prop_types__WEBPACK_IMPORTED_MODULE_11__.func]), props => {
-    if (props.open) {
-      const resolvedAnchorEl = resolveAnchorEl(props.anchorEl);
-      if (resolvedAnchorEl && isHTMLElement(resolvedAnchorEl) && resolvedAnchorEl.nodeType === 1) {
-        const box = resolvedAnchorEl.getBoundingClientRect();
-        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
-          return new Error(['MUI: The `anchorEl` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
-        }
-      } else if (!resolvedAnchorEl || typeof resolvedAnchorEl.getBoundingClientRect !== 'function' || isVirtualElement(resolvedAnchorEl) && resolvedAnchorEl.contextElement != null && resolvedAnchorEl.contextElement.nodeType !== 1) {
-        return new Error(['MUI: The `anchorEl` prop provided to the component is invalid.', 'It should be an HTML element instance or a virtualElement ', '(https://popper.js.org/docs/v2/virtual-elements/).'].join('\n'));
-      }
-    }
-    return null;
-  }),
-  /**
-   * Popper render function or node.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11__.node, prop_types__WEBPACK_IMPORTED_MODULE_11__.func]),
-  /**
-   * An HTML element or function that returns one.
-   * The `container` will have the portal children appended to it.
-   *
-   * You can also provide a callback, which is called in a React layout effect.
-   * This lets you set the container from a ref, and also makes server-side rendering possible.
-   *
-   * By default, it uses the body of the top-level document object,
-   * so it's simply `document.body` most of the time.
-   */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"], prop_types__WEBPACK_IMPORTED_MODULE_11__.func]),
-  /**
-   * Direction of the text.
-   * @default 'ltr'
-   */
-  direction: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['ltr', 'rtl']),
-  /**
-   * The `children` will be under the DOM hierarchy of the parent component.
-   * @default false
-   */
-  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
-  /**
-   * Always keep the children in the DOM.
-   * This prop can be useful in SEO situation or
-   * when you want to maximize the responsiveness of the Popper.
-   * @default false
-   */
-  keepMounted: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
-  /**
-   * Popper.js is based on a "plugin-like" architecture,
-   * most of its features are fully encapsulated "modifiers".
-   *
-   * A modifier is a function that is called each time Popper.js needs to
-   * compute the position of the popper.
-   * For this reason, modifiers should be very performant to avoid bottlenecks.
-   * To learn how to create a modifier, [read the modifiers documentation](https://popper.js.org/docs/v2/modifiers/).
-   */
-  modifiers: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
-    data: prop_types__WEBPACK_IMPORTED_MODULE_11__.object,
-    effect: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
-    enabled: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool,
-    fn: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
-    name: prop_types__WEBPACK_IMPORTED_MODULE_11__.any,
-    options: prop_types__WEBPACK_IMPORTED_MODULE_11__.object,
-    phase: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['afterMain', 'afterRead', 'afterWrite', 'beforeMain', 'beforeRead', 'beforeWrite', 'main', 'read', 'write']),
-    requires: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.string),
-    requiresIfExists: prop_types__WEBPACK_IMPORTED_MODULE_11__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11__.string)
-  })),
-  /**
-   * If `true`, the component is shown.
-   */
-  open: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool.isRequired,
-  /**
-   * Popper placement.
-   * @default 'bottom'
-   */
-  placement: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
-  /**
-   * Options provided to the [`Popper.js`](https://popper.js.org/docs/v2/constructors/#options) instance.
-   * @default {}
-   */
-  popperOptions: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
-    modifiers: prop_types__WEBPACK_IMPORTED_MODULE_11__.array,
-    onFirstUpdate: prop_types__WEBPACK_IMPORTED_MODULE_11__.func,
-    placement: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
-    strategy: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOf(['absolute', 'fixed'])
-  }),
-  /**
-   * A ref that points to the used popper instance.
-   */
-  popperRef: _mui_utils__WEBPACK_IMPORTED_MODULE_13__["default"],
-  /**
-   * The props used for each slot inside the Popper.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_11__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11__.func, prop_types__WEBPACK_IMPORTED_MODULE_11__.object])
-  }),
-  /**
-   * The components used for each slot inside the Popper.
-   * Either a string to use a HTML element or a component.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_11__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_11__.elementType
-  }),
-  /**
-   * Help supporting a react-transition-group/Transition component.
-   * @default false
-   */
-  transition: prop_types__WEBPACK_IMPORTED_MODULE_11__.bool
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popper);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Popper/Popper.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Popper/Popper.js ***!
-  \*********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/system/RtlProvider */ "./node_modules/@mui/system/esm/RtlProvider/index.js");
-/* harmony import */ var _mui_utils_refType__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils/refType */ "./node_modules/@mui/utils/esm/refType/refType.js");
-/* harmony import */ var _mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/utils/HTMLElementType */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _BasePopper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BasePopper.js */ "./node_modules/@mui/material/esm/Popper/BasePopper.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-const PopperRoot = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_BasePopper_js__WEBPACK_IMPORTED_MODULE_3__["default"], {
-  name: 'MuiPopper',
-  slot: 'Root',
-  overridesResolver: (props, styles) => styles.root
-})({});
-
-/**
- *
- * Demos:
- *
- * - [Autocomplete](https://mui.com/material-ui/react-autocomplete/)
- * - [Menu](https://mui.com/material-ui/react-menu/)
- * - [Popper](https://mui.com/material-ui/react-popper/)
- *
- * API:
- *
- * - [Popper API](https://mui.com/material-ui/api/popper/)
- */
-const Popper = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Popper(inProps, ref) {
-  const isRtl = (0,_mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_4__.useRtl)();
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_5__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiPopper'
-  });
-  const {
-    anchorEl,
-    component,
-    components,
-    componentsProps,
-    container,
-    disablePortal,
-    keepMounted,
-    modifiers,
-    open,
-    placement,
-    popperOptions,
-    popperRef,
-    transition,
-    slots,
-    slotProps,
-    ...other
-  } = props;
-  const RootComponent = slots?.root ?? components?.Root;
-  const otherProps = {
-    anchorEl,
-    container,
-    disablePortal,
-    keepMounted,
-    modifiers,
-    open,
-    placement,
-    popperOptions,
-    popperRef,
-    transition,
-    ...other
-  };
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(PopperRoot, {
-    as: component,
-    direction: isRtl ? 'rtl' : 'ltr',
-    slots: {
-      root: RootComponent
-    },
-    slotProps: slotProps ?? componentsProps,
-    ...otherProps,
-    ref: ref
-  });
-});
- true ? Popper.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │ To update them, edit the TypeScript types and run `pnpm proptypes`. │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * An HTML element, [virtualElement](https://popper.js.org/docs/v2/virtual-elements/),
-   * or a function that returns either.
-   * It's used to set the position of the popper.
-   * The return value will passed as the reference object of the Popper instance.
-   */
-  anchorEl: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__["default"], prop_types__WEBPACK_IMPORTED_MODULE_6__.object, prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
-  /**
-   * Popper render function or node.
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.node, prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
-  /**
-   * The component used for the root node.
-   * Either a string to use a HTML element or a component.
-   */
-  component: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType,
-  /**
-   * The components used for each slot inside the Popper.
-   * Either a string to use a HTML element or a component.
-   *
-   * @deprecated use the `slots` prop instead. This prop will be removed in a future major release. [How to migrate](/material-ui/migration/migrating-from-deprecated-apis/).
-   * @default {}
-   */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    Root: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType
-  }),
-  /**
-   * The props used for each slot inside the Popper.
-   *
-   * @deprecated use the `slotProps` prop instead. This prop will be removed in a future major release. [How to migrate](/material-ui/migration/migrating-from-deprecated-apis/).
-   * @default {}
-   */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object])
-  }),
-  /**
-   * An HTML element or function that returns one.
-   * The `container` will have the portal children appended to it.
-   *
-   * You can also provide a callback, which is called in a React layout effect.
-   * This lets you set the container from a ref, and also makes server-side rendering possible.
-   *
-   * By default, it uses the body of the top-level document object,
-   * so it's simply `document.body` most of the time.
-   */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_7__["default"], prop_types__WEBPACK_IMPORTED_MODULE_6__.func]),
-  /**
-   * The `children` will be under the DOM hierarchy of the parent component.
-   * @default false
-   */
-  disablePortal: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
-  /**
-   * Always keep the children in the DOM.
-   * This prop can be useful in SEO situation or
-   * when you want to maximize the responsiveness of the Popper.
-   * @default false
-   */
-  keepMounted: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
-  /**
-   * Popper.js is based on a "plugin-like" architecture,
-   * most of its features are fully encapsulated "modifiers".
-   *
-   * A modifier is a function that is called each time Popper.js needs to
-   * compute the position of the popper.
-   * For this reason, modifiers should be very performant to avoid bottlenecks.
-   * To learn how to create a modifier, [read the modifiers documentation](https://popper.js.org/docs/v2/modifiers/).
-   */
-  modifiers: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    data: prop_types__WEBPACK_IMPORTED_MODULE_6__.object,
-    effect: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
-    enabled: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool,
-    fn: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
-    name: prop_types__WEBPACK_IMPORTED_MODULE_6__.any,
-    options: prop_types__WEBPACK_IMPORTED_MODULE_6__.object,
-    phase: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['afterMain', 'afterRead', 'afterWrite', 'beforeMain', 'beforeRead', 'beforeWrite', 'main', 'read', 'write']),
-    requires: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.string),
-    requiresIfExists: prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.string)
-  })),
-  /**
-   * If `true`, the component is shown.
-   */
-  open: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool.isRequired,
-  /**
-   * Popper placement.
-   * @default 'bottom'
-   */
-  placement: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
-  /**
-   * Options provided to the [`Popper.js`](https://popper.js.org/docs/v2/constructors/#options) instance.
-   * @default {}
-   */
-  popperOptions: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    modifiers: prop_types__WEBPACK_IMPORTED_MODULE_6__.array,
-    onFirstUpdate: prop_types__WEBPACK_IMPORTED_MODULE_6__.func,
-    placement: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
-    strategy: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOf(['absolute', 'fixed'])
-  }),
-  /**
-   * A ref that points to the used popper instance.
-   */
-  popperRef: _mui_utils_refType__WEBPACK_IMPORTED_MODULE_8__["default"],
-  /**
-   * The props used for each slot inside the Popper.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object])
-  }),
-  /**
-   * The components used for each slot inside the Popper.
-   * Either a string to use a HTML element or a component.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_6__.shape({
-    root: prop_types__WEBPACK_IMPORTED_MODULE_6__.elementType
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_6__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object, prop_types__WEBPACK_IMPORTED_MODULE_6__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_6__.func, prop_types__WEBPACK_IMPORTED_MODULE_6__.object]),
-  /**
-   * Help supporting a react-transition-group/Transition component.
-   * @default false
-   */
-  transition: prop_types__WEBPACK_IMPORTED_MODULE_6__.bool
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Popper);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Popper/popperClasses.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Popper/popperClasses.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getPopperUtilityClass: () => (/* binding */ getPopperUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getPopperUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiPopper', slot);
-}
-const popperClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiPopper', ['root']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (popperClasses);
-
-/***/ }),
-
 /***/ "./node_modules/@mui/material/esm/Portal/Portal.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@mui/material/esm/Portal/Portal.js ***!
@@ -70210,6 +68403,372 @@ function getSelectUtilityClasses(slot) {
 }
 const selectClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiSelect', ['root', 'select', 'multiple', 'filled', 'outlined', 'standard', 'disabled', 'focused', 'icon', 'iconOpen', 'iconFilled', 'iconOutlined', 'iconStandard', 'nativeInput', 'error']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (selectClasses);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/esm/Slide/Slide.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/@mui/material/esm/Slide/Slide.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   setTranslateValue: () => (/* binding */ setTranslateValue)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/Transition.js");
+/* harmony import */ var _mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils/chainPropTypes */ "./node_modules/@mui/utils/esm/chainPropTypes/chainPropTypes.js");
+/* harmony import */ var _mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils/HTMLElementType */ "./node_modules/@mui/utils/esm/HTMLElementType/HTMLElementType.js");
+/* harmony import */ var _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils/elementAcceptingRef */ "./node_modules/@mui/utils/esm/elementAcceptingRef/elementAcceptingRef.js");
+/* harmony import */ var _mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/utils/getReactElementRef */ "./node_modules/@mui/utils/esm/getReactElementRef/getReactElementRef.js");
+/* harmony import */ var _utils_debounce_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/debounce.js */ "./node_modules/@mui/material/esm/utils/debounce.js");
+/* harmony import */ var _utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/useForkRef.js */ "./node_modules/@mui/material/esm/utils/useForkRef.js");
+/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/useTheme.js");
+/* harmony import */ var _transitions_utils_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../transitions/utils.js */ "./node_modules/@mui/material/esm/transitions/utils.js");
+/* harmony import */ var _utils_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/index.js */ "./node_modules/@mui/material/esm/utils/ownerWindow.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+'use client';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Translate the node so it can't be seen on the screen.
+// Later, we're going to translate the node back to its original location with `none`.
+
+function getTranslateValue(direction, node, resolvedContainer) {
+  const rect = node.getBoundingClientRect();
+  const containerRect = resolvedContainer && resolvedContainer.getBoundingClientRect();
+  const containerWindow = (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(node);
+  let transform;
+  if (node.fakeTransform) {
+    transform = node.fakeTransform;
+  } else {
+    const computedStyle = containerWindow.getComputedStyle(node);
+    transform = computedStyle.getPropertyValue('-webkit-transform') || computedStyle.getPropertyValue('transform');
+  }
+  let offsetX = 0;
+  let offsetY = 0;
+  if (transform && transform !== 'none' && typeof transform === 'string') {
+    const transformValues = transform.split('(')[1].split(')')[0].split(',');
+    offsetX = parseInt(transformValues[4], 10);
+    offsetY = parseInt(transformValues[5], 10);
+  }
+  if (direction === 'left') {
+    if (containerRect) {
+      return `translateX(${containerRect.right + offsetX - rect.left}px)`;
+    }
+    return `translateX(${containerWindow.innerWidth + offsetX - rect.left}px)`;
+  }
+  if (direction === 'right') {
+    if (containerRect) {
+      return `translateX(-${rect.right - containerRect.left - offsetX}px)`;
+    }
+    return `translateX(-${rect.left + rect.width - offsetX}px)`;
+  }
+  if (direction === 'up') {
+    if (containerRect) {
+      return `translateY(${containerRect.bottom + offsetY - rect.top}px)`;
+    }
+    return `translateY(${containerWindow.innerHeight + offsetY - rect.top}px)`;
+  }
+
+  // direction === 'down'
+  if (containerRect) {
+    return `translateY(-${rect.top - containerRect.top + rect.height - offsetY}px)`;
+  }
+  return `translateY(-${rect.top + rect.height - offsetY}px)`;
+}
+function resolveContainer(containerPropProp) {
+  return typeof containerPropProp === 'function' ? containerPropProp() : containerPropProp;
+}
+function setTranslateValue(direction, node, containerProp) {
+  const resolvedContainer = resolveContainer(containerProp);
+  const transform = getTranslateValue(direction, node, resolvedContainer);
+  if (transform) {
+    node.style.webkitTransform = transform;
+    node.style.transform = transform;
+  }
+}
+
+/**
+ * The Slide transition is used by the [Drawer](/material-ui/react-drawer/) component.
+ * It uses [react-transition-group](https://github.com/reactjs/react-transition-group) internally.
+ */
+const Slide = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Slide(props, ref) {
+  const theme = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
+  const defaultEasing = {
+    enter: theme.transitions.easing.easeOut,
+    exit: theme.transitions.easing.sharp
+  };
+  const defaultTimeout = {
+    enter: theme.transitions.duration.enteringScreen,
+    exit: theme.transitions.duration.leavingScreen
+  };
+  const {
+    addEndListener,
+    appear = true,
+    children,
+    container: containerProp,
+    direction = 'down',
+    easing: easingProp = defaultEasing,
+    in: inProp,
+    onEnter,
+    onEntered,
+    onEntering,
+    onExit,
+    onExited,
+    onExiting,
+    style,
+    timeout = defaultTimeout,
+    // eslint-disable-next-line react/prop-types
+    TransitionComponent = react_transition_group__WEBPACK_IMPORTED_MODULE_4__["default"],
+    ...other
+  } = props;
+  const childrenRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef(null);
+  const handleRef = (0,_utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_5__["default"])((0,_mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_6__["default"])(children), childrenRef, ref);
+  const normalizedTransitionCallback = callback => isAppearing => {
+    if (callback) {
+      // onEnterXxx and onExitXxx callbacks have a different arguments.length value.
+      if (isAppearing === undefined) {
+        callback(childrenRef.current);
+      } else {
+        callback(childrenRef.current, isAppearing);
+      }
+    }
+  };
+  const handleEnter = normalizedTransitionCallback((node, isAppearing) => {
+    setTranslateValue(direction, node, containerProp);
+    (0,_transitions_utils_js__WEBPACK_IMPORTED_MODULE_7__.reflow)(node);
+    if (onEnter) {
+      onEnter(node, isAppearing);
+    }
+  });
+  const handleEntering = normalizedTransitionCallback((node, isAppearing) => {
+    const transitionProps = (0,_transitions_utils_js__WEBPACK_IMPORTED_MODULE_7__.getTransitionProps)({
+      timeout,
+      style,
+      easing: easingProp
+    }, {
+      mode: 'enter'
+    });
+    node.style.webkitTransition = theme.transitions.create('-webkit-transform', {
+      ...transitionProps
+    });
+    node.style.transition = theme.transitions.create('transform', {
+      ...transitionProps
+    });
+    node.style.webkitTransform = 'none';
+    node.style.transform = 'none';
+    if (onEntering) {
+      onEntering(node, isAppearing);
+    }
+  });
+  const handleEntered = normalizedTransitionCallback(onEntered);
+  const handleExiting = normalizedTransitionCallback(onExiting);
+  const handleExit = normalizedTransitionCallback(node => {
+    const transitionProps = (0,_transitions_utils_js__WEBPACK_IMPORTED_MODULE_7__.getTransitionProps)({
+      timeout,
+      style,
+      easing: easingProp
+    }, {
+      mode: 'exit'
+    });
+    node.style.webkitTransition = theme.transitions.create('-webkit-transform', transitionProps);
+    node.style.transition = theme.transitions.create('transform', transitionProps);
+    setTranslateValue(direction, node, containerProp);
+    if (onExit) {
+      onExit(node);
+    }
+  });
+  const handleExited = normalizedTransitionCallback(node => {
+    // No need for transitions when the component is hidden
+    node.style.webkitTransition = '';
+    node.style.transition = '';
+    if (onExited) {
+      onExited(node);
+    }
+  });
+  const handleAddEndListener = next => {
+    if (addEndListener) {
+      // Old call signature before `react-transition-group` implemented `nodeRef`
+      addEndListener(childrenRef.current, next);
+    }
+  };
+  const updatePosition = react__WEBPACK_IMPORTED_MODULE_0__.useCallback(() => {
+    if (childrenRef.current) {
+      setTranslateValue(direction, childrenRef.current, containerProp);
+    }
+  }, [direction, containerProp]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    // Skip configuration where the position is screen size invariant.
+    if (inProp || direction === 'down' || direction === 'right') {
+      return undefined;
+    }
+    const handleResize = (0,_utils_debounce_js__WEBPACK_IMPORTED_MODULE_8__["default"])(() => {
+      if (childrenRef.current) {
+        setTranslateValue(direction, childrenRef.current, containerProp);
+      }
+    });
+    const containerWindow = (0,_utils_index_js__WEBPACK_IMPORTED_MODULE_2__["default"])(childrenRef.current);
+    containerWindow.addEventListener('resize', handleResize);
+    return () => {
+      handleResize.clear();
+      containerWindow.removeEventListener('resize', handleResize);
+    };
+  }, [direction, inProp, containerProp]);
+  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
+    if (!inProp) {
+      // We need to update the position of the drawer when the direction change and
+      // when it's hidden.
+      updatePosition();
+    }
+  }, [inProp, updatePosition]);
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(TransitionComponent, {
+    nodeRef: childrenRef,
+    onEnter: handleEnter,
+    onEntered: handleEntered,
+    onEntering: handleEntering,
+    onExit: handleExit,
+    onExited: handleExited,
+    onExiting: handleExiting,
+    addEndListener: handleAddEndListener,
+    appear: appear,
+    in: inProp,
+    timeout: timeout,
+    ...other,
+    children: (state, {
+      ownerState,
+      ...restChildProps
+    }) => {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, {
+        ref: handleRef,
+        style: {
+          visibility: state === 'exited' && !inProp ? 'hidden' : undefined,
+          ...style,
+          ...children.props.style
+        },
+        ...restChildProps
+      });
+    }
+  });
+});
+ true ? Slide.propTypes /* remove-proptypes */ = {
+  // ┌────────────────────────────── Warning ──────────────────────────────┐
+  // │ These PropTypes are generated from the TypeScript type definitions. │
+  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
+  // └─────────────────────────────────────────────────────────────────────┘
+  /**
+   * Add a custom transition end trigger. Called with the transitioning DOM
+   * node and a done callback. Allows for more fine grained transition end
+   * logic. Note: Timeouts are still used as a fallback if provided.
+   */
+  addEndListener: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * Perform the enter transition when it first mounts if `in` is also `true`.
+   * Set this to `false` to disable this behavior.
+   * @default true
+   */
+  appear: prop_types__WEBPACK_IMPORTED_MODULE_9__.bool,
+  /**
+   * A single child content element.
+   */
+  children: _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_10__["default"].isRequired,
+  /**
+   * An HTML element, or a function that returns one.
+   * It's used to set the container the Slide is transitioning from.
+   */
+  container: (0,_mui_utils_chainPropTypes__WEBPACK_IMPORTED_MODULE_11__["default"])(prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([_mui_utils_HTMLElementType__WEBPACK_IMPORTED_MODULE_12__["default"], prop_types__WEBPACK_IMPORTED_MODULE_9__.func]), props => {
+    if (props.open) {
+      const resolvedContainer = resolveContainer(props.container);
+      if (resolvedContainer && resolvedContainer.nodeType === 1) {
+        const box = resolvedContainer.getBoundingClientRect();
+        if ( true && box.top === 0 && box.left === 0 && box.right === 0 && box.bottom === 0) {
+          return new Error(['MUI: The `container` prop provided to the component is invalid.', 'The anchor element should be part of the document layout.', "Make sure the element is present in the document or that it's not display none."].join('\n'));
+        }
+      } else if (!resolvedContainer || typeof resolvedContainer.getBoundingClientRect !== 'function' || resolvedContainer.contextElement != null && resolvedContainer.contextElement.nodeType !== 1) {
+        return new Error(['MUI: The `container` prop provided to the component is invalid.', 'It should be an HTML element instance.'].join('\n'));
+      }
+    }
+    return null;
+  }),
+  /**
+   * Direction the child node will enter from.
+   * @default 'down'
+   */
+  direction: prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOf(['down', 'left', 'right', 'up']),
+  /**
+   * The transition timing function.
+   * You may specify a single easing or a object containing enter and exit values.
+   * @default {
+   *   enter: theme.transitions.easing.easeOut,
+   *   exit: theme.transitions.easing.sharp,
+   * }
+   */
+  easing: prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.shape({
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_9__.string,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_9__.string
+  }), prop_types__WEBPACK_IMPORTED_MODULE_9__.string]),
+  /**
+   * If `true`, the component will transition in.
+   */
+  in: prop_types__WEBPACK_IMPORTED_MODULE_9__.bool,
+  /**
+   * @ignore
+   */
+  onEnter: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  onEntered: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  onEntering: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  onExit: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  onExited: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  onExiting: prop_types__WEBPACK_IMPORTED_MODULE_9__.func,
+  /**
+   * @ignore
+   */
+  style: prop_types__WEBPACK_IMPORTED_MODULE_9__.object,
+  /**
+   * The duration for the transition, in milliseconds.
+   * You may specify a single timeout for all transitions, or individually with an object.
+   * @default {
+   *   enter: theme.transitions.duration.enteringScreen,
+   *   exit: theme.transitions.duration.leavingScreen,
+   * }
+   */
+  timeout: prop_types__WEBPACK_IMPORTED_MODULE_9__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_9__.number, prop_types__WEBPACK_IMPORTED_MODULE_9__.shape({
+    appear: prop_types__WEBPACK_IMPORTED_MODULE_9__.number,
+    enter: prop_types__WEBPACK_IMPORTED_MODULE_9__.number,
+    exit: prop_types__WEBPACK_IMPORTED_MODULE_9__.number
+  })])
+} : 0;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Slide);
 
 /***/ }),
 
@@ -71446,967 +70005,6 @@ function getToolbarUtilityClass(slot) {
 }
 const toolbarClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiToolbar', ['root', 'gutters', 'regular', 'dense']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (toolbarClasses);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Tooltip/Tooltip.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Tooltip/Tooltip.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   testReset: () => (/* binding */ testReset)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.mjs");
-/* harmony import */ var _mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils/useTimeout */ "./node_modules/@mui/utils/esm/useTimeout/useTimeout.js");
-/* harmony import */ var _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @mui/utils/elementAcceptingRef */ "./node_modules/@mui/utils/esm/elementAcceptingRef/elementAcceptingRef.js");
-/* harmony import */ var _mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils/composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/system/colorManipulator */ "./node_modules/@mui/system/esm/colorManipulator/colorManipulator.js");
-/* harmony import */ var _mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/system/RtlProvider */ "./node_modules/@mui/system/esm/RtlProvider/index.js");
-/* harmony import */ var _mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/utils/isFocusVisible */ "./node_modules/@mui/utils/esm/isFocusVisible/isFocusVisible.js");
-/* harmony import */ var _mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @mui/utils/getReactElementRef */ "./node_modules/@mui/utils/esm/getReactElementRef/getReactElementRef.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/styled.js");
-/* harmony import */ var _zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../zero-styled/index.js */ "./node_modules/@mui/material/esm/styles/useTheme.js");
-/* harmony import */ var _utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/memoTheme.js */ "./node_modules/@mui/material/esm/utils/memoTheme.js");
-/* harmony import */ var _DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../DefaultPropsProvider/index.js */ "./node_modules/@mui/material/esm/DefaultPropsProvider/DefaultPropsProvider.js");
-/* harmony import */ var _utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/capitalize.js */ "./node_modules/@mui/material/esm/utils/capitalize.js");
-/* harmony import */ var _Grow_index_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../Grow/index.js */ "./node_modules/@mui/material/esm/Grow/Grow.js");
-/* harmony import */ var _Popper_index_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../Popper/index.js */ "./node_modules/@mui/material/esm/Popper/Popper.js");
-/* harmony import */ var _utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../utils/useEventCallback.js */ "./node_modules/@mui/material/esm/utils/useEventCallback.js");
-/* harmony import */ var _utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../utils/useForkRef.js */ "./node_modules/@mui/material/esm/utils/useForkRef.js");
-/* harmony import */ var _utils_useId_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../utils/useId.js */ "./node_modules/@mui/material/esm/utils/useId.js");
-/* harmony import */ var _utils_useControlled_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../utils/useControlled.js */ "./node_modules/@mui/material/esm/utils/useControlled.js");
-/* harmony import */ var _utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../utils/useSlot.js */ "./node_modules/@mui/material/esm/utils/useSlot.js");
-/* harmony import */ var _tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./tooltipClasses.js */ "./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-'use client';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function round(value) {
-  return Math.round(value * 1e5) / 1e5;
-}
-const useUtilityClasses = ownerState => {
-  const {
-    classes,
-    disableInteractive,
-    arrow,
-    touch,
-    placement
-  } = ownerState;
-  const slots = {
-    popper: ['popper', !disableInteractive && 'popperInteractive', arrow && 'popperArrow'],
-    tooltip: ['tooltip', arrow && 'tooltipArrow', touch && 'touch', `tooltipPlacement${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__["default"])(placement.split('-')[0])}`],
-    arrow: ['arrow']
-  };
-  return (0,_mui_utils_composeClasses__WEBPACK_IMPORTED_MODULE_4__["default"])(slots, _tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__.getTooltipUtilityClass, classes);
-};
-const TooltipPopper = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])(_Popper_index_js__WEBPACK_IMPORTED_MODULE_7__["default"], {
-  name: 'MuiTooltip',
-  slot: 'Popper',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.popper, !ownerState.disableInteractive && styles.popperInteractive, ownerState.arrow && styles.popperArrow, !ownerState.open && styles.popperClose];
-  }
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
-  theme
-}) => ({
-  zIndex: (theme.vars || theme).zIndex.tooltip,
-  pointerEvents: 'none',
-  variants: [{
-    props: ({
-      ownerState
-    }) => !ownerState.disableInteractive,
-    style: {
-      pointerEvents: 'auto'
-    }
-  }, {
-    props: ({
-      open
-    }) => !open,
-    style: {
-      pointerEvents: 'none'
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.arrow,
-    style: {
-      [`&[data-popper-placement*="bottom"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        top: 0,
-        marginTop: '-0.71em',
-        '&::before': {
-          transformOrigin: '0 100%'
-        }
-      },
-      [`&[data-popper-placement*="top"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        bottom: 0,
-        marginBottom: '-0.71em',
-        '&::before': {
-          transformOrigin: '100% 0'
-        }
-      },
-      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        height: '1em',
-        width: '0.71em',
-        '&::before': {
-          transformOrigin: '100% 100%'
-        }
-      },
-      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        height: '1em',
-        width: '0.71em',
-        '&::before': {
-          transformOrigin: '0 0'
-        }
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.arrow && !ownerState.isRtl,
-    style: {
-      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        left: 0,
-        marginLeft: '-0.71em'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.arrow && !!ownerState.isRtl,
-    style: {
-      [`&[data-popper-placement*="right"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        right: 0,
-        marginRight: '-0.71em'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.arrow && !ownerState.isRtl,
-    style: {
-      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        right: 0,
-        marginRight: '-0.71em'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.arrow && !!ownerState.isRtl,
-    style: {
-      [`&[data-popper-placement*="left"] .${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].arrow}`]: {
-        left: 0,
-        marginLeft: '-0.71em'
-      }
-    }
-  }]
-})));
-const TooltipTooltip = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])('div', {
-  name: 'MuiTooltip',
-  slot: 'Tooltip',
-  overridesResolver: (props, styles) => {
-    const {
-      ownerState
-    } = props;
-    return [styles.tooltip, ownerState.touch && styles.touch, ownerState.arrow && styles.tooltipArrow, styles[`tooltipPlacement${(0,_utils_capitalize_js__WEBPACK_IMPORTED_MODULE_3__["default"])(ownerState.placement.split('-')[0])}`]];
-  }
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
-  theme
-}) => ({
-  backgroundColor: theme.vars ? theme.vars.palette.Tooltip.bg : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.grey[700], 0.92),
-  borderRadius: (theme.vars || theme).shape.borderRadius,
-  color: (theme.vars || theme).palette.common.white,
-  fontFamily: theme.typography.fontFamily,
-  padding: '4px 8px',
-  fontSize: theme.typography.pxToRem(11),
-  maxWidth: 300,
-  margin: 2,
-  wordWrap: 'break-word',
-  fontWeight: theme.typography.fontWeightMedium,
-  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
-    transformOrigin: 'right center'
-  },
-  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
-    transformOrigin: 'left center'
-  },
-  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="top"] &`]: {
-    transformOrigin: 'center bottom',
-    marginBottom: '14px'
-  },
-  [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="bottom"] &`]: {
-    transformOrigin: 'center top',
-    marginTop: '14px'
-  },
-  variants: [{
-    props: ({
-      ownerState
-    }) => ownerState.arrow,
-    style: {
-      position: 'relative',
-      margin: 0
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.touch,
-    style: {
-      padding: '8px 16px',
-      fontSize: theme.typography.pxToRem(14),
-      lineHeight: `${round(16 / 14)}em`,
-      fontWeight: theme.typography.fontWeightRegular
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.isRtl,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
-        marginRight: '14px'
-      },
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
-        marginLeft: '14px'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !ownerState.isRtl && ownerState.touch,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
-        marginRight: '24px'
-      },
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
-        marginLeft: '24px'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !!ownerState.isRtl,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
-        marginLeft: '14px'
-      },
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
-        marginRight: '14px'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => !!ownerState.isRtl && ownerState.touch,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="left"] &`]: {
-        marginLeft: '24px'
-      },
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="right"] &`]: {
-        marginRight: '24px'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.touch,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="top"] &`]: {
-        marginBottom: '24px'
-      }
-    }
-  }, {
-    props: ({
-      ownerState
-    }) => ownerState.touch,
-    style: {
-      [`.${_tooltipClasses_js__WEBPACK_IMPORTED_MODULE_5__["default"].popper}[data-popper-placement*="bottom"] &`]: {
-        marginTop: '24px'
-      }
-    }
-  }]
-})));
-const TooltipArrow = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_6__["default"])('span', {
-  name: 'MuiTooltip',
-  slot: 'Arrow',
-  overridesResolver: (props, styles) => styles.arrow
-})((0,_utils_memoTheme_js__WEBPACK_IMPORTED_MODULE_8__["default"])(({
-  theme
-}) => ({
-  overflow: 'hidden',
-  position: 'absolute',
-  width: '1em',
-  height: '0.71em' /* = width / sqrt(2) = (length of the hypotenuse) */,
-  boxSizing: 'border-box',
-  color: theme.vars ? theme.vars.palette.Tooltip.bg : (0,_mui_system_colorManipulator__WEBPACK_IMPORTED_MODULE_9__.alpha)(theme.palette.grey[700], 0.9),
-  '&::before': {
-    content: '""',
-    margin: 'auto',
-    display: 'block',
-    width: '100%',
-    height: '100%',
-    backgroundColor: 'currentColor',
-    transform: 'rotate(45deg)'
-  }
-})));
-let hystersisOpen = false;
-const hystersisTimer = new _mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__.Timeout();
-let cursorPosition = {
-  x: 0,
-  y: 0
-};
-function testReset() {
-  hystersisOpen = false;
-  hystersisTimer.clear();
-}
-function composeEventHandler(handler, eventHandler) {
-  return (event, ...params) => {
-    if (eventHandler) {
-      eventHandler(event, ...params);
-    }
-    handler(event, ...params);
-  };
-}
-
-// TODO v6: Remove PopperComponent, PopperProps, TransitionComponent and TransitionProps.
-const Tooltip = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.forwardRef(function Tooltip(inProps, ref) {
-  const props = (0,_DefaultPropsProvider_index_js__WEBPACK_IMPORTED_MODULE_11__.useDefaultProps)({
-    props: inProps,
-    name: 'MuiTooltip'
-  });
-  const {
-    arrow = false,
-    children: childrenProp,
-    classes: classesProp,
-    components = {},
-    componentsProps = {},
-    describeChild = false,
-    disableFocusListener = false,
-    disableHoverListener = false,
-    disableInteractive: disableInteractiveProp = false,
-    disableTouchListener = false,
-    enterDelay = 100,
-    enterNextDelay = 0,
-    enterTouchDelay = 700,
-    followCursor = false,
-    id: idProp,
-    leaveDelay = 0,
-    leaveTouchDelay = 1500,
-    onClose,
-    onOpen,
-    open: openProp,
-    placement = 'bottom',
-    PopperComponent: PopperComponentProp,
-    PopperProps = {},
-    slotProps = {},
-    slots = {},
-    title,
-    TransitionComponent: TransitionComponentProp,
-    TransitionProps,
-    ...other
-  } = props;
-
-  // to prevent runtime errors, developers will need to provide a child as a React element anyway.
-  const children = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(childrenProp) ? childrenProp : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-    children: childrenProp
-  });
-  const theme = (0,_zero_styled_index_js__WEBPACK_IMPORTED_MODULE_12__["default"])();
-  const isRtl = (0,_mui_system_RtlProvider__WEBPACK_IMPORTED_MODULE_13__.useRtl)();
-  const [childNode, setChildNode] = react__WEBPACK_IMPORTED_MODULE_0__.useState();
-  const [arrowRef, setArrowRef] = react__WEBPACK_IMPORTED_MODULE_0__.useState(null);
-  const ignoreNonTouchEvents = react__WEBPACK_IMPORTED_MODULE_0__.useRef(false);
-  const disableInteractive = disableInteractiveProp || followCursor;
-  const closeTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
-  const enterTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
-  const leaveTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
-  const touchTimer = (0,_mui_utils_useTimeout__WEBPACK_IMPORTED_MODULE_10__["default"])();
-  const [openState, setOpenState] = (0,_utils_useControlled_js__WEBPACK_IMPORTED_MODULE_14__["default"])({
-    controlled: openProp,
-    default: false,
-    name: 'Tooltip',
-    state: 'open'
-  });
-  let open = openState;
-  if (true) {
-    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
-    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
-    const {
-      current: isControlled
-    } = react__WEBPACK_IMPORTED_MODULE_0__.useRef(openProp !== undefined);
-
-    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
-    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
-    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-      if (childNode && childNode.disabled && !isControlled && title !== '' && childNode.tagName.toLowerCase() === 'button') {
-        console.warn(['MUI: You are providing a disabled `button` child to the Tooltip component.', 'A disabled element does not fire events.', "Tooltip needs to listen to the child element's events to display the title.", '', 'Add a simple wrapper element, such as a `span`.'].join('\n'));
-      }
-    }, [title, childNode, isControlled]);
-  }
-  const id = (0,_utils_useId_js__WEBPACK_IMPORTED_MODULE_15__["default"])(idProp);
-  const prevUserSelect = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  const stopTouchInteraction = (0,_utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__["default"])(() => {
-    if (prevUserSelect.current !== undefined) {
-      document.body.style.WebkitUserSelect = prevUserSelect.current;
-      prevUserSelect.current = undefined;
-    }
-    touchTimer.clear();
-  });
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => stopTouchInteraction, [stopTouchInteraction]);
-  const handleOpen = event => {
-    hystersisTimer.clear();
-    hystersisOpen = true;
-
-    // The mouseover event will trigger for every nested element in the tooltip.
-    // We can skip rerendering when the tooltip is already open.
-    // We are using the mouseover event instead of the mouseenter event to fix a hide/show issue.
-    setOpenState(true);
-    if (onOpen && !open) {
-      onOpen(event);
-    }
-  };
-  const handleClose = (0,_utils_useEventCallback_js__WEBPACK_IMPORTED_MODULE_16__["default"])(
-  /**
-   * @param {React.SyntheticEvent | Event} event
-   */
-  event => {
-    hystersisTimer.start(800 + leaveDelay, () => {
-      hystersisOpen = false;
-    });
-    setOpenState(false);
-    if (onClose && open) {
-      onClose(event);
-    }
-    closeTimer.start(theme.transitions.duration.shortest, () => {
-      ignoreNonTouchEvents.current = false;
-    });
-  });
-  const handleMouseOver = event => {
-    if (ignoreNonTouchEvents.current && event.type !== 'touchstart') {
-      return;
-    }
-
-    // Remove the title ahead of time.
-    // We don't want to wait for the next render commit.
-    // We would risk displaying two tooltips at the same time (native + this one).
-    if (childNode) {
-      childNode.removeAttribute('title');
-    }
-    enterTimer.clear();
-    leaveTimer.clear();
-    if (enterDelay || hystersisOpen && enterNextDelay) {
-      enterTimer.start(hystersisOpen ? enterNextDelay : enterDelay, () => {
-        handleOpen(event);
-      });
-    } else {
-      handleOpen(event);
-    }
-  };
-  const handleMouseLeave = event => {
-    enterTimer.clear();
-    leaveTimer.start(leaveDelay, () => {
-      handleClose(event);
-    });
-  };
-  const [, setChildIsFocusVisible] = react__WEBPACK_IMPORTED_MODULE_0__.useState(false);
-  const handleBlur = event => {
-    if (!(0,_mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__["default"])(event.target)) {
-      setChildIsFocusVisible(false);
-      handleMouseLeave(event);
-    }
-  };
-  const handleFocus = event => {
-    // Workaround for https://github.com/facebook/react/issues/7769
-    // The autoFocus of React might trigger the event before the componentDidMount.
-    // We need to account for this eventuality.
-    if (!childNode) {
-      setChildNode(event.currentTarget);
-    }
-    if ((0,_mui_utils_isFocusVisible__WEBPACK_IMPORTED_MODULE_17__["default"])(event.target)) {
-      setChildIsFocusVisible(true);
-      handleMouseOver(event);
-    }
-  };
-  const detectTouchStart = event => {
-    ignoreNonTouchEvents.current = true;
-    const childrenProps = children.props;
-    if (childrenProps.onTouchStart) {
-      childrenProps.onTouchStart(event);
-    }
-  };
-  const handleTouchStart = event => {
-    detectTouchStart(event);
-    leaveTimer.clear();
-    closeTimer.clear();
-    stopTouchInteraction();
-    prevUserSelect.current = document.body.style.WebkitUserSelect;
-    // Prevent iOS text selection on long-tap.
-    document.body.style.WebkitUserSelect = 'none';
-    touchTimer.start(enterTouchDelay, () => {
-      document.body.style.WebkitUserSelect = prevUserSelect.current;
-      handleMouseOver(event);
-    });
-  };
-  const handleTouchEnd = event => {
-    if (children.props.onTouchEnd) {
-      children.props.onTouchEnd(event);
-    }
-    stopTouchInteraction();
-    leaveTimer.start(leaveTouchDelay, () => {
-      handleClose(event);
-    });
-  };
-  react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-    if (!open) {
-      return undefined;
-    }
-
-    /**
-     * @param {KeyboardEvent} nativeEvent
-     */
-    function handleKeyDown(nativeEvent) {
-      if (nativeEvent.key === 'Escape') {
-        handleClose(nativeEvent);
-      }
-    }
-    document.addEventListener('keydown', handleKeyDown);
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [handleClose, open]);
-  const handleRef = (0,_utils_useForkRef_js__WEBPACK_IMPORTED_MODULE_18__["default"])((0,_mui_utils_getReactElementRef__WEBPACK_IMPORTED_MODULE_19__["default"])(children), setChildNode, ref);
-
-  // There is no point in displaying an empty tooltip.
-  // So we exclude all falsy values, except 0, which is valid.
-  if (!title && title !== 0) {
-    open = false;
-  }
-  const popperRef = react__WEBPACK_IMPORTED_MODULE_0__.useRef();
-  const handleMouseMove = event => {
-    const childrenProps = children.props;
-    if (childrenProps.onMouseMove) {
-      childrenProps.onMouseMove(event);
-    }
-    cursorPosition = {
-      x: event.clientX,
-      y: event.clientY
-    };
-    if (popperRef.current) {
-      popperRef.current.update();
-    }
-  };
-  const nameOrDescProps = {};
-  const titleIsString = typeof title === 'string';
-  if (describeChild) {
-    nameOrDescProps.title = !open && titleIsString && !disableHoverListener ? title : null;
-    nameOrDescProps['aria-describedby'] = open ? id : null;
-  } else {
-    nameOrDescProps['aria-label'] = titleIsString ? title : null;
-    nameOrDescProps['aria-labelledby'] = open && !titleIsString ? id : null;
-  }
-  const childrenProps = {
-    ...nameOrDescProps,
-    ...other,
-    ...children.props,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(other.className, children.props.className),
-    onTouchStart: detectTouchStart,
-    ref: handleRef,
-    ...(followCursor ? {
-      onMouseMove: handleMouseMove
-    } : {})
-  };
-  if (true) {
-    childrenProps['data-mui-internal-clone-element'] = true;
-
-    // TODO: uncomment once we enable eslint-plugin-react-compiler // eslint-disable-next-line react-compiler/react-compiler
-    // eslint-disable-next-line react-hooks/rules-of-hooks -- process.env never changes
-    react__WEBPACK_IMPORTED_MODULE_0__.useEffect(() => {
-      if (childNode && !childNode.getAttribute('data-mui-internal-clone-element')) {
-        console.error(['MUI: The `children` component of the Tooltip is not forwarding its props correctly.', 'Please make sure that props are spread on the same element that the ref is applied to.'].join('\n'));
-      }
-    }, [childNode]);
-  }
-  const interactiveWrapperListeners = {};
-  if (!disableTouchListener) {
-    childrenProps.onTouchStart = handleTouchStart;
-    childrenProps.onTouchEnd = handleTouchEnd;
-  }
-  if (!disableHoverListener) {
-    childrenProps.onMouseOver = composeEventHandler(handleMouseOver, childrenProps.onMouseOver);
-    childrenProps.onMouseLeave = composeEventHandler(handleMouseLeave, childrenProps.onMouseLeave);
-    if (!disableInteractive) {
-      interactiveWrapperListeners.onMouseOver = handleMouseOver;
-      interactiveWrapperListeners.onMouseLeave = handleMouseLeave;
-    }
-  }
-  if (!disableFocusListener) {
-    childrenProps.onFocus = composeEventHandler(handleFocus, childrenProps.onFocus);
-    childrenProps.onBlur = composeEventHandler(handleBlur, childrenProps.onBlur);
-    if (!disableInteractive) {
-      interactiveWrapperListeners.onFocus = handleFocus;
-      interactiveWrapperListeners.onBlur = handleBlur;
-    }
-  }
-  if (true) {
-    if (children.props.title) {
-      console.error(['MUI: You have provided a `title` prop to the child of <Tooltip />.', `Remove this title prop \`${children.props.title}\` or the Tooltip component.`].join('\n'));
-    }
-  }
-  const ownerState = {
-    ...props,
-    isRtl,
-    arrow,
-    disableInteractive,
-    placement,
-    PopperComponentProp,
-    touch: ignoreNonTouchEvents.current
-  };
-  const resolvedPopperProps = typeof slotProps.popper === 'function' ? slotProps.popper(ownerState) : slotProps.popper;
-  const popperOptions = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
-    let tooltipModifiers = [{
-      name: 'arrow',
-      enabled: Boolean(arrowRef),
-      options: {
-        element: arrowRef,
-        padding: 4
-      }
-    }];
-    if (PopperProps.popperOptions?.modifiers) {
-      tooltipModifiers = tooltipModifiers.concat(PopperProps.popperOptions.modifiers);
-    }
-    if (resolvedPopperProps?.popperOptions?.modifiers) {
-      tooltipModifiers = tooltipModifiers.concat(resolvedPopperProps.popperOptions.modifiers);
-    }
-    return {
-      ...PopperProps.popperOptions,
-      ...resolvedPopperProps?.popperOptions,
-      modifiers: tooltipModifiers
-    };
-  }, [arrowRef, PopperProps.popperOptions, resolvedPopperProps?.popperOptions]);
-  const classes = useUtilityClasses(ownerState);
-  const resolvedTransitionProps = typeof slotProps.transition === 'function' ? slotProps.transition(ownerState) : slotProps.transition;
-  const externalForwardedProps = {
-    slots: {
-      popper: components.Popper,
-      transition: components.Transition ?? TransitionComponentProp,
-      tooltip: components.Tooltip,
-      arrow: components.Arrow,
-      ...slots
-    },
-    slotProps: {
-      arrow: slotProps.arrow ?? componentsProps.arrow,
-      popper: {
-        ...PopperProps,
-        ...(resolvedPopperProps ?? componentsProps.popper)
-      },
-      // resolvedPopperProps can be spread because it's already an object
-      tooltip: slotProps.tooltip ?? componentsProps.tooltip,
-      transition: {
-        ...TransitionProps,
-        ...(resolvedTransitionProps ?? componentsProps.transition)
-      }
-    }
-  };
-  const [PopperSlot, popperSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('popper', {
-    elementType: TooltipPopper,
-    externalForwardedProps,
-    ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.popper, PopperProps?.className)
-  });
-  const [TransitionSlot, transitionSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('transition', {
-    elementType: _Grow_index_js__WEBPACK_IMPORTED_MODULE_21__["default"],
-    externalForwardedProps,
-    ownerState
-  });
-  const [TooltipSlot, tooltipSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('tooltip', {
-    elementType: TooltipTooltip,
-    className: classes.tooltip,
-    externalForwardedProps,
-    ownerState
-  });
-  const [ArrowSlot, arrowSlotProps] = (0,_utils_useSlot_js__WEBPACK_IMPORTED_MODULE_20__["default"])('arrow', {
-    elementType: TooltipArrow,
-    className: classes.arrow,
-    externalForwardedProps,
-    ownerState,
-    ref: setArrowRef
-  });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    children: [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.cloneElement(children, childrenProps), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(PopperSlot, {
-      as: PopperComponentProp ?? _Popper_index_js__WEBPACK_IMPORTED_MODULE_7__["default"],
-      placement: placement,
-      anchorEl: followCursor ? {
-        getBoundingClientRect: () => ({
-          top: cursorPosition.y,
-          left: cursorPosition.x,
-          right: cursorPosition.x,
-          bottom: cursorPosition.y,
-          width: 0,
-          height: 0
-        })
-      } : childNode,
-      popperRef: popperRef,
-      open: childNode ? open : false,
-      id: id,
-      transition: true,
-      ...interactiveWrapperListeners,
-      ...popperSlotProps,
-      popperOptions: popperOptions,
-      children: ({
-        TransitionProps: TransitionPropsInner
-      }) => /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(TransitionSlot, {
-        timeout: theme.transitions.duration.shorter,
-        ...TransitionPropsInner,
-        ...transitionSlotProps,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(TooltipSlot, {
-          ...tooltipSlotProps,
-          children: [title, arrow ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(ArrowSlot, {
-            ...arrowSlotProps
-          }) : null]
-        })
-      })
-    })]
-  });
-});
- true ? Tooltip.propTypes /* remove-proptypes */ = {
-  // ┌────────────────────────────── Warning ──────────────────────────────┐
-  // │ These PropTypes are generated from the TypeScript type definitions. │
-  // │    To update them, edit the d.ts file and run `pnpm proptypes`.     │
-  // └─────────────────────────────────────────────────────────────────────┘
-  /**
-   * If `true`, adds an arrow to the tooltip.
-   * @default false
-   */
-  arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Tooltip reference element.
-   */
-  children: _mui_utils_elementAcceptingRef__WEBPACK_IMPORTED_MODULE_23__["default"].isRequired,
-  /**
-   * Override or extend the styles applied to the component.
-   */
-  classes: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
-  /**
-   * @ignore
-   */
-  className: prop_types__WEBPACK_IMPORTED_MODULE_22__.string,
-  /**
-   * The components used for each slot inside.
-   *
-   * @deprecated use the `slots` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   *
-   * @default {}
-   */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
-    Arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    Popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    Tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    Transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType
-  }),
-  /**
-   * The extra props for the slot components.
-   * You can override the existing props or add new ones.
-   *
-   * @deprecated use the `slotProps` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   *
-   * @default {}
-   */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
-    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
-    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
-    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
-    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.object
-  }),
-  /**
-   * Set to `true` if the `title` acts as an accessible description.
-   * By default the `title` acts as an accessible label for the child.
-   * @default false
-   */
-  describeChild: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Do not respond to focus-visible events.
-   * @default false
-   */
-  disableFocusListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Do not respond to hover events.
-   * @default false
-   */
-  disableHoverListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Makes a tooltip not interactive, i.e. it will close when the user
-   * hovers over the tooltip before the `leaveDelay` is expired.
-   * @default false
-   */
-  disableInteractive: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Do not respond to long press touch events.
-   * @default false
-   */
-  disableTouchListener: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * The number of milliseconds to wait before showing the tooltip.
-   * This prop won't impact the enter touch delay (`enterTouchDelay`).
-   * @default 100
-   */
-  enterDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
-  /**
-   * The number of milliseconds to wait before showing the tooltip when one was already recently opened.
-   * @default 0
-   */
-  enterNextDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
-  /**
-   * The number of milliseconds a user must touch the element before showing the tooltip.
-   * @default 700
-   */
-  enterTouchDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
-  /**
-   * If `true`, the tooltip follow the cursor over the wrapped element.
-   * @default false
-   */
-  followCursor: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * This prop is used to help implement the accessibility logic.
-   * If you don't provide this prop. It falls back to a randomly generated id.
-   */
-  id: prop_types__WEBPACK_IMPORTED_MODULE_22__.string,
-  /**
-   * The number of milliseconds to wait before hiding the tooltip.
-   * This prop won't impact the leave touch delay (`leaveTouchDelay`).
-   * @default 0
-   */
-  leaveDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
-  /**
-   * The number of milliseconds after the user stops touching an element before hiding the tooltip.
-   * @default 1500
-   */
-  leaveTouchDelay: prop_types__WEBPACK_IMPORTED_MODULE_22__.number,
-  /**
-   * Callback fired when the component requests to be closed.
-   *
-   * @param {React.SyntheticEvent} event The event source of the callback.
-   */
-  onClose: prop_types__WEBPACK_IMPORTED_MODULE_22__.func,
-  /**
-   * Callback fired when the component requests to be open.
-   *
-   * @param {React.SyntheticEvent} event The event source of the callback.
-   */
-  onOpen: prop_types__WEBPACK_IMPORTED_MODULE_22__.func,
-  /**
-   * If `true`, the component is shown.
-   */
-  open: prop_types__WEBPACK_IMPORTED_MODULE_22__.bool,
-  /**
-   * Tooltip placement.
-   * @default 'bottom'
-   */
-  placement: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOf(['auto-end', 'auto-start', 'auto', 'bottom-end', 'bottom-start', 'bottom', 'left-end', 'left-start', 'left', 'right-end', 'right-start', 'right', 'top-end', 'top-start', 'top']),
-  /**
-   * The component used for the popper.
-   * @deprecated use the `slots.popper` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  PopperComponent: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-  /**
-   * Props applied to the [`Popper`](https://mui.com/material-ui/api/popper/) element.
-   * @deprecated use the `slotProps.popper` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   * @default {}
-   */
-  PopperProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.object,
-  /**
-   * The props used for each slot inside.
-   * @default {}
-   */
-  slotProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
-    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
-    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
-    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
-    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object])
-  }),
-  /**
-   * The components used for each slot inside.
-   * @default {}
-   */
-  slots: prop_types__WEBPACK_IMPORTED_MODULE_22__.shape({
-    arrow: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    popper: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    tooltip: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-    transition: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType
-  }),
-  /**
-   * The system prop that allows defining system overrides as well as additional CSS styles.
-   */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_22__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object, prop_types__WEBPACK_IMPORTED_MODULE_22__.bool])), prop_types__WEBPACK_IMPORTED_MODULE_22__.func, prop_types__WEBPACK_IMPORTED_MODULE_22__.object]),
-  /**
-   * Tooltip title. Zero-length titles string, undefined, null and false are never displayed.
-   */
-  title: prop_types__WEBPACK_IMPORTED_MODULE_22__.node,
-  /**
-   * The component used for the transition.
-   * [Follow this guide](https://mui.com/material-ui/transitions/#transitioncomponent-prop) to learn more about the requirements for this component.
-   * @deprecated use the `slots.transition` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   */
-  TransitionComponent: prop_types__WEBPACK_IMPORTED_MODULE_22__.elementType,
-  /**
-   * Props applied to the transition element.
-   * By default, the element is based on this [`Transition`](https://reactcommunity.org/react-transition-group/transition/) component.
-   * @deprecated use the `slotProps.transition` prop instead. This prop will be removed in a future major release. See [Migrating from deprecated APIs](https://mui.com/material-ui/migration/migrating-from-deprecated-apis/) for more details.
-   * @default {}
-   */
-  TransitionProps: prop_types__WEBPACK_IMPORTED_MODULE_22__.object
-} : 0;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Tooltip);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/@mui/material/esm/Tooltip/tooltipClasses.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   getTooltipUtilityClass: () => (/* binding */ getTooltipUtilityClass)
-/* harmony export */ });
-/* harmony import */ var _mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/utils/generateUtilityClasses */ "./node_modules/@mui/utils/esm/generateUtilityClasses/generateUtilityClasses.js");
-/* harmony import */ var _mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @mui/utils/generateUtilityClass */ "./node_modules/@mui/utils/esm/generateUtilityClass/generateUtilityClass.js");
-
-
-function getTooltipUtilityClass(slot) {
-  return (0,_mui_utils_generateUtilityClass__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiTooltip', slot);
-}
-const tooltipClasses = (0,_mui_utils_generateUtilityClasses__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiTooltip', ['popper', 'popperInteractive', 'popperArrow', 'popperClose', 'tooltip', 'tooltipArrow', 'touch', 'tooltipPlacementLeft', 'tooltipPlacementRight', 'tooltipPlacementTop', 'tooltipPlacementBottom', 'arrow']);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tooltipClasses);
 
 /***/ }),
 
@@ -99126,32 +96724,6 @@ function getScrollbarSize(win = window) {
 
 /***/ }),
 
-/***/ "./node_modules/@mui/utils/esm/getValidReactChildren/getValidReactChildren.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/@mui/utils/esm/getValidReactChildren/getValidReactChildren.js ***!
-  \************************************************************************************/
-/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ getValidReactChildren)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-
-/**
- * Gets only the valid children of a component,
- * and ignores any nullish or falsy child.
- *
- * @param children the children
- */
-function getValidReactChildren(children) {
-  return react__WEBPACK_IMPORTED_MODULE_0__.Children.toArray(children).filter(child => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.isValidElement(child));
-}
-
-/***/ }),
-
 /***/ "./node_modules/@mui/utils/esm/integerPropType/integerPropType.js":
 /*!************************************************************************!*\
   !*** ./node_modules/@mui/utils/esm/integerPropType/integerPropType.js ***!
@@ -106398,3788 +103970,6 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js");
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/JsBarcode.js":
-/*!*************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/JsBarcode.js ***!
-  \*************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var _barcodes = __webpack_require__(/*! ./barcodes/ */ "./node_modules/jsbarcode/bin/barcodes/index.js");
-
-var _barcodes2 = _interopRequireDefault(_barcodes);
-
-var _merge = __webpack_require__(/*! ./help/merge.js */ "./node_modules/jsbarcode/bin/help/merge.js");
-
-var _merge2 = _interopRequireDefault(_merge);
-
-var _linearizeEncodings = __webpack_require__(/*! ./help/linearizeEncodings.js */ "./node_modules/jsbarcode/bin/help/linearizeEncodings.js");
-
-var _linearizeEncodings2 = _interopRequireDefault(_linearizeEncodings);
-
-var _fixOptions = __webpack_require__(/*! ./help/fixOptions.js */ "./node_modules/jsbarcode/bin/help/fixOptions.js");
-
-var _fixOptions2 = _interopRequireDefault(_fixOptions);
-
-var _getRenderProperties = __webpack_require__(/*! ./help/getRenderProperties.js */ "./node_modules/jsbarcode/bin/help/getRenderProperties.js");
-
-var _getRenderProperties2 = _interopRequireDefault(_getRenderProperties);
-
-var _optionsFromStrings = __webpack_require__(/*! ./help/optionsFromStrings.js */ "./node_modules/jsbarcode/bin/help/optionsFromStrings.js");
-
-var _optionsFromStrings2 = _interopRequireDefault(_optionsFromStrings);
-
-var _ErrorHandler = __webpack_require__(/*! ./exceptions/ErrorHandler.js */ "./node_modules/jsbarcode/bin/exceptions/ErrorHandler.js");
-
-var _ErrorHandler2 = _interopRequireDefault(_ErrorHandler);
-
-var _exceptions = __webpack_require__(/*! ./exceptions/exceptions.js */ "./node_modules/jsbarcode/bin/exceptions/exceptions.js");
-
-var _defaults = __webpack_require__(/*! ./options/defaults.js */ "./node_modules/jsbarcode/bin/options/defaults.js");
-
-var _defaults2 = _interopRequireDefault(_defaults);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// The protype of the object returned from the JsBarcode() call
-
-
-// Help functions
-var API = function API() {};
-
-// The first call of the library API
-// Will return an object with all barcodes calls and the data that is used
-// by the renderers
-
-
-// Default values
-
-
-// Exceptions
-// Import all the barcodes
-var JsBarcode = function JsBarcode(element, text, options) {
-	var api = new API();
-
-	if (typeof element === "undefined") {
-		throw Error("No element to render on was provided.");
-	}
-
-	// Variables that will be pased through the API calls
-	api._renderProperties = (0, _getRenderProperties2.default)(element);
-	api._encodings = [];
-	api._options = _defaults2.default;
-	api._errorHandler = new _ErrorHandler2.default(api);
-
-	// If text is set, use the simple syntax (render the barcode directly)
-	if (typeof text !== "undefined") {
-		options = options || {};
-
-		if (!options.format) {
-			options.format = autoSelectBarcode();
-		}
-
-		api.options(options)[options.format](text, options).render();
-	}
-
-	return api;
-};
-
-// To make tests work TODO: remove
-JsBarcode.getModule = function (name) {
-	return _barcodes2.default[name];
-};
-
-// Register all barcodes
-for (var name in _barcodes2.default) {
-	if (_barcodes2.default.hasOwnProperty(name)) {
-		// Security check if the propery is a prototype property
-		registerBarcode(_barcodes2.default, name);
-	}
-}
-function registerBarcode(barcodes, name) {
-	API.prototype[name] = API.prototype[name.toUpperCase()] = API.prototype[name.toLowerCase()] = function (text, options) {
-		var api = this;
-		return api._errorHandler.wrapBarcodeCall(function () {
-			// Ensure text is options.text
-			options.text = typeof options.text === 'undefined' ? undefined : '' + options.text;
-
-			var newOptions = (0, _merge2.default)(api._options, options);
-			newOptions = (0, _optionsFromStrings2.default)(newOptions);
-			var Encoder = barcodes[name];
-			var encoded = encode(text, Encoder, newOptions);
-			api._encodings.push(encoded);
-
-			return api;
-		});
-	};
-}
-
-// encode() handles the Encoder call and builds the binary string to be rendered
-function encode(text, Encoder, options) {
-	// Ensure that text is a string
-	text = "" + text;
-
-	var encoder = new Encoder(text, options);
-
-	// If the input is not valid for the encoder, throw error.
-	// If the valid callback option is set, call it instead of throwing error
-	if (!encoder.valid()) {
-		throw new _exceptions.InvalidInputException(encoder.constructor.name, text);
-	}
-
-	// Make a request for the binary data (and other infromation) that should be rendered
-	var encoded = encoder.encode();
-
-	// Encodings can be nestled like [[1-1, 1-2], 2, [3-1, 3-2]
-	// Convert to [1-1, 1-2, 2, 3-1, 3-2]
-	encoded = (0, _linearizeEncodings2.default)(encoded);
-
-	// Merge
-	for (var i = 0; i < encoded.length; i++) {
-		encoded[i].options = (0, _merge2.default)(options, encoded[i].options);
-	}
-
-	return encoded;
-}
-
-function autoSelectBarcode() {
-	// If CODE128 exists. Use it
-	if (_barcodes2.default["CODE128"]) {
-		return "CODE128";
-	}
-
-	// Else, take the first (probably only) barcode
-	return Object.keys(_barcodes2.default)[0];
-}
-
-// Sets global encoder options
-// Added to the api by the JsBarcode function
-API.prototype.options = function (options) {
-	this._options = (0, _merge2.default)(this._options, options);
-	return this;
-};
-
-// Will create a blank space (usually in between barcodes)
-API.prototype.blank = function (size) {
-	var zeroes = new Array(size + 1).join("0");
-	this._encodings.push({ data: zeroes });
-	return this;
-};
-
-// Initialize JsBarcode on all HTML elements defined.
-API.prototype.init = function () {
-	// Should do nothing if no elements where found
-	if (!this._renderProperties) {
-		return;
-	}
-
-	// Make sure renderProperies is an array
-	if (!Array.isArray(this._renderProperties)) {
-		this._renderProperties = [this._renderProperties];
-	}
-
-	var renderProperty;
-	for (var i in this._renderProperties) {
-		renderProperty = this._renderProperties[i];
-		var options = (0, _merge2.default)(this._options, renderProperty.options);
-
-		if (options.format == "auto") {
-			options.format = autoSelectBarcode();
-		}
-
-		this._errorHandler.wrapBarcodeCall(function () {
-			var text = options.value;
-			var Encoder = _barcodes2.default[options.format.toUpperCase()];
-			var encoded = encode(text, Encoder, options);
-
-			render(renderProperty, encoded, options);
-		});
-	}
-};
-
-// The render API call. Calls the real render function.
-API.prototype.render = function () {
-	if (!this._renderProperties) {
-		throw new _exceptions.NoElementException();
-	}
-
-	if (Array.isArray(this._renderProperties)) {
-		for (var i = 0; i < this._renderProperties.length; i++) {
-			render(this._renderProperties[i], this._encodings, this._options);
-		}
-	} else {
-		render(this._renderProperties, this._encodings, this._options);
-	}
-
-	return this;
-};
-
-API.prototype._defaults = _defaults2.default;
-
-// Prepares the encodings and calls the renderer
-function render(renderProperties, encodings, options) {
-	encodings = (0, _linearizeEncodings2.default)(encodings);
-
-	for (var i = 0; i < encodings.length; i++) {
-		encodings[i].options = (0, _merge2.default)(options, encodings[i].options);
-		(0, _fixOptions2.default)(encodings[i].options);
-	}
-
-	(0, _fixOptions2.default)(options);
-
-	var Renderer = renderProperties.renderer;
-	var renderer = new Renderer(renderProperties.element, encodings, options);
-	renderer.render();
-
-	if (renderProperties.afterRender) {
-		renderProperties.afterRender();
-	}
-}
-
-// Export to browser
-if (typeof window !== "undefined") {
-	window.JsBarcode = JsBarcode;
-}
-
-// Export to jQuery
-/*global jQuery */
-if (typeof jQuery !== 'undefined') {
-	jQuery.fn.JsBarcode = function (content, options) {
-		var elementArray = [];
-		jQuery(this).each(function () {
-			elementArray.push(this);
-		});
-		return JsBarcode(elementArray, content, options);
-	};
-}
-
-// Export to commonJS
-module.exports = JsBarcode;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/Barcode.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/Barcode.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var Barcode = function Barcode(data, options) {
-	_classCallCheck(this, Barcode);
-
-	this.data = data;
-	this.text = options.text || data;
-	this.options = options;
-};
-
-exports["default"] = Barcode;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// This is the master class,
-// it does require the start code to be included in the string
-var CODE128 = function (_Barcode) {
-	_inherits(CODE128, _Barcode);
-
-	function CODE128(data, options) {
-		_classCallCheck(this, CODE128);
-
-		// Get array of ascii codes from data
-		var _this = _possibleConstructorReturn(this, (CODE128.__proto__ || Object.getPrototypeOf(CODE128)).call(this, data.substring(1), options));
-
-		_this.bytes = data.split('').map(function (char) {
-			return char.charCodeAt(0);
-		});
-		return _this;
-	}
-
-	_createClass(CODE128, [{
-		key: 'valid',
-		value: function valid() {
-			// ASCII value ranges 0-127, 200-211
-			return (/^[\x00-\x7F\xC8-\xD3]+$/.test(this.data)
-			);
-		}
-
-		// The public encoding function
-
-	}, {
-		key: 'encode',
-		value: function encode() {
-			var bytes = this.bytes;
-			// Remove the start code from the bytes and set its index
-			var startIndex = bytes.shift() - 105;
-			// Get start set by index
-			var startSet = _constants.SET_BY_CODE[startIndex];
-
-			if (startSet === undefined) {
-				throw new RangeError('The encoding does not start with a start character.');
-			}
-
-			if (this.shouldEncodeAsEan128() === true) {
-				bytes.unshift(_constants.FNC1);
-			}
-
-			// Start encode with the right type
-			var encodingResult = CODE128.next(bytes, 1, startSet);
-
-			return {
-				text: this.text === this.data ? this.text.replace(/[^\x20-\x7E]/g, '') : this.text,
-				data:
-				// Add the start bits
-				CODE128.getBar(startIndex) +
-				// Add the encoded bits
-				encodingResult.result +
-				// Add the checksum
-				CODE128.getBar((encodingResult.checksum + startIndex) % _constants.MODULO) +
-				// Add the end bits
-				CODE128.getBar(_constants.STOP)
-			};
-		}
-
-		// GS1-128/EAN-128
-
-	}, {
-		key: 'shouldEncodeAsEan128',
-		value: function shouldEncodeAsEan128() {
-			var isEAN128 = this.options.ean128 || false;
-			if (typeof isEAN128 === 'string') {
-				isEAN128 = isEAN128.toLowerCase() === 'true';
-			}
-			return isEAN128;
-		}
-
-		// Get a bar symbol by index
-
-	}], [{
-		key: 'getBar',
-		value: function getBar(index) {
-			return _constants.BARS[index] ? _constants.BARS[index].toString() : '';
-		}
-
-		// Correct an index by a set and shift it from the bytes array
-
-	}, {
-		key: 'correctIndex',
-		value: function correctIndex(bytes, set) {
-			if (set === _constants.SET_A) {
-				var charCode = bytes.shift();
-				return charCode < 32 ? charCode + 64 : charCode - 32;
-			} else if (set === _constants.SET_B) {
-				return bytes.shift() - 32;
-			} else {
-				return (bytes.shift() - 48) * 10 + bytes.shift() - 48;
-			}
-		}
-	}, {
-		key: 'next',
-		value: function next(bytes, pos, set) {
-			if (!bytes.length) {
-				return { result: '', checksum: 0 };
-			}
-
-			var nextCode = void 0,
-			    index = void 0;
-
-			// Special characters
-			if (bytes[0] >= 200) {
-				index = bytes.shift() - 105;
-				var nextSet = _constants.SWAP[index];
-
-				// Swap to other set
-				if (nextSet !== undefined) {
-					nextCode = CODE128.next(bytes, pos + 1, nextSet);
-				}
-				// Continue on current set but encode a special character
-				else {
-						// Shift
-						if ((set === _constants.SET_A || set === _constants.SET_B) && index === _constants.SHIFT) {
-							// Convert the next character so that is encoded correctly
-							bytes[0] = set === _constants.SET_A ? bytes[0] > 95 ? bytes[0] - 96 : bytes[0] : bytes[0] < 32 ? bytes[0] + 96 : bytes[0];
-						}
-						nextCode = CODE128.next(bytes, pos + 1, set);
-					}
-			}
-			// Continue encoding
-			else {
-					index = CODE128.correctIndex(bytes, set);
-					nextCode = CODE128.next(bytes, pos + 1, set);
-				}
-
-			// Get the correct binary encoding and calculate the weight
-			var enc = CODE128.getBar(index);
-			var weight = index * pos;
-
-			return {
-				result: enc + nextCode.result,
-				checksum: weight + nextCode.checksum
-			};
-		}
-	}]);
-
-	return CODE128;
-}(_Barcode3.default);
-
-exports["default"] = CODE128;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128A.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128A.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _CODE2 = __webpack_require__(/*! ./CODE128.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js");
-
-var _CODE3 = _interopRequireDefault(_CODE2);
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CODE128A = function (_CODE) {
-	_inherits(CODE128A, _CODE);
-
-	function CODE128A(string, options) {
-		_classCallCheck(this, CODE128A);
-
-		return _possibleConstructorReturn(this, (CODE128A.__proto__ || Object.getPrototypeOf(CODE128A)).call(this, _constants.A_START_CHAR + string, options));
-	}
-
-	_createClass(CODE128A, [{
-		key: 'valid',
-		value: function valid() {
-			return new RegExp('^' + _constants.A_CHARS + '+$').test(this.data);
-		}
-	}]);
-
-	return CODE128A;
-}(_CODE3.default);
-
-exports["default"] = CODE128A;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128B.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128B.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _CODE2 = __webpack_require__(/*! ./CODE128.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js");
-
-var _CODE3 = _interopRequireDefault(_CODE2);
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CODE128B = function (_CODE) {
-	_inherits(CODE128B, _CODE);
-
-	function CODE128B(string, options) {
-		_classCallCheck(this, CODE128B);
-
-		return _possibleConstructorReturn(this, (CODE128B.__proto__ || Object.getPrototypeOf(CODE128B)).call(this, _constants.B_START_CHAR + string, options));
-	}
-
-	_createClass(CODE128B, [{
-		key: 'valid',
-		value: function valid() {
-			return new RegExp('^' + _constants.B_CHARS + '+$').test(this.data);
-		}
-	}]);
-
-	return CODE128B;
-}(_CODE3.default);
-
-exports["default"] = CODE128B;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128C.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128C.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _CODE2 = __webpack_require__(/*! ./CODE128.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js");
-
-var _CODE3 = _interopRequireDefault(_CODE2);
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CODE128C = function (_CODE) {
-	_inherits(CODE128C, _CODE);
-
-	function CODE128C(string, options) {
-		_classCallCheck(this, CODE128C);
-
-		return _possibleConstructorReturn(this, (CODE128C.__proto__ || Object.getPrototypeOf(CODE128C)).call(this, _constants.C_START_CHAR + string, options));
-	}
-
-	_createClass(CODE128C, [{
-		key: 'valid',
-		value: function valid() {
-			return new RegExp('^' + _constants.C_CHARS + '+$').test(this.data);
-		}
-	}]);
-
-	return CODE128C;
-}(_CODE3.default);
-
-exports["default"] = CODE128C;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128_AUTO.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128_AUTO.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _CODE2 = __webpack_require__(/*! ./CODE128 */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128.js");
-
-var _CODE3 = _interopRequireDefault(_CODE2);
-
-var _auto = __webpack_require__(/*! ./auto */ "./node_modules/jsbarcode/bin/barcodes/CODE128/auto.js");
-
-var _auto2 = _interopRequireDefault(_auto);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var CODE128AUTO = function (_CODE) {
-	_inherits(CODE128AUTO, _CODE);
-
-	function CODE128AUTO(data, options) {
-		_classCallCheck(this, CODE128AUTO);
-
-		// ASCII value ranges 0-127, 200-211
-		if (/^[\x00-\x7F\xC8-\xD3]+$/.test(data)) {
-			var _this = _possibleConstructorReturn(this, (CODE128AUTO.__proto__ || Object.getPrototypeOf(CODE128AUTO)).call(this, (0, _auto2.default)(data), options));
-		} else {
-			var _this = _possibleConstructorReturn(this, (CODE128AUTO.__proto__ || Object.getPrototypeOf(CODE128AUTO)).call(this, data, options));
-		}
-		return _possibleConstructorReturn(_this);
-	}
-
-	return CODE128AUTO;
-}(_CODE3.default);
-
-exports["default"] = CODE128AUTO;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/auto.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/auto.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js");
-
-// Match Set functions
-var matchSetALength = function matchSetALength(string) {
-	return string.match(new RegExp('^' + _constants.A_CHARS + '*'))[0].length;
-};
-var matchSetBLength = function matchSetBLength(string) {
-	return string.match(new RegExp('^' + _constants.B_CHARS + '*'))[0].length;
-};
-var matchSetC = function matchSetC(string) {
-	return string.match(new RegExp('^' + _constants.C_CHARS + '*'))[0];
-};
-
-// CODE128A or CODE128B
-function autoSelectFromAB(string, isA) {
-	var ranges = isA ? _constants.A_CHARS : _constants.B_CHARS;
-	var untilC = string.match(new RegExp('^(' + ranges + '+?)(([0-9]{2}){2,})([^0-9]|$)'));
-
-	if (untilC) {
-		return untilC[1] + String.fromCharCode(204) + autoSelectFromC(string.substring(untilC[1].length));
-	}
-
-	var chars = string.match(new RegExp('^' + ranges + '+'))[0];
-
-	if (chars.length === string.length) {
-		return string;
-	}
-
-	return chars + String.fromCharCode(isA ? 205 : 206) + autoSelectFromAB(string.substring(chars.length), !isA);
-}
-
-// CODE128C
-function autoSelectFromC(string) {
-	var cMatch = matchSetC(string);
-	var length = cMatch.length;
-
-	if (length === string.length) {
-		return string;
-	}
-
-	string = string.substring(length);
-
-	// Select A/B depending on the longest match
-	var isA = matchSetALength(string) >= matchSetBLength(string);
-	return cMatch + String.fromCharCode(isA ? 206 : 205) + autoSelectFromAB(string, isA);
-}
-
-// Detect Code Set (A, B or C) and format the string
-
-exports["default"] = function (string) {
-	var newString = void 0;
-	var cLength = matchSetC(string).length;
-
-	// Select 128C if the string start with enough digits
-	if (cLength >= 2) {
-		newString = _constants.C_START_CHAR + autoSelectFromC(string);
-	} else {
-		// Select A/B depending on the longest match
-		var isA = matchSetALength(string) > matchSetBLength(string);
-		newString = (isA ? _constants.A_START_CHAR : _constants.B_START_CHAR) + autoSelectFromAB(string, isA);
-	}
-
-	return newString.replace(/[\xCD\xCE]([^])[\xCD\xCE]/, // Any sequence between 205 and 206 characters
-	function (match, char) {
-		return String.fromCharCode(203) + char;
-	});
-};
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/constants.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _SET_BY_CODE;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-// constants for internal usage
-var SET_A = exports.SET_A = 0;
-var SET_B = exports.SET_B = 1;
-var SET_C = exports.SET_C = 2;
-
-// Special characters
-var SHIFT = exports.SHIFT = 98;
-var START_A = exports.START_A = 103;
-var START_B = exports.START_B = 104;
-var START_C = exports.START_C = 105;
-var MODULO = exports.MODULO = 103;
-var STOP = exports.STOP = 106;
-var FNC1 = exports.FNC1 = 207;
-
-// Get set by start code
-var SET_BY_CODE = exports.SET_BY_CODE = (_SET_BY_CODE = {}, _defineProperty(_SET_BY_CODE, START_A, SET_A), _defineProperty(_SET_BY_CODE, START_B, SET_B), _defineProperty(_SET_BY_CODE, START_C, SET_C), _SET_BY_CODE);
-
-// Get next set by code
-var SWAP = exports.SWAP = {
-	101: SET_A,
-	100: SET_B,
-	99: SET_C
-};
-
-var A_START_CHAR = exports.A_START_CHAR = String.fromCharCode(208); // START_A + 105
-var B_START_CHAR = exports.B_START_CHAR = String.fromCharCode(209); // START_B + 105
-var C_START_CHAR = exports.C_START_CHAR = String.fromCharCode(210); // START_C + 105
-
-// 128A (Code Set A)
-// ASCII characters 00 to 95 (0–9, A–Z and control codes), special characters, and FNC 1–4
-var A_CHARS = exports.A_CHARS = "[\x00-\x5F\xC8-\xCF]";
-
-// 128B (Code Set B)
-// ASCII characters 32 to 127 (0–9, A–Z, a–z), special characters, and FNC 1–4
-var B_CHARS = exports.B_CHARS = "[\x20-\x7F\xC8-\xCF]";
-
-// 128C (Code Set C)
-// 00–99 (encodes two digits with a single code point) and FNC1
-var C_CHARS = exports.C_CHARS = "(\xCF*[0-9]{2}\xCF*)";
-
-// CODE128 includes 107 symbols:
-// 103 data symbols, 3 start symbols (A, B and C), and 1 stop symbol (the last one)
-// Each symbol consist of three black bars (1) and three white spaces (0).
-var BARS = exports.BARS = [11011001100, 11001101100, 11001100110, 10010011000, 10010001100, 10001001100, 10011001000, 10011000100, 10001100100, 11001001000, 11001000100, 11000100100, 10110011100, 10011011100, 10011001110, 10111001100, 10011101100, 10011100110, 11001110010, 11001011100, 11001001110, 11011100100, 11001110100, 11101101110, 11101001100, 11100101100, 11100100110, 11101100100, 11100110100, 11100110010, 11011011000, 11011000110, 11000110110, 10100011000, 10001011000, 10001000110, 10110001000, 10001101000, 10001100010, 11010001000, 11000101000, 11000100010, 10110111000, 10110001110, 10001101110, 10111011000, 10111000110, 10001110110, 11101110110, 11010001110, 11000101110, 11011101000, 11011100010, 11011101110, 11101011000, 11101000110, 11100010110, 11101101000, 11101100010, 11100011010, 11101111010, 11001000010, 11110001010, 10100110000, 10100001100, 10010110000, 10010000110, 10000101100, 10000100110, 10110010000, 10110000100, 10011010000, 10011000010, 10000110100, 10000110010, 11000010010, 11001010000, 11110111010, 11000010100, 10001111010, 10100111100, 10010111100, 10010011110, 10111100100, 10011110100, 10011110010, 11110100100, 11110010100, 11110010010, 11011011110, 11011110110, 11110110110, 10101111000, 10100011110, 10001011110, 10111101000, 10111100010, 11110101000, 11110100010, 10111011110, 10111101110, 11101011110, 11110101110, 11010000100, 11010010000, 11010011100, 1100011101011];
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE128/index.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE128/index.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.CODE128C = exports.CODE128B = exports.CODE128A = exports.CODE128 = undefined;
-
-var _CODE128_AUTO = __webpack_require__(/*! ./CODE128_AUTO.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128_AUTO.js");
-
-var _CODE128_AUTO2 = _interopRequireDefault(_CODE128_AUTO);
-
-var _CODE128A = __webpack_require__(/*! ./CODE128A.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128A.js");
-
-var _CODE128A2 = _interopRequireDefault(_CODE128A);
-
-var _CODE128B = __webpack_require__(/*! ./CODE128B.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128B.js");
-
-var _CODE128B2 = _interopRequireDefault(_CODE128B);
-
-var _CODE128C = __webpack_require__(/*! ./CODE128C.js */ "./node_modules/jsbarcode/bin/barcodes/CODE128/CODE128C.js");
-
-var _CODE128C2 = _interopRequireDefault(_CODE128C);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.CODE128 = _CODE128_AUTO2.default;
-exports.CODE128A = _CODE128A2.default;
-exports.CODE128B = _CODE128B2.default;
-exports.CODE128C = _CODE128C2.default;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/CODE39/index.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/CODE39/index.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.CODE39 = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/Code_39#Encoding
-
-var CODE39 = function (_Barcode) {
-	_inherits(CODE39, _Barcode);
-
-	function CODE39(data, options) {
-		_classCallCheck(this, CODE39);
-
-		data = data.toUpperCase();
-
-		// Calculate mod43 checksum if enabled
-		if (options.mod43) {
-			data += getCharacter(mod43checksum(data));
-		}
-
-		return _possibleConstructorReturn(this, (CODE39.__proto__ || Object.getPrototypeOf(CODE39)).call(this, data, options));
-	}
-
-	_createClass(CODE39, [{
-		key: "encode",
-		value: function encode() {
-			// First character is always a *
-			var result = getEncoding("*");
-
-			// Take every character and add the binary representation to the result
-			for (var i = 0; i < this.data.length; i++) {
-				result += getEncoding(this.data[i]) + "0";
-			}
-
-			// Last character is always a *
-			result += getEncoding("*");
-
-			return {
-				data: result,
-				text: this.text
-			};
-		}
-	}, {
-		key: "valid",
-		value: function valid() {
-			return this.data.search(/^[0-9A-Z\-\.\ \$\/\+\%]+$/) !== -1;
-		}
-	}]);
-
-	return CODE39;
-}(_Barcode3.default);
-
-// All characters. The position in the array is the (checksum) value
-
-
-var characters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "-", ".", " ", "$", "/", "+", "%", "*"];
-
-// The decimal representation of the characters, is converted to the
-// corresponding binary with the getEncoding function
-var encodings = [20957, 29783, 23639, 30485, 20951, 29813, 23669, 20855, 29789, 23645, 29975, 23831, 30533, 22295, 30149, 24005, 21623, 29981, 23837, 22301, 30023, 23879, 30545, 22343, 30161, 24017, 21959, 30065, 23921, 22385, 29015, 18263, 29141, 17879, 29045, 18293, 17783, 29021, 18269, 17477, 17489, 17681, 20753, 35770];
-
-// Get the binary representation of a character by converting the encodings
-// from decimal to binary
-function getEncoding(character) {
-	return getBinary(characterValue(character));
-}
-
-function getBinary(characterValue) {
-	return encodings[characterValue].toString(2);
-}
-
-function getCharacter(characterValue) {
-	return characters[characterValue];
-}
-
-function characterValue(character) {
-	return characters.indexOf(character);
-}
-
-function mod43checksum(data) {
-	var checksum = 0;
-	for (var i = 0; i < data.length; i++) {
-		checksum += characterValue(data[i]);
-	}
-
-	checksum = checksum % 43;
-	return checksum;
-}
-
-exports.CODE39 = CODE39;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN.js":
-/*!************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js");
-
-var _encoder = __webpack_require__(/*! ./encoder */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js");
-
-var _encoder2 = _interopRequireDefault(_encoder);
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// Base class for EAN8 & EAN13
-var EAN = function (_Barcode) {
-	_inherits(EAN, _Barcode);
-
-	function EAN(data, options) {
-		_classCallCheck(this, EAN);
-
-		// Make sure the font is not bigger than the space between the guard bars
-		var _this = _possibleConstructorReturn(this, (EAN.__proto__ || Object.getPrototypeOf(EAN)).call(this, data, options));
-
-		_this.fontSize = !options.flat && options.fontSize > options.width * 10 ? options.width * 10 : options.fontSize;
-
-		// Make the guard bars go down half the way of the text
-		_this.guardHeight = options.height + _this.fontSize / 2 + options.textMargin;
-		return _this;
-	}
-
-	_createClass(EAN, [{
-		key: 'encode',
-		value: function encode() {
-			return this.options.flat ? this.encodeFlat() : this.encodeGuarded();
-		}
-	}, {
-		key: 'leftText',
-		value: function leftText(from, to) {
-			return this.text.substr(from, to);
-		}
-	}, {
-		key: 'leftEncode',
-		value: function leftEncode(data, structure) {
-			return (0, _encoder2.default)(data, structure);
-		}
-	}, {
-		key: 'rightText',
-		value: function rightText(from, to) {
-			return this.text.substr(from, to);
-		}
-	}, {
-		key: 'rightEncode',
-		value: function rightEncode(data, structure) {
-			return (0, _encoder2.default)(data, structure);
-		}
-	}, {
-		key: 'encodeGuarded',
-		value: function encodeGuarded() {
-			var textOptions = { fontSize: this.fontSize };
-			var guardOptions = { height: this.guardHeight };
-
-			return [{ data: _constants.SIDE_BIN, options: guardOptions }, { data: this.leftEncode(), text: this.leftText(), options: textOptions }, { data: _constants.MIDDLE_BIN, options: guardOptions }, { data: this.rightEncode(), text: this.rightText(), options: textOptions }, { data: _constants.SIDE_BIN, options: guardOptions }];
-		}
-	}, {
-		key: 'encodeFlat',
-		value: function encodeFlat() {
-			var data = [_constants.SIDE_BIN, this.leftEncode(), _constants.MIDDLE_BIN, this.rightEncode(), _constants.SIDE_BIN];
-
-			return {
-				data: data.join(''),
-				text: this.text
-			};
-		}
-	}]);
-
-	return EAN;
-}(_Barcode3.default);
-
-exports["default"] = EAN;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN13.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN13.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js");
-
-var _EAN2 = __webpack_require__(/*! ./EAN */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN.js");
-
-var _EAN3 = _interopRequireDefault(_EAN2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/International_Article_Number_(EAN)#Binary_encoding_of_data_digits_into_EAN-13_barcode
-
-// Calculate the checksum digit
-// https://en.wikipedia.org/wiki/International_Article_Number_(EAN)#Calculation_of_checksum_digit
-var checksum = function checksum(number) {
-	var res = number.substr(0, 12).split('').map(function (n) {
-		return +n;
-	}).reduce(function (sum, a, idx) {
-		return idx % 2 ? sum + a * 3 : sum + a;
-	}, 0);
-
-	return (10 - res % 10) % 10;
-};
-
-var EAN13 = function (_EAN) {
-	_inherits(EAN13, _EAN);
-
-	function EAN13(data, options) {
-		_classCallCheck(this, EAN13);
-
-		// Add checksum if it does not exist
-		if (data.search(/^[0-9]{12}$/) !== -1) {
-			data += checksum(data);
-		}
-
-		// Adds a last character to the end of the barcode
-		var _this = _possibleConstructorReturn(this, (EAN13.__proto__ || Object.getPrototypeOf(EAN13)).call(this, data, options));
-
-		_this.lastChar = options.lastChar;
-		return _this;
-	}
-
-	_createClass(EAN13, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^[0-9]{13}$/) !== -1 && +this.data[12] === checksum(this.data);
-		}
-	}, {
-		key: 'leftText',
-		value: function leftText() {
-			return _get(EAN13.prototype.__proto__ || Object.getPrototypeOf(EAN13.prototype), 'leftText', this).call(this, 1, 6);
-		}
-	}, {
-		key: 'leftEncode',
-		value: function leftEncode() {
-			var data = this.data.substr(1, 6);
-			var structure = _constants.EAN13_STRUCTURE[this.data[0]];
-			return _get(EAN13.prototype.__proto__ || Object.getPrototypeOf(EAN13.prototype), 'leftEncode', this).call(this, data, structure);
-		}
-	}, {
-		key: 'rightText',
-		value: function rightText() {
-			return _get(EAN13.prototype.__proto__ || Object.getPrototypeOf(EAN13.prototype), 'rightText', this).call(this, 7, 6);
-		}
-	}, {
-		key: 'rightEncode',
-		value: function rightEncode() {
-			var data = this.data.substr(7, 6);
-			return _get(EAN13.prototype.__proto__ || Object.getPrototypeOf(EAN13.prototype), 'rightEncode', this).call(this, data, 'RRRRRR');
-		}
-
-		// The "standard" way of printing EAN13 barcodes with guard bars
-
-	}, {
-		key: 'encodeGuarded',
-		value: function encodeGuarded() {
-			var data = _get(EAN13.prototype.__proto__ || Object.getPrototypeOf(EAN13.prototype), 'encodeGuarded', this).call(this);
-
-			// Extend data with left digit & last character
-			if (this.options.displayValue) {
-				data.unshift({
-					data: '000000000000',
-					text: this.text.substr(0, 1),
-					options: { textAlign: 'left', fontSize: this.fontSize }
-				});
-
-				if (this.options.lastChar) {
-					data.push({
-						data: '00'
-					});
-					data.push({
-						data: '00000',
-						text: this.options.lastChar,
-						options: { fontSize: this.fontSize }
-					});
-				}
-			}
-
-			return data;
-		}
-	}]);
-
-	return EAN13;
-}(_EAN3.default);
-
-exports["default"] = EAN13;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN2.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN2.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js");
-
-var _encoder = __webpack_require__(/*! ./encoder */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js");
-
-var _encoder2 = _interopRequireDefault(_encoder);
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/EAN_2#Encoding
-
-var EAN2 = function (_Barcode) {
-	_inherits(EAN2, _Barcode);
-
-	function EAN2(data, options) {
-		_classCallCheck(this, EAN2);
-
-		return _possibleConstructorReturn(this, (EAN2.__proto__ || Object.getPrototypeOf(EAN2)).call(this, data, options));
-	}
-
-	_createClass(EAN2, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^[0-9]{2}$/) !== -1;
-		}
-	}, {
-		key: 'encode',
-		value: function encode() {
-			// Choose the structure based on the number mod 4
-			var structure = _constants.EAN2_STRUCTURE[parseInt(this.data) % 4];
-			return {
-				// Start bits + Encode the two digits with 01 in between
-				data: '1011' + (0, _encoder2.default)(this.data, structure, '01'),
-				text: this.text
-			};
-		}
-	}]);
-
-	return EAN2;
-}(_Barcode3.default);
-
-exports["default"] = EAN2;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN5.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN5.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js");
-
-var _encoder = __webpack_require__(/*! ./encoder */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js");
-
-var _encoder2 = _interopRequireDefault(_encoder);
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/EAN_5#Encoding
-
-var checksum = function checksum(data) {
-	var result = data.split('').map(function (n) {
-		return +n;
-	}).reduce(function (sum, a, idx) {
-		return idx % 2 ? sum + a * 9 : sum + a * 3;
-	}, 0);
-	return result % 10;
-};
-
-var EAN5 = function (_Barcode) {
-	_inherits(EAN5, _Barcode);
-
-	function EAN5(data, options) {
-		_classCallCheck(this, EAN5);
-
-		return _possibleConstructorReturn(this, (EAN5.__proto__ || Object.getPrototypeOf(EAN5)).call(this, data, options));
-	}
-
-	_createClass(EAN5, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^[0-9]{5}$/) !== -1;
-		}
-	}, {
-		key: 'encode',
-		value: function encode() {
-			var structure = _constants.EAN5_STRUCTURE[checksum(this.data)];
-			return {
-				data: '1011' + (0, _encoder2.default)(this.data, structure, '01'),
-				text: this.text
-			};
-		}
-	}]);
-
-	return EAN5;
-}(_Barcode3.default);
-
-exports["default"] = EAN5;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN8.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN8.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-var _EAN2 = __webpack_require__(/*! ./EAN */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN.js");
-
-var _EAN3 = _interopRequireDefault(_EAN2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// http://www.barcodeisland.com/ean8.phtml
-
-// Calculate the checksum digit
-var checksum = function checksum(number) {
-	var res = number.substr(0, 7).split('').map(function (n) {
-		return +n;
-	}).reduce(function (sum, a, idx) {
-		return idx % 2 ? sum + a : sum + a * 3;
-	}, 0);
-
-	return (10 - res % 10) % 10;
-};
-
-var EAN8 = function (_EAN) {
-	_inherits(EAN8, _EAN);
-
-	function EAN8(data, options) {
-		_classCallCheck(this, EAN8);
-
-		// Add checksum if it does not exist
-		if (data.search(/^[0-9]{7}$/) !== -1) {
-			data += checksum(data);
-		}
-
-		return _possibleConstructorReturn(this, (EAN8.__proto__ || Object.getPrototypeOf(EAN8)).call(this, data, options));
-	}
-
-	_createClass(EAN8, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^[0-9]{8}$/) !== -1 && +this.data[7] === checksum(this.data);
-		}
-	}, {
-		key: 'leftText',
-		value: function leftText() {
-			return _get(EAN8.prototype.__proto__ || Object.getPrototypeOf(EAN8.prototype), 'leftText', this).call(this, 0, 4);
-		}
-	}, {
-		key: 'leftEncode',
-		value: function leftEncode() {
-			var data = this.data.substr(0, 4);
-			return _get(EAN8.prototype.__proto__ || Object.getPrototypeOf(EAN8.prototype), 'leftEncode', this).call(this, data, 'LLLL');
-		}
-	}, {
-		key: 'rightText',
-		value: function rightText() {
-			return _get(EAN8.prototype.__proto__ || Object.getPrototypeOf(EAN8.prototype), 'rightText', this).call(this, 4, 4);
-		}
-	}, {
-		key: 'rightEncode',
-		value: function rightEncode() {
-			var data = this.data.substr(4, 4);
-			return _get(EAN8.prototype.__proto__ || Object.getPrototypeOf(EAN8.prototype), 'rightEncode', this).call(this, data, 'RRRR');
-		}
-	}]);
-
-	return EAN8;
-}(_EAN3.default);
-
-exports["default"] = EAN8;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPC.js":
-/*!************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPC.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-exports.checksum = checksum;
-
-var _encoder = __webpack_require__(/*! ./encoder */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js");
-
-var _encoder2 = _interopRequireDefault(_encoder);
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/Universal_Product_Code#Encoding
-
-var UPC = function (_Barcode) {
-	_inherits(UPC, _Barcode);
-
-	function UPC(data, options) {
-		_classCallCheck(this, UPC);
-
-		// Add checksum if it does not exist
-		if (data.search(/^[0-9]{11}$/) !== -1) {
-			data += checksum(data);
-		}
-
-		var _this = _possibleConstructorReturn(this, (UPC.__proto__ || Object.getPrototypeOf(UPC)).call(this, data, options));
-
-		_this.displayValue = options.displayValue;
-
-		// Make sure the font is not bigger than the space between the guard bars
-		if (options.fontSize > options.width * 10) {
-			_this.fontSize = options.width * 10;
-		} else {
-			_this.fontSize = options.fontSize;
-		}
-
-		// Make the guard bars go down half the way of the text
-		_this.guardHeight = options.height + _this.fontSize / 2 + options.textMargin;
-		return _this;
-	}
-
-	_createClass(UPC, [{
-		key: "valid",
-		value: function valid() {
-			return this.data.search(/^[0-9]{12}$/) !== -1 && this.data[11] == checksum(this.data);
-		}
-	}, {
-		key: "encode",
-		value: function encode() {
-			if (this.options.flat) {
-				return this.flatEncoding();
-			} else {
-				return this.guardedEncoding();
-			}
-		}
-	}, {
-		key: "flatEncoding",
-		value: function flatEncoding() {
-			var result = "";
-
-			result += "101";
-			result += (0, _encoder2.default)(this.data.substr(0, 6), "LLLLLL");
-			result += "01010";
-			result += (0, _encoder2.default)(this.data.substr(6, 6), "RRRRRR");
-			result += "101";
-
-			return {
-				data: result,
-				text: this.text
-			};
-		}
-	}, {
-		key: "guardedEncoding",
-		value: function guardedEncoding() {
-			var result = [];
-
-			// Add the first digit
-			if (this.displayValue) {
-				result.push({
-					data: "00000000",
-					text: this.text.substr(0, 1),
-					options: { textAlign: "left", fontSize: this.fontSize }
-				});
-			}
-
-			// Add the guard bars
-			result.push({
-				data: "101" + (0, _encoder2.default)(this.data[0], "L"),
-				options: { height: this.guardHeight }
-			});
-
-			// Add the left side
-			result.push({
-				data: (0, _encoder2.default)(this.data.substr(1, 5), "LLLLL"),
-				text: this.text.substr(1, 5),
-				options: { fontSize: this.fontSize }
-			});
-
-			// Add the middle bits
-			result.push({
-				data: "01010",
-				options: { height: this.guardHeight }
-			});
-
-			// Add the right side
-			result.push({
-				data: (0, _encoder2.default)(this.data.substr(6, 5), "RRRRR"),
-				text: this.text.substr(6, 5),
-				options: { fontSize: this.fontSize }
-			});
-
-			// Add the end bits
-			result.push({
-				data: (0, _encoder2.default)(this.data[11], "R") + "101",
-				options: { height: this.guardHeight }
-			});
-
-			// Add the last digit
-			if (this.displayValue) {
-				result.push({
-					data: "00000000",
-					text: this.text.substr(11, 1),
-					options: { textAlign: "right", fontSize: this.fontSize }
-				});
-			}
-
-			return result;
-		}
-	}]);
-
-	return UPC;
-}(_Barcode3.default);
-
-// Calulate the checksum digit
-// https://en.wikipedia.org/wiki/International_Article_Number_(EAN)#Calculation_of_checksum_digit
-
-
-function checksum(number) {
-	var result = 0;
-
-	var i;
-	for (i = 1; i < 11; i += 2) {
-		result += parseInt(number[i]);
-	}
-	for (i = 0; i < 11; i += 2) {
-		result += parseInt(number[i]) * 3;
-	}
-
-	return (10 - result % 10) % 10;
-}
-
-exports["default"] = UPC;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPCE.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPCE.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _encoder = __webpack_require__(/*! ./encoder */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js");
-
-var _encoder2 = _interopRequireDefault(_encoder);
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-var _UPC = __webpack_require__(/*! ./UPC.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPC.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation:
-// https://en.wikipedia.org/wiki/Universal_Product_Code#Encoding
-//
-// UPC-E documentation:
-// https://en.wikipedia.org/wiki/Universal_Product_Code#UPC-E
-
-var EXPANSIONS = ["XX00000XXX", "XX10000XXX", "XX20000XXX", "XXX00000XX", "XXXX00000X", "XXXXX00005", "XXXXX00006", "XXXXX00007", "XXXXX00008", "XXXXX00009"];
-
-var PARITIES = [["EEEOOO", "OOOEEE"], ["EEOEOO", "OOEOEE"], ["EEOOEO", "OOEEOE"], ["EEOOOE", "OOEEEO"], ["EOEEOO", "OEOOEE"], ["EOOEEO", "OEEOOE"], ["EOOOEE", "OEEEOO"], ["EOEOEO", "OEOEOE"], ["EOEOOE", "OEOEEO"], ["EOOEOE", "OEEOEO"]];
-
-var UPCE = function (_Barcode) {
-	_inherits(UPCE, _Barcode);
-
-	function UPCE(data, options) {
-		_classCallCheck(this, UPCE);
-
-		var _this = _possibleConstructorReturn(this, (UPCE.__proto__ || Object.getPrototypeOf(UPCE)).call(this, data, options));
-		// Code may be 6 or 8 digits;
-		// A 7 digit code is ambiguous as to whether the extra digit
-		// is a UPC-A check or number system digit.
-
-
-		_this.isValid = false;
-		if (data.search(/^[0-9]{6}$/) !== -1) {
-			_this.middleDigits = data;
-			_this.upcA = expandToUPCA(data, "0");
-			_this.text = options.text || '' + _this.upcA[0] + data + _this.upcA[_this.upcA.length - 1];
-			_this.isValid = true;
-		} else if (data.search(/^[01][0-9]{7}$/) !== -1) {
-			_this.middleDigits = data.substring(1, data.length - 1);
-			_this.upcA = expandToUPCA(_this.middleDigits, data[0]);
-
-			if (_this.upcA[_this.upcA.length - 1] === data[data.length - 1]) {
-				_this.isValid = true;
-			} else {
-				// checksum mismatch
-				return _possibleConstructorReturn(_this);
-			}
-		} else {
-			return _possibleConstructorReturn(_this);
-		}
-
-		_this.displayValue = options.displayValue;
-
-		// Make sure the font is not bigger than the space between the guard bars
-		if (options.fontSize > options.width * 10) {
-			_this.fontSize = options.width * 10;
-		} else {
-			_this.fontSize = options.fontSize;
-		}
-
-		// Make the guard bars go down half the way of the text
-		_this.guardHeight = options.height + _this.fontSize / 2 + options.textMargin;
-		return _this;
-	}
-
-	_createClass(UPCE, [{
-		key: 'valid',
-		value: function valid() {
-			return this.isValid;
-		}
-	}, {
-		key: 'encode',
-		value: function encode() {
-			if (this.options.flat) {
-				return this.flatEncoding();
-			} else {
-				return this.guardedEncoding();
-			}
-		}
-	}, {
-		key: 'flatEncoding',
-		value: function flatEncoding() {
-			var result = "";
-
-			result += "101";
-			result += this.encodeMiddleDigits();
-			result += "010101";
-
-			return {
-				data: result,
-				text: this.text
-			};
-		}
-	}, {
-		key: 'guardedEncoding',
-		value: function guardedEncoding() {
-			var result = [];
-
-			// Add the UPC-A number system digit beneath the quiet zone
-			if (this.displayValue) {
-				result.push({
-					data: "00000000",
-					text: this.text[0],
-					options: { textAlign: "left", fontSize: this.fontSize }
-				});
-			}
-
-			// Add the guard bars
-			result.push({
-				data: "101",
-				options: { height: this.guardHeight }
-			});
-
-			// Add the 6 UPC-E digits
-			result.push({
-				data: this.encodeMiddleDigits(),
-				text: this.text.substring(1, 7),
-				options: { fontSize: this.fontSize }
-			});
-
-			// Add the end bits
-			result.push({
-				data: "010101",
-				options: { height: this.guardHeight }
-			});
-
-			// Add the UPC-A check digit beneath the quiet zone
-			if (this.displayValue) {
-				result.push({
-					data: "00000000",
-					text: this.text[7],
-					options: { textAlign: "right", fontSize: this.fontSize }
-				});
-			}
-
-			return result;
-		}
-	}, {
-		key: 'encodeMiddleDigits',
-		value: function encodeMiddleDigits() {
-			var numberSystem = this.upcA[0];
-			var checkDigit = this.upcA[this.upcA.length - 1];
-			var parity = PARITIES[parseInt(checkDigit)][parseInt(numberSystem)];
-			return (0, _encoder2.default)(this.middleDigits, parity);
-		}
-	}]);
-
-	return UPCE;
-}(_Barcode3.default);
-
-function expandToUPCA(middleDigits, numberSystem) {
-	var lastUpcE = parseInt(middleDigits[middleDigits.length - 1]);
-	var expansion = EXPANSIONS[lastUpcE];
-
-	var result = "";
-	var digitIndex = 0;
-	for (var i = 0; i < expansion.length; i++) {
-		var c = expansion[i];
-		if (c === 'X') {
-			result += middleDigits[digitIndex++];
-		} else {
-			result += c;
-		}
-	}
-
-	result = '' + numberSystem + result;
-	return '' + result + (0, _UPC.checksum)(result);
-}
-
-exports["default"] = UPCE;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-// Standard start end and middle bits
-var SIDE_BIN = exports.SIDE_BIN = '101';
-var MIDDLE_BIN = exports.MIDDLE_BIN = '01010';
-
-var BINARIES = exports.BINARIES = {
-	'L': [// The L (left) type of encoding
-	'0001101', '0011001', '0010011', '0111101', '0100011', '0110001', '0101111', '0111011', '0110111', '0001011'],
-	'G': [// The G type of encoding
-	'0100111', '0110011', '0011011', '0100001', '0011101', '0111001', '0000101', '0010001', '0001001', '0010111'],
-	'R': [// The R (right) type of encoding
-	'1110010', '1100110', '1101100', '1000010', '1011100', '1001110', '1010000', '1000100', '1001000', '1110100'],
-	'O': [// The O (odd) encoding for UPC-E
-	'0001101', '0011001', '0010011', '0111101', '0100011', '0110001', '0101111', '0111011', '0110111', '0001011'],
-	'E': [// The E (even) encoding for UPC-E
-	'0100111', '0110011', '0011011', '0100001', '0011101', '0111001', '0000101', '0010001', '0001001', '0010111']
-};
-
-// Define the EAN-2 structure
-var EAN2_STRUCTURE = exports.EAN2_STRUCTURE = ['LL', 'LG', 'GL', 'GG'];
-
-// Define the EAN-5 structure
-var EAN5_STRUCTURE = exports.EAN5_STRUCTURE = ['GGLLL', 'GLGLL', 'GLLGL', 'GLLLG', 'LGGLL', 'LLGGL', 'LLLGG', 'LGLGL', 'LGLLG', 'LLGLG'];
-
-// Define the EAN-13 structure
-var EAN13_STRUCTURE = exports.EAN13_STRUCTURE = ['LLLLLL', 'LLGLGG', 'LLGGLG', 'LLGGGL', 'LGLLGG', 'LGGLLG', 'LGGGLL', 'LGLGLG', 'LGLGGL', 'LGGLGL'];
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/encoder.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/constants.js");
-
-// Encode data string
-var encode = function encode(data, structure, separator) {
-	var encoded = data.split('').map(function (val, idx) {
-		return _constants.BINARIES[structure[idx]];
-	}).map(function (val, idx) {
-		return val ? val[data[idx]] : '';
-	});
-
-	if (separator) {
-		var last = data.length - 1;
-		encoded = encoded.map(function (val, idx) {
-			return idx < last ? val + separator : val;
-		});
-	}
-
-	return encoded.join('');
-};
-
-exports["default"] = encode;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/index.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/EAN_UPC/index.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.UPCE = exports.UPC = exports.EAN2 = exports.EAN5 = exports.EAN8 = exports.EAN13 = undefined;
-
-var _EAN = __webpack_require__(/*! ./EAN13.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN13.js");
-
-var _EAN2 = _interopRequireDefault(_EAN);
-
-var _EAN3 = __webpack_require__(/*! ./EAN8.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN8.js");
-
-var _EAN4 = _interopRequireDefault(_EAN3);
-
-var _EAN5 = __webpack_require__(/*! ./EAN5.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN5.js");
-
-var _EAN6 = _interopRequireDefault(_EAN5);
-
-var _EAN7 = __webpack_require__(/*! ./EAN2.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/EAN2.js");
-
-var _EAN8 = _interopRequireDefault(_EAN7);
-
-var _UPC = __webpack_require__(/*! ./UPC.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPC.js");
-
-var _UPC2 = _interopRequireDefault(_UPC);
-
-var _UPCE = __webpack_require__(/*! ./UPCE.js */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/UPCE.js");
-
-var _UPCE2 = _interopRequireDefault(_UPCE);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.EAN13 = _EAN2.default;
-exports.EAN8 = _EAN4.default;
-exports.EAN5 = _EAN6.default;
-exports.EAN2 = _EAN8.default;
-exports.UPC = _UPC2.default;
-exports.UPCE = _UPCE2.default;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/GenericBarcode/index.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/GenericBarcode/index.js ***!
-  \*********************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.GenericBarcode = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var GenericBarcode = function (_Barcode) {
-	_inherits(GenericBarcode, _Barcode);
-
-	function GenericBarcode(data, options) {
-		_classCallCheck(this, GenericBarcode);
-
-		return _possibleConstructorReturn(this, (GenericBarcode.__proto__ || Object.getPrototypeOf(GenericBarcode)).call(this, data, options)); // Sets this.data and this.text
-	}
-
-	// Return the corresponding binary numbers for the data provided
-
-
-	_createClass(GenericBarcode, [{
-		key: "encode",
-		value: function encode() {
-			return {
-				data: "10101010101010101010101010101010101010101",
-				text: this.text
-			};
-		}
-
-		// Resturn true/false if the string provided is valid for this encoder
-
-	}, {
-		key: "valid",
-		value: function valid() {
-			return true;
-		}
-	}]);
-
-	return GenericBarcode;
-}(_Barcode3.default);
-
-exports.GenericBarcode = GenericBarcode;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/ITF/ITF.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/ITF/ITF.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _constants = __webpack_require__(/*! ./constants */ "./node_modules/jsbarcode/bin/barcodes/ITF/constants.js");
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ITF = function (_Barcode) {
-	_inherits(ITF, _Barcode);
-
-	function ITF() {
-		_classCallCheck(this, ITF);
-
-		return _possibleConstructorReturn(this, (ITF.__proto__ || Object.getPrototypeOf(ITF)).apply(this, arguments));
-	}
-
-	_createClass(ITF, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^([0-9]{2})+$/) !== -1;
-		}
-	}, {
-		key: 'encode',
-		value: function encode() {
-			var _this2 = this;
-
-			// Calculate all the digit pairs
-			var encoded = this.data.match(/.{2}/g).map(function (pair) {
-				return _this2.encodePair(pair);
-			}).join('');
-
-			return {
-				data: _constants.START_BIN + encoded + _constants.END_BIN,
-				text: this.text
-			};
-		}
-
-		// Calculate the data of a number pair
-
-	}, {
-		key: 'encodePair',
-		value: function encodePair(pair) {
-			var second = _constants.BINARIES[pair[1]];
-
-			return _constants.BINARIES[pair[0]].split('').map(function (first, idx) {
-				return (first === '1' ? '111' : '1') + (second[idx] === '1' ? '000' : '0');
-			}).join('');
-		}
-	}]);
-
-	return ITF;
-}(_Barcode3.default);
-
-exports["default"] = ITF;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/ITF/ITF14.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/ITF/ITF14.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _ITF2 = __webpack_require__(/*! ./ITF */ "./node_modules/jsbarcode/bin/barcodes/ITF/ITF.js");
-
-var _ITF3 = _interopRequireDefault(_ITF2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-// Calculate the checksum digit
-var checksum = function checksum(data) {
-	var res = data.substr(0, 13).split('').map(function (num) {
-		return parseInt(num, 10);
-	}).reduce(function (sum, n, idx) {
-		return sum + n * (3 - idx % 2 * 2);
-	}, 0);
-
-	return Math.ceil(res / 10) * 10 - res;
-};
-
-var ITF14 = function (_ITF) {
-	_inherits(ITF14, _ITF);
-
-	function ITF14(data, options) {
-		_classCallCheck(this, ITF14);
-
-		// Add checksum if it does not exist
-		if (data.search(/^[0-9]{13}$/) !== -1) {
-			data += checksum(data);
-		}
-		return _possibleConstructorReturn(this, (ITF14.__proto__ || Object.getPrototypeOf(ITF14)).call(this, data, options));
-	}
-
-	_createClass(ITF14, [{
-		key: 'valid',
-		value: function valid() {
-			return this.data.search(/^[0-9]{14}$/) !== -1 && +this.data[13] === checksum(this.data);
-		}
-	}]);
-
-	return ITF14;
-}(_ITF3.default);
-
-exports["default"] = ITF14;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/ITF/constants.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/ITF/constants.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-var START_BIN = exports.START_BIN = '1010';
-var END_BIN = exports.END_BIN = '11101';
-
-var BINARIES = exports.BINARIES = ['00110', '10001', '01001', '11000', '00101', '10100', '01100', '00011', '10010', '01010'];
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/ITF/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/ITF/index.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.ITF14 = exports.ITF = undefined;
-
-var _ITF = __webpack_require__(/*! ./ITF */ "./node_modules/jsbarcode/bin/barcodes/ITF/ITF.js");
-
-var _ITF2 = _interopRequireDefault(_ITF);
-
-var _ITF3 = __webpack_require__(/*! ./ITF14 */ "./node_modules/jsbarcode/bin/barcodes/ITF/ITF14.js");
-
-var _ITF4 = _interopRequireDefault(_ITF3);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.ITF = _ITF2.default;
-exports.ITF14 = _ITF4.default;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation
-// https://en.wikipedia.org/wiki/MSI_Barcode#Character_set_and_binary_lookup
-
-var MSI = function (_Barcode) {
-	_inherits(MSI, _Barcode);
-
-	function MSI(data, options) {
-		_classCallCheck(this, MSI);
-
-		return _possibleConstructorReturn(this, (MSI.__proto__ || Object.getPrototypeOf(MSI)).call(this, data, options));
-	}
-
-	_createClass(MSI, [{
-		key: "encode",
-		value: function encode() {
-			// Start bits
-			var ret = "110";
-
-			for (var i = 0; i < this.data.length; i++) {
-				// Convert the character to binary (always 4 binary digits)
-				var digit = parseInt(this.data[i]);
-				var bin = digit.toString(2);
-				bin = addZeroes(bin, 4 - bin.length);
-
-				// Add 100 for every zero and 110 for every 1
-				for (var b = 0; b < bin.length; b++) {
-					ret += bin[b] == "0" ? "100" : "110";
-				}
-			}
-
-			// End bits
-			ret += "1001";
-
-			return {
-				data: ret,
-				text: this.text
-			};
-		}
-	}, {
-		key: "valid",
-		value: function valid() {
-			return this.data.search(/^[0-9]+$/) !== -1;
-		}
-	}]);
-
-	return MSI;
-}(_Barcode3.default);
-
-function addZeroes(number, n) {
-	for (var i = 0; i < n; i++) {
-		number = "0" + number;
-	}
-	return number;
-}
-
-exports["default"] = MSI;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI10.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/MSI10.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _MSI2 = __webpack_require__(/*! ./MSI.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js");
-
-var _MSI3 = _interopRequireDefault(_MSI2);
-
-var _checksums = __webpack_require__(/*! ./checksums.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MSI10 = function (_MSI) {
-	_inherits(MSI10, _MSI);
-
-	function MSI10(data, options) {
-		_classCallCheck(this, MSI10);
-
-		return _possibleConstructorReturn(this, (MSI10.__proto__ || Object.getPrototypeOf(MSI10)).call(this, data + (0, _checksums.mod10)(data), options));
-	}
-
-	return MSI10;
-}(_MSI3.default);
-
-exports["default"] = MSI10;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI1010.js":
-/*!************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/MSI1010.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _MSI2 = __webpack_require__(/*! ./MSI.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js");
-
-var _MSI3 = _interopRequireDefault(_MSI2);
-
-var _checksums = __webpack_require__(/*! ./checksums.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MSI1010 = function (_MSI) {
-	_inherits(MSI1010, _MSI);
-
-	function MSI1010(data, options) {
-		_classCallCheck(this, MSI1010);
-
-		data += (0, _checksums.mod10)(data);
-		data += (0, _checksums.mod10)(data);
-		return _possibleConstructorReturn(this, (MSI1010.__proto__ || Object.getPrototypeOf(MSI1010)).call(this, data, options));
-	}
-
-	return MSI1010;
-}(_MSI3.default);
-
-exports["default"] = MSI1010;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI11.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/MSI11.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _MSI2 = __webpack_require__(/*! ./MSI.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js");
-
-var _MSI3 = _interopRequireDefault(_MSI2);
-
-var _checksums = __webpack_require__(/*! ./checksums.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MSI11 = function (_MSI) {
-	_inherits(MSI11, _MSI);
-
-	function MSI11(data, options) {
-		_classCallCheck(this, MSI11);
-
-		return _possibleConstructorReturn(this, (MSI11.__proto__ || Object.getPrototypeOf(MSI11)).call(this, data + (0, _checksums.mod11)(data), options));
-	}
-
-	return MSI11;
-}(_MSI3.default);
-
-exports["default"] = MSI11;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI1110.js":
-/*!************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/MSI1110.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _MSI2 = __webpack_require__(/*! ./MSI.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js");
-
-var _MSI3 = _interopRequireDefault(_MSI2);
-
-var _checksums = __webpack_require__(/*! ./checksums.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var MSI1110 = function (_MSI) {
-	_inherits(MSI1110, _MSI);
-
-	function MSI1110(data, options) {
-		_classCallCheck(this, MSI1110);
-
-		data += (0, _checksums.mod11)(data);
-		data += (0, _checksums.mod10)(data);
-		return _possibleConstructorReturn(this, (MSI1110.__proto__ || Object.getPrototypeOf(MSI1110)).call(this, data, options));
-	}
-
-	return MSI1110;
-}(_MSI3.default);
-
-exports["default"] = MSI1110;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/checksums.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.mod10 = mod10;
-exports.mod11 = mod11;
-function mod10(number) {
-	var sum = 0;
-	for (var i = 0; i < number.length; i++) {
-		var n = parseInt(number[i]);
-		if ((i + number.length) % 2 === 0) {
-			sum += n;
-		} else {
-			sum += n * 2 % 10 + Math.floor(n * 2 / 10);
-		}
-	}
-	return (10 - sum % 10) % 10;
-}
-
-function mod11(number) {
-	var sum = 0;
-	var weights = [2, 3, 4, 5, 6, 7];
-	for (var i = 0; i < number.length; i++) {
-		var n = parseInt(number[number.length - 1 - i]);
-		sum += weights[i % weights.length] * n;
-	}
-	return (11 - sum % 11) % 11;
-}
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/MSI/index.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/MSI/index.js ***!
-  \**********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.MSI1110 = exports.MSI1010 = exports.MSI11 = exports.MSI10 = exports.MSI = undefined;
-
-var _MSI = __webpack_require__(/*! ./MSI.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI.js");
-
-var _MSI2 = _interopRequireDefault(_MSI);
-
-var _MSI3 = __webpack_require__(/*! ./MSI10.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI10.js");
-
-var _MSI4 = _interopRequireDefault(_MSI3);
-
-var _MSI5 = __webpack_require__(/*! ./MSI11.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI11.js");
-
-var _MSI6 = _interopRequireDefault(_MSI5);
-
-var _MSI7 = __webpack_require__(/*! ./MSI1010.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI1010.js");
-
-var _MSI8 = _interopRequireDefault(_MSI7);
-
-var _MSI9 = __webpack_require__(/*! ./MSI1110.js */ "./node_modules/jsbarcode/bin/barcodes/MSI/MSI1110.js");
-
-var _MSI10 = _interopRequireDefault(_MSI9);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports.MSI = _MSI2.default;
-exports.MSI10 = _MSI4.default;
-exports.MSI11 = _MSI6.default;
-exports.MSI1010 = _MSI8.default;
-exports.MSI1110 = _MSI10.default;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/codabar/index.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/codabar/index.js ***!
-  \**************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.codabar = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding specification:
-// http://www.barcodeisland.com/codabar.phtml
-
-var codabar = function (_Barcode) {
-	_inherits(codabar, _Barcode);
-
-	function codabar(data, options) {
-		_classCallCheck(this, codabar);
-
-		if (data.search(/^[0-9\-\$\:\.\+\/]+$/) === 0) {
-			data = "A" + data + "A";
-		}
-
-		var _this = _possibleConstructorReturn(this, (codabar.__proto__ || Object.getPrototypeOf(codabar)).call(this, data.toUpperCase(), options));
-
-		_this.text = _this.options.text || _this.text.replace(/[A-D]/g, '');
-		return _this;
-	}
-
-	_createClass(codabar, [{
-		key: "valid",
-		value: function valid() {
-			return this.data.search(/^[A-D][0-9\-\$\:\.\+\/]+[A-D]$/) !== -1;
-		}
-	}, {
-		key: "encode",
-		value: function encode() {
-			var result = [];
-			var encodings = this.getEncodings();
-			for (var i = 0; i < this.data.length; i++) {
-				result.push(encodings[this.data.charAt(i)]);
-				// for all characters except the last, append a narrow-space ("0")
-				if (i !== this.data.length - 1) {
-					result.push("0");
-				}
-			}
-			return {
-				text: this.text,
-				data: result.join('')
-			};
-		}
-	}, {
-		key: "getEncodings",
-		value: function getEncodings() {
-			return {
-				"0": "101010011",
-				"1": "101011001",
-				"2": "101001011",
-				"3": "110010101",
-				"4": "101101001",
-				"5": "110101001",
-				"6": "100101011",
-				"7": "100101101",
-				"8": "100110101",
-				"9": "110100101",
-				"-": "101001101",
-				"$": "101100101",
-				":": "1101011011",
-				"/": "1101101011",
-				".": "1101101101",
-				"+": "1011011011",
-				"A": "1011001001",
-				"B": "1001001011",
-				"C": "1010010011",
-				"D": "1010011001"
-			};
-		}
-	}]);
-
-	return codabar;
-}(_Barcode3.default);
-
-exports.codabar = codabar;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/index.js":
-/*!******************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/index.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _CODE = __webpack_require__(/*! ./CODE39/ */ "./node_modules/jsbarcode/bin/barcodes/CODE39/index.js");
-
-var _CODE2 = __webpack_require__(/*! ./CODE128/ */ "./node_modules/jsbarcode/bin/barcodes/CODE128/index.js");
-
-var _EAN_UPC = __webpack_require__(/*! ./EAN_UPC/ */ "./node_modules/jsbarcode/bin/barcodes/EAN_UPC/index.js");
-
-var _ITF = __webpack_require__(/*! ./ITF/ */ "./node_modules/jsbarcode/bin/barcodes/ITF/index.js");
-
-var _MSI = __webpack_require__(/*! ./MSI/ */ "./node_modules/jsbarcode/bin/barcodes/MSI/index.js");
-
-var _pharmacode = __webpack_require__(/*! ./pharmacode/ */ "./node_modules/jsbarcode/bin/barcodes/pharmacode/index.js");
-
-var _codabar = __webpack_require__(/*! ./codabar */ "./node_modules/jsbarcode/bin/barcodes/codabar/index.js");
-
-var _GenericBarcode = __webpack_require__(/*! ./GenericBarcode/ */ "./node_modules/jsbarcode/bin/barcodes/GenericBarcode/index.js");
-
-exports["default"] = {
-	CODE39: _CODE.CODE39,
-	CODE128: _CODE2.CODE128, CODE128A: _CODE2.CODE128A, CODE128B: _CODE2.CODE128B, CODE128C: _CODE2.CODE128C,
-	EAN13: _EAN_UPC.EAN13, EAN8: _EAN_UPC.EAN8, EAN5: _EAN_UPC.EAN5, EAN2: _EAN_UPC.EAN2, UPC: _EAN_UPC.UPC, UPCE: _EAN_UPC.UPCE,
-	ITF14: _ITF.ITF14,
-	ITF: _ITF.ITF,
-	MSI: _MSI.MSI, MSI10: _MSI.MSI10, MSI11: _MSI.MSI11, MSI1010: _MSI.MSI1010, MSI1110: _MSI.MSI1110,
-	pharmacode: _pharmacode.pharmacode,
-	codabar: _codabar.codabar,
-	GenericBarcode: _GenericBarcode.GenericBarcode
-};
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/barcodes/pharmacode/index.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/barcodes/pharmacode/index.js ***!
-  \*****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.pharmacode = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _Barcode2 = __webpack_require__(/*! ../Barcode.js */ "./node_modules/jsbarcode/bin/barcodes/Barcode.js");
-
-var _Barcode3 = _interopRequireDefault(_Barcode2);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // Encoding documentation
-// http://www.gomaro.ch/ftproot/Laetus_PHARMA-CODE.pdf
-
-var pharmacode = function (_Barcode) {
-	_inherits(pharmacode, _Barcode);
-
-	function pharmacode(data, options) {
-		_classCallCheck(this, pharmacode);
-
-		var _this = _possibleConstructorReturn(this, (pharmacode.__proto__ || Object.getPrototypeOf(pharmacode)).call(this, data, options));
-
-		_this.number = parseInt(data, 10);
-		return _this;
-	}
-
-	_createClass(pharmacode, [{
-		key: "encode",
-		value: function encode() {
-			var z = this.number;
-			var result = "";
-
-			// http://i.imgur.com/RMm4UDJ.png
-			// (source: http://www.gomaro.ch/ftproot/Laetus_PHARMA-CODE.pdf, page: 34)
-			while (!isNaN(z) && z != 0) {
-				if (z % 2 === 0) {
-					// Even
-					result = "11100" + result;
-					z = (z - 2) / 2;
-				} else {
-					// Odd
-					result = "100" + result;
-					z = (z - 1) / 2;
-				}
-			}
-
-			// Remove the two last zeroes
-			result = result.slice(0, -2);
-
-			return {
-				data: result,
-				text: this.text
-			};
-		}
-	}, {
-		key: "valid",
-		value: function valid() {
-			return this.number >= 3 && this.number <= 131070;
-		}
-	}]);
-
-	return pharmacode;
-}(_Barcode3.default);
-
-exports.pharmacode = pharmacode;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/exceptions/ErrorHandler.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/exceptions/ErrorHandler.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/*eslint no-console: 0 */
-
-var ErrorHandler = function () {
-	function ErrorHandler(api) {
-		_classCallCheck(this, ErrorHandler);
-
-		this.api = api;
-	}
-
-	_createClass(ErrorHandler, [{
-		key: "handleCatch",
-		value: function handleCatch(e) {
-			// If babel supported extending of Error in a correct way instanceof would be used here
-			if (e.name === "InvalidInputException") {
-				if (this.api._options.valid !== this.api._defaults.valid) {
-					this.api._options.valid(false);
-				} else {
-					throw e.message;
-				}
-			} else {
-				throw e;
-			}
-
-			this.api.render = function () {};
-		}
-	}, {
-		key: "wrapBarcodeCall",
-		value: function wrapBarcodeCall(func) {
-			try {
-				var result = func.apply(undefined, arguments);
-				this.api._options.valid(true);
-				return result;
-			} catch (e) {
-				this.handleCatch(e);
-
-				return this.api;
-			}
-		}
-	}]);
-
-	return ErrorHandler;
-}();
-
-exports["default"] = ErrorHandler;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/exceptions/exceptions.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/exceptions/exceptions.js ***!
-  \*************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var InvalidInputException = function (_Error) {
-	_inherits(InvalidInputException, _Error);
-
-	function InvalidInputException(symbology, input) {
-		_classCallCheck(this, InvalidInputException);
-
-		var _this = _possibleConstructorReturn(this, (InvalidInputException.__proto__ || Object.getPrototypeOf(InvalidInputException)).call(this));
-
-		_this.name = "InvalidInputException";
-
-		_this.symbology = symbology;
-		_this.input = input;
-
-		_this.message = '"' + _this.input + '" is not a valid input for ' + _this.symbology;
-		return _this;
-	}
-
-	return InvalidInputException;
-}(Error);
-
-var InvalidElementException = function (_Error2) {
-	_inherits(InvalidElementException, _Error2);
-
-	function InvalidElementException() {
-		_classCallCheck(this, InvalidElementException);
-
-		var _this2 = _possibleConstructorReturn(this, (InvalidElementException.__proto__ || Object.getPrototypeOf(InvalidElementException)).call(this));
-
-		_this2.name = "InvalidElementException";
-		_this2.message = "Not supported type to render on";
-		return _this2;
-	}
-
-	return InvalidElementException;
-}(Error);
-
-var NoElementException = function (_Error3) {
-	_inherits(NoElementException, _Error3);
-
-	function NoElementException() {
-		_classCallCheck(this, NoElementException);
-
-		var _this3 = _possibleConstructorReturn(this, (NoElementException.__proto__ || Object.getPrototypeOf(NoElementException)).call(this));
-
-		_this3.name = "NoElementException";
-		_this3.message = "No element to render on.";
-		return _this3;
-	}
-
-	return NoElementException;
-}(Error);
-
-exports.InvalidInputException = InvalidInputException;
-exports.InvalidElementException = InvalidElementException;
-exports.NoElementException = NoElementException;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/fixOptions.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/fixOptions.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports["default"] = fixOptions;
-
-
-function fixOptions(options) {
-	// Fix the margins
-	options.marginTop = options.marginTop || options.margin;
-	options.marginBottom = options.marginBottom || options.margin;
-	options.marginRight = options.marginRight || options.margin;
-	options.marginLeft = options.marginLeft || options.margin;
-
-	return options;
-}
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/getOptionsFromElement.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/getOptionsFromElement.js ***!
-  \******************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _optionsFromStrings = __webpack_require__(/*! ./optionsFromStrings.js */ "./node_modules/jsbarcode/bin/help/optionsFromStrings.js");
-
-var _optionsFromStrings2 = _interopRequireDefault(_optionsFromStrings);
-
-var _defaults = __webpack_require__(/*! ../options/defaults.js */ "./node_modules/jsbarcode/bin/options/defaults.js");
-
-var _defaults2 = _interopRequireDefault(_defaults);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function getOptionsFromElement(element) {
-	var options = {};
-	for (var property in _defaults2.default) {
-		if (_defaults2.default.hasOwnProperty(property)) {
-			// jsbarcode-*
-			if (element.hasAttribute("jsbarcode-" + property.toLowerCase())) {
-				options[property] = element.getAttribute("jsbarcode-" + property.toLowerCase());
-			}
-
-			// data-*
-			if (element.hasAttribute("data-" + property.toLowerCase())) {
-				options[property] = element.getAttribute("data-" + property.toLowerCase());
-			}
-		}
-	}
-
-	options["value"] = element.getAttribute("jsbarcode-value") || element.getAttribute("data-value");
-
-	// Since all atributes are string they need to be converted to integers
-	options = (0, _optionsFromStrings2.default)(options);
-
-	return options;
-}
-
-exports["default"] = getOptionsFromElement;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/getRenderProperties.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/getRenderProperties.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; /* global HTMLImageElement */
-/* global HTMLCanvasElement */
-/* global SVGElement */
-
-var _getOptionsFromElement = __webpack_require__(/*! ./getOptionsFromElement.js */ "./node_modules/jsbarcode/bin/help/getOptionsFromElement.js");
-
-var _getOptionsFromElement2 = _interopRequireDefault(_getOptionsFromElement);
-
-var _renderers = __webpack_require__(/*! ../renderers */ "./node_modules/jsbarcode/bin/renderers/index.js");
-
-var _renderers2 = _interopRequireDefault(_renderers);
-
-var _exceptions = __webpack_require__(/*! ../exceptions/exceptions.js */ "./node_modules/jsbarcode/bin/exceptions/exceptions.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-// Takes an element and returns an object with information about how
-// it should be rendered
-// This could also return an array with these objects
-// {
-//   element: The element that the renderer should draw on
-//   renderer: The name of the renderer
-//   afterRender (optional): If something has to done after the renderer
-//     completed, calls afterRender (function)
-//   options (optional): Options that can be defined in the element
-// }
-
-function getRenderProperties(element) {
-	// If the element is a string, query select call again
-	if (typeof element === "string") {
-		return querySelectedRenderProperties(element);
-	}
-	// If element is array. Recursivly call with every object in the array
-	else if (Array.isArray(element)) {
-			var returnArray = [];
-			for (var i = 0; i < element.length; i++) {
-				returnArray.push(getRenderProperties(element[i]));
-			}
-			return returnArray;
-		}
-		// If element, render on canvas and set the uri as src
-		else if (typeof HTMLCanvasElement !== 'undefined' && element instanceof HTMLImageElement) {
-				return newCanvasRenderProperties(element);
-			}
-			// If SVG
-			else if (element && element.nodeName && element.nodeName.toLowerCase() === 'svg' || typeof SVGElement !== 'undefined' && element instanceof SVGElement) {
-					return {
-						element: element,
-						options: (0, _getOptionsFromElement2.default)(element),
-						renderer: _renderers2.default.SVGRenderer
-					};
-				}
-				// If canvas (in browser)
-				else if (typeof HTMLCanvasElement !== 'undefined' && element instanceof HTMLCanvasElement) {
-						return {
-							element: element,
-							options: (0, _getOptionsFromElement2.default)(element),
-							renderer: _renderers2.default.CanvasRenderer
-						};
-					}
-					// If canvas (in node)
-					else if (element && element.getContext) {
-							return {
-								element: element,
-								renderer: _renderers2.default.CanvasRenderer
-							};
-						} else if (element && (typeof element === "undefined" ? "undefined" : _typeof(element)) === 'object' && !element.nodeName) {
-							return {
-								element: element,
-								renderer: _renderers2.default.ObjectRenderer
-							};
-						} else {
-							throw new _exceptions.InvalidElementException();
-						}
-}
-
-function querySelectedRenderProperties(string) {
-	var selector = document.querySelectorAll(string);
-	if (selector.length === 0) {
-		return undefined;
-	} else {
-		var returnArray = [];
-		for (var i = 0; i < selector.length; i++) {
-			returnArray.push(getRenderProperties(selector[i]));
-		}
-		return returnArray;
-	}
-}
-
-function newCanvasRenderProperties(imgElement) {
-	var canvas = document.createElement('canvas');
-	return {
-		element: canvas,
-		options: (0, _getOptionsFromElement2.default)(imgElement),
-		renderer: _renderers2.default.CanvasRenderer,
-		afterRender: function afterRender() {
-			imgElement.setAttribute("src", canvas.toDataURL());
-		}
-	};
-}
-
-exports["default"] = getRenderProperties;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/linearizeEncodings.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/linearizeEncodings.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports["default"] = linearizeEncodings;
-
-// Encodings can be nestled like [[1-1, 1-2], 2, [3-1, 3-2]
-// Convert to [1-1, 1-2, 2, 3-1, 3-2]
-
-function linearizeEncodings(encodings) {
-	var linearEncodings = [];
-	function nextLevel(encoded) {
-		if (Array.isArray(encoded)) {
-			for (var i = 0; i < encoded.length; i++) {
-				nextLevel(encoded[i]);
-			}
-		} else {
-			encoded.text = encoded.text || "";
-			encoded.data = encoded.data || "";
-			linearEncodings.push(encoded);
-		}
-	}
-	nextLevel(encodings);
-
-	return linearEncodings;
-}
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/merge.js":
-/*!**************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/merge.js ***!
-  \**************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-exports["default"] = function (old, replaceObj) {
-  return _extends({}, old, replaceObj);
-};
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/help/optionsFromStrings.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/help/optionsFromStrings.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports["default"] = optionsFromStrings;
-
-// Convert string to integers/booleans where it should be
-
-function optionsFromStrings(options) {
-	var intOptions = ["width", "height", "textMargin", "fontSize", "margin", "marginTop", "marginBottom", "marginLeft", "marginRight"];
-
-	for (var intOption in intOptions) {
-		if (intOptions.hasOwnProperty(intOption)) {
-			intOption = intOptions[intOption];
-			if (typeof options[intOption] === "string") {
-				options[intOption] = parseInt(options[intOption], 10);
-			}
-		}
-	}
-
-	if (typeof options["displayValue"] === "string") {
-		options["displayValue"] = options["displayValue"] != "false";
-	}
-
-	return options;
-}
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/options/defaults.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/options/defaults.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-var defaults = {
-	width: 2,
-	height: 100,
-	format: "auto",
-	displayValue: true,
-	fontOptions: "",
-	font: "monospace",
-	text: undefined,
-	textAlign: "center",
-	textPosition: "bottom",
-	textMargin: 2,
-	fontSize: 20,
-	background: "#ffffff",
-	lineColor: "#000000",
-	margin: 10,
-	marginTop: undefined,
-	marginBottom: undefined,
-	marginLeft: undefined,
-	marginRight: undefined,
-	valid: function valid() {}
-};
-
-exports["default"] = defaults;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/renderers/canvas.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/renderers/canvas.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _merge = __webpack_require__(/*! ../help/merge.js */ "./node_modules/jsbarcode/bin/help/merge.js");
-
-var _merge2 = _interopRequireDefault(_merge);
-
-var _shared = __webpack_require__(/*! ./shared.js */ "./node_modules/jsbarcode/bin/renderers/shared.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var CanvasRenderer = function () {
-	function CanvasRenderer(canvas, encodings, options) {
-		_classCallCheck(this, CanvasRenderer);
-
-		this.canvas = canvas;
-		this.encodings = encodings;
-		this.options = options;
-	}
-
-	_createClass(CanvasRenderer, [{
-		key: "render",
-		value: function render() {
-			// Abort if the browser does not support HTML5 canvas
-			if (!this.canvas.getContext) {
-				throw new Error('The browser does not support canvas.');
-			}
-
-			this.prepareCanvas();
-			for (var i = 0; i < this.encodings.length; i++) {
-				var encodingOptions = (0, _merge2.default)(this.options, this.encodings[i].options);
-
-				this.drawCanvasBarcode(encodingOptions, this.encodings[i]);
-				this.drawCanvasText(encodingOptions, this.encodings[i]);
-
-				this.moveCanvasDrawing(this.encodings[i]);
-			}
-
-			this.restoreCanvas();
-		}
-	}, {
-		key: "prepareCanvas",
-		value: function prepareCanvas() {
-			// Get the canvas context
-			var ctx = this.canvas.getContext("2d");
-
-			ctx.save();
-
-			(0, _shared.calculateEncodingAttributes)(this.encodings, this.options, ctx);
-			var totalWidth = (0, _shared.getTotalWidthOfEncodings)(this.encodings);
-			var maxHeight = (0, _shared.getMaximumHeightOfEncodings)(this.encodings);
-
-			this.canvas.width = totalWidth + this.options.marginLeft + this.options.marginRight;
-
-			this.canvas.height = maxHeight;
-
-			// Paint the canvas
-			ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-			if (this.options.background) {
-				ctx.fillStyle = this.options.background;
-				ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-			}
-
-			ctx.translate(this.options.marginLeft, 0);
-		}
-	}, {
-		key: "drawCanvasBarcode",
-		value: function drawCanvasBarcode(options, encoding) {
-			// Get the canvas context
-			var ctx = this.canvas.getContext("2d");
-
-			var binary = encoding.data;
-
-			// Creates the barcode out of the encoded binary
-			var yFrom;
-			if (options.textPosition == "top") {
-				yFrom = options.marginTop + options.fontSize + options.textMargin;
-			} else {
-				yFrom = options.marginTop;
-			}
-
-			ctx.fillStyle = options.lineColor;
-
-			for (var b = 0; b < binary.length; b++) {
-				var x = b * options.width + encoding.barcodePadding;
-
-				if (binary[b] === "1") {
-					ctx.fillRect(x, yFrom, options.width, options.height);
-				} else if (binary[b]) {
-					ctx.fillRect(x, yFrom, options.width, options.height * binary[b]);
-				}
-			}
-		}
-	}, {
-		key: "drawCanvasText",
-		value: function drawCanvasText(options, encoding) {
-			// Get the canvas context
-			var ctx = this.canvas.getContext("2d");
-
-			var font = options.fontOptions + " " + options.fontSize + "px " + options.font;
-
-			// Draw the text if displayValue is set
-			if (options.displayValue) {
-				var x, y;
-
-				if (options.textPosition == "top") {
-					y = options.marginTop + options.fontSize - options.textMargin;
-				} else {
-					y = options.height + options.textMargin + options.marginTop + options.fontSize;
-				}
-
-				ctx.font = font;
-
-				// Draw the text in the correct X depending on the textAlign option
-				if (options.textAlign == "left" || encoding.barcodePadding > 0) {
-					x = 0;
-					ctx.textAlign = 'left';
-				} else if (options.textAlign == "right") {
-					x = encoding.width - 1;
-					ctx.textAlign = 'right';
-				}
-				// In all other cases, center the text
-				else {
-						x = encoding.width / 2;
-						ctx.textAlign = 'center';
-					}
-
-				ctx.fillText(encoding.text, x, y);
-			}
-		}
-	}, {
-		key: "moveCanvasDrawing",
-		value: function moveCanvasDrawing(encoding) {
-			var ctx = this.canvas.getContext("2d");
-
-			ctx.translate(encoding.width, 0);
-		}
-	}, {
-		key: "restoreCanvas",
-		value: function restoreCanvas() {
-			// Get the canvas context
-			var ctx = this.canvas.getContext("2d");
-
-			ctx.restore();
-		}
-	}]);
-
-	return CanvasRenderer;
-}();
-
-exports["default"] = CanvasRenderer;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/renderers/index.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/renderers/index.js ***!
-  \*******************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-
-var _canvas = __webpack_require__(/*! ./canvas.js */ "./node_modules/jsbarcode/bin/renderers/canvas.js");
-
-var _canvas2 = _interopRequireDefault(_canvas);
-
-var _svg = __webpack_require__(/*! ./svg.js */ "./node_modules/jsbarcode/bin/renderers/svg.js");
-
-var _svg2 = _interopRequireDefault(_svg);
-
-var _object = __webpack_require__(/*! ./object.js */ "./node_modules/jsbarcode/bin/renderers/object.js");
-
-var _object2 = _interopRequireDefault(_object);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-exports["default"] = { CanvasRenderer: _canvas2.default, SVGRenderer: _svg2.default, ObjectRenderer: _object2.default };
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/renderers/object.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/renderers/object.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var ObjectRenderer = function () {
-	function ObjectRenderer(object, encodings, options) {
-		_classCallCheck(this, ObjectRenderer);
-
-		this.object = object;
-		this.encodings = encodings;
-		this.options = options;
-	}
-
-	_createClass(ObjectRenderer, [{
-		key: "render",
-		value: function render() {
-			this.object.encodings = this.encodings;
-		}
-	}]);
-
-	return ObjectRenderer;
-}();
-
-exports["default"] = ObjectRenderer;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/renderers/shared.js":
-/*!********************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/renderers/shared.js ***!
-  \********************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports.getTotalWidthOfEncodings = exports.calculateEncodingAttributes = exports.getBarcodePadding = exports.getEncodingHeight = exports.getMaximumHeightOfEncodings = undefined;
-
-var _merge = __webpack_require__(/*! ../help/merge.js */ "./node_modules/jsbarcode/bin/help/merge.js");
-
-var _merge2 = _interopRequireDefault(_merge);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function getEncodingHeight(encoding, options) {
-	return options.height + (options.displayValue && encoding.text.length > 0 ? options.fontSize + options.textMargin : 0) + options.marginTop + options.marginBottom;
-}
-
-function getBarcodePadding(textWidth, barcodeWidth, options) {
-	if (options.displayValue && barcodeWidth < textWidth) {
-		if (options.textAlign == "center") {
-			return Math.floor((textWidth - barcodeWidth) / 2);
-		} else if (options.textAlign == "left") {
-			return 0;
-		} else if (options.textAlign == "right") {
-			return Math.floor(textWidth - barcodeWidth);
-		}
-	}
-	return 0;
-}
-
-function calculateEncodingAttributes(encodings, barcodeOptions, context) {
-	for (var i = 0; i < encodings.length; i++) {
-		var encoding = encodings[i];
-		var options = (0, _merge2.default)(barcodeOptions, encoding.options);
-
-		// Calculate the width of the encoding
-		var textWidth;
-		if (options.displayValue) {
-			textWidth = messureText(encoding.text, options, context);
-		} else {
-			textWidth = 0;
-		}
-
-		var barcodeWidth = encoding.data.length * options.width;
-		encoding.width = Math.ceil(Math.max(textWidth, barcodeWidth));
-
-		encoding.height = getEncodingHeight(encoding, options);
-
-		encoding.barcodePadding = getBarcodePadding(textWidth, barcodeWidth, options);
-	}
-}
-
-function getTotalWidthOfEncodings(encodings) {
-	var totalWidth = 0;
-	for (var i = 0; i < encodings.length; i++) {
-		totalWidth += encodings[i].width;
-	}
-	return totalWidth;
-}
-
-function getMaximumHeightOfEncodings(encodings) {
-	var maxHeight = 0;
-	for (var i = 0; i < encodings.length; i++) {
-		if (encodings[i].height > maxHeight) {
-			maxHeight = encodings[i].height;
-		}
-	}
-	return maxHeight;
-}
-
-function messureText(string, options, context) {
-	var ctx;
-
-	if (context) {
-		ctx = context;
-	} else if (typeof document !== "undefined") {
-		ctx = document.createElement("canvas").getContext("2d");
-	} else {
-		// If the text cannot be messured we will return 0.
-		// This will make some barcode with big text render incorrectly
-		return 0;
-	}
-	ctx.font = options.fontOptions + " " + options.fontSize + "px " + options.font;
-
-	// Calculate the width of the encoding
-	var measureTextResult = ctx.measureText(string);
-	if (!measureTextResult) {
-		// Some implementations don't implement measureText and return undefined.
-		// If the text cannot be measured we will return 0.
-		// This will make some barcode with big text render incorrectly
-		return 0;
-	}
-	var size = measureTextResult.width;
-	return size;
-}
-
-exports.getMaximumHeightOfEncodings = getMaximumHeightOfEncodings;
-exports.getEncodingHeight = getEncodingHeight;
-exports.getBarcodePadding = getBarcodePadding;
-exports.calculateEncodingAttributes = calculateEncodingAttributes;
-exports.getTotalWidthOfEncodings = getTotalWidthOfEncodings;
-
-/***/ }),
-
-/***/ "./node_modules/jsbarcode/bin/renderers/svg.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/jsbarcode/bin/renderers/svg.js ***!
-  \*****************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _merge = __webpack_require__(/*! ../help/merge.js */ "./node_modules/jsbarcode/bin/help/merge.js");
-
-var _merge2 = _interopRequireDefault(_merge);
-
-var _shared = __webpack_require__(/*! ./shared.js */ "./node_modules/jsbarcode/bin/renderers/shared.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var svgns = "http://www.w3.org/2000/svg";
-
-var SVGRenderer = function () {
-	function SVGRenderer(svg, encodings, options) {
-		_classCallCheck(this, SVGRenderer);
-
-		this.svg = svg;
-		this.encodings = encodings;
-		this.options = options;
-		this.document = options.xmlDocument || document;
-	}
-
-	_createClass(SVGRenderer, [{
-		key: "render",
-		value: function render() {
-			var currentX = this.options.marginLeft;
-
-			this.prepareSVG();
-			for (var i = 0; i < this.encodings.length; i++) {
-				var encoding = this.encodings[i];
-				var encodingOptions = (0, _merge2.default)(this.options, encoding.options);
-
-				var group = this.createGroup(currentX, encodingOptions.marginTop, this.svg);
-
-				this.setGroupOptions(group, encodingOptions);
-
-				this.drawSvgBarcode(group, encodingOptions, encoding);
-				this.drawSVGText(group, encodingOptions, encoding);
-
-				currentX += encoding.width;
-			}
-		}
-	}, {
-		key: "prepareSVG",
-		value: function prepareSVG() {
-			// Clear the SVG
-			while (this.svg.firstChild) {
-				this.svg.removeChild(this.svg.firstChild);
-			}
-
-			(0, _shared.calculateEncodingAttributes)(this.encodings, this.options);
-			var totalWidth = (0, _shared.getTotalWidthOfEncodings)(this.encodings);
-			var maxHeight = (0, _shared.getMaximumHeightOfEncodings)(this.encodings);
-
-			var width = totalWidth + this.options.marginLeft + this.options.marginRight;
-			this.setSvgAttributes(width, maxHeight);
-
-			if (this.options.background) {
-				this.drawRect(0, 0, width, maxHeight, this.svg).setAttribute("style", "fill:" + this.options.background + ";");
-			}
-		}
-	}, {
-		key: "drawSvgBarcode",
-		value: function drawSvgBarcode(parent, options, encoding) {
-			var binary = encoding.data;
-
-			// Creates the barcode out of the encoded binary
-			var yFrom;
-			if (options.textPosition == "top") {
-				yFrom = options.fontSize + options.textMargin;
-			} else {
-				yFrom = 0;
-			}
-
-			var barWidth = 0;
-			var x = 0;
-			for (var b = 0; b < binary.length; b++) {
-				x = b * options.width + encoding.barcodePadding;
-
-				if (binary[b] === "1") {
-					barWidth++;
-				} else if (barWidth > 0) {
-					this.drawRect(x - options.width * barWidth, yFrom, options.width * barWidth, options.height, parent);
-					barWidth = 0;
-				}
-			}
-
-			// Last draw is needed since the barcode ends with 1
-			if (barWidth > 0) {
-				this.drawRect(x - options.width * (barWidth - 1), yFrom, options.width * barWidth, options.height, parent);
-			}
-		}
-	}, {
-		key: "drawSVGText",
-		value: function drawSVGText(parent, options, encoding) {
-			var textElem = this.document.createElementNS(svgns, 'text');
-
-			// Draw the text if displayValue is set
-			if (options.displayValue) {
-				var x, y;
-
-				textElem.setAttribute("style", "font:" + options.fontOptions + " " + options.fontSize + "px " + options.font);
-
-				if (options.textPosition == "top") {
-					y = options.fontSize - options.textMargin;
-				} else {
-					y = options.height + options.textMargin + options.fontSize;
-				}
-
-				// Draw the text in the correct X depending on the textAlign option
-				if (options.textAlign == "left" || encoding.barcodePadding > 0) {
-					x = 0;
-					textElem.setAttribute("text-anchor", "start");
-				} else if (options.textAlign == "right") {
-					x = encoding.width - 1;
-					textElem.setAttribute("text-anchor", "end");
-				}
-				// In all other cases, center the text
-				else {
-						x = encoding.width / 2;
-						textElem.setAttribute("text-anchor", "middle");
-					}
-
-				textElem.setAttribute("x", x);
-				textElem.setAttribute("y", y);
-
-				textElem.appendChild(this.document.createTextNode(encoding.text));
-
-				parent.appendChild(textElem);
-			}
-		}
-	}, {
-		key: "setSvgAttributes",
-		value: function setSvgAttributes(width, height) {
-			var svg = this.svg;
-			svg.setAttribute("width", width + "px");
-			svg.setAttribute("height", height + "px");
-			svg.setAttribute("x", "0px");
-			svg.setAttribute("y", "0px");
-			svg.setAttribute("viewBox", "0 0 " + width + " " + height);
-
-			svg.setAttribute("xmlns", svgns);
-			svg.setAttribute("version", "1.1");
-
-			svg.setAttribute("style", "transform: translate(0,0)");
-		}
-	}, {
-		key: "createGroup",
-		value: function createGroup(x, y, parent) {
-			var group = this.document.createElementNS(svgns, 'g');
-			group.setAttribute("transform", "translate(" + x + ", " + y + ")");
-
-			parent.appendChild(group);
-
-			return group;
-		}
-	}, {
-		key: "setGroupOptions",
-		value: function setGroupOptions(group, options) {
-			group.setAttribute("style", "fill:" + options.lineColor + ";");
-		}
-	}, {
-		key: "drawRect",
-		value: function drawRect(x, y, width, height, parent) {
-			var rect = this.document.createElementNS(svgns, 'rect');
-
-			rect.setAttribute("x", x);
-			rect.setAttribute("y", y);
-			rect.setAttribute("width", width);
-			rect.setAttribute("height", height);
-
-			parent.appendChild(rect);
-
-			return rect;
-		}
-	}]);
-
-	return SVGRenderer;
-}();
-
-exports["default"] = SVGRenderer;
 
 /***/ }),
 
@@ -142111,7 +135901,8 @@ var _require3 = __webpack_require__(/*! ../mockData */ "./src/mockData.js"),
 var mui = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js");
 var Box = mui.Box,
   Grid = mui.Grid,
-  Container = mui.Container;
+  Container = mui.Container,
+  Typography = mui.Typography;
 
 // Import components - get the default export directly
 var Header, SearchCategories, ProductList, LabelPreview;
@@ -142237,6 +136028,10 @@ function MainContent(_ref) {
     _useState16 = _slicedToArray(_useState15, 2),
     filteredProducts = _useState16[0],
     setFilteredProducts = _useState16[1];
+  var _useState17 = useState(null),
+    _useState18 = _slicedToArray(_useState17, 2),
+    showNotification = _useState18[0],
+    setShowNotification = _useState18[1];
 
   // Fetch app version on component mount
   useEffect(function () {
@@ -142318,31 +136113,91 @@ function MainContent(_ref) {
     setQuantity(newQuantity);
   };
 
-  // Handle print label
-  var handlePrintLabel = function handlePrintLabel() {
-    if (!selectedProduct) return;
-
-    // Set printer status to 'printing'
-    setPrinterStatus('printing');
-
-    // Generate label data
-    var labelData = {
-      product: selectedProduct,
-      quantity: quantity,
-      timestamp: new Date().toISOString()
+  // Handle print label - this will be called by LabelPreview
+  var handlePrintLabel = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(product, printQuantity) {
+      var _window$api2, result;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            if (product) {
+              _context2.next = 2;
+              break;
+            }
+            return _context2.abrupt("return");
+          case 2:
+            // Set printer status to 'printing'
+            setPrinterStatus('printing');
+            _context2.prev = 3;
+            if (!((_window$api2 = window.api) !== null && _window$api2 !== void 0 && _window$api2.printZplLabel)) {
+              _context2.next = 12;
+              break;
+            }
+            console.log("Printing ".concat(printQuantity, " ZPL label(s) for ").concat(product.productname || product.name));
+            _context2.next = 8;
+            return window.api.printZplLabel(product, {
+              quantity: printQuantity,
+              templateName: 'label_template'
+            });
+          case 8:
+            result = _context2.sent;
+            if (result.success) {
+              console.log('Print job completed successfully:', result);
+              // Use Header's notification system
+              if (showNotification) {
+                showNotification(true, product.productname || product.name);
+              }
+            } else {
+              console.error('Print job failed:', result.error);
+              // Use Header's notification system
+              if (showNotification) {
+                showNotification(false, product.productname || product.name, result.error);
+              }
+            }
+            _context2.next = 14;
+            break;
+          case 12:
+            // Fallback - simulate print response
+            console.log('ZPL Print API not available - simulating print');
+            setTimeout(function () {
+              if (showNotification) {
+                showNotification(true, product.productname || product.name);
+              }
+            }, 1000);
+          case 14:
+            _context2.next = 20;
+            break;
+          case 16:
+            _context2.prev = 16;
+            _context2.t0 = _context2["catch"](3);
+            console.error('Print error:', _context2.t0);
+            if (showNotification) {
+              showNotification(false, product.productname || product.name, _context2.t0.message);
+            }
+          case 20:
+            _context2.prev = 20;
+            setPrinterStatus('ready');
+            return _context2.finish(20);
+          case 23:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[3, 16, 20, 23]]);
+    }));
+    return function handlePrintLabel(_x, _x2) {
+      return _ref3.apply(this, arguments);
     };
-
-    // Simulate print response (we'll use window.api in the future)
-    console.log('Print label:', labelData);
-    setTimeout(function () {
-      setPrinterStatus('ready');
-    }, 3000);
-  };
+  }();
 
   // Create header component
   var headerComponent = React.createElement(Header, {
     printerStatus: printerStatus,
-    version: appVersion
+    version: appVersion,
+    onShowNotification: function onShowNotification(notificationFunc) {
+      setShowNotification(function () {
+        return notificationFunc;
+      });
+    }
   });
 
   // Create the grid layout
@@ -142439,21 +136294,21 @@ function AppWrapper() {
 
   // You can add listeners for Electron IPC messages here
   useEffect(function () {
-    var _window$api2, _window$api2$onShowDi;
+    var _window$api3, _window$api3$onShowDi;
     // Listen for dialog open/close requests from the main process
-    var handleShowDialog = function handleShowDialog(event, _ref3) {
-      var dialogType = _ref3.dialogType,
-        props = _ref3.props;
+    var handleShowDialog = function handleShowDialog(event, _ref4) {
+      var dialogType = _ref4.dialogType,
+        props = _ref4.props;
       openDialog(dialogType, props);
     };
 
     // Add event listeners
-    (_window$api2 = window.api) === null || _window$api2 === void 0 || (_window$api2$onShowDi = _window$api2.onShowDialog) === null || _window$api2$onShowDi === void 0 || _window$api2$onShowDi.call(_window$api2, handleShowDialog);
+    (_window$api3 = window.api) === null || _window$api3 === void 0 || (_window$api3$onShowDi = _window$api3.onShowDialog) === null || _window$api3$onShowDi === void 0 || _window$api3$onShowDi.call(_window$api3, handleShowDialog);
 
     // Clean up
     return function () {
-      var _window$api3, _window$api3$offShowD;
-      (_window$api3 = window.api) === null || _window$api3 === void 0 || (_window$api3$offShowD = _window$api3.offShowDialog) === null || _window$api3$offShowD === void 0 || _window$api3$offShowD.call(_window$api3, handleShowDialog);
+      var _window$api4, _window$api4$offShowD;
+      (_window$api4 = window.api) === null || _window$api4 === void 0 || (_window$api4$offShowD = _window$api4.offShowDialog) === null || _window$api4$offShowD === void 0 || _window$api4$offShowD.call(_window$api4, handleShowDialog);
     };
   }, [openDialog]);
   return React.createElement(MainContent, {
@@ -142487,16 +136342,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/AppBar/AppBar.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Toolbar/Toolbar.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Box/Box.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Typography/Typography.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Tooltip/Tooltip.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/IconButton/IconButton.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Print.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Settings.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/AppBar/AppBar.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Toolbar/Toolbar.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Typography/Typography.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Button/Button.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/IconButton/IconButton.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Cancel.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Settings.js");
 /* harmony import */ var _dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./dialogs/DialogManager */ "./src/components/dialogs/DialogManager.js");
 /* harmony import */ var _dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _PrintNotification__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PrintNotification */ "./src/components/PrintNotification.js");
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
@@ -142511,215 +136367,161 @@ function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
 
+
 function Header(_ref) {
-  var printerStatus = _ref.printerStatus,
-    version = _ref.version;
+  var version = _ref.version,
+    onShowNotification = _ref.onShowNotification;
   var _useDialogs = (0,_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.useDialogs)(),
     openDialog = _useDialogs.openDialog;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(new Date()),
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
-    currentTime = _useState2[0],
-    setCurrentTime = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
+    showNotification = _useState2[0],
+    setShowNotification = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      success: false,
+      productName: '',
+      errorMessage: ''
+    }),
     _useState4 = _slicedToArray(_useState3, 2),
-    selectedPrinter = _useState4[0],
-    setSelectedPrinter = _useState4[1];
+    notificationData = _useState4[0],
+    setNotificationData = _useState4[1];
 
-  // Load selected printer from settings when component mounts
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var loadPrinterFromSettings = /*#__PURE__*/function () {
-      var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var settings;
-        return _regeneratorRuntime().wrap(function _callee$(_context) {
-          while (1) switch (_context.prev = _context.next) {
-            case 0:
-              _context.prev = 0;
-              _context.next = 3;
-              return window.api.loadSettings();
-            case 3:
-              settings = _context.sent;
-              if (settings && settings.printer && settings.printer.defaultPrinter) {
-                setSelectedPrinter(settings.printer.defaultPrinter);
-              } else {
-                setSelectedPrinter('None Selected');
-              }
-              _context.next = 11;
-              break;
-            case 7:
-              _context.prev = 7;
-              _context.t0 = _context["catch"](0);
-              console.error('Error loading printer settings:', _context.t0);
-              setSelectedPrinter('None Selected');
-            case 11:
-            case "end":
-              return _context.stop();
-          }
-        }, _callee, null, [[0, 7]]);
-      }));
-      return function loadPrinterFromSettings() {
-        return _ref2.apply(this, arguments);
-      };
-    }();
-    loadPrinterFromSettings();
-  }, []);
-
-  // Update clock every second
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var timer = setInterval(function () {
-      setCurrentTime(new Date());
-    }, 1000);
-    return function () {
-      return clearInterval(timer);
-    };
-  }, []);
-
-  // Get printer status color
-  var getPrinterStatusColor = function getPrinterStatusColor() {
-    switch (printerStatus) {
-      case 'ready':
-        return '#4CAF50';
-      // Green - Printer ready
-      case 'printing':
-        return '#4CAF50';
-      // Green - Will be flashing (animation handled by CSS)
-      case 'generalError':
-        return '#FFC107';
-      // Yellow - General non-critical error
-      case 'criticalError':
-        return '#FFC107';
-      // Yellow - Critical error (will be flashing)
-      case 'offline':
-        return '#F44336';
-      // Red - Printer offline
-      default:
-        return '#9ba03b';
-      // Primary app color when status unknown
-    }
-  };
-
-  // Get printer status text for tooltip
-  var getPrinterStatusText = function getPrinterStatusText() {
-    switch (printerStatus) {
-      case 'ready':
-        return 'Printer Ready';
-      case 'printing':
-        return 'Printing in Progress';
-      case 'generalError':
-        return 'General Printer Error';
-      case 'criticalError':
-        return 'Critical Printer Error';
-      case 'offline':
-        return 'Printer Offline';
-      default:
-        return 'Printer Status Unknown';
-    }
-  };
-
-  // Format printer name to remove ZDesigner prefix
-  var formatPrinterName = function formatPrinterName(name) {
-    if (!name) return 'No printer selected';
-
-    // Remove ZDesigner prefix and clean up the name
-    return name.replace(/ZDesigner\s*/i, '').replace(/\s*-\s*\d+dpi\s*/i, '') // Also remove dpi information
-    .trim();
-  };
-
-  // Format time to show only hours and minutes
-  var formatTime = function formatTime(date) {
-    return date.toLocaleTimeString([], {
-      hour: '2-digit',
-      minute: '2-digit'
+  // Function to show notifications - can be called by parent
+  var showNotificationHandler = function showNotificationHandler(success, productName) {
+    var errorMessage = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : '';
+    setNotificationData({
+      success: success,
+      productName: productName,
+      errorMessage: errorMessage
     });
+    setShowNotification(true);
   };
 
-  // Handle opening the printer queue dialog
-  var handlePrinterDialogOpen = function handlePrinterDialogOpen() {
-    openDialog(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.DIALOG_TYPES.PRINT_QUEUE);
-  };
+  // Pass the notification handler to parent via callback ref
+  react__WEBPACK_IMPORTED_MODULE_0___default().useEffect(function () {
+    if (onShowNotification) {
+      onShowNotification(showNotificationHandler);
+    }
+  }, [onShowNotification]);
 
   // Handle opening the settings dialog
   var handleSettingsDialogOpen = function handleSettingsDialogOpen() {
     openDialog(_dialogs_DialogManager__WEBPACK_IMPORTED_MODULE_1__.DIALOG_TYPES.SETTINGS);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+
+  // Handle cancel print job
+  var handleCancelPrint = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      var _window$api, result;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.prev = 0;
+            if (!((_window$api = window.api) !== null && _window$api !== void 0 && _window$api.cancelPrintJob)) {
+              _context.next = 8;
+              break;
+            }
+            _context.next = 4;
+            return window.api.cancelPrintJob();
+          case 4:
+            result = _context.sent;
+            if (result.success) {
+              console.log('Print job cancelled successfully');
+              showNotificationHandler(true, 'Print Job Cancelled');
+            } else {
+              console.error('Failed to cancel print job:', result.error);
+              showNotificationHandler(false, 'Cancel Failed', result.error || 'Unknown error occurred');
+            }
+            _context.next = 10;
+            break;
+          case 8:
+            console.error('Cancel print job API not available');
+            showNotificationHandler(false, 'Cancel Failed', 'Cancel print job API not available');
+          case 10:
+            _context.next = 16;
+            break;
+          case 12:
+            _context.prev = 12;
+            _context.t0 = _context["catch"](0);
+            console.error('Error cancelling print job:', _context.t0);
+            showNotificationHandler(false, 'Cancel Failed', _context.t0.message || 'Unknown error occurred');
+          case 16:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[0, 12]]);
+    }));
+    return function handleCancelPrint() {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     position: "static",
     sx: {
       backgroundColor: '#9ba03b'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sx: {
       flex: 1,
       display: 'flex',
       justifyContent: 'flex-start'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
     variant: "h6",
     sx: {
       color: 'white'
     }
-  }, "Pet Fresh Label Printing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      flex: 2,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    variant: "body1",
-    sx: {
-      color: 'white',
-      mx: 1
-    }
-  }, "Printer: ", formatPrinterName(selectedPrinter), " | ", formatTime(currentTime)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    title: getPrinterStatusText(),
-    arrow: true,
-    placement: "bottom"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    onClick: handlePrinterDialogOpen,
-    sx: {
-      bgcolor: 'white',
-      color: getPrinterStatusColor(),
-      width: 32,
-      height: 32,
-      '&:hover': {
-        bgcolor: '#f5f5f5'
-      },
-      ml: 1,
-      animation: printerStatus === 'printing' || printerStatus === 'criticalError' ? 'pulse 1.5s infinite' : 'none',
-      '@keyframes pulse': {
-        '0%': {
-          opacity: 1
-        },
-        '50%': {
-          opacity: 0.5
-        },
-        '100%': {
-          opacity: 1
-        }
-      }
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    fontSize: "small"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "Pet Fresh Label Printing")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
     sx: {
       flex: 1,
       display: 'flex',
       justifyContent: 'flex-end',
       alignItems: 'center'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    onClick: handleCancelPrint,
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      sx: {
+        color: 'black'
+      }
+    }),
+    sx: {
+      backgroundColor: 'red',
+      color: 'black',
+      mr: 2,
+      borderRadius: '4px',
+      minWidth: '120px',
+      height: '36px',
+      fontSize: '0.875rem',
+      textTransform: 'none',
+      border: '3px solid black',
+      '&:hover': {
+        backgroundColor: '#d32f2f',
+        border: '3px solid black',
+        color: 'black'
+      }
+    }
+  }, "Cancel Print"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
     variant: "body2",
     sx: {
       mr: 1,
       color: 'white'
     }
-  }, "v", version), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, "v", version), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_9__["default"], {
     color: "inherit",
     onClick: handleSettingsDialogOpen,
     sx: {
       color: 'white'
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_9__["default"], null)))));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_10__["default"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PrintNotification__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    isVisible: showNotification,
+    onClose: function onClose() {
+      return setShowNotification(false);
+    },
+    success: notificationData.success,
+    productName: notificationData.productName,
+    errorMessage: notificationData.errorMessage
+  }));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -142729,6 +136531,545 @@ function Header(_ref) {
 /*!****************************************!*\
   !*** ./src/components/LabelPreview.js ***!
   \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var useState = React.useState,
+  useRef = React.useRef;
+var mui = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/index.js");
+var Box = mui.Box,
+  Paper = mui.Paper,
+  Typography = mui.Typography,
+  Button = mui.Button,
+  IconButton = mui.IconButton,
+  ButtonGroup = mui.ButtonGroup,
+  Dialog = mui.Dialog,
+  DialogContent = mui.DialogContent,
+  DialogActions = mui.DialogActions,
+  CircularProgress = mui.CircularProgress;
+
+// Create Add and Remove icons using simple SVG
+var AddIcon = function AddIcon() {
+  return React.createElement('svg', {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    fill: 'currentColor'
+  }, React.createElement('path', {
+    d: 'M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z'
+  }));
+};
+var RemoveIcon = function RemoveIcon() {
+  return React.createElement('svg', {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    fill: 'currentColor'
+  }, React.createElement('path', {
+    d: 'M19 13H5v-2h14v2z'
+  }));
+};
+var CloseIcon = function CloseIcon() {
+  return React.createElement('svg', {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    fill: 'currentColor'
+  }, React.createElement('path', {
+    d: 'M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'
+  }));
+};
+var BackspaceIcon = function BackspaceIcon() {
+  return React.createElement('svg', {
+    width: 24,
+    height: 24,
+    viewBox: '0 0 24 24',
+    fill: 'currentColor'
+  }, React.createElement('path', {
+    d: 'M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-3 12.59L17.59 17 14 13.41 10.41 17 9 15.59 12.59 12 9 8.41 10.41 7 14 10.59 17.59 7 19 8.41 15.41 12 19 15.59z'
+  }));
+};
+
+// Numpad Dialog Component  
+function NumpadDialog(_ref) {
+  var open = _ref.open,
+    onClose = _ref.onClose,
+    value = _ref.value,
+    onChange = _ref.onChange,
+    onSubmit = _ref.onSubmit;
+  // Use calculator-style layout (7-8-9 on top row)
+  var buttons = [[7, 8, 9], [4, 5, 6], [1, 2, 3], ['clear', 0, 'delete']];
+  var handleKeyClick = function handleKeyClick(key) {
+    if (key === 'clear') {
+      onChange('');
+      return;
+    }
+    if (key === 'delete') {
+      onChange(value.slice(0, -1));
+      return;
+    }
+
+    // Limit to 3 digits (max 999)
+    if (value.length >= 3) return;
+
+    // Prevent entering 0 as the first digit
+    if (value === '' && key === 0) return;
+    onChange(value + key.toString());
+  };
+  var handleSubmit = function handleSubmit() {
+    var parsedValue = parseInt(value, 10);
+    if (!isNaN(parsedValue) && parsedValue > 0) {
+      onSubmit(parsedValue);
+    } else {
+      // Reset to 1 if invalid or 0
+      onSubmit(1);
+    }
+  };
+  return React.createElement(Dialog, {
+    open: open,
+    onClose: onClose,
+    PaperProps: {
+      sx: {
+        borderRadius: '12px',
+        minWidth: '320px'
+      }
+    }
+  }, React.createElement(Box, {
+    sx: {
+      position: 'relative',
+      pt: 5,
+      pb: 3,
+      px: 3,
+      textAlign: 'center'
+    }
+  }, React.createElement(IconButton, {
+    onClick: onClose,
+    sx: {
+      position: 'absolute',
+      right: 8,
+      top: 8
+    }
+  }, React.createElement(CloseIcon)),
+  // Dialog Title
+  React.createElement(Typography, {
+    variant: 'h6',
+    sx: {
+      mb: 2,
+      fontWeight: 'medium',
+      color: '#555'
+    }
+  }, 'Enter Qty'),
+  // Display
+  React.createElement(Box, {
+    sx: {
+      mb: 2,
+      p: 2,
+      textAlign: 'right',
+      border: '1px solid #ddd',
+      borderRadius: '8px',
+      backgroundColor: '#f8f8f8',
+      boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
+    }
+  }, React.createElement(Typography, {
+    variant: 'h4',
+    fontWeight: 'bold'
+  }, value || '0')),
+  // Numpad Grid
+  React.createElement(Box, {
+    sx: {
+      mb: 2
+    }
+  }, buttons.map(function (row, rowIndex) {
+    return React.createElement(Box, {
+      key: rowIndex,
+      sx: {
+        display: 'flex',
+        mb: 1
+      }
+    }, row.map(function (button, colIndex) {
+      return React.createElement(Box, {
+        key: colIndex,
+        sx: {
+          flex: 1,
+          mx: 0.5
+        }
+      }, button === 'delete' ? React.createElement(Button, {
+        variant: 'outlined',
+        fullWidth: true,
+        onClick: function onClick() {
+          return handleKeyClick(button);
+        },
+        sx: {
+          height: '54px',
+          fontSize: '18px',
+          fontWeight: 'bold'
+        }
+      }, React.createElement(BackspaceIcon)) : button === 'clear' ? React.createElement(Button, {
+        variant: 'outlined',
+        color: 'error',
+        fullWidth: true,
+        onClick: function onClick() {
+          return handleKeyClick(button);
+        },
+        sx: {
+          height: '54px'
+        }
+      }, 'C') : React.createElement(Button, {
+        variant: 'outlined',
+        fullWidth: true,
+        onClick: function onClick() {
+          return handleKeyClick(button);
+        },
+        sx: {
+          height: '54px',
+          fontSize: '18px',
+          fontWeight: 'bold'
+        }
+      }, button));
+    }));
+  })),
+  // Confirm button
+  React.createElement(Button, {
+    variant: 'contained',
+    color: 'primary',
+    fullWidth: true,
+    onClick: handleSubmit,
+    sx: {
+      borderRadius: '8px',
+      height: '54px',
+      fontSize: '16px',
+      fontWeight: 'bold'
+    }
+  }, 'Set Quantity')));
+}
+function LabelPreview(_ref2) {
+  var product = _ref2.product,
+    quantity = _ref2.quantity,
+    onQuantityChange = _ref2.onQuantityChange,
+    onPrintLabel = _ref2.onPrintLabel;
+  var _useState = useState(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    isPrinting = _useState2[0],
+    setIsPrinting = _useState2[1];
+  var _useState3 = useState(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    showNumpad = _useState4[0],
+    setShowNumpad = _useState4[1];
+  var _useState5 = useState(''),
+    _useState6 = _slicedToArray(_useState5, 2),
+    tempQuantity = _useState6[0],
+    setTempQuantity = _useState6[1];
+
+  // Add references for increment/decrement timers  
+  var incrementIntervalRef = useRef(null);
+  var stepSizeRef = useRef(1);
+  var lastUpdateTimeRef = useRef(0);
+  var handlePrint = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            if (!(!product || isPrinting)) {
+              _context.next = 2;
+              break;
+            }
+            return _context.abrupt("return");
+          case 2:
+            setIsPrinting(true);
+            _context.prev = 3;
+            if (!onPrintLabel) {
+              _context.next = 7;
+              break;
+            }
+            _context.next = 7;
+            return onPrintLabel(product, quantity);
+          case 7:
+            _context.next = 12;
+            break;
+          case 9:
+            _context.prev = 9;
+            _context.t0 = _context["catch"](3);
+            console.error('Print error:', _context.t0);
+          case 12:
+            _context.prev = 12;
+            setIsPrinting(false);
+            return _context.finish(12);
+          case 15:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee, null, [[3, 9, 12, 15]]);
+    }));
+    return function handlePrint() {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var handleIncrease = function handleIncrease() {
+    if (quantity < 999) {
+      onQuantityChange(quantity + 1);
+    }
+  };
+  var handleDecrease = function handleDecrease() {
+    if (quantity > 1) {
+      onQuantityChange(quantity - 1);
+    }
+  };
+
+  // Start long press for quantity buttons
+  var startLongPress = function startLongPress(isIncrement) {
+    if (!product) return;
+
+    // Clear any existing intervals
+    if (incrementIntervalRef.current) {
+      clearInterval(incrementIntervalRef.current);
+    }
+
+    // Reset step size
+    stepSizeRef.current = 1;
+    lastUpdateTimeRef.current = Date.now();
+
+    // Set interval for continuous updates
+    incrementIntervalRef.current = setInterval(function () {
+      var now = Date.now();
+      var elapsedTime = now - lastUpdateTimeRef.current;
+
+      // Gradually increase step size based on how long button is held
+      if (elapsedTime > 3000) {
+        stepSizeRef.current = 50;
+      } else if (elapsedTime > 2000) {
+        stepSizeRef.current = 20;
+      } else if (elapsedTime > 1000) {
+        stepSizeRef.current = 5;
+      }
+      if (isIncrement) {
+        onQuantityChange(function (prev) {
+          return Math.min(prev + stepSizeRef.current, 999);
+        });
+      } else {
+        onQuantityChange(function (prev) {
+          return Math.max(prev - stepSizeRef.current, 1);
+        });
+      }
+    }, 150);
+  };
+
+  // End long press
+  var endLongPress = function endLongPress() {
+    if (incrementIntervalRef.current) {
+      clearInterval(incrementIntervalRef.current);
+      incrementIntervalRef.current = null;
+    }
+  };
+  var handleOpenNumpad = function handleOpenNumpad() {
+    setTempQuantity(quantity.toString());
+    setShowNumpad(true);
+  };
+  var handleNumpadChange = function handleNumpadChange(value) {
+    setTempQuantity(value);
+  };
+  var handleNumpadSubmit = function handleNumpadSubmit(value) {
+    onQuantityChange(value);
+    setShowNumpad(false);
+  };
+  var handleNumpadClose = function handleNumpadClose() {
+    setShowNumpad(false);
+  };
+  return React.createElement(Paper, {
+    elevation: 3,
+    sx: {
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden',
+      mx: 2
+    }
+  },
+  // Header
+  React.createElement(Box, {
+    sx: {
+      p: 2,
+      borderBottom: '1px solid #e0e0e0',
+      backgroundColor: 'white',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center'
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6'
+  }, 'Label Preview')),
+  // Preview Area
+  React.createElement(Box, {
+    sx: {
+      flexGrow: 1,
+      overflow: 'hidden',
+      backgroundColor: '#f5f5f5',
+      p: 3,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center'
+    }
+  }, product ? React.createElement(Box, {
+    sx: {
+      width: '100%',
+      height: '100%',
+      border: '1px dashed #ccc',
+      borderRadius: '8px',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      p: 3,
+      backgroundColor: 'white',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)'
+    }
+  }, React.createElement(Typography, {
+    variant: 'h6',
+    mb: 2
+  }, 'ZPL Preview Coming Soon'), React.createElement(Typography, {
+    variant: 'body2',
+    color: 'text.secondary'
+  }, "Selected: ".concat(product.productname || product.name))) : React.createElement(Box, {
+    sx: {
+      width: '100%',
+      height: '100%',
+      border: '1px dashed #ccc',
+      borderRadius: '8px',
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      p: 3,
+      backgroundColor: 'white',
+      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)'
+    }
+  }, React.createElement(Typography, {
+    variant: 'body1',
+    color: 'textSecondary',
+    mb: 1
+  }, 'Select a product to preview label'))),
+  // Controls at the bottom
+  React.createElement(Box, {
+    sx: {
+      p: 3,
+      borderTop: '1px solid #e0e0e0',
+      backgroundColor: '#f8f8f8',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 2
+    }
+  },
+  // Quantity section
+  React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }
+  }, React.createElement(ButtonGroup, {
+    size: 'large',
+    variant: 'outlined',
+    sx: {
+      '& > button': {
+        mx: 1,
+        '&:first-of-type, &:last-of-type': {
+          minWidth: '48px',
+          mx: 0
+        }
+      }
+    }
+  }, React.createElement(IconButton, {
+    onClick: handleDecrease,
+    onMouseDown: function onMouseDown() {
+      return startLongPress(false);
+    },
+    onMouseUp: endLongPress,
+    onMouseLeave: endLongPress,
+    disabled: !product || quantity <= 1,
+    sx: {
+      marginRight: '8px !important',
+      backgroundColor: 'white',
+      width: '48px',
+      height: '48px',
+      boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+    }
+  }, React.createElement(RemoveIcon)), React.createElement(Button, {
+    variant: 'text',
+    disableRipple: true,
+    onClick: handleOpenNumpad,
+    disabled: !product,
+    sx: {
+      background: 'white',
+      borderRadius: '2px',
+      px: 3,
+      minWidth: '90px',
+      fontWeight: 'bold',
+      fontSize: '18px',
+      border: 'none',
+      '&:hover': {
+        backgroundColor: '#f0f0f0',
+        border: 'none'
+      }
+    }
+  }, quantity), React.createElement(IconButton, {
+    onClick: handleIncrease,
+    onMouseDown: function onMouseDown() {
+      return startLongPress(true);
+    },
+    onMouseUp: endLongPress,
+    onMouseLeave: endLongPress,
+    disabled: !product,
+    sx: {
+      backgroundColor: 'white',
+      width: '48px',
+      height: '48px',
+      boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
+    }
+  }, React.createElement(AddIcon)))),
+  // Print button
+  React.createElement(Button, {
+    variant: 'contained',
+    color: 'primary',
+    fullWidth: true,
+    size: 'large',
+    onClick: handlePrint,
+    disabled: !product || isPrinting,
+    sx: {
+      height: '56px',
+      fontSize: '18px',
+      fontWeight: 'bold',
+      borderRadius: '8px'
+    }
+  }, isPrinting ? 'Printing...' : "Print ".concat(quantity, " Label").concat(quantity > 1 ? 's' : ''))),
+  // Numpad Dialog
+  React.createElement(NumpadDialog, {
+    open: showNumpad,
+    onClose: handleNumpadClose,
+    value: tempQuantity,
+    onChange: handleNumpadChange,
+    onSubmit: handleNumpadSubmit
+  }));
+}
+
+// Use both CommonJS and ESM exports for maximum compatibility
+module.exports = LabelPreview;
+module.exports["default"] = LabelPreview;
+
+/***/ }),
+
+/***/ "./src/components/PrintNotification.js":
+/*!*********************************************!*\
+  !*** ./src/components/PrintNotification.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -142736,12 +137077,180 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _label_components_LabelPreview__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../label/components/LabelPreview */ "./src/label/components/LabelPreview.js");
-// This file is kept for backward compatibility
-// It imports and re-exports the refactored LabelPreview from the label folder
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Slide/Slide.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Typography/Typography.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/CheckCircle.js");
+/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Error.js");
+function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
+function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
+function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
+function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_label_components_LabelPreview__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+function PrintNotification(_ref) {
+  var isVisible = _ref.isVisible,
+    onClose = _ref.onClose,
+    success = _ref.success,
+    productName = _ref.productName,
+    errorMessage = _ref.errorMessage;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
+    _useState2 = _slicedToArray(_useState, 2),
+    dragOffset = _useState2[0],
+    setDragOffset = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState4 = _slicedToArray(_useState3, 2),
+    isDragging = _useState4[0],
+    setIsDragging = _useState4[1];
+  var dragStartY = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(0);
+  var containerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (isVisible) {
+      var timer = setTimeout(function () {
+        onClose();
+      }, 4000); // Auto close after 4 seconds
+
+      return function () {
+        return clearTimeout(timer);
+      };
+    }
+  }, [isVisible, onClose]);
+
+  // Touch/Mouse drag handlers
+  var handleDragStart = function handleDragStart(clientY) {
+    setIsDragging(true);
+    dragStartY.current = clientY;
+    setDragOffset(0);
+  };
+  var handleDragMove = function handleDragMove(clientY) {
+    if (!isDragging) return;
+    var deltaY = clientY - dragStartY.current;
+    // Only allow dragging down (positive values)
+    if (deltaY > 0) {
+      setDragOffset(deltaY);
+    }
+  };
+  var handleDragEnd = function handleDragEnd() {
+    if (!isDragging) return;
+    setIsDragging(false);
+    // If dragged down more than 50px, dismiss
+    if (dragOffset > 50) {
+      onClose();
+    } else {
+      // Snap back to original position
+      setDragOffset(0);
+    }
+  };
+
+  // Touch events
+  var handleTouchStart = function handleTouchStart(e) {
+    handleDragStart(e.touches[0].clientY);
+  };
+  var handleTouchMove = function handleTouchMove(e) {
+    e.preventDefault(); // Prevent scrolling
+    handleDragMove(e.touches[0].clientY);
+  };
+  var handleTouchEnd = function handleTouchEnd() {
+    handleDragEnd();
+  };
+
+  // Mouse events
+  var handleMouseDown = function handleMouseDown(e) {
+    handleDragStart(e.clientY);
+  };
+  var handleMouseMove = function handleMouseMove(e) {
+    handleDragMove(e.clientY);
+  };
+  var handleMouseUp = function handleMouseUp() {
+    handleDragEnd();
+  };
+
+  // Add/remove mouse event listeners
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (isDragging) {
+      document.addEventListener('mousemove', handleMouseMove);
+      document.addEventListener('mouseup', handleMouseUp);
+      return function () {
+        document.removeEventListener('mousemove', handleMouseMove);
+        document.removeEventListener('mouseup', handleMouseUp);
+      };
+    }
+  }, [isDragging, dragOffset]);
+  var backgroundColor = success ? '#C8E6C9' // Solid pastel green for success
+  : '#FFCDD2'; // Solid pastel red for error
+
+  var borderColor = success ? '#4CAF50' : '#f44336';
+  var iconColor = success ? '#4CAF50' : '#f44336';
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    direction: "up",
+    "in": isVisible,
+    mountOnEnter: true,
+    unmountOnExit: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    ref: containerRef,
+    onTouchStart: handleTouchStart,
+    onTouchMove: handleTouchMove,
+    onTouchEnd: handleTouchEnd,
+    onMouseDown: handleMouseDown,
+    sx: {
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      height: '10vh',
+      backgroundColor: backgroundColor,
+      borderTop: "3px solid ".concat(borderColor),
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      zIndex: 1300,
+      // Below modal but above other content
+      boxShadow: '0 -4px 12px rgba(0,0,0,0.15)',
+      padding: '0 24px',
+      transform: "translateY(".concat(dragOffset, "px)"),
+      transition: isDragging ? 'none' : 'transform 0.3s ease-out',
+      cursor: isDragging ? 'grabbing' : 'grab',
+      userSelect: 'none'
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    sx: {
+      display: 'flex',
+      alignItems: 'center',
+      gap: 2,
+      maxWidth: '90%',
+      textAlign: 'center'
+    }
+  }, success ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    sx: {
+      color: iconColor,
+      fontSize: 32
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    sx: {
+      color: iconColor,
+      fontSize: 32
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    variant: "h6",
+    sx: {
+      color: '#333',
+      fontWeight: 600,
+      mb: 0.5
+    }
+  }, success ? productName.includes('Cancel') ? productName : "Print Job \"".concat(productName, "\" Sent to Printer") : productName.includes('Cancel') ? productName : "Print Job Failed"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    variant: "body2",
+    sx: {
+      color: '#666',
+      fontSize: '0.875rem'
+    }
+  }, success ? productName.includes('Cancel') ? 'Print job cancellation command sent to printer.' : 'To Cancel, press the Cancel Print button at the top of the screen.' : errorMessage || 'An error occurred while printing.')))));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PrintNotification);
 
 /***/ }),
 
@@ -142796,7 +137305,7 @@ function ProductList(_ref) {
     } else if (selectedCategory) {
       return selectedCategory.name;
     } else {
-      return 'Products';
+      return 'All Products';
     }
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -142902,7 +137411,7 @@ function ProductList(_ref) {
           textOverflow: 'ellipsis',
           height: '2.4em'
         }
-      }, product.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, product.productname), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
         sx: {
           display: 'flex',
           justifyContent: 'center',
@@ -142915,7 +137424,7 @@ function ProductList(_ref) {
         sx: {
           fontWeight: 'medium'
         }
-      }, product.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      }, "$", (product.productprice / 100).toFixed(2)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
         sx: {
           display: 'flex',
           alignItems: 'center',
@@ -142928,7 +137437,7 @@ function ProductList(_ref) {
         sx: {
           fontWeight: 'medium'
         }
-      }, product.weight))))));
+      }, product.productSize, product.productUnit))))));
     })));
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_2__["default"], {
     sx: {
@@ -143654,10 +138163,6 @@ module.exports = PrintQueueDialog;
 
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 var _excluded = ["children", "value", "index"];
-function _toConsumableArray(r) { return _arrayWithoutHoles(r) || _iterableToArray(r) || _unsupportedIterableToArray(r) || _nonIterableSpread(); }
-function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _iterableToArray(r) { if ("undefined" != typeof Symbol && null != r[Symbol.iterator] || null != r["@@iterator"]) return Array.from(r); }
-function _arrayWithoutHoles(r) { if (Array.isArray(r)) return _arrayLikeToArray(r); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
 function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
 function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
@@ -143728,6 +138233,10 @@ var AddIcon = (__webpack_require__(/*! @mui/icons-material/Add */ "./node_module
 var TuneIcon = (__webpack_require__(/*! @mui/icons-material/Tune */ "./node_modules/@mui/icons-material/Tune.js")["default"]);
 var TestIcon = (__webpack_require__(/*! @mui/icons-material/BugReport */ "./node_modules/@mui/icons-material/BugReport.js")["default"]);
 var ConnectIcon = (__webpack_require__(/*! @mui/icons-material/Cable */ "./node_modules/@mui/icons-material/Cable.js")["default"]);
+var RestartAltIcon = (__webpack_require__(/*! @mui/icons-material/RestartAlt */ "./node_modules/@mui/icons-material/RestartAlt.js")["default"]);
+var TuningIcon = (__webpack_require__(/*! @mui/icons-material/Tune */ "./node_modules/@mui/icons-material/Tune.js")["default"]);
+var CheckCircleIcon = (__webpack_require__(/*! @mui/icons-material/CheckCircle */ "./node_modules/@mui/icons-material/CheckCircle.js")["default"]);
+var ErrorIcon = (__webpack_require__(/*! @mui/icons-material/Error */ "./node_modules/@mui/icons-material/Error.js")["default"]);
 
 // TabPanel component to handle tab content
 function TabPanel(props) {
@@ -143752,60 +138261,31 @@ function SettingsDialog(_ref) {
     _useState2 = _slicedToArray(_useState, 2),
     tabValue = _useState2[0],
     setTabValue = _useState2[1];
-  var _useState3 = useState([]),
+  var _useState3 = useState(new Date()),
     _useState4 = _slicedToArray(_useState3, 2),
-    printers = _useState4[0],
-    setPrinters = _useState4[1];
-  var _useState5 = useState([]),
+    currentTime = _useState4[0],
+    setCurrentTime = _useState4[1];
+  var _useState5 = useState('Fetching...'),
     _useState6 = _slicedToArray(_useState5, 2),
-    systemPrinters = _useState6[0],
-    setSystemPrinters = _useState6[1];
-  var _useState7 = useState(''),
+    publicIpAddress = _useState6[0],
+    setPublicIpAddress = _useState6[1];
+  var _useState7 = useState('Fetching...'),
     _useState8 = _slicedToArray(_useState7, 2),
-    selectedPrinter = _useState8[0],
-    setSelectedPrinter = _useState8[1];
-  var _useState9 = useState(new Date()),
+    privateIpAddress = _useState8[0],
+    setPrivateIpAddress = _useState8[1];
+  var _useState9 = useState([]),
     _useState0 = _slicedToArray(_useState9, 2),
-    currentTime = _useState0[0],
-    setCurrentTime = _useState0[1];
-  var _useState1 = useState('Fetching...'),
+    allIpAddresses = _useState0[0],
+    setAllIpAddresses = _useState0[1];
+  var _useState1 = useState(null),
     _useState10 = _slicedToArray(_useState1, 2),
-    publicIpAddress = _useState10[0],
-    setPublicIpAddress = _useState10[1];
-  var _useState11 = useState('Fetching...'),
+    printMessage = _useState10[0],
+    setPrintMessage = _useState10[1];
+  var _useState11 = useState(false),
     _useState12 = _slicedToArray(_useState11, 2),
-    privateIpAddress = _useState12[0],
-    setPrivateIpAddress = _useState12[1];
-  var _useState13 = useState([]),
-    _useState14 = _slicedToArray(_useState13, 2),
-    allIpAddresses = _useState14[0],
-    setAllIpAddresses = _useState14[1];
-  var _useState15 = useState(false),
-    _useState16 = _slicedToArray(_useState15, 2),
-    hasZebraPrinter = _useState16[0],
-    setHasZebraPrinter = _useState16[1];
-  var _useState17 = useState(true),
-    _useState18 = _slicedToArray(_useState17, 2),
-    loadingPrinters = _useState18[0],
-    setLoadingPrinters = _useState18[1];
-  var _useState19 = useState(false),
-    _useState20 = _slicedToArray(_useState19, 2),
-    isPrinting = _useState20[0],
-    setIsPrinting = _useState20[1];
-  var _useState21 = useState(null),
-    _useState22 = _slicedToArray(_useState21, 2),
-    printMessage = _useState22[0],
-    setPrintMessage = _useState22[1];
-  var _useState23 = useState(false),
-    _useState24 = _slicedToArray(_useState23, 2),
-    showPrintMessage = _useState24[0],
-    setShowPrintMessage = _useState24[1];
-  var _useState25 = useState({
-      printer: {
-        defaultPrinter: '',
-        showConfirmation: false,
-        disableAutomaticPrinting: false
-      },
+    showPrintMessage = _useState12[0],
+    setShowPrintMessage = _useState12[1];
+  var _useState13 = useState({
       application: {
         devImageGeneration: false,
         devImagePath: '',
@@ -143813,27 +138293,24 @@ function SettingsDialog(_ref) {
         includeGraphics: false
       }
     }),
-    _useState26 = _slicedToArray(_useState25, 2),
-    settings = _useState26[0],
-    setSettings = _useState26[1];
-  var _useState27 = useState(false),
-    _useState28 = _slicedToArray(_useState27, 2),
-    isZebraPrinterSelected = _useState28[0],
-    setIsZebraPrinterSelected = _useState28[1];
-  var _useState29 = useState(0),
-    _useState30 = _slicedToArray(_useState29, 2),
-    printerAdjustmentLeft = _useState30[0],
-    setPrinterAdjustmentLeft = _useState30[1];
-  var _useState31 = useState(0),
-    _useState32 = _slicedToArray(_useState31, 2),
-    printerAdjustmentTop = _useState32[0],
-    setPrinterAdjustmentTop = _useState32[1];
+    _useState14 = _slicedToArray(_useState13, 2),
+    settings = _useState14[0],
+    setSettings = _useState14[1];
+  var _useState15 = useState('checking'),
+    _useState16 = _slicedToArray(_useState15, 2),
+    networkPrinterStatus = _useState16[0],
+    setNetworkPrinterStatus = _useState16[1];
+  var _useState17 = useState('checking'),
+    _useState18 = _slicedToArray(_useState17, 2),
+    printerServiceStatus = _useState18[0],
+    setPrinterServiceStatus = _useState18[1];
 
   // Load settings when dialog opens
   useEffect(function () {
     if (open) {
-      loadSettingsAndInitialPrinter();
+      loadSettings();
       getSystemInfo();
+      checkNetworkPrinter();
 
       // Reset toast message when dialog opens
       setShowPrintMessage(false);
@@ -143856,212 +138333,141 @@ function SettingsDialog(_ref) {
     }
   }, [showPrintMessage]);
 
-  // Load settings and create initial printer option for previously selected printer
-  var loadSettingsAndInitialPrinter = /*#__PURE__*/function () {
+  // Load settings 
+  var loadSettings = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-      var loadedSettings, labelConfig, initialPrinter;
+      var loadedSettings;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
         while (1) switch (_context.prev = _context.next) {
           case 0:
             _context.prev = 0;
-            setLoadingPrinters(true);
-            _context.next = 4;
+            _context.next = 3;
             return window.api.loadSettings();
-          case 4:
+          case 3:
             loadedSettings = _context.sent;
-            _context.next = 7;
-            return window.api.loadLabelConfig();
-          case 7:
-            labelConfig = _context.sent;
             if (loadedSettings && !loadedSettings.error) {
               setSettings(loadedSettings);
-
-              // If there's a previously selected printer, create an initial option for it
-              if (loadedSettings.printer.defaultPrinter) {
-                initialPrinter = loadedSettings.printer.defaultPrinter;
-                setSelectedPrinter(initialPrinter);
-
-                // Create an initial printer list with just the selected printer
-                // This allows the UI to show the previously selected printer immediately
-                setSystemPrinters([{
-                  name: initialPrinter,
-                  isDefault: true,
-                  isLoading: true
-                }]);
-              }
             }
-
-            // Load printer adjustment values from label config
-            if (labelConfig && !labelConfig.error) {
-              setPrinterAdjustmentLeft(labelConfig.printerAdjustmentLeft || 0);
-              setPrinterAdjustmentTop(labelConfig.printerAdjustmentTop || 0);
-            }
-
-            // Load the full printer list in the background
-            loadSystemPrinters();
-            _context.next = 17;
+            _context.next = 10;
             break;
-          case 13:
-            _context.prev = 13;
+          case 7:
+            _context.prev = 7;
             _context.t0 = _context["catch"](0);
             console.error('Error loading settings:', _context.t0);
-            // Still try to load printers even if settings fail
-            loadSystemPrinters();
-          case 17:
+          case 10:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 13]]);
+      }, _callee, null, [[0, 7]]);
     }));
-    return function loadSettingsAndInitialPrinter() {
+    return function loadSettings() {
       return _ref2.apply(this, arguments);
     };
   }();
 
-  // Load installed system printers
-  var loadSystemPrinters = /*#__PURE__*/function () {
+  // Check network printer status
+  var checkNetworkPrinter = /*#__PURE__*/function () {
     var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-      var printerList, hasZebra, updatedPrinterList, defaultPrinter;
+      var _require2, getSystemHostname, hostname, networkPath, shareCheck, serviceCheck;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
             _context2.prev = 0;
-            _context2.next = 3;
-            return window.api.getPrinters();
-          case 3:
-            printerList = _context2.sent;
-            console.log('System printers:', printerList);
+            setNetworkPrinterStatus('checking');
+            setPrinterServiceStatus('checking');
 
-            // Check if any Zebra printers are installed
-            hasZebra = printerList.some(function (printer) {
-              return printer.name.toLowerCase().includes('zebra') || printer.name.toLowerCase().includes('zdesigner');
+            // Get hostname for network path
+            _require2 = __webpack_require__(/*! ../../utils/systemConfig */ "./src/utils/systemConfig.js"), getSystemHostname = _require2.getSystemHostname;
+            hostname = getSystemHostname();
+            networkPath = "\\\\".concat(hostname, "\\zebra_print"); // Check if network printer share exists
+            _context2.next = 8;
+            return window.api.checkNetworkShare(networkPath);
+          case 8:
+            shareCheck = _context2.sent;
+            setNetworkPrinterStatus(shareCheck.exists ? 'available' : 'unavailable');
+
+            // Check printer service status by testing connection
+            _context2.next = 12;
+            return window.api.testZplPrinter({
+              timeout: 5000
             });
-            setHasZebraPrinter(hasZebra);
-
-            // If we have a selected printer that's not in the list, add it
-            updatedPrinterList = _toConsumableArray(printerList);
-            if (selectedPrinter && !printerList.find(function (p) {
-              return p.name === selectedPrinter;
-            })) {
-              updatedPrinterList.push({
-                name: selectedPrinter,
-                isDefault: false,
-                temporary: true // Mark as temporary so we know it wasn't found on the system
-              });
-            }
-
-            // Update the printer list
-            setSystemPrinters(updatedPrinterList);
-
-            // If no printer is selected yet, select the default one
-            if (!selectedPrinter) {
-              defaultPrinter = printerList.find(function (p) {
-                return p.isDefault;
-              });
-              setSelectedPrinter(defaultPrinter ? defaultPrinter.name : printerList.length > 0 ? printerList[0].name : '');
-            }
-
-            // Check if selected printer is a Zebra printer
-            checkIfZebraPrinter(selectedPrinter);
-            setLoadingPrinters(false);
-            _context2.next = 20;
+          case 12:
+            serviceCheck = _context2.sent;
+            setPrinterServiceStatus(serviceCheck.success ? 'active' : 'inactive');
+            _context2.next = 21;
             break;
-          case 15:
-            _context2.prev = 15;
+          case 16:
+            _context2.prev = 16;
             _context2.t0 = _context2["catch"](0);
-            console.error('Error loading system printers:', _context2.t0);
-            setLoadingPrinters(false);
-
-            // If we have a selected printer but no printers loaded, create a temporary one
-            if (selectedPrinter && systemPrinters.length === 0) {
-              setSystemPrinters([{
-                name: selectedPrinter,
-                isDefault: true,
-                temporary: true
-              }]);
-            }
-          case 20:
+            console.error('Error checking network printer:', _context2.t0);
+            setNetworkPrinterStatus('error');
+            setPrinterServiceStatus('error');
+          case 21:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, null, [[0, 15]]);
+      }, _callee2, null, [[0, 16]]);
     }));
-    return function loadSystemPrinters() {
+    return function checkNetworkPrinter() {
       return _ref3.apply(this, arguments);
     };
   }();
 
-  // Check if the selected printer is a Zebra printer
-  var checkIfZebraPrinter = function checkIfZebraPrinter(printerName) {
-    if (!printerName) {
-      setIsZebraPrinterSelected(false);
-      return;
-    }
-    var isZebra = printerName.toLowerCase().includes('zebra') || printerName.toLowerCase().includes('zdesigner');
-    setIsZebraPrinterSelected(isZebra);
-  };
-
-  // Handle printer selection change
-  var handlePrinterChange = function handlePrinterChange(event) {
-    var newPrinter = event.target.value;
-    setSelectedPrinter(newPrinter);
-    checkIfZebraPrinter(newPrinter);
-  };
-
-  // Run Zebra printer tool command
-  var runPrinterCommand = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(command) {
-      var finalCommand, result;
+  // Send printer command (recalibrate or restart)
+  var sendPrinterCommand = /*#__PURE__*/function () {
+    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3(commandType) {
+      var result;
       return _regeneratorRuntime().wrap(function _callee3$(_context3) {
         while (1) switch (_context3.prev = _context3.next) {
           case 0:
             _context3.prev = 0;
-            // Show a message that the printer tool is launching
             setPrintMessage({
-              text: 'Launching printer tool, please wait...',
+              text: "Sending ".concat(commandType, " command to printer..."),
               type: 'info'
             });
             setShowPrintMessage(true);
 
-            // Replace the printer name in the command
-            finalCommand = command.replace(/ZDesigner ZT230-200dpi/g, selectedPrinter); // Use the appropriate API method to run the command
-            _context3.next = 6;
-            return window.api.runCommand(finalCommand);
-          case 6:
+            // Use the network printer system to send commands
+            _context3.next = 5;
+            return window.api.sendPrinterCommand(commandType);
+          case 5:
             result = _context3.sent;
             if (result.success) {
-              // Show success message but keep dialog open
               setPrintMessage({
-                text: 'Tool launched successfully!',
+                text: "".concat(commandType, " command sent successfully!"),
                 type: 'success'
               });
               setShowPrintMessage(true);
+
+              // Refresh printer status after command
+              setTimeout(function () {
+                checkNetworkPrinter();
+              }, 2000);
             } else {
-              // Show error
               setPrintMessage({
-                text: "Error: ".concat(result.error || 'Failed to launch printer tool'),
+                text: "Error sending ".concat(commandType, " command: ").concat(result.error || 'Unknown error'),
                 type: 'error'
               });
               setShowPrintMessage(true);
             }
-            _context3.next = 15;
+            _context3.next = 14;
             break;
-          case 10:
-            _context3.prev = 10;
+          case 9:
+            _context3.prev = 9;
             _context3.t0 = _context3["catch"](0);
-            console.error('Error running printer command:', _context3.t0);
+            console.error("Error sending ".concat(commandType, " command:"), _context3.t0);
             setPrintMessage({
-              text: "Error: ".concat(_context3.t0.message || 'Unknown error running printer command'),
+              text: "Error: ".concat(_context3.t0.message || "Unknown error sending ".concat(commandType, " command")),
               type: 'error'
             });
             setShowPrintMessage(true);
-          case 15:
+          case 14:
           case "end":
             return _context3.stop();
         }
-      }, _callee3, null, [[0, 10]]);
+      }, _callee3, null, [[0, 9]]);
     }));
-    return function runPrinterCommand(_x) {
+    return function sendPrinterCommand(_x) {
       return _ref4.apply(this, arguments);
     };
   }();
@@ -144077,12 +138483,6 @@ function SettingsDialog(_ref) {
       };
     }
   }, [open]);
-
-  // Force re-render when selected printer changes
-  useEffect(function () {
-    console.log("Selected printer updated:", selectedPrinter);
-    // This useEffect is just to ensure the UI updates when selectedPrinter changes
-  }, [selectedPrinter]);
   var getSystemInfo = /*#__PURE__*/function () {
     var _ref5 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
       var systemInfo;
@@ -144125,47 +138525,25 @@ function SettingsDialog(_ref) {
   };
   var handleSave = /*#__PURE__*/function () {
     var _ref6 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
-      var updatedSettings, currentConfig, updatedConfig;
       return _regeneratorRuntime().wrap(function _callee5$(_context5) {
         while (1) switch (_context5.prev = _context5.next) {
           case 0:
-            // Update settings object
-            updatedSettings = _objectSpread(_objectSpread({}, settings), {}, {
-              printer: _objectSpread(_objectSpread({}, settings.printer), {}, {
-                defaultPrinter: selectedPrinter
-              })
-            });
-            _context5.prev = 1;
-            _context5.next = 4;
-            return window.api.saveSettings(updatedSettings);
-          case 4:
-            _context5.next = 6;
-            return window.api.loadLabelConfig();
-          case 6:
-            currentConfig = _context5.sent;
-            if (!(currentConfig && !currentConfig.error)) {
-              _context5.next = 11;
-              break;
-            }
-            updatedConfig = _objectSpread(_objectSpread({}, currentConfig), {}, {
-              printerAdjustmentLeft: printerAdjustmentLeft,
-              printerAdjustmentTop: printerAdjustmentTop
-            });
-            _context5.next = 11;
-            return window.api.saveLabelConfig(updatedConfig);
-          case 11:
+            _context5.prev = 0;
+            _context5.next = 3;
+            return window.api.saveSettings(settings);
+          case 3:
             onClose();
-            _context5.next = 17;
+            _context5.next = 9;
             break;
-          case 14:
-            _context5.prev = 14;
-            _context5.t0 = _context5["catch"](1);
+          case 6:
+            _context5.prev = 6;
+            _context5.t0 = _context5["catch"](0);
             console.error('Error saving settings:', _context5.t0);
-          case 17:
+          case 9:
           case "end":
             return _context5.stop();
         }
-      }, _callee5, null, [[1, 14]]);
+      }, _callee5, null, [[0, 6]]);
     }));
     return function handleSave() {
       return _ref6.apply(this, arguments);
@@ -144199,66 +138577,26 @@ function SettingsDialog(_ref) {
       })
     }));
   };
-  var handlePrintConfirmationChange = function handlePrintConfirmationChange(event) {
-    setSettings(_objectSpread(_objectSpread({}, settings), {}, {
-      printer: _objectSpread(_objectSpread({}, settings.printer), {}, {
-        showConfirmation: event.target.checked
-      })
-    }));
-  };
-  var handleDisableAutoPrintingChange = function handleDisableAutoPrintingChange(event) {
-    setSettings(_objectSpread(_objectSpread({}, settings), {}, {
-      printer: _objectSpread(_objectSpread({}, settings.printer), {}, {
-        disableAutomaticPrinting: event.target.checked
-      })
-    }));
-  };
-  var handlePrinterAdjustmentLeftChange = function handlePrinterAdjustmentLeftChange(event) {
-    var value = parseFloat(event.target.value) || 0;
-    setPrinterAdjustmentLeft(value);
-  };
-  var handlePrinterAdjustmentTopChange = function handlePrinterAdjustmentTopChange(event) {
-    var value = parseFloat(event.target.value) || 0;
-    setPrinterAdjustmentTop(value);
-  };
-  var handleRefreshPrinters = /*#__PURE__*/function () {
-    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
-      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
-        while (1) switch (_context6.prev = _context6.next) {
-          case 0:
-            setLoadingPrinters(true);
-            _context6.next = 3;
-            return loadSystemPrinters();
-          case 3:
-          case "end":
-            return _context6.stop();
-        }
-      }, _callee6);
-    }));
-    return function handleRefreshPrinters() {
-      return _ref7.apply(this, arguments);
-    };
-  }();
 
   // Function to print a test label
   var printTestLabel = /*#__PURE__*/function () {
-    var _ref8 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee7() {
+    var _ref7 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee6() {
       var testLabel, result;
-      return _regeneratorRuntime().wrap(function _callee7$(_context7) {
-        while (1) switch (_context7.prev = _context7.next) {
+      return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+        while (1) switch (_context6.prev = _context6.next) {
           case 0:
-            _context7.prev = 0;
+            _context6.prev = 0;
             setIsPrinting(true);
 
             // Create a simple test label HTML
             testLabel = "\n        <html>\n        <head>\n          <style>\n            body {\n              margin: 0;\n              padding: 0;\n              font-family: Arial, sans-serif;\n              width: 60mm;  /* Label width */\n              height: 162mm; /* Label height */\n            }\n            .label-content {\n              display: flex;\n              flex-direction: column;\n              justify-content: center;\n              align-items: center;\n              height: 100%;\n              padding: 10mm;\n              box-sizing: border-box;\n            }\n            .title {\n              font-size: 5mm;\n              font-weight: bold;\n              margin-bottom: 5mm;\n              text-align: center;\n            }\n            .info {\n              font-size: 3mm;\n              margin-bottom: 3mm;\n              text-align: center;\n            }\n            .barcode {\n              width: 40mm;\n              height: 15mm;\n              background: repeating-linear-gradient(90deg, #000, #000 0.5mm, #fff 0.5mm, #fff 1mm);\n              margin: 5mm 0;\n            }\n            .printer-name {\n              font-size: 3.5mm;\n              font-weight: bold;\n            }\n            .timestamp {\n              font-size: 2.5mm;\n              color: #666;\n              margin-top: 3mm;\n            }\n          </style>\n        </head>\n        <body>\n          <div class=\"label-content\">\n            <div class=\"title\">Printer Test Label</div>\n            <div class=\"info\">This is a test print to verify printer functionality</div>\n            <div class=\"barcode\"></div>\n            <div class=\"printer-name\">".concat(selectedPrinter, "</div>\n            <div class=\"timestamp\">Printed: ").concat(new Date().toLocaleString(), "</div>\n          </div>\n        </body>\n        </html>\n      "); // Print the test label
-            _context7.next = 5;
+            _context6.next = 5;
             return window.api.printLabel(testLabel, 1, null, {
               productName: 'Test Print',
               productId: 'TEST001'
             });
           case 5:
-            result = _context7.sent;
+            result = _context6.sent;
             // Show success/error message
             if (result.success) {
               setPrintMessage({
@@ -144272,29 +138610,29 @@ function SettingsDialog(_ref) {
               });
             }
             setShowPrintMessage(true);
-            _context7.next = 15;
+            _context6.next = 15;
             break;
           case 10:
-            _context7.prev = 10;
-            _context7.t0 = _context7["catch"](0);
-            console.error('Error printing test label:', _context7.t0);
+            _context6.prev = 10;
+            _context6.t0 = _context6["catch"](0);
+            console.error('Error printing test label:', _context6.t0);
             setPrintMessage({
-              text: "Error: ".concat(_context7.t0.message || 'Unknown error'),
+              text: "Error: ".concat(_context6.t0.message || 'Unknown error'),
               type: 'error'
             });
             setShowPrintMessage(true);
           case 15:
-            _context7.prev = 15;
+            _context6.prev = 15;
             setIsPrinting(false);
-            return _context7.finish(15);
+            return _context6.finish(15);
           case 18:
           case "end":
-            return _context7.stop();
+            return _context6.stop();
         }
-      }, _callee7, null, [[0, 10, 15, 18]]);
+      }, _callee6, null, [[0, 10, 15, 18]]);
     }));
     return function printTestLabel() {
-      return _ref8.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     };
   }();
 
@@ -144332,7 +138670,7 @@ function SettingsDialog(_ref) {
       ml: 2,
       opacity: 0.9
     }
-  }, "Printer: ".concat(selectedPrinter || 'None Selected', " | Time: ").concat(currentTime.toLocaleString()))), React.createElement(Box, {
+  }, "Time: ".concat(currentTime.toLocaleString()))), React.createElement(Box, {
     display: 'flex',
     alignItems: 'center',
     gap: 1
@@ -144390,150 +138728,116 @@ function SettingsDialog(_ref) {
     id: 'settings-tab-2'
   })));
 
+  // Helper function to get status icon and color
+  var getStatusIcon = function getStatusIcon(status) {
+    switch (status) {
+      case 'available':
+      case 'active':
+        return React.createElement(CheckCircleIcon, {
+          sx: {
+            color: 'success.main'
+          }
+        });
+      case 'unavailable':
+      case 'inactive':
+        return React.createElement(ErrorIcon, {
+          sx: {
+            color: 'error.main'
+          }
+        });
+      case 'checking':
+        return React.createElement(CircularProgress, {
+          size: 20
+        });
+      default:
+        return React.createElement(ErrorIcon, {
+          sx: {
+            color: 'warning.main'
+          }
+        });
+    }
+  };
+
   // Create Printer Settings Tab
   var printerSettingsTab = React.createElement(TabPanel, {
     value: tabValue,
     index: 0
   },
-  // Zebra Printer Alert
-  !hasZebraPrinter && React.createElement(Alert, {
-    severity: "warning",
-    sx: {
-      mb: 3
-    }
-  }, React.createElement(React.Fragment, {}, "A Zebra Label Printer was not found on your system. Please ", React.createElement(Link, {
-    href: "https://www.zebra.com/us/en/support-downloads/printers/desktop/zd420-series.html",
-    target: "_blank",
-    underline: "hover"
-  }, "click here"), " to download the driver - You will need to select your printer model click Downloads and Driver")), React.createElement(Typography, {
+  // Network Printer Status Section
+  React.createElement(Typography, {
     variant: 'h6',
     gutterBottom: true
-  }, 'Available Printers'),
-  // Button row with Refresh and Test Print
-  React.createElement(Box, {
+  }, 'Network Printer Status'), React.createElement(Paper, {
+    variant: 'outlined',
     sx: {
-      mb: 2,
-      display: 'flex',
-      justifyContent: 'flex-end',
-      gap: 1
+      p: 2,
+      mb: 3
     }
   },
-  // Test Print Button
-  selectedPrinter && React.createElement(Tooltip, {
-    title: "Print a test label to verify printer functionality"
-  }, React.createElement(Button, {
-    variant: 'outlined',
-    onClick: printTestLabel,
-    size: 'small',
-    startIcon: React.createElement(TestIcon),
-    disabled: loadingPrinters || isPrinting || !selectedPrinter,
-    color: "secondary"
-  }, isPrinting ? 'Printing...' : 'Test Print')),
-  // Refresh Button
-  React.createElement(Button, {
-    variant: 'outlined',
-    onClick: handleRefreshPrinters,
-    size: 'small',
-    startIcon: React.createElement(PrintIcon),
-    disabled: loadingPrinters
-  }, loadingPrinters ? 'Refreshing...' : 'Refresh Printers')),
-  // Printer selection with loading state
-  React.createElement(Box, {
+  // Network Share Status
+  React.createElement(ListItem, {
     sx: {
-      mb: 3
+      px: 0
     }
-  }, systemPrinters.length === 0 && !loadingPrinters ? React.createElement(Typography, {
-    variant: 'body2',
+  }, React.createElement(ListItemIcon, {}, getStatusIcon(networkPrinterStatus)), React.createElement(ListItemText, {
+    primary: 'Network Printer Share',
+    secondary: networkPrinterStatus === 'available' ? 'zebra_print share is accessible' : networkPrinterStatus === 'unavailable' ? 'zebra_print share not found' : networkPrinterStatus === 'checking' ? 'Checking network share...' : 'Error checking network share',
+    primaryTypographyProps: {
+      fontWeight: 'bold'
+    }
+  })),
+  // Printer Service Status
+  React.createElement(ListItem, {
     sx: {
-      mb: 2
+      px: 0
     }
-  }, 'No printers found on your system') : React.createElement(Box, {
-    position: 'relative'
-  }, React.createElement(FormControl, {
-    fullWidth: true,
-    variant: 'outlined',
-    size: 'small'
-  }, React.createElement(InputLabel, {
-    id: 'printer-select-label'
-  }, 'Default Printer'), React.createElement(Select, {
-    labelId: 'printer-select-label',
-    id: 'printer-select',
-    value: selectedPrinter,
-    onChange: handlePrinterChange,
-    label: 'Default Printer',
-    disabled: loadingPrinters
-  }, systemPrinters.map(function (printer) {
-    return React.createElement(MenuItem, {
-      key: printer.name,
-      value: printer.name,
-      disabled: printer.isLoading
-    }, "".concat(printer.name, " ").concat(printer.isDefault ? ' (System Default)' : '', " ").concat(printer.temporary ? ' (Not Found)' : '', " ").concat(printer.isLoading ? ' (Loading...)' : ''));
-  }))), loadingPrinters && React.createElement(CircularProgress, {
-    size: 20,
-    sx: {
-      position: 'absolute',
-      top: '50%',
-      right: 30,
-      marginTop: '-10px'
-    }
-  }))), React.createElement(Typography, {
+  }, React.createElement(ListItemIcon, {}, getStatusIcon(printerServiceStatus)), React.createElement(ListItemText, {
+    primary: 'Printer Service Status',
+    secondary: printerServiceStatus === 'active' ? 'Printer is responding to commands' : printerServiceStatus === 'inactive' ? 'Printer not responding' : printerServiceStatus === 'checking' ? 'Testing printer connection...' : 'Error testing printer connection'
+  }))),
+  // Printer Commands Section
+  React.createElement(Typography, {
     variant: 'h6',
     gutterBottom: true
-  }, 'Printer Options'), React.createElement(FormGroup, {}, React.createElement(FormControlLabel, {
-    control: React.createElement(Checkbox, {
-      checked: settings.printer.showConfirmation,
-      onChange: handlePrintConfirmationChange
-    }),
-    label: 'Show print confirmation dialog'
-  })), React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true,
+  }, 'Printer Commands'), React.createElement(Paper, {
+    variant: 'outlined',
     sx: {
-      mt: 3
+      p: 2
     }
-  }, 'Printer Adjustments'), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary',
-    sx: {
-      mb: 2
-    }
-  }, 'Fine-tune print positioning to account for printer-specific variations. These adjustments only apply to printed output, not the preview.'), React.createElement(Box, {
-    sx: {
-      display: 'flex',
-      gap: 2,
-      mb: 2
-    }
-  }, React.createElement(TextField, {
-    label: 'Left Adjustment (mm)',
-    type: 'number',
-    size: 'small',
-    value: printerAdjustmentLeft,
-    onChange: handlePrinterAdjustmentLeftChange,
-    inputProps: {
-      step: 0.5,
-      min: -10,
-      max: 10
+  }, React.createElement(Grid, {
+    container: true,
+    spacing: 2
+  },
+  // Recalibrate Button
+  React.createElement(Grid, {
+    item: true,
+    xs: 6
+  }, React.createElement(Button, {
+    variant: 'outlined',
+    fullWidth: true,
+    startIcon: React.createElement(TuningIcon),
+    onClick: function onClick() {
+      return sendPrinterCommand('recalibrate');
     },
-    helperText: 'Positive values move content right',
     sx: {
-      flex: 1
+      py: 1.5
     }
-  }), React.createElement(TextField, {
-    label: 'Top Adjustment (mm)',
-    type: 'number',
-    size: 'small',
-    value: printerAdjustmentTop,
-    onChange: handlePrinterAdjustmentTopChange,
-    inputProps: {
-      step: 0.5,
-      min: -10,
-      max: 10
+  }, 'Recalibrate Printer')),
+  // Restart Button
+  React.createElement(Grid, {
+    item: true,
+    xs: 6
+  }, React.createElement(Button, {
+    variant: 'outlined',
+    fullWidth: true,
+    startIcon: React.createElement(RestartAltIcon),
+    onClick: function onClick() {
+      return sendPrinterCommand('restart');
     },
-    helperText: 'Positive values move content down',
     sx: {
-      flex: 1
+      py: 1.5
     }
-  })));
+  }, 'Restart Printer')))));
 
   // Create System Info Tab
   var systemInfoTab = React.createElement(TabPanel, {
@@ -144651,98 +138955,23 @@ function SettingsDialog(_ref) {
   var applicationSettingsTab = React.createElement(TabPanel, {
     value: tabValue,
     index: 2
-  },
-  // Printing Options section
-  React.createElement(Typography, {
+  }, React.createElement(Box, {
+    sx: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: '300px',
+      color: 'text.secondary'
+    }
+  }, React.createElement(Typography, {
     variant: 'h6',
-    gutterBottom: true
-  }, 'Printing Options'), React.createElement(Paper, {
-    variant: 'outlined',
-    sx: {
-      p: 2,
-      mb: 3
-    }
-  },
-  // Disable Automatic Printing option
-  React.createElement(FormControlLabel, {
-    control: React.createElement(Switch, {
-      checked: settings.printer.disableAutomaticPrinting,
-      onChange: handleDisableAutoPrintingChange
-    }),
-    label: React.createElement(Typography, {
-      variant: 'subtitle1',
-      fontWeight: 'medium'
-    }, 'Disable Automatic Printing')
-  }), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary',
-    sx: {
-      mt: 1,
-      mb: 2
-    }
-  }, 'When enabled, a system print dialog will appear instead of sending labels directly to the selected printer. Canceling this dialog will be logged.')),
-  // Development Image Generation
-  React.createElement(Typography, {
-    variant: 'h6',
-    gutterBottom: true,
-    mt: 3
-  }, 'Development Image Generation'), React.createElement(Paper, {
-    variant: 'outlined',
-    sx: {
-      p: 2,
-      mb: 3
-    }
-  }, React.createElement(FormControlLabel, {
-    control: React.createElement(Switch, {
-      checked: settings.application.devImageGeneration,
-      onChange: handleDevImageGenerationChange
-    }),
-    label: React.createElement(Typography, {
-      variant: 'subtitle1',
-      fontWeight: 'medium'
-    }, 'Enable Development Image Generation')
-  }), React.createElement(Typography, {
-    variant: 'body2',
-    color: 'text.secondary',
-    sx: {
-      mt: 1,
-      mb: 2
-    }
-  }, 'When enabled, high-quality PNG images will be generated instead of PDFs for development purposes.'), settings.application.devImageGeneration && React.createElement(React.Fragment, {}, React.createElement(TextField, {
-    fullWidth: true,
-    label: 'Image Output Directory',
-    variant: 'outlined',
-    size: 'small',
-    value: settings.application.devImagePath,
-    onChange: handleDevImagePathChange,
-    InputProps: {
-      startAdornment: React.createElement(InputAdornment, {
-        position: 'start'
-      }, React.createElement(FolderIcon, {
-        fontSize: 'small'
-      }))
-    },
-    helperText: 'Location where PNG images will be saved',
     sx: {
       mb: 2
     }
-  }),
-  // Content-only option
-  React.createElement(FormControlLabel, {
-    control: React.createElement(Checkbox, {
-      checked: settings.application.includeContentOnly,
-      onChange: handleContentOnlyChange
-    }),
-    label: 'Include label content only (no borders/margins)'
-  }),
-  // Include graphics option
-  React.createElement(FormControlLabel, {
-    control: React.createElement(Checkbox, {
-      checked: settings.application.includeGraphics,
-      onChange: handleIncludeGraphicsChange
-    }),
-    label: 'Include graphics overlay in generated images'
-  }))));
+  }, 'Application Settings'), React.createElement(Typography, {
+    variant: 'body1'
+  }, 'Placeholder for application configuration')));
 
   // Main dialog content
   return React.createElement(Dialog, {
@@ -144803,2288 +139032,6 @@ module.exports = SettingsDialog;
 
 /***/ }),
 
-/***/ "./src/label/components/LabelPreview.js":
-/*!**********************************************!*\
-  !*** ./src/label/components/LabelPreview.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Dialog/Dialog.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Box/Box.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/IconButton/IconButton.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Typography/Typography.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Button/Button.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/Paper/Paper.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/ButtonGroup/ButtonGroup.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/esm/CircularProgress/CircularProgress.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Close.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Backspace.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/ZoomOut.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/RestartAlt.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/ZoomIn.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/DesignServices.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Remove.js");
-/* harmony import */ var _mui_icons_material__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @mui/icons-material */ "./node_modules/@mui/icons-material/esm/Add.js");
-/* harmony import */ var _LabelTemplate__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LabelTemplate */ "./src/label/components/LabelTemplate.js");
-/* harmony import */ var _utils_labelUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/labelUtils */ "./src/label/utils/labelUtils.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
-function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
-function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-
-
-
-// Numpad Dialog Component
-function NumpadDialog(_ref) {
-  var open = _ref.open,
-    onClose = _ref.onClose,
-    value = _ref.value,
-    onChange = _ref.onChange,
-    onSubmit = _ref.onSubmit;
-  // Use calculator-style layout (7-8-9 on top row)
-  var buttons = [[7, 8, 9], [4, 5, 6], [1, 2, 3], ['clear', 0, 'delete']];
-  var handleKeyClick = function handleKeyClick(key) {
-    if (key === 'clear') {
-      onChange('');
-      return;
-    }
-    if (key === 'delete') {
-      onChange(value.slice(0, -1));
-      return;
-    }
-
-    // Limit to 3 digits (max 999)
-    if (value.length >= 3) return;
-    onChange(value + key.toString());
-  };
-  var handleSubmit = function handleSubmit() {
-    var parsedValue = parseInt(value, 10);
-    if (!isNaN(parsedValue) && parsedValue > 0) {
-      onSubmit(parsedValue);
-    } else {
-      // Reset to 1 if invalid
-      onSubmit(1);
-    }
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    open: open,
-    onClose: onClose,
-    PaperProps: {
-      sx: {
-        borderRadius: '12px',
-        minWidth: '320px'
-      }
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      position: 'relative',
-      pt: 5,
-      pb: 3,
-      px: 3,
-      textAlign: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: onClose,
-    sx: {
-      position: 'absolute',
-      right: 8,
-      top: 8
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_6__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    variant: "h6",
-    sx: {
-      mb: 2,
-      fontWeight: 'medium',
-      color: '#555'
-    }
-  }, "Enter Qty"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      mb: 2,
-      p: 2,
-      textAlign: 'right',
-      border: '1px solid #ddd',
-      borderRadius: '8px',
-      backgroundColor: '#f8f8f8',
-      boxShadow: 'inset 0 1px 3px rgba(0,0,0,0.1)'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    variant: "h4",
-    fontWeight: "bold"
-  }, value || '0')), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      mb: 2
-    }
-  }, buttons.map(function (row, rowIndex) {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      key: rowIndex,
-      sx: {
-        display: 'flex',
-        mb: 1
-      }
-    }, row.map(function (button, colIndex) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        key: colIndex,
-        sx: {
-          flex: 1,
-          mx: 0.5
-        }
-      }, button === 'delete' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        variant: "outlined",
-        fullWidth: true,
-        onClick: function onClick() {
-          return handleKeyClick(button);
-        },
-        sx: {
-          height: '54px',
-          fontSize: '18px',
-          fontWeight: 'bold'
-        }
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_9__["default"], null)) : button === 'clear' ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        variant: "outlined",
-        color: "error",
-        fullWidth: true,
-        onClick: function onClick() {
-          return handleKeyClick(button);
-        },
-        sx: {
-          height: '54px'
-        }
-      }, "C") : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        variant: "outlined",
-        fullWidth: true,
-        onClick: function onClick() {
-          return handleKeyClick(button);
-        },
-        sx: {
-          height: '54px',
-          fontSize: '18px',
-          fontWeight: 'bold'
-        }
-      }, button));
-    }));
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    variant: "contained",
-    color: "primary",
-    fullWidth: true,
-    onClick: handleSubmit,
-    sx: {
-      borderRadius: '8px',
-      height: '54px',
-      fontSize: '16px',
-      fontWeight: 'bold'
-    }
-  }, "Set Quantity")));
-}
-function LabelPreview(_ref2) {
-  var product = _ref2.product,
-    quantity = _ref2.quantity,
-    onQuantityChange = _ref2.onQuantityChange,
-    onPrintLabel = _ref2.onPrintLabel;
-  var previewRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var containerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(true),
-    _useState2 = _slicedToArray(_useState, 2),
-    showOverlay = _useState2[0],
-    setShowOverlay = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1),
-    _useState4 = _slicedToArray(_useState3, 2),
-    scale = _useState4[0],
-    setScale = _useState4[1];
-  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
-    _useState6 = _slicedToArray(_useState5, 2),
-    translateX = _useState6[0],
-    setTranslateX = _useState6[1];
-  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0),
-    _useState8 = _slicedToArray(_useState7, 2),
-    translateY = _useState8[0],
-    setTranslateY = _useState8[1];
-  var _useState9 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState0 = _slicedToArray(_useState9, 2),
-    isDragging = _useState0[0],
-    setIsDragging = _useState0[1];
-  var _useState1 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      x: 0,
-      y: 0
-    }),
-    _useState10 = _slicedToArray(_useState1, 2),
-    startPoint = _useState10[0],
-    setStartPoint = _useState10[1];
-  var _useState11 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState12 = _slicedToArray(_useState11, 2),
-    labelConfig = _useState12[0],
-    setLabelConfig = _useState12[1];
-  var _useState13 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState14 = _slicedToArray(_useState13, 2),
-    showNumpad = _useState14[0],
-    setShowNumpad = _useState14[1];
-  var _useState15 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
-    _useState16 = _slicedToArray(_useState15, 2),
-    tempQuantity = _useState16[0],
-    setTempQuantity = _useState16[1];
-  var _useState17 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState18 = _slicedToArray(_useState17, 2),
-    isLabelLoading = _useState18[0],
-    setIsLabelLoading = _useState18[1];
-  var _useState19 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState20 = _slicedToArray(_useState19, 2),
-    prevProduct = _useState20[0],
-    setPrevProduct = _useState20[1];
-  var _useState21 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState22 = _slicedToArray(_useState21, 2),
-    showLoadingSpinner = _useState22[0],
-    setShowLoadingSpinner = _useState22[1];
-  var loadingTimerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-
-  // Add references for increment/decrement timers
-  var incrementIntervalRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var stepSizeRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(1);
-  var lastUpdateTimeRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(0);
-  var _useState23 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
-    _useState24 = _slicedToArray(_useState23, 2),
-    prevTouchDistance = _useState24[0],
-    setPrevTouchDistance = _useState24[1];
-  var _useState25 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(1),
-    _useState26 = _slicedToArray(_useState25, 2),
-    initialScaleFactor = _useState26[0],
-    setInitialScaleFactor = _useState26[1];
-
-  // Add printing state to manage UI during print process
-  var _useState27 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState28 = _slicedToArray(_useState27, 2),
-    isPrinting = _useState28[0],
-    setIsPrinting = _useState28[1];
-
-  // Track product changes to properly manage loading state
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    // If product has changed, update loading state
-    if (product !== prevProduct) {
-      if (product) {
-        // Set loading state but don't show spinner immediately
-        setIsLabelLoading(true);
-        setShowLoadingSpinner(false);
-
-        // Clear any existing timer
-        if (loadingTimerRef.current) {
-          clearTimeout(loadingTimerRef.current);
-        }
-
-        // Only show spinner if generation takes longer than 1.25 seconds
-        loadingTimerRef.current = setTimeout(function () {
-          setShowLoadingSpinner(true);
-        }, 1250);
-
-        // Ultra-short safety timeout for loading state
-        var safetyTimer = setTimeout(function () {
-          setIsLabelLoading(false);
-          setShowLoadingSpinner(false);
-        }, 100);
-        return function () {
-          clearTimeout(safetyTimer);
-          clearTimeout(loadingTimerRef.current);
-        };
-      } else {
-        setIsLabelLoading(false);
-        setShowLoadingSpinner(false);
-        if (loadingTimerRef.current) {
-          clearTimeout(loadingTimerRef.current);
-        }
-      }
-      setPrevProduct(product);
-    }
-  }, [product, prevProduct]);
-
-  // Fetch label config when component mounts
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var fetchConfig = /*#__PURE__*/function () {
-      var _ref3 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-        var config;
-        return _regeneratorRuntime().wrap(function _callee$(_context) {
-          while (1) switch (_context.prev = _context.next) {
-            case 0:
-              _context.next = 2;
-              return (0,_utils_labelUtils__WEBPACK_IMPORTED_MODULE_2__.getLabelConfig)();
-            case 2:
-              config = _context.sent;
-              setLabelConfig(config);
-            case 4:
-            case "end":
-              return _context.stop();
-          }
-        }, _callee);
-      }));
-      return function fetchConfig() {
-        return _ref3.apply(this, arguments);
-      };
-    }();
-    fetchConfig();
-  }, []);
-
-  // Handle barcode generation result
-  var handleBarcodeGenerated = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (success) {
-    // Immediately hide loading state to show content as fast as possible
-    setIsLabelLoading(false);
-    setShowLoadingSpinner(false);
-
-    // Clear the spinner timer
-    if (loadingTimerRef.current) {
-      clearTimeout(loadingTimerRef.current);
-      loadingTimerRef.current = null;
-    }
-  }, []);
-
-  // Handle zoom controls
-  var handleZoomIn = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setScale(function (prevScale) {
-      return Math.min(prevScale + 0.1, 2.0);
-    });
-  }, []);
-  var handleZoomOut = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setScale(function (prevScale) {
-      return Math.max(prevScale - 0.1, 0.5);
-    });
-  }, []);
-  var handleResetView = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setScale(initialScaleFactor || 1);
-    setTranslateX(0);
-    setTranslateY(0);
-  }, [initialScaleFactor]);
-  var toggleOverlay = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setShowOverlay(function (prev) {
-      return !prev;
-    });
-  }, []);
-
-  // Pan functionality
-  var handleMouseDown = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-    if (e.button !== 0) return; // Only left mouse button
-    setIsDragging(true);
-    setStartPoint({
-      x: e.clientX,
-      y: e.clientY
-    });
-  }, []);
-  var handleMouseMove = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-    if (!isDragging) return;
-    var dx = (e.clientX - startPoint.x) / scale;
-    var dy = (e.clientY - startPoint.y) / scale;
-    setTranslateX(function (prev) {
-      return prev + dx;
-    });
-    setTranslateY(function (prev) {
-      return prev + dy;
-    });
-    setStartPoint({
-      x: e.clientX,
-      y: e.clientY
-    });
-  }, [isDragging, startPoint, scale]);
-  var handleMouseUp = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setIsDragging(false);
-  }, []);
-
-  // Handle touch functionality for mobile - updated with pinch zoom
-  var handleTouchStart = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-    if (e.touches.length === 1) {
-      // Single touch - start panning
-      setIsDragging(true);
-      setStartPoint({
-        x: e.touches[0].clientX,
-        y: e.touches[0].clientY
-      });
-    } else if (e.touches.length === 2) {
-      // Two touches - start pinch zooming
-      var touch1 = e.touches[0];
-      var touch2 = e.touches[1];
-      var distance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY);
-      setPrevTouchDistance(distance);
-    }
-  }, []);
-  var handleTouchMove = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-    if (e.touches.length === 1 && isDragging) {
-      // Single touch - panning
-      var dx = (e.touches[0].clientX - startPoint.x) / scale;
-      var dy = (e.touches[0].clientY - startPoint.y) / scale;
-      setTranslateX(function (prev) {
-        return prev + dx;
-      });
-      setTranslateY(function (prev) {
-        return prev + dy;
-      });
-      setStartPoint({
-        x: e.touches[0].clientX,
-        y: e.touches[0].clientY
-      });
-    } else if (e.touches.length === 2 && prevTouchDistance !== null) {
-      // Two touches - pinch zooming
-      e.preventDefault(); // Prevent default gestures
-
-      var touch1 = e.touches[0];
-      var touch2 = e.touches[1];
-      var currentDistance = Math.hypot(touch2.clientX - touch1.clientX, touch2.clientY - touch1.clientY);
-
-      // Calculate the zoom delta
-      var delta = currentDistance - prevTouchDistance;
-
-      // Update scale based on pinch gesture
-      if (Math.abs(delta) > 1) {
-        // Add a small threshold to avoid micro-adjustments
-        var zoomFactor = 0.01; // Adjust zoom sensitivity for pinch
-        var newScale = delta > 0 ? Math.min(scale + delta * zoomFactor, 3.0) // Zoom in
-        : Math.max(scale + delta * zoomFactor, 0.3); // Zoom out
-
-        setScale(newScale);
-        setPrevTouchDistance(currentDistance);
-      }
-    }
-  }, [isDragging, startPoint, scale, prevTouchDistance]);
-  var handleTouchEnd = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function () {
-    setIsDragging(false);
-    setPrevTouchDistance(null);
-  }, []);
-
-  // Modified wheel zoom handler to handle potential errors
-  var handleWheel = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)(function (e) {
-    try {
-      e.preventDefault();
-
-      // Determine zoom direction and intensity
-      var deltaY = e.deltaY;
-      var zoomFactor = 0.05; // Adjust zoom sensitivity
-
-      // Calculate new scale
-      var newScale = deltaY < 0 ? Math.min(scale + zoomFactor, 3.0) // Zoom in
-      : Math.max(scale - zoomFactor, 0.3); // Zoom out
-
-      // Only proceed with zoom if previewRef exists
-      if (!previewRef.current) {
-        setScale(newScale);
-        return;
-      }
-
-      // Get the mouse position relative to the preview container
-      var rect = e.currentTarget.getBoundingClientRect();
-      var mouseX = e.clientX - rect.left;
-      var mouseY = e.clientY - rect.top;
-
-      // Calculate the offset to keep the point under the mouse fixed during zoom
-      var previewRect = previewRef.current.getBoundingClientRect();
-      var centerX = (mouseX - (previewRect.left - rect.left + previewRect.width / 2)) / scale;
-      var centerY = (mouseY - (previewRect.top - rect.top + previewRect.height / 2)) / scale;
-
-      // Apply the new translation to maintain the mouse position relative to content
-      var zoomRatio = newScale / scale;
-      var newTranslateX = centerX * (1 - zoomRatio) + translateX;
-      var newTranslateY = centerY * (1 - zoomRatio) + translateY;
-      setTranslateX(newTranslateX);
-      setTranslateY(newTranslateY);
-
-      // Apply the new scale
-      setScale(newScale);
-    } catch (error) {
-      console.error('Error handling wheel zoom:', error);
-      // Just apply scale without translations if there's an error
-      setScale(function (prevScale) {
-        return e.deltaY < 0 ? Math.min(prevScale + 0.05, 3.0) : Math.max(prevScale - 0.05, 0.3);
-      });
-    }
-  }, [scale, translateX, translateY]);
-
-  // Reset transform when product changes to ensure it's visible
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    handleResetView();
-  }, [product]);
-
-  // Check boundaries and ensure the label stays at least partially visible
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    // Only run boundary check if:
-    // 1. We have a product
-    // 2. We're not in loading state
-    // 3. Preview ref exists
-    // 4. Either translate or scale has changed significantly
-    if (!product || isLabelLoading || !previewRef.current) return;
-
-    // Skip constant boundary checks for small movements
-    var debounceCheck = function debounceCheck() {
-      try {
-        // Verify again that refs are still valid (might have changed during timeout)
-        if (!previewRef.current) return;
-        var previewRect = previewRef.current.getBoundingClientRect();
-        var container = previewRef.current.parentElement;
-        if (!container) return;
-        var containerRect = container.getBoundingClientRect();
-
-        // Only reset if completely out of view with a good margin
-        // Make this really large to reduce unnecessary resets
-        var isOffscreenX = previewRect.right < -previewRect.width || previewRect.left > containerRect.width + previewRect.width;
-        var isOffscreenY = previewRect.bottom < -previewRect.height || previewRect.top > containerRect.height + previewRect.height;
-
-        // If too far out of bounds, reset the view
-        if (isOffscreenX || isOffscreenY) {
-          console.log('Label out of view, resetting position');
-          handleResetView();
-        }
-      } catch (error) {
-        console.error('Error checking boundaries:', error);
-      }
-    };
-
-    // Only check boundaries after significant changes or at most every 500ms
-    var timeoutId = setTimeout(debounceCheck, 500);
-    return function () {
-      return clearTimeout(timeoutId);
-    };
-  }, [translateX, translateY, scale, product, isLabelLoading, handleResetView]);
-
-  // Setup event listeners for pan/zoom
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var _previewRef$current;
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('mouseup', handleMouseUp);
-    document.addEventListener('touchmove', handleTouchMove);
-    document.addEventListener('touchend', handleTouchEnd);
-
-    // Get the preview container for wheel events
-    var previewContainer = (_previewRef$current = previewRef.current) === null || _previewRef$current === void 0 ? void 0 : _previewRef$current.parentElement;
-    if (previewContainer) {
-      previewContainer.addEventListener('wheel', handleWheel, {
-        passive: false
-      });
-    }
-    return function () {
-      document.removeEventListener('mousemove', handleMouseMove);
-      document.removeEventListener('mouseup', handleMouseUp);
-      document.removeEventListener('touchmove', handleTouchMove);
-      document.removeEventListener('touchend', handleTouchEnd);
-      if (previewContainer) {
-        previewContainer.removeEventListener('wheel', handleWheel);
-      }
-    };
-  }, [handleMouseMove, handleMouseUp, handleTouchMove, handleTouchEnd, handleWheel]);
-
-  // Handle quantity increase with button press and hold
-  var handleIncrease = function handleIncrease() {
-    onQuantityChange(Math.min(quantity + 1, 999));
-  };
-
-  // Handle quantity decrease with button press and hold
-  var handleDecrease = function handleDecrease() {
-    if (quantity > 1) {
-      onQuantityChange(Math.max(quantity - 1, 1));
-    }
-  };
-
-  // Start long press for quantity buttons
-  var startLongPress = function startLongPress(isIncrement) {
-    if (!product) return;
-
-    // Clear any existing intervals
-    if (incrementIntervalRef.current) {
-      clearInterval(incrementIntervalRef.current);
-    }
-
-    // Reset step size
-    stepSizeRef.current = 1;
-    lastUpdateTimeRef.current = Date.now();
-
-    // Set interval for continuous updates
-    incrementIntervalRef.current = setInterval(function () {
-      var now = Date.now();
-      var elapsedTime = now - lastUpdateTimeRef.current;
-
-      // Gradually increase step size based on how long button is held
-      if (elapsedTime > 3000) {
-        stepSizeRef.current = 50;
-      } else if (elapsedTime > 2000) {
-        stepSizeRef.current = 20;
-      } else if (elapsedTime > 1000) {
-        stepSizeRef.current = 5;
-      }
-      if (isIncrement) {
-        onQuantityChange(function (prev) {
-          return Math.min(prev + stepSizeRef.current, 999);
-        });
-      } else {
-        onQuantityChange(function (prev) {
-          return Math.max(prev - stepSizeRef.current, 1);
-        });
-      }
-    }, 150);
-  };
-
-  // End long press
-  var endLongPress = function endLongPress() {
-    if (incrementIntervalRef.current) {
-      clearInterval(incrementIntervalRef.current);
-      incrementIntervalRef.current = null;
-    }
-  };
-  var handleOpenNumpad = function handleOpenNumpad() {
-    setTempQuantity(quantity.toString());
-    setShowNumpad(true);
-  };
-  var handleNumpadChange = function handleNumpadChange(value) {
-    setTempQuantity(value);
-  };
-  var handleNumpadSubmit = function handleNumpadSubmit(value) {
-    onQuantityChange(value);
-    setShowNumpad(false);
-  };
-  var handleNumpadClose = function handleNumpadClose() {
-    setShowNumpad(false);
-  };
-
-  // Auto-scale when component mounts or container resizes
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect)(function () {
-    if (!product || !previewRef.current || !containerRef.current) return;
-    var calculateOptimalScale = function calculateOptimalScale() {
-      if (!containerRef.current || !previewRef.current) return 1;
-      var container = containerRef.current.getBoundingClientRect();
-      var labelElement = previewRef.current.querySelector('.label-container');
-      if (!labelElement) {
-        console.log('Label element not found, using fallback scale');
-        return 1; // Fallback if label element isn't found
-      }
-      var label = labelElement.getBoundingClientRect();
-
-      // Calculate ratios
-      var containerRatio = container.width / container.height;
-      var labelRatio = label.width / label.height;
-
-      // Calculate scale based on limiting dimension
-      var newScale;
-      if (labelRatio > containerRatio) {
-        // Width limited
-        newScale = container.width * 0.8 / label.width;
-      } else {
-        // Height limited
-        newScale = container.height * 0.8 / label.height;
-      }
-
-      // Keep scale within reasonable bounds
-      newScale = Math.min(Math.max(newScale, 0.5), 3);
-      console.log('Calculated optimal scale:', newScale);
-      return newScale;
-    };
-
-    // Calculate optimal scale after layout
-    var timer = setTimeout(calculateOptimalScale, 100);
-
-    // Set up resize observer to recalculate on container resize
-    var resizeObserver = new ResizeObserver(function () {
-      calculateOptimalScale();
-    });
-    resizeObserver.observe(containerRef.current);
-    return function () {
-      clearTimeout(timer);
-      resizeObserver.disconnect();
-    };
-  }, [product]);
-
-  // Add this function to convert the label to HTML and trigger printing
-  var handlePrintLabel = /*#__PURE__*/function () {
-    var _ref4 = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-      var _settings, clientStartTime, settings, productInfo, printerName, result, _settings2, templateResult, _settings3, totalClientTime, _result$timing, _result$timing2, _result$timing3, _result$timing4, _result$timing5, _ref5, shell;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) switch (_context2.prev = _context2.next) {
-          case 0:
-            if (!(!product || isLabelLoading || isPrinting)) {
-              _context2.next = 2;
-              break;
-            }
-            return _context2.abrupt("return");
-          case 2:
-            _context2.prev = 2;
-            // Set printing state to show loading UI
-            setIsPrinting(true);
-
-            // Start timing on the renderer side
-            clientStartTime = performance.now();
-            console.log('Sending label to print service...');
-
-            // Load printing settings
-            settings = null;
-            _context2.prev = 7;
-            _context2.next = 10;
-            return window.api.loadSettings();
-          case 10:
-            settings = _context2.sent;
-            _context2.next = 16;
-            break;
-          case 13:
-            _context2.prev = 13;
-            _context2.t0 = _context2["catch"](7);
-            console.warn('Could not load printing settings, using defaults:', _context2.t0);
-          case 16:
-            // Create product info object for the print job
-            productInfo = {
-              name: product.name || product.title || 'Unknown Product',
-              sku: product.sku || product.id || '',
-              category: product.category || '',
-              details: "".concat(product.weight || '', " ").concat(product.unit || '')
-            }; // Check printer settings and start printing
-            printerName = (_settings = settings) === null || _settings === void 0 || (_settings = _settings.printer) === null || _settings === void 0 ? void 0 : _settings.defaultPrinter;
-            // Use unified template system for regular printing
-            console.log('Using unified template system for printing');
-            _context2.prev = 19;
-            _context2.next = 22;
-            return window.api.printLabelWithTemplate(product, quantity, labelConfig, (_settings2 = settings) === null || _settings2 === void 0 ? void 0 : _settings2.printer);
-          case 22:
-            templateResult = _context2.sent;
-            if (!templateResult.success) {
-              _context2.next = 29;
-              break;
-            }
-            _context2.next = 26;
-            return window.api.printLabel(templateResult.html, quantity, null,
-            // savePath
-            templateResult.productInfo, (_settings3 = settings) === null || _settings3 === void 0 ? void 0 : _settings3.printer);
-          case 26:
-            result = _context2.sent;
-            _context2.next = 30;
-            break;
-          case 29:
-            result = {
-              success: false,
-              error: "Template generation failed: ".concat(templateResult.error || 'Unknown error')
-            };
-          case 30:
-            _context2.next = 36;
-            break;
-          case 32:
-            _context2.prev = 32;
-            _context2.t1 = _context2["catch"](19);
-            console.error('Error with unified template system:', _context2.t1);
-            result = {
-              success: false,
-              error: "Template system error: ".concat(_context2.t1.message)
-            };
-          case 36:
-            // Reset printing state
-            setIsPrinting(false);
-
-            // Calculate total time including renderer prep work
-            totalClientTime = performance.now() - clientStartTime;
-            if (result.success) {
-              // Log detailed timing information
-              console.log("Label PDF generated successfully in ".concat(((_result$timing = result.timing) === null || _result$timing === void 0 ? void 0 : _result$timing.total) || 'unknown', "ms"));
-              console.log("PDF saved to: ".concat(result.pdfPath));
-              console.log('Timing details:');
-              console.log("- Client-side prep: ".concat(Math.round(totalClientTime - (((_result$timing2 = result.timing) === null || _result$timing2 === void 0 ? void 0 : _result$timing2.total) || 0)), "ms"));
-              console.log("- HTML loading: ".concat(((_result$timing3 = result.timing) === null || _result$timing3 === void 0 ? void 0 : _result$timing3.htmlLoad) || 'unknown', "ms"));
-              console.log("- PDF generation: ".concat(((_result$timing4 = result.timing) === null || _result$timing4 === void 0 ? void 0 : _result$timing4.pdfGeneration) || 'unknown', "ms"));
-              console.log("- File saving: ".concat(((_result$timing5 = result.timing) === null || _result$timing5 === void 0 ? void 0 : _result$timing5.fileSave) || 'unknown', "ms"));
-              console.log("- Total process: ".concat(Math.round(totalClientTime), "ms"));
-
-              // For testing - open the PDF in the default viewer
-              if (result.pdfPath && result.method === 'direct') {
-                // In a production environment, you might want to hide this or make it optional
-                _ref5 = window.require ? window.require('electron') : {
-                  shell: null
-                }, shell = _ref5.shell;
-                if (shell) {
-                  shell.openPath(result.pdfPath);
-                }
-              }
-            } else {
-              console.error('Error printing label:', result.error);
-            }
-            _context2.next = 45;
-            break;
-          case 41:
-            _context2.prev = 41;
-            _context2.t2 = _context2["catch"](2);
-            console.error('Error in handlePrintLabel:', _context2.t2);
-            setIsPrinting(false);
-          case 45:
-          case "end":
-            return _context2.stop();
-        }
-      }, _callee2, null, [[2, 41], [7, 13], [19, 32]]);
-    }));
-    return function handlePrintLabel() {
-      return _ref4.apply(this, arguments);
-    };
-  }();
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    elevation: 3,
-    sx: {
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      overflow: 'hidden',
-      mx: 2
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      p: 2,
-      borderBottom: '1px solid #e0e0e0',
-      backgroundColor: 'white',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    variant: "h6"
-  }, "Label Preview"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    size: "small",
-    variant: "outlined"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: handleZoomOut,
-    size: "small"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    fontSize: "small"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: handleResetView,
-    size: "small"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    fontSize: "small"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: handleZoomIn,
-    size: "small"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    fontSize: "small"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: toggleOverlay,
-    size: "small",
-    color: showOverlay ? "primary" : "default"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    fontSize: "small"
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    ref: containerRef,
-    sx: {
-      flexGrow: 1,
-      overflow: 'hidden',
-      backgroundColor: '#f5f5f5',
-      p: 3,
-      cursor: isDragging ? 'grabbing' : 'grab',
-      userSelect: 'none',
-      position: 'relative',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    onMouseDown: handleMouseDown,
-    onTouchStart: handleTouchStart
-  }, product ? isLabelLoading && showLoadingSpinner ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100%'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_16__["default"], {
-    size: 40
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    variant: "body1",
-    sx: {
-      mt: 2
-    }
-  }, "Generating label...")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
-    ref: previewRef,
-    style: {
-      transform: "scale(".concat(scale, ") translate(").concat(translateX, "px, ").concat(translateY, "px)"),
-      transformOrigin: 'center',
-      transition: isDragging ? 'none' : 'transform 0.3s ease-out',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: 'fit-content',
-      margin: '0 auto'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_LabelTemplate__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    product: product,
-    showOverlay: showOverlay,
-    labelConfig: labelConfig,
-    onBarcodeGenerated: handleBarcodeGenerated,
-    showDebug: false
-  })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      width: '100%',
-      height: '100%',
-      border: '1px dashed #ccc',
-      borderRadius: '8px',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      p: 3,
-      backgroundColor: 'white',
-      boxShadow: '0 1px 3px rgba(0, 0, 0, 0.12)'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    variant: "body1",
-    color: "textSecondary",
-    sx: {
-      mb: 1
-    }
-  }, "Select a product to preview label"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      p: 3,
-      // Increase padding 
-      borderTop: '1px solid #e0e0e0',
-      backgroundColor: '#f8f8f8',
-      display: 'flex',
-      flexDirection: 'column',
-      gap: 2
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    sx: {
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    size: "large",
-    variant: "outlined",
-    sx: {
-      '& > button': {
-        mx: 1,
-        // First and last children (the +/- buttons)
-        '&:first-of-type, &:last-of-type': {
-          minWidth: '48px',
-          mx: 0
-        }
-      }
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: handleDecrease,
-    onMouseDown: function onMouseDown() {
-      return startLongPress(false);
-    },
-    onMouseUp: endLongPress,
-    onMouseLeave: endLongPress,
-    disabled: !product || quantity <= 1,
-    sx: {
-      marginRight: '8px !important',
-      backgroundColor: 'white',
-      width: '48px',
-      height: '48px',
-      boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_17__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    variant: "text",
-    disableRipple: true,
-    onClick: handleOpenNumpad,
-    disabled: !product,
-    sx: {
-      background: 'white',
-      borderRadius: '5px',
-      px: 3,
-      minWidth: '90px',
-      fontWeight: 'bold',
-      fontSize: '18px',
-      border: 'none',
-      '&:hover': {
-        backgroundColor: '#f0f0f0',
-        border: 'none'
-      }
-    }
-  }, quantity), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    onClick: handleIncrease,
-    onMouseDown: function onMouseDown() {
-      return startLongPress(true);
-    },
-    onMouseUp: endLongPress,
-    onMouseLeave: endLongPress,
-    disabled: !product,
-    sx: {
-      backgroundColor: 'white',
-      width: '48px',
-      height: '48px',
-      boxShadow: '0 1px 3px rgba(0,0,0,0.1)'
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_icons_material__WEBPACK_IMPORTED_MODULE_18__["default"], null)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_mui_material__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    variant: "contained",
-    color: "primary",
-    disabled: !product || isLabelLoading || isPrinting,
-    onClick: handlePrintLabel,
-    sx: {
-      py: 1.5,
-      fontSize: '18px',
-      fontWeight: 'bold',
-      borderRadius: 2,
-      boxShadow: '0 2px 5px rgba(0,0,0,0.15)'
-    }
-  }, isPrinting ? "GENERATING LABEL..." : "PRINT LABEL")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(NumpadDialog, {
-    open: showNumpad,
-    onClose: handleNumpadClose,
-    value: tempQuantity,
-    onChange: handleNumpadChange,
-    onSubmit: handleNumpadSubmit
-  }));
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LabelPreview);
-
-/***/ }),
-
-/***/ "./src/label/components/LabelTemplate.js":
-/*!***********************************************!*\
-  !*** ./src/label/components/LabelTemplate.js ***!
-  \***********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config.json */ "./src/label/config.json");
-/* harmony import */ var _template__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../template */ "./src/label/template.js");
-/* harmony import */ var _utils_barcodeGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/barcodeGenerator */ "./src/label/utils/barcodeGenerator.js");
-function _slicedToArray(r, e) { return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(r, a) { if (r) { if ("string" == typeof r) return _arrayLikeToArray(r, a); var t = {}.toString.call(r).slice(8, -1); return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0; } }
-function _arrayLikeToArray(r, a) { (null == a || a > r.length) && (a = r.length); for (var e = 0, n = Array(a); e < a; e++) n[e] = r[e]; return n; }
-function _iterableToArrayLimit(r, l) { var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"]; if (null != t) { var e, n, i, u, a = [], f = !0, o = !1; try { if (i = (t = t.call(r)).next, 0 === l) { if (Object(t) !== t) return; f = !1; } else for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = !0); } catch (r) { o = !0, n = r; } finally { try { if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u)) return; } finally { if (o) throw n; } } return a; } }
-function _arrayWithHoles(r) { if (Array.isArray(r)) return r; }
-
-
-
-
-
-/**
- * Calculate expiry date based on duration and type
- * @param {number} duration - The duration amount
- * @param {string} type - The duration type (days, weeks, months, years)
- * @returns {Date} - The calculated expiry date
- */
-var calculateExpiryDate = function calculateExpiryDate(duration, type) {
-  var today = new Date();
-  var expiryDate = new Date(today);
-  switch (type) {
-    case 'days':
-      expiryDate.setDate(today.getDate() + duration);
-      break;
-    case 'weeks':
-      expiryDate.setDate(today.getDate() + duration * 7);
-      break;
-    case 'months':
-      expiryDate.setMonth(today.getMonth() + duration);
-      break;
-    case 'years':
-      expiryDate.setFullYear(today.getFullYear() + duration);
-      break;
-    default:
-      // Default to days if type is unknown
-      expiryDate.setDate(today.getDate() + duration);
-  }
-  return expiryDate;
-};
-
-// Label Generator - using the shared template system
-function LabelTemplate(_ref) {
-  var product = _ref.product,
-    showOverlay = _ref.showOverlay,
-    _ref$config = _ref.config,
-    config = _ref$config === void 0 ? null : _ref$config,
-    onBarcodeGenerated = _ref.onBarcodeGenerated,
-    _ref$showDebug = _ref.showDebug,
-    showDebug = _ref$showDebug === void 0 ? false : _ref$showDebug;
-  // Create a local ref that we control completely
-  var barcodeRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-
-  // State to force re-render when barcode is generated
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    barcodeGenerated = _useState2[0],
-    setBarcodeGenerated = _useState2[1];
-
-  // State to store the barcode SVG content
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(''),
-    _useState4 = _slicedToArray(_useState3, 2),
-    barcodeSvgContent = _useState4[0],
-    setBarcodeSvgContent = _useState4[1];
-
-  // Generate barcode as soon as component mounts or product changes
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (product) {
-      console.log('Generating barcode for product:', product.name);
-
-      // Reset barcode generated state
-      setBarcodeGenerated(false);
-      setBarcodeSvgContent('');
-
-      // Add a timeout to ensure the element is fully rendered
-      setTimeout(function () {
-        console.log('Attempting barcode generation after timeout...');
-
-        // Generate barcode SVG content directly
-        var barcode = product.barcode || product.sku || '0000000000000';
-        console.log('Using barcode:', barcode);
-        try {
-          // Import the barcode generator function
-          Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ../utils/barcodeGenerator */ "./src/label/utils/barcodeGenerator.js")).then(function (_ref2) {
-            var generateBarcodeSvg = _ref2.generateBarcodeSvg;
-            var svgContent = generateBarcodeSvg(barcode);
-            console.log('Generated SVG content length:', svgContent.length);
-
-            // Store the SVG content in state instead of manipulating DOM
-            setBarcodeSvgContent(svgContent);
-            setBarcodeGenerated(true);
-            console.log('Barcode generation success: true');
-
-            // Notify parent about barcode generation status
-            if (onBarcodeGenerated) {
-              onBarcodeGenerated(true);
-            }
-          })["catch"](function (error) {
-            console.error('Error importing barcode generator:', error);
-            if (onBarcodeGenerated) {
-              onBarcodeGenerated(false);
-            }
-          });
-        } catch (error) {
-          console.error('Error generating barcode:', error);
-          if (onBarcodeGenerated) {
-            onBarcodeGenerated(false);
-          }
-        }
-      }, 100);
-    }
-  }, [product, onBarcodeGenerated]);
-  if (!product) return null;
-
-  // Use provided config or fall back to centralized config
-  var cfg = config || _config_json__WEBPACK_IMPORTED_MODULE_1__;
-
-  // Pre-calculate values for faster rendering
-  var expiryDate;
-
-  // Handle both new API format and legacy format
-  if (product.expirationDuration && product.expirationType) {
-    // New format: Calculate based on duration and type
-    expiryDate = calculateExpiryDate(product.expirationDuration, product.expirationType);
-  } else if (product.expiryDays) {
-    // Legacy format: Calculate based on expiryDays
-    expiryDate = new Date();
-    expiryDate.setDate(expiryDate.getDate() + product.expiryDays);
-  } else {
-    // Default: 30 days if no expiry information provided
-    expiryDate = new Date();
-    expiryDate.setDate(expiryDate.getDate() + 30);
-  }
-
-  // Format the price (convert from cents to dollars if needed)
-  var formattedPrice = product.price || '$0.00';
-
-  // Format the expiry date
-  var formattedExpiryDate = expiryDate.toLocaleDateString('en-AU', {
-    day: '2-digit',
-    month: 'short',
-    year: '2-digit'
-  });
-
-  // Options for the template generator
-  var options = {
-    formattedPrice: formattedPrice,
-    formattedExpiryDate: formattedExpiryDate
-  };
-
-  // Use our shared template system to generate the React label
-  var LabelComponent = (0,_template__WEBPACK_IMPORTED_MODULE_2__.generateReactLabel)(product, cfg, options);
-
-  // Render the label with our barcode SVG content
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(LabelComponent, {
-    barcodeRef: barcodeRef,
-    showOverlay: showOverlay,
-    barcodeSvgContent: barcodeSvgContent,
-    showDebug: showDebug
-  });
-}
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LabelTemplate);
-
-/***/ }),
-
-/***/ "./src/label/config.json":
-/*!*******************************!*\
-  !*** ./src/label/config.json ***!
-  \*******************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = /*#__PURE__*/JSON.parse('{"width":60,"height":168,"marginTop":3,"marginBottom":3,"marginLeft":3,"marginRight":3,"paddingTop":2,"paddingBottom":2,"paddingLeft":2,"paddingRight":2,"printerAdjustmentLeft":-3,"printerAdjustmentTop":-6,"contentStartY":49,"productTitleHeight":18,"ingredientsY":69,"ingredientsHeight":20,"petFoodOnlyY":91,"petFoodOnlyHeight":6,"storageInstructionsY":99,"storageInstructionsHeight":12,"dataY":113,"dataHeight":25,"priceY":127,"priceHeight":12,"gutterHeight":34.5,"dpi":300,"barcode":{"width":30,"height":18},"fonts":{"productTitle":{"size":6,"lineHeight":1.1},"ingredients":{"headerSize":3,"contentSize":2.2,"lineHeight":2.8},"petFoodOnly":{"size":4.5},"storage":{"size":2.2,"lineHeight":2.5},"data":{"labelSize":2,"valueSize":2.2,"lineHeight":2.5},"price":{"valueSize":5,"labelSize":2}}}');
-
-/***/ }),
-
-/***/ "./src/label/template.js":
-/*!*******************************!*\
-  !*** ./src/label/template.js ***!
-  \*******************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   generateLabelDefinition: () => (/* binding */ generateLabelDefinition),
-/* harmony export */   generateReactLabel: () => (/* binding */ generateReactLabel)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _utils_barcodeGenerator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/barcodeGenerator.js */ "./src/label/utils/barcodeGenerator.js");
-/* module decorator */ module = __webpack_require__.hmd(module);
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
-function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
-function _defineProperty(e, r, t) { return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: !0, configurable: !0, writable: !0 }) : e[r] = t, e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-/**
- * @fileoverview Shared label template definition 
- * This file provides a single source of truth for label structure
- * It can be consumed by React (frontend) renderers
- */
-
-// Import React for JSX support
-
-
-// Import barcode generator for server-side rendering
-
-
-/**
- * Generate a unified label definition that can be used by React templates
- * @param {Object} product - Product data
- * @param {Object} config - Label configuration
- * @param {Object} options - Additional options (formattedPrice, formattedExpiryDate, isPrintMode)
- * @returns {Object} - Label definition with all styling and content
- */
-function generateLabelDefinition(product, config) {
-  var _config$fonts, _config$fonts2, _config$fonts3, _config$fonts4, _config$fonts5, _config$fonts6, _config$fonts7, _config$fonts8, _config$fonts9, _config$fonts0, _config$fonts1, _config$fonts10, _config$fonts11, _config$fonts12, _config$fonts13, _config$fonts14, _config$fonts15, _config$fonts16, _config$barcode, _config$barcode2, _config$fonts17, _config$fonts18;
-  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-  var formattedPrice = options.formattedPrice,
-    formattedExpiryDate = options.formattedExpiryDate,
-    _options$isPrintMode = options.isPrintMode,
-    isPrintMode = _options$isPrintMode === void 0 ? false : _options$isPrintMode;
-
-  // Base dimensions and positioning from config
-  var width = config.width || 60;
-  var height = config.height || 162;
-
-  // New comprehensive margin and padding system
-  var marginTop = config.marginTop || 3;
-  var marginBottom = config.marginBottom || 3;
-  var marginLeft = config.marginLeft || 3;
-  var marginRight = config.marginRight || 3;
-  var paddingTop = config.paddingTop || 2;
-  var paddingBottom = config.paddingBottom || 2;
-  var paddingLeft = config.paddingLeft || 2;
-  var paddingRight = config.paddingRight || 2;
-
-  // Printer adjustment parameters (only applied in print mode)
-  var printerAdjustmentLeft = isPrintMode ? config.printerAdjustmentLeft || 0 : 0;
-  var printerAdjustmentTop = isPrintMode ? config.printerAdjustmentTop || 0 : 0;
-
-  // Calculate content area dimensions
-  var contentWidth = width - marginLeft - marginRight;
-  var contentHeight = height - marginTop - marginBottom;
-  var innerContentWidth = contentWidth - paddingLeft - paddingRight;
-  var innerContentHeight = contentHeight - paddingTop - paddingBottom;
-
-  // Calculate final positioning with printer adjustments
-  var finalLeftPosition = marginLeft + paddingLeft;
-  var finalTopOffset = 0; // Don't adjust individual elements, use container transform instead
-
-  // Debug logging for print mode
-  if (isPrintMode) {
-    console.log('🔧 Main Template Debug - Container Transform Approach:', {
-      marginLeft: marginLeft,
-      paddingLeft: paddingLeft,
-      finalLeftPosition: finalLeftPosition,
-      containerTransform: "translate(".concat(printerAdjustmentLeft, "mm, ").concat(printerAdjustmentTop, "mm)"),
-      printerAdjustmentLeft: printerAdjustmentLeft,
-      printerAdjustmentTop: printerAdjustmentTop
-    });
-  }
-  return {
-    // Container styles
-    containerStyle: _objectSpread({
-      width: "".concat(width, "mm"),
-      height: "".concat(height, "mm"),
-      position: 'relative',
-      fontFamily: 'Arial, sans-serif',
-      backgroundColor: 'white',
-      overflow: 'hidden'
-    }, isPrintMode && {
-      transform: "translate(".concat(printerAdjustmentLeft, "mm, ").concat(printerAdjustmentTop, "mm)"),
-      transformOrigin: 'top left'
-    }),
-    // Margins and padding values for reference
-    margins: {
-      marginTop: marginTop,
-      marginBottom: marginBottom,
-      marginLeft: marginLeft,
-      marginRight: marginRight
-    },
-    padding: {
-      paddingTop: paddingTop,
-      paddingBottom: paddingBottom,
-      paddingLeft: paddingLeft,
-      paddingRight: paddingRight
-    },
-    contentDimensions: {
-      contentWidth: contentWidth,
-      contentHeight: contentHeight,
-      innerContentWidth: innerContentWidth,
-      innerContentHeight: innerContentHeight
-    },
-    // Overlay/underlay styles (behind everything)
-    overlayStyle: {
-      position: 'absolute',
-      top: '0',
-      left: '0',
-      width: '100%',
-      height: '100%',
-      backgroundImage: 'url(assets/overlay.png)',
-      backgroundSize: '100% 100%',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
-      zIndex: 0,
-      pointerEvents: 'none'
-    },
-    // Product name - positioned according to config
-    productName: product.name || 'Product Name',
-    productNameStyle: {
-      position: 'absolute',
-      top: "".concat(config.contentStartY || 45, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.productTitleHeight || 20.5, "mm"),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      textTransform: 'uppercase',
-      fontWeight: 'bold',
-      fontSize: "".concat(((_config$fonts = config.fonts) === null || _config$fonts === void 0 || (_config$fonts = _config$fonts.productTitle) === null || _config$fonts === void 0 ? void 0 : _config$fonts.size) || 7.5, "mm"),
-      lineHeight: "".concat(((_config$fonts2 = config.fonts) === null || _config$fonts2 === void 0 || (_config$fonts2 = _config$fonts2.productTitle) === null || _config$fonts2 === void 0 ? void 0 : _config$fonts2.lineHeight) || 1.15),
-      zIndex: 1
-    },
-    // Ingredients section
-    ingredientsHeader: 'INGREDIENTS',
-    ingredientsLine1: product.ingredientsLine1 || '',
-    ingredientsLine2: product.ingredientsLine2 || '',
-    ingredientsLine3: product.ingredientsLine3 || '',
-    ingredientsSectionStyle: {
-      position: 'absolute',
-      top: "".concat(config.ingredientsY || 70.5, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.ingredientsHeight || 22, "mm"),
-      zIndex: 1
-    },
-    ingredientsHeaderStyle: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(((_config$fonts3 = config.fonts) === null || _config$fonts3 === void 0 || (_config$fonts3 = _config$fonts3.ingredients) === null || _config$fonts3 === void 0 ? void 0 : _config$fonts3.headerSize) || 3.8, "mm"),
-      fontWeight: 'bold',
-      letterSpacing: '0.3mm',
-      whiteSpace: 'nowrap',
-      display: 'inline-block',
-      marginBottom: '1.5mm',
-      textTransform: 'uppercase',
-      textAlign: 'center',
-      border: 'none',
-      outline: 'none',
-      boxShadow: 'none'
-    },
-    ingredientsContentStyle: {
-      fontSize: "".concat(((_config$fonts4 = config.fonts) === null || _config$fonts4 === void 0 || (_config$fonts4 = _config$fonts4.ingredients) === null || _config$fonts4 === void 0 ? void 0 : _config$fonts4.contentSize) || 2.7, "mm"),
-      lineHeight: "".concat(((_config$fonts5 = config.fonts) === null || _config$fonts5 === void 0 || (_config$fonts5 = _config$fonts5.ingredients) === null || _config$fonts5 === void 0 ? void 0 : _config$fonts5.lineHeight) || 3.2, "mm"),
-      textAlign: 'center',
-      padding: '0 2mm'
-    },
-    ingredientsLineStyle: {
-      fontSize: "".concat(((_config$fonts6 = config.fonts) === null || _config$fonts6 === void 0 || (_config$fonts6 = _config$fonts6.ingredients) === null || _config$fonts6 === void 0 ? void 0 : _config$fonts6.contentSize) || 2.7, "mm"),
-      lineHeight: "".concat(((_config$fonts7 = config.fonts) === null || _config$fonts7 === void 0 || (_config$fonts7 = _config$fonts7.ingredients) === null || _config$fonts7 === void 0 ? void 0 : _config$fonts7.lineHeight) || 3.2, "mm"),
-      textAlign: 'center',
-      marginBottom: '0.5mm',
-      minHeight: '3.2mm'
-    },
-    // Pet food only
-    petFoodOnly: 'PET FOOD ONLY',
-    petFoodOnlyStyle: {
-      position: 'absolute',
-      top: "".concat(config.petFoodOnlyY || 86, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.petFoodOnlyHeight || 6.5, "mm"),
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      fontSize: "".concat(((_config$fonts8 = config.fonts) === null || _config$fonts8 === void 0 || (_config$fonts8 = _config$fonts8.petFoodOnly) === null || _config$fonts8 === void 0 ? void 0 : _config$fonts8.size) || 5, "mm"),
-      fontWeight: 'bold',
-      textTransform: 'uppercase',
-      zIndex: 1
-    },
-    // Storage instructions
-    storageInstructions: ['• 100% NATURAL', '• NO ARTIFICIAL COLOURS', '• MIXED AND PRODUCED IN AUSTRALIA'],
-    storageSectionStyle: {
-      position: 'absolute',
-      top: "".concat(config.storageInstructionsY || 92.5, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.storageInstructionsHeight || 12.5, "mm"),
-      fontSize: "".concat(((_config$fonts9 = config.fonts) === null || _config$fonts9 === void 0 || (_config$fonts9 = _config$fonts9.storage) === null || _config$fonts9 === void 0 ? void 0 : _config$fonts9.size) || 2.5, "mm"),
-      lineHeight: "".concat(((_config$fonts0 = config.fonts) === null || _config$fonts0 === void 0 || (_config$fonts0 = _config$fonts0.storage) === null || _config$fonts0 === void 0 ? void 0 : _config$fonts0.lineHeight) || 3, "mm"),
-      zIndex: 1
-    },
-    storageItemStyle: {
-      textAlign: 'center',
-      marginBottom: '0.5mm'
-    },
-    // Data section (best before, weight, barcode) - positioned according to config
-    dataSectionStyle: {
-      position: 'absolute',
-      top: "".concat(config.dataY || 105, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.dataHeight || 19.5, "mm"),
-      display: 'flex',
-      justifyContent: 'space-between',
-      zIndex: 1
-    },
-    // Best before
-    bestBeforeDate: formattedExpiryDate || '01 Jan 25',
-    bestBeforeStyle: {
-      fontSize: "".concat(((_config$fonts1 = config.fonts) === null || _config$fonts1 === void 0 || (_config$fonts1 = _config$fonts1.data) === null || _config$fonts1 === void 0 ? void 0 : _config$fonts1.valueSize) || 2.5, "mm"),
-      lineHeight: "".concat(((_config$fonts10 = config.fonts) === null || _config$fonts10 === void 0 || (_config$fonts10 = _config$fonts10.data) === null || _config$fonts10 === void 0 ? void 0 : _config$fonts10.lineHeight) || 3, "mm"),
-      marginBottom: '5mm'
-    },
-    bestBeforeLabelStyle: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(((_config$fonts11 = config.fonts) === null || _config$fonts11 === void 0 || (_config$fonts11 = _config$fonts11.data) === null || _config$fonts11 === void 0 ? void 0 : _config$fonts11.labelSize) || 2.2, "mm"),
-      fontWeight: 'bold',
-      letterSpacing: '0.3mm',
-      whiteSpace: 'nowrap',
-      display: 'inline-block',
-      marginBottom: '0.5mm',
-      textTransform: 'uppercase',
-      border: 'none',
-      outline: 'none',
-      boxShadow: 'none'
-    },
-    bestBeforeDateStyle: {
-      marginBottom: '1mm',
-      paddingLeft: '0.5mm',
-      fontSize: "".concat(((_config$fonts12 = config.fonts) === null || _config$fonts12 === void 0 || (_config$fonts12 = _config$fonts12.data) === null || _config$fonts12 === void 0 ? void 0 : _config$fonts12.valueSize) || 2.5, "mm")
-    },
-    // Weight
-    weight: product.weight || '1kg',
-    weightStyle: {
-      fontSize: "".concat(((_config$fonts13 = config.fonts) === null || _config$fonts13 === void 0 || (_config$fonts13 = _config$fonts13.data) === null || _config$fonts13 === void 0 ? void 0 : _config$fonts13.valueSize) || 2.5, "mm"),
-      lineHeight: "".concat(((_config$fonts14 = config.fonts) === null || _config$fonts14 === void 0 || (_config$fonts14 = _config$fonts14.data) === null || _config$fonts14 === void 0 ? void 0 : _config$fonts14.lineHeight) || 3, "mm")
-    },
-    weightLabelStyle: {
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontSize: "".concat(((_config$fonts15 = config.fonts) === null || _config$fonts15 === void 0 || (_config$fonts15 = _config$fonts15.data) === null || _config$fonts15 === void 0 ? void 0 : _config$fonts15.labelSize) || 2.2, "mm"),
-      fontWeight: 'bold',
-      letterSpacing: '0.3mm',
-      whiteSpace: 'nowrap',
-      display: 'inline-block',
-      marginBottom: '0.5mm',
-      textTransform: 'uppercase',
-      border: 'none',
-      outline: 'none',
-      boxShadow: 'none'
-    },
-    weightValueStyle: {
-      marginBottom: '0',
-      paddingLeft: '0.5mm',
-      fontSize: "".concat(((_config$fonts16 = config.fonts) === null || _config$fonts16 === void 0 || (_config$fonts16 = _config$fonts16.data) === null || _config$fonts16 === void 0 ? void 0 : _config$fonts16.valueSize) || 2.5, "mm")
-    },
-    // Barcode section
-    barcodeSectionStyle: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      width: "".concat(((_config$barcode = config.barcode) === null || _config$barcode === void 0 ? void 0 : _config$barcode.width) || 35, "mm"),
-      position: 'relative',
-      padding: '1mm',
-      margin: '0',
-      marginLeft: 'auto',
-      backgroundColor: 'white',
-      minHeight: "".concat(((_config$barcode2 = config.barcode) === null || _config$barcode2 === void 0 ? void 0 : _config$barcode2.height) || 25, "mm"),
-      overflow: 'visible'
-    },
-    barcodeStyle: {
-      width: '100%',
-      height: 'auto',
-      display: 'block',
-      backgroundColor: 'white',
-      minHeight: '15mm',
-      maxHeight: '25mm'
-    },
-    // Price section - positioned according to config
-    price: formattedPrice || '$0.00',
-    priceSectionStyle: {
-      position: 'absolute',
-      top: "".concat(config.priceY || 124.5, "mm"),
-      left: "".concat(finalLeftPosition, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(config.priceHeight || 3, "mm"),
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      textAlign: 'center',
-      zIndex: 1
-    },
-    priceValueStyle: {
-      fontSize: "".concat(((_config$fonts17 = config.fonts) === null || _config$fonts17 === void 0 || (_config$fonts17 = _config$fonts17.price) === null || _config$fonts17 === void 0 ? void 0 : _config$fonts17.valueSize) || 5.5, "mm"),
-      fontWeight: 'bold',
-      lineHeight: '1'
-    },
-    priceLabelStyle: {
-      fontSize: "".concat(((_config$fonts18 = config.fonts) === null || _config$fonts18 === void 0 || (_config$fonts18 = _config$fonts18.price) === null || _config$fonts18 === void 0 ? void 0 : _config$fonts18.labelSize) || 2.2, "mm"),
-      backgroundColor: 'black',
-      color: 'white',
-      padding: '0.5mm 1.5mm',
-      fontWeight: 'bold',
-      letterSpacing: '0.3mm',
-      whiteSpace: 'nowrap',
-      marginTop: '0.2mm',
-      textTransform: 'uppercase',
-      border: 'none',
-      outline: 'none',
-      boxShadow: 'none'
-    },
-    // Debug visualization styles (optional)
-    debugLabelBorderStyle: {
-      position: 'absolute',
-      top: '0mm',
-      left: '0mm',
-      width: "".concat(width, "mm"),
-      height: "".concat(height, "mm"),
-      border: '2px solid red',
-      backgroundColor: 'transparent',
-      zIndex: 8,
-      pointerEvents: 'none'
-    },
-    debugMarginStyle: {
-      position: 'absolute',
-      top: "".concat(marginTop, "mm"),
-      left: "".concat(marginLeft, "mm"),
-      width: "".concat(contentWidth, "mm"),
-      height: "".concat(contentHeight, "mm"),
-      border: '1px dashed blue',
-      backgroundColor: 'rgba(0, 0, 255, 0.05)',
-      zIndex: 10,
-      pointerEvents: 'none'
-    },
-    debugPaddingStyle: {
-      position: 'absolute',
-      top: "".concat(marginTop + paddingTop, "mm"),
-      left: "".concat(marginLeft + paddingLeft, "mm"),
-      width: "".concat(innerContentWidth, "mm"),
-      height: "".concat(innerContentHeight, "mm"),
-      border: '1px dashed green',
-      backgroundColor: 'rgba(0, 255, 0, 0.05)',
-      zIndex: 11,
-      pointerEvents: 'none'
-    }
-  };
-}
-
-/**
- * Generate React JSX label component from label definition
- * @param {Object} product - Product data
- * @param {Object} config - Label configuration
- * @param {Object} options - Additional options (formattedPrice, formattedExpiryDate)
- * @returns {Function} - React component function
- */
-function generateReactLabel(product, config) {
-  var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-  var labelDef = generateLabelDefinition(product, config, options);
-  return function ReactLabel(_ref) {
-    var barcodeRef = _ref.barcodeRef,
-      showOverlay = _ref.showOverlay,
-      barcodeSvgContent = _ref.barcodeSvgContent,
-      _ref$showDebug = _ref.showDebug,
-      showDebug = _ref$showDebug === void 0 ? false : _ref$showDebug;
-    // Update options to include showDebug for logging
-    var debugOptions = _objectSpread(_objectSpread({}, options), {}, {
-      showDebug: showDebug
-    });
-    var debugLabelDef = showDebug ? generateLabelDefinition(product, config, debugOptions) : labelDef;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      className: 'label-container',
-      style: debugLabelDef.containerStyle
-    }, [
-    // Overlay/underlay first (behind everything)
-    showOverlay && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'overlay',
-      className: 'overlay',
-      style: debugLabelDef.overlayStyle
-    }),
-    // Debug label border visualization (optional) - shows actual label dimensions
-    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'debug-label-border',
-      className: 'debug-label-border',
-      style: debugLabelDef.debugLabelBorderStyle
-    }),
-    // Debug margin visualization (optional)
-    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'debug-margin',
-      className: 'debug-margin',
-      style: debugLabelDef.debugMarginStyle
-    }),
-    // Debug padding visualization (optional)
-    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'debug-padding',
-      className: 'debug-padding',
-      style: debugLabelDef.debugPaddingStyle
-    }),
-    // Debug info text overlay (optional)
-    showDebug && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'debug-info',
-      className: 'debug-info',
-      style: {
-        position: 'absolute',
-        top: '1mm',
-        left: '1mm',
-        backgroundColor: 'rgba(0, 0, 0, 0.8)',
-        color: 'white',
-        padding: '2mm',
-        fontSize: '1.5mm',
-        fontFamily: 'monospace',
-        zIndex: 20,
-        pointerEvents: 'none',
-        borderRadius: '1mm'
-      }
-    }, ["Label: ".concat(debugLabelDef.containerStyle.width, " \xD7 ").concat(debugLabelDef.containerStyle.height), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Margins: T".concat(debugLabelDef.margins.marginTop, " R").concat(debugLabelDef.margins.marginRight, " B").concat(debugLabelDef.margins.marginBottom, " L").concat(debugLabelDef.margins.marginLeft), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Padding: T".concat(debugLabelDef.padding.paddingTop, " R").concat(debugLabelDef.padding.paddingRight, " B").concat(debugLabelDef.padding.paddingBottom, " L").concat(debugLabelDef.padding.paddingLeft), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content: ".concat(debugLabelDef.contentDimensions.contentWidth, "mm \xD7 ").concat(debugLabelDef.contentDimensions.contentHeight, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Inner: ".concat(debugLabelDef.contentDimensions.innerContentWidth, "mm \xD7 ").concat(debugLabelDef.contentDimensions.innerContentHeight, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content Left: ".concat(debugLabelDef.margins.marginLeft + debugLabelDef.padding.paddingLeft, "mm"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('br'), "Content Top: ".concat(debugLabelDef.margins.marginTop + debugLabelDef.padding.paddingTop, "mm")]),
-    /*#__PURE__*/
-    // Product name
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'product-name',
-      className: 'product-name',
-      style: debugLabelDef.productNameStyle
-    }, debugLabelDef.productName),
-    /*#__PURE__*/
-    // Ingredients section
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients',
-      className: 'ingredients-section',
-      style: debugLabelDef.ingredientsSectionStyle
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients-header-container',
-      className: 'ingredients-header-container',
-      style: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        marginBottom: '1.5mm'
-      }
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
-      key: 'ingredients-header',
-      className: 'ingredients-header',
-      style: debugLabelDef.ingredientsHeaderStyle
-    }, debugLabelDef.ingredientsHeader)]), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients-content',
-      className: 'ingredients-content',
-      style: debugLabelDef.ingredientsContentStyle
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients-line-1',
-      className: 'ingredients-line',
-      style: debugLabelDef.ingredientsLineStyle
-    }, debugLabelDef.ingredientsLine1), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients-line-2',
-      className: 'ingredients-line',
-      style: debugLabelDef.ingredientsLineStyle
-    }, debugLabelDef.ingredientsLine2), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'ingredients-line-3',
-      className: 'ingredients-line',
-      style: debugLabelDef.ingredientsLineStyle
-    }, debugLabelDef.ingredientsLine3)])]),
-    /*#__PURE__*/
-    // Pet food only section
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'pet-food-only',
-      className: 'pet-food-only',
-      style: debugLabelDef.petFoodOnlyStyle
-    }, debugLabelDef.petFoodOnly),
-    /*#__PURE__*/
-    // Storage instructions
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'storage',
-      className: 'storage-section',
-      style: debugLabelDef.storageSectionStyle
-    }, debugLabelDef.storageInstructions.map(function (instruction, index) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-        key: "storage-".concat(index),
-        className: 'storage-item',
-        style: debugLabelDef.storageItemStyle
-      }, instruction);
-    })),
-    /*#__PURE__*/
-    // Data section (best before, weight, barcode)
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'data-section',
-      className: 'data-section',
-      style: debugLabelDef.dataSectionStyle
-    }, [
-    /*#__PURE__*/
-    // Best before and Weight in left column
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'data-left',
-      className: 'data-left',
-      style: {
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'flex-start',
-        width: '32mm'
-      }
-    }, [
-    /*#__PURE__*/
-    // Best before
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'best-before',
-      className: 'best-before',
-      style: debugLabelDef.bestBeforeStyle
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
-      key: 'best-before-label',
-      className: 'best-before-label',
-      style: debugLabelDef.bestBeforeLabelStyle
-    }, 'BEST BEFORE'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'best-before-date',
-      className: 'best-before-date',
-      style: debugLabelDef.bestBeforeDateStyle
-    }, debugLabelDef.bestBeforeDate)]),
-    /*#__PURE__*/
-    // Weight
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'weight',
-      className: 'weight',
-      style: debugLabelDef.weightStyle
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('span', {
-      key: 'weight-label',
-      className: 'weight-label',
-      style: debugLabelDef.weightLabelStyle
-    }, 'WEIGHT'), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'weight-value',
-      className: 'weight-value',
-      style: debugLabelDef.weightValueStyle
-    }, product.weight || '1kg')])]),
-    /*#__PURE__*/
-    // Barcode in right column
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'barcode',
-      className: 'barcode-section',
-      style: debugLabelDef.barcodeSectionStyle
-    }, [
-    // Render SVG content directly if available, otherwise show placeholder
-    barcodeSvgContent ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'barcode-svg',
-      className: 'barcode',
-      style: debugLabelDef.barcodeStyle,
-      dangerouslySetInnerHTML: {
-        __html: barcodeSvgContent
-      }
-    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'barcode-placeholder',
-      className: 'barcode-placeholder',
-      style: _objectSpread(_objectSpread({}, debugLabelDef.barcodeStyle), {}, {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        color: '#666',
-        fontSize: '12px'
-      })
-    }, 'Generating barcode...')])]),
-    /*#__PURE__*/
-    // Price section (at bottom)
-    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'price-section',
-      className: 'price-section',
-      style: debugLabelDef.priceSectionStyle
-    }, [/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'price-value',
-      className: 'price-value',
-      style: debugLabelDef.priceValueStyle
-    }, debugLabelDef.price), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', {
-      key: 'price-label',
-      className: 'price-label',
-      style: debugLabelDef.priceLabelStyle
-    }, 'PRICE')])]);
-  };
-}
-
-// Export functions for use in different environments
-// For CommonJS environments
-if ( true && module.exports) {
-  module.exports = {
-    generateLabelDefinition: generateLabelDefinition,
-    generateReactLabel: generateReactLabel
-  };
-}
-
-// For ES modules
-
-
-/***/ }),
-
-/***/ "./src/label/utils/barcodeGenerator.js":
-/*!*********************************************!*\
-  !*** ./src/label/utils/barcodeGenerator.js ***!
-  \*********************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   formatBarcode: () => (/* binding */ formatBarcode),
-/* harmony export */   generateBarcodeSvg: () => (/* binding */ generateBarcodeSvg),
-/* harmony export */   generateRandomBarcode: () => (/* binding */ generateRandomBarcode),
-/* harmony export */   renderBarcodeToSvgRef: () => (/* binding */ renderBarcodeToSvgRef)
-/* harmony export */ });
-/* module decorator */ module = __webpack_require__.hmd(module);
-/**
- * @fileoverview Barcode generation utility
- * Provides functions to generate barcodes directly in-browser and on-device
- * without external web API dependencies
- */
-
-// Cache for generated barcodes to improve performance
-var barcodeCache = new Map();
-
-/**
- * Format a string as a valid EAN-13 barcode
- * @param {string} barcode - Raw barcode string to format
- * @returns {string} - Formatted 13-digit barcode with check digit
- */
-function formatBarcode(barcode) {
-  // Remove non-digit characters
-  var digits = String(barcode).replace(/\D/g, '');
-
-  // Pad to 12 digits for EAN-13
-  if (digits.length < 12) {
-    digits = digits.padStart(12, '0');
-  }
-
-  // Take first 12 digits if longer
-  if (digits.length > 12) {
-    digits = digits.substring(0, 12);
-  }
-
-  // Calculate check digit (13th digit) for EAN-13
-  var sum = 0;
-  for (var i = 0; i < 12; i++) {
-    sum += parseInt(digits[i]) * (i % 2 === 0 ? 1 : 3);
-  }
-  var checkDigit = (10 - sum % 10) % 10;
-
-  // Return the full 13-digit barcode
-  return digits + checkDigit;
-}
-
-/**
- * Generate SVG barcode for EAN-13
- * @param {string} barcode - The barcode number to generate
- * @returns {string} - SVG content as string
- */
-function generateBarcodeSvg(barcode) {
-  var formattedBarcode = formatBarcode(barcode);
-
-  // Create a unique cache key
-  var cacheKey = "svg-".concat(formattedBarcode);
-
-  // Check cache first
-  if (barcodeCache.has(cacheKey)) {
-    return barcodeCache.get(cacheKey);
-  }
-
-  // EAN-13 patterns
-  var leftHandPatterns = ['0001101', '0011001', '0010011', '0111101', '0100011', '0110001', '0101111', '0111011', '0110111', '0001011'];
-  var rightHandPatterns = ['1110010', '1100110', '1101100', '1000010', '1011100', '1001110', '1010000', '1000100', '1001000', '1110100'];
-
-  // First digit determines the pattern for left group
-  var firstDigit = parseInt(formattedBarcode[0]);
-  var leftGroupPatterns = ['LLLLLL', 'LLGLGG', 'LLGGLG', 'LLGGGL', 'LGLLGG', 'LGGLLG', 'LGGGLL', 'LGLGLG', 'LGLGGL', 'LGGLGL'];
-
-  // Barcode dimensions - make them larger for better visibility
-  var barWidth = 2; // Increased from 1 to 2 for better visibility
-  var barHeight = 80; // Increased from 50 to 80 for better height
-  var quietZone = 10;
-  var textHeight = 15;
-  var svg = '';
-  var x = quietZone;
-
-  // Start guard pattern (101)
-  var startGuard = '101';
-  for (var i = 0; i < startGuard.length; i++) {
-    if (startGuard[i] === '1') {
-      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
-    }
-    x += barWidth;
-  }
-
-  // Left data patterns (6 digits)
-  var leftPattern = leftGroupPatterns[firstDigit];
-  for (var _i = 0; _i < 6; _i++) {
-    var digit = parseInt(formattedBarcode[_i + 1]);
-    var pattern = void 0;
-    if (leftPattern[_i] === 'L') {
-      pattern = leftHandPatterns[digit];
-    } else {
-      // G pattern (inverted L pattern)
-      pattern = leftHandPatterns[digit].split('').map(function (c) {
-        return c === '0' ? '1' : '0';
-      }).join('');
-    }
-    for (var j = 0; j < pattern.length; j++) {
-      if (pattern[j] === '1') {
-        svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
-      }
-      x += barWidth;
-    }
-  }
-
-  // Center guard pattern (01010)
-  var centerGuard = '01010';
-  for (var _i2 = 0; _i2 < centerGuard.length; _i2++) {
-    if (centerGuard[_i2] === '1') {
-      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
-    }
-    x += barWidth;
-  }
-
-  // Right data patterns (6 digits)
-  for (var _i3 = 6; _i3 < 12; _i3++) {
-    var _digit = parseInt(formattedBarcode[_i3 + 1]);
-    var _pattern = rightHandPatterns[_digit];
-    for (var _j = 0; _j < _pattern.length; _j++) {
-      if (_pattern[_j] === '1') {
-        svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
-      }
-      x += barWidth;
-    }
-  }
-
-  // End guard pattern (101)
-  var endGuard = '101';
-  for (var _i4 = 0; _i4 < endGuard.length; _i4++) {
-    if (endGuard[_i4] === '1') {
-      svg += "<rect x=\"".concat(x, "\" y=\"0\" width=\"").concat(barWidth, "\" height=\"").concat(barHeight, "\" fill=\"black\"></rect>");
-    }
-    x += barWidth;
-  }
-
-  // Calculate total width for viewBox
-  var totalWidth = x + quietZone;
-  var totalHeight = barHeight + textHeight;
-
-  // Add text below the barcode with increased spacing
-  var textY = barHeight + 18;
-  var textSvg = "\n    <text x=\"".concat(totalWidth / 2, "\" y=\"").concat(textY, "\" text-anchor=\"middle\" font-family=\"Arial, sans-serif\" font-size=\"16\" fill=\"black\">").concat(formattedBarcode, "</text>\n  ");
-
-  // Complete SVG document with increased bar width for better visibility
-  var fullSvg = "\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 ".concat(totalWidth, " ").concat(totalHeight, "\" width=\"100%\" height=\"100%\" style=\"display: block; background: white;\">\n      <rect width=\"100%\" height=\"100%\" fill=\"white\"/>\n      ").concat(svg, "\n      ").concat(textSvg, "\n    </svg>\n  ");
-
-  // Cache the result
-  barcodeCache.set(cacheKey, fullSvg);
-  return fullSvg;
-}
-
-/**
- * Generate a random barcode number for new products
- * @returns {string} - A valid EAN-13 barcode
- */
-function generateRandomBarcode() {
-  // Use a timestamp and random numbers to generate a unique barcode
-  var timestamp = Date.now().toString();
-  var random = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-  var barcode = '4' + timestamp.slice(-7) + random;
-
-  // Format it to ensure it's valid
-  return formatBarcode(barcode);
-}
-
-/**
- * Render a barcode into an SVG element
- * @param {Object} product - The product with barcode data
- * @param {Object} svgRef - React ref to the SVG element to populate
- * @returns {boolean} - Success indicator
- */
-function renderBarcodeToSvgRef(product, svgRef) {
-  try {
-    console.log('renderBarcodeToSvgRef called with:', {
-      product: product === null || product === void 0 ? void 0 : product.name,
-      hasRef: !!svgRef.current
-    });
-    if (!svgRef.current) {
-      console.log('No SVG ref available');
-      return false;
-    }
-
-    // Get or generate barcode
-    var barcode = product.barcode || generateRandomBarcode();
-    console.log('Using barcode:', barcode);
-
-    // Create a unique ID for caching based on product
-    var productId = product.id || product._id || JSON.stringify(product);
-    var cacheKey = "svg-ref-".concat(productId);
-
-    // Check cache first
-    if (barcodeCache.has(cacheKey)) {
-      console.log('Using cached barcode');
-      var cachedSvg = barcodeCache.get(cacheKey);
-
-      // Parse the cached SVG and copy attributes and content
-      var _parser = new DOMParser();
-      var _svgDoc = _parser.parseFromString(cachedSvg, 'image/svg+xml');
-      var _newSvgElement = _svgDoc.querySelector('svg');
-      if (_newSvgElement) {
-        // Copy all attributes from the generated SVG to our target SVG
-        Array.from(_newSvgElement.attributes).forEach(function (attr) {
-          if (attr.name !== 'class' && attr.name !== 'style') {
-            svgRef.current.setAttribute(attr.name, attr.value);
-          }
-        });
-
-        // Copy the inner content
-        svgRef.current.innerHTML = _newSvgElement.innerHTML;
-      }
-      return true;
-    }
-
-    // Generate SVG content
-    console.log('Generating new barcode SVG');
-    var svgContent = generateBarcodeSvg(barcode);
-    console.log('Generated SVG content length:', svgContent.length);
-
-    // Parse the SVG
-    var parser = new DOMParser();
-    var svgDoc = parser.parseFromString(svgContent, 'image/svg+xml');
-    var newSvgElement = svgDoc.querySelector('svg');
-    if (!newSvgElement) {
-      console.error('Failed to parse SVG content');
-      console.log('SVG content was:', svgContent);
-      return false;
-    }
-    console.log('Parsed SVG element:', newSvgElement);
-    console.log('SVG viewBox:', newSvgElement.getAttribute('viewBox'));
-    console.log('SVG innerHTML length:', newSvgElement.innerHTML.length);
-
-    // Copy all attributes from the generated SVG to our target SVG
-    Array.from(newSvgElement.attributes).forEach(function (attr) {
-      if (attr.name !== 'class' && attr.name !== 'style') {
-        console.log("Setting attribute ".concat(attr.name, " = ").concat(attr.value));
-        svgRef.current.setAttribute(attr.name, attr.value);
-      }
-    });
-
-    // Copy the inner content
-    svgRef.current.innerHTML = newSvgElement.innerHTML;
-    console.log('Barcode rendered successfully');
-    console.log('Final SVG viewBox:', svgRef.current.getAttribute('viewBox'));
-    console.log('Final SVG innerHTML length:', svgRef.current.innerHTML.length);
-
-    // Force a repaint to ensure visibility
-    svgRef.current.style.display = 'none';
-    svgRef.current.offsetHeight; // Trigger reflow
-    svgRef.current.style.display = 'block';
-
-    // Store in cache for future use
-    barcodeCache.set(cacheKey, svgContent);
-    return true;
-  } catch (error) {
-    console.error('Error rendering barcode:', error);
-    return false;
-  }
-}
-
-// Export functions using ES6 syntax
-
-
-// Also provide CommonJS exports for Node.js compatibility (main.js)
-if ( true && module.exports) {
-  module.exports = {
-    formatBarcode: formatBarcode,
-    generateBarcodeSvg: generateBarcodeSvg,
-    generateRandomBarcode: generateRandomBarcode,
-    renderBarcodeToSvgRef: renderBarcodeToSvgRef
-  };
-}
-
-/***/ }),
-
-/***/ "./src/label/utils/labelUtils.js":
-/*!***************************************!*\
-  !*** ./src/label/utils/labelUtils.js ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   DEFAULT_LABEL_CONFIG: () => (/* binding */ DEFAULT_LABEL_CONFIG),
-/* harmony export */   generateBarcode: () => (/* binding */ generateBarcode),
-/* harmony export */   getLabelConfig: () => (/* binding */ getLabelConfig)
-/* harmony export */ });
-/* harmony import */ var jsbarcode__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jsbarcode */ "./node_modules/jsbarcode/bin/JsBarcode.js");
-/* harmony import */ var jsbarcode__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jsbarcode__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _config_json__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config.json */ "./src/label/config.json");
-/* harmony import */ var _barcodeGenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./barcodeGenerator */ "./src/label/utils/barcodeGenerator.js");
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
-function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
-function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
-
-
-
-
-// Enhanced barcode cache using product ID as keys for faster lookups
-var barcodeCache = new Map();
-
-// Pre-generate some default SVG templates for immediate display
-var DEFAULT_BARCODE_SVG = "\n<rect width=\"100%\" height=\"100%\" fill=\"white\"></rect>\n<g transform=\"translate(10, 17)\">\n  <rect x=\"0\" y=\"0\" width=\"80\" height=\"16\" fill=\"black\"></rect>\n  <rect x=\"2\" y=\"0\" width=\"2\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"7\" y=\"0\" width=\"1\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"13\" y=\"0\" width=\"3\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"18\" y=\"0\" width=\"2\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"22\" y=\"0\" width=\"1\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"29\" y=\"0\" width=\"4\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"37\" y=\"0\" width=\"2\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"41\" y=\"0\" width=\"3\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"49\" y=\"0\" width=\"1\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"54\" y=\"0\" width=\"2\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"59\" y=\"0\" width=\"1\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"65\" y=\"0\" width=\"3\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"71\" y=\"0\" width=\"1\" height=\"16\" fill=\"white\"></rect>\n  <rect x=\"74\" y=\"0\" width=\"2\" height=\"16\" fill=\"white\"></rect>\n</g>\n";
-
-// Standard barcode configuration for consistent rendering
-var BARCODE_OPTIONS = {
-  format: "EAN13",
-  lineColor: "#000",
-  width: 1.2,
-  height: 45,
-  displayValue: true,
-  fontSize: 9,
-  margin: 0,
-  background: "#ffffff",
-  textMargin: 1,
-  flat: true
-};
-
-// Create a lightweight offline barcode generator instance - outside component to avoid recreation
-var offscreenCanvas;
-try {
-  // Create an offscreen canvas for rapid barcode generation
-  if (typeof OffscreenCanvas !== 'undefined') {
-    offscreenCanvas = new OffscreenCanvas(200, 70);
-  }
-} catch (e) {
-  console.log('OffscreenCanvas not supported');
-}
-
-/**
- * Calculate EAN-13 check digit
- * @param {String} barcode - First 12 digits of EAN13
- * @returns {Number} - Check digit (last digit)
- */
-var calculateEAN13CheckDigit = function calculateEAN13CheckDigit(barcode12) {
-  // Ensure we have exactly 12 digits to work with
-  var digits = barcode12.substring(0, 12).padStart(12, '0');
-
-  // Calculate weighted sum
-  var sum = 0;
-  for (var i = 0; i < 12; i++) {
-    sum += parseInt(digits[i], 10) * (i % 2 === 0 ? 1 : 3);
-  }
-
-  // Calculate check digit
-  var remainder = sum % 10;
-  return remainder === 0 ? 0 : 10 - remainder;
-};
-
-/**
- * Validate an EAN-13 barcode
- * @param {String} barcode - Full 13-digit barcode to validate
- * @returns {Boolean} - Whether the barcode is valid
- */
-var isValidEAN13 = function isValidEAN13(barcode) {
-  if (!barcode || barcode.length !== 13 || !/^\d{13}$/.test(barcode)) {
-    return false;
-  }
-  var firstTwelve = barcode.substring(0, 12);
-  var providedCheckDigit = parseInt(barcode[12], 10);
-  var calculatedCheckDigit = calculateEAN13CheckDigit(firstTwelve);
-  return providedCheckDigit === calculatedCheckDigit;
-};
-
-/**
- * Ultra-fast barcode generation for a given product on a target SVG element
- * @param {Object} product - The product data
- * @param {Object} svgRef - React ref for the SVG element
- * @returns {Boolean} - Success or failure
- */
-var generateBarcode = function generateBarcode(product, svgRef) {
-  // Use our new barcode renderer
-  return (0,_barcodeGenerator__WEBPACK_IMPORTED_MODULE_2__.renderBarcodeToSvgRef)(product, svgRef);
-};
-
-/**
- * Get the label configuration, either from local config or API
- * @returns {Promise<Object>} - The label configuration object
- */
-var getLabelConfig = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var apiConfig;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
-        case 0:
-          _context.prev = 0;
-          if (!(window && window.api && window.api.getLabelConfig)) {
-            _context.next = 7;
-            break;
-          }
-          _context.next = 4;
-          return window.api.getLabelConfig();
-        case 4:
-          apiConfig = _context.sent;
-          if (!apiConfig) {
-            _context.next = 7;
-            break;
-          }
-          return _context.abrupt("return", apiConfig);
-        case 7:
-          _context.next = 12;
-          break;
-        case 9:
-          _context.prev = 9;
-          _context.t0 = _context["catch"](0);
-          console.log('Could not load config from API, using local config');
-        case 12:
-          return _context.abrupt("return", _config_json__WEBPACK_IMPORTED_MODULE_1__);
-        case 13:
-        case "end":
-          return _context.stop();
-      }
-    }, _callee, null, [[0, 9]]);
-  }));
-  return function getLabelConfig() {
-    return _ref.apply(this, arguments);
-  };
-}();
-
-/**
- * Default label configuration (matches config.json)
- */
-var DEFAULT_LABEL_CONFIG = _config_json__WEBPACK_IMPORTED_MODULE_1__;
-
-/***/ }),
-
 /***/ "./src/mockData.js":
 /*!*************************!*\
   !*** ./src/mockData.js ***!
@@ -147142,160 +139089,418 @@ var mockCategories = [{
 }];
 var mockProducts = [{
   id: 1,
-  name: 'Premium Dog Food',
-  category: 1,
-  type: 'Dry Food',
-  weight: '10kg',
-  price: '$49.99',
-  ingredients: 'Chicken, Rice, Vegetables, Vitamins, Minerals',
-  ingredientsLine1: 'Chicken, Rice, Peas, Sweet Potato',
-  ingredientsLine2: 'Fish Oil, Vitamins A, D, E, K',
-  ingredientsLine3: 'Natural Preservatives, Made in Australia',
+  productname: 'Premium Dog Food Natural',
+  productNameL1: 'Premium Dog',
+  productNameL2: 'Food Natural',
+  productprice: 4999,
+  // $49.99 in cents
+  sku: 'PDF001',
+  barcodes: ['5901234123457'],
+  productIngredients: 'Chicken, Rice, Vegetables, Vitamins, Minerals',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nWA OWNED',
+  productSize: 10,
+  productUnit: 'kg',
   expirationDuration: 12,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nSeal after opening',
-  barcode: '5901234123457'
+  category: 1
 }, {
   id: 2,
-  name: 'Organic Cat Food',
-  category: 2,
-  type: 'Dry Food',
-  weight: '5kg',
-  price: '$39.99',
-  ingredients: 'Salmon, Brown Rice, Carrots, Essential Nutrients',
-  ingredientsLine1: 'Wild Salmon, Brown Rice, Carrots',
-  ingredientsLine2: 'Taurine, Omega-3 Fatty Acids',
-  ingredientsLine3: 'No Artificial Colors or Preservatives',
+  productname: 'Organic Cat Food',
+  productNameL1: 'Organic Cat',
+  productNameL2: 'Food',
+  productprice: 3999,
+  // $39.99 in cents
+  sku: 'OCF002',
+  barcodes: ['4007817324035'],
+  productIngredients: 'Salmon, Brown Rice, Carrots, Essential Nutrients',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nWA OWNED',
+  productSize: 5,
+  productUnit: 'kg',
   expirationDuration: 10,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nSeal after opening',
-  barcode: '4007817324035'
+  category: 2
 }, {
   id: 3,
-  name: 'Gourmet Cat Food',
-  category: 2,
-  type: 'Wet Food',
-  weight: '400g',
-  price: '$3.99',
-  ingredients: 'Tuna, Water, Fish Oil, Vitamins, Minerals',
-  ingredientsLine1: 'Tuna (65%), Water, Fish Broth',
-  ingredientsLine2: 'Sunflower Oil, Vitamin E, Zinc',
-  ingredientsLine3: 'Sustainably Caught, Dolphin Safe',
+  productname: 'Gourmet Cat Food',
+  productNameL1: 'Gourmet Cat',
+  productNameL2: 'Food',
+  productprice: 399,
+  // $3.99 in cents
+  sku: 'GCF003',
+  barcodes: ['7622210244154'],
+  productIngredients: 'Tuna, Water, Fish Oil, Vitamins, Minerals',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nUSE WITHIN 2 DAYS',
+  productSize: 400,
+  productUnit: 'g',
   expirationDuration: 25,
   expirationType: 'days',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nUse within 2 days',
-  barcode: '7622210244154'
+  category: 2
 }, {
   id: 4,
-  name: 'Bird Seed Mix',
-  category: 3,
-  type: 'Seed Mix',
-  weight: '2kg',
-  price: '$12.99',
-  ingredients: 'Sunflower Seeds, Millet, Canary Seed, Oats',
-  ingredientsLine1: 'Sunflower Seeds, Millet, Canary Seed',
-  ingredientsLine2: 'Oats, Dried Fruits, Nyjer Seeds',
-  ingredientsLine3: 'No Added Sugar or Preservatives',
+  productname: 'Bird Seed Mix',
+  productNameL1: 'Bird Seed',
+  productNameL2: 'Mix',
+  productprice: 1299,
+  // $12.99 in cents
+  sku: 'BSM004',
+  barcodes: ['8001250123459'],
+  productIngredients: 'Sunflower Seeds, Millet, Canary Seed, Oats',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 2,
+  productUnit: 'kg',
   expirationDuration: 8,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '8001250123459'
+  category: 3
 }, {
   id: 5,
-  name: 'Tropical Fish Flakes',
-  category: 4,
-  type: 'Fish Food',
-  weight: '250g',
-  price: '$8.99',
-  ingredients: 'Fish Meal, Shrimp Meal, Wheat Flour, Fish Oil, Vitamins',
-  ingredientsLine1: 'Fish Meal, Shrimp Meal, Wheat Flour',
-  ingredientsLine2: 'Fish Oil, Spirulina, Beta Carotene',
-  ingredientsLine3: 'Enhanced Color Formula, Vita-Blend',
+  productname: 'Tropical Fish Flakes',
+  productNameL1: 'Tropical',
+  productNameL2: 'Fish Flakes',
+  productprice: 899,
+  // $8.99 in cents
+  sku: 'TFF005',
+  barcodes: ['9780201379624'],
+  productIngredients: 'Fish Meal, Shrimp Meal, Wheat Flour, Fish Oil',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 250,
+  productUnit: 'g',
   expirationDuration: 9,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '9780201379624'
+  category: 4
 }, {
   id: 6,
-  name: 'Guinea Pig Pellets',
-  category: 5,
-  type: 'Small Animal Food',
-  weight: '3kg',
-  price: '$15.99',
-  ingredients: 'Timothy Hay, Alfalfa, Oats, Barley, Vitamins',
-  ingredientsLine1: 'Timothy Hay, Alfalfa, Oats, Barley',
-  ingredientsLine2: 'Flaxseed, Vitamin C Supplement',
-  ingredientsLine3: 'High Fiber Formula, No Artificial Colors',
+  productname: 'Guinea Pig Pellets',
+  productNameL1: 'Guinea Pig',
+  productNameL2: 'Pellets',
+  productprice: 1599,
+  // $15.99 in cents
+  sku: 'GPP006',
+  barcodes: ['6421691236458'],
+  productIngredients: 'Timothy Hay, Alfalfa, Oats, Barley, Vitamins',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 3,
+  productUnit: 'kg',
   expirationDuration: 7,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '6421691236458'
+  category: 5
 }, {
   id: 7,
-  name: 'Reptile Food Sticks',
-  category: 6,
-  type: 'Reptile Food',
-  weight: '500g',
-  price: '$19.99',
-  ingredients: 'Fish Meal, Wheat Flour, Vitamins, Minerals',
-  ingredientsLine1: 'Fish Meal (40%), Wheat Flour, Krill',
-  ingredientsLine2: 'Calcium Carbonate, Vitamin D3',
-  ingredientsLine3: 'Floating Formula, Complete Nutrition',
+  productname: 'Reptile Food Sticks',
+  productNameL1: 'Reptile Food',
+  productNameL2: 'Sticks',
+  productprice: 1999,
+  // $19.99 in cents
+  sku: 'RFS007',
+  barcodes: ['3800043510850'],
+  productIngredients: 'Fish Meal, Wheat Flour, Vitamins, Minerals',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 500,
+  productUnit: 'g',
   expirationDuration: 6,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '3800043510850'
+  category: 6
 }, {
   id: 8,
-  name: 'Premium Horse Feed',
-  category: 7,
-  type: 'Horse Food',
-  weight: '20kg',
-  price: '$59.99',
-  ingredients: 'Oats, Barley, Alfalfa, Minerals, Vitamins',
-  ingredientsLine1: 'Oats, Barley, Alfalfa, Molasses',
-  ingredientsLine2: 'Soybean Meal, Flaxseed, Biotin',
-  ingredientsLine3: 'Performance Formula, Hoof Support',
+  productname: 'Premium Horse Feed',
+  productNameL1: 'Premium',
+  productNameL2: 'Horse Feed',
+  productprice: 5999,
+  // $59.99 in cents
+  sku: 'PHF008',
+  barcodes: ['8712345678906'],
+  productIngredients: 'Oats, Barley, Alfalfa, Minerals, Vitamins',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 20,
+  productUnit: 'kg',
   expirationDuration: 8,
   expirationType: 'weeks',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '8712345678906'
+  category: 7
 }, {
   id: 9,
-  name: 'Dog Treats - Chicken Flavor',
-  category: 8,
-  type: 'Dog Treats',
-  weight: '500g',
-  price: '$9.99',
-  ingredients: 'Chicken, Wheat Flour, Vegetable Oil, Vitamins',
-  ingredientsLine1: 'Chicken (60%), Wheat Flour',
-  ingredientsLine2: 'Vegetable Oil, Rosemary Extract',
-  ingredientsLine3: 'No Artificial Colors or Flavors',
+  productname: 'Dog Chicken Treats',
+  productNameL1: 'Dog Chicken',
+  productNameL2: 'Treats',
+  productprice: 999,
+  // $9.99 in cents
+  sku: 'DCT009',
+  barcodes: ['9501101530003'],
+  productIngredients: 'Chicken, Wheat Flour, Vegetable Oil, Vitamins',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nSEAL AFTER OPENING',
+  productSize: 500,
+  productUnit: 'g',
   expirationDuration: 1,
   expirationType: 'years',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nSeal after opening',
-  barcode: '9501101530003'
+  category: 8
 }, {
   id: 10,
-  name: 'Joint Health Supplement',
-  category: 9,
-  type: 'Pet Supplements',
-  weight: '250g',
-  price: '$24.99',
-  ingredients: 'Glucosamine, Chondroitin, MSM, Vitamin C',
-  ingredientsLine1: 'Glucosamine HCl (500mg), Chondroitin',
-  ingredientsLine2: 'MSM, Vitamin C, Hyaluronic Acid',
-  ingredientsLine3: 'Senior Formula, Made in Australia',
+  productname: 'Joint Health Supplement',
+  productNameL1: 'Joint Health',
+  productNameL2: 'Supplement',
+  productprice: 2499,
+  // $24.99 in cents
+  sku: 'JHS010',
+  barcodes: ['5012345678900'],
+  productIngredients: 'Glucosamine, Chondroitin, MSM, Vitamin C',
+  productStorageInstructions: '100% NATURAL\\nNO ARTIFICIAL COLOURS\\nKEEP SEALED',
+  productSize: 250,
+  productUnit: 'g',
   expirationDuration: 18,
   expirationType: 'months',
-  storageInstructions: '100% NATURAL\nNO ARTIFICIAL COLOURS\nMIXED AND PRODUCED IN AUSTRALIA\nKeep sealed',
-  barcode: '5012345678900'
+  category: 9
 }];
 var mockAppData = {
   categories: mockCategories,
   products: mockProducts,
   printerStatus: 'ready' // 'ready', 'printing', 'error', 'systemError'
 };
+
+/***/ }),
+
+/***/ "./src/utils/systemConfig.js":
+/*!***********************************!*\
+  !*** ./src/utils/systemConfig.js ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/babel/babel/blob/main/packages/babel-helpers/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return r; }; var t, r = {}, e = Object.prototype, n = e.hasOwnProperty, o = "function" == typeof Symbol ? Symbol : {}, i = o.iterator || "@@iterator", a = o.asyncIterator || "@@asyncIterator", u = o.toStringTag || "@@toStringTag"; function c(t, r, e, n) { return Object.defineProperty(t, r, { value: e, enumerable: !n, configurable: !n, writable: !n }); } try { c({}, ""); } catch (t) { c = function c(t, r, e) { return t[r] = e; }; } function h(r, e, n, o) { var i = e && e.prototype instanceof Generator ? e : Generator, a = Object.create(i.prototype); return c(a, "_invoke", function (r, e, n) { var o = 1; return function (i, a) { if (3 === o) throw Error("Generator is already running"); if (4 === o) { if ("throw" === i) throw a; return { value: t, done: !0 }; } for (n.method = i, n.arg = a;;) { var u = n.delegate; if (u) { var c = d(u, n); if (c) { if (c === f) continue; return c; } } if ("next" === n.method) n.sent = n._sent = n.arg;else if ("throw" === n.method) { if (1 === o) throw o = 4, n.arg; n.dispatchException(n.arg); } else "return" === n.method && n.abrupt("return", n.arg); o = 3; var h = s(r, e, n); if ("normal" === h.type) { if (o = n.done ? 4 : 2, h.arg === f) continue; return { value: h.arg, done: n.done }; } "throw" === h.type && (o = 4, n.method = "throw", n.arg = h.arg); } }; }(r, n, new Context(o || [])), !0), a; } function s(t, r, e) { try { return { type: "normal", arg: t.call(r, e) }; } catch (t) { return { type: "throw", arg: t }; } } r.wrap = h; var f = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var l = {}; c(l, i, function () { return this; }); var p = Object.getPrototypeOf, y = p && p(p(x([]))); y && y !== e && n.call(y, i) && (l = y); var v = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(l); function g(t) { ["next", "throw", "return"].forEach(function (r) { c(t, r, function (t) { return this._invoke(r, t); }); }); } function AsyncIterator(t, r) { function e(o, i, a, u) { var c = s(t[o], t, i); if ("throw" !== c.type) { var h = c.arg, f = h.value; return f && "object" == _typeof(f) && n.call(f, "__await") ? r.resolve(f.__await).then(function (t) { e("next", t, a, u); }, function (t) { e("throw", t, a, u); }) : r.resolve(f).then(function (t) { h.value = t, a(h); }, function (t) { return e("throw", t, a, u); }); } u(c.arg); } var o; c(this, "_invoke", function (t, n) { function i() { return new r(function (r, o) { e(t, n, r, o); }); } return o = o ? o.then(i, i) : i(); }, !0); } function d(r, e) { var n = e.method, o = r.i[n]; if (o === t) return e.delegate = null, "throw" === n && r.i["return"] && (e.method = "return", e.arg = t, d(r, e), "throw" === e.method) || "return" !== n && (e.method = "throw", e.arg = new TypeError("The iterator does not provide a '" + n + "' method")), f; var i = s(o, r.i, e.arg); if ("throw" === i.type) return e.method = "throw", e.arg = i.arg, e.delegate = null, f; var a = i.arg; return a ? a.done ? (e[r.r] = a.value, e.next = r.n, "return" !== e.method && (e.method = "next", e.arg = t), e.delegate = null, f) : a : (e.method = "throw", e.arg = new TypeError("iterator result is not an object"), e.delegate = null, f); } function w(t) { this.tryEntries.push(t); } function m(r) { var e = r[4] || {}; e.type = "normal", e.arg = t, r[4] = e; } function Context(t) { this.tryEntries = [[-1]], t.forEach(w, this), this.reset(!0); } function x(r) { if (null != r) { var e = r[i]; if (e) return e.call(r); if ("function" == typeof r.next) return r; if (!isNaN(r.length)) { var o = -1, a = function e() { for (; ++o < r.length;) if (n.call(r, o)) return e.value = r[o], e.done = !1, e; return e.value = t, e.done = !0, e; }; return a.next = a; } } throw new TypeError(_typeof(r) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, c(v, "constructor", GeneratorFunctionPrototype), c(GeneratorFunctionPrototype, "constructor", GeneratorFunction), GeneratorFunction.displayName = c(GeneratorFunctionPrototype, u, "GeneratorFunction"), r.isGeneratorFunction = function (t) { var r = "function" == typeof t && t.constructor; return !!r && (r === GeneratorFunction || "GeneratorFunction" === (r.displayName || r.name)); }, r.mark = function (t) { return Object.setPrototypeOf ? Object.setPrototypeOf(t, GeneratorFunctionPrototype) : (t.__proto__ = GeneratorFunctionPrototype, c(t, u, "GeneratorFunction")), t.prototype = Object.create(v), t; }, r.awrap = function (t) { return { __await: t }; }, g(AsyncIterator.prototype), c(AsyncIterator.prototype, a, function () { return this; }), r.AsyncIterator = AsyncIterator, r.async = function (t, e, n, o, i) { void 0 === i && (i = Promise); var a = new AsyncIterator(h(t, e, n, o), i); return r.isGeneratorFunction(e) ? a : a.next().then(function (t) { return t.done ? t.value : a.next(); }); }, g(v), c(v, u, "Generator"), c(v, i, function () { return this; }), c(v, "toString", function () { return "[object Generator]"; }), r.keys = function (t) { var r = Object(t), e = []; for (var n in r) e.unshift(n); return function t() { for (; e.length;) if ((n = e.pop()) in r) return t.value = n, t.done = !1, t; return t.done = !0, t; }; }, r.values = x, Context.prototype = { constructor: Context, reset: function reset(r) { if (this.prev = this.next = 0, this.sent = this._sent = t, this.done = !1, this.delegate = null, this.method = "next", this.arg = t, this.tryEntries.forEach(m), !r) for (var e in this) "t" === e.charAt(0) && n.call(this, e) && !isNaN(+e.slice(1)) && (this[e] = t); }, stop: function stop() { this.done = !0; var t = this.tryEntries[0][4]; if ("throw" === t.type) throw t.arg; return this.rval; }, dispatchException: function dispatchException(r) { if (this.done) throw r; var e = this; function n(t) { a.type = "throw", a.arg = r, e.next = t; } for (var o = e.tryEntries.length - 1; o >= 0; --o) { var i = this.tryEntries[o], a = i[4], u = this.prev, c = i[1], h = i[2]; if (-1 === i[0]) return n("end"), !1; if (!c && !h) throw Error("try statement without catch or finally"); if (null != i[0] && i[0] <= u) { if (u < c) return this.method = "next", this.arg = t, n(c), !0; if (u < h) return n(h), !1; } } }, abrupt: function abrupt(t, r) { for (var e = this.tryEntries.length - 1; e >= 0; --e) { var n = this.tryEntries[e]; if (n[0] > -1 && n[0] <= this.prev && this.prev < n[2]) { var o = n; break; } } o && ("break" === t || "continue" === t) && o[0] <= r && r <= o[2] && (o = null); var i = o ? o[4] : {}; return i.type = t, i.arg = r, o ? (this.method = "next", this.next = o[2], f) : this.complete(i); }, complete: function complete(t, r) { if ("throw" === t.type) throw t.arg; return "break" === t.type || "continue" === t.type ? this.next = t.arg : "return" === t.type ? (this.rval = this.arg = t.arg, this.method = "return", this.next = "end") : "normal" === t.type && r && (this.next = r), f; }, finish: function finish(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[2] === t) return this.complete(e[4], e[3]), m(e), f; } }, "catch": function _catch(t) { for (var r = this.tryEntries.length - 1; r >= 0; --r) { var e = this.tryEntries[r]; if (e[0] === t) { var n = e[4]; if ("throw" === n.type) { var o = n.arg; m(e); } return o; } } throw Error("illegal catch attempt"); }, delegateYield: function delegateYield(r, e, n) { return this.delegate = { i: x(r), r: e, n: n }, "next" === this.method && (this.arg = t), f; } }, r; }
+function asyncGeneratorStep(n, t, e, r, o, a, c) { try { var i = n[a](c), u = i.value; } catch (n) { return void e(n); } i.done ? t(u) : Promise.resolve(u).then(r, o); }
+function _asyncToGenerator(n) { return function () { var t = this, e = arguments; return new Promise(function (r, o) { var a = n.apply(t, e); function _next(n) { asyncGeneratorStep(a, r, o, _next, _throw, "next", n); } function _throw(n) { asyncGeneratorStep(a, r, o, _next, _throw, "throw", n); } _next(void 0); }); }; }
+/**
+ * System Configuration Management
+ * Handles hostname detection and persistent storage
+ */
+
+var os = __webpack_require__(/*! os */ "os");
+var fs = (__webpack_require__(/*! fs */ "fs").promises);
+var path = __webpack_require__(/*! path */ "path");
+var CONFIG_FILE = 'system-config.json';
+
+/**
+ * Get the system hostname
+ * @returns {string} - System hostname
+ */
+function getSystemHostname() {
+  return os.hostname();
+}
+
+/**
+ * Get the config file path (in the app directory)
+ * @returns {string} - Full path to config file
+ */
+function getConfigPath() {
+  return path.join(process.cwd(), CONFIG_FILE);
+}
+
+/**
+ * Load system configuration from persistent storage
+ * @returns {Promise<Object>} - System configuration object
+ */
+function loadSystemConfig() {
+  return _loadSystemConfig.apply(this, arguments);
+}
+/**
+ * Save system configuration to persistent storage
+ * @param {Object} config - Configuration object to save
+ * @returns {Promise<void>}
+ */
+function _loadSystemConfig() {
+  _loadSystemConfig = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var configPath, configData;
+    return _regeneratorRuntime().wrap(function _callee$(_context) {
+      while (1) switch (_context.prev = _context.next) {
+        case 0:
+          _context.prev = 0;
+          configPath = getConfigPath();
+          _context.next = 4;
+          return fs.readFile(configPath, 'utf8');
+        case 4:
+          configData = _context.sent;
+          return _context.abrupt("return", JSON.parse(configData));
+        case 8:
+          _context.prev = 8;
+          _context.t0 = _context["catch"](0);
+          // If file doesn't exist or is invalid, return default config
+          console.log('No existing config found, creating default config');
+          _context.next = 13;
+          return createDefaultConfig();
+        case 13:
+          return _context.abrupt("return", _context.sent);
+        case 14:
+        case "end":
+          return _context.stop();
+      }
+    }, _callee, null, [[0, 8]]);
+  }));
+  return _loadSystemConfig.apply(this, arguments);
+}
+function saveSystemConfig(_x) {
+  return _saveSystemConfig.apply(this, arguments);
+}
+/**
+ * Create default system configuration
+ * @returns {Promise<Object>} - Default configuration object
+ */
+function _saveSystemConfig() {
+  _saveSystemConfig = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee2(config) {
+    var configPath;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.prev = 0;
+          configPath = getConfigPath();
+          _context2.next = 4;
+          return fs.writeFile(configPath, JSON.stringify(config, null, 2), 'utf8');
+        case 4:
+          console.log('System configuration saved successfully');
+          _context2.next = 11;
+          break;
+        case 7:
+          _context2.prev = 7;
+          _context2.t0 = _context2["catch"](0);
+          console.error('Failed to save system configuration:', _context2.t0);
+          throw _context2.t0;
+        case 11:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2, null, [[0, 7]]);
+  }));
+  return _saveSystemConfig.apply(this, arguments);
+}
+function createDefaultConfig() {
+  return _createDefaultConfig.apply(this, arguments);
+}
+/**
+ * Get the current printer network path
+ * @returns {Promise<string>} - Network path for printer
+ */
+function _createDefaultConfig() {
+  _createDefaultConfig = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+    var hostname, defaultConfig;
+    return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+      while (1) switch (_context3.prev = _context3.next) {
+        case 0:
+          hostname = getSystemHostname();
+          defaultConfig = {
+            hostname: hostname,
+            printerNetworkPath: "\\\\".concat(hostname, "\\zebra_print"),
+            lastUpdated: new Date().toISOString(),
+            version: '1.0.0'
+          }; // Save the default config
+          _context3.next = 4;
+          return saveSystemConfig(defaultConfig);
+        case 4:
+          return _context3.abrupt("return", defaultConfig);
+        case 5:
+        case "end":
+          return _context3.stop();
+      }
+    }, _callee3);
+  }));
+  return _createDefaultConfig.apply(this, arguments);
+}
+function getPrinterNetworkPath() {
+  return _getPrinterNetworkPath.apply(this, arguments);
+}
+/**
+ * Update hostname in configuration (if system hostname changes)
+ * @returns {Promise<Object>} - Updated configuration
+ */
+function _getPrinterNetworkPath() {
+  _getPrinterNetworkPath = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+    var config;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          _context4.next = 2;
+          return loadSystemConfig();
+        case 2:
+          config = _context4.sent;
+          return _context4.abrupt("return", config.printerNetworkPath);
+        case 4:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  }));
+  return _getPrinterNetworkPath.apply(this, arguments);
+}
+function updateHostnameConfig() {
+  return _updateHostnameConfig.apply(this, arguments);
+}
+function _updateHostnameConfig() {
+  _updateHostnameConfig = _asyncToGenerator(/*#__PURE__*/_regeneratorRuntime().mark(function _callee5() {
+    var currentHostname, config;
+    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+      while (1) switch (_context5.prev = _context5.next) {
+        case 0:
+          currentHostname = getSystemHostname();
+          _context5.next = 3;
+          return loadSystemConfig();
+        case 3:
+          config = _context5.sent;
+          if (!(config.hostname !== currentHostname)) {
+            _context5.next = 11;
+            break;
+          }
+          console.log("Hostname changed from ".concat(config.hostname, " to ").concat(currentHostname, ", updating config"));
+          config.hostname = currentHostname;
+          config.printerNetworkPath = "\\\\".concat(currentHostname, "\\zebra_print");
+          config.lastUpdated = new Date().toISOString();
+          _context5.next = 11;
+          return saveSystemConfig(config);
+        case 11:
+          return _context5.abrupt("return", config);
+        case 12:
+        case "end":
+          return _context5.stop();
+      }
+    }, _callee5);
+  }));
+  return _updateHostnameConfig.apply(this, arguments);
+}
+module.exports = {
+  getSystemHostname: getSystemHostname,
+  loadSystemConfig: loadSystemConfig,
+  saveSystemConfig: saveSystemConfig,
+  createDefaultConfig: createDefaultConfig,
+  getPrinterNetworkPath: getPrinterNetworkPath,
+  updateHostnameConfig: updateHostnameConfig
+};
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "os":
+/*!*********************!*\
+  !*** external "os" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("os");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
 
 /***/ })
 
@@ -147380,21 +139585,6 @@ var mockAppData = {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/harmony module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.hmd = (module) => {
-/******/ 			module = Object.create(module);
-/******/ 			if (!module.children) module.children = [];
-/******/ 			Object.defineProperty(module, 'exports', {
-/******/ 				enumerable: true,
-/******/ 				set: () => {
-/******/ 					throw new Error('ES Modules may not assign module.exports or exports.*, Use ESM export syntax, instead: ' + module.id);
-/******/ 				}
-/******/ 			});
-/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	

@@ -5,7 +5,7 @@ const CssBaseline = require('@mui/material/CssBaseline').default;
 const { DialogProvider, useDialogs, DIALOG_TYPES } = require('./dialogs/DialogManager');
 const { mockAppData } = require('../mockData');
 const mui = require('@mui/material');
-const { Box, Grid, Container } = mui;
+const { Box, Grid, Container, Typography } = mui;
 
 // Import components - get the default export directly
 let Header, SearchCategories, ProductList, LabelPreview;
@@ -24,6 +24,7 @@ try {
   ProductList = require('./ProductList');
   LabelPreview = require('./LabelPreview');
 }
+
 
 // Create a theme instance
 const lightTheme = createTheme({
@@ -104,6 +105,7 @@ function MainContent({ appData }) {
   const [products] = useState(appData?.products || []);
   const [appVersion, setAppVersion] = useState('');
   const [filteredProducts, setFilteredProducts] = useState(products);
+  const [showNotification, setShowNotification] = useState(null);
 
   // Fetch app version on component mount
   useEffect(() => {
@@ -165,33 +167,65 @@ function MainContent({ appData }) {
     setQuantity(newQuantity);
   };
 
-  // Handle print label
-  const handlePrintLabel = () => {
-    if (!selectedProduct) return;
+  // Handle print label - this will be called by LabelPreview
+  const handlePrintLabel = async (product, printQuantity) => {
+    if (!product) return;
     
     // Set printer status to 'printing'
     setPrinterStatus('printing');
     
-    // Generate label data
-    const labelData = {
-      product: selectedProduct,
-      quantity: quantity,
-      timestamp: new Date().toISOString()
-    };
-    
-    // Simulate print response (we'll use window.api in the future)
-    console.log('Print label:', labelData);
-    setTimeout(() => {
+    try {
+      // Use the new ZPL printing system
+      if (window.api?.printZplLabel) {
+        console.log(`Printing ${printQuantity} ZPL label(s) for ${product.productname || product.name}`);
+        
+        const result = await window.api.printZplLabel(product, {
+          quantity: printQuantity,
+          templateName: 'label_template'
+        });
+        
+        if (result.success) {
+          console.log('Print job completed successfully:', result);
+          // Use Header's notification system
+          if (showNotification) {
+            showNotification(true, product.productname || product.name);
+          }
+        } else {
+          console.error('Print job failed:', result.error);
+          // Use Header's notification system
+          if (showNotification) {
+            showNotification(false, product.productname || product.name, result.error);
+          }
+        }
+      } else {
+        // Fallback - simulate print response
+        console.log('ZPL Print API not available - simulating print');
+        setTimeout(() => {
+          if (showNotification) {
+            showNotification(true, product.productname || product.name);
+          }
+        }, 1000);
+      }
+    } catch (error) {
+      console.error('Print error:', error);
+      if (showNotification) {
+        showNotification(false, product.productname || product.name, error.message);
+      }
+    } finally {
       setPrinterStatus('ready');
-    }, 3000);
+    }
   };
+
 
   // Create header component
   const headerComponent = React.createElement(
     Header,
     {
       printerStatus: printerStatus,
-      version: appVersion
+      version: appVersion,
+      onShowNotification: (notificationFunc) => {
+        setShowNotification(() => notificationFunc);
+      }
     }
   );
   

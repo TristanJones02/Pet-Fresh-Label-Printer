@@ -1,110 +1,70 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   AppBar, 
   Toolbar, 
   Typography, 
   Box, 
   IconButton,
-  Tooltip
+  Button
 } from '@mui/material';
 import { 
-  Print as PrintIcon, 
-  Settings as SettingsIcon
+  Settings as SettingsIcon,
+  Cancel as CancelIcon
 } from '@mui/icons-material';
 import { useDialogs, DIALOG_TYPES } from './dialogs/DialogManager';
+import PrintNotification from './PrintNotification';
 
-function Header({ printerStatus, version }) {
+function Header({ version, onShowNotification }) {
   const { openDialog } = useDialogs();
-  const [currentTime, setCurrentTime] = useState(new Date());
-  const [selectedPrinter, setSelectedPrinter] = useState('');
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationData, setNotificationData] = useState({
+    success: false,
+    productName: '',
+    errorMessage: ''
+  });
   
-  // Load selected printer from settings when component mounts
-  useEffect(() => {
-    const loadPrinterFromSettings = async () => {
-      try {
-        const settings = await window.api.loadSettings();
-        if (settings && settings.printer && settings.printer.defaultPrinter) {
-          setSelectedPrinter(settings.printer.defaultPrinter);
-        } else {
-          setSelectedPrinter('None Selected');
-        }
-      } catch (error) {
-        console.error('Error loading printer settings:', error);
-        setSelectedPrinter('None Selected');
-      }
-    };
-    
-    loadPrinterFromSettings();
-  }, []);
-  
-  // Update clock every second
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentTime(new Date());
-    }, 1000);
-    
-    return () => clearInterval(timer);
-  }, []);
-  
-  // Get printer status color
-  const getPrinterStatusColor = () => {
-    switch (printerStatus) {
-      case 'ready':
-        return '#4CAF50'; // Green - Printer ready
-      case 'printing':
-        return '#4CAF50'; // Green - Will be flashing (animation handled by CSS)
-      case 'generalError':
-        return '#FFC107'; // Yellow - General non-critical error
-      case 'criticalError':
-        return '#FFC107'; // Yellow - Critical error (will be flashing)
-      case 'offline':
-        return '#F44336'; // Red - Printer offline
-      default:
-        return '#9ba03b'; // Primary app color when status unknown
+  // Function to show notifications - can be called by parent
+  const showNotificationHandler = (success, productName, errorMessage = '') => {
+    setNotificationData({
+      success: success,
+      productName: productName,
+      errorMessage: errorMessage
+    });
+    setShowNotification(true);
+  };
+
+  // Pass the notification handler to parent via callback ref
+  React.useEffect(() => {
+    if (onShowNotification) {
+      onShowNotification(showNotificationHandler);
     }
-  };
-  
-  // Get printer status text for tooltip
-  const getPrinterStatusText = () => {
-    switch (printerStatus) {
-      case 'ready':
-        return 'Printer Ready';
-      case 'printing':
-        return 'Printing in Progress';
-      case 'generalError':
-        return 'General Printer Error';
-      case 'criticalError':
-        return 'Critical Printer Error';
-      case 'offline':
-        return 'Printer Offline';
-      default:
-        return 'Printer Status Unknown';
-    }
-  };
-  
-  // Format printer name to remove ZDesigner prefix
-  const formatPrinterName = (name) => {
-    if (!name) return 'No printer selected';
-    
-    // Remove ZDesigner prefix and clean up the name
-    return name.replace(/ZDesigner\s*/i, '')
-               .replace(/\s*-\s*\d+dpi\s*/i, '') // Also remove dpi information
-               .trim();
-  };
-  
-  // Format time to show only hours and minutes
-  const formatTime = (date) => {
-    return date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
-  };
-  
-  // Handle opening the printer queue dialog
-  const handlePrinterDialogOpen = () => {
-    openDialog(DIALOG_TYPES.PRINT_QUEUE);
-  };
+  }, [onShowNotification]);
   
   // Handle opening the settings dialog
   const handleSettingsDialogOpen = () => {
     openDialog(DIALOG_TYPES.SETTINGS);
+  };
+
+  // Handle cancel print job
+  const handleCancelPrint = async () => {
+    try {
+      if (window.api?.cancelPrintJob) {
+        const result = await window.api.cancelPrintJob();
+        if (result.success) {
+          console.log('Print job cancelled successfully');
+          showNotificationHandler(true, 'Print Job Cancelled');
+        } else {
+          console.error('Failed to cancel print job:', result.error);
+          showNotificationHandler(false, 'Cancel Failed', result.error || 'Unknown error occurred');
+        }
+      } else {
+        console.error('Cancel print job API not available');
+        showNotificationHandler(false, 'Cancel Failed', 'Cancel print job API not available');
+      }
+    } catch (error) {
+      console.error('Error cancelling print job:', error);
+      showNotificationHandler(false, 'Cancel Failed', error.message || 'Unknown error occurred');
+    }
   };
   
   return (
@@ -117,38 +77,30 @@ function Header({ printerStatus, version }) {
           </Typography>
         </Box>
         
-        {/* Middle Column - Printer Status and Time */}
-        <Box sx={{ flex: 2, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-          <Typography variant="body1" sx={{ color: 'white', mx: 1 }}>
-            Printer: {formatPrinterName(selectedPrinter)} | {formatTime(currentTime)}
-          </Typography>
-          <Tooltip title={getPrinterStatusText()} arrow placement="bottom">
-            <IconButton 
-              onClick={handlePrinterDialogOpen}
-              sx={{
-                bgcolor: 'white',
-                color: getPrinterStatusColor(),
-                width: 32,
-                height: 32,
-                '&:hover': { bgcolor: '#f5f5f5' },
-                ml: 1,
-                animation: printerStatus === 'printing' || printerStatus === 'criticalError' 
-                  ? 'pulse 1.5s infinite' 
-                  : 'none',
-                '@keyframes pulse': {
-                  '0%': { opacity: 1 },
-                  '50%': { opacity: 0.5 },
-                  '100%': { opacity: 1 }
-                }
-              }}
-            >
-              <PrintIcon fontSize="small" />
-            </IconButton>
-          </Tooltip>
-        </Box>
-        
-        {/* Right Column - Version & Settings */}
+        {/* Right Column - Cancel, Version & Settings */}
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+          <Button 
+            onClick={handleCancelPrint} 
+            startIcon={<CancelIcon sx={{ color: 'black' }} />}
+            sx={{ 
+              backgroundColor: 'red', 
+              color: 'black', 
+              mr: 2,
+              borderRadius: '4px',
+              minWidth: '120px',
+              height: '36px',
+              fontSize: '0.875rem',
+              textTransform: 'none',
+              border: '3px solid black',
+              '&:hover': {
+                backgroundColor: '#d32f2f',
+                border: '3px solid black',
+                color: 'black'
+              }
+            }}
+          >
+            Cancel Print
+          </Button>
           <Typography variant="body2" sx={{ mr: 1, color: 'white' }}>
             v{version}
           </Typography>
@@ -157,6 +109,15 @@ function Header({ printerStatus, version }) {
           </IconButton>
         </Box>
       </Toolbar>
+      
+      {/* Cancel Print Notification */}
+      <PrintNotification
+        isVisible={showNotification}
+        onClose={() => setShowNotification(false)}
+        success={notificationData.success}
+        productName={notificationData.productName}
+        errorMessage={notificationData.errorMessage}
+      />
     </AppBar>
   );
 }
