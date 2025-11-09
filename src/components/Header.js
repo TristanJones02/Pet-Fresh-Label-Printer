@@ -14,7 +14,7 @@ import {
 import { useDialogs, DIALOG_TYPES } from './dialogs/DialogManager';
 import PrintNotification from './PrintNotification';
 
-function Header({ version, onShowNotification }) {
+function Header({ version, onShowNotification, selectedProduct, onPreferencesUpdate, onProductDataUpdate }) {
   const { openDialog } = useDialogs();
   const [showNotification, setShowNotification] = useState(false);
   const [notificationData, setNotificationData] = useState({
@@ -39,10 +39,17 @@ function Header({ version, onShowNotification }) {
       onShowNotification(showNotificationHandler);
     }
   }, [onShowNotification]);
+
+  // Hide notification when a new product is selected
+  React.useEffect(() => {
+    if (selectedProduct && showNotification) {
+      setShowNotification(false);
+    }
+  }, [selectedProduct]);
   
   // Handle opening the settings dialog
   const handleSettingsDialogOpen = () => {
-    openDialog(DIALOG_TYPES.SETTINGS);
+    openDialog(DIALOG_TYPES.SETTINGS, { onPreferencesUpdate, onProductDataUpdate });
   };
 
   // Handle cancel print job
@@ -81,21 +88,21 @@ function Header({ version, onShowNotification }) {
         <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
           <Button 
             onClick={handleCancelPrint} 
-            startIcon={<CancelIcon sx={{ color: 'black' }} />}
+            startIcon={<CancelIcon sx={{ color: 'white' }} />}
             sx={{ 
-              backgroundColor: 'red', 
-              color: 'black', 
+              backgroundColor: '#dc3545', 
+              color: 'white', 
               mr: 2,
               borderRadius: '4px',
               minWidth: '120px',
               height: '36px',
               fontSize: '0.875rem',
               textTransform: 'none',
-              border: '3px solid black',
+              border: '1.5px solid black',
               '&:hover': {
-                backgroundColor: '#d32f2f',
-                border: '3px solid black',
-                color: 'black'
+                backgroundColor: '#c82333',
+                border: '1.5px solid black',
+                color: 'white'
               }
             }}
           >

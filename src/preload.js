@@ -41,6 +41,12 @@ contextBridge.exposeInMainWorld(
     generateZplPreview: (product, options = {}) => {
       return ipcRenderer.invoke('generate-zpl-preview', { product, options });
     },
+    convertZplToImage: (zplString) => {
+      return ipcRenderer.invoke('convert-zpl-to-image', { zplString });
+    },
+    generateHtmlLabelPreview: (product) => {
+      return ipcRenderer.invoke('generate-html-label-preview', { product });
+    },
     printZplLabel: (product, options = {}) => {
       return ipcRenderer.invoke('print-zpl-label', { product, options });
     },
@@ -79,6 +85,15 @@ contextBridge.exposeInMainWorld(
     },
     loadProductsFromCache: () => {
       return ipcRenderer.invoke('load-products-from-cache');
+    },
+    getMemoryUsage: () => {
+      return ipcRenderer.invoke('get-memory-usage');
+    },
+    loadUserPreferences: () => {
+      return ipcRenderer.invoke('load-user-preferences');
+    },
+    saveUserPreferences: (preferences) => {
+      return ipcRenderer.invoke('save-user-preferences', preferences);
     },
     
     // Settings management
@@ -129,7 +144,31 @@ contextBridge.exposeInMainWorld(
     getSystemInfo: () => ipcRenderer.invoke('get-system-info'),
     
     // Get label configuration
-    getLabelConfig: () => ipcRenderer.invoke('get-label-config')
+    getLabelConfig: () => ipcRenderer.invoke('get-label-config'),
+    
+    // Restart functions for long-running app maintenance
+    restartApplication: () => ipcRenderer.invoke('restart-app'),
+    
+    // Logging functions
+    getLogFilePath: () => ipcRenderer.invoke('get-log-file-path'),
+    openLogFile: () => ipcRenderer.invoke('open-log-file'),
+    getRecentLogs: (lines) => ipcRenderer.invoke('get-recent-logs', lines),
+    clearLogs: () => ipcRenderer.invoke('clear-logs'),
+    logFromRenderer: (level, message, context) => 
+      ipcRenderer.invoke('log-from-renderer', { level, message, context }),
+    restartComputer: () => ipcRenderer.invoke('restart-computer'),
+    
+    // Close app function for kiosk mode
+    closeApp: () => ipcRenderer.invoke('close-app'),
+    
+    // Product Data Service API
+    productDataRefetchAll: () => ipcRenderer.invoke('product-data-refetch-all'),
+    productDataSyncLatest: () => ipcRenderer.invoke('product-data-sync-latest'),
+    productDataClearLocal: () => ipcRenderer.invoke('product-data-clear-local'),
+    productDataGetLocal: () => ipcRenderer.invoke('product-data-get-local'),
+    productDataGetProductsWithValidation: () => ipcRenderer.invoke('product-data-get-products-with-validation'),
+    productDataGetCategories: () => ipcRenderer.invoke('product-data-get-categories'),
+    productDataGetSyncStatus: () => ipcRenderer.invoke('product-data-get-sync-status')
   }
 );
 

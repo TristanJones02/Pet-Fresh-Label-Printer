@@ -17,7 +17,19 @@
       "Bash(rmdir:*)",
       "Bash(cmd /c \"rmdir /s /q \"\"C:\\Users\\TristanJones\\Documents\\GitHub\\Pet-Fresh-Label-Printer\\src\\tools\"\"\")",
       "Bash(cmd /c \"rmdir /s /q \"\"C:\\Users\\TristanJones\\Documents\\GitHub\\Pet-Fresh-Label-Printer\\src\\label\"\"\")",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(del \"C:\\Users\\TristanJones\\AppData\\Roaming\\pet-fresh-label-printer\\scale-products.json\")",
+      "Bash(npm run build:*)",
+      "Bash(npx electron-builder:*)",
+      "Bash(npx:*)",
+      "Bash(cp:*)",
+      "Bash(xcopy:*)",
+      "Bash(copy package.json manual-build\\ /Y)",
+      "Bash(cmd:*)",
+      "Bash(webpack:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\ndocs: Add comprehensive CLAUDE.md for AI-assisted development\n\nCreated detailed documentation covering:\n- Project overview and dual printing modes (HTML/PDF and ZPL)\n- Development commands (run, build, packaging)\n- Architecture overview (main process, printing system, data flow)\n- ZPL label system workflow and components\n- React frontend structure and dialog system\n- Configuration management (3 separate config files)\n- Build system (Webpack + Electron Builder)\n- Kiosk mode implementation and memory management\n- Windows-specific printer detection and event logging\n- Common development tasks and IPC patterns\n\nThis documentation helps future AI instances understand the codebase\narchitecture without needing to read multiple files.\nEOF\n)\")",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

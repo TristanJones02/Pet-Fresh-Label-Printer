@@ -15,9 +15,42 @@ const { printToNetworkPrinter, sendStopCommand, testNetworkPrinter } = require('
  */
 async function loadZplTemplate(templateName = 'label_template') {
   try {
-    const templatePath = path.join(__dirname, 'templates', `${templateName}.zpl`);
-    const templateContent = await fs.readFile(templatePath, 'utf8');
-    return templateContent;
+    // Try multiple paths for template loading
+    let templatePath;
+    
+    // First try: relative to current file (development)
+    templatePath = path.join(__dirname, 'templates', `${templateName}.zpl`);
+    
+    try {
+      const templateContent = await fs.readFile(templatePath, 'utf8');
+      return templateContent;
+    } catch (devError) {
+      // Second try: in resources folder (packaged app)
+      try {
+        const { app } = require('electron');
+        if (app && app.isPackaged) {
+          templatePath = path.join(process.resourcesPath, 'app', 'src', 'zpl', 'templates', `${templateName}.zpl`);
+          const templateContent = await fs.readFile(templatePath, 'utf8');
+          return templateContent;
+        }
+      } catch (packagedError) {
+        console.warn('Could not load from packaged resources, trying user data folder');
+      }
+      
+      // Third try: user data folder
+      try {
+        const { app } = require('electron');
+        if (app && app.getPath) {
+          templatePath = path.join(app.getPath('userData'), 'templates', `${templateName}.zpl`);
+          const templateContent = await fs.readFile(templatePath, 'utf8');
+          return templateContent;
+        }
+      } catch (userDataError) {
+        console.error('All template loading attempts failed');
+      }
+      
+      throw devError; // Re-throw original error if all attempts fail
+    }
   } catch (error) {
     console.error(`Error loading ZPL template ${templateName}:`, error);
     throw new Error(`Failed to load ZPL template: ${templateName}`);
@@ -31,7 +64,7 @@ async function loadZplTemplate(templateName = 'label_template') {
  * @returns {Promise<string>} - Complete ZPL ready for printing
  */
 async function generateZplFromNewApiData(product, options = {}) {
-  const { templateName = 'label_template', quantity = 1 } = options;
+  const { templateName = 'label_template', quantity = 1, margins = {} } = options;
 
   try {
     // Transform the product data to ZPL field mappings
@@ -41,8 +74,8 @@ async function generateZplFromNewApiData(product, options = {}) {
     // Load the ZPL template
     const zplTemplate = await loadZplTemplate(templateName);
 
-    // Process the template with the transformed data
-    let processedZpl = processZplWithTransformedData(zplTemplate, transformedData);
+    // Process the template with the transformed data and margins
+    let processedZpl = processZplWithTransformedData(zplTemplate, transformedData, margins);
 
     // Handle quantity if > 1
     if (quantity > 1) {

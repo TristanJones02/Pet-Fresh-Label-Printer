@@ -8,6 +8,7 @@ const path = require('path');
 const { exec } = require('child_process');
 const os = require('os');
 const { getPrinterNetworkPath, updateHostnameConfig } = require('../utils/systemConfig');
+const loggingService = require('../services/loggingService');
 
 /**
  * Print ZPL content to network printer
@@ -25,6 +26,7 @@ async function printToNetworkPrinter(zplContent, options = {}) {
     // Get the network printer path
     const networkPath = await getPrinterNetworkPath();
     console.log(`Printing to network path: ${networkPath}`);
+    loggingService.info('Starting network print', { networkPath, timeout });
 
     // Create temporary ZPL file
     const tempDir = os.tmpdir();
@@ -55,6 +57,11 @@ async function printToNetworkPrinter(zplContent, options = {}) {
 
         if (error) {
           console.error('Network print failed:', error);
+          loggingService.error('Network print failed', {
+            error: error.message,
+            networkPath: networkPath,
+            stderr: stderr
+          });
           reject({
             success: false,
             error: error.message,
@@ -66,9 +73,14 @@ async function printToNetworkPrinter(zplContent, options = {}) {
 
         if (stderr) {
           console.warn('Print command stderr:', stderr);
+          loggingService.warn('Print command stderr output', { stderr });
         }
 
         console.log('Network print successful:', stdout);
+        loggingService.info('Network print successful', {
+          networkPath: networkPath,
+          output: stdout
+        });
         resolve({
           success: true,
           message: 'Label sent to network printer successfully',
@@ -98,9 +110,27 @@ async function sendStopCommand(options = {}) {
   const { timeout = 5000 } = options;
 
   try {
-    // Load stop.zpl content
-    const stopZplPath = path.join(__dirname, 'printer_commands', 'stop.zpl');
-    const stopZplContent = await fs.readFile(stopZplPath, 'utf8');
+    // Load stop.zpl content with fallback paths
+    let stopZplContent;
+    try {
+      // First try: relative to current file (development)
+      const stopZplPath = path.join(__dirname, 'printer_commands', 'stop.zpl');
+      stopZplContent = await fs.readFile(stopZplPath, 'utf8');
+    } catch (devError) {
+      try {
+        // Second try: in resources folder (packaged app)
+        const { app } = require('electron');
+        if (app && app.isPackaged) {
+          const stopZplPath = path.join(process.resourcesPath, 'app', 'src', 'zpl', 'printer_commands', 'stop.zpl');
+          stopZplContent = await fs.readFile(stopZplPath, 'utf8');
+        } else {
+          throw devError;
+        }
+      } catch (packagedError) {
+        console.error('Could not find stop.zpl command file');
+        throw devError;
+      }
+    }
 
     console.log('Sending stop command to printer...');
     

@@ -40,16 +40,16 @@ function transformProductData(product) {
   const weight = formatWeight(product.productSize, product.productUnit);
 
   return {
-    'NAME_L1*_VAR': nameL1.substring(0, 13), // Max 13 characters
-    'NAME_L2*_VAR': nameL2.substring(0, 13), // Max 13 characters
+    'NAME_L1_VAR': nameL1.substring(0, 13), // Max 13 characters
+    'NAME_L2_VAR': nameL2.substring(0, 13), // Max 13 characters
     'PRICE_VAR': formattedPrice, // Includes $ symbol
-    'BARCODE*_VAR': barcode,
-    'INGREDIENTS*_VAR': product.productIngredients || '',
-    'SPECIAL_MSG1*_VAR': specialMessage1.substring(0, 50),
-    'SPECIAL_MSG2*_VAR': specialMessage2.substring(0, 50), 
-    'SPECIAL_MSG3*_VAR': specialMessage3.substring(0, 50),
-    'EXP*_VAR': expiryDate,
-    'WGT*_VAR': weight
+    'BARCODE_VAR': barcode,
+    'INGREDIENTS_VAR': product.productIngredients || '',
+    'SPECIAL_MSG1_VAR': specialMessage1.substring(0, 50),
+    'SPECIAL_MSG2_VAR': specialMessage2.substring(0, 50), 
+    'SPECIAL_MSG3_VAR': specialMessage3.substring(0, 50),
+    'EXP_VAR': expiryDate,
+    'WGT_VAR': weight
   };
 }
 
@@ -61,7 +61,7 @@ function transformProductData(product) {
  */
 function calculateExpiryDate(duration, type) {
   if (!duration || !type) {
-    return 'N/A';
+    return '';
   }
 
   const today = new Date();
@@ -113,12 +113,55 @@ function getHostname() {
 }
 
 /**
+ * Apply margin adjustments to ZPL by modifying field positions
+ * @param {string} zpl - ZPL content
+ * @param {Object} margins - Margin adjustments in mm
+ * @returns {string} - ZPL with adjusted positions
+ */
+function applyMarginsToZpl(zpl, margins) {
+  if (!margins) return zpl;
+  
+  // Convert mm to dots (203 dpi = 8 dots per mm)
+  const dotsPerMm = 8;
+  const leftAdjust = Math.round((margins.left || 0) * dotsPerMm);
+  const topAdjust = Math.round((margins.top || 0) * dotsPerMm);
+  
+  let adjustedZpl = zpl;
+  
+  // Adjust all ^FO (Field Origin) commands
+  // Pattern: ^FOx,y where x and y are numbers
+  adjustedZpl = adjustedZpl.replace(/\^FO(\d+),(\d+)/g, (match, x, y) => {
+    const newX = Math.max(0, parseInt(x) + leftAdjust);
+    const newY = Math.max(0, parseInt(y) + topAdjust);
+    return `^FO${newX},${newY}`;
+  });
+  
+  // Adjust label home position if margins are set
+  if (leftAdjust !== 0 || topAdjust !== 0) {
+    // Add or update ^LH (Label Home) command
+    if (adjustedZpl.includes('^LH')) {
+      adjustedZpl = adjustedZpl.replace(/\^LH(\d+),(\d+)/g, (match, x, y) => {
+        const newX = Math.max(0, parseInt(x) + leftAdjust);
+        const newY = Math.max(0, parseInt(y) + topAdjust);
+        return `^LH${newX},${newY}`;
+      });
+    } else {
+      // Add ^LH after ^XA if not present
+      adjustedZpl = adjustedZpl.replace(/\^XA/, `^XA\n^LH${leftAdjust},${topAdjust}`);
+    }
+  }
+  
+  return adjustedZpl;
+}
+
+/**
  * Process ZPL template with transformed data
  * @param {string} zplTemplate - ZPL template content
  * @param {Object} transformedData - Data from transformProductData
+ * @param {Object} margins - Margin adjustments in mm
  * @returns {string} - Processed ZPL ready for printing
  */
-function processZplWithTransformedData(zplTemplate, transformedData) {
+function processZplWithTransformedData(zplTemplate, transformedData, margins = {}) {
   let processedZpl = zplTemplate;
 
   // Replace field placeholders with simple string replacement for now
@@ -137,6 +180,11 @@ function processZplWithTransformedData(zplTemplate, transformedData) {
     }
   });
 
+  // Apply margin adjustments if provided
+  if (margins && (margins.top || margins.left || margins.bottom || margins.right)) {
+    processedZpl = applyMarginsToZpl(processedZpl, margins);
+  }
+  
   return processedZpl;
 }
 
@@ -145,5 +193,6 @@ module.exports = {
   calculateExpiryDate,
   formatWeight,
   getHostname,
-  processZplWithTransformedData
+  processZplWithTransformedData,
+  applyMarginsToZpl
 };

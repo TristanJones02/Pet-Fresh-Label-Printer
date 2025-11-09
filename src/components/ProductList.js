@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Box, 
   Paper,  
@@ -9,18 +9,93 @@ import {
   Divider
 } from '@mui/material';
 import ScaleIcon from '@mui/icons-material/Scale';
+import HideDepartmentDialog from './dialogs/HideDepartmentDialog';
 
-function ProductList({ products, selectedProduct, onProductSelect, searchTerm, selectedCategory }) {
-  // Group products by type
-  const groupedProducts = products.reduce((acc, product) => {
-    if (!acc[product.type]) {
-      acc[product.type] = [];
+function ProductList({ products, selectedProduct, onProductSelect, searchTerm, selectedCategory, preferencesUpdateTime, onPreferencesUpdate }) {
+  const [userPreferences, setUserPreferences] = useState({ categoryOrder: {}, hiddenDepartments: [] });
+  const [longPressTimer, setLongPressTimer] = useState(null);
+  const [hideDialog, setHideDialog] = useState({ open: false, departmentName: '' });
+
+  // Load user preferences on mount and when preferences are updated
+  useEffect(() => {
+    loadPreferences();
+  }, []);
+
+  // Reload preferences when they're updated elsewhere
+  useEffect(() => {
+    if (preferencesUpdateTime) {
+      loadPreferences();
     }
-    acc[product.type].push(product);
+  }, [preferencesUpdateTime]);
+
+  const loadPreferences = async () => {
+    try {
+      const result = await window.api.loadUserPreferences();
+      if (result.success) {
+        setUserPreferences(result.data);
+      }
+    } catch (error) {
+      console.error('Error loading preferences:', error);
+    }
+  };
+
+  const savePreferences = async (newPreferences) => {
+    try {
+      await window.api.saveUserPreferences(newPreferences);
+      setUserPreferences(newPreferences);
+      // Notify parent that preferences were updated
+      if (onPreferencesUpdate) {
+        onPreferencesUpdate();
+      }
+    } catch (error) {
+      console.error('Error saving preferences:', error);
+    }
+  };
+
+  // Hide department handlers
+  const handleDepartmentLongPress = (departmentName) => {
+    const timer = setTimeout(() => {
+      setHideDialog({ open: true, departmentName });
+    }, 800); // 800ms long press
+    setLongPressTimer(timer);
+  };
+
+  const handleMouseUp = () => {
+    if (longPressTimer) {
+      clearTimeout(longPressTimer);
+      setLongPressTimer(null);
+    }
+  };
+
+  const handleHideDepartment = (departmentName) => {
+    const newHiddenDepartments = [...userPreferences.hiddenDepartments, departmentName];
+    const newPreferences = { ...userPreferences, hiddenDepartments: newHiddenDepartments };
+    savePreferences(newPreferences);
+    setHideDialog({ open: false, departmentName: '' });
+  };
+
+  const handleCloseHideDialog = () => {
+    setHideDialog({ open: false, departmentName: '' });
+  };
+
+  // Group products by departmentName, but filter based on search and category selection
+  const groupedProducts = products.reduce((acc, product) => {
+    const department = product.departmentName || 'Other';
+    
+    // When searching, show all products regardless of hidden departments
+    // When browsing by category, apply hidden department filter
+    if (!searchTerm && userPreferences.hiddenDepartments.includes(department)) {
+      return acc; // Skip hidden departments when not searching
+    }
+    
+    if (!acc[department]) {
+      acc[department] = [];
+    }
+    acc[department].push(product);
     return acc;
   }, {});
   
-  // Get unique product types
+  // Get unique product types (departments)
   const productTypes = Object.keys(groupedProducts);
   
   const handleProductClick = (product) => {
@@ -76,29 +151,45 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
       >
         {products.length > 0 ? (
           productTypes.map((type, typeIndex) => (
-            <Box key={type} sx={{ mb: 3 }}>
+            <Box key={type} sx={{ mb: 2 }}>
               {/* Only show type header if there are multiple types */}
               {productTypes.length > 1 && (
                 <Typography 
                   variant="subtitle1" 
+                  onMouseDown={() => handleDepartmentLongPress(type)}
+                  onMouseUp={handleMouseUp}
+                  onMouseLeave={handleMouseUp}
                   sx={{ 
                     mb: 1, 
                     fontWeight: 'bold', 
                     borderBottom: '1px solid #e0e0e0',
-                    pb: 0.5
+                    pb: 0.5,
+                    cursor: 'pointer',
+                    userSelect: 'none',
+                    '&:hover': {
+                      backgroundColor: '#f5f5f5',
+                      borderRadius: 1
+                    }
                   }}
                 >
                   {type}
                 </Typography>
               )}
               
-              <Grid container spacing={2}>
+              <Box 
+                sx={{ 
+                  display: 'grid',
+                  gridTemplateColumns: 'repeat(3, 1fr)',
+                  gap: 2,
+                  width: '100%'
+                }}
+              >
                 {groupedProducts[type].map((product) => (
-                  <Grid 
+                  <Box 
                     key={product.id}
                     sx={{ 
-                      width: '33.33%',
-                      padding: 1
+                      display: 'flex',
+                      width: '100%'
                     }}
                   >
                     <Card 
@@ -107,6 +198,8 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                       sx={{ 
                         cursor: 'pointer',
                         height: '100%',
+                        width: '100%',
+                        flex: 1,
                         display: 'flex',
                         flexDirection: 'column',
                         backgroundColor: selectedProduct && selectedProduct.id === product.id ? '#9ba03b' : 'white',
@@ -174,7 +267,11 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                             sx={{ 
                               display: 'flex', 
                               alignItems: 'center',
-                              gap: 0.5
+                              gap: 0.5,
+                              backgroundColor: 'black',
+                              color: 'white',
+                              padding: '0.25em',
+                              borderRadius: '5px',
                             }}
                           >
                             <ScaleIcon fontSize="small" />
@@ -190,9 +287,9 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
                         </Box>
                       </CardContent>
                     </Card>
-                  </Grid>
+                  </Box>
                 ))}
-              </Grid>
+              </Box>
             </Box>
           ))
         ) : (
@@ -203,6 +300,12 @@ function ProductList({ products, selectedProduct, onProductSelect, searchTerm, s
           </Box>
         )}
       </Box>
+      <HideDepartmentDialog 
+        open={hideDialog.open}
+        departmentName={hideDialog.departmentName}
+        onClose={handleCloseHideDialog}
+        onConfirm={handleHideDepartment}
+      />
     </Paper>
   );
 }

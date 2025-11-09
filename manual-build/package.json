@@ -1,0 +1,92 @@
+{
+  "name": "pet-fresh-label-printer",
+  "version": "0.2.6",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "dev": "concurrently \"webpack --watch\" \"set NODE_ENV=development && electron .\"",
+    "build": "webpack --mode production && electron-builder",
+    "build-installer": "webpack --mode production && npx electron-builder --config electron-builder.json",
+    "simple-build": "webpack --mode production && npx electron-builder --config electron-builder.json --dir",
+    "label-editor": "electron src/tools/label-editor/editor.js",
+    "image-generator": "electron src/tools/product-image-generator/generator.js",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Pet Fresh Label Printer is a powerful tool for creating and printing labels for pet products. It allows you to easily customize labels, generate product images, and build installers for the application.",
+  "build": {
+    "appId": "com.petfresh.labelprinter",
+    "productName": "Pet Fresh Label Printer",
+    "directories": {
+      "output": "dist"
+    },
+    "forceCodeSigning": false,
+    "files": [
+      "src/**/*",
+      "public/**/*",
+      "electron/**/*",
+      "!src/tools/**/*",
+      "*.js",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts,pdb}"
+    ],
+    "win": {
+      "icon": "public/assets/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Pet Fresh Label Printer"
+    }
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@replytechnologies/zpl-image-convert": "^0.0.3",
+    "jsbarcode": "^3.12.1",
+    "jsdom": "^26.1.0",
+    "jsprintmanager": "^8.0.0",
+    "labelary": "^1.3.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^21.11.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "uuid": "^9.0.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.1",
+    "@babel/plugin-transform-runtime": "^7.27.1",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-react": "^7.27.1",
+    "@electron-forge/cli": "^7.8.2",
+    "@electron-forge/maker-squirrel": "^7.8.2",
+    "babel-loader": "^9.2.1",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1",
+    "canvas": "^3.1.2",
+    "concurrently": "^9.1.2",
+    "css-loader": "^7.1.2",
+    "electron": "latest",
+    "electron-reload": "^2.0.0-alpha.1",
+    "png-to-ico": "^2.1.8",
+    "style-loader": "^4.0.0",
+    "wait-on": "^8.0.3",
+    "webpack": "^5.99.8",
+    "webpack-cli": "^6.0.1"
+  }
+}

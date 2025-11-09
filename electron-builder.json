@@ -1,16 +1,18 @@
 {
   "appId": "com.petfresh.labelprinter",
   "productName": "Pet Fresh Label Printer",
+  "copyright": "Copyright © 2025 Pet Fresh",
   "directories": {
     "output": "dist"
   },
-  "asar": true,
+  "asar": false,
   "files": [
     "src/**/*",
     "public/**/*",
     "electron/**/*",
+    "node_modules/**/*",
+    "package.json",
     "!src/tools/**/*",
-    "*.js",
     "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts,pdb}"
   ],
   "win": {
@@ -32,11 +34,14 @@
     "createDesktopShortcut": true,
     "createStartMenuShortcut": true,
     "shortcutName": "Pet Fresh Label Printer",
-    "artifactName": "${productName}-Setup-${version}.${ext}",
-    "include": "installer/installer.nsh",
-    "script": "installer/installer.nsis",
+    "installerIcon": "public/assets/icon.ico",
+    "uninstallerIcon": "public/assets/icon.ico",
+    "deleteAppDataOnUninstall": true,
+    "menuCategory": "Pet Fresh",
     "warningsAsErrors": false
   },
   "publish": null,
-  "electronVersion": "36.1.0"
+  "nodeGypRebuild": false,
+  "npmRebuild": false,
+  "buildDependenciesFromSource": false
 } 

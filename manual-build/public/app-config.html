@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Configuration</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .config-container {
+      width: 100%;
+      max-width: 800px;
+      padding: 40px;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+      text-align: center;
+    }
+    .logo {
+      width: 250px;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+    .form-group {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 500;
+      color: #444;
+      font-size: 18px;
+    }
+    select {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 18px;
+      background-color: #fff;
+    }
+    select option:disabled {
+      color: #999;
+      background-color: #f5f5f5;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    button {
+      background-color: #1976d2;
+      color: white;
+      border: none;
+      padding: 16px 36px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #1565c0;
+    }
+    #status {
+      margin-top: 20px;
+      padding: 16px;
+      border-radius: 8px;
+      display: none;
+      font-weight: 500;
+      font-size: 18px;
+    }
+    #status.success {
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      display: block;
+    }
+    #status.error {
+      background-color: #ffebee;
+      color: #c62828;
+      display: block;
+    }
+    .footer {
+      margin-top: 40px;
+      color: #777;
+      font-size: 14px;
+    }
+    .hint {
+      margin-top: 20px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="config-container">
+    <img src="assets/neicha_logo.png" alt="Neicha Logo" class="logo">
+    <h1>App Configuration</h1>
+    <div class="form-group">
+      <label for="usageType">Usage Type</label>
+      <select id="usageType">
+        <option value="" disabled selected>Please Select</option>
+        <option value="regular">Regular Window</option>
+        <option value="kiosk">Kiosk Mode</option>
+      </select>
+    </div>
+    <div class="buttons">
+      <button id="saveButton">Save Configuration</button>
+    </div>
+    <div id="status"></div>
+    <div class="hint">Press F11 to toggle fullscreen mode</div>
+  </div>
+
+  <script>
+    // Initialize UI elements
+    const statusEl = document.getElementById('status');
+    const saveButton = document.getElementById('saveButton');
+    
+    // Status display function
+    function showStatus(message, isError = false) {
+      statusEl.textContent = message;
+      statusEl.className = isError ? 'error' : 'success';
+    }
+    
+    // Set up save button
+    saveButton.addEventListener('click', function() {
+      const usageType = document.getElementById('usageType').value;
+      
+      if (!usageType) {
+        showStatus("Please select a usage type", true);
+        return;
+      }
+      
+      if (!window.api) {
+        showStatus("Error: API not available", true);
+        return;
+      }
+      
+      showStatus("Saving configuration...");
+      
+      try {
+        window.api.saveAppConfig({ usageType })
+          .then(result => {
+            if (result.success) {
+              showStatus("Configuration saved successfully! Restarting...");
+              
+              // Add a delay to show the success message
+              setTimeout(() => {
+                window.api.restartApp();
+              }, 1000);
+            } else {
+              showStatus(`Failed to save: ${result.error || "Unknown error"}`, true);
+            }
+          })
+          .catch(error => {
+            showStatus(`Error: ${error.message || error}`, true);
+          });
+      } catch (err) {
+        showStatus(`Error: ${err.message || err}`, true);
+      }
+    });
+  </script>
+</body>
+</html> 

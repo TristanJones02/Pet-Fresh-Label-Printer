@@ -1,19 +1,45 @@
-const { app, BrowserWindow, ipcMain, globalShortcut } = require('electron');
+const { app, BrowserWindow, ipcMain, globalShortcut, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
 const { initPrinting } = require('../electron/printing');
 const configManager = require('../electron/config-manager');
+const ProductDataService = require('./services/productDataService');
+const loggingService = require('./services/loggingService');
 
 // Get the package.json for version info
 const packageJson = require('../package.json');
 
+// Set app user model ID for Windows
+if (process.platform === 'win32') {
+  app.setAppUserModelId('com.petfresh.labelprinter');
+}
+
 // Keep a global reference of the window objects
 let mainWindow;
 let configWindow;
+let productDataService;
 
 // Initialize global app exit flag (used in kiosk mode)
 global.allowAppExit = false;
+
+// Initialize logging service
+loggingService.loadLoggingPreference().then(() => {
+  if (loggingService.isEnabled()) {
+    loggingService.info('Application started', { version: packageJson.version });
+  }
+});
+
+// Global error handlers
+process.on('uncaughtException', (error) => {
+  console.error('Uncaught Exception:', error);
+  loggingService.logError(error, { type: 'uncaughtException' });
+});
+
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('Unhandled Rejection at:', promise, 'reason:', reason);
+  loggingService.logError(new Error(String(reason)), { type: 'unhandledRejection' });
+});
 
 /**
  * Create the main application window based on configuration
@@ -156,12 +182,40 @@ function createConfigWindow() {
   });
 }
 
+// Function to clean up existing IPC handlers to prevent duplicate registration warnings
+function cleanupIpcHandlers() {
+  const handlersToCleanup = [
+    'test-zpl-printer',
+    'check-network-share'
+  ];
+  
+  handlersToCleanup.forEach(handlerName => {
+    try {
+      ipcMain.removeHandler(handlerName);
+    } catch (error) {
+      // Handler might not exist yet, ignore
+    }
+  });
+}
+
 // This method will be called when Electron has finished initialization
-app.whenReady().then(() => {
+app.whenReady().then(async () => {
+  // Set application icon for Windows
+  if (process.platform === 'win32') {
+    const iconPath = path.join(__dirname, '../public/assets/icon.ico');
+    if (fs.existsSync(iconPath)) {
+      app.setAppUserModelId('com.petfresh.labelprinter');
+    }
+  }
+  
   createWindow();
   
   // Initialize printing module
   initPrinting();
+
+  // Initialize product data service
+  productDataService = new ProductDataService();
+  await productDataService.initialize();
 
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) createWindow();
@@ -177,6 +231,14 @@ app.on('window-all-closed', function () {
 app.on('will-quit', () => {
   // Unregister all shortcuts
   globalShortcut.unregisterAll();
+  
+  // Clean up IPC handlers
+  cleanupIpcHandlers();
+  
+  // Clean up product data service
+  if (productDataService) {
+    productDataService.destroy();
+  }
 });
 
 // Save app configuration
@@ -208,6 +270,55 @@ ipcMain.handle('restart-app', async () => {
   app.exit();
 });
 
+// Close the app (for kiosk mode exit)
+ipcMain.handle('close-app', async () => {
+  global.allowAppExit = true;
+  app.quit();
+});
+
+// Restart computer for long-running app maintenance
+ipcMain.handle('restart-computer', async () => {
+  const { exec } = require('child_process');
+  const os = require('os');
+  
+  console.log('🔄 Computer restart requested by user...');
+  
+  try {
+    const platform = os.platform();
+    let command;
+    
+    switch (platform) {
+      case 'win32':
+        command = 'shutdown /r /t 10 /c "Label printer app restart requested"';
+        break;
+      case 'darwin': // macOS
+        command = 'sudo shutdown -r +1 "Label printer app restart requested"';
+        break;
+      case 'linux':
+        command = 'sudo shutdown -r +1 "Label printer app restart requested"';
+        break;
+      default:
+        throw new Error(`Unsupported platform: ${platform}`);
+    }
+    
+    return new Promise((resolve, reject) => {
+      exec(command, (error) => {
+        if (error) {
+          console.error('Error restarting computer:', error);
+          reject(error);
+        } else {
+          console.log('Computer restart initiated');
+          resolve({ success: true, message: 'Computer restart initiated' });
+        }
+      });
+    });
+    
+  } catch (error) {
+    console.error('Error initiating computer restart:', error);
+    throw error;
+  }
+});
+
 // Reset configuration and restart app
 ipcMain.handle('reset-app-config', async () => {
   try {
@@ -235,8 +346,8 @@ ipcMain.handle('reset-app-config', async () => {
   }
 });
 
-// Initialize the templates directory
-const templatesDir = path.join(__dirname, 'templates');
+// Initialize the templates directory in userData folder
+const templatesDir = path.join(app.getPath('userData'), 'templates');
 if (!fs.existsSync(templatesDir)) {
   fs.mkdirSync(templatesDir, { recursive: true });
 }
@@ -424,7 +535,7 @@ ipcMain.handle('print-label-with-template', async (event, { product, quantity = 
     } else {
       try {
         // Load the current config file to get latest printer adjustments
-        const configPath = path.join(__dirname, 'label/config.json');
+        const configPath = path.join(app.getPath('userData'), 'label-config.json');
         const configData = fs.readFileSync(configPath, 'utf8');
         config = JSON.parse(configData);
       } catch (error) {
@@ -613,9 +724,16 @@ ipcMain.handle('save-settings', async (event, settings) => {
   try {
     const settingsFile = path.join(app.getPath('userData'), 'settings.json');
     fs.writeFileSync(settingsFile, JSON.stringify(settings, null, 2));
+    
+    // Handle logging preference change
+    if (settings.application?.enableLogging !== undefined) {
+      await loggingService.saveLoggingPreference(settings.application.enableLogging);
+    }
+    
     return { success: true };
   } catch (error) {
     console.error('Error saving settings:', error);
+    loggingService.logError(error, { context: 'save-settings' });
     return { error: error.message };
   }
 });
@@ -631,10 +749,17 @@ ipcMain.handle('load-settings', async () => {
       return {
         printer: {
           defaultPrinter: '',
-          showConfirmation: false
+          showConfirmation: false,
+          margins: {
+            top: 0,
+            left: 0,
+            bottom: 0,
+            right: 0
+          }
         },
         application: {
           darkMode: false,
+          enableLogging: false,
           devImageGeneration: false,
           devImagePath: path.join(app.getPath('pictures'), 'PetFresh-Labels'),
           includeContentOnly: true,
@@ -675,10 +800,59 @@ ipcMain.handle('get-app-version', async () => {
   return packageJson.version;
 });
 
+// Logging management handlers
+ipcMain.handle('get-log-file-path', async () => {
+  return loggingService.getLogFilePath();
+});
+
+ipcMain.handle('open-log-file', async () => {
+  try {
+    const logPath = loggingService.getLogFilePath();
+    if (fs.existsSync(logPath)) {
+      shell.openPath(logPath);
+      return { success: true };
+    } else {
+      return { success: false, error: 'Log file not found' };
+    }
+  } catch (error) {
+    loggingService.logError(error, { context: 'open-log-file' });
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('get-recent-logs', async (event, lines = 100) => {
+  try {
+    return loggingService.getRecentLogs(lines);
+  } catch (error) {
+    loggingService.logError(error, { context: 'get-recent-logs' });
+    return [];
+  }
+});
+
+ipcMain.handle('clear-logs', async () => {
+  try {
+    loggingService.clearLogs();
+    return { success: true };
+  } catch (error) {
+    loggingService.logError(error, { context: 'clear-logs' });
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('log-from-renderer', async (event, { level, message, context }) => {
+  try {
+    loggingService.log(level, `[Renderer] ${message}`, context);
+    return { success: true };
+  } catch (error) {
+    console.error('Error logging from renderer:', error);
+    return { success: false, error: error.message };
+  }
+});
+
 // Add IPC handler to load label config
 ipcMain.handle('load-label-config', async () => {
   try {
-    const configPath = path.join(__dirname, 'label/config.json');
+    const configPath = path.join(app.getPath('userData'), 'label-config.json');
     if (fs.existsSync(configPath)) {
       const configData = fs.readFileSync(configPath, 'utf8');
       return JSON.parse(configData);
@@ -694,11 +868,223 @@ ipcMain.handle('load-label-config', async () => {
 // Add IPC handler to save label config
 ipcMain.handle('save-label-config', async (event, config) => {
   try {
-    const configPath = path.join(__dirname, 'label/config.json');
+    const configPath = path.join(app.getPath('userData'), 'label-config.json');
     fs.writeFileSync(configPath, JSON.stringify(config, null, 2));
     return { success: true };
   } catch (error) {
     console.error('Error saving label config:', error);
     return { error: error.message };
   }
-}); 
+});
+
+// Product Data Service IPC Handlers
+ipcMain.handle('product-data-refetch-all', async () => {
+  try {
+    if (productDataService) {
+      return await productDataService.refetchAll();
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-refetch-all:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-sync-latest', async () => {
+  try {
+    if (productDataService) {
+      return await productDataService.syncWithLatest();
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-sync-latest:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-clear-local', async () => {
+  try {
+    if (productDataService) {
+      return await productDataService.clearLocalData();
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-clear-local:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-get-local', async () => {
+  try {
+    if (productDataService) {
+      return { success: true, data: productDataService.getLocalData() };
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-get-local:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-get-products-with-validation', async () => {
+  try {
+    if (productDataService) {
+      return { success: true, data: productDataService.getProductsWithValidation() };
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-get-products-with-validation:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-get-categories', async () => {
+  try {
+    if (productDataService) {
+      return { success: true, data: productDataService.getCategories() };
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-get-categories:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('product-data-get-sync-status', async () => {
+  try {
+    if (productDataService) {
+      return { success: true, data: productDataService.getSyncStatus() };
+    } else {
+      return { success: false, error: 'Product data service not initialized' };
+    }
+  } catch (error) {
+    console.error('Error in product-data-get-sync-status:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+// Check if network share exists
+try {
+  ipcMain.handle('check-network-share', async (event, networkPath) => {
+    try {
+      // Check if the network share path exists
+      const exists = fs.existsSync(networkPath);
+      return { exists };
+    } catch (error) {
+      console.error('Error checking network share:', error);
+      return { exists: false, error: error.message };
+    }
+  });
+} catch (error) {
+  if (error.message.includes('already be registered')) {
+    console.log('Handler for check-network-share already registered, skipping...');
+  } else {
+    console.error('Error registering check-network-share handler:', error);
+  }
+}
+
+// User preferences management
+ipcMain.handle('load-user-preferences', async () => {
+  try {
+    const preferencesFile = path.join(app.getPath('userData'), 'user-preferences.json');
+    
+    if (fs.existsSync(preferencesFile)) {
+      const preferences = JSON.parse(fs.readFileSync(preferencesFile, 'utf8'));
+      return { success: true, data: preferences };
+    } else {
+      // Return default preferences
+      const defaultPreferences = {
+        categoryOrder: {},
+        hiddenDepartments: []
+      };
+      return { success: true, data: defaultPreferences };
+    }
+  } catch (error) {
+    console.error('Error loading user preferences:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+ipcMain.handle('save-user-preferences', async (event, preferences) => {
+  try {
+    const preferencesFile = path.join(app.getPath('userData'), 'user-preferences.json');
+    fs.writeFileSync(preferencesFile, JSON.stringify(preferences, null, 2));
+    return { success: true };
+  } catch (error) {
+    console.error('Error saving user preferences:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+// Get memory usage information
+ipcMain.handle('get-memory-usage', async () => {
+  try {
+    const usage = process.memoryUsage();
+    const totalMemory = os.totalmem();
+    
+    return {
+      success: true,
+      data: {
+        used: usage.heapUsed + usage.external,
+        total: totalMemory,
+        heapUsed: usage.heapUsed,
+        heapTotal: usage.heapTotal,
+        external: usage.external,
+        rss: usage.rss
+      }
+    };
+  } catch (error) {
+    console.error('Error getting memory usage:', error);
+    return { success: false, error: error.message };
+  }
+});
+
+// Test ZPL printer connection (check if network share is accessible)
+try {
+  ipcMain.handle('test-zpl-printer', async (event, options = {}) => {
+  try {
+    const { exec } = require('child_process');
+    const { promisify } = require('util');
+    const execAsync = promisify(exec);
+    const { getSystemHostname } = require('./utils/systemConfig');
+    const hostname = getSystemHostname();
+    
+    // Check if the network share exists using net view
+    try {
+      const { stdout } = await execAsync(`net view \\\\${hostname}`);
+      
+      // Check if zebra_print share is listed
+      if (stdout.toLowerCase().includes('zebra_print')) {
+        // Share exists, now check if it's accessible
+        const sharePath = `\\\\${hostname}\\zebra_print`;
+        try {
+          fs.accessSync(sharePath, fs.constants.R_OK);
+          return { success: true, status: 'connected' };
+        } catch {
+          return { success: false, status: 'disconnected', error: 'Share exists but is not accessible' };
+        }
+      } else {
+        return { success: false, status: 'not_found', error: 'zebra_print share not found' };
+      }
+    } catch (error) {
+      // net view failed - might mean the host is not accessible
+      return { success: false, status: 'not_found', error: 'Cannot access host or share not configured' };
+    }
+  } catch (error) {
+    console.error('Error testing printer share:', error);
+    return { success: false, status: 'error', error: error.message };
+  }
+  });
+} catch (error) {
+  if (error.message.includes('already be registered')) {
+    console.log('Handler for test-zpl-printer already registered, skipping...');
+  } else {
+    console.error('Error registering test-zpl-printer handler:', error);
+  }
+} 

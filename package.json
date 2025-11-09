@@ -1,15 +1,17 @@
 {
   "name": "pet-fresh-label-printer",
-  "version": "0.2.6",
+  "version": "1.2.3",
   "main": "src/main.js",
   "scripts": {
-    "start": "webpack && electron .",
+    "start": "electron-forge start",
     "dev": "concurrently \"webpack --watch\" \"set NODE_ENV=development && electron .\"",
     "build": "webpack --mode production && electron-builder",
     "build-installer": "webpack --mode production && npx electron-builder --config electron-builder.json",
     "simple-build": "webpack --mode production && npx electron-builder --config electron-builder.json --dir",
     "label-editor": "electron src/tools/label-editor/editor.js",
-    "image-generator": "electron src/tools/product-image-generator/generator.js"
+    "image-generator": "electron src/tools/product-image-generator/generator.js",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [],
   "author": "",
@@ -18,18 +20,25 @@
   "build": {
     "appId": "com.petfresh.labelprinter",
     "productName": "Pet Fresh Label Printer",
+    "icon": "public/assets/icon.ico",
     "directories": {
       "output": "dist"
     },
-    "forceCodeSigning": false,
+    "npmRebuild": false,
+    "nodeGypRebuild": false,
+    "buildDependenciesFromSource": false,
     "files": [
       "src/**/*",
       "public/**/*",
       "electron/**/*",
-      "!src/tools/**/*",
-      "*.js",
-      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,suo,xproj,cc,d.ts,pdb}"
+      "src/zpl/templates/**/*.zpl",
+      "src/zpl/printer_commands/**/*.zpl",
+      "node_modules/puppeteer/**/*",
+      "node_modules/jsbarcode/**/*",
+      "node_modules/canvas/**/*",
+      "!src/tools/**/*"
     ],
+    "extraResources": [],
     "win": {
       "icon": "public/assets/icon.ico",
       "target": [
@@ -39,14 +48,19 @@
             "x64"
           ]
         }
-      ]
+      ],
+      "signAndEditExecutable": false,
+      "verifyUpdateCodeSignature": false,
+      "publisherName": "Pet Fresh"
     },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Pet Fresh Label Printer"
+      "shortcutName": "Pet Fresh Label Printer",
+      "installerIcon": "public/assets/icon.ico",
+      "uninstallerIcon": "public/assets/icon.ico"
     }
   },
   "dependencies": {
@@ -54,6 +68,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.0.2",
     "@mui/material": "^7.0.2",
+    "@replytechnologies/zpl-image-convert": "^0.0.3",
     "jsbarcode": "^3.12.1",
     "jsdom": "^26.1.0",
     "jsprintmanager": "^8.0.0",
@@ -63,22 +78,27 @@
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "uuid": "^9.0.1",
-    "ws": "^8.18.3"
+    "ws": "^8.18.3",
+    "canvas": "^3.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.27.1",
     "@babel/plugin-transform-runtime": "^7.27.1",
     "@babel/preset-env": "^7.27.2",
     "@babel/preset-react": "^7.27.1",
+    "@electron-forge/cli": "^7.8.2",
+    "@electron-forge/maker-squirrel": "^7.8.2",
     "babel-loader": "^9.2.1",
     "babelify": "^10.0.0",
     "browserify": "^17.0.1",
-    "canvas": "^3.1.2",
     "concurrently": "^9.1.2",
     "css-loader": "^7.1.2",
     "electron": "latest",
-    "electron-builder": "latest",
+    "electron-builder": "^24.13.3",
+    "electron-installer-windows": "^3.0.0",
+    "electron-packager": "^17.1.2",
     "electron-reload": "^2.0.0-alpha.1",
+    "electron-winstaller": "^5.4.0",
     "png-to-ico": "^2.1.8",
     "style-loader": "^4.0.0",
     "wait-on": "^8.0.3",

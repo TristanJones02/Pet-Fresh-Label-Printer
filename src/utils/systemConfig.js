@@ -18,10 +18,21 @@ function getSystemHostname() {
 }
 
 /**
- * Get the config file path (in the app directory)
+ * Get the config file path (in the user data directory for packaged apps)
  * @returns {string} - Full path to config file
  */
 function getConfigPath() {
+  // Try to get electron app if available
+  try {
+    const { app } = require('electron');
+    if (app && app.getPath) {
+      return path.join(app.getPath('userData'), CONFIG_FILE);
+    }
+  } catch (error) {
+    // Fallback if electron is not available
+  }
+  
+  // Fallback to current working directory for development
   return path.join(process.cwd(), CONFIG_FILE);
 }
 
